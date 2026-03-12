@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Глазная клиника Алматы и Актау — лазер, катаракта, витрэктомия, косоглазие | AsiaKoz</title>
+  <meta name="description" content="AsiaKoz — офтальмологическая клиника в Алматы и Актау. Лазерная коррекция зрения, операция при катаракте, лечение глаукомы, витрэктомия и операции на сетчатке, хирургия косоглазия. Запись: Алматы +7 777 888 01 80, Актау +7 775 863 01 80." />
+  <link rel="canonical" href="https://asiakoz.com/" />
+  <meta property="og:site_name" content="AsiaKoz" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Глазная клиника Алматы и Актау — AsiaKoz" />
+  <meta property="og:description" content="Лазерная коррекция, катаракта, глаукома, витрэктомия, сетчатка, косоглазие. Два филиала: Алматы и Актау." />
+  <meta property="og:url" content="https://asiakoz.com/" />
+  <meta property="og:image" content="https://asiakoz.com/images/logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AsiaKoz — глазная клиника Алматы и Актау" />
+  <meta name="twitter:description" content="Лазерная коррекция, катаракта, витрэктомия, косоглазие. Запись в WhatsApp." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "AsiaKoz",
+    "url": "https://asiakoz.com/",
+    "logo": "https://asiakoz.com/images/logo.png",
+    "image": "https://asiakoz.com/images/clinic-1.png",
+    "description": "Офтальмологическая клиника. Лазерная коррекция зрения, катаракта, глаукома, витрэктомия, операции на сетчатке, хирургия косоглазия. Два филиала: Алматы и Актау.",
+    "medicalSpecialty": ["Ophthalmology"],
+    "telephone": ["+7 777 888 01 80", "+7 775 863 01 80"],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Алматы",
+        "streetAddress": "пр. Райымбека, 176а",
+        "addressCountry": "KZ"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Актау",
+        "streetAddress": "7а микрорайон, 11/3",
+        "addressCountry": "KZ"
+      }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/asiakoz.clinic/",
+      "https://2gis.kz/kk/almaty/firm/70000001081905733",
+      "https://2gis.kz/aktau/firm/70000001104276081"
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .logo-img { height: 44px; width: 44px; object-fit: contain; }
+    body { background: radial-gradient(circle at top left, #e0f2ff 0, transparent 50%), radial-gradient(circle at top right, #d1fae5 0, transparent 55%), var(--bg); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 32px;
+      padding: 32px 26px;
+      background: rgba(255,255,255,0.95);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-hover);
+      margin-bottom: 40px;
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(27,116,228,0.08);
+      color: #1d4ed8;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    .hero-kicker-dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; }
+    .hero-title { font-size: clamp(26px, 3vw, 34px); font-weight: 750; line-height: 1.15; margin-bottom: 10px; }
+    .hero-title span { background: linear-gradient(135deg, #1b74e4, #00b8d9); -webkit-background-clip: text; color: transparent; }
+    .hero-subtitle { font-size: 15px; color: var(--text-muted); margin-bottom: 18px; max-width: 520px; }
+    .hero-rating { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: rgba(15,23,42,0.04); font-size: 13px; margin-bottom: 18px; }
+    .star { color: #fbbf24; }
+    .hero-bullets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 22px; font-size: 13px; }
+    .hero-bullet { display: flex; gap: 8px; align-items: flex-start; }
+    .hero-bullet-icon { width: 20px; height: 20px; border-radius: 50%; background: rgba(27,116,228,0.12); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+    .hero-note { font-size: 12px; color: var(--text-muted); }
+    .hero-right-inner { max-width: 360px; margin-left: auto; }
+    .hero-photo { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 10px; }
+    .hero-photo img { width: 100%; height: auto; object-fit: cover; }
+    .hero-card {
+      background: linear-gradient(145deg, #dbeafe 0%, #f9fafb 50%, #fff 100%);
+      border-radius: 18px;
+      padding: 16px 14px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .hero-card-header { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-bottom: 8px; }
+    .hero-doctor { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+    .hero-doctor-avatar { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background: #e5e7eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hero-doctor-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-doctor-name { font-size: 13px; font-weight: 600; }
+    .hero-doctor-spec { font-size: 11px; color: var(--text-muted); }
+    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(16,185,129,0.1); color: #047857; padding: 3px 8px; border-radius: 999px; font-size: 10px; margin-bottom: 6px; }
+    .hero-list { font-size: 11px; color: #111827; margin-left: 14px; margin-bottom: 8px; }
+    .hero-list li { margin-bottom: 3px; }
+    .hero-badge { position: absolute; right: 10px; bottom: 8px; background: #0f172a; color: #e5e7eb; padding: 4px 8px; border-radius: 999px; font-size: 10px; display: inline-flex; align-items: center; gap: 6px; }
+    .hero-doctor-carousel-wrap { position: relative; min-height: 240px; }
+    .hero-doctor-carousel-slides { position: relative; min-height: 240px; }
+    .hero-doctor-carousel-slides .hero-card { position: absolute; top: 0; left: 0; right: 0; opacity: 0; transition: opacity 0.5s ease; pointer-events: none; z-index: 0; }
+    .hero-doctor-carousel-slides .hero-card.active { opacity: 1; z-index: 1; pointer-events: auto; }
+    .hero-doctor-carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; flex-shrink: 0; }
+    .hero-doctor-carousel-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(15,23,42,0.25); cursor: pointer; transition: background 0.2s; }
+    .hero-doctor-carousel-dots span.active { background: var(--accent); }
+    .hero-doctor-carousel-slides a.hero-card { color: inherit; display: block; text-decoration: none; }
+    .doctor-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .doctor-avatar { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background: #e5e7eb; flex-shrink: 0; }
+    .doctor-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .doctor-role { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+    .doctor-exp { font-size: 12px; color: #4b5563; margin-top: 4px; }
+    .doctors-carousel-wrap { position: relative; margin: 0 -4px; }
+    .doctors-carousel { display: flex; align-items: stretch; gap: 20px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 8px 4px 20px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .doctors-carousel::-webkit-scrollbar { height: 8px; }
+    .doctors-carousel::-webkit-scrollbar-track { background: rgba(15,23,42,0.06); border-radius: 4px; }
+    .doctors-carousel::-webkit-scrollbar-thumb { background: rgba(27,116,228,0.35); border-radius: 4px; }
+    .doctors-carousel .doctor-card { flex: 0 0 280px; width: 280px; min-width: 280px; height: 500px; scroll-snap-align: start; }
+    .doctors-carousel .doctor-photo-wrap { flex: 0 0 auto; height: 280px; aspect-ratio: auto; flex-shrink: 0; overflow: hidden; }
+    .doctors-carousel .doctor-body { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 16px; }
+    .doctors-carousel .doctor-meta { margin-bottom: 6px; }
+    .doctors-carousel .doctor-role { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.35; }
+    .doctors-carousel .doctor-name { font-size: 16px; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.25; }
+    .doctors-carousel .doctor-tags { flex-wrap: wrap; gap: 6px; margin-bottom: 10px; min-height: 56px; align-content: flex-start; overflow: hidden; }
+    .doctors-carousel .doctor-tag { font-size: 11px; padding: 3px 8px; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+    .doctors-carousel .doctor-action { margin-top: auto; padding-top: 4px; flex-shrink: 0; }
+    .doctors-carousel .doctor-desc { -webkit-line-clamp: 3; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+    .doctor-card { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid rgba(15,23,42,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; height: 100%; }
+    .doctor-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .doctor-card .doctor-card-inner { display: flex; flex-direction: column; height: 100%; color: inherit; }
+    .doctor-card a.doctor-card-inner:hover { color: inherit; }
+    .doctor-photo-wrap { width: 100%; aspect-ratio: 3/4; background: linear-gradient(145deg, #e0f2fe, #f0fdf4); overflow: hidden; flex-shrink: 0; }
+    .doctor-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .doctor-body { padding: 20px; flex: 1; display: flex; flex-direction: column; min-height: 0; }
+    .doctor-meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+    .doctor-card .doctor-role { font-size: 12px; color: var(--accent); font-weight: 600; margin-bottom: 0; }
+    .doctor-name { font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.25; }
+    .doctor-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .doctor-tags { display: flex; flex-wrap: wrap; gap: 6px; font-size: 11px; margin-bottom: 12px; }
+    .doctor-tag { background: var(--accent-soft); color: #1d4ed8; padding: 4px 10px; border-radius: 999px; }
+    .doctor-action { margin-top: auto; font-size: 13px; font-weight: 600; }
+    .doctor-action .link { color: var(--accent); }
+    .doctor-action .link:hover { text-decoration: underline; }
+    .branch-badge-almaty { font-size: 11px; font-weight: 600; color: #047857; background: rgba(16,185,129,0.12); padding: 4px 8px; border-radius: 999px; flex-shrink: 0; }
+    .branch-badge-aktau { font-size: 11px; font-weight: 600; color: #0d9488; background: rgba(20,184,166,0.12); padding: 4px 8px; border-radius: 999px; flex-shrink: 0; }
+    .doctors-carousel-nav { display: flex; justify-content: center; gap: 12px; margin-top: 16px; }
+    .doctors-carousel-nav button { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--accent); background: #fff; color: var(--accent); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; line-height: 1; transition: background 0.2s, color 0.2s; }
+    .doctors-carousel-nav button:hover { background: var(--accent); color: #fff; }
+    .doctors-carousel-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .doctors-carousel-nav button svg { width: 20px; height: 20px; }
+    @media (max-width: 640px) { .doctors-carousel .doctor-card { flex: 0 0 260px; width: 260px; min-width: 260px; height: 480px; } .doctors-carousel .doctor-photo-wrap { height: 260px; } .doctors-carousel .doctor-tags { min-height: 52px; } }
+    .service-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .service-icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(27,116,228,0.08); display: flex; align-items: center; justify-content: center; font-size: 16px; color: #1d4ed8; flex-shrink: 0; }
+    .review-quote { font-size: 13px; color: #374151; margin-bottom: 6px; }
+    .review-name { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+    .reviews-link { margin-top: 10px; font-size: 13px; }
+    .link { color: var(--accent); }
+    .link:hover { text-decoration: underline; }
+    .treatment-steps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0; position: relative; margin-bottom: 28px; }
+    .treatment-step { flex: 1; min-width: 160px; max-width: 200px; text-align: center; position: relative; padding: 0 8px; }
+    .treatment-step::after { content: ''; position: absolute; top: 28px; left: calc(50% + 28px); width: calc(100% - 56px); height: 2px; background: linear-gradient(90deg, rgba(27,116,228,0.4), rgba(27,116,228,0.15)); z-index: 0; }
+    .treatment-step:last-child::after { display: none; }
+    .treatment-step-num { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #1b74e4, #0ea5e9); color: #fff; font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; position: relative; z-index: 1; box-shadow: 0 4px 14px rgba(27,116,228,0.35); }
+    .treatment-step-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; line-height: 1.3; }
+    .treatment-step-text { font-size: 13px; color: var(--text-muted); line-height: 1.5; margin: 0; }
+    .treatment-steps-cta { text-align: center; margin-top: 8px; }
+    .treatment-steps-cta .btn { margin-top: 4px; }
+    @media (max-width: 900px) {
+      .treatment-steps { flex-direction: column; align-items: stretch; gap: 24px; }
+      .treatment-step { max-width: none; min-width: 0; display: flex; align-items: flex-start; gap: 18px; text-align: left; padding: 0; }
+      .treatment-step::after { display: none; }
+      .treatment-step-num { margin: 0; flex-shrink: 0; width: 48px; height: 48px; font-size: 18px; }
+      .treatment-step-body { flex: 1; min-width: 0; }
+      .treatment-step-title { margin-bottom: 4px; }
+    }
+    @media (max-width: 480px) {
+      .treatment-step-num { width: 44px; height: 44px; font-size: 16px; }
+    }
+    .contacts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
+    .contact-card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 18px;
+      border: 1px solid rgba(15,23,42,0.06);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 0;
+    }
+    .contact-card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .contact-card h3 { font-size: 16px; font-weight: 750; margin: 0; }
+    .contact-badge { font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 4px 10px; border-radius: 999px; background: rgba(27,116,228,0.10); color: #1d4ed8; }
+    .contact-line { font-size: 14px; color: #475569; margin: 0; line-height: 1.5; }
+    .contact-line b { color: var(--text); }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; font-size: 13px; }
+    .contact-links a { color: var(--accent); font-weight: 600; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+    .contact-actions .btn { flex: 1; min-width: 180px; justify-content: center; }
+    .contacts-note {
+      grid-column: 1 / -1;
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+      background: rgba(15,23,42,0.03);
+      border: 1px solid rgba(15,23,42,0.06);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+    /* legacy контакты styles removed from markup (kept harmless if referenced elsewhere) */
+    .branch-block { margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px solid rgba(15,23,42,0.06); }
+    .branch-block:last-of-type { border-bottom: none; margin-bottom: 12px; }
+    .branch-name { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .branch-address { font-size: 14px; color: #475569; margin-bottom: 4px; }
+    .branch-phone { font-size: 14px; margin-bottom: 4px; }
+    .branch-more { font-size: 13px; margin-bottom: 0; }
+    .contacts-common { font-size: 14px; margin-top: 10px; margin-bottom: 4px; }
+    .map-placeholder { border-radius: 18px; border: 1px dashed rgba(148,163,184,0.8); background: linear-gradient(135deg, #dbeafe, #e0f2fe); padding: 18px; font-size: 13px; text-align: center; color: #1e293b; }
+    .header-nav { display: flex; gap: 24px; }
+    .header-nav a { font-size: 14px; font-weight: 500; color: var(--text); }
+    .header-nav a:hover { color: var(--accent); }
+    .header-schedule { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+    .btn-header { padding: 10px 20px; font-size: 14px; }
+    .stats-block { background: linear-gradient(135deg, #1b74e4 0%, #2563eb 100%); border-radius: var(--radius); padding: 28px 24px; margin-bottom: 40px; box-shadow: 0 16px 48px rgba(37,99,235,0.25); }
+    .stats-inner { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; max-width: 900px; margin: 0 auto; }
+    .stat-item { text-align: center; color: #fff; }
+    .stat-num { display: block; font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+    .stat-label { font-size: 12px; opacity: 0.9; }
+    .ratings-section .ratings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .rating-card { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; background: var(--card); border-radius: var(--radius-sm); padding: 20px 22px; box-shadow: var(--shadow); border: 1px solid rgba(15,23,42,0.06); transition: transform 0.15s ease, box-shadow 0.15s ease; color: inherit; }
+    .rating-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+    .rating-value { font-size: 28px; font-weight: 750; color: var(--accent); }
+    .rating-max { font-size: 14px; color: var(--text-muted); }
+    .rating-source { width: 100%; font-size: 13px; color: var(--text-muted); }
+    .rating-link { font-size: 13px; color: var(--accent); font-weight: 500; }
+    .promo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .promo-card { background: linear-gradient(145deg, #ecfdf5 0%, #f0fdf4 100%); border: 1px solid rgba(16,185,129,0.2); border-radius: var(--radius-sm); padding: 20px 22px; position: relative; }
+    .promo-badge { position: absolute; top: 12px; right: 14px; font-size: 11px; font-weight: 600; color: #047857; background: rgba(16,185,129,0.15); padding: 4px 10px; border-radius: 999px; }
+    .promo-title { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .promo-text { font-size: 14px; color: #475569; line-height: 1.55; margin: 0; }
+    .site-footer { margin-top: 56px; padding-top: 36px; border-top: 1px solid rgba(15,23,42,0.08); }
+    .footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 32px; margin-bottom: 28px; }
+    .footer-col a { display: block; font-size: 14px; color: var(--text-muted); margin-bottom: 6px; }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .footer-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; max-width: 280px; margin-top: 8px; }
+    .footer-bottom { padding-top: 20px; border-top: 1px solid rgba(15,23,42,0.06); }
+    .footer-disclaimer { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.5; }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right-inner { order: -1; max-width: 100%; }
+      .contacts { grid-template-columns: 1fr; }
+      .header { flex-wrap: wrap; }
+      .header-nav { order: 3; width: 100%; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .ratings-section .ratings-grid { grid-template-columns: 1fr; }
+      .promo-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 24px 20px; margin-bottom: 28px; }
+      .hero-title { font-size: clamp(22px, 5vw, 28px); }
+      .hero-subtitle { font-size: 14px; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; min-height: 48px; }
+      .doctors-carousel-wrap { margin-left: -12px; margin-right: -12px; }
+      .doctors-carousel { padding-left: 12px; padding-right: 12px; }
+      .doctors-carousel-nav button { min-width: 44px; min-height: 44px; }
+    }
+    @media (max-width: 600px) {
+      .hero-bullets { grid-template-columns: 1fr; }
+      .hero { padding: 20px 16px; margin-bottom: 24px; }
+      .hero-title { font-size: 20px; }
+      .hero-kicker { font-size: 11px; }
+      .stats-inner { grid-template-columns: 1fr; }
+      .stats-block { padding: 20px 16px; }
+      .stat-num { font-size: 24px; }
+      .header-right { flex-wrap: wrap; }
+      .header-schedule { display: none; }
+      .grid-2 { gap: 14px; }
+      .contacts { gap: 14px; }
+      .contact-actions .btn { min-width: 0; width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 16px 12px; }
+      .hero-title { font-size: 18px; line-height: 1.25; }
+      .hero-subtitle { font-size: 13px; }
+      .hero-bullet { font-size: 12px; }
+      .hero-card { padding: 12px 14px; }
+      .hero-doctor-name { font-size: 12px; }
+      .hero-list, .hero-tag { font-size: 11px; }
+      .doctors-carousel .doctor-card { flex: 0 0 240px; width: 240px; min-width: 240px; height: 460px; }
+      .doctors-carousel .doctor-photo-wrap { height: 240px; }
+      .doctors-carousel .doctor-body { padding: 12px; }
+      .doctors-carousel .doctor-tags { min-height: 48px; }
+      .doctor-name { font-size: 16px; }
+      .doctor-desc { font-size: 12px; }
+      .section-title { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="logo" title="AsiaKoz — офтальмологическая клиника">
+        <img src="images/logo.png" alt="AsiaKoz" class="logo-img" />
+      </a>
+      <nav class="header-nav">
+        <a href="uslugi.html">Услуги</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <div class="header-right">
+        <div class="header-schedule">Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</div>
+        <div class="header-contacts">
+          <div class="header-phone"><a href="tel:+77778880180">+7 777 888 01 80</a></div>
+          <a href="https://wa.me/77008880180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <a href="https://wa.me/77008880180" target="_blank" rel="noopener" class="btn btn-header">Записаться</a>
+        <a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="header-instagram" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-kicker"><span class="hero-kicker-dot"></span> Два филиала: Алматы и Ақтау</div>
+        <h1 class="hero-title"><span>Международный уровень</span> операций на глазах — в клинике AsiaKoz</h1>
+        <p class="hero-subtitle">Современное лечение и сложные операции на глазах. Турецкие хирурги с опытом 15+ лет. Приём в Алматы и в Актау.</p>
+        <div class="hero-rating"><span class="star">★</span> 4.8 по 2GIS • 900+ отзывов пациентов</div>
+        <div class="hero-bullets">
+          <div class="hero-bullet"><div class="hero-bullet-icon">TR</div><div>Ведущие офтальмохирурги из Турции, сложные случаи</div></div>
+          <div class="hero-bullet"><div class="hero-bullet-icon">👁</div><div>Катаракта, лазерная коррекция, глаукома, сетчатка</div></div>
+          <div class="hero-bullet"><div class="hero-bullet-icon">👁</div><div>Чек-ап глаз: полная диагностика и приём врача</div></div>
+          <div class="hero-bullet"><div class="hero-bullet-icon">%</div><div>Рассрочка без переплат до 6–12 месяцев</div></div>
+        </div>
+        <div class="hero-actions">
+          <a href="https://wa.me/77008880180" target="_blank" rel="noopener" class="btn">Записаться в WhatsApp</a>
+          <a href="tel:+77778880180" class="btn btn-outline">Заказать звонок</a>
+        </div>
+        <div class="hero-note">Ответим в течение 5 минут и подберём удобное время приёма.</div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-right-inner">
+          <div class="hero-photo">
+            <img src="images/clinic-1.png" alt="AsiaKoz — түрік көз клиникасы, здание клиники в Алматы" />
+          </div>
+          <div class="hero-doctor-carousel-wrap">
+            <div class="hero-doctor-carousel-slides" id="heroDoctorSlides">
+              <a href="doctor-orel.html" class="hero-card">
+                <div class="hero-card-header"><span>Ваш хирург</span><span>Алматы • AsiaKoz</span></div>
+                <div class="hero-doctor">
+                  <div class="hero-doctor-avatar"><img src="images/doctor-orel.png" alt="Орел Талип" /></div>
+                  <div>
+                    <div class="hero-doctor-name">Орел Талип</div>
+                    <div class="hero-doctor-spec">Витреоретинолог, филиал Алматы</div>
+                  </div>
+                </div>
+                <div class="hero-tag">✓ Косоглазие, витрэктомия, сетчатка</div>
+                <ul class="hero-list">
+                  <li>Витрэктомия, косоглазие, сетчатка</li>
+                  <li>20+ лет опыта, 15 000+ операций</li>
+                  <li>Индивидуальный план лечения</li>
+                </ul>
+                <div class="hero-badge"><span class="star">★</span> 4.8 • 900+ отзывов</div>
+              </a>
+              <a href="doctor-erol.html" class="hero-card">
+                <div class="hero-card-header"><span>Ваш хирург</span><span>Ақтау • AsiaKoz</span></div>
+                <div class="hero-doctor">
+                  <div class="hero-doctor-avatar"><img src="images/doctor-erol.png" alt="Эрол Джошкун" /></div>
+                  <div>
+                    <div class="hero-doctor-name">Эрол Джошкун</div>
+                    <div class="hero-doctor-spec">Офтальмолог-хирург, филиал Актау</div>
+                  </div>
+                </div>
+                <div class="hero-tag">✓ Косоглазие, катаракта, глаукома</div>
+                <ul class="hero-list">
+                  <li>Катаракта, глаукома, косоглазие</li>
+                  <li>15+ лет опыта, клиники Турции</li>
+                  <li>Приём в Актау</li>
+                </ul>
+                <div class="hero-badge"><span class="star">★</span> 4.9 • 2ГИС Актау</div>
+              </a>
+              <a href="doctor-gargoni.html" class="hero-card">
+                <div class="hero-card-header"><span>Ваш хирург</span><span>Алматы • AsiaKoz</span></div>
+                <div class="hero-doctor">
+                  <div class="hero-doctor-avatar"><img src="images/doctor-gargoni.png" alt="Мухаммед Гаргони" /></div>
+                  <div>
+                    <div class="hero-doctor-name">Мухаммед Гаргони</div>
+                    <div class="hero-doctor-spec">Турецкий офтальмохирург, Алматы</div>
+                  </div>
+                </div>
+                <div class="hero-tag">✓ LASIK, катаракта, глаукома</div>
+                <ul class="hero-list">
+                  <li>Лазерная коррекция, премиум-линзы</li>
+                  <li>35+ лет опыта, 2000+ операций катаракты</li>
+                  <li>Комбинированные операции</li>
+                </ul>
+                <div class="hero-badge"><span class="star">★</span> 4.8 • 900+ отзывов</div>
+              </a>
+              <a href="doctor-aliya.html" class="hero-card">
+                <div class="hero-card-header"><span>Ваш хирург</span><span>Алматы • AsiaKoz</span></div>
+                <div class="hero-doctor">
+                  <div class="hero-doctor-avatar"><img src="images/doctor-aliya.png" alt="Алия Усманова" /></div>
+                  <div>
+                    <div class="hero-doctor-name">Алия Усманова</div>
+                    <div class="hero-doctor-spec">Ведущий офтальмохирург, высшая категория</div>
+                  </div>
+                </div>
+                <div class="hero-tag">✓ Лазерная коррекция, катаракта, блефаропластика</div>
+                <ul class="hero-list">
+                  <li>18 лет стажа, стажировки Вена, Россия</li>
+                  <li>ОКТ, витрэктомия, глаукома</li>
+                  <li>Приём: каз., рус., англ.</li>
+                </ul>
+                <div class="hero-badge"><span class="star">★</span> 4.8 • 900+ отзывов</div>
+              </a>
+            </div>
+            <div class="hero-doctor-carousel-dots" id="heroDoctorDots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-block">
+      <div class="stats-inner">
+        <div class="stat-item"><span class="stat-num">12 000+</span><span class="stat-label">операций</span></div>
+        <div class="stat-item"><span class="stat-num">900+</span><span class="stat-label">отзывов пациентов</span></div>
+        <div class="stat-item"><span class="stat-num">4.8</span><span class="stat-label">рейтинг 2ГИС Алматы</span></div>
+        <div class="stat-item"><span class="stat-num">4.9</span><span class="stat-label">рейтинг 2ГИС Актау</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">филиала</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Наши филиалы</h2>
+      <p class="section-subtitle">AsiaKoz — два филиала. Эрол Джошкун принимает в Актау, остальные врачи — в Алматы.</p>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Филиал Алматы</div>
+          <p class="card-text" style="margin-bottom:4px;"><strong>Адрес:</strong> пр. Райымбека, 176а</p>
+          <p class="card-text" style="margin-bottom:10px;"><strong>Запись:</strong> <a href="tel:+77778880180" class="link">+7 777 888 01 80</a></p>
+          <p class="card-text" style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">Врачи:</p>
+          <ul style="margin:0 0 0 18px; font-size:14px; color:#475569;">
+            <li>Орел Талип — витреоретинолог, косоглазие, сетчатка</li>
+            <li>Мухаммед Гаргони — турецкий офтальмохирург, лазерная коррекция, катаракта, глаукома</li>
+            <li>Нұрмұхамед Мусай — главный врач</li>
+            <li>Алия Усманова — ведущий офтальмохирург высшей категории, лазерная коррекция, катаракта, глаукома</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Филиал Ақтау</div>
+          <p class="card-text" style="margin-bottom:4px;"><strong>Адрес:</strong> 7а микрорайон, 11/3, Актау</p>
+          <p class="card-text" style="margin-bottom:8px;"><strong>Запись:</strong> <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
+          <p class="card-text" style="font-size:13px; margin-bottom:8px;"><a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener" class="link">2ГИС: карта и отзывы (4.9)</a></p>
+          <p class="card-text" style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">Врачи:</p>
+          <ul style="margin:0 0 0 18px; font-size:14px; color:#475569;">
+            <li>Эрол Джошкун — офтальмолог-хирург, косоглазие, катаракта, глаукома</li>
+            <li>Мадина Тореханова — врач-офтальмолог, взрослые и дети</li>
+            <li>Назгуль Сагындыкова — врач-офтальмолог, взрослые и дети, лазерная хирургия, оптометрия</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ratings-section">
+      <h2 class="section-title">Рейтинги независимых сервисов</h2>
+      <p class="section-subtitle">Оценки и отзывы пациентов на площадках 2ГИС.</p>
+      <div class="ratings-grid">
+        <a href="https://2gis.kz/kk/almaty/firm/70000001081905733" target="_blank" rel="noopener" class="rating-card">
+          <span class="rating-value">4.8</span>
+          <span class="rating-max">/ 5</span>
+          <span class="rating-source">2ГИС Алматы</span>
+          <span class="rating-link">Отзывы →</span>
+        </a>
+        <a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener" class="rating-card">
+          <span class="rating-value">4.9</span>
+          <span class="rating-max">/ 5</span>
+          <span class="rating-source">2ГИС Актау</span>
+          <span class="rating-link">Отзывы →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section promo-section">
+      <h2 class="section-title">Акции и преимущества</h2>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <span class="promo-badge">Услуга</span>
+          <div class="promo-title">Чек-ап глаз: полная диагностика и приём</div>
+          <p class="promo-text">Полная диагностика глаз и приём врача-офтальмолога. По результатам — заключение, рекомендации и план лечения.</p>
+        </div>
+        <div class="promo-card">
+          <span class="promo-badge">Удобно</span>
+          <div class="promo-title">Рассрочка без переплат</div>
+          <p class="promo-text">Оплата лечения в рассрочку до 6–12 месяцев. Без процентов и скрытых комиссий.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Почему пациенты выбирают AsiaKoz</h2>
+      <p class="section-subtitle">Международный опыт, сложные операции и подтверждённые результаты в Алматы.</p>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Турецкие офтальмохирурги</div>
+          <p class="card-text">Ведущие хирурги из Турции со стажем более 15 лет. Работали в крупных клиниках, теперь принимают пациентов в Алматы.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Сложные операции на глазах</div>
+          <p class="card-text">Берёмся за сложные случаи: катаракта, глаукома, патология сетчатки, лазерная коррекция. Современные методики и оборудование.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Подтверждённое качество</div>
+          <p class="card-text">4.8 по 2GIS и более 900 реальных отзывов. Сопровождаем на всех этапах лечения.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Комфорт и прозрачность</div>
+          <p class="card-text">Подробно объясняем каждый шаг, честно говорим о показаниях и рисках.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Наши врачи</h2>
+      <p class="section-subtitle">Эрол Джошкун — в филиале Актау. Остальные врачи — в филиале Алматы.</p>
+      <div class="doctors-carousel-wrap">
+        <div class="doctors-carousel" id="doctorsCarousel" aria-label="Карусель врачей">
+        <article class="doctor-card">
+          <a href="doctor-orel.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-orel.png" alt="Орел Талип" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Витреоретинолог, офтальмолог-хирург</span><span class="branch-badge-almaty">Алматы</span></div>
+              <h2 class="doctor-name">Орел Талип</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Косоглазие</span><span class="doctor-tag">Витрэктомия</span><span class="doctor-tag">Сетчатка</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-gargoni.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-gargoni.png" alt="Мухаммед Гаргони" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Турецкий офтальмохирург</span><span class="branch-badge-almaty">Алматы</span></div>
+              <h2 class="doctor-name">Мухаммед Гаргони</h2>
+              <div class="doctor-tags"><span class="doctor-tag">LASIK / Smile</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Глаукома</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-erol.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-erol.png" alt="Эрол Джошкун" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Офтальмолог-хирург</span><span class="branch-badge-aktau">Ақтау</span></div>
+              <h2 class="doctor-name">Эрол Джошкун</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Косоглазие</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Глаукома</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-nazgul.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-nazgul.png" alt="Назгуль Сагындыкова" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Врач-офтальмолог</span><span class="branch-badge-aktau">Ақтау</span></div>
+              <h2 class="doctor-name">Назгуль Сагындыкова</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Взрослые и дети</span><span class="doctor-tag">Лазерная хирургия</span><span class="doctor-tag">Оптометрия</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-musay.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-musay.png" alt="Нұрмұхамед Мусай" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Главный врач</span><span class="branch-badge-almaty">Алматы</span></div>
+              <h2 class="doctor-name">Нұрмұхамед Мусай</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Главный врач</span><span class="doctor-tag">Сложные случаи</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-aliya.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-aliya.png" alt="Алия Ганимуратовна Усманова" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Ведущий офтальмохирург высшей категории</span><span class="branch-badge-almaty">Алматы</span></div>
+              <h2 class="doctor-name">Алия Усманова</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Лазерная коррекция</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Блефаропластика</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="doctor-card">
+          <a href="doctor-madina.html" class="doctor-card-inner">
+            <div class="doctor-photo-wrap"><img src="images/doctor-madina.png" alt="Мадина Тореханова" /></div>
+            <div class="doctor-body">
+              <div class="doctor-meta"><span class="doctor-role">Врач-офтальмолог</span><span class="branch-badge-aktau">Ақтау</span></div>
+              <h2 class="doctor-name">Мадина Тореханова</h2>
+              <div class="doctor-tags"><span class="doctor-tag">Взрослые и дети</span><span class="doctor-tag">Диагностика</span></div>
+              <div class="doctor-action"><span class="link">Подробнее →</span></div>
+            </div>
+          </a>
+        </article>
+        </div>
+        <div class="doctors-carousel-nav" aria-hidden="true">
+          <button type="button" id="doctorsCarouselPrev" title="Назад">&larr;</button>
+          <button type="button" id="doctorsCarouselNext" title="Вперёд">&rarr;</button>
+        </div>
+      </div>
+      <p style="margin-top:20px;"><a href="doctors.html" class="link">Все врачи →</a></p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Заболевания и операции</h2>
+      <p class="section-subtitle">Комплексное лечение глазных заболеваний для взрослых и детей. <a href="lazer-almaty.html" class="link">Лазерная коррекция в Алматы</a>, <a href="katarakta-almaty.html" class="link">катаракта</a>, <a href="vitrektomiya-almaty.html" class="link">витрэктомия</a>, <a href="glaukoma-almaty.html" class="link">глаукома</a>, <a href="kosoglazie-aktau.html" class="link">косоглазие в Актау</a>.</p>
+      <div class="grid-3">
+        <a href="uslugi.html#katarakta" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">👁‍🗨</div><div class="card-title">Катаракта</div></div>
+            <p class="card-text">Удаление помутневшего хрусталика, современная линза. 15–20 минут.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#lazer" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">✨</div><div class="card-title">Лазерная коррекция</div></div>
+            <p class="card-text">Избавиться от очков и линз. Полная диагностика перед операцией.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#glaukoma" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">📉</div><div class="card-title">Глаукома</div></div>
+            <p class="card-text">Диагностика и лечение, контроль давления.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#setchatka" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">🧬</div><div class="card-title">Сетчатка</div></div>
+            <p class="card-text">Диагностика и лечение заболеваний сетчатки.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#kosoglazie" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">🎯</div><div class="card-title">Косоглазие</div></div>
+            <p class="card-text">Хирургия и консервативное лечение косоглазия.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#deti" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">👦</div><div class="card-title">Детская офтальмология</div></div>
+            <p class="card-text">Профилактические осмотры и лечение у детей.</p>
+          </div>
+        </a>
+        <a href="uslugi.html#diagnostika" class="card-link">
+          <div class="card">
+            <div class="service-head"><div class="service-icon">🔍</div><div class="card-title">Диагностика</div></div>
+            <p class="card-text">Полное обследование глаз, план лечения.</p>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:14px;"><a href="uslugi.html" class="link">Подробнее: все услуги и что мы делаем по каждой →</a></p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Отзывы пациентов</h2>
+      <p class="section-subtitle">Более 900 отзывов и оценка 4.8.</p>
+      <div class="grid-3">
+        <div class="card"><p class="review-quote">«Долго не решалась на операцию по катаракте. В AsiaKoz всё объяснили, операция прошла быстро и без боли. Спасибо врачу из Турции!»</p><div class="review-name">– Пациентка, 63 года</div></div>
+        <div class="card"><p class="review-quote">«Делал лазерную коррекцию. На следующий день уже видел без очков. Отношение персонала внимательное.»</p><div class="review-name">– Пациент, 29 лет</div></div>
+        <div class="card"><p class="review-quote">«Привели маму с глаукомой. Врачи объяснили варианты лечения. Давление под контролем.»</p><div class="review-name">– Дочь пациентки</div></div>
+      </div>
+      <div class="reviews-link"><a href="https://2gis.kz/kk/almaty/firm/70000001081905733" target="_blank" rel="noopener" class="link">Все отзывы в 2GIS →</a></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Как проходит лечение</h2>
+      <p class="section-subtitle">Пять шагов от записи до результата. Понятно и без лишней суеты.</p>
+      <div class="treatment-steps">
+        <div class="treatment-step">
+          <div class="treatment-step-num">1</div>
+          <div class="treatment-step-body">
+            <div class="treatment-step-title">Заявка</div>
+            <p class="treatment-step-text">Оставьте заявку и выберите удобное время. Администратор уточнит детали и подскажет следующий шаг.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step-num">2</div>
+          <div class="treatment-step-body">
+            <div class="treatment-step-title">Консультация</div>
+            <p class="treatment-step-text">Приезжаете в клинику. Врач выслушивает жалобы, уточняет цель визита и планирует обследование.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step-num">3</div>
+          <div class="treatment-step-body">
+            <div class="treatment-step-title">Диагностика</div>
+            <p class="treatment-step-text">Полное обследование глаз: острота зрения, давление, осмотр структур глаза. Обычно 30–60 минут.</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step-num">4</div>
+          <div class="treatment-step-body">
+            <div class="treatment-step-title">Лечение</div>
+            <p class="treatment-step-text">По результатам — план лечения, назначения или запись на операцию (катаракта, лазер, глаукома и др.).</p>
+          </div>
+        </div>
+        <div class="treatment-step">
+          <div class="treatment-step-num">5</div>
+          <div class="treatment-step-body">
+            <div class="treatment-step-title">Контроль</div>
+            <p class="treatment-step-text">После операции — капли и контрольные осмотры. Остаёмся на связи, отвечаем на вопросы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="treatment-steps-cta">
+        <p style="font-size:14px; color:var(--text-muted); margin:0;">Запись — в разделе <a href="#contacts" class="link">Контакты</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <p class="section-subtitle">Выберите филиал и нажмите «WhatsApp» или «Позвонить» — мы быстро запишем на чек-ап и приём.</p>
+      <div class="contacts">
+        <div class="contact-card">
+          <div class="contact-card-head">
+            <h3>Филиал Алматы</h3>
+            <span class="contact-badge">Алматы</span>
+          </div>
+          <p class="contact-line"><b>Адрес:</b> пр. Райымбека, 176а</p>
+          <p class="contact-line"><b>Телефон:</b> <a href="tel:+77778880180" class="link">+7 777 888 01 80</a></p>
+          <div class="contact-links">
+            <a href="https://wa.me/77008880180" target="_blank" rel="noopener">WhatsApp: +7 700 888 01 80</a>
+            <a href="https://2gis.kz/kk/almaty/firm/70000001081905733" target="_blank" rel="noopener">2ГИС Алматы (4.8)</a>
+          </div>
+          <div class="contact-actions">
+            <a class="btn" href="https://wa.me/77008880180" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+77778880180">Позвонить</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-head">
+            <h3>Филиал Ақтау</h3>
+            <span class="contact-badge" style="background: rgba(20,184,166,0.12); color:#0d9488;">Ақтау</span>
+          </div>
+          <p class="contact-line"><b>Адрес:</b> 7а микрорайон, 11/3, Актау</p>
+          <p class="contact-line"><b>Телефон:</b> <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
+          <div class="contact-links">
+            <a href="https://wa.me/77758630180" target="_blank" rel="noopener">WhatsApp: +7 775 863 01 80</a>
+            <a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener">2ГИС Актау (4.9)</a>
+          </div>
+          <div class="contact-actions">
+            <a class="btn" href="https://wa.me/77758630180" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+77758630180">Позвонить</a>
+          </div>
+        </div>
+
+        <div class="contacts-note"><b>График работы:</b> Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной. Если не знаете, в какой филиал записаться — напишите в WhatsApp, мы подскажем.</div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="footer-logo"><img src="images/logo.png" alt="AsiaKoz" class="logo-img" style="height:36px;" /></div>
+          <p class="footer-desc">Офтальмологическая клиника. Турецкие хирурги, современное оборудование. Алматы и Актау.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Навигация</div>
+          <a href="uslugi.html">Услуги</a>
+          <a href="doctors.html">Врачи</a>
+          <a href="index.html#contacts">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Контакты</div>
+          <p>Алматы: <a href="tel:+77778880180" class="link">+7 777 888 01 80</a> · <a href="https://wa.me/77008880180" target="_blank" rel="noopener" class="link">WhatsApp +7 700 888 01 80</a></p>
+          <p>Актау: <a href="tel:+77758630180" class="link">+7 775 863 01 80</a> · <a href="https://wa.me/77758630180" target="_blank" rel="noopener" class="link">WhatsApp +7 775 863 01 80</a></p>
+          <p>Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">Имеются противопоказания. Необходима консультация специалиста. Информация на сайте не является публичной офертой.</p>
+        <p class="footer-copy">© AsiaKoz. Алматы, Актау.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    (function() {
+      var el = document.getElementById('doctorsCarousel');
+      var prev = document.getElementById('doctorsCarouselPrev');
+      var next = document.getElementById('doctorsCarouselNext');
+      if (!el || !prev || !next) return;
+      var step = 300;
+      function updateButtons() {
+        prev.disabled = el.scrollLeft <= 0;
+        next.disabled = el.scrollLeft >= el.scrollWidth - el.clientWidth - 2;
+      }
+      prev.addEventListener('click', function() { el.scrollBy({ left: -step, behavior: 'smooth' }); });
+      next.addEventListener('click', function() { el.scrollBy({ left: step, behavior: 'smooth' }); });
+      el.addEventListener('scroll', updateButtons);
+      updateButtons();
+    })();
+
+    (function() {
+      var slides = document.getElementById('heroDoctorSlides');
+      var dotsEl = document.getElementById('heroDoctorDots');
+      if (!slides || !dotsEl) return;
+      var cards = slides.querySelectorAll('.hero-card');
+      var n = cards.length;
+      if (n === 0) return;
+      for (var i = 0; i < n; i++) {
+        var dot = document.createElement('span');
+        dot.setAttribute('aria-label', 'Врач ' + (i + 1));
+        (function(idx) {
+          dot.addEventListener('click', function() { go(idx); });
+        })(i);
+        dotsEl.appendChild(dot);
+      }
+      var dots = dotsEl.querySelectorAll('span');
+      var index = 0;
+      function go(i) {
+        index = (i + n) % n;
+        for (var j = 0; j < n; j++) {
+          cards[j].classList.toggle('active', j === index);
+          dots[j].classList.toggle('active', j === index);
+        }
+      }
+      go(0);
+      var timer = setInterval(function() {
+        go(index + 1);
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
