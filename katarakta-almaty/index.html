@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Операция катаракты в Алматы — ФЭК + ИОЛ | AsiaKoz</title>
-  <meta name="description" content="Катаракта Алматы: диагностика, подбор линзы (ИОЛ), операция ФЭК в клинике AsiaKoz. Запись: +7 777 888 01 80 (WhatsApp +7 700 888 01 80). Адрес: пр. Райымбека, 176а." />
+  <meta name="description" content="Операция катаракты в Алматы (ФЭК) с подбором интраокулярной линзы (ИОЛ): монофокальная, мультифокальная, торическая при астигматизме. Турецкие офтальмохирурги. Запись: +7 777 888 01 80 (WhatsApp +7 700 888 01 80)." />
   <link rel="canonical" href="https://asiakoz.com/katarakta-almaty/" />
   <meta property="og:site_name" content="AsiaKoz" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Операция катаракты в Алматы — AsiaKoz" />
-  <meta property="og:description" content="Факоэмульсификация (ФЭК) + установка ИОЛ. Запись в Алматы." />
+  <meta property="og:description" content="Факоэмульсификация (ФЭК) + установка ИОЛ. Подбор линзы: моно/мультифокальная, торическая. Запись в Алматы." />
   <meta property="og:url" content="https://asiakoz.com/katarakta-almaty/" />
   <meta property="og:image" content="https://asiakoz.com/images/clinic-1.png" />
   <meta name="twitter:card" content="summary" />
@@ -23,21 +23,46 @@
     "isPartOf": { "@type": "WebSite", "name": "AsiaKoz", "url": "https://asiakoz.com/" }
   }
   </script>
-  <link rel="icon" type="image/png" href="../images/logo.png" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/css/style.css" />
   <style>
     .seo-hero { background: rgba(255,255,255,0.95); border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow-hover); margin-bottom: 26px; }
     .seo-hero h1 { font-size: clamp(24px, 3.2vw, 32px); line-height: 1.15; margin-bottom: 10px; }
     .seo-hero p { color: var(--text-muted); line-height: 1.6; margin: 0 0 14px; }
+    .pill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+    .pill { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 14px; box-shadow: var(--shadow); }
+    .pill b { display: block; margin-bottom: 6px; }
+    .iols-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .iol-card { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 16px; box-shadow: var(--shadow); }
+    .iol-card h3 { font-size: 16px; margin: 0 0 6px; }
+    .iol-card p { margin: 0; color: var(--text-muted); line-height: 1.6; font-size: 14px; }
+    .lp-doctors { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .lp-doctor-card { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid rgba(15,23,42,0.06); transition: box-shadow 0.2s, transform 0.2s; }
+    .lp-doctor-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+    .lp-doctor-photo { aspect-ratio: 1/1; overflow: hidden; }
+    .lp-doctor-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .lp-doctor-body { padding: 18px 18px 20px; }
+    .lp-doctor-body h3 { font-size: 18px; margin-bottom: 6px; }
+    .lp-doctor-body .spec { font-size: 14px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.5; }
+    .lp-doctor-body .city { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .step-card { background: var(--card); border-radius: var(--radius-sm); padding: 18px 16px; border: 1px solid rgba(15,23,42,0.06); box-shadow: var(--shadow); }
+    .step-num { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, #1b74e4, #0ea5e9); color: #fff; font-weight: 800; font-size: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+    .step-card h3 { font-size: 15px; margin: 0 0 6px; }
+    .step-card p { margin: 0; color: var(--text-muted); font-size: 13px; line-height: 1.55; }
     .faq details { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
     .faq summary { cursor: pointer; font-weight: 700; }
     .faq p { margin: 10px 0 0; color: #475569; line-height: 1.65; }
+    @media (max-width: 900px) { .pill-grid, .iols-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <a href="/" class="logo" title="AsiaKoz"><img src="../images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
+      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/uslugi/">Услуги</a><a href="/doctors/">Врачи</a><a href="/#contacts">Контакты</a>
       </nav>
@@ -54,7 +79,12 @@
 
     <section class="seo-hero">
       <h1>Операция катаракты в Алматы</h1>
-      <p>Если вы ищете «катаракта Алматы» или «операция катаракты Алматы», в AsiaKoz вы проходите диагностику, подбор интраокулярной линзы (ИОЛ) и лечение по современным стандартам.</p>
+      <p>Если вы ищете «катаракта Алматы» или «операция катаракты Алматы» — в AsiaKoz вы проходите диагностику, точные измерения и подбор интраокулярной линзы (ИОЛ). Операции выполняют офтальмохирурги с опытом работы в клиниках Турции.</p>
+      <div class="pill-grid" aria-label="Преимущества">
+        <div class="pill"><b>Современная ФЭК</b><span>Факоэмульсификация через микроразрез, обычно 15–20 минут.</span></div>
+        <div class="pill"><b>Подбор ИОЛ</b><span>Монофокальная, мультифокальная, торическая — по вашим задачам.</span></div>
+        <div class="pill"><b>Сопровождение</b><span>Капли и контрольные осмотры по графику. Мы на связи.</span></div>
+      </div>
       <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
         <a class="btn" href="https://wa.me/77008880180" target="_blank" rel="noopener">Записаться в WhatsApp (Алматы)</a>
         <a class="btn btn-outline" href="tel:+77778880180">Позвонить</a>
@@ -70,7 +100,67 @@
         <div class="card"><div class="card-title">Операция ФЭК</div><p class="card-text">Через микроразрез удаляем помутневший хрусталик и имплантируем ИОЛ.</p></div>
         <div class="card"><div class="card-title">Контроль</div><p class="card-text">Послеоперационные капли и контрольные осмотры по графику.</p></div>
       </div>
-      <p style="margin-top:14px;"><a href="/uslugi/#katarakta" class="link">Подробно про катаракту на странице услуг →</a></p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Линзы (ИОЛ): какие бывают</h2>
+      <p class="section-subtitle">Выбор линзы — ключевой этап. Мы делаем измерения и обсуждаем, какой результат вы хотите получить (вдали/вблизи, очки, астигматизм).</p>
+      <div class="iols-grid">
+        <div class="iol-card">
+          <h3>Монофокальная ИОЛ</h3>
+          <p>Чёткое зрение на одном расстоянии (обычно вдаль). Для чтения могут понадобиться очки — врач объяснит варианты.</p>
+        </div>
+        <div class="iol-card">
+          <h3>Мультифокальная ИОЛ</h3>
+          <p>Цель — комфортнее видеть на разных расстояниях. Подходит не всем — решение после диагностики и обсуждения ожиданий.</p>
+        </div>
+        <div class="iol-card">
+          <h3>Торическая ИОЛ</h3>
+          <p>При астигматизме помогает одновременно решить катаракту и скорректировать цилиндр (по показаниям).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Как проходит операция при катаракте</h2>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-num">1</div><h3>Диагностика</h3><p>Измерения для расчёта ИОЛ и оценка противопоказаний.</p></div>
+        <div class="step-card"><div class="step-num">2</div><h3>Выбор ИОЛ</h3><p>Обсуждаем задачи и подбираем тип линзы под ваш образ жизни.</p></div>
+        <div class="step-card"><div class="step-num">3</div><h3>ФЭК</h3><p>Удаляем помутневший хрусталик и ставим ИОЛ через микроразрез.</p></div>
+        <div class="step-card"><div class="step-num">4</div><h3>В тот же день</h3><p>Чаще без длительной госпитализации — по решению врача.</p></div>
+        <div class="step-card"><div class="step-num">5</div><h3>Контроль</h3><p>Капли и контрольные осмотры по графику.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Наши врачи</h2>
+      <p class="section-subtitle">Нажмите на врача, чтобы посмотреть подробности и специализацию.</p>
+      <div class="lp-doctors">
+        <a href="/doctor-gargoni/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-gargoni.png" alt="Мухаммед Гаргони" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Мухаммед Гаргони</h3>
+            <p class="spec">Турецкий офтальмохирург, катаракта, премиум‑линзы, глаукома</p>
+            <p class="city">Алматы</p>
+          </div>
+        </a>
+        <a href="/doctor-aliya/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-aliya.png" alt="Алия Усманова" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Алия Усманова</h3>
+            <p class="spec">Ведущий офтальмохирург, катаракта, лазерная коррекция, консультации</p>
+            <p class="city">Алматы</p>
+          </div>
+        </a>
+        <a href="/doctor-erol/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-erol.png" alt="Эрол Джошкун" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Эрол Джошкун</h3>
+            <p class="spec">Офтальмолог‑хирург, катаракта, глаукома</p>
+            <p class="city">Актау</p>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="section faq">
@@ -87,6 +177,10 @@
         <summary>Как выбрать линзу (ИОЛ)?</summary>
         <p>Линза подбирается после измерений и обсуждения целей: комфорт на расстоянии/вблизи, наличие астигматизма и т.д.</p>
       </details>
+      <details>
+        <summary>Можно ли подобрать линзу «без очков»?</summary>
+        <p>Иногда это возможно с премиум‑линзами (например, мультифокальными), но подходит не всем. Врач объяснит варианты после диагностики.</p>
+      </details>
     </section>
 
     <div class="cta-block">
@@ -98,7 +192,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-col">
-          <div class="footer-logo"><img src="../images/logo.png" alt="AsiaKoz" class="logo-img" style="height:36px;" /></div>
+          <div class="footer-logo"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" style="height:36px;" /></div>
           <p class="footer-desc">Офтальмологическая клиника. Алматы и Актау.</p>
         </div>
         <div class="footer-col">
@@ -125,7 +219,8 @@
     "mainEntity":[
       {"@type":"Question","name":"Сколько длится операция при катаракте?","acceptedAnswer":{"@type":"Answer","text":"Часто около 15–20 минут, обычно под местной анестезией. Точное время зависит от клинической ситуации."}},
       {"@type":"Question","name":"Нужна ли госпитализация?","acceptedAnswer":{"@type":"Answer","text":"В большинстве случаев операция выполняется без длительной госпитализации, с последующим наблюдением."}},
-      {"@type":"Question","name":"Как выбрать линзу (ИОЛ)?","acceptedAnswer":{"@type":"Answer","text":"Линза подбирается после измерений и обсуждения целей: комфорт на расстоянии/вблизи, наличие астигматизма и т.д."}}
+      {"@type":"Question","name":"Как выбрать линзу (ИОЛ)?","acceptedAnswer":{"@type":"Answer","text":"Линза подбирается после измерений и обсуждения целей: комфорт на расстоянии/вблизи, наличие астигматизма и т.д."}},
+      {"@type":"Question","name":"Можно ли подобрать линзу без очков?","acceptedAnswer":{"@type":"Answer","text":"Иногда это возможно с премиум‑линзами (например, мультифокальными), но подходит не всем. Врач объяснит варианты после диагностики."}}
     ]
   }
   </script>
