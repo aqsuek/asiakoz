@@ -1,0 +1,11 @@
+{
+  "name": "AsiaKoz",
+  "short_name": "AsiaKoz",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#1b74e4",
+  "icons": [
+    {"src": "/images/logo.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
