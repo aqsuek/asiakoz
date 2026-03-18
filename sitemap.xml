@@ -36,6 +36,11 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/icl-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
