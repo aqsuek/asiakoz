@@ -42,6 +42,22 @@
     .seo-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
     .seo-point { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 14px; box-shadow: var(--shadow); }
     .seo-point b { display: block; margin-bottom: 6px; }
+    .lp-doctors { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .lp-doctor-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15,23,42,0.06);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .lp-doctor-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+    .lp-doctor-photo { aspect-ratio: 1/1; overflow: hidden; }
+    .lp-doctor-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .lp-doctor-body { padding: 18px 18px 20px; }
+    .lp-doctor-body h3 { font-size: 18px; margin-bottom: 6px; }
+    .lp-doctor-body .spec { font-size: 14px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.5; }
+    .lp-doctor-body .city { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; }
     .faq { margin-top: 18px; }
     .faq details { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
     .faq summary { cursor: pointer; font-weight: 700; }
@@ -87,6 +103,37 @@
         <a class="btn btn-outline" href="tel:+77778880180">Позвонить</a>
       </div>
       <p style="margin-top:12px;"><b>Адрес:</b> Алматы, пр. Райымбека, 176а</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Наши врачи</h2>
+      <p class="section-subtitle">Подберём хирурга и методику после диагностики. Нажмите на врача, чтобы посмотреть подробности.</p>
+      <div class="lp-doctors">
+        <a href="/doctor-gargoni/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-gargoni.png" alt="Мухаммед Гаргони" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Мухаммед Гаргони</h3>
+            <p class="spec">Турецкий офтальмохирург, лазерная коррекция (LASIK/Femto), катаракта, глаукома</p>
+            <p class="city">Алматы</p>
+          </div>
+        </a>
+        <a href="/doctor-orel/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-orel.png" alt="Орел Талип" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Орел Талип</h3>
+            <p class="spec">Витреоретинолог, сложные случаи, косоглазие, сетчатка, витрэктомия</p>
+            <p class="city">Алматы</p>
+          </div>
+        </a>
+        <a href="/doctor-erol/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-erol.png" alt="Эрол Джошкун" loading="lazy" /></div>
+          <div class="lp-doctor-body">
+            <h3>Эрол Джошкун</h3>
+            <p class="spec">Офтальмолог-хирург, катаракта, глаукома, косоглазие</p>
+            <p class="city">Актау</p>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="section">
