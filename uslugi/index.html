@@ -66,20 +66,23 @@
       margin-bottom: 18px;
     }
     .service-visual {
-      width: 100%;
+      width: 280px;
+      aspect-ratio: 1 / 1;
       border-radius: 14px;
       overflow: hidden;
-      margin: 10px 0 14px;
       border: 1px solid rgba(15, 23, 42, 0.08);
       box-shadow: var(--shadow);
       background: #f1f5f9;
     }
     .service-visual img {
       width: 100%;
-      height: 280px;
+      height: 100%;
       object-fit: cover;
       display: block;
     }
+    .service-block--visual::after { content: ""; display: table; clear: both; }
+    .service-block--visual .service-visual { float: right; margin: 6px 0 12px 18px; }
+    .service-block--visual.alt .service-visual { float: left; margin: 6px 18px 12px 0; }
     .service-block h3 {
       font-size: 14px;
       font-weight: 600;
@@ -159,7 +162,13 @@
       .service-block { padding: 20px 18px; margin-bottom: 18px; }
       .service-block h2 { font-size: 18px; flex-wrap: wrap; }
       .service-intro { font-size: 14px; }
-      .service-visual img { height: 220px; }
+      .service-block--visual .service-visual,
+      .service-block--visual.alt .service-visual {
+        float: none;
+        width: 100%;
+        max-width: 420px;
+        margin: 10px 0 14px;
+      }
       .cta-block { padding: 24px 20px; margin-top: 32px; }
       .cta-block h2 { font-size: 18px; }
       .route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -173,7 +182,6 @@
       .cta-block { padding: 20px 16px; }
       .cta-block h2 { font-size: 17px; }
       .cta-block p { font-size: 13px; }
-      .service-visual img { height: 180px; }
       .route-grid { grid-template-columns: 1fr; }
     }
     .nav-services a { color: var(--accent); font-size: 14px; }
@@ -273,7 +281,7 @@
       </div>
 
       <!-- 1. Катаракта -->
-      <div id="katarakta" class="service-block">
+      <div id="katarakta" class="service-block service-block--visual">
         <h2><span class="icon">👁‍🗨</span> Операция при катаракте</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=1400&q=80" alt="Диагностика и операция при катаракте в AsiaKoz" loading="lazy" /></div>
         <p class="service-intro">Катаракта — помутнение хрусталика глаза, из-за которого снижается острота зрения. Единственный эффективный метод лечения — хирургическое удаление помутневшего хрусталика и установка искусственной интраокулярной линзы.</p>
@@ -292,7 +300,7 @@
       </div>
 
       <!-- 2. Лазерная коррекция -->
-      <div id="lazer" class="service-block">
+      <div id="lazer" class="service-block service-block--visual alt">
         <h2><span class="icon">✨</span> Лазерная коррекция зрения</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=80" alt="Лазерная коррекция зрения в клинике AsiaKoz" loading="lazy" /></div>
         <p class="service-intro">Позволяет избавиться от очков и контактных линз при близорукости, дальнозоркости и астигматизме. Мы используем современные методики (LASIK, Femto-LASIK, LASEK и др.) и подбираем наиболее безопасный вариант после диагностики.</p>
@@ -317,7 +325,7 @@
       </div>
 
       <!-- 3. Глаукома -->
-      <div id="glaukoma" class="service-block">
+      <div id="glaukoma" class="service-block service-block--visual">
         <h2><span class="icon">📉</span> Диагностика и лечение глаукомы</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1400&q=80" alt="Диагностика и лечение глаукомы" loading="lazy" /></div>
         <p class="service-intro">Глаукома — хроническое заболевание, при котором повышается внутриглазное давление и повреждается зрительный нерв. Без лечения приводит к необратимой потере зрения. Важно выявить болезнь на ранней стадии и держать давление под контролем.</p>
@@ -336,7 +344,7 @@
       </div>
 
       <!-- 4. Сетчатка -->
-      <div id="setchatka" class="service-block">
+      <div id="setchatka" class="service-block service-block--visual alt">
         <h2><span class="icon">🧬</span> Заболевания сетчатки и витреоретинальная хирургия</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1400&q=80" alt="Лечение заболеваний сетчатки и витрэктомия" loading="lazy" /></div>
         <p class="service-intro">Сетчатка — внутренняя оболочка глаза, отвечающая за восприятие изображения. Её заболевания (отслойка, разрывы, диабетическая ретинопатия, макулярные разрывы и др.) требуют точной диагностики и нередко хирургического лечения.</p>
@@ -355,7 +363,7 @@
       </div>
 
       <!-- 5. Косоглазие -->
-      <div id="kosoglazie" class="service-block">
+      <div id="kosoglazie" class="service-block service-block--visual">
         <h2><span class="icon">🎯</span> Хирургия косоглазия</h2>
         <div class="service-visual"><img src="/images/doctor-erol.png" alt="Хирургия косоглазия у детей и взрослых" loading="lazy" /></div>
         <p class="service-intro">Косоглазие — нарушение положения глаз, при котором зрительные оси не сходятся на рассматриваемом предмете. Встречается у детей и взрослых. Лечение может быть консервативным (очки, окклюзия, упражнения) или хирургическим.</p>
@@ -374,7 +382,7 @@
       </div>
 
       <!-- 6. Детская офтальмология -->
-      <div id="deti" class="service-block">
+      <div id="deti" class="service-block service-block--visual alt">
         <h2><span class="icon">👦</span> Детская офтальмология</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80" alt="Детская офтальмология и осмотр детей" loading="lazy" /></div>
         <p class="service-intro">Зрение ребёнка формируется в первые годы жизни. Своевременная диагностика и лечение косоглазия, амблиопии, нарушений рефракции и других заболеваний помогают избежать стойкого снижения зрения.</p>
@@ -396,7 +404,7 @@
       </div>
 
       <!-- 7. Диагностика -->
-      <div id="diagnostika" class="service-block">
+      <div id="diagnostika" class="service-block service-block--visual">
         <h2><span class="icon">🔍</span> Полная диагностика глаз</h2>
         <div class="service-visual"><img src="https://images.unsplash.com/photo-1516549655669-df5a773fbc19?auto=format&fit=crop&w=1400&q=80" alt="Полная диагностика зрения в AsiaKoz" loading="lazy" /></div>
         <p class="service-intro">Комплексное обследование нужно для постановки диагноза, подбора очков или контактных линз, определения показаний к операции и контроля течения заболеваний.</p>
