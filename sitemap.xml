@@ -156,16 +156,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/kosoglazie-u-detey-almaty/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/kosoglazie-u-vzroslyh-almaty/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://asiakoz.com/lazer-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -227,11 +217,6 @@
   </url>
   <url>
     <loc>https://asiakoz.com/operatsiya-glaukoma-almaty/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/operatsiya-kosoglazie-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
