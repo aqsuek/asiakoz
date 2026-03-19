@@ -83,6 +83,32 @@
     .service-block--visual::after { content: ""; display: table; clear: both; }
     .service-block--visual .service-visual { float: right; margin: 6px 0 12px 18px; }
     .service-block--visual.alt .service-visual { float: left; margin: 6px 18px 12px 0; }
+    .service-visual-ba {
+      width: 320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 8px;
+      background: #fff;
+    }
+    .service-visual-ba .ba-item {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    .service-visual-ba .ba-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .service-visual-ba .ba-item span {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f172a;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 999px;
+      padding: 3px 8px;
+    }
     .service-block h3 {
       font-size: 14px;
       font-weight: 600;
@@ -169,6 +195,7 @@
         max-width: 420px;
         margin: 10px 0 14px;
       }
+      .service-visual-ba { width: 100%; max-width: 420px; }
       .cta-block { padding: 24px 20px; margin-top: 32px; }
       .cta-block h2 { font-size: 18px; }
       .route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -365,7 +392,16 @@
       <!-- 5. Косоглазие -->
       <div id="kosoglazie" class="service-block service-block--visual">
         <h2><span class="icon">🎯</span> Хирургия косоглазия</h2>
-        <div class="service-visual"><img src="/images/doctor-erol.png" alt="Хирургия косоглазия у детей и взрослых" loading="lazy" /></div>
+        <div class="service-visual service-visual-ba">
+          <div class="ba-item">
+            <span>До</span>
+            <img src="/images/clinic-1.png" alt="До лечения косоглазия: первичная диагностика" loading="lazy" />
+          </div>
+          <div class="ba-item">
+            <span>После</span>
+            <img src="/images/doctor-erol.png" alt="После лечения косоглазия: контроль и результат" loading="lazy" />
+          </div>
+        </div>
         <p class="service-intro">Косоглазие — нарушение положения глаз, при котором зрительные оси не сходятся на рассматриваемом предмете. Встречается у детей и взрослых. Лечение может быть консервативным (очки, окклюзия, упражнения) или хирургическим.</p>
         <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
           <a class="link" href="/kosoglazie/">Лечение косоглазия (подробно) →</a> · <a class="link" href="/kosoglazie-aktau/">Актау →</a>
