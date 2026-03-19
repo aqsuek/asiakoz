@@ -221,6 +221,21 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/smile-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/femto-lasik-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/prk-lasek-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
