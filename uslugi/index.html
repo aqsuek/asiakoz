@@ -102,12 +102,51 @@
     .cta-block .btn { background: #fff; color: #1b74e4; }
     .cta-block .btn:hover { background: #f8fafc; }
     .nav-services { margin-bottom: 28px; }
+    .route-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .route-card {
+      background: #fff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 14px;
+      padding: 14px 12px;
+      box-shadow: var(--shadow);
+    }
+    .route-card h3 {
+      font-size: 15px;
+      margin: 0 0 8px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .route-card p {
+      margin: 0 0 10px;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .route-links { display: flex; flex-wrap: wrap; gap: 6px; }
+    .route-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      background: rgba(27, 116, 228, 0.08);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .route-chip:hover { background: rgba(27, 116, 228, 0.16); color: var(--accent); }
     @media (max-width: 768px) {
       .service-block { padding: 20px 18px; margin-bottom: 18px; }
       .service-block h2 { font-size: 18px; flex-wrap: wrap; }
       .service-intro { font-size: 14px; }
       .cta-block { padding: 24px 20px; margin-top: 32px; }
       .cta-block h2 { font-size: 18px; }
+      .route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 480px) {
       .service-block { padding: 16px 14px; margin-bottom: 16px; }
@@ -118,6 +157,7 @@
       .cta-block { padding: 20px 16px; }
       .cta-block h2 { font-size: 17px; }
       .cta-block p { font-size: 13px; }
+      .route-grid { grid-template-columns: 1fr; }
     }
     .nav-services a { color: var(--accent); font-size: 14px; }
     .nav-services a:hover { text-decoration: underline; }
@@ -170,24 +210,48 @@
 
       <div class="service-block" style="margin-top:0;">
         <h2><span class="icon">🧭</span> Алгоритм пациента</h2>
-        <p class="service-intro">Если не знаете, с чего начать, двигайтесь по простому маршруту ниже.</p>
-        <ul>
-          <li><b>Шаг 1 — цель обращения:</b> срочная жалоба, плановая диагностика или операция.</li>
-          <li><b>Шаг 2 — профильный раздел:</b> выберите направление из списка ниже по ситуации.</li>
-          <li><b>Шаг 3 — консультация врача:</b> подтвердим диагноз и объясним варианты лечения.</li>
-          <li><b>Шаг 4 — лечение и контроль:</b> выполняем план и ведем вас до стабильного результата.</li>
-        </ul>
-        <div class="service-meta" style="margin: 10px 0 8px; border-top: 0; padding-top: 0;">
-          <b>Срочные жалобы:</b> <a class="link" href="/vspyshki-v-glazah-almaty/">вспышки</a>, <a class="link" href="/mushki-pered-glazami-almaty/">мушки</a>, <a class="link" href="/pelena-pered-glazom-almaty/">пелена</a>, <a class="link" href="/rezkoe-uhudshenie-zreniya-almaty/">резкое ухудшение зрения</a>.
-        </div>
-        <div class="service-meta" style="margin: 0 0 8px; border-top: 0; padding-top: 0;">
-          <b>Диагностика:</b> <a class="link" href="/diagnostika-almaty/">чек-ап глаз</a>, <a class="link" href="/okt-glaz-almaty/">ОКТ глаза</a>, <a class="link" href="/osmotr-glaznogo-dna-almaty/">осмотр глазного дна</a>, <a class="link" href="/tonometriya-almaty/">тонометрия</a>.
-        </div>
-        <div class="service-meta" style="margin: 0 0 8px; border-top: 0; padding-top: 0;">
-          <b>Операции:</b> <a class="link" href="/katarakta-almaty/">катаракта</a>, <a class="link" href="/lazer-almaty/">лазерная коррекция</a>, <a class="link" href="/operatsiya-glaukoma-almaty/">операция глаукомы</a>, <a class="link" href="/operatsiya-kosoglazie-almaty/">операция косоглазия</a>, <a class="link" href="/vitrektomiya-almaty/">витрэктомия</a>.
-        </div>
-        <div class="service-meta" style="margin: 0; border-top: 0; padding-top: 0;">
-          <b>Детские направления:</b> <a class="link" href="/detskiy-oftalmolog-almaty/">детский офтальмолог</a>, <a class="link" href="/miopiya-u-detey-almaty/">миопия у детей</a>, <a class="link" href="/astigmatizm-u-detey-almaty/">астигматизм у детей</a>, <a class="link" href="/profosmotr-pered-shkoloy-almaty/">профосмотр перед школой</a>.
+        <p class="service-intro">Выберите ваш сценарий — откроется нужный раздел без лишнего чтения.</p>
+        <div class="route-grid">
+          <article class="route-card">
+            <h3>Срочно</h3>
+            <p>Вспышки, мушки, пелена, резкое ухудшение зрения.</p>
+            <div class="route-links">
+              <a class="route-chip" href="/vspyshki-v-glazah-almaty/">Вспышки</a>
+              <a class="route-chip" href="/mushki-pered-glazami-almaty/">Мушки</a>
+              <a class="route-chip" href="/pelena-pered-glazom-almaty/">Пелена</a>
+              <a class="route-chip" href="/rezkoe-uhudshenie-zreniya-almaty/">Резкое ухудшение</a>
+            </div>
+          </article>
+          <article class="route-card">
+            <h3>Диагностика</h3>
+            <p>Проверка зрения, ОКТ, глазное дно, давление.</p>
+            <div class="route-links">
+              <a class="route-chip" href="/diagnostika-almaty/">Чек-ап глаз</a>
+              <a class="route-chip" href="/okt-glaz-almaty/">ОКТ глаза</a>
+              <a class="route-chip" href="/osmotr-glaznogo-dna-almaty/">Глазное дно</a>
+              <a class="route-chip" href="/tonometriya-almaty/">Тонометрия</a>
+            </div>
+          </article>
+          <article class="route-card">
+            <h3>Операции</h3>
+            <p>Катаракта, лазерная коррекция, глаукома, косоглазие.</p>
+            <div class="route-links">
+              <a class="route-chip" href="/katarakta-almaty/">Катаракта</a>
+              <a class="route-chip" href="/lazer-almaty/">Лазер</a>
+              <a class="route-chip" href="/operatsiya-glaukoma-almaty/">Глаукома</a>
+              <a class="route-chip" href="/operatsiya-kosoglazie-almaty/">Косоглазие</a>
+            </div>
+          </article>
+          <article class="route-card">
+            <h3>Детям</h3>
+            <p>Детский офтальмолог, миопия, астигматизм, профосмотр.</p>
+            <div class="route-links">
+              <a class="route-chip" href="/detskiy-oftalmolog-almaty/">Детский офтальмолог</a>
+              <a class="route-chip" href="/miopiya-u-detey-almaty/">Миопия у детей</a>
+              <a class="route-chip" href="/astigmatizm-u-detey-almaty/">Астигматизм у детей</a>
+              <a class="route-chip" href="/profosmotr-pered-shkoloy-almaty/">Профосмотр</a>
+            </div>
+          </article>
         </div>
       </div>
 
