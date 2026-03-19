@@ -161,6 +161,21 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/vmd-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/operatsiya-glaukoma-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/gonioskopiya-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
