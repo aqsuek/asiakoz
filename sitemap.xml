@@ -116,6 +116,11 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/glaznaya-klinika-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/gonioskopiya-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -227,6 +232,11 @@
   </url>
   <url>
     <loc>https://asiakoz.com/otsloyka-setchatki-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/otzyvy-asiakoz-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
