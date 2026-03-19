@@ -176,6 +176,41 @@
     @media (max-width: 640px) { .doctors-carousel .doctor-card { flex: 0 0 260px; width: 260px; min-width: 260px; height: 480px; } .doctors-carousel .doctor-photo-wrap { height: 260px; } .doctors-carousel .doctor-tags { min-height: 52px; } }
     .service-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
     .service-icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(27,116,228,0.08); display: flex; align-items: center; justify-content: center; font-size: 16px; color: #1d4ed8; flex-shrink: 0; }
+    .patient-map {
+      background: rgba(255,255,255,0.95);
+      border-radius: var(--radius);
+      border: 1px solid rgba(15,23,42,0.06);
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
+    }
+    .patient-map-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .patient-step {
+      background: #fff;
+      border: 1px solid rgba(15,23,42,0.08);
+      border-radius: 14px;
+      padding: 14px 12px;
+      box-shadow: var(--shadow);
+    }
+    .patient-step b { display: block; margin-bottom: 6px; font-size: 13px; color: var(--text); }
+    .patient-step p { margin: 0; font-size: 13px; color: #475569; line-height: 1.5; }
+    .patient-step .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(27,116,228,0.1);
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
     .review-quote { font-size: 13px; color: #374151; margin-bottom: 6px; }
     .review-name { font-size: 12px; color: var(--text-muted); font-weight: 500; }
     .reviews-link { margin-top: 10px; font-size: 13px; }
@@ -197,9 +232,11 @@
       .treatment-step-num { margin: 0; flex-shrink: 0; width: 48px; height: 48px; font-size: 18px; }
       .treatment-step-body { flex: 1; min-width: 0; }
       .treatment-step-title { margin-bottom: 4px; }
+      .patient-map-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 480px) {
       .treatment-step-num { width: 44px; height: 44px; font-size: 16px; }
+      .patient-map-grid { grid-template-columns: 1fr; }
     }
     .contacts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
     .contact-card {
@@ -705,6 +742,35 @@
         <div class="card">
           <div class="card-title">Если нужен приём</div>
           <p class="card-text"><a class="link" href="/konsultatsiya-oftalmologa-almaty/">Консультация офтальмолога</a>, <a class="link" href="/detskiy-oftalmolog-almaty/">детский офтальмолог</a>, <a class="link" href="/diagnostika-almaty/">чек-ап и диагностика</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Карта пациента</h2>
+      <p class="section-subtitle">Понятный маршрут от первого обращения до результата.</p>
+      <div class="patient-map">
+        <div class="patient-map-grid">
+          <div class="patient-step">
+            <span class="num">1</span>
+            <b>Запрос</b>
+            <p>Выберите раздел: <a class="link" href="/diagnostika-almaty/">диагностика</a>, <a class="link" href="/katarakta-almaty/">операция</a> или срочный симптом.</p>
+          </div>
+          <div class="patient-step">
+            <span class="num">2</span>
+            <b>Обследование</b>
+            <p>На приеме врач определяет объем диагностики: ОКТ, давление, поля зрения, осмотр глазного дна.</p>
+          </div>
+          <div class="patient-step">
+            <span class="num">3</span>
+            <b>Решение</b>
+            <p>Получаете персональный план: терапия, лазер или операция с объяснением сроков и этапов.</p>
+          </div>
+          <div class="patient-step">
+            <span class="num">4</span>
+            <b>Сопровождение</b>
+            <p>После лечения проводим контрольные осмотры и остаемся на связи в WhatsApp.</p>
+          </div>
         </div>
       </div>
     </section>
