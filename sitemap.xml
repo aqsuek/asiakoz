@@ -236,6 +236,21 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/oftalmolog-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/oftalmohirurg-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/detskiy-oftalmolog-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
