@@ -32,6 +32,8 @@
     .seo-hero { background: rgba(255,255,255,0.95); border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow-hover); margin-bottom: 26px; }
     .seo-hero h1 { font-size: clamp(24px, 3.2vw, 32px); line-height: 1.15; margin-bottom: 10px; }
     .seo-hero p { color: var(--text-muted); line-height: 1.6; margin: 0 0 14px; }
+    .hero-visual { border-radius: 16px; overflow: hidden; margin: 10px 0 16px; border: 1px solid rgba(15,23,42,0.08); box-shadow: var(--shadow); }
+    .hero-visual img { width: 100%; height: 220px; object-fit: cover; display: block; }
     .pill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
     .pill { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 14px; box-shadow: var(--shadow); }
     .pill b { display: block; margin-bottom: 6px; }
@@ -56,7 +58,7 @@
     .faq details { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
     .faq summary { cursor: pointer; font-weight: 700; }
     .faq p { margin: 10px 0 0; color: #475569; line-height: 1.65; }
-    @media (max-width: 900px) { .pill-grid, .iols-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .pill-grid, .iols-grid { grid-template-columns: 1fr; } .hero-visual img { height: 180px; } }
   </style>
 </head>
 <body>
@@ -79,6 +81,7 @@
 
     <section class="seo-hero">
       <h1>Операция катаракты в Алматы</h1>
+      <div class="hero-visual"><img src="/images/doctor-gargoni.png" alt="Операция катаракты в клинике AsiaKoz" loading="lazy" /></div>
       <p>Если вы ищете «катаракта Алматы» или «операция катаракты Алматы» — в AsiaKoz вы проходите диагностику, точные измерения и подбор интраокулярной линзы (ИОЛ). Операции выполняют офтальмохирурги с опытом работы в клиниках Турции. Если зрение ухудшилось уже после операции, проверьте раздел: <a class="link" href="/vtorichnaya-katarakta-almaty/">вторичная катаракта (YAG-лазер)</a>. Также отдельно: <a class="link" href="/zamena-hrustalika-almaty/">замена хрусталика</a>.</p>
       <div class="pill-grid" aria-label="Преимущества">
         <div class="pill"><b>Современная ФЭК</b><span>Факоэмульсификация через микроразрез, обычно 15–20 минут.</span></div>
