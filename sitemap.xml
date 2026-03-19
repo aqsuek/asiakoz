@@ -116,6 +116,21 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/okt-glaz-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/lazernaya-koagulyatsiya-setchatki-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/intravitrealnye-inektsii-almaty/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
