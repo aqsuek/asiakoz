@@ -52,27 +52,6 @@
     });
   }
 
-  function attachConsentToWhatsAppButtons() {
-    var buttons = document.querySelectorAll('a.btn[href*="wa.me"], a.btn-header[href*="wa.me"]');
-    buttons.forEach(function (btn) {
-      if (btn.closest(".header")) return;
-      if (btn.closest("form")) return;
-      if (btn.dataset.consentBound === "1") return;
-      btn.dataset.consentBound = "1";
-      var row = createConsentRow();
-      row.classList.add("consent-row--inline");
-      btn.parentNode.insertBefore(row, btn);
-      btn.addEventListener("click", function (e) {
-        if (!row.querySelector(".consent-checkbox").checked) {
-          e.preventDefault();
-          alert("Перед переходом в WhatsApp подтвердите согласие на обработку персональных данных.");
-          return;
-        }
-        sendConsentLog("whatsapp_click", { page: location.pathname, target: btn.getAttribute("href") });
-      });
-    });
-  }
-
   function sendConsentLog(eventType, payload) {
     var body = {
       event: eventType,
@@ -144,7 +123,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     attachConsentToForms();
-    attachConsentToWhatsAppButtons();
     injectCookieBanner();
     enrichFooter();
   });
