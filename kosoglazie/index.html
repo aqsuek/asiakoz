@@ -753,16 +753,6 @@
       window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(text), '_blank');
       return false;
     }
-    var quickWhatsAppForm = document.getElementById('quickWhatsAppForm');
-    if (quickWhatsAppForm) {
-      quickWhatsAppForm.addEventListener('click', function(e) {
-        var consent = document.getElementById('consentProcessing');
-        if (!consent || !consent.checked) {
-          e.preventDefault();
-          alert('Перед переходом в WhatsApp подтвердите согласие на обработку персональных данных.');
-        }
-      });
-    }
   </script>
   <script src="/js/compliance.js"></script>
 </body>
