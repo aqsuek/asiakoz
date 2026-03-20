@@ -544,9 +544,13 @@
           <label for="msg">Опишите проблему подробнее</label>
           <textarea id="msg" name="msg" required placeholder="Например: как давно заметили, возраст пациента (если ребёнок), были ли обследования, что беспокоит. Чем подробнее — тем лучше мы сможем помочь."></textarea>
         </div>
+        <label class="consent-row" for="consentProcessing">
+          <input type="checkbox" id="consentProcessing" class="consent-checkbox" required />
+          <span class="consent-text">Я даю согласие на обработку моих персональных данных и принимаю условия <a href="/politika-konfidentsialnosti/" target="_blank" rel="noopener">Политики конфиденциальности</a></span>
+        </label>
         <div class="form-actions">
           <button type="submit" class="btn">Отправить заявку</button>
-          <a href="https://wa.me/77008880180?text=Здравствуйте!%20Хочу%20записаться%20на%20консультацию%20по%20косоглазию" target="_blank" rel="noopener" class="btn btn-outline">Сразу в WhatsApp (Алматы)</a>
+          <a id="quickWhatsAppForm" href="https://wa.me/77008880180?text=Здравствуйте!%20Хочу%20записаться%20на%20консультацию%20по%20косоглазию" target="_blank" rel="noopener" class="btn btn-outline">Сразу в WhatsApp (Алматы)</a>
         </div>
       </form>
     </section>
@@ -727,6 +731,11 @@
     }
     function sendToWhatsApp(e) {
       e.preventDefault();
+      var consent = document.getElementById('consentProcessing');
+      if (!consent || !consent.checked) {
+        alert('Для отправки заявки подтвердите согласие на обработку персональных данных.');
+        return false;
+      }
       var problem = document.getElementById('problem').value;
       if (problem === 'Другое') {
         var other = document.getElementById('problemOther').value.trim();
@@ -744,6 +753,17 @@
       window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(text), '_blank');
       return false;
     }
+    var quickWhatsAppForm = document.getElementById('quickWhatsAppForm');
+    if (quickWhatsAppForm) {
+      quickWhatsAppForm.addEventListener('click', function(e) {
+        var consent = document.getElementById('consentProcessing');
+        if (!consent || !consent.checked) {
+          e.preventDefault();
+          alert('Перед переходом в WhatsApp подтвердите согласие на обработку персональных данных.');
+        }
+      });
+    }
   </script>
+  <script src="/js/compliance.js"></script>
 </body>
 </html>
