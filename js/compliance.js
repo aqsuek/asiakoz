@@ -73,6 +73,60 @@
     }).catch(function () {});
   }
 
+  function pushDataLayer(eventName, payload) {
+    window.dataLayer = window.dataLayer || [];
+    var eventData = {
+      event: eventName,
+      page_path: location.pathname,
+      page_url: location.href
+    };
+    if (payload) {
+      Object.keys(payload).forEach(function (key) {
+        eventData[key] = payload[key];
+      });
+    }
+    window.dataLayer.push(eventData);
+  }
+
+  function attachAnalyticsEvents() {
+    document.addEventListener(
+      "submit",
+      function (e) {
+        var form = e.target;
+        if (!form || form.tagName !== "FORM") return;
+        var formId = form.id || "";
+        var formName = form.getAttribute("name") || "";
+        var formAction = form.getAttribute("action") || "";
+        pushDataLayer("form_submit", {
+          form_id: formId,
+          form_name: formName,
+          form_action: formAction
+        });
+      },
+      true
+    );
+
+    document.addEventListener("click", function (e) {
+      var link = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (!link) return;
+      var href = link.getAttribute("href") || "";
+
+      if (href.indexOf("wa.me") !== -1) {
+        pushDataLayer("whatsapp_click", {
+          link_url: href,
+          link_text: (link.textContent || "").trim()
+        });
+      }
+
+      if (href.indexOf("tel:") === 0) {
+        pushDataLayer("phone_click", {
+          phone_number: href.replace("tel:", ""),
+          link_text: (link.textContent || "").trim()
+        });
+      }
+    });
+  }
+
   function injectCookieBanner() {
     if (localStorage.getItem("asiakoz_cookie_accepted") === "1") return;
     var banner = document.createElement("div");
@@ -125,5 +179,6 @@
     attachConsentToForms();
     injectCookieBanner();
     enrichFooter();
+    attachAnalyticsEvents();
   });
 })();
