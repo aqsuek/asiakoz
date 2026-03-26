@@ -88,6 +88,24 @@
     window.dataLayer.push(eventData);
   }
 
+  // Google Ads conversion event helper
+  window.gtag_report_conversion = function (url) {
+    var callback = function () {
+      if (typeof url !== "undefined" && url) {
+        window.location = url;
+      }
+    };
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17817733574/XukTCNOB7Y8cEMaTlLBC",
+        event_callback: callback
+      });
+    } else {
+      callback();
+    }
+    return false;
+  };
+
   function attachAnalyticsEvents() {
     document.addEventListener(
       "submit",
@@ -102,6 +120,9 @@
           form_name: formName,
           form_action: formAction
         });
+        if (typeof window.gtag_report_conversion === "function") {
+          window.gtag_report_conversion();
+        }
       },
       true
     );
@@ -116,6 +137,9 @@
           link_url: href,
           link_text: (link.textContent || "").trim()
         });
+        if (typeof window.gtag_report_conversion === "function") {
+          window.gtag_report_conversion();
+        }
       }
 
       if (href.indexOf("tel:") === 0) {
@@ -123,6 +147,9 @@
           phone_number: href.replace("tel:", ""),
           link_text: (link.textContent || "").trim()
         });
+        if (typeof window.gtag_report_conversion === "function") {
+          window.gtag_report_conversion();
+        }
       }
     });
   }
