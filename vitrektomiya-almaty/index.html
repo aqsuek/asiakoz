@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Витрэктомия в Алматы — операции на сетчатке | AsiaKoz</title>
-  <meta name="description" content="Витрэктомия в Алматы: витреоретинальная хирургия при отслойке и разрывах сетчатки, диабетической ретинопатии, макулярных патологиях. Диагностика (в т.ч. ОКТ) и план лечения. Запись: +7 777 888 01 80 (WhatsApp +7 700 888 01 80)." />
+  <meta name="description" content="Витрэктомия в Алматы: витреоретинальная хирургия при отслойке и разрывах сетчатки, диабетической ретинопатии, макулярных патологиях. Видеоотзывы пациентов, диагностика (в т.ч. ОКТ) и план лечения. Запись: +7 777 888 01 80 (WhatsApp +7 700 888 01 80)." />
   <link rel="canonical" href="https://asiakoz.com/vitrektomiya-almaty/" />
   <meta property="og:site_name" content="AsiaKoz" />
   <meta property="og:type" content="website" />
@@ -68,7 +68,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq details { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
     .faq summary { cursor: pointer; font-weight: 700; }
     .faq p { margin: 10px 0 0; color: #475569; line-height: 1.65; }
-    @media (max-width: 900px) { .pill-grid { grid-template-columns: 1fr; } }
+    .videos-wrap { position: relative; margin: 0 -4px 8px; }
+    .videos-carousel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      padding: 12px 4px 24px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+    .videos-carousel::-webkit-scrollbar { height: 8px; }
+    .videos-carousel::-webkit-scrollbar-track { background: rgba(15,23,42,0.06); border-radius: 4px; }
+    .videos-carousel::-webkit-scrollbar-thumb { background: rgba(27,116,228,0.35); border-radius: 4px; }
+    .video-card {
+      flex: 0 0 min(260px, 75vw);
+      min-width: min(260px, 75vw);
+      scroll-snap-align: start;
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      aspect-ratio: 9/16;
+    }
+    .video-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 900px) {
+      .pill-grid { grid-template-columns: 1fr; }
+      .video-card { box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(15, 23, 42, 0.06); }
+      .videos-wrap { margin-left: -12px; margin-right: -12px; }
+      .videos-carousel { padding-left: 12px; padding-right: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -164,6 +195,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </a>
       </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Видеоотзывы пациентов</h2>
+      <p class="section-subtitle">Реальные истории людей после витреоретинальной хирургии и лечения патологий сетчатки. Ролики в формате вертикального видео (как в соцсетях).</p>
+      <div class="videos-wrap">
+        <div class="videos-carousel" aria-label="Видеоотзывы о витрэктомии">
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-1.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 1"></video></div>
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-2.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 2"></video></div>
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-3.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 3"></video></div>
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-4.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 4"></video></div>
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-5.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 5"></video></div>
+          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-6.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 6"></video></div>
+        </div>
+      </div>
+      <p style="margin-top:8px; font-size:14px; color:var(--text-muted);">Чтобы ролики открывались, загрузите MP4 в <code style="font-size:13px;">images/vitrektomiya-almaty/videos/</code> с именами <code style="font-size:13px;">video-1.mp4</code>…<code style="font-size:13px;">video-6.mp4</code> (лишние карточки можно удалить в разметке).</p>
+      <p style="margin-top:12px; font-size:14px;"><a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="link">Ещё отзывы и видео в Instagram AsiaKoz →</a> · <a href="/otzyvy-asiakoz-almaty/" class="link">Текстовые отзывы</a></p>
     </section>
 
     <section class="section faq">
