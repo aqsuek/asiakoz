@@ -235,15 +235,37 @@ a { color: inherit; text-decoration: none; }
 
 /* Footer */
 .site-footer { margin-top: 56px; padding-top: 36px; border-top: 1px solid rgba(15,23,42,0.08); }
-.footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 32px; margin-bottom: 28px; }
-.footer-col a { display: block; font-size: 14px; color: var(--text-muted); margin-bottom: 6px; }
-.footer-col a:hover { color: var(--accent); }
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+  align-items: start;
+}
+/* только прямые ссылки в колонке (навигация); внутри абзаца «Контакты» — в строку */
+.footer-col > a {
+  display: block;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.footer-col > a:hover { color: var(--accent); }
+.footer-col p a,
+.footer-col p .link {
+  display: inline;
+  margin-bottom: 0;
+}
+.footer-col p { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0 0 8px; }
 .footer-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
 .footer-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; max-width: 280px; margin-top: 8px; }
-.footer-bottom { padding-top: 20px; border-top: 1px solid rgba(15,23,42,0.06); }
-.footer-disclaimer { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.5; }
-.footer-copy { font-size: 12px; color: var(--text-muted); }
-.footer-legal-links, .footer-requisites { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.55; }
+/* первая колонка без заголовка — выравниваем с блоком «Навигация» / «Контакты» */
+@media (min-width: 901px) {
+  .footer-inner .footer-col:first-child { padding-top: calc(13px * 1.25 + 12px); }
+}
+.footer-bottom { padding-top: 20px; border-top: 1px solid rgba(15,23,42,0.06); padding-bottom: 8px; }
+.footer-disclaimer { font-size: 12px; color: #64748b; margin-bottom: 8px; line-height: 1.55; }
+.footer-copy { font-size: 13px; color: #64748b; }
+.footer-legal-links, .footer-requisites { font-size: 12px; color: #64748b; margin-bottom: 8px; line-height: 1.55; }
 .footer-legal-links a { display: inline; margin: 0; color: var(--accent); }
 .footer-requisites { max-width: 980px; }
 
@@ -302,6 +324,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr; }
+  .footer-inner .footer-col:first-child { padding-top: 0; }
 }
 @media (max-width: 600px) {
   .stats-inner { grid-template-columns: 1fr; }

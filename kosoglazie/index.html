@@ -55,6 +55,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" href="../images/logo.png" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
+    /* место под фиксированную кнопку WhatsApp, чтобы не перекрывать юр. строку футера */
+    body { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
     .lp-hero {
       background: linear-gradient(135deg, rgba(27,116,228,0.08) 0%, rgba(14,165,233,0.06) 100%);
       border-radius: var(--radius);
@@ -594,7 +596,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>Запишитесь на консультацию в AsiaKoz</h2>
       <p>Напишите в WhatsApp — подберем врача и удобное время.</p>
       <a href="https://wa.me/77008880180" target="_blank" rel="noopener" class="btn">Записаться в WhatsApp</a>
-    </div>
     </div>
 
     <a href="https://wa.me/77008880180?text=Здравствуйте!%20Хочу%20узнать%20о%20лечении%20косоглазия" class="sticky-whatsapp" target="_blank" rel="noopener">
