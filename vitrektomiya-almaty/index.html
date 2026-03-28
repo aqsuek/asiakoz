@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq details { background: var(--card); border: 1px solid rgba(15,23,42,0.06); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
     .faq summary { cursor: pointer; font-weight: 700; }
     .faq p { margin: 10px 0 0; color: #475569; line-height: 1.65; }
-    .videos-wrap { position: relative; margin: 0 -4px 8px; }
+    .videos-wrap { position: relative; margin: 0 -4px 44px; }
     .videos-carousel {
       display: flex;
       gap: 20px;
@@ -96,9 +96,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .video-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
     @media (max-width: 900px) {
       .pill-grid { grid-template-columns: 1fr; }
-      .video-card { box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(15, 23, 42, 0.06); }
-      .videos-wrap { margin-left: -12px; margin-right: -12px; }
-      .videos-carousel { padding-left: 12px; padding-right: 12px; }
+      .video-card {
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(15, 23, 42, 0.06);
+      }
     }
   </style>
 </head>
@@ -199,19 +199,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <section class="section">
       <h2 class="section-title">Видеоотзывы пациентов</h2>
-      <p class="section-subtitle">Реальные истории людей после витреоретинальной хирургии и лечения патологий сетчатки. Ролики в формате вертикального видео (как в соцсетях).</p>
+      <p style="margin-bottom:20px; color:var(--text-muted);">Наши пациенты делятся впечатлениями после операции. Радость, слёзы счастья и благодарность.</p>
       <div class="videos-wrap">
-        <div class="videos-carousel" aria-label="Видеоотзывы о витрэктомии">
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-1.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 1"></video></div>
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-2.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 2"></video></div>
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-3.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 3"></video></div>
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-4.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 4"></video></div>
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-5.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 5"></video></div>
-          <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-6.mp4" controls playsinline preload="metadata" poster="/images/clinic-1.png" title="Видеоотзыв 6"></video></div>
+        <div class="videos-carousel" id="videosCarousel" aria-label="Видеоотзывы">
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-1.mp4" controls playsinline preload="metadata"></video></div>
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-2.mp4" controls playsinline preload="metadata"></video></div>
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-3.mp4" controls playsinline preload="metadata"></video></div>
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-4.mp4" controls playsinline preload="metadata"></video></div>
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-5.mp4" controls playsinline preload="metadata"></video></div>
+          <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-6.mp4" controls playsinline preload="metadata"></video></div>
         </div>
       </div>
-      <p style="margin-top:8px; font-size:14px; color:var(--text-muted);">Чтобы ролики открывались, загрузите MP4 в <code style="font-size:13px;">images/vitrektomiya-almaty/videos/</code> с именами <code style="font-size:13px;">video-1.mp4</code>…<code style="font-size:13px;">video-6.mp4</code> (лишние карточки можно удалить в разметке).</p>
-      <p style="margin-top:12px; font-size:14px;"><a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="link">Ещё отзывы и видео в Instagram AsiaKoz →</a> · <a href="/otzyvy-asiakoz-almaty/" class="link">Текстовые отзывы</a></p>
+      <p style="margin-top:16px; font-size:14px;"><a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="link">Ещё видеоотзывы в нашем Instagram →</a></p>
     </section>
 
     <section class="section faq">
