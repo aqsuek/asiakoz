@@ -1,15 +1,6 @@
 (function () {
   "use strict";
 
-  var LEGAL = {
-    licenseNumber: "№ ________",
-    licenseDate: "__.__.____",
-    licenseAuthority: "____________________________",
-    legalEntity: "ТОО \"ASIA KOZ\"",
-    bin: "231040028960",
-    legalAddress: "050016, г. Алматы, Алмалинский район, пр. Райымбека, д. 176А"
-  };
-
   if (location.protocol === "http:" && location.hostname !== "localhost") {
     location.replace("https://" + location.host + location.pathname + location.search + location.hash);
     return;
@@ -180,25 +171,9 @@
       legal.innerHTML =
         '<a href="/politika-konfidentsialnosti/">Политика конфиденциальности</a> · ' +
         '<a href="/polzovatelskoe-soglashenie/">Пользовательское соглашение</a> · ' +
-        '<a href="/prices/">Прейскурант</a>';
-      var req = document.createElement("p");
-      req.className = "footer-requisites";
-      req.textContent =
-        "Лицензия: " +
-        LEGAL.licenseNumber +
-        " от " +
-        LEGAL.licenseDate +
-        ", выдана: " +
-        LEGAL.licenseAuthority +
-        ". " +
-        LEGAL.legalEntity +
-        ", БИН " +
-        LEGAL.bin +
-        ", юр. адрес: " +
-        LEGAL.legalAddress +
-        ".";
+        '<a href="/prices/">Прейскурант</a> · ' +
+        '<a href="/glaznaya-klinika-almaty/#rekvizity">Лицензия и реквизиты</a>';
       bottom.insertBefore(legal, bottom.firstChild);
-      bottom.insertBefore(req, bottom.firstChild.nextSibling);
     });
   }
 
