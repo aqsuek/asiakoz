@@ -74,8 +74,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="section">
       <h2 class="section-title">Видеоотзывы: витрэктомия</h2>
       <p style="margin-bottom:20px; color:var(--text-muted);">Пациенты после витреоретинальной хирургии и лечения патологий сетчатки. <a class="link" href="/vitrektomiya-almaty/">Страница направления →</a></p>
-      <div class="videos-wrap">
-        <div class="videos-carousel" aria-label="Видеоотзывы витрэктомия">
+      <div class="videos-wrap videos-wrap--with-nav">
+        <div class="videos-carousel" id="videosCarouselVitre" aria-label="Видеоотзывы витрэктомия">
           <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-1.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-2.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-3.mp4" controls playsinline preload="metadata"></video></div>
@@ -88,20 +88,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-10.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/vitrektomiya-almaty/videos/video-11.mp4" controls playsinline preload="metadata"></video></div>
         </div>
+        <div class="video-carousel-nav">
+          <button type="button" class="video-carousel-prev" title="Назад" aria-label="Предыдущее видео">&larr;</button>
+          <div class="video-carousel-dots" aria-hidden="true"></div>
+          <button type="button" class="video-carousel-next" title="Вперёд" aria-label="Следующее видео">&rarr;</button>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <h2 class="section-title">Видеоотзывы: косоглазие</h2>
       <p style="margin-bottom:20px; color:var(--text-muted);">Наши пациенты делятся впечатлениями после операции. <a class="link" href="/kosoglazie/">Страница косоглазия →</a></p>
-      <div class="videos-wrap">
-        <div class="videos-carousel" aria-label="Видеоотзывы косоглазие">
+      <div class="videos-wrap videos-wrap--with-nav">
+        <div class="videos-carousel" id="videosCarouselKosoglazieOtzyvy" aria-label="Видеоотзывы косоглазие">
           <div class="video-card"><video src="/images/kosoglazie/videos/video-1.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/kosoglazie/videos/video-2.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/kosoglazie/videos/video-3.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/kosoglazie/videos/video-4.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/kosoglazie/videos/video-5.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="/images/kosoglazie/videos/video-6.mp4" controls playsinline preload="metadata"></video></div>
+        </div>
+        <div class="video-carousel-nav">
+          <button type="button" class="video-carousel-prev" title="Назад" aria-label="Предыдущее видео">&larr;</button>
+          <div class="video-carousel-dots" aria-hidden="true"></div>
+          <button type="button" class="video-carousel-next" title="Вперёд" aria-label="Следующее видео">&rarr;</button>
         </div>
       </div>
       <p style="margin-top:16px; font-size:14px;"><a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="link">Ещё видеоотзывы в Instagram AsiaKoz →</a></p>
@@ -139,6 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </footer>
   </div>
+  <script src="/js/video-carousel.js"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>

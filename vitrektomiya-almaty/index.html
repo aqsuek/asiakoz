@@ -171,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="section">
       <h2 class="section-title">Видеоотзывы пациентов</h2>
       <p style="margin-bottom:20px; color:var(--text-muted);">Наши пациенты делятся впечатлениями после операции. Радость, слёзы счастья и благодарность.</p>
-      <div class="videos-wrap">
+      <div class="videos-wrap videos-wrap--with-nav">
         <div class="videos-carousel" id="videosCarousel" aria-label="Видеоотзывы">
           <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-1.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-2.mp4" controls playsinline preload="metadata"></video></div>
@@ -184,6 +184,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-9.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-10.mp4" controls playsinline preload="metadata"></video></div>
           <div class="video-card"><video src="../images/vitrektomiya-almaty/videos/video-11.mp4" controls playsinline preload="metadata"></video></div>
+        </div>
+        <div class="video-carousel-nav">
+          <button type="button" class="video-carousel-prev" title="Назад" aria-label="Предыдущее видео">&larr;</button>
+          <div class="video-carousel-dots" aria-hidden="true"></div>
+          <button type="button" class="video-carousel-next" title="Вперёд" aria-label="Следующее видео">&rarr;</button>
         </div>
       </div>
       <p style="margin-top:16px; font-size:14px;"><a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="link">Ещё видеоотзывы в нашем Instagram →</a></p>
@@ -262,6 +267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ]
   }
   </script>
+  <script src="/js/video-carousel.js"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>
