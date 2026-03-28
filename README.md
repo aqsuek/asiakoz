@@ -32,6 +32,19 @@ asiakoz/
 - Залей папку `asiakoz` на любой хостинг (Netlify, GitHub Pages, Vercel Static, хостинг по FTP).
 - Домен привяжи в настройках хостинга (например asiakoz.com).
 
+### Автодеплой из GitHub (FTP)
+
+В репозитории есть workflow **Deploy site (FTP)** (`.github/workflows/deploy.yml`): при каждом `push` в ветку `main` файлы синхронизируются на сервер по FTP.
+
+1. На GitHub: **Settings → Secrets and variables → Actions → New repository secret** — создайте:
+   - `FTP_SERVER` — адрес FTP (хост или IP)
+   - `FTP_USERNAME` — логин
+   - `FTP_PASSWORD` — пароль
+2. Если после входа по FTP корень сайта не домашняя папка пользователя, в `deploy.yml` в параметре `server-dir` укажите путь (например `public_html/`).
+3. Если хостинг требует FTPS — в том же файле поменяйте `protocol: ftp` на `ftps` (или `ftps-legacy`) и при необходимости порт.
+
+Пока секреты не добавлены, workflow при push будет завершаться ошибкой подключения.
+
 ## Что можно править
 
 - **Текст и контакты** — прямо в HTML-файлах.

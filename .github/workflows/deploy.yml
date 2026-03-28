@@ -1,0 +1,39 @@
+# Push в main → заливка статики на хостинг по FTP.
+# GitHub → Settings → Secrets and variables → Actions — добавьте:
+#   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+# Если корень сайта не домашняя папка FTP — отредактируйте server-dir ниже (например public_html/).
+
+name: Deploy site (FTP)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: asiakoz-ftp-deploy
+  cancel-in-progress: true
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync to hosting
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+          log-level: standard
