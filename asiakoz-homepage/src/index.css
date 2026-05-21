@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-float;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand/30 bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-300 hover:border-brand hover:bg-brand-soft;
+  }
+
+  .card-premium {
+    @apply rounded-2xl border border-slate-100/80 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-float;
+  }
+
+  .glass-badge {
+    @apply rounded-2xl border border-white/60 bg-white/80 shadow-float backdrop-blur-md;
+  }
+}

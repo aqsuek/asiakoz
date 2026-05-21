@@ -1,0 +1,56 @@
+import {
+  Activity,
+  Award,
+  BadgeCheck,
+  ChevronUp,
+  Clock3,
+  Cpu,
+  Eye,
+  Globe2,
+  MapPin,
+  MessageCircle,
+  Quote,
+  ScanEye,
+  ShieldCheck,
+  Sparkles,
+  Star,
+  UserRound,
+  Zap,
+  Menu,
+  X,
+  ArrowRight,
+  Instagram,
+  Facebook,
+  Youtube,
+} from "lucide-react";
+
+const ICONS = {
+  award: Award,
+  message: MessageCircle,
+  map: MapPin,
+  eye: Eye,
+  scan: ScanEye,
+  sparkles: Sparkles,
+  zap: Zap,
+  activity: Activity,
+  shield: ShieldCheck,
+  cpu: Cpu,
+  globe: Globe2,
+  user: UserRound,
+  badge: BadgeCheck,
+  quote: Quote,
+  star: Star,
+  clock: Clock3,
+  arrow: ArrowRight,
+  chevron: ChevronUp,
+  menu: Menu,
+  close: X,
+  instagram: Instagram,
+  facebook: Facebook,
+  youtube: Youtube,
+};
+
+export default function Icon({ name, className = "h-5 w-5", strokeWidth = 1.5 }) {
+  const Component = ICONS[name] || Eye;
+  return <Component className={className} strokeWidth={strokeWidth} aria-hidden />;
+}
