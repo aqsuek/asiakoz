@@ -1,11 +1,13 @@
+export const PHONE = "+7 700 360 01 80";
+export const PHONE_HREF = "tel:+77003600180";
 export const WHATSAPP_URL =
-  "https://wa.me/77008880180?text=" +
+  "https://wa.me/77003600180?text=" +
   encodeURIComponent("Здравствуйте! Хочу записаться в клинику AsiaKoz.");
 
-export const PHONE_ALMATY = "+7 777 888 01 80";
-export const PHONE_ALMATY_HREF = "tel:+77778880180";
-export const PHONE_AKTau = "+7 775 863 01 80";
-export const PHONE_AKTau_HREF = "tel:+77758630180";
+export const PHONE_ALMATY = PHONE;
+export const PHONE_ALMATY_HREF = PHONE_HREF;
+export const PHONE_AKTau = PHONE;
+export const PHONE_AKTau_HREF = PHONE_HREF;
 
 export const NAV_LINKS = [
   { label: "Услуги", href: "/uslugi/" },
@@ -166,11 +168,9 @@ export const BRANCHES = [
   {
     city: "Алматы",
     address: "пр. Райымбека, 176А",
-    phone: "+7 700 888 01 80",
-    phoneAlt: "+7 777 888 01 80",
-    phoneHref: "tel:+77008880180",
-    phoneAltHref: "tel:+77778880180",
-    whatsapp: "https://wa.me/77008880180",
+    phone: PHONE,
+    phoneHref: PHONE_HREF,
+    whatsapp: WHATSAPP_URL.split("?")[0],
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
     image: "/images/clinic-building.png",
     gis: "https://2gis.kz/kk/almaty/firm/70000001081905733",
@@ -178,9 +178,9 @@ export const BRANCHES = [
   {
     city: "Актау",
     address: "7А микрорайон, 11/3",
-    phone: "+7 775 863 01 80",
-    phoneHref: "tel:+77758630180",
-    whatsapp: "https://wa.me/77758630180",
+    phone: PHONE,
+    phoneHref: PHONE_HREF,
+    whatsapp: WHATSAPP_URL.split("?")[0],
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
     image: "/images/clinic-2.png",
     gis: "https://2gis.kz/aktau/firm/70000001104276081",

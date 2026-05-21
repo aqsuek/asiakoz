@@ -50,14 +50,6 @@ export default function Footer() {
                   >
                     {branch.phone}
                   </a>
-                  {branch.phoneAlt && (
-                    <a
-                      href={branch.phoneAltHref}
-                      className="ml-2 inline-block text-sm text-ink-muted hover:text-brand"
-                    >
-                      · {branch.phoneAlt}
-                    </a>
-                  )}
                   <p className="mt-1 text-xs text-ink-faint">{branch.hours}</p>
                   <div className="mt-3 flex flex-wrap gap-3">
                     <a
