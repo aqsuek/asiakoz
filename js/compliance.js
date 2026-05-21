@@ -161,19 +161,44 @@
   }
 
   function enrichFooter() {
-    var footers = document.querySelectorAll(".site-footer");
-    footers.forEach(function (footer) {
-      if (footer.querySelector(".footer-legal-links")) return;
+    var legalHtml =
+      '<a href="/politika-konfidentsialnosti/">Политика конфиденциальности</a> · ' +
+      '<a href="/polzovatelskoe-soglashenie/">Пользовательское соглашение</a> · ' +
+      '<a href="/glaznaya-klinika-almaty/#rekvizity">Лицензия и реквизиты</a>';
+    document.querySelectorAll(".site-footer").forEach(function (footer) {
       var bottom = footer.querySelector(".footer-bottom");
       if (!bottom) return;
+      var row = footer.querySelector(".footer-legal-links");
+      if (row) {
+        row.innerHTML = legalHtml;
+        return;
+      }
       var legal = document.createElement("p");
       legal.className = "footer-legal-links";
-      legal.innerHTML =
-        '<a href="/politika-konfidentsialnosti/">Политика конфиденциальности</a> · ' +
-        '<a href="/polzovatelskoe-soglashenie/">Пользовательское соглашение</a> · ' +
-        '<a href="/prices/">Прейскурант</a> · ' +
-        '<a href="/glaznaya-klinika-almaty/#rekvizity">Лицензия и реквизиты</a>';
+      legal.innerHTML = legalHtml;
       bottom.insertBefore(legal, bottom.firstChild);
+    });
+    document.querySelectorAll(".site-footer a[href]").forEach(function (a) {
+      if (!a || !a.parentNode) return;
+      var href = (a.getAttribute("href") || "").toLowerCase();
+      var text = (a.textContent || "").toLowerCase().trim();
+      var isLegacyPriceLink =
+        href === "/prices" ||
+        href === "/prices/" ||
+        href.indexOf("/prices/") === 0 ||
+        href === "/price" ||
+        href === "/price/" ||
+        href.indexOf("/price/") === 0 ||
+        href.indexOf("pricelist") !== -1 ||
+        text.indexOf("прейскурант") !== -1 ||
+        text.indexOf("прайс") !== -1 ||
+        text.indexOf("прайс-лист") !== -1 ||
+        text.indexOf("price list") !== -1 ||
+        text === "цены" ||
+        text === "цена";
+      if (isLegacyPriceLink) {
+        a.parentNode.removeChild(a);
+      }
     });
   }
 
