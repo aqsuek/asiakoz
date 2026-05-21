@@ -17,13 +17,8 @@ export default function useEyeTracking(containerRef, enabled = true) {
     if (reduceMotion) return undefined;
 
     const onMove = (e) => {
-      const el = containerRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const nx = (e.clientX - cx) / (rect.width / 2);
-      const ny = (e.clientY - cy) / (rect.height / 2);
+      const nx = (e.clientX / window.innerWidth - 0.5) * 2;
+      const ny = (e.clientY / window.innerHeight - 0.5) * 2;
       const clamp = (v) => Math.max(-1, Math.min(1, v));
       target.current = { x: clamp(nx), y: clamp(ny) };
     };

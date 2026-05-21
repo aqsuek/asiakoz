@@ -5,14 +5,14 @@ import { HERO_FEATURES, WHATSAPP_URL } from "../data/content";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-section-fade pb-8 pt-8 sm:pb-12 sm:pt-12 lg:pb-16 lg:pt-14">
+    <section className="relative overflow-x-clip bg-section-fade pb-8 pt-8 sm:pb-12 sm:pt-12 lg:overflow-visible lg:pb-16 lg:pt-14">
       <div className="pointer-events-none absolute -right-24 top-0 h-[520px] w-[520px] rounded-full bg-brand/10 blur-3xl" />
       <div className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-sky-100 blur-3xl" />
 
       <div className="section-container relative">
-        <EyeHeroAnimation />
         <div className="relative z-10 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-          <div className="max-w-xl">
+          <div className="relative max-w-xl">
+            <EyeHeroAnimation variant="mobile" />
             <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand">
               <span className="h-1.5 w-1.5 rounded-full bg-brand" />
               Турецкая офтальмология
@@ -55,7 +55,8 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10 mx-auto w-full max-w-lg lg:max-w-none">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-brand-soft shadow-float">
+            <EyeHeroAnimation variant="desktop" />
+            <div className="relative z-10 overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-brand-soft shadow-float">
               <div className="absolute inset-0 bg-hero-glow" />
               <img
                 src="/images/clinic-1.png"
@@ -68,7 +69,7 @@ export default function Hero() {
               />
             </div>
 
-            <div className="glass-badge absolute -bottom-4 left-4 flex items-center gap-3 px-4 py-3 sm:-left-6 sm:bottom-8">
+            <div className="glass-badge absolute -bottom-4 left-4 z-20 flex items-center gap-3 px-4 py-3 sm:-left-6 sm:bottom-8">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white shadow-card">
                 <Icon name="award" className="h-6 w-6" strokeWidth={1.25} />
               </div>

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import useEyeTracking from "../hooks/useEyeTracking";
 
-const MAX_PUPIL = 11;
+const MAX_PUPIL = 12;
 
 function Eye({ offset, side, className = "" }) {
   const pupilX = offset.x * MAX_PUPIL;
@@ -35,7 +35,7 @@ function Eye({ offset, side, className = "" }) {
         fill="none"
         stroke="#12B7D5"
         strokeWidth="2"
-        opacity="0.35"
+        opacity="0.4"
       />
       <circle cx="60" cy="60" r="22" fill={`url(#iris-${side})`} filter={`url(#glow-${side})`} />
       <circle cx="60" cy="60" r="16" fill="#0e9bb5" opacity="0.25" />
@@ -49,29 +49,45 @@ function Eye({ offset, side, className = "" }) {
         stroke="#12B7D5"
         strokeWidth="2.5"
         strokeLinecap="round"
-        opacity="0.5"
+        opacity="0.55"
       />
     </svg>
   );
 }
 
-export default function EyeHeroAnimation() {
+export default function EyeHeroAnimation({ variant = "desktop" }) {
   const wrapRef = useRef(null);
   const offset = useEyeTracking(wrapRef, true);
+
+  if (variant === "mobile") {
+    return (
+      <div
+        ref={wrapRef}
+        className="eye-hero-wrap pointer-events-none relative mx-auto mb-6 flex justify-center md:hidden"
+        aria-hidden
+      >
+        <div className="relative flex items-center gap-2">
+          <div className="absolute inset-0 rounded-full bg-brand/15 blur-2xl eye-glow-pulse" />
+          <Eye offset={offset} side="l" className="h-16 w-16 sm:h-20 sm:w-20" />
+          <Eye offset={offset} side="r" className="h-16 w-16 sm:h-20 sm:w-20" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
       ref={wrapRef}
-      className="eye-hero-wrap pointer-events-none absolute -right-4 top-8 z-0 hidden -translate-y-0 md:block md:top-1/2 md:-translate-y-1/2 lg:-right-8 xl:-right-4"
+      className="eye-hero-wrap pointer-events-none absolute -left-8 -top-4 z-[2] hidden md:block lg:-right-2 lg:left-auto lg:-top-6 xl:-right-4"
       aria-hidden
     >
-      <div className="relative h-[280px] w-[320px] xl:h-[340px] xl:w-[380px]">
-        <div className="absolute inset-0 rounded-full bg-brand/10 blur-3xl eye-glow-pulse" />
-        <div className="absolute left-2 top-8 flex gap-3 xl:gap-5">
-          <Eye offset={offset} side="l" className="h-[100px] w-[100px] xl:h-[120px] xl:w-[120px]" />
-          <Eye offset={offset} side="r" className="h-[100px] w-[100px] xl:h-[120px] xl:w-[120px]" />
+      <div className="relative h-[300px] w-[340px]">
+        <div className="absolute inset-0 rounded-full bg-brand/15 blur-3xl eye-glow-pulse" />
+        <div className="absolute left-0 top-6 flex gap-4">
+          <Eye offset={offset} side="l" className="h-[110px] w-[110px] xl:h-[130px] xl:w-[130px]" />
+          <Eye offset={offset} side="r" className="h-[110px] w-[110px] xl:h-[130px] xl:w-[130px]" />
         </div>
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-white/70 px-4 py-1.5 text-center text-[10px] font-semibold uppercase tracking-widest text-brand/80 backdrop-blur-sm">
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/80 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-brand shadow-soft backdrop-blur-sm">
           Смотрим на ваше зрение
         </div>
       </div>
