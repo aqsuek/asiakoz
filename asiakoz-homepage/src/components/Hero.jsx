@@ -1,5 +1,6 @@
 import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
+import EyeHeroAnimation from "./EyeHeroAnimation";
 import { HERO_FEATURES, WHATSAPP_URL } from "../data/content";
 
 export default function Hero() {
@@ -9,7 +10,8 @@ export default function Hero() {
       <div className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-sky-100 blur-3xl" />
 
       <div className="section-container relative">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+        <EyeHeroAnimation />
+        <div className="relative z-10 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="max-w-xl">
             <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand">
               <span className="h-1.5 w-1.5 rounded-full bg-brand" />
@@ -52,7 +54,7 @@ export default function Hero() {
             </ul>
           </div>
 
-          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div className="relative z-10 mx-auto w-full max-w-lg lg:max-w-none">
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-brand-soft shadow-float">
               <div className="absolute inset-0 bg-hero-glow" />
               <img

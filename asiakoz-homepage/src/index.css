@@ -32,4 +32,42 @@
   .glass-badge {
     @apply rounded-2xl border border-white/60 bg-white/80 shadow-float backdrop-blur-md;
   }
+
+  .eye-breathe {
+    animation: eye-breathe 5s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  .eye-glow-pulse {
+    animation: eye-glow-pulse 4s ease-in-out infinite;
+  }
+}
+
+@keyframes eye-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes eye-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eye-breathe,
+  .eye-glow-pulse {
+    animation: none;
+  }
 }
