@@ -55,10 +55,24 @@ export default function Hero() {
           <div className="relative z-10 mx-auto w-full max-w-lg lg:max-w-none">
             <div className="relative z-10 overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-brand-soft shadow-float">
               <div className="absolute inset-0 bg-hero-glow" />
+              <video
+                className="relative aspect-[4/5] w-full object-cover object-center sm:aspect-[5/6] motion-reduce:hidden"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/images/clinic-1.png"
+                width="800"
+                height="1000"
+                aria-label="Анимация AsiaKoz — глазная клиника"
+              >
+                <source src="/images/videos/hero.mp4" type="video/mp4" />
+              </video>
               <img
                 src="/images/clinic-1.png"
                 alt="Офтальмохирург AsiaKoz за современным оборудованием"
-                className="relative aspect-[4/5] w-full object-cover object-center sm:aspect-[5/6]"
+                className="relative hidden aspect-[4/5] w-full object-cover object-center motion-reduce:block sm:aspect-[5/6]"
                 width="800"
                 height="1000"
                 loading="eager"
