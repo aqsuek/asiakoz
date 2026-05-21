@@ -3,7 +3,7 @@ export default function Logo({ className = "", showText = true }) {
     <a
       href="/"
       className={`group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90 sm:gap-3 ${className}`}
-      title="AsiaKoz — глазная клиника"
+      title="AsiaKoz — Турецкая глазная клиника"
       aria-label="AsiaKoz — на главную"
     >
       <span className="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
@@ -22,8 +22,11 @@ export default function Logo({ className = "", showText = true }) {
           <span className="text-[15px] font-extrabold tracking-[0.14em] text-brand sm:text-base">
             ASIAKOZ
           </span>
-          <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-faint sm:text-[11px]">
-            Eye Clinic
+          <span className="mt-1 text-[10px] font-medium leading-snug text-ink-faint sm:text-[11px]">
+            Түрік көз клиникасы
+          </span>
+          <span className="mt-0.5 text-[10px] font-medium leading-snug text-ink-faint sm:text-[11px]">
+            Турецкая глазная клиника
           </span>
         </span>
       )}
