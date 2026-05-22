@@ -36,7 +36,7 @@ export default function Footer() {
                 <div className="branch-clinic-photo">
                   <img
                     src={branch.image}
-                    alt={`Филиал AsiaKoz — ${branch.city}`}
+                    alt={`Филиал Азиякоз — ${branch.city}`}
                     loading="lazy"
                     width="800"
                     height="600"
@@ -97,7 +97,7 @@ export default function Footer() {
             Имеются противопоказания. Необходима консультация специалиста.
           </p>
           <p className="footer-copy mt-2 text-xs text-ink-faint">
-            © {new Date().getFullYear()} AsiaKoz. Алматы, Актау.
+            © {new Date().getFullYear()} Азиякоз. Алматы, Актау.
           </p>
         </div>
       </div>

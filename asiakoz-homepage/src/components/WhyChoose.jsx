@@ -8,7 +8,7 @@ export default function WhyChoose() {
       <div className="section-container">
         <SectionHeading
           label="Преимущества"
-          title="Почему выбирают ASIAKÖZ?"
+          title="Почему выбирают Азиякоз?"
           className="mb-12"
         />
 

@@ -2,7 +2,7 @@ export const PHONE = "+7 700 360 01 80";
 export const PHONE_HREF = "tel:+77003600180";
 export const WHATSAPP_URL =
   "https://wa.me/77003600180?text=" +
-  encodeURIComponent("Здравствуйте! Хочу записаться в клинику AsiaKoz.");
+  encodeURIComponent("Здравствуйте! Хочу записаться в клинику Азиякоз.");
 
 export const PHONE_ALMATY = PHONE;
 export const PHONE_ALMATY_HREF = PHONE_HREF;
@@ -10,7 +10,7 @@ export const PHONE_AKTau = "+7 775 863 01 80";
 export const PHONE_AKTau_HREF = "tel:+77758630180";
 export const WHATSAPP_AKTau_URL =
   "https://wa.me/77758630180?text=" +
-  encodeURIComponent("Здравствуйте! Хочу записаться в клинику AsiaKoz Актау.");
+  encodeURIComponent("Здравствуйте! Хочу записаться в клинику Азиякоз Актау.");
 
 export const NAV_LINKS = [
   { label: "Услуги", href: "/uslugi/" },
@@ -161,7 +161,7 @@ export const PROCESS_STEPS = [
 
 export const REVIEWS = [
   {
-    text: "Долго не решалась на операцию по катаракте. В AsiaKoz всё объяснили, операция прошла быстро и без боли. Спасибо врачу из Турции!",
+    text: "Долго не решалась на операцию по катаракте. В Азиякоз всё объяснили, операция прошла быстро и без боли. Спасибо врачу из Турции!",
     name: "Пациентка, 63 года",
     city: "Алматы",
     rating: 5,

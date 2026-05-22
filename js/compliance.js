@@ -216,7 +216,7 @@
       var wrap = document.createElement("span");
       wrap.className = "logo-wordmark";
       wrap.innerHTML =
-        '<span class="logo-text-title">ASIAKOZ</span>' +
+        '<span class="logo-text-title">Asiakoz</span>' +
         '<span class="logo-text-sub">Түрік көз клиникасы</span>' +
         '<span class="logo-text-sub logo-text-sub--ru">Турецкая глазная клиника</span>';
       logo.appendChild(wrap);
@@ -230,8 +230,8 @@
       var waPhone = isAktau ? "77758630180" : "77003600180";
       var waText = encodeURIComponent(
         isAktau
-          ? "Здравствуйте! Хочу записаться в клинику AsiaKoz Актау."
-          : "Здравствуйте! Хочу записаться в клинику AsiaKoz."
+          ? "Здравствуйте! Хочу записаться в клинику Азиякоз Актау."
+          : "Здравствуйте! Хочу записаться в клинику Азиякоз."
       );
       var bar = document.createElement("div");
       bar.id = "asiakoz-wa-fixed";
