@@ -1,6 +1,11 @@
 import SectionHeading from "./SectionHeading";
 import { DOCTORS } from "../data/content";
 
+const BRANCH_LABELS = {
+  almaty: { label: "Алматы", className: "doctor-card-site__badge-almaty" },
+  aktau: { label: "Ақтау", className: "doctor-card-site__badge-aktau" },
+};
+
 export default function Doctors() {
   return (
     <section id="doctors" className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
@@ -21,40 +26,48 @@ export default function Doctors() {
           className="mb-12"
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {DOCTORS.map((doctor) => (
-            <a
-              key={doctor.name}
-              href={doctor.href}
-              className="card-premium group flex flex-col overflow-hidden border-brand/15"
-            >
-              <div className="relative aspect-[4/5] w-full overflow-hidden bg-gradient-to-b from-brand/15 via-brand-soft to-white sm:aspect-[5/6]">
-                <img
-                  src={doctor.image}
-                  alt={doctor.name}
-                  className="h-full w-full object-contain object-center p-3 transition-transform duration-300 group-hover:scale-[1.02] sm:p-4"
-                  loading="lazy"
-                  width="400"
-                  height="500"
-                />
-              </div>
-              <div className="relative flex flex-1 flex-col border-t border-brand/10 bg-gradient-to-b from-white to-brand-soft/40 p-5">
-                <h3 className="text-lg font-bold text-ink group-hover:text-brand">{doctor.name}</h3>
-                <p className="mt-1 text-sm font-semibold text-brand">{doctor.role}</p>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
-                  {doctor.specialty}
-                </p>
-                <span className="mt-3 text-sm font-semibold text-brand">Подробнее →</span>
-                <span
-                  className="absolute bottom-4 right-4 text-lg"
-                  title="Специалист из Турции"
-                  aria-hidden
-                >
-                  🇹🇷
-                </span>
-              </div>
-            </a>
-          ))}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          {DOCTORS.map((doctor) => {
+            const branch = BRANCH_LABELS[doctor.branch] ?? BRANCH_LABELS.almaty;
+
+            return (
+              <article key={doctor.name} className="doctor-card-site">
+                <a href={doctor.href} className="doctor-card-site__inner group">
+                  <div className="doctor-card-site__photo">
+                    <img
+                      src={doctor.image}
+                      alt={doctor.name}
+                      loading="lazy"
+                      width="400"
+                      height="533"
+                    />
+                  </div>
+                  <div className="doctor-card-site__body">
+                    <div className="doctor-card-site__meta">
+                      <span className="doctor-card-site__role">{doctor.role}</span>
+                      <span className={branch.className}>{branch.label}</span>
+                    </div>
+                    <h3 className="doctor-card-site__name group-hover:text-brand">
+                      {doctor.name}
+                    </h3>
+                    <div className="doctor-card-site__tags">
+                      {doctor.tags.map((tag) => (
+                        <span key={tag} className="doctor-card-site__tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    {doctor.note ? (
+                      <p className="doctor-card-site__note">
+                        <span className="font-semibold text-ink">Опыт:</span> {doctor.note}
+                      </p>
+                    ) : null}
+                    <div className="doctor-card-site__action">Подробнее →</div>
+                  </div>
+                </a>
+              </article>
+            );
+          })}
         </div>
 
         <p className="mt-10 text-center">
