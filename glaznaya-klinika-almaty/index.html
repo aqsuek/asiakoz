@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-17817733574');
 </script>
 <!-- Google Tag Manager -->
@@ -19,20 +18,159 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Глазная клиника Алматы — витрэктомия, косоглазие, лазер | AsiaKoz</title>
-  <meta name="description" content="Глазная клиника Алматы AsiaKoz: витрэктомия, косоглазие, лазерная коррекция зрения, катаракта, глаукома и диагностика. Филиалы Алматы и Актау." />
+  <title>О клинике AsiaKoz — турецкая глазная клиника в Алматы и Актау</title>
+  <meta name="description" content="AsiaKoz — офтальмологическая клиника с турецкими хирургами. Лазерная коррекция, катаракта, глаукома, витрэктомия, косоглазие. Филиалы в Алматы и Актау. 12 000+ операций, рейтинг 4.8–4.9 в 2ГИС." />
   <link rel="canonical" href="https://asiakoz.com/glaznaya-klinika-almaty/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Глазная клиника Алматы — AsiaKoz" />
-  <meta property="og:description" content="Приоритетные направления: витрэктомия, косоглазие, лазерная коррекция зрения." />
+  <meta property="og:title" content="О клинике AsiaKoz" />
+  <meta property="og:description" content="Турецкая глазная клиника в Казахстане. Два филиала, современная диагностика и хирургия." />
   <meta property="og:url" content="https://asiakoz.com/glaznaya-klinika-almaty/" />
-  <meta property="og:image" content="https://asiakoz.com/images/logo.png" />
+  <meta property="og:image" content="https://asiakoz.com/images/clinic-building.png" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+    .about-hero-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      border: 1px solid rgba(18, 183, 213, 0.12);
+    }
+    .about-hero-img img {
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .about-lead {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin: 0 0 16px;
+    }
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .about-tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+    .branch-photo-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15, 23, 42, 0.04);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .branch-photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .branch-photo-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .branch-photo-body h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    .branch-badge-inline {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .branch-badge-inline.almaty {
+      color: #047857;
+      background: rgba(16, 185, 129, 0.12);
+    }
+    .branch-badge-inline.aktau {
+      color: #0d9488;
+      background: rgba(20, 184, 166, 0.12);
+    }
+    .rating-mini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .rating-mini a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .rating-mini a:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .about-hero { grid-template-columns: 1fr; }
+      .about-hero-img { order: -1; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "AsiaKoz",
+    "url": "https://asiakoz.com/",
+    "logo": "https://asiakoz.com/images/logo.png",
+    "image": "https://asiakoz.com/images/clinic-building.png",
+    "description": "Турецкая глазная клиника. Лазерная коррекция, катаракта, глаукома, витрэктомия, косоглазие.",
+    "telephone": ["+7 700 360 01 80", "+7 775 863 01 80"],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Алматы",
+        "streetAddress": "пр. Райымбека, 176а",
+        "addressCountry": "KZ"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Актау",
+        "streetAddress": "7а микрорайон, 11/3",
+        "addressCountry": "KZ"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "900"
+    }
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -42,54 +180,267 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <header class="header">
       <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav"><a href="/uslugi/">Услуги</a><a href="/otzyvy-asiakoz-almaty/">Отзывы</a><a href="/doctors/">Врачи</a><a href="/#contacts">Контакты</a></nav>
+      <nav class="header-nav">
+        <a href="/uslugi/">Услуги</a>
+        <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
+        <a href="/doctors/">Врачи</a>
+        <a href="/#contacts">Контакты</a>
+      </nav>
       <div class="header-right">
         <div class="header-schedule">Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</div>
-        <div class="header-contacts"><div class="header-phone"><a href="tel:+77003600180">+7 700 360 01 80</a></div><a href="https://wa.me/77003600180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="header-contacts">
+          <div class="header-phone"><a href="tel:+77003600180">+7 700 360 01 80</a></div>
+          <a href="https://wa.me/77003600180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
         <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn btn-header">Записаться</a>
       </div>
     </header>
 
-    <nav class="breadcrumb"><a href="/">Главная</a> / Глазная клиника Алматы</nav>
+    <nav class="breadcrumb"><a href="/">Главная</a> / О клинике</nav>
+
+    <div class="about-hero">
+      <div>
+        <h1 class="section-title" style="margin-bottom:12px;">AsiaKoz — турецкая глазная клиника</h1>
+        <p class="about-lead">
+          <strong>AsiaKoz</strong> — офтальмологическая клиника с командой хирургов из Турции и международным опытом.
+          Мы лечим заболевания глаз у взрослых и детей: от диагностики и консервативной терапии до сложных операций
+          на сетчатке, катаракте, глаукоме и лазерной коррекции зрения.
+        </p>
+        <p class="about-lead" style="margin-bottom:0;">
+          Два филиала — <strong>Алматы</strong> и <strong>Актау</strong>. Современное оборудование, понятные объяснения
+          на каждом этапе и сопровождение после лечения. Нас выбирают более <strong>35 000</strong> пациентов;
+          проведено <strong>12 000+</strong> успешных операций.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">Турецкие хирурги</span>
+          <span class="about-tag">LASIK / SMILE</span>
+          <span class="about-tag">Витрэктомия</span>
+          <span class="about-tag">Косоглазие</span>
+          <span class="about-tag">Катаракта</span>
+          <span class="about-tag">Глаукома</span>
+        </div>
+      </div>
+      <div class="about-hero-img">
+        <img src="/images/clinic-building.png" alt="Филиал AsiaKoz в Алматы" width="800" height="500" loading="eager" />
+      </div>
+    </div>
+
+    <div class="stats-block">
+      <div class="stats-inner">
+        <div class="stat-item"><span class="stat-num">12 000+</span><span class="stat-label">успешных операций</span></div>
+        <div class="stat-item"><span class="stat-num">35 000+</span><span class="stat-label">пациентов выбрали нас</span></div>
+        <div class="stat-item"><span class="stat-num">4.8</span><span class="stat-label">рейтинг 2ГИС Алматы</span></div>
+        <div class="stat-item"><span class="stat-num">4.9</span><span class="stat-label">рейтинг 2ГИС Актау</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">филиала в Казахстане</span></div>
+      </div>
+    </div>
 
     <section class="section">
-      <h1 class="section-title">Глазная клиника Алматы: AsiaKoz</h1>
-      <p class="section-subtitle">Ключевой фокус: <a class="link" href="/vitrektomiya-almaty/">витрэктомия</a>, <a class="link" href="/kosoglazie/">косоглазие у детей и взрослых</a>, <a class="link" href="/lazer-almaty/">лазерная коррекция зрения</a>. Также: катаракта, глаукома, сетчатка и полная диагностика.</p>
+      <h2 class="section-title">Чем мы занимаемся</h2>
+      <p class="section-subtitle">
+        Полный цикл офтальмологической помощи: диагностика, лечение, хирургия и наблюдение после операции.
+      </p>
       <div class="grid-3">
-        <a href="/vitrektomiya-almaty/" class="card-link"><div class="card"><div class="card-title">Витрэктомия</div><p class="card-text">Сложные операции на стекловидном теле и сетчатке.</p></div></a>
-        <a href="/kosoglazie/" class="card-link"><div class="card"><div class="card-title">Косоглазие</div><p class="card-text">Диагностика и лечение косоглазия у детей и взрослых.</p></div></a>
-        <a href="/lazer-almaty/" class="card-link"><div class="card"><div class="card-title">Лазерная коррекция</div><p class="card-text">SMILE, Femto-LASIK, PRK/LASEK после диагностики.</p></div></a>
+        <a href="/lazer-almaty/" class="card-link">
+          <div class="card">
+            <div class="card-title">Лазерная коррекция зрения</div>
+            <p class="card-text">SMILE, Femto-LASIK, PRK/LASEK — после полной диагностики и оценки показаний.</p>
+          </div>
+        </a>
+        <a href="/vitrektomiya-almaty/" class="card-link">
+          <div class="card">
+            <div class="card-title">Витрэктомия и сетчатка</div>
+            <p class="card-text">Отслойка, разрывы, диабетическая ретинопатия, макулярные патологии.</p>
+          </div>
+        </a>
+        <a href="/kosoglazie/" class="card-link">
+          <div class="card">
+            <div class="card-title">Косоглазие</div>
+            <p class="card-text">Диагностика и лечение у детей и взрослых, в том числе хирургия по показаниям.</p>
+          </div>
+        </a>
+        <a href="/katarakta-almaty/" class="card-link">
+          <div class="card">
+            <div class="card-title">Катаракта</div>
+            <p class="card-text">Факоэмульсификация, подбор хрусталика, в том числе премиум-линейки.</p>
+          </div>
+        </a>
+        <a href="/glaukoma-almaty/" class="card-link">
+          <div class="card">
+            <div class="card-title">Глаукома</div>
+            <p class="card-text">Консервативное и хирургическое лечение, лазерные методы, контроль давления.</p>
+          </div>
+        </a>
+        <a href="/diagnostika-almaty/" class="card-link">
+          <div class="card">
+            <div class="card-title">Диагностика зрения</div>
+            <p class="card-text">ОКТ, периметрия, осмотр глазного дна, комплексный чек-ап.</p>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:16px; text-align:center;">
+        <a href="/uslugi/" class="link" style="font-weight:600;">Все услуги клиники →</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Почему пациенты выбирают AsiaKoz</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Турецкие офтальмохирурги</div>
+          <p class="card-text">Ведущие специалисты со стажем 15–20+ лет. Опыт работы в крупных клиниках Турции и тысячи успешных операций.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Сложные клинические случаи</div>
+          <p class="card-text">Берёмся за патологии сетчатки, повторные вмешательства, комбинированные операции (глаукома + катаракта) — по показаниям.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Современное оборудование</div>
+          <p class="card-text">Диагностика и хирургия на аппаратах мирового уровня. Протоколы безопасности и контроля качества.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Прозрачность и забота</div>
+          <p class="card-text">Подробно объясняем диагноз, варианты лечения, риски и сроки восстановления. Рассрочка без переплат на часть услуг.</p>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Часто ищут</h2>
-      <p class="section-subtitle">
-        <a class="link" href="/otzyvy-asiakoz-almaty/">Азиякөз отзывы</a> ·
-        <a class="link" href="/katarakta-almaty/">операция катаракты Алматы</a> ·
-        <a class="link" href="/glaukoma-almaty/">лечение глаукомы Алматы</a> ·
-        <a class="link" href="/diagnostika-almaty/">проверка зрения Алматы</a>
+      <h2 class="section-title">Наши филиалы</h2>
+      <p class="section-subtitle">Выберите удобный город — запись по телефону и WhatsApp филиала.</p>
+      <div class="grid-2">
+        <div class="branch-photo-card">
+          <img src="/images/clinic-building.png" alt="Клиника AsiaKoz Алматы" loading="lazy" />
+          <div class="branch-photo-body">
+            <span class="branch-badge-inline almaty">Алматы</span>
+            <h3>Филиал Алматы</h3>
+            <p class="card-text" style="margin-bottom:8px;"><strong>Адрес:</strong> пр. Райымбека, 176а</p>
+            <p class="card-text" style="margin-bottom:8px;"><strong>Запись:</strong> <a href="tel:+77003600180" class="link">+7 700 360 01 80</a></p>
+            <p class="card-text" style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">Врачи:</p>
+            <ul style="margin:0 0 12px 18px; font-size:14px; color:#475569; line-height:1.55;">
+              <li>Мухаммед Горгани — лазерная коррекция, катаракта, глаукома</li>
+              <li>Орел Талип — витрэктомия, сетчатка, косоглазие</li>
+              <li>Нұрмұхамед Мусай — главный врач</li>
+              <li>Алия Усманова — офтальмохирург высшей категории</li>
+            </ul>
+            <div class="rating-mini">
+              <a href="https://2gis.kz/kk/almaty/firm/70000001081905733" target="_blank" rel="noopener">★ 4.8 — 2ГИС Алматы</a>
+            </div>
+            <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn" style="margin-top:14px; width:100%; justify-content:center;">WhatsApp Алматы</a>
+          </div>
+        </div>
+        <div class="branch-photo-card">
+          <img src="/images/clinic-aktau.png" alt="AsiaKoz International Hospital Актау" loading="lazy" />
+          <div class="branch-photo-body">
+            <span class="branch-badge-inline aktau">Ақтау</span>
+            <h3>Филиал Актау</h3>
+            <p class="card-text" style="margin-bottom:8px;"><strong>Адрес:</strong> 7а микрорайон, 11/3</p>
+            <p class="card-text" style="margin-bottom:8px;"><strong>Запись:</strong> <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
+            <p class="card-text" style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">Врачи:</p>
+            <ul style="margin:0 0 12px 18px; font-size:14px; color:#475569; line-height:1.55;">
+              <li>Абдулхаким Текче — ведущий хирург из Турции, LASIK, катаракта, витрэктомия</li>
+              <li>Эрол Джошкун — косоглазие, катаракта, глаукома</li>
+              <li>Назгуль Сагындыкова — взрослые и дети, лазерная хирургия</li>
+            </ul>
+            <div class="rating-mini">
+              <a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener">★ 4.9 — 2ГИС Актау</a>
+            </div>
+            <a href="https://wa.me/77758630180" target="_blank" rel="noopener" class="btn" style="margin-top:14px; width:100%; justify-content:center;">WhatsApp Актау</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Как мы работаем</h2>
+      <p class="section-subtitle">Понятный маршрут от первого визита до контроля после лечения.</p>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-num">1</div><h3>Запись</h3><p>Напишите в WhatsApp или позвоните — подберём врача и удобное время.</p></div>
+        <div class="step-card"><div class="step-num">2</div><h3>Диагностика</h3><p>Осмотр, ОКТ и другие исследования — по показаниям и жалобам.</p></div>
+        <div class="step-card"><div class="step-num">3</div><h3>План лечения</h3><p>Объясняем варианты: консервативно, лазер или операция — что подходит именно вам.</p></div>
+        <div class="step-card"><div class="step-num">4</div><h3>Лечение и контроль</h3><p>Операция или терапия под наблюдением врача. Рекомендации и повторные визиты.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Команда врачей</h2>
+      <p class="section-subtitle">Офтальмологи и хирурги с узкой специализацией. <a href="/doctors/" class="link">Все врачи →</a></p>
+      <div class="lp-doctors">
+        <a href="/doctor-gorgani/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-gargoni.png" alt="Мухаммед Горгани" loading="lazy" /></div>
+          <div class="lp-doctor-body"><h3>Мухаммед Горгани</h3><p class="spec">Офтальмохирург, LASIK, катаракта</p><p class="city">Алматы</p></div>
+        </a>
+        <a href="/doctor-orel/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-orel.png" alt="Орел Талип" loading="lazy" /></div>
+          <div class="lp-doctor-body"><h3>Орел Талип</h3><p class="spec">Витреоретинолог, витрэктомия</p><p class="city">Алматы</p></div>
+        </a>
+        <a href="/doctor-tekche/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-tekche.png" alt="Абдулхаким Текче" loading="lazy" /></div>
+          <div class="lp-doctor-body"><h3>Абдулхаким Текче</h3><p class="spec">Ведущий хирург из Турции</p><p class="city">Актау</p></div>
+        </a>
+        <a href="/doctor-erol/" class="lp-doctor-card">
+          <div class="lp-doctor-photo"><img src="/images/doctor-erol.png" alt="Эрол Джошкун" loading="lazy" /></div>
+          <div class="lp-doctor-body"><h3>Эрол Джошкун</h3><p class="spec">Косоглазие, катаракта, глаукома</p><p class="city">Актау</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Отзывы пациентов</h2>
+      <p class="section-subtitle">Реальные истории после лазерной коррекции, витрэктомии и других операций.</p>
+      <p style="text-align:center; margin-bottom:0;">
+        <a href="/otzyvy-asiakoz-almaty/" class="btn btn-outline">Смотреть отзывы и видео →</a>
       </p>
     </section>
 
     <section class="section" id="rekvizity">
-      <h2 class="section-title">О клинике: лицензия и реквизиты</h2>
-      <p class="section-subtitle">Юридическая информация клиники для пациентов и проверяющих органов.</p>
+      <h2 class="section-title">Лицензия и реквизиты</h2>
+      <p class="section-subtitle">Юридическая информация для пациентов. Полные данные лицензии — по запросу в регистратуре клиники.</p>
       <div class="card">
-        <p class="card-text"><b>Номер медицинской лицензии:</b> № ________</p>
-        <p class="card-text"><b>Дата выдачи лицензии:</b> __.__.____</p>
-        <p class="card-text"><b>Орган, выдавший лицензию:</b> ____________________________</p>
-        <p class="card-text"><b>Полное юридическое наименование (ТОО):</b> ТОО "ASIA KOZ"</p>
+        <p class="card-text"><b>Полное наименование:</b> ТОО «ASIA KOZ»</p>
         <p class="card-text"><b>БИН:</b> 231040028960</p>
         <p class="card-text"><b>Юридический адрес:</b> 050016, г. Алматы, Алмалинский район, пр. Райымбека, д. 176А</p>
+        <p class="card-text"><b>Медицинская деятельность:</b> лицензия на оказание медицинских услуг (уточнение реквизитов лицензии — в регистратуре при визите).</p>
+        <p class="card-text" style="margin-bottom:0; font-size:13px; color:var(--text-muted);">
+          Имеются противопоказания. Необходима консультация специалиста. Информация на сайте не заменяет очный приём врача.
+        </p>
       </div>
     </section>
 
     <div class="cta-block">
-      <h2>Запишитесь на консультацию в AsiaKoz</h2>
-      <p>Напишите в WhatsApp — подберем врача и удобное время.</p>
-      <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn">Записаться в WhatsApp</a>
+      <h2>Запишитесь на консультацию</h2>
+      <p>Алматы: +7 700 360 01 80 · Актау: +7 775 863 01 80. Напишите в WhatsApp — ответим и подберём врача.</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:12px;">
+        <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn">WhatsApp Алматы</a>
+        <a href="https://wa.me/77758630180" target="_blank" rel="noopener" class="btn btn-outline" style="background:#fff;">WhatsApp Актау</a>
+      </div>
     </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="footer-logo"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" style="height:36px;" /></div>
+          <p class="footer-desc">Турецкая глазная клиника. Офтальмология и хирургия. Алматы и Актау.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Навигация</div>
+          <a href="/uslugi/">Услуги</a>
+          <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
+          <a href="/doctors/">Врачи</a>
+          <a href="/">Главная</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Контакты</div>
+          <p>Алматы: <a href="tel:+77003600180" class="link">+7 700 360 01 80</a></p>
+          <p>Актау: <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
+          <p>Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">Имеются противопоказания. Необходима консультация специалиста.</p>
+        <p class="footer-copy">© AsiaKoz. Алматы, Актау.</p>
+      </div>
+    </footer>
   </div>
   <script src="/js/compliance.js"></script>
 </body>
