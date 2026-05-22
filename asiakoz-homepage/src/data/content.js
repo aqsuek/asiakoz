@@ -6,8 +6,11 @@ export const WHATSAPP_URL =
 
 export const PHONE_ALMATY = PHONE;
 export const PHONE_ALMATY_HREF = PHONE_HREF;
-export const PHONE_AKTau = PHONE;
-export const PHONE_AKTau_HREF = PHONE_HREF;
+export const PHONE_AKTau = "+7 775 863 01 80";
+export const PHONE_AKTau_HREF = "tel:+77758630180";
+export const WHATSAPP_AKTau_URL =
+  "https://wa.me/77758630180?text=" +
+  encodeURIComponent("Здравствуйте! Хочу записаться в клинику AsiaKoz Актау.");
 
 export const NAV_LINKS = [
   { label: "Услуги", href: "/uslugi/" },
@@ -186,9 +189,9 @@ export const BRANCHES = [
   {
     city: "Актау",
     address: "7А микрорайон, 11/3",
-    phone: PHONE,
-    phoneHref: PHONE_HREF,
-    whatsapp: WHATSAPP_URL.split("?")[0],
+    phone: PHONE_AKTau,
+    phoneHref: PHONE_AKTau_HREF,
+    whatsapp: WHATSAPP_AKTau_URL.split("?")[0],
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
     image: "/images/clinic-2.png",
     gis: "https://2gis.kz/aktau/firm/70000001104276081",
