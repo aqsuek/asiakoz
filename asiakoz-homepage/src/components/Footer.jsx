@@ -5,7 +5,7 @@ import { BRANCHES, NAV_LINKS, WHATSAPP_URL } from "../data/content";
 
 export default function Footer() {
   return (
-    <footer id="contacts" className="site-footer border-t border-slate-100 bg-white pb-28 pt-14 sm:pb-32">
+    <footer id="contacts" className="site-footer border-t border-brand/15 bg-gradient-to-b from-brand-soft/80 via-white to-white pb-28 pt-14 sm:pb-32">
       <div className="section-container">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-3">

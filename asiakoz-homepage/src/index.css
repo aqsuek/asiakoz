@@ -8,7 +8,14 @@
   }
 
   body {
-    @apply bg-white font-sans text-ink antialiased;
+    @apply bg-brand-soft/30 font-sans text-ink antialiased;
+    background-image: radial-gradient(
+        ellipse 80% 50% at 50% -10%,
+        rgba(18, 183, 213, 0.08) 0%,
+        transparent 55%
+      ),
+      linear-gradient(180deg, #f8fcfe 0%, #ffffff 50%, #f5fafc 100%);
+    background-attachment: fixed;
   }
 }
 
@@ -25,8 +32,29 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand/30 bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-300 hover:border-brand hover:bg-brand-soft;
   }
 
+  .section-label {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-brand;
+  }
+
+  .section-label::before {
+    content: "";
+    @apply h-1.5 w-1.5 shrink-0 rounded-full bg-brand;
+  }
+
+  .section-tint {
+    @apply relative overflow-hidden bg-section-tint-bg;
+  }
+
+  .section-panel {
+    @apply rounded-3xl border border-brand/10 bg-white/90 p-6 shadow-soft backdrop-blur-sm sm:p-8;
+  }
+
   .card-premium {
-    @apply rounded-2xl border border-slate-100/80 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-float;
+    @apply rounded-2xl border border-brand/10 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-brand/25 hover:shadow-float;
+  }
+
+  .card-premium-tint {
+    @apply rounded-2xl border border-brand/15 bg-gradient-to-br from-white to-brand-soft/80 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-float;
   }
 
   .glass-badge {

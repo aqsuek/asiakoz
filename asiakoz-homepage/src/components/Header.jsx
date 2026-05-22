@@ -8,7 +8,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100/80 bg-white/90 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-lg shadow-[0_4px_24px_rgba(18,183,213,0.06)]">
       <div className="section-container flex h-16 items-center justify-between gap-4 sm:h-[72px]">
         <Logo />
 
