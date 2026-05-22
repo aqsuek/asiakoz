@@ -122,6 +122,14 @@
     @apply underline;
   }
 
+  .branch-clinic-photo {
+    @apply relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden bg-gradient-to-br from-brand-soft via-white to-brand-light/50;
+  }
+
+  .branch-clinic-photo img {
+    @apply h-full w-full object-contain object-center p-3 sm:p-4;
+  }
+
   .btn-hero-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand shadow-float transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/95;
   }

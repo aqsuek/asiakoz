@@ -83,10 +83,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: flex;
       flex-direction: column;
     }
+    .branch-photo-wrap {
+      aspect-ratio: 4 / 3;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(145deg, #e8f8fc, #f0fafd 55%, #fff);
+      padding: 10px 12px;
+    }
     .branch-photo-card img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: 100%;
+      max-height: 260px;
+      object-fit: contain;
+      object-position: center;
     }
     .branch-photo-body {
       padding: 20px;
@@ -310,7 +322,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="section-subtitle">Выберите удобный город — запись по телефону и WhatsApp филиала.</p>
       <div class="grid-2">
         <div class="branch-photo-card">
-          <img src="/images/clinic-building.png" alt="Клиника AsiaKoz Алматы" loading="lazy" />
+          <div class="branch-photo-wrap">
+            <img src="/images/clinic-building.png" alt="Клиника AsiaKoz Алматы" loading="lazy" />
+          </div>
           <div class="branch-photo-body">
             <span class="branch-badge-inline almaty">Алматы</span>
             <h3>Филиал Алматы</h3>
@@ -330,7 +344,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="branch-photo-card">
-          <img src="/images/clinic-aktau.png" alt="AsiaKoz International Hospital Актау" loading="lazy" />
+          <div class="branch-photo-wrap">
+            <img src="/images/clinic-aktau.png" alt="AsiaKoz International Hospital Актау" loading="lazy" />
+          </div>
           <div class="branch-photo-body">
             <span class="branch-badge-inline aktau">Ақтау</span>
             <h3>Филиал Актау</h3>

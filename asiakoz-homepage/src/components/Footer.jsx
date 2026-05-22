@@ -33,14 +33,15 @@ export default function Footer() {
           <div className="grid gap-6 sm:grid-cols-2 lg:col-span-7">
             {BRANCHES.map((branch) => (
               <div key={branch.city} className="card-premium overflow-hidden">
-                <img
-                  src={branch.image}
-                  alt={`Филиал AsiaKoz — ${branch.city}`}
-                  className="h-32 w-full object-cover"
-                  loading="lazy"
-                  width="600"
-                  height="200"
-                />
+                <div className="branch-clinic-photo">
+                  <img
+                    src={branch.image}
+                    alt={`Филиал AsiaKoz — ${branch.city}`}
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                  />
+                </div>
                 <div className="p-5">
                   <h3 className="font-bold text-ink">{branch.city}</h3>
                   <p className="mt-2 text-sm text-ink-muted">{branch.address}</p>
