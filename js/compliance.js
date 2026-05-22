@@ -202,7 +202,44 @@
     });
   }
 
+  function initSiteChrome() {
+    if (document.getElementById("root")) return;
+
+    document.querySelectorAll(".container > .header, body > .container .header").forEach(function (header) {
+      header.classList.add("site-header");
+    });
+
+    document.querySelectorAll("a.logo").forEach(function (logo) {
+      if (logo.querySelector(".logo-wordmark")) return;
+      var img = logo.querySelector(".logo-img");
+      if (!img) return;
+      var wrap = document.createElement("span");
+      wrap.className = "logo-wordmark";
+      wrap.innerHTML =
+        '<span class="logo-text-title">ASIAKOZ</span>' +
+        '<span class="logo-text-sub">Түрік көз клиникасы</span>' +
+        '<span class="logo-text-sub logo-text-sub--ru">Турецкая глазная клиника</span>';
+      logo.appendChild(wrap);
+    });
+
+    if (!document.getElementById("asiakoz-wa-fixed")) {
+      var waText = encodeURIComponent("Здравствуйте! Хочу записаться в клинику AsiaKoz.");
+      var bar = document.createElement("div");
+      bar.id = "asiakoz-wa-fixed";
+      bar.className = "asiakoz-wa-bar";
+      bar.innerHTML =
+        '<a class="asiakoz-wa-bar__link" href="https://wa.me/77003600180?text=' +
+        waText +
+        '" target="_blank" rel="noopener noreferrer">' +
+        '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.197.15-.417.347-.386.667l1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>' +
+        "<span>Записаться в WhatsApp</span></a>";
+      document.body.appendChild(bar);
+      document.body.classList.add("has-wa-bar");
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    initSiteChrome();
     attachConsentToForms();
     injectCookieBanner();
     enrichFooter();
