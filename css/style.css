@@ -46,9 +46,7 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
-body.has-wa-bar {
-  padding-bottom: 72px;
-}
+/* плавающая кнопка WhatsApp — только иконка справа */
 ::selection {
   background: rgba(18, 183, 213, 0.2);
   color: var(--text);
@@ -989,50 +987,41 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent-soft) !important;
   transform: translateY(-1px);
 }
-.asiakoz-wa-bar {
+.wa-fab,
+.asiakoz-wa-fab {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: max(20px, env(safe-area-inset-bottom, 0px));
   z-index: 9990;
-  box-shadow: 0 -4px 24px rgba(18, 183, 213, 0.35);
 }
-.asiakoz-wa-bar__link {
+.wa-fab__btn,
+.asiakoz-wa-fab__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 16px;
-  background: var(--accent);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
   color: #fff;
-  font-size: 14px;
-  font-weight: 600;
   text-decoration: none;
-  transition: background var(--transition-fast);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+    background var(--transition-fast);
 }
-.asiakoz-wa-bar__link:hover {
-  background: var(--accent-hover);
+.wa-fab__btn:hover,
+.asiakoz-wa-fab__link:hover {
+  background: #20bd5a;
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
 }
-.asiakoz-wa-bar__link svg {
-  width: 20px;
-  height: 20px;
+.wa-fab__btn svg,
+.asiakoz-wa-fab__link svg {
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 .cookie-banner {
-  bottom: 72px;
-}
-body.has-wa-bar .cookie-banner {
-  bottom: 72px;
-}
-@media (min-width: 769px) {
-  body.has-wa-bar {
-    padding-bottom: 0;
-  }
-  .asiakoz-wa-bar {
-    display: none;
-  }
-  .cookie-banner {
-    bottom: 16px;
-  }
+  bottom: 16px;
 }

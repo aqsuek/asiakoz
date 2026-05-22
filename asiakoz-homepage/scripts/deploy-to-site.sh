@@ -34,9 +34,9 @@ node "$APP/scripts/inject-clinic-schema.cjs" "$ROOT/index.html"
 # Append compliance.js (footer legal, cookie banner)
 if ! grep -q 'compliance.js' "$ROOT/index.html"; then
   if [[ "$(uname)" == "Darwin" ]]; then
-    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=6"></script>\n</body>|' "$ROOT/index.html"
+    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=7"></script>\n</body>|' "$ROOT/index.html"
   else
-    sed -i 's|</body>|  <script src="/js/compliance.js?v=6"></script>\n</body>|' "$ROOT/index.html"
+    sed -i 's|</body>|  <script src="/js/compliance.js?v=7"></script>\n</body>|' "$ROOT/index.html"
   fi
 fi
 

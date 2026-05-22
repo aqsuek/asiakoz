@@ -41,10 +41,11 @@ export default function Header() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-brand/25 bg-white px-4 py-2.5 text-sm font-semibold text-brand transition-all hover:border-brand hover:bg-brand-soft"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.35)] transition-all hover:-translate-y-0.5 hover:bg-[#20bd5a]"
+            aria-label="Записаться в WhatsApp"
+            title="Записаться в WhatsApp"
           >
-            <WhatsAppIcon className="h-4 w-4" />
-            Записаться в WhatsApp
+            <WhatsAppIcon className="h-5 w-5" />
           </a>
         </div>
 
@@ -72,9 +73,15 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary mt-2">
-              <WhatsAppIcon className="h-4 w-4" />
-              Записаться в WhatsApp
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex h-12 w-12 items-center justify-center self-start rounded-full bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.35)]"
+              aria-label="Записаться в WhatsApp"
+              title="Записаться в WhatsApp"
+            >
+              <WhatsAppIcon className="h-6 w-6" />
             </a>
           </nav>
         </div>
