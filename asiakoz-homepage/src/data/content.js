@@ -198,7 +198,7 @@ export const BRANCHES = [
     phoneHref: PHONE_AKTau_HREF,
     whatsapp: WHATSAPP_AKTau_URL.split("?")[0],
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
-    image: "/images/clinic-2.png",
+    image: "/images/clinic-aktau.png",
     gis: "https://2gis.kz/aktau/firm/70000001104276081",
   },
 ];
