@@ -16,34 +16,32 @@ export default function Doctors() {
             <a
               key={doctor.name}
               href={doctor.href}
-              className="card-premium group overflow-hidden"
+              className="card-premium group flex flex-col overflow-hidden"
             >
-              <div className="flex flex-col sm:flex-row">
-                <div className="relative h-52 w-full shrink-0 bg-slate-100 sm:h-auto sm:w-36">
-                  <img
-                    src={doctor.image}
-                    alt={doctor.name}
-                    className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-                    loading="lazy"
-                    width="288"
-                    height="360"
-                  />
-                </div>
-                <div className="relative flex flex-1 flex-col p-5">
-                  <h3 className="text-lg font-bold text-ink group-hover:text-brand">{doctor.name}</h3>
-                  <p className="mt-1 text-sm font-semibold text-brand">{doctor.role}</p>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
-                    {doctor.specialty}
-                  </p>
-                  <span className="mt-3 text-sm font-semibold text-brand">Подробнее →</span>
-                  <span
-                    className="absolute bottom-4 right-4 text-lg"
-                    title="Специалист из Турции"
-                    aria-hidden
-                  >
-                    🇹🇷
-                  </span>
-                </div>
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-gradient-to-b from-brand-soft via-white to-slate-50 sm:aspect-[5/6]">
+                <img
+                  src={doctor.image}
+                  alt={doctor.name}
+                  className="h-full w-full object-contain object-center p-3 transition-transform duration-300 group-hover:scale-[1.02] sm:p-4"
+                  loading="lazy"
+                  width="400"
+                  height="500"
+                />
+              </div>
+              <div className="relative flex flex-1 flex-col p-5">
+                <h3 className="text-lg font-bold text-ink group-hover:text-brand">{doctor.name}</h3>
+                <p className="mt-1 text-sm font-semibold text-brand">{doctor.role}</p>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
+                  {doctor.specialty}
+                </p>
+                <span className="mt-3 text-sm font-semibold text-brand">Подробнее →</span>
+                <span
+                  className="absolute bottom-4 right-4 text-lg"
+                  title="Специалист из Турции"
+                  aria-hidden
+                >
+                  🇹🇷
+                </span>
               </div>
             </a>
           ))}
