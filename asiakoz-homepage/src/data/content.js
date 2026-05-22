@@ -91,6 +91,13 @@ export const DOCTORS = [
     image: "/images/doctor-erol.png",
     href: "/doctor-erol/",
   },
+  {
+    name: "Абдулхаким Текче",
+    role: "Ведущий офтальмолог-хирург",
+    specialty: "LASIK, катаракта, глаукома, витрэктомия · Актау",
+    image: "/images/doctor-tekche.png",
+    href: "/doctor-tekche/",
+  },
 ];
 
 export const WHY_CHOOSE = [

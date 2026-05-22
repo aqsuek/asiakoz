@@ -21,7 +21,7 @@ export default function Doctors() {
           className="mb-12"
         />
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {DOCTORS.map((doctor) => (
             <a
               key={doctor.name}
