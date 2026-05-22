@@ -27,6 +27,7 @@ export const HERO_FEATURES = [
 export const TRUST_STATS = [
   { value: "12 000+", label: "успешных операций", icon: "award" },
   { value: "900+", label: "отзывов пациентов", icon: "message" },
+  { value: "35 000+", label: "нас выбирает более 35 тысяч пациентов", icon: "user" },
   { value: "2", label: "филиала в Казахстане", icon: "map" },
 ];
 

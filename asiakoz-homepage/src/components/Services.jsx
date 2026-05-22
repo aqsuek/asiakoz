@@ -4,7 +4,7 @@ import { SERVICES } from "../data/content";
 
 export default function Services() {
   return (
-    <section id="services" className="section-tint py-16 sm:py-20 lg:py-24">
+    <section id="services" className="section-tint relative z-0 py-16 sm:py-20 lg:py-24">
       <div className="section-container">
         <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
