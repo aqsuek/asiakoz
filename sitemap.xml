@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/llms.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/ai/clinic-knowledge.md</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/ambliopiya-almaty/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

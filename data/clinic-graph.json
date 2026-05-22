@@ -1,53 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817733574"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17817733574');
-    </script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>
-    <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-      ttq.load('D7LJMSBC77U8ETKS0JRG');
-      ttq.page();
-    }(window, document, 'ttq');
-    </script>
-    <script>
-      if (location.protocol !== "file:" && location.pathname === "/index.html") {
-        location.replace("/" + location.search + location.hash);
-      }
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#12B7D5" />
-    <meta name="color-scheme" content="light" />
-    <title>Турецкая глазная клиника в Алматы и Актау — Азиякоз</title>
-    <meta name="description" content="Азиякоз — турецкая глазная клиника в Алматы и Актау. Лазерная коррекция, катаракта, витрэктомия, косоглазие. Запись в WhatsApp: +7 700 360 01 80." />
-    <link rel="canonical" href="https://asiakoz.com/" />
-    <link rel="alternate" type="text/plain" href="https://asiakoz.com/llms.txt" title="LLM-readable summary (llms.txt)" />
-    <meta property="og:site_name" content="Азиякоз" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Турецкая глазная клиника в Алматы и Актау — Азиякоз" />
-    <meta property="og:description" content="Сложные операции на глазах у офтальмохирургов с международным опытом. Алматы и Актау." />
-    <meta property="og:url" content="https://asiakoz.com/" />
-    <meta property="og:image" content="https://asiakoz.com/images/clinic-1.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Азиякоз — глазная клиника Алматы и Актау" />
-    <meta name="twitter:description" content="Лазерная коррекция, катаракта, витрэктомия, косоглазие." />
-    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -192,17 +142,3 @@
     }
   ]
 }
-    </script>
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preload" as="image" href="/images/clinic-1.png" />
-    <script type="module" crossorigin src="/assets/index-BXA6t-Yp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-xO82X0Gh.css">
-  </head>
-  <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <div id="root"></div>
-  </body>
-</html>
