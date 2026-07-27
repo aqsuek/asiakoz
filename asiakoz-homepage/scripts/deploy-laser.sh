@@ -4,6 +4,7 @@ set -euo pipefail
 APP="$(cd "$(dirname "$0")/.." && pwd)"
 LIVE="$(cd "$APP/.." && pwd)"
 TARGET="$LIVE/laser"
+DOCTOR_IDS=(mehmet-esat-teker orel-talip)
 
 cd "$APP"
 VITE_BASE=/laser/ VITE_BRANCH=laser npm run build
@@ -28,6 +29,11 @@ if [[ ! -f "$TARGET/index.html" ]]; then
   exit 1
 fi
 
+for id in "${DOCTOR_IDS[@]}"; do
+  mkdir -p "$TARGET/doctor/$id"
+  cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
+done
+
 # SEO meta for /laser/
 INDEX="$TARGET/index.html"
 python3 - "$INDEX" <<'PY'
@@ -35,7 +41,7 @@ import re, sys
 from pathlib import Path
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
-t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v3"', t, count=1)
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v4"', t, count=1)
 t = t.replace("https://asiakoz.com/shymkent/", "https://asiakoz.com/laser/")
 t = re.sub(r"<title>[^<]*</title>", "<title>Лазерлік түзету — акция Алматыда | AsiaKoz</title>", t, count=1)
 p.write_text(t, encoding="utf-8")
@@ -58,3 +64,7 @@ fi
 
 echo "Deployed Laser promo landing -> $TARGET"
 echo "URL: https://asiakoz.com/laser/"
+echo "Doctor pages:"
+for id in "${DOCTOR_IDS[@]}"; do
+  echo "  https://asiakoz.com/laser/doctor/$id/"
+done
