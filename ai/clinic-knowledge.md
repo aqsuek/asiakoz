@@ -73,10 +73,10 @@
 
 | Врач | Филиал | Специализация | Страница |
 |------|--------|---------------|----------|
-| Мухаммед Горгани | Алматы | LASIK/SMILE, катаракта, глаукома | https://asiakoz.com/doctor-gorgani/ |
+| Али Кескин | Алматы | LASIK/SMILE, катаракта, глаукома | https://asiakoz.com/doctor-ali-keskin/ |
 | Орел Талип | Алматы | Косоглазие, витрэктомия, сетчатка | https://asiakoz.com/doctor-orel/ |
 | Эрол Джошкун | Актау | Косоглазие, катаракта, глаукома | https://asiakoz.com/doctor-erol/ |
-| Абдулхаким Текче | Актау | LASIK/SMILE, катаракта, витрэктомия; 20+ лет, Турция | https://asiakoz.com/doctor-tekche/ |
+| Мехмет Есат Текер | Актау | LASIK/SMILE, катаракта, витрэктомия; 20+ лет, Турция | https://asiakoz.com/doctor-mehmet-esat-teker/ |
 | Алия | Алматы | Офтальмолог | https://asiakoz.com/doctor-aliya/ |
 | Назгуль | Актау | Офтальмолог | https://asiakoz.com/doctor-nazgul/ |
 

@@ -223,7 +223,7 @@
     });
 
     if (!document.getElementById("asiakoz-wa-fixed") && !document.querySelector(".sticky-whatsapp")) {
-      var aktauPaths = ["/kosoglazie-aktau", "/doctor-erol", "/doctor-tekche", "/doctor-nazgul"];
+      var aktauPaths = ["/kosoglazie-aktau", "/doctor-erol", "/doctor-nazgul"];
       var isAktau = aktauPaths.some(function (p) {
         return window.location.pathname.indexOf(p) === 0;
       });
