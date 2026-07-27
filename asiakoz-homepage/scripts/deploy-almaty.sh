@@ -32,7 +32,7 @@ import re, sys
 from pathlib import Path
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
-t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-almaty-v1"', t, count=1)
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-almaty-v2"', t, count=1)
 t = t.replace("https://asiakoz.com/shymkent/", "https://asiakoz.com/almaty/")
 t = re.sub(
     r"<title>[^<]*</title>",
