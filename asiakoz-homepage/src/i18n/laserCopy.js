@@ -33,6 +33,22 @@ export const laserOverrides = {
       doctorChipLabel: "Лазерлік коррекция",
       doctorChipName: "Мехмет Есат Текер",
       doctorChipStats: "5 000+ лазерлік коррекция · 20+ жыл тәжірибе",
+      doctorChips: [
+        {
+          image: "images/doctors/mehmet-esat-teker.png",
+          imageAlt: "Мехмет Есат Текер — лазерлік коррекция хирургі",
+          label: "Лазерлік коррекция",
+          name: "Мехмет Есат Текер",
+          stats: "5 000+ лазерлік коррекция · 20+ жыл тәжірибе",
+        },
+        {
+          image: "images/doctors/orel-talip.png",
+          imageAlt: "Орел Талип — офтальмохирург",
+          label: "Лазерлік коррекция",
+          name: "Орел Талип",
+          stats: "8 000+ лазерлік коррекция · 15 000+ операция",
+        },
+      ],
     },
     laserTrust: {
       title: "Сенім",
@@ -335,6 +351,22 @@ export const laserOverrides = {
       doctorChipLabel: "Лазерная коррекция",
       doctorChipName: "Мехмет Есат Текер",
       doctorChipStats: "5 000+ лазерных коррекций · 20+ лет",
+      doctorChips: [
+        {
+          image: "images/doctors/mehmet-esat-teker.png",
+          imageAlt: "Мехмет Есат Текер — хирург лазерной коррекции",
+          label: "Лазерная коррекция",
+          name: "Мехмет Есат Текер",
+          stats: "5 000+ лазерных коррекций · 20+ лет",
+        },
+        {
+          image: "images/doctors/orel-talip.png",
+          imageAlt: "Орел Талип — офтальмохирург",
+          label: "Лазерная коррекция",
+          name: "Орел Талип",
+          stats: "8 000+ лазерных коррекций · 15 000+ операций",
+        },
+      ],
     },
     laserTrust: {
       title: "Доверие",

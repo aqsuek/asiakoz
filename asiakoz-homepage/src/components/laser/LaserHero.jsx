@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import WhatsAppIcon from "../WhatsAppIcon";
 import { useLang } from "../../i18n/LanguageContext";
 import { CLINIC } from "../../data/contacts";
@@ -14,6 +14,46 @@ import { captureUtmFromUrl } from "../../lib/utm";
 import { assetUrl } from "../../data/reviews";
 import { homeUrl } from "../../lib/routes";
 
+const CHIP_ROTATE_MS = 4000;
+
+function useDoctorChips(h) {
+  if (Array.isArray(h.doctorChips) && h.doctorChips.length > 0) {
+    return h.doctorChips;
+  }
+  return [
+    {
+      image: h.image || CLINIC.heroImage,
+      imageAlt: h.imageAlt || "",
+      label: h.doctorChipLabel,
+      name: h.doctorChipName,
+      stats: h.doctorChipStats,
+    },
+  ].filter((c) => c.name);
+}
+
+function DoctorChipCard({ chip }) {
+  return (
+    <div className="flex w-full items-center gap-3 animate-fadeSlide">
+      <img
+        src={assetUrl(chip.image)}
+        alt={chip.imageAlt || chip.name || ""}
+        className="h-14 w-14 shrink-0 rounded-xl object-cover object-[center_18%]"
+        width={56}
+        height={56}
+        loading="lazy"
+        decoding="async"
+      />
+      <div className="min-w-0">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
+          {chip.label}
+        </p>
+        <p className="truncate text-sm font-bold text-ink">{chip.name}</p>
+        <p className="truncate text-[11px] text-ink-muted">{chip.stats}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function LaserHero() {
   const { lang, t } = useLang();
   const h = t.laserHero || {};
@@ -23,11 +63,27 @@ export default function LaserHero() {
   const spots = active ? getPromoSpots() : null;
   const priceLabel = getPromoPriceLabel(lang);
   const oldPriceLabel = getPromoOldPriceLabel();
+  const chips = useDoctorChips(h);
+  const [chipIndex, setChipIndex] = useState(0);
 
   useEffect(() => {
     captureUtmFromUrl();
     trackEvent("laser_page_view", { language: lang });
   }, [lang]);
+
+  useEffect(() => {
+    setChipIndex(0);
+  }, [lang]);
+
+  useEffect(() => {
+    if (chips.length < 2) return undefined;
+    const id = window.setInterval(() => {
+      setChipIndex((i) => (i + 1) % chips.length);
+    }, CHIP_ROTATE_MS);
+    return () => window.clearInterval(id);
+  }, [chips.length]);
+
+  const chip = chips[chipIndex] || chips[0];
 
   return (
     <section id="promo" className="scroll-mt-24 scroll-mb-28 pb-4 pt-2 sm:pb-8 sm:pt-6">
@@ -119,24 +175,27 @@ export default function LaserHero() {
               </a>
             </div>
 
-            {/* Compact doctor strip — mobile only */}
-            <div className="mt-3 flex items-center gap-3 rounded-2xl border border-ink/[0.06] bg-white p-2.5 shadow-soft sm:hidden">
-              <img
-                src={assetUrl(h.image || CLINIC.heroImage)}
-                alt={h.imageAlt || ""}
-                className="h-14 w-14 shrink-0 rounded-xl object-cover object-[center_18%]"
-                width={56}
-                height={56}
-                fetchPriority="high"
-              />
-              <div className="min-w-0">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
-                  {h.doctorChipLabel}
-                </p>
-                <p className="truncate text-sm font-bold text-ink">{h.doctorChipName}</p>
-                <p className="truncate text-[11px] text-ink-muted">{h.doctorChipStats}</p>
+            {/* Compact doctor strip — mobile only, auto-rotates */}
+            {chip && (
+              <div
+                className="mt-3 overflow-hidden rounded-2xl border border-ink/[0.06] bg-white p-2.5 shadow-soft sm:hidden"
+                aria-live="polite"
+              >
+                <DoctorChipCard key={`${chip.name}-${chipIndex}`} chip={chip} />
+                {chips.length > 1 && (
+                  <div className="mt-2 flex justify-center gap-1.5" aria-hidden>
+                    {chips.map((c, i) => (
+                      <span
+                        key={c.name}
+                        className={`h-1 rounded-full transition-all duration-300 ${
+                          i === chipIndex ? "w-3 bg-brand" : "w-1 bg-ink/15"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
-            </div>
+            )}
           </div>
 
           <div className="relative mx-auto hidden w-full max-w-[260px] sm:block sm:max-w-[320px] lg:mx-0 lg:max-w-none">
