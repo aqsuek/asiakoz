@@ -8,195 +8,65 @@
   }
 
   body {
-    @apply bg-brand-soft/30 font-sans text-ink antialiased;
-    background-image: radial-gradient(
-        ellipse 80% 50% at 50% -10%,
-        rgba(18, 183, 213, 0.08) 0%,
-        transparent 55%
-      ),
-      linear-gradient(180deg, #f8fcfe 0%, #ffffff 50%, #f5fafc 100%);
-    background-attachment: fixed;
+    @apply bg-surface-warm font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand/20 text-ink;
   }
 }
 
 @layer components {
   .section-container {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-[1200px] px-4 sm:px-5 lg:px-8;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl;
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand;
+  }
+
+  .section-eyebrow::before {
+    content: "";
+    @apply h-px w-5 bg-brand/40;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-float;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-dark active:translate-y-0;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand/30 bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-300 hover:border-brand hover:bg-brand-soft;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/10 bg-white px-6 py-3.5 text-sm font-semibold text-ink transition-all duration-300 hover:border-brand/30 hover:bg-brand-soft/60;
   }
 
-  .section-label {
-    @apply inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-brand;
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-dark;
   }
 
-  .section-label::before {
-    content: "";
-    @apply h-1.5 w-1.5 shrink-0 rounded-full bg-brand;
+  .field {
+    @apply w-full rounded-2xl border border-ink/10 bg-surface-muted px-4 py-3.5 text-sm text-ink outline-none transition-all placeholder:text-ink-faint focus:border-brand/40 focus:bg-white focus:ring-4 focus:ring-brand/10;
   }
 
-  .section-tint {
-    @apply relative overflow-hidden bg-section-tint-bg;
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
-  .section-panel {
-    @apply rounded-3xl border border-brand/10 bg-white/90 p-6 shadow-soft backdrop-blur-sm sm:p-8;
-  }
-
-  .card-premium {
-    @apply rounded-2xl border border-brand/10 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-brand/25 hover:shadow-float;
-  }
-
-  .card-premium-tint {
-    @apply rounded-2xl border border-brand/15 bg-gradient-to-br from-white to-brand-soft/80 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-float;
-  }
-
-  .glass-badge {
-    @apply rounded-2xl border border-white/60 bg-white/80 shadow-float backdrop-blur-md;
-  }
-
-  /* Doctor cards — same layout as /doctors/ */
-  .doctor-card-site {
-    @apply flex h-full flex-col overflow-hidden rounded-2xl border border-slate-900/[0.04] bg-white shadow-soft transition-all duration-200 hover:-translate-y-1 hover:shadow-float;
-  }
-
-  .doctor-card-site__inner {
-    @apply flex h-full flex-col text-inherit no-underline;
-  }
-
-  .doctor-card-site__photo {
-    @apply aspect-[3/4] w-full shrink-0 overflow-hidden bg-gradient-to-br from-sky-100 to-emerald-50;
-  }
-
-  .doctor-card-site__photo img {
-    @apply h-full w-full object-cover object-top;
-  }
-
-  .doctor-card-site__body {
-    @apply flex min-h-0 flex-1 flex-col p-5;
-  }
-
-  .doctor-card-site__meta {
-    @apply mb-2 flex flex-wrap items-center justify-between gap-2;
-  }
-
-  .doctor-card-site__role {
-    @apply text-xs font-semibold text-brand;
-  }
-
-  .doctor-card-site__badge-almaty {
-    @apply shrink-0 rounded-full bg-emerald-500/10 px-2 py-1 text-[11px] font-semibold text-emerald-700;
-  }
-
-  .doctor-card-site__badge-aktau {
-    @apply shrink-0 rounded-full bg-teal-500/10 px-2 py-1 text-[11px] font-semibold text-teal-700;
-  }
-
-  .doctor-card-site__name {
-    @apply mb-2.5 text-lg font-bold leading-snug text-ink;
-  }
-
-  .doctor-card-site__tags {
-    @apply mb-3 flex flex-wrap gap-1.5;
-  }
-
-  .doctor-card-site__tag {
-    @apply rounded-full bg-brand/10 px-2.5 py-1 text-[11px] font-medium text-brand-dark;
-  }
-
-  .doctor-card-site__note {
-    @apply mb-2 text-xs leading-relaxed text-ink-muted;
-  }
-
-  .doctor-card-site__action {
-    @apply mt-auto pt-1 text-[13px] font-semibold text-brand;
-  }
-
-  .doctor-card-site:hover .doctor-card-site__action {
-    @apply underline;
-  }
-
-  .branch-clinic-photo {
-    @apply relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden bg-gradient-to-br from-brand-soft via-white to-brand-light/50;
-  }
-
-  .branch-clinic-photo img {
-    @apply h-full w-full object-contain object-center p-3 sm:p-4;
-  }
-
-  .btn-hero-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand shadow-float transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/95;
-  }
-
-  .btn-hero-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/70 bg-transparent px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10;
-  }
-
-  /* Portrait hero video → landscape fill on tablet+ */
-  .hero-video-bg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-  }
-
-  @media (min-width: 768px) {
-    .hero-video-bg {
-      width: auto;
-      height: 100vw;
-      min-width: 100%;
-      min-height: 100%;
-      max-width: none;
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
-  }
-
-  .eye-breathe {
-    animation: eye-breathe 5s ease-in-out infinite;
-    transform-origin: center;
-  }
-
-  .eye-glow-pulse {
-    animation: eye-glow-pulse 4s ease-in-out infinite;
-  }
-}
-
-@keyframes eye-breathe {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.06);
-  }
-}
-
-@keyframes eye-glow-pulse {
-  0%,
-  100% {
-    opacity: 0.35;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.65;
-    transform: scale(1.08);
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .eye-breathe,
-  .eye-glow-pulse {
-    animation: none;
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

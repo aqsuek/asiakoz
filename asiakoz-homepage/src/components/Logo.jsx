@@ -1,35 +1,21 @@
-export default function Logo({ className = "", showText = true }) {
+const MAIN_SITE = "https://asiakoz.com/";
+const LOGO_SRC = `${import.meta.env.BASE_URL}images/logo-asiakoz.png`;
+
+export default function Logo({ className = "" }) {
   return (
     <a
-      href="/"
-      className={`group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90 sm:gap-3 ${className}`}
-      title="Азиякоз — Турецкая глазная клиника"
-      aria-label="Азиякоз — на главную"
+      href={MAIN_SITE}
+      className={`inline-flex items-center transition-opacity hover:opacity-85 ${className}`}
+      aria-label="Азиякөз — негізгі сайт"
     >
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center sm:h-11 sm:w-11">
-        <img
-          src="/images/logo.png"
-          alt=""
-          className="h-full w-full object-contain"
-          width="44"
-          height="44"
-          decoding="async"
-          aria-hidden
-        />
-      </span>
-      {showText && (
-        <span className="flex flex-col leading-none">
-          <span className="text-[15px] font-extrabold tracking-[0.14em] text-brand sm:text-base">
-            Asiakoz
-          </span>
-          <span className="mt-1 text-[10px] font-medium leading-snug text-ink-faint sm:text-[11px]">
-            Түрік көз клиникасы
-          </span>
-          <span className="mt-0.5 text-[10px] font-medium leading-snug text-ink-faint sm:text-[11px]">
-            Турецкая глазная клиника
-          </span>
-        </span>
-      )}
+      <img
+        src={LOGO_SRC}
+        alt="Азиякөз"
+        className="h-9 w-auto object-contain sm:h-10"
+        width={230}
+        height={40}
+        decoding="async"
+      />
     </a>
   );
 }

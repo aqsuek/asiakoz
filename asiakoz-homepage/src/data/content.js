@@ -14,59 +14,92 @@ export const WHATSAPP_AKTau_URL =
 
 export const NAV_LINKS = [
   { label: "Услуги", href: "/uslugi/" },
-  { label: "О клинике", href: "/glaznaya-klinika-almaty/" },
-  { label: "Врачи", href: "/doctors/" },
-  { label: "Отзывы", href: "/otzyvy-asiakoz-almaty/" },
-  { label: "Пациентам", href: "#process" },
+  { label: "Врачи", href: "#doctors" },
+  { label: "О клинике", href: "#about" },
+  { label: "Отзывы", href: "#reviews" },
   { label: "Контакты", href: "#contacts" },
 ];
 
-export const HERO_FEATURES = [
-  "Турецкие офтальмохирурги",
-  "Современное оборудование",
-  "Международные стандарты",
+export const HERO_DOCTORS = [
+  {
+    name: "Орел Талип",
+    role: "Витреоретинолог",
+    branch: "Алматы",
+    tags: ["Косоглазие", "Витрэктомия", "Сетчатка"],
+    experience: "20+ лет · 15 000+ операций",
+    rating: "4.8",
+    image: "/images/doctor-orel.png",
+    href: "/doctor-orel/",
+  },
+  {
+    name: "Мехмет Есат Текер",
+    role: "Ведущий офтальмолог-хирург",
+    branch: "Алматы · Шымкент",
+    tags: ["LASIK / SMILE", "Катаракта", "Витрэктомия"],
+    experience: "20+ лет · специалист из Турции",
+    rating: "4.8",
+    image: "/images/doctor-mehmet-esat-teker.png",
+    href: "/doctor-mehmet-esat-teker/",
+  },
+  {
+    name: "Эрол Джошкун",
+    role: "Офтальмолог-хирург",
+    branch: "Ақтау",
+    tags: ["Косоглазие", "Катаракта", "Глаукома"],
+    experience: "15+ лет · клиники Турции",
+    rating: "4.9",
+    image: "/images/doctor-erol.png",
+    href: "/doctor-erol/",
+  },
+  {
+    name: "Алия Усманова",
+    role: "Ведущий офтальмохирург",
+    branch: "Алматы",
+    tags: ["Лазерная коррекция", "Катаракта", "Блефаропластика"],
+    experience: "18 лет стажа",
+    rating: "4.8",
+    image: "/images/doctor-aliya.png",
+    href: "/doctor-aliya/",
+  },
 ];
 
 export const TRUST_STATS = [
-  { value: "12 000+", label: "успешных операций", icon: "award" },
-  { value: "900+", label: "отзывов пациентов", icon: "message" },
-  { value: "35 000+", label: "нас выбирает более 35 тысяч пациентов", icon: "user" },
-  { value: "2", label: "филиала в Казахстане", icon: "map" },
+  { value: "12 000+", label: "успешных операций" },
+  { value: "4.8–4.9", label: "рейтинг в 2ГИС" },
+  { value: "900+", label: "отзывов пациентов" },
+  { value: "2", label: "филиала в Казахстане" },
 ];
 
 export const SERVICES = [
   {
-    title: "Косоглазие",
-    description:
-      "Хирургическое лечение у детей и взрослых с индивидуальным планом коррекции.",
-    icon: "eye",
-    href: "/kosoglazie/",
+    title: "Лазерная коррекция",
+    description: "LASIK и SMILE — современные методы коррекции зрения с быстрым восстановлением.",
+    icon: "zap",
+    href: "/lazer-almaty/",
+    featured: true,
   },
   {
-    title: "Витрэктомия",
-    description:
-      "Операции на сетчатке и стекловидном теле при сложных офтальмологических случаях.",
-    icon: "scan",
-    href: "/vitrektomiya-almaty/",
+    title: "Косоглазие",
+    description: "Хирургическое лечение у детей и взрослых с индивидуальным планом.",
+    icon: "eye",
+    href: "/kosoglazie/",
+    featured: true,
   },
   {
     title: "Катаракта",
-    description:
-      "Факоэмульсификация с имплантацией ИОЛ — быстрое восстановление зрения.",
+    description: "Факоэмульсификация с имплантацией ИОЛ премиум-класса.",
     icon: "sparkles",
     href: "/katarakta-almaty/",
   },
   {
-    title: "Лазерная коррекция",
-    description:
-      "LASIK и SMILE для снижения зависимости от очков и линз.",
-    icon: "zap",
-    href: "/lazer-almaty/",
+    title: "Витрэктомия",
+    description: "Операции на сетчатке и стекловидном теле при сложных случаях.",
+    icon: "scan",
+    href: "/vitrektomiya-almaty/",
   },
   {
     title: "Глаукома",
-    description:
-      "Диагностика и лечение для сохранения зрительного нерва и поля зрения.",
+    description: "Диагностика и лечение для сохранения зрительного нерва.",
     icon: "activity",
     href: "/glaukoma-almaty/",
   },
@@ -74,12 +107,20 @@ export const SERVICES = [
 
 export const DOCTORS = [
   {
-    name: "Мухаммед Горгани",
-    role: "Турецкий офтальмохирург",
+    name: "Али Кескин",
+    role: "Ведущий офтальмолог-хирург",
+    branch: "aktau",
+    tags: ["Макула", "Косоглазие", "Сетчатка"],
+    image: "/images/doctor-ali-keskin.png",
+    href: "/doctor-ali-keskin/",
+  },
+  {
+    name: "Мехмет Есат Текер",
+    role: "Ведущий офтальмолог-хирург",
     branch: "almaty",
-    tags: ["LASIK / Smile", "Катаракта", "Глаукома"],
-    image: "/images/doctor-gargoni.png",
-    href: "/doctor-gorgani/",
+    tags: ["LASIK / SMILE", "Катаракта", "Витрэктомия"],
+    image: "/images/doctor-mehmet-esat-teker.png",
+    href: "/doctor-mehmet-esat-teker/",
   },
   {
     name: "Орел Талип",
@@ -98,64 +139,82 @@ export const DOCTORS = [
     href: "/doctor-erol/",
   },
   {
-    name: "Абдулхаким Текче",
-    role: "Ведущий офтальмолог-хирург",
+    name: "Алия Усманова",
+    role: "Ведущий офтальмохирург высшей категории",
+    branch: "almaty",
+    tags: ["Лазерная коррекция", "Катаракта", "Блефаропластика"],
+    image: "/images/doctor-aliya.png",
+    href: "/doctor-aliya/",
+  },
+  {
+    name: "Нұрмұхамед Мусай",
+    role: "Главный врач",
+    branch: "almaty",
+    tags: ["Главный врач", "Сложные случаи"],
+    image: "/images/doctor-musay.png",
+    href: "/doctor-musay/",
+  },
+  {
+    name: "Назгуль Сагындыкова",
+    role: "Врач-офтальмолог",
     branch: "aktau",
-    tags: ["LASIK / Smile", "Катаракта", "Витрэктомия"],
-    note: "20+ лет, специалист из Турции",
-    image: "/images/doctor-tekche.png",
-    href: "/doctor-tekche/",
+    tags: ["Взрослые и дети", "Лазерная хирургия", "Оптометрия"],
+    image: "/images/doctor-nazgul.png",
+    href: "/doctor-nazgul/",
+  },
+  {
+    name: "Мадина Тореханова",
+    role: "Врач-офтальмолог",
+    branch: "aktau",
+    tags: ["Взрослые и дети", "Диагностика"],
+    image: "/images/doctor-madina.png",
+    href: "/doctor-madina/",
   },
 ];
 
 export const WHY_CHOOSE = [
   {
-    title: "Опыт и экспертиза",
-    description: "Тысячи операций и сложные клинические случаи.",
-    icon: "shield",
-  },
-  {
-    title: "Современные технологии",
-    description: "Диагностика и хирургия на оборудовании мирового уровня.",
-    icon: "cpu",
-  },
-  {
-    title: "Турецкие специалисты",
-    description: "Хирурги с международной практикой и стажем.",
+    title: "Турецкие хирурги",
+    description: "Специалисты с опытом в Турции и международной практикой.",
     icon: "globe",
   },
   {
-    title: "Индивидуальный подход",
-    description: "Персональный план лечения после полной диагностики.",
-    icon: "user",
+    title: "12 000+ операций",
+    description: "Тысячи успешных вмешательств и сложных клинических случаев.",
+    icon: "award",
   },
   {
-    title: "Международные стандарты",
-    description: "Протоколы безопасности и контроля качества.",
-    icon: "badge",
+    title: "Современное оборудование",
+    description: "Диагностика и хирургия на аппаратуре мирового уровня.",
+    icon: "cpu",
+  },
+  {
+    title: "Индивидуальный план",
+    description: "Персональный подход после полной диагностики зрения.",
+    icon: "user",
   },
 ];
 
 export const PROCESS_STEPS = [
   {
-    step: 1,
+    step: "01",
     title: "Диагностика",
     description: "Полное обследование зрения и консультация врача.",
   },
   {
-    step: 2,
+    step: "02",
     title: "План лечения",
     description: "Подбор оптимального метода с учётом вашего случая.",
   },
   {
-    step: 3,
+    step: "03",
     title: "Операция",
     description: "Процедура в операционной под контролем хирурга.",
   },
   {
-    step: 4,
-    title: "Реабилитация",
-    description: "Наблюдение и рекомендации для стабильного результата.",
+    step: "04",
+    title: "Наблюдение",
+    description: "Реабилитация и рекомендации для стабильного результата.",
   },
 ];
 
@@ -183,22 +242,24 @@ export const REVIEWS = [
 export const BRANCHES = [
   {
     city: "Алматы",
-    address: "пр. Райымбека, 176А",
+    address: "Райымбек 176а Алматы",
     phone: PHONE,
     phoneHref: PHONE_HREF,
-    whatsapp: WHATSAPP_URL.split("?")[0],
+    whatsapp: WHATSAPP_URL,
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
     image: "/images/clinic-building.png",
     gis: "https://2gis.kz/kk/almaty/firm/70000001081905733",
+    rating: "4.8",
   },
   {
-    city: "Актау",
+    city: "Ақтау",
     address: "7А микрорайон, 11/3",
     phone: PHONE_AKTau,
     phoneHref: PHONE_AKTau_HREF,
-    whatsapp: WHATSAPP_AKTau_URL.split("?")[0],
+    whatsapp: WHATSAPP_AKTau_URL,
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
-    image: "/images/clinic-aktau.png",
+    image: "/images/clinic-2.png",
     gis: "https://2gis.kz/aktau/firm/70000001104276081",
+    rating: "4.9",
   },
 ];

@@ -4,26 +4,33 @@ import { useLang } from "../i18n/LanguageContext";
 import { waBookingUrl } from "../data/contacts";
 import { assetUrl } from "../data/reviews";
 import { doctorUrl } from "../lib/routes";
+import { IS_LASER } from "../lib/branch";
+import { trackEvent } from "../lib/analytics";
 
 export default function Doctors() {
   const { lang, t } = useLang();
   const doctors = t.doctors.items;
 
   return (
-    <section id="doctors" className="scroll-mt-24 py-16 sm:py-20">
+    <section id="doctors" className="scroll-mt-24 py-10 sm:py-12">
       <div className="section-container">
-        <div className="mx-auto mb-10 max-w-2xl text-center">
-          <h2 className="section-title">{t.doctors.title}</h2>
-          <p className="mt-3 text-base text-ink-muted">{t.doctors.subtitle}</p>
+        <div className="mx-auto mb-6 max-w-2xl text-center sm:mb-8">
+          <h2 className="section-title text-[1.55rem] sm:text-3xl">{t.doctors.title}</h2>
+          <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.doctors.subtitle}</p>
         </div>
 
-        <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2 sm:gap-6">
+        <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 sm:gap-5">
           {doctors.map((d) => {
             const profileUrl = d.profileUrl || doctorUrl(d.id);
-            const bookUrl = waBookingUrl(
-              lang,
-              lang === "ru" ? `Врач: ${d.name}` : `Дәрігер: ${d.name}`,
-            );
+            const bookExtra =
+              IS_LASER
+                ? lang === "ru"
+                  ? `Здравствуйте! Хочу записаться на консультацию по лазерной коррекции к доктору ${d.name}.`
+                  : `Сәлеметсіз бе! Лазерлік коррекция бойынша ${d.name} дәрігеріне жазылғым келеді.`
+                : lang === "ru"
+                  ? `Врач: ${d.name}`
+                  : `Дәрігер: ${d.name}`;
+            const bookUrl = waBookingUrl(lang, bookExtra);
             const tags = (d.tags || []).slice(0, 3);
             const stats = (d.stats || []).slice(0, 4);
 
@@ -99,7 +106,15 @@ export default function Doctors() {
                     href={bookUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary w-full"
+                    onClick={() =>
+                      IS_LASER &&
+                      trackEvent("laser_doctor_cta_click", {
+                        language: lang,
+                        doctor_name: d.name,
+                        button_location: "doctors",
+                      })
+                    }
+                    className="btn-primary min-h-12 w-full"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
                     {t.doctors.book}

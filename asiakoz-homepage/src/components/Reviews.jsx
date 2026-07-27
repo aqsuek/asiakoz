@@ -1,8 +1,10 @@
 import { useRef } from "react";
 import Icon from "./Icon";
-import { useLang } from "../i18n/LanguageContext";
 import { CLINIC } from "../data/contacts";
 import { getVideoReviews, assetUrl } from "../data/reviews";
+import { trackEvent } from "../lib/analytics";
+import { IS_LASER } from "../lib/branch";
+import { useLang } from "../i18n/LanguageContext";
 
 function VideoCard({ review, openLabel }) {
   return (
@@ -10,11 +12,10 @@ function VideoCard({ review, openLabel }) {
       <div className="relative aspect-[9/16] bg-surface-muted">
         <video
           className="h-full w-full object-cover"
-          src={`${assetUrl(review.src)}#t=0.5`}
+          src={assetUrl(review.src)}
           playsInline
           controls
-          loading="lazy"
-          preload="metadata"
+          preload="none"
           controlsList="nodownload noplaybackrate"
         />
       </div>
@@ -35,10 +36,11 @@ function VideoCard({ review, openLabel }) {
   );
 }
 
-export default function Reviews() {
-  const { t } = useLang();
+export default function Reviews({ skipFirst = false }) {
+  const { lang, t } = useLang();
   const trackRef = useRef(null);
-  const videoReviews = getVideoReviews();
+  const all = getVideoReviews();
+  const videoReviews = skipFirst ? all.slice(1) : all;
 
   const scrollBy = (dir) => {
     const el = trackRef.current;
@@ -46,13 +48,15 @@ export default function Reviews() {
     el.scrollBy({ left: dir * Math.min(300, el.clientWidth * 0.85), behavior: "smooth" });
   };
 
+  if (!videoReviews.length) return null;
+
   return (
-    <section id="reviews" className="scroll-mt-24 bg-surface-muted py-16 sm:py-20">
+    <section id="reviews" className="scroll-mt-24 bg-surface-muted py-10 sm:py-12">
       <div className="section-container">
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
-            <h2 className="section-title">{t.reviews.title}</h2>
-            <p className="mt-3 text-base text-ink-muted">{t.reviews.subtitle}</p>
+            <h2 className="section-title text-[1.55rem] sm:text-3xl">{t.reviews.title}</h2>
+            <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.reviews.subtitle}</p>
           </div>
           <div className="flex gap-2">
             <button
@@ -92,7 +96,14 @@ export default function Reviews() {
             href={CLINIC.instagram.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            onClick={() =>
+              IS_LASER &&
+              trackEvent("laser_instagram_click", {
+                language: lang,
+                button_location: "reviews",
+              })
+            }
+            className="btn-primary min-h-12"
           >
             {t.reviews.allOnIg}
             <Icon name="instagram" className="h-4 w-4" />
@@ -101,7 +112,14 @@ export default function Reviews() {
             href={CLINIC.gis.searchUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline"
+            onClick={() =>
+              IS_LASER &&
+              trackEvent("laser_reviews_2gis_click", {
+                language: lang,
+                button_location: "reviews",
+              })
+            }
+            className="btn-outline min-h-12"
           >
             {t.reviews.allOnGis}
             <Icon name="arrow" className="h-4 w-4" />

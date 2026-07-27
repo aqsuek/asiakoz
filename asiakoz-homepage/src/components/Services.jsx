@@ -1,50 +1,126 @@
+import { useEffect, useState } from "react";
 import Icon from "./Icon";
-import SectionHeading from "./SectionHeading";
-import { SERVICES } from "../data/content";
+import WhatsAppIcon from "./WhatsAppIcon";
+import { useLang } from "../i18n/LanguageContext";
+import { waBookingUrl } from "../data/contacts";
 
 export default function Services() {
+  const { lang, t } = useLang();
+  const [active, setActive] = useState(null);
+
+  useEffect(() => {
+    if (!active) return undefined;
+    const onKey = (e) => {
+      if (e.key === "Escape") setActive(null);
+    };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [active]);
+
+  const service = active
+    ? t.services.items.find((item) => item.id === active)
+    : null;
+
   return (
-    <section id="services" className="section-tint relative z-0 py-16 sm:py-20 lg:py-24">
+    <section id="services" className="scroll-mt-24 bg-surface-muted py-16 sm:py-20">
       <div className="section-container">
-        <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <SectionHeading
-            align="left"
-            label="Услуги"
-            title="Наши услуги"
-            subtitle="Полный спектр офтальмологической помощи — от диагностики до сложных операций."
-            className="max-w-xl"
-          />
-          <a
-            href="/uslugi/"
-            className="inline-flex shrink-0 items-center gap-1 rounded-full border border-brand/25 bg-white px-4 py-2 text-sm font-semibold text-brand shadow-soft transition-all hover:border-brand hover:bg-brand-soft"
-          >
-            Смотреть все услуги
-            <Icon name="arrow" className="h-4 w-4" />
-          </a>
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <h2 className="section-title">{t.services.title}</h2>
+          <p className="mt-3 text-base text-ink-muted">{t.services.subtitle}</p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {SERVICES.map((service, i) => (
-            <a
-              key={service.title}
-              href={service.href}
-              className={
-                i % 2 === 0
-                  ? "card-premium group flex flex-col p-6"
-                  : "card-premium-tint group flex flex-col p-6"
-              }
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {t.services.items.map((item) => (
+            <article
+              key={item.id}
+              className="flex flex-col rounded-3xl border border-ink/[0.06] bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/20 hover:shadow-card"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand text-white shadow-card transition-colors group-hover:bg-brand-dark">
-                <Icon name={service.icon} className="h-5 w-5" />
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-brand text-white">
+                <Icon name={item.icon} className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-bold text-ink group-hover:text-brand">{service.title}</h3>
+              <h3 className="text-lg font-bold text-ink">{item.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">
-                {service.description}
+                {item.short}
               </p>
-            </a>
+              <button
+                type="button"
+                onClick={() => setActive(item.id)}
+                className="btn-ghost mt-5 self-start !px-0"
+              >
+                {t.services.more}
+                <Icon name="arrow" className="h-4 w-4" />
+              </button>
+            </article>
           ))}
         </div>
       </div>
+
+      {service && (
+        <div
+          className="fixed inset-0 z-[60] flex items-end justify-center bg-ink/40 p-4 backdrop-blur-sm sm:items-center"
+          onClick={() => setActive(null)}
+          role="presentation"
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="service-modal-title"
+            className="max-h-[85vh] w-full max-w-xl overflow-y-auto rounded-[1.75rem] border border-ink/[0.06] bg-white p-6 shadow-float sm:p-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-4 flex items-start justify-between gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-brand">
+                <Icon name={service.icon} className="h-5 w-5" />
+              </div>
+              <button
+                type="button"
+                onClick={() => setActive(null)}
+                className="rounded-full border border-ink/10 p-2 text-ink-muted hover:text-ink"
+                aria-label={t.services.close}
+              >
+                <Icon name="close" className="h-4 w-4" />
+              </button>
+            </div>
+            <h3 id="service-modal-title" className="text-xl font-bold text-ink">
+              {service.title}
+            </h3>
+            <p className="mt-3 text-[15px] leading-relaxed text-ink-muted">
+              {service.detail}
+            </p>
+            {service.points?.length > 0 && (
+              <ul className="mt-4 space-y-2.5">
+                {service.points.map((point) => (
+                  <li
+                    key={point}
+                    className="flex gap-2.5 rounded-2xl border border-ink/[0.06] bg-surface-muted/70 px-3.5 py-2.5 text-sm leading-relaxed text-ink"
+                  >
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <a
+              href={waBookingUrl(
+                lang,
+                lang === "ru"
+                  ? `Услуга: ${service.title}`
+                  : `Қызмет: ${service.title}`
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-6 w-full"
+            >
+              <WhatsAppIcon className="h-4 w-4" />
+              {t.services.book}
+            </a>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

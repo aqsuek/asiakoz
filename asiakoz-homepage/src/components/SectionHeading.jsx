@@ -10,11 +10,13 @@ export default function SectionHeading({
 
   return (
     <div className={`max-w-2xl ${alignClass} ${className}`}>
-      {label && (
-        <p className="section-label mb-3">{label}</p>
+      {label && <p className="section-eyebrow mb-4">{label}</p>}
+      <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+        {title}
+      </h2>
+      {subtitle && (
+        <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">{subtitle}</p>
       )}
-      <h2 className="text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">{title}</h2>
-      {subtitle && <p className="mt-3 text-base leading-relaxed text-ink-muted">{subtitle}</p>}
     </div>
   );
 }

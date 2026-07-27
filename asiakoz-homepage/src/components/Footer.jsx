@@ -1,103 +1,89 @@
 import Logo from "./Logo";
 import Icon from "./Icon";
-import WhatsAppIcon from "./WhatsAppIcon";
-import { BRANCHES, NAV_LINKS, WHATSAPP_URL } from "../data/content";
+import { useLang } from "../i18n/LanguageContext";
+import { CLINIC } from "../data/contacts";
+import { homeUrl } from "../lib/routes";
+
+import { IS_LASER } from "../lib/branch";
+
+const LINKS = IS_LASER
+  ? [
+      { key: "about", hash: "#promo" },
+      { key: "services", hash: "#suitability" },
+      { key: "doctors", hash: "#doctors" },
+      { key: "reviews", hash: "#reviews" },
+      { key: "faq", hash: "#faq" },
+      { key: "contacts", hash: "#contacts" },
+    ]
+  : [
+      { key: "about", hash: "#about" },
+      { key: "services", hash: "#services" },
+      { key: "doctors", hash: "#doctors" },
+      { key: "reviews", hash: "#reviews" },
+      { key: "contacts", hash: "#contacts" },
+    ];
 
 export default function Footer() {
+  const { t } = useLang();
+
   return (
-    <footer id="contacts" className="site-footer border-t border-brand/15 bg-gradient-to-b from-brand-soft/80 via-white to-white pb-28 pt-14 sm:pb-32">
+    <footer className="border-t border-ink/[0.06] bg-white pb-[calc(5.5rem+env(safe-area-inset-bottom))] pt-10 sm:pb-12 sm:pt-12">
       <div className="section-container">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
             <Logo />
-            <div className="mt-6 flex gap-3">
-              <a
-                href="https://www.instagram.com/asiakoz.clinic/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-ink-muted transition-all hover:border-brand hover:bg-brand-soft hover:text-brand"
-                aria-label="Instagram"
-              >
-                <Icon name="instagram" className="h-4 w-4" />
-              </a>
-            </div>
-            <nav className="mt-6 flex flex-col gap-2 lg:hidden">
-              {NAV_LINKS.map((link) => (
-                <a key={link.href} href={link.href} className="text-sm text-ink-muted hover:text-brand">
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:col-span-7">
-            {BRANCHES.map((branch) => (
-              <div key={branch.city} className="card-premium overflow-hidden">
-                <div className="branch-clinic-photo">
-                  <img
-                    src={branch.image}
-                    alt={`Филиал Азиякоз — ${branch.city}`}
-                    loading="lazy"
-                    width="800"
-                    height="600"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-ink">{branch.city}</h3>
-                  <p className="mt-2 text-sm text-ink-muted">{branch.address}</p>
-                  <a
-                    href={branch.phoneHref}
-                    className="mt-2 inline-block text-sm font-semibold text-brand hover:underline"
-                  >
-                    {branch.phone}
-                  </a>
-                  <p className="mt-1 text-xs text-ink-faint">{branch.hours}</p>
-                  <div className="mt-3 flex flex-wrap gap-3">
-                    <a
-                      href={branch.whatsapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-semibold text-brand hover:underline"
-                    >
-                      WhatsApp
-                    </a>
-                    <a
-                      href={branch.gis}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-semibold text-ink-muted hover:text-brand"
-                    >
-                      2ГИС
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="lg:col-span-2">
-            <h3 className="font-bold text-ink">Есть вопросы?</h3>
-            <p className="mt-2 text-sm text-ink-muted">
-              Напишите нам — подберём врача и удобное время приёма.
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
+              {t.footer.tagline}
             </p>
             <a
-              href={WHATSAPP_URL}
+              href={CLINIC.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary mt-5 w-full sm:w-auto"
+              className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink-muted transition-colors hover:border-brand hover:text-brand"
+              aria-label="Instagram"
             >
-              <WhatsAppIcon className="h-4 w-4" />
-              Написать в WhatsApp
+              <Icon name="instagram" className="h-4 w-4" />
+            </a>
+          </div>
+
+          <nav className="flex flex-col gap-2">
+            {LINKS.map((link) => (
+              <a
+                key={link.hash}
+                href={homeUrl(link.hash)}
+                className="text-sm text-ink-muted transition-colors hover:text-brand"
+              >
+                {t.nav[link.key]}
+              </a>
+            ))}
+          </nav>
+
+          <div className="space-y-2 text-sm text-ink-muted">
+            <p className="font-medium text-ink">{CLINIC.address}</p>
+            {CLINIC.phones.map((phone) => (
+              <a
+                key={phone.href}
+                href={phone.href}
+                className="block font-semibold text-brand hover:underline"
+              >
+                {phone.display}
+              </a>
+            ))}
+            <a
+              href={CLINIC.instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover:text-brand"
+            >
+              {CLINIC.instagram.handle}
             </a>
           </div>
         </div>
 
-        <div className="footer-bottom mt-12 border-t border-slate-100 pt-6 text-center">
-          <p className="footer-disclaimer text-xs text-ink-faint">
-            Имеются противопоказания. Необходима консультация специалиста.
-          </p>
-          <p className="footer-copy mt-2 text-xs text-ink-faint">
-            © {new Date().getFullYear()} Азиякоз. Алматы, Актау.
+        <div className="mt-10 border-t border-ink/[0.06] pt-6 text-center">
+          <p className="text-xs leading-relaxed text-ink-faint">{t.footer.note}</p>
+          <p className="mt-2 text-xs text-ink-faint">
+            © {new Date().getFullYear()} {t.footer.rights}
           </p>
         </div>
       </div>

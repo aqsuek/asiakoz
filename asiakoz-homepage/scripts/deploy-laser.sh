@@ -41,9 +41,32 @@ import re, sys
 from pathlib import Path
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
-t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v5"', t, count=1)
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-cro-v1"', t, count=1)
 t = t.replace("https://asiakoz.com/shymkent/", "https://asiakoz.com/laser/")
-t = re.sub(r"<title>[^<]*</title>", "<title>Лазерлік түзету — акция Алматыда | AsiaKoz</title>", t, count=1)
+t = re.sub(
+    r"<title>[^<]*</title>",
+    "<title>Лазерная коррекция зрения в Алматы — AsiaKoz</title>",
+    t,
+    count=1,
+)
+t = re.sub(
+    r'name="description" content="[^"]*"',
+    'name="description" content="Лазерная коррекция зрения в Алматы у турецких офтальмохирургов. Полная диагностика, индивидуальный подбор метода и запись в AsiaKoz."',
+    t,
+    count=1,
+)
+t = re.sub(
+    r'property="og:title" content="[^"]*"',
+    'property="og:title" content="Лазерная коррекция зрения в Алматы — AsiaKoz"',
+    t,
+    count=1,
+)
+t = re.sub(
+    r'property="og:url" content="[^"]*"',
+    'property="og:url" content="https://asiakoz.com/laser/"',
+    t,
+    count=1,
+)
 p.write_text(t, encoding="utf-8")
 PY
 

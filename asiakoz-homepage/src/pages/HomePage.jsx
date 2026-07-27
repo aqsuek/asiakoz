@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import PromoBanner from "../components/PromoBanner";
 import LaserOfferBanner from "../components/LaserOfferBanner";
 import QuickPaths from "../components/QuickPaths";
 import Advantages from "../components/Advantages";
@@ -8,12 +7,42 @@ import Doctors from "../components/Doctors";
 import Reviews from "../components/Reviews";
 import Booking from "../components/Booking";
 import Contacts from "../components/Contacts";
+import LaserHero from "../components/laser/LaserHero";
+import TrustStrip from "../components/laser/TrustStrip";
+import FeaturedReview from "../components/laser/FeaturedReview";
+import Suitability from "../components/laser/Suitability";
+import LaserMethods from "../components/laser/LaserMethods";
+import ProcessSteps from "../components/laser/ProcessSteps";
+import PriceIncludes from "../components/laser/PriceIncludes";
+import CompactAdvantages from "../components/laser/CompactAdvantages";
+import LaserFAQ from "../components/laser/LaserFAQ";
 import { IS_ALMATY, IS_LASER } from "../lib/branch";
 
-export default function HomePage() {
+function LaserHome() {
   return (
     <>
-      {IS_LASER && <PromoBanner />}
+      <LaserHero />
+      <TrustStrip />
+      <FeaturedReview />
+      <Suitability />
+      <LaserMethods />
+      <Doctors />
+      <ProcessSteps />
+      <PriceIncludes />
+      <CompactAdvantages />
+      <Reviews skipFirst />
+      <LaserFAQ />
+      <Booking laserMode />
+      <Contacts />
+    </>
+  );
+}
+
+export default function HomePage() {
+  if (IS_LASER) return <LaserHome />;
+
+  return (
+    <>
       {IS_ALMATY && <LaserOfferBanner />}
       <Hero />
       {IS_ALMATY && <QuickPaths />}
