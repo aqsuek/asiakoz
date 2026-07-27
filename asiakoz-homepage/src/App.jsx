@@ -1,29 +1,49 @@
+import { useEffect, useState } from "react";
+import { LanguageProvider } from "./i18n/LanguageContext";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import TrustStats from "./components/TrustStats";
-import Services from "./components/Services";
-import Doctors from "./components/Doctors";
-import WhyChoose from "./components/WhyChoose";
-import Process from "./components/Process";
-import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
-import FixedWhatsApp from "./components/FixedWhatsApp";
+import MobileSticky from "./components/MobileSticky";
+import HomePage from "./pages/HomePage";
+import DoctorPage from "./pages/DoctorPage";
+import { parseRoute } from "./lib/routes";
+import { useLang } from "./i18n/LanguageContext";
+
+function Router() {
+  const { t } = useLang();
+  const [route, setRoute] = useState(() => parseRoute());
+
+  useEffect(() => {
+    const sync = () => setRoute(parseRoute());
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
+  }, []);
+
+  useEffect(() => {
+    if (route.name === "home") {
+      document.title = t.seoTitle;
+    }
+  }, [route, t.seoTitle]);
+
+  return (
+    <div id="top" className="min-h-screen bg-surface-warm">
+      <Header />
+      <main>
+        {route.name === "doctor" ? (
+          <DoctorPage doctorId={route.id} />
+        ) : (
+          <HomePage />
+        )}
+      </main>
+      <Footer />
+      <MobileSticky />
+    </div>
+  );
+}
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <TrustStats />
-        <Services />
-        <Doctors />
-        <WhyChoose />
-        <Process />
-        <Reviews />
-      </main>
-      <Footer />
-      <FixedWhatsApp />
-    </>
+    <LanguageProvider>
+      <Router />
+    </LanguageProvider>
   );
 }

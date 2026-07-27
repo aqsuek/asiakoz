@@ -1,81 +1,70 @@
-import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
-import { HERO_FEATURES, WHATSAPP_URL } from "../data/content";
+import { useLang } from "../i18n/LanguageContext";
+import { CLINIC, waBookingUrl } from "../data/contacts";
 
 export default function Hero() {
+  const { lang, t } = useLang();
+
   return (
-    <section className="relative min-h-[min(92svh,780px)] w-full overflow-hidden sm:min-h-[640px] lg:min-h-[680px]">
-      <div className="absolute inset-0 bg-[#0a6d82]">
-        <video
-          className="hero-video-bg motion-reduce:hidden"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/clinic-1.png"
-          aria-hidden
-        >
-          <source src="/images/videos/hero.mp4" type="video/mp4" />
-        </video>
-        <img
-          src="/images/clinic-1.png"
-          alt=""
-          className="absolute inset-0 hidden h-full w-full object-cover motion-reduce:block"
-          aria-hidden
-        />
-        <div className="absolute inset-0 bg-brand/55" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand/40 via-brand/50 to-[#085a6b]/90" />
-      </div>
+    <section className="relative overflow-hidden pb-10 pt-8 sm:pb-16 sm:pt-12">
+      <div
+        className="pointer-events-none absolute -right-32 top-0 h-[420px] w-[420px] rounded-full bg-brand/[0.07] blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -left-24 bottom-0 h-[280px] w-[280px] rounded-full bg-brand-deep/[0.05] blur-3xl"
+        aria-hidden
+      />
 
-      <div className="section-container relative z-10 flex min-h-[inherit] flex-col items-center justify-center px-4 py-20 text-center text-white sm:py-24 lg:py-28">
-        <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white/95 backdrop-blur-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-white" />
-          Турецкая офтальмология
-        </p>
+      <div className="section-container">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          <div className="max-w-xl">
+            <p className="section-eyebrow mb-5">{CLINIC.city}</p>
+            <h1 className="font-display text-[1.85rem] font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
+              {t.hero.title}
+            </h1>
+            <p className="mt-5 text-base font-medium leading-relaxed text-brand-deep sm:text-lg">
+              {t.hero.subtitle}
+            </p>
+            <p className="mt-4 text-[15px] leading-relaxed text-ink-muted sm:text-base">
+              {t.hero.text}
+            </p>
 
-        <h1 className="max-w-4xl text-[1.75rem] font-extrabold leading-[1.12] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.25rem]">
-          Турецкая глазная клиника
-          <span className="mt-2 block text-white/95">в Алматы и Актау</span>
-        </h1>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href={waBookingUrl(lang)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                {t.hero.wa}
+              </a>
+              <a href={CLINIC.phones[0].href} className="btn-outline">
+                {t.hero.call}
+              </a>
+            </div>
+          </div>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Сложные операции на глазах, диагностика и лечение у офтальмохирургов с
-          международным опытом.
-        </p>
-
-        <div className="mt-10 flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hero-primary"
-          >
-            <WhatsAppIcon className="h-4 w-4" />
-            Записаться в WhatsApp
-          </a>
-          <a href="/uslugi/" className="btn-hero-outline">
-            Смотреть услуги
-            <Icon name="arrow" className="h-4 w-4" />
-          </a>
+          <div className="relative">
+            <div className="overflow-hidden rounded-[2rem] border border-ink/[0.06] bg-white shadow-float">
+              <img
+                src={`${import.meta.env.BASE_URL}${CLINIC.heroImage}`}
+                alt={t.hero.imageAlt}
+                className="aspect-[4/3] w-full object-cover"
+                width={800}
+                height={600}
+                fetchPriority="high"
+              />
+            </div>
+            <div className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-ink/[0.06] bg-white/95 p-4 shadow-card backdrop-blur-sm sm:left-6 sm:right-auto sm:max-w-xs">
+              <p className="text-xs font-semibold uppercase tracking-wider text-brand">
+                {lang === "ru" ? "Офтальмологический центр" : "Офтальмологиялық орталық"}
+              </p>
+              <p className="mt-1 text-sm font-bold text-ink">{CLINIC.address}</p>
+            </div>
+          </div>
         </div>
-
-        <p className="mt-10 max-w-xl text-sm leading-relaxed text-white/80 sm:mt-12">
-          Хотите избавиться от очков и линз? Запишитесь на консультацию — подберём
-          лечение под ваш случай.
-        </p>
-
-        <ul className="mt-10 grid w-full max-w-3xl gap-3 sm:grid-cols-3 sm:gap-4">
-          {HERO_FEATURES.map((item) => (
-            <li
-              key={item}
-              className="flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/10 px-3 py-2.5 text-sm font-medium text-white/95 backdrop-blur-sm"
-            >
-              <Icon name="badge" className="h-4 w-4 shrink-0 text-white" />
-              {item}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

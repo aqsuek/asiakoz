@@ -4,10 +4,10 @@ set -euo pipefail
 APP="$(cd "$(dirname "$0")/.." && pwd)"
 LIVE="$(cd "$APP/.." && pwd)"
 TARGET="$LIVE/aqtau"
-DOCTOR_IDS=(mehmet-esat-teker ali-keskin)
+DOCTOR_IDS=(ali-keskin erol-joshkun nazgul-sagyndykova)
 
 cd "$APP"
-VITE_BASE=/aqtau/ npm run build
+VITE_BASE=/aqtau/ VITE_BRANCH=aqtau npm run build
 
 rm -rf "$TARGET"
 mkdir -p "$TARGET"
