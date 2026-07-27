@@ -41,7 +41,7 @@ import re, sys
 from pathlib import Path
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
-t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v4"', t, count=1)
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v5"', t, count=1)
 t = t.replace("https://asiakoz.com/shymkent/", "https://asiakoz.com/laser/")
 t = re.sub(r"<title>[^<]*</title>", "<title>Лазерлік түзету — акция Алматыда | AsiaKoz</title>", t, count=1)
 p.write_text(t, encoding="utf-8")
