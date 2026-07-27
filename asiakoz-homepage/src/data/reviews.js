@@ -52,12 +52,117 @@ export const VIDEO_REVIEWS = [
   },
 ];
 
-export const LASER_VIDEO_REVIEWS = Array.from({ length: 10 }, (_, i) => ({
-  id: `laser-${i + 1}`,
-  // Absolute paths — live site assets at /images/lazer-almaty/
-  src: `/images/lazer-almaty/videos/video-${i + 1}.mp4`,
-  poster: `/images/lazer-almaty/posters/video-${i + 1}.jpg`,
-}));
+/** Laser Almaty reviews — video-1 is madee.fazl (featured) */
+export const LASER_VIDEO_REVIEWS = [
+  {
+    id: "DbQWBqisRBe",
+    src: "/images/lazer-almaty/videos/video-1.mp4",
+    poster: "/images/lazer-almaty/posters/video-1.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DbQWBqisRBe/",
+  },
+  {
+    id: "DacoBy_IBw0",
+    src: "/images/lazer-almaty/videos/video-2.mp4",
+    poster: "/images/lazer-almaty/posters/video-2.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DacoBy_IBw0/",
+  },
+  {
+    id: "DakSqzlo0KQ",
+    src: "/images/lazer-almaty/videos/video-3.mp4",
+    poster: "/images/lazer-almaty/posters/video-3.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DakSqzlo0KQ/",
+  },
+  {
+    id: "DaNds8hoRWi",
+    src: "/images/lazer-almaty/videos/video-4.mp4",
+    poster: "/images/lazer-almaty/posters/video-4.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DaNds8hoRWi/",
+  },
+  {
+    id: "DapNUyyoTSL",
+    src: "/images/lazer-almaty/videos/video-5.mp4",
+    poster: "/images/lazer-almaty/posters/video-5.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DapNUyyoTSL/",
+  },
+  {
+    id: "DaukGXTIC3E",
+    src: "/images/lazer-almaty/videos/video-6.mp4",
+    poster: "/images/lazer-almaty/posters/video-6.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DaukGXTIC3E/",
+  },
+  {
+    id: "DazzIhloOdX",
+    src: "/images/lazer-almaty/videos/video-7.mp4",
+    poster: "/images/lazer-almaty/posters/video-7.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DazzIhloOdX/",
+  },
+  {
+    id: "DbC5QvtI4xs",
+    src: "/images/lazer-almaty/videos/video-8.mp4",
+    poster: "/images/lazer-almaty/posters/video-8.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DbC5QvtI4xs/",
+  },
+  {
+    id: "DbNsQssobuX",
+    src: "/images/lazer-almaty/videos/video-9.mp4",
+    poster: "/images/lazer-almaty/posters/video-9.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DbNsQssobuX/",
+  },
+  {
+    id: "DbSuj-towo6",
+    src: "/images/lazer-almaty/videos/video-10.mp4",
+    poster: "/images/lazer-almaty/posters/video-10.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DbSuj-towo6/",
+  },
+  {
+    id: "DY2BXaToOEC",
+    src: "/images/lazer-almaty/videos/video-11.mp4",
+    poster: "/images/lazer-almaty/posters/video-11.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DY2BXaToOEC/",
+  },
+  {
+    id: "DY7I8oBoguQ",
+    src: "/images/lazer-almaty/videos/video-12.mp4",
+    poster: "/images/lazer-almaty/posters/video-12.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DY7I8oBoguQ/",
+  },
+  {
+    id: "DYHKOJ5I9H3",
+    src: "/images/lazer-almaty/videos/video-13.mp4",
+    poster: "/images/lazer-almaty/posters/video-13.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DYHKOJ5I9H3/",
+  },
+  {
+    id: "DYhLpx_IIHz",
+    src: "/images/lazer-almaty/videos/video-14.mp4",
+    poster: "/images/lazer-almaty/posters/video-14.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DYhLpx_IIHz/",
+  },
+  {
+    id: "DYW235oIFdh",
+    src: "/images/lazer-almaty/videos/video-15.mp4",
+    poster: "/images/lazer-almaty/posters/video-15.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DYW235oIFdh/",
+  },
+  {
+    id: "DYwtcCOog7C",
+    src: "/images/lazer-almaty/videos/video-16.mp4",
+    poster: "/images/lazer-almaty/posters/video-16.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DYwtcCOog7C/",
+  },
+  {
+    id: "DZsDMSRoamU",
+    src: "/images/lazer-almaty/videos/video-17.mp4",
+    poster: "/images/lazer-almaty/posters/video-17.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DZsDMSRoamU/",
+  },
+  {
+    id: "DZUqNcboscU",
+    src: "/images/lazer-almaty/videos/video-18.mp4",
+    poster: "/images/lazer-almaty/posters/video-18.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DZUqNcboscU/",
+  },
+];
 
 export function getVideoReviews() {
   return BRANCH === "laser" || BRANCH === "almaty" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;

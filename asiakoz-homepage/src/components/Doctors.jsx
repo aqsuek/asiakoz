@@ -21,7 +21,7 @@ function DoctorCard({ doctor, lang, t }) {
   const stats = (doctor.stats || []).slice(0, 4);
 
   return (
-    <article className="flex w-[min(300px,85vw)] shrink-0 snap-center flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start">
+    <article className="box-border flex w-[86vw] shrink-0 snap-center flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start">
       <a
         href={profileUrl}
         className="relative block shrink-0 overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted lg:w-[200px] lg:min-h-[280px]"
@@ -29,7 +29,7 @@ function DoctorCard({ doctor, lang, t }) {
         <img
           src={assetUrl(doctor.image)}
           alt={doctor.name}
-          className="aspect-[4/5] max-h-[240px] w-full object-cover object-[center_15%] sm:max-h-[260px] lg:absolute lg:inset-0 lg:aspect-auto lg:max-h-none lg:h-full"
+          className="aspect-[4/5] max-h-[220px] w-full object-cover object-[center_15%] sm:max-h-[260px] lg:absolute lg:inset-0 lg:aspect-auto lg:max-h-none lg:h-full"
           width={400}
           height={500}
           loading="lazy"
@@ -37,33 +37,33 @@ function DoctorCard({ doctor, lang, t }) {
         />
       </a>
 
-      <div className="flex min-w-0 flex-1 flex-col p-4 sm:p-5">
-        <a href={profileUrl} className="text-left">
+      <div className="flex min-w-0 flex-1 flex-col p-3.5 sm:p-5">
+        <a href={profileUrl} className="min-w-0 text-left">
           {doctor.branch && (
             <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
               {doctor.branch}
             </p>
           )}
-          <h3 className="mt-0.5 font-display text-lg font-extrabold tracking-tight text-ink sm:text-xl">
+          <h3 className="mt-0.5 break-words font-display text-lg font-extrabold tracking-tight text-ink sm:text-xl">
             {doctor.name}
           </h3>
           <p className="mt-0.5 text-sm font-semibold text-brand-deep">{doctor.role}</p>
 
           {stats.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-2.5 flex flex-wrap gap-1.5">
               {stats.map((stat) => (
                 <span
                   key={stat.label}
-                  className="inline-flex items-baseline gap-1 rounded-full border border-brand/15 bg-brand-soft/60 px-2.5 py-1 text-[11px] text-ink-muted"
+                  className="inline-flex max-w-full items-baseline gap-1 rounded-full border border-brand/15 bg-brand-soft/60 px-2 py-1 text-[11px] text-ink-muted"
                 >
-                  <span className="font-extrabold text-brand">{stat.value}</span>
-                  <span className="leading-none">{stat.label}</span>
+                  <span className="shrink-0 font-extrabold text-brand">{stat.value}</span>
+                  <span className="min-w-0 leading-none">{stat.label}</span>
                 </span>
               ))}
             </div>
           )}
 
-          <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-ink-muted">
+          <p className="mt-2.5 line-clamp-2 text-sm leading-relaxed text-ink-muted">
             {doctor.lead}
           </p>
 
@@ -85,10 +85,10 @@ function DoctorCard({ doctor, lang, t }) {
               button_location: "doctors",
             })
           }
-          className="btn-primary mt-4 min-h-11 w-full !py-2.5"
+          className="btn-primary mt-3 min-h-11 w-full shrink-0 !px-3 !py-2.5 text-[13px] sm:text-sm"
         >
-          <WhatsAppIcon className="h-4 w-4" />
-          {t.doctors.book}
+          <WhatsAppIcon className="h-4 w-4 shrink-0" />
+          <span className="truncate">{t.doctors.book}</span>
         </a>
       </div>
     </article>
@@ -104,7 +104,9 @@ export default function Doctors() {
     const el = trackRef.current;
     if (!el) return;
     const card = el.querySelector("article");
-    const step = card ? card.offsetWidth + 16 : Math.min(340, el.clientWidth * 0.9);
+    const styles = getComputedStyle(el);
+    const gap = parseFloat(styles.columnGap || styles.gap) || 12;
+    const step = card ? card.offsetWidth + gap : Math.min(340, el.clientWidth * 0.9);
     el.scrollBy({ left: dir * step, behavior: "smooth" });
   };
 
@@ -113,7 +115,7 @@ export default function Doctors() {
   const showArrows = doctors.length > 1;
 
   return (
-    <section id="doctors" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-10">
+    <section id="doctors" className="scroll-mt-24 scroll-mb-28 overflow-x-clip py-7 sm:py-10">
       <div className="section-container">
         <div className="mb-4 flex flex-col gap-3 sm:mb-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
@@ -141,15 +143,17 @@ export default function Doctors() {
             </div>
           )}
         </div>
+      </div>
 
-        <div
-          ref={trackRef}
-          className="scrollbar-hide -mx-4 flex gap-3 overflow-x-auto px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:-mx-5 sm:gap-4 sm:px-5 lg:justify-start"
-        >
-          {doctors.map((doctor) => (
-            <DoctorCard key={doctor.id} doctor={doctor} lang={lang} t={t} />
-          ))}
-        </div>
+      <div
+        ref={trackRef}
+        className="scrollbar-hide flex gap-3 overflow-x-auto px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+      >
+        {doctors.map((doctor) => (
+          <DoctorCard key={doctor.id} doctor={doctor} lang={lang} t={t} />
+        ))}
+        {/* trailing spacer so last card can snap with right padding */}
+        <div className="w-1 shrink-0 sm:w-0" aria-hidden />
       </div>
     </section>
   );

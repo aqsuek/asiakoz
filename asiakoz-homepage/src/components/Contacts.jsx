@@ -11,7 +11,7 @@ export default function Contacts() {
   const showMap = !IS_LASER;
 
   return (
-    <section id="contacts" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-7 sm:py-10">
+    <section id="contacts" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-7 pb-10 sm:py-10">
       <div className="section-container">
         <h2 className="section-title mb-5 text-center text-[1.4rem] sm:mb-8 sm:text-3xl">
           {t.contacts.title}
@@ -31,7 +31,7 @@ export default function Contacts() {
             </div>
           )}
 
-          <div className="flex flex-col justify-center rounded-[1.75rem] border border-ink/[0.06] bg-white p-5 shadow-card sm:p-8">
+          <div className="flex flex-col justify-center rounded-[1.75rem] border border-ink/[0.06] bg-white p-5 pb-6 shadow-card sm:p-8">
             <ul className="space-y-4">
               <li className="flex gap-3.5">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">

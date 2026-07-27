@@ -1,5 +1,5 @@
 import { useLang } from "../../i18n/LanguageContext";
-import { LASER_PROMO, isLaserPromoActive } from "../../data/laserPromo";
+import { isLaserPromoActive, getPromoPriceLabel } from "../../data/laserPromo";
 import { homeUrl } from "../../lib/routes";
 import { trackEvent } from "../../lib/analytics";
 
@@ -8,10 +8,7 @@ export default function PriceIncludes() {
   const p = t.laserPrice;
   if (!p) return null;
   const active = isLaserPromoActive();
-  const priceLabel =
-    LASER_PROMO.PRICE_SCOPE === "both_eyes"
-      ? `${LASER_PROMO.currentPrice} ${lang === "ru" ? "за оба глаза" : "екі көзге"}`
-      : LASER_PROMO.currentPrice;
+  const priceLabel = getPromoPriceLabel(lang);
 
   return (
     <section id="price" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-10">

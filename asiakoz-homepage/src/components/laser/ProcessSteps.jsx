@@ -13,37 +13,25 @@ export default function ProcessSteps() {
           <p className="mt-2 text-sm text-ink-muted sm:text-base">{p.subtitle}</p>
         </div>
 
-        {/* Mobile timeline */}
-        <ol className="relative mx-auto max-w-lg space-y-0 sm:hidden">
+        <ol className="relative mx-auto max-w-lg sm:grid sm:max-w-4xl sm:grid-cols-2 sm:gap-3">
           <span
-            className="absolute bottom-2 left-[15px] top-2 w-px bg-brand/25"
+            className="absolute bottom-2 left-[15px] top-2 w-px bg-brand/25 sm:hidden"
             aria-hidden
           />
           {p.steps.map((step, i) => (
-            <li key={step.title} className="relative flex gap-3 py-2.5 pl-1">
-              <span className="relative z-10 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-extrabold text-white">
-                {i + 1}
-              </span>
-              <div className="min-w-0 pt-0.5">
-                <h3 className="text-sm font-bold text-ink">{step.title}</h3>
-                <p className="mt-0.5 text-[13px] leading-snug text-ink-muted">{step.text}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        {/* Desktop compact cards */}
-        <ol className="mx-auto hidden max-w-4xl gap-3 sm:grid sm:grid-cols-2">
-          {p.steps.map((step, i) => (
             <li
               key={step.title}
-              className="relative rounded-[1.25rem] border border-ink/[0.06] bg-white p-4 shadow-soft"
+              className="relative flex gap-3 py-2.5 pl-1 sm:block sm:rounded-[1.25rem] sm:border sm:border-ink/[0.06] sm:bg-white sm:p-4 sm:shadow-soft"
             >
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-xs font-extrabold text-white">
+              <span className="relative z-10 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-xs font-extrabold text-white sm:h-7 sm:w-7">
                 {i + 1}
               </span>
-              <h3 className="mt-2 text-base font-bold text-ink">{step.title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-ink-muted">{step.text}</p>
+              <div className="min-w-0 pt-0.5 sm:mt-2 sm:pt-0">
+                <h3 className="text-sm font-bold text-ink sm:text-base">{step.title}</h3>
+                <p className="mt-0.5 text-[13px] leading-snug text-ink-muted sm:mt-1 sm:text-sm sm:leading-relaxed">
+                  {step.text}
+                </p>
+              </div>
             </li>
           ))}
         </ol>

@@ -5,6 +5,7 @@ import { waBookingUrl } from "../data/contacts";
 import { trackEvent } from "../lib/analytics";
 import { formatUtmLine, getStoredUtm, captureUtmFromUrl } from "../lib/utm";
 import { IS_LASER } from "../lib/branch";
+import { getPromoPriceLabel, LASER_PROMO } from "../data/laserPromo";
 
 function normalizeKzPhone(value) {
   const digits = value.replace(/\D/g, "");
@@ -83,10 +84,11 @@ export default function Booking({ laserMode = false }) {
 
     let lines;
     if (isLaser) {
+      const price = getPromoPriceLabel(lang);
       lines =
         lang === "ru"
           ? [
-              "Здравствуйте! Хочу узнать, подходит ли мне ReLEx SMILE по акции 650 000 ₸ за оба глаза.",
+              `Здравствуйте! Хочу узнать, подходит ли мне ${LASER_PROMO.method} по акции ${price}.`,
               `Имя: ${form.name.trim()}`,
               `Телефон: ${phone}`,
               form.diopters.trim() ? `Диоптрии: ${form.diopters.trim()}` : null,
@@ -94,7 +96,7 @@ export default function Booking({ laserMode = false }) {
               utmLine ? `Источник: ${utmLine}` : null,
             ]
           : [
-              "Сәлеметсіз бе! ReLEx SMILE маған жасай ала ма — акция 650 000 ₸ екі көзге.",
+              `Сәлеметсіз бе! ${LASER_PROMO.method} маған жасай ала ма — акция ${price}.`,
               `Аты-жөні: ${form.name.trim()}`,
               `Телефон: ${phone}`,
               form.diopters.trim() ? `Диоптрия: ${form.diopters.trim()}` : null,
@@ -275,7 +277,12 @@ export default function Booking({ laserMode = false }) {
                 >
                   {t.booking.privacyLink || t.booking.privacy}
                 </a>
-                {(t.booking.privacyAfter || "") && <span> {t.booking.privacyAfter}</span>}
+                {t.booking.privacyAfter ? (
+                  <span>
+                    {/^[.,!?;:]/.test(t.booking.privacyAfter) ? "" : " "}
+                    {t.booking.privacyAfter}
+                  </span>
+                ) : null}
               </p>
             )}
           </form>
