@@ -199,6 +199,22 @@ export const branchTranslationOverrides = {
         subtitle: "Түрік дәрігерлерінен лазерлік коррекция — акция беті",
         cta: "Лазер акциясы",
       },
+      promoOffers: [
+        {
+          id: "laser",
+          href: "/laser/",
+          title: "650 000 ₸, 700 000 ₸ орнына · диагностика 0 ₸ · {month} соңына дейін",
+          subtitle: "Түрік дәрігерлерінен лазерлік коррекция",
+          cta: "Лазер акциясы",
+        },
+        {
+          id: "strabismus",
+          href: "/kosoglazie/",
+          title: "Қылилық операциясына 10% жеңілдік · {month} соңына дейін",
+          subtitle: "Балалар мен ересектер — диагностикадан кейін жеке жоспар",
+          cta: "Қылилық акциясы",
+        },
+      ],
       doctors: {
         title: "Алматыдағы тәжірибелі дәрігерлер",
         subtitle:
@@ -322,6 +338,22 @@ export const branchTranslationOverrides = {
         subtitle: "Лазерная коррекция у турецких врачей — страница акции",
         cta: "К акции",
       },
+      promoOffers: [
+        {
+          id: "laser",
+          href: "/laser/",
+          title: "650 000 ₸ вместо 700 000 ₸ · диагностика 0 ₸ · до конца {month}",
+          subtitle: "Лазерная коррекция у турецких врачей",
+          cta: "К акции",
+        },
+        {
+          id: "strabismus",
+          href: "/kosoglazie/",
+          title: "Скидка 10% на операцию при косоглазии · до конца {month}",
+          subtitle: "Детям и взрослым — индивидуальный план после диагностики",
+          cta: "К акции",
+        },
+      ],
       doctors: {
         title: "Опытные врачи в Алматы",
         subtitle:
