@@ -21,6 +21,7 @@ mkdir -p "$TARGET/images/doctors"
 cp "$APP/public/images/clinic-almaty-laser.png" "$TARGET/images/"
 cp "$APP/public/images/logo-asiakoz.png" "$TARGET/images/"
 cp "$APP/public/images/doctors/mehmet-esat-teker.png" "$TARGET/images/doctors/"
+cp "$APP/public/images/doctors/orel-talip.png" "$TARGET/images/doctors/"
 
 if [[ ! -f "$TARGET/index.html" ]]; then
   echo "ERROR: dist/index.html missing" >&2
@@ -34,7 +35,7 @@ import re, sys
 from pathlib import Path
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
-t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v1"', t, count=1)
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-07-27-laser-v3"', t, count=1)
 t = t.replace("https://asiakoz.com/shymkent/", "https://asiakoz.com/laser/")
 t = re.sub(r"<title>[^<]*</title>", "<title>Лазерлік түзету — акция Алматыда | AsiaKoz</title>", t, count=1)
 p.write_text(t, encoding="utf-8")

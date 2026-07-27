@@ -41,7 +41,7 @@ const CLINIC_BY_BRANCH = {
     typeKz: "Офтальмологиялық орталық",
     typeRu: "Офтальмологический центр",
     city: "Алматы",
-    address: "Райымбек даңғылы, 176а, Алматы",
+    address: "Райымбек 176а Алматы",
     heroImage: "images/clinic-almaty-laser.png",
     phones: [{ display: "8 700 360 0180", href: "tel:+77003600180", tel: "+77003600180" }],
     whatsapp: {
