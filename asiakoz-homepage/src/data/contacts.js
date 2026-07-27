@@ -35,6 +35,29 @@ const CLINIC_BY_BRANCH = {
         "?m=69.597%2C42.341%2F16",
     },
   },
+  almaty: {
+    name: "Азиякөз",
+    nameLatin: "AsiaKoz",
+    typeKz: "Офтальмологиялық орталық",
+    typeRu: "Офтальмологический центр",
+    city: "Алматы",
+    address: "Райымбек 176а Алматы",
+    heroImage: "images/clinic-almaty-laser.png",
+    phones: [{ display: "8 700 360 0180", href: "tel:+77003600180", tel: "+77003600180" }],
+    whatsapp: {
+      number: "77003600180",
+      url: "https://wa.me/77003600180",
+    },
+    instagram: {
+      handle: "@asiakoz.clinic",
+      url: "https://www.instagram.com/asiakoz.clinic/",
+    },
+    gis: {
+      searchUrl: "https://2gis.kz/kk/almaty/firm/70000001081905733",
+      routeUrl: "https://2gis.kz/kk/almaty/firm/70000001081905733/tab/routes",
+      embedUrl: "https://2gis.kz/kk/almaty/firm/70000001081905733?m=76.945%2C43.238%2F16",
+    },
+  },
   laser: {
     name: "Азиякөз",
     nameLatin: "AsiaKoz",

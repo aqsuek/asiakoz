@@ -59,7 +59,7 @@ export const LASER_VIDEO_REVIEWS = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 export function getVideoReviews() {
-  return BRANCH === "laser" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;
+  return BRANCH === "laser" || BRANCH === "almaty" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;
 }
 
 export function assetUrl(path) {
