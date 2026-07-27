@@ -1,87 +1,124 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import WhatsAppIcon from "./WhatsAppIcon";
-import { NAV_LINKS, PHONE_ALMATY, PHONE_ALMATY_HREF, WHATSAPP_URL } from "../data/content";
+import { useLang } from "../i18n/LanguageContext";
+import { CLINIC, waBookingUrl } from "../data/contacts";
+import { homeUrl } from "../lib/routes";
+import { IS_LASER } from "../lib/branch";
+
+const ANCHORS = [
+  { key: "about", hash: IS_LASER ? "#promo" : "#about" },
+  { key: "services", hash: "#services" },
+  { key: "doctors", hash: "#doctors" },
+  { key: "reviews", hash: "#reviews" },
+  { key: "contacts", hash: "#contacts" },
+];
 
 export default function Header() {
+  const { lang, setLang, t } = useLang();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-lg shadow-[0_4px_24px_rgba(18,183,213,0.06)]">
-      <div className="section-container flex h-16 items-center justify-between gap-4 sm:h-[72px]">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "border-b border-ink/[0.06] bg-white/90 shadow-soft backdrop-blur-xl"
+          : "bg-white/70 backdrop-blur-md"
+      }`}
+    >
+      <div className="section-container flex h-[68px] items-center justify-between gap-3 sm:h-[76px]">
         <Logo />
 
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Основная навигация">
-          {NAV_LINKS.map((link) => (
+        <nav className="hidden items-center gap-6 xl:flex" aria-label="Navigation">
+          {ANCHORS.map((item) => (
             <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-ink-muted transition-colors hover:text-brand"
+              key={item.hash}
+              href={homeUrl(item.hash)}
+              className="text-[13px] font-medium text-ink-muted transition-colors hover:text-ink"
             >
-              {link.label}
+              {t.nav[item.key]}
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
-          <div className="text-right">
-            <a
-              href={PHONE_ALMATY_HREF}
-              className="text-sm font-bold text-ink transition-colors hover:text-brand"
-            >
-              {PHONE_ALMATY}
-            </a>
-            <p className="flex items-center justify-end gap-1 text-xs text-ink-faint">
-              <Icon name="clock" className="h-3.5 w-3.5 text-brand" />
-              Пн–Пт 09:00–17:00, Сб до 14:00
-            </p>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div
+            className="inline-flex rounded-full border border-ink/[0.08] bg-surface-muted p-0.5"
+            role="group"
+            aria-label="Language"
+          >
+            {["kz", "ru"].map((code) => (
+              <button
+                key={code}
+                type="button"
+                onClick={() => setLang(code)}
+                className={`rounded-full px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide transition-all ${
+                  lang === code
+                    ? "bg-white text-brand shadow-soft"
+                    : "text-ink-faint hover:text-ink"
+                }`}
+                aria-pressed={lang === code}
+              >
+                {code}
+              </button>
+            ))}
           </div>
+
           <a
-            href={WHATSAPP_URL}
+            href={waBookingUrl(lang)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.35)] transition-all hover:-translate-y-0.5 hover:bg-[#20bd5a]"
-            aria-label="Записаться в WhatsApp"
-            title="Записаться в WhatsApp"
+            className="btn-primary hidden !px-4 !py-2.5 text-[13px] lg:inline-flex"
           >
-            <WhatsAppIcon className="h-5 w-5" />
+            {t.nav.book}
           </a>
-        </div>
 
-        <button
-          type="button"
-          className="inline-flex rounded-xl border border-slate-200 p-2 text-ink lg:hidden"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-label={open ? "Закрыть меню" : "Открыть меню"}
-        >
-          <Icon name={open ? "close" : "menu"} className="h-5 w-5" />
-        </button>
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink xl:hidden"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label={open ? "Close" : "Menu"}
+          >
+            <Icon name={open ? "close" : "menu"} className="h-5 w-5" />
+          </button>
+        </div>
       </div>
 
       {open && (
-        <div className="border-t border-slate-100 bg-white lg:hidden">
-          <nav className="section-container flex flex-col gap-1 py-4" aria-label="Мобильная навигация">
-            {NAV_LINKS.map((link) => (
+        <div className="border-t border-ink/[0.06] bg-white xl:hidden">
+          <nav className="section-container flex flex-col gap-1 py-4">
+            {ANCHORS.map((item) => (
               <a
-                key={link.href}
-                href={link.href}
+                key={item.hash}
+                href={homeUrl(item.hash)}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium text-ink-muted hover:bg-brand-soft hover:text-brand"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-ink-muted hover:bg-surface-muted hover:text-ink"
               >
-                {link.label}
+                {t.nav[item.key]}
               </a>
             ))}
             <a
-              href={WHATSAPP_URL}
+              href={CLINIC.phones[0].href}
+              className="mt-2 rounded-2xl px-4 py-3 text-sm font-semibold text-ink"
+            >
+              {CLINIC.phones[0].display}
+            </a>
+            <a
+              href={waBookingUrl(lang)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex h-12 w-12 items-center justify-center self-start rounded-full bg-[#25D366] text-white shadow-[0_4px_16px_rgba(37,211,102,0.35)]"
-              aria-label="Записаться в WhatsApp"
-              title="Записаться в WhatsApp"
+              className="btn-primary mt-2 w-full"
+              onClick={() => setOpen(false)}
             >
-              <WhatsAppIcon className="h-6 w-6" />
+              {t.nav.book}
             </a>
           </nav>
         </div>

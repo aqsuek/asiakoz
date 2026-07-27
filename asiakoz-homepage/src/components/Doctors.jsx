@@ -1,83 +1,115 @@
-import SectionHeading from "./SectionHeading";
-import { DOCTORS } from "../data/content";
-
-const BRANCH_LABELS = {
-  almaty: { label: "Алматы", className: "doctor-card-site__badge-almaty" },
-  aktau: { label: "Ақтау", className: "doctor-card-site__badge-aktau" },
-};
+import Icon from "./Icon";
+import WhatsAppIcon from "./WhatsAppIcon";
+import { useLang } from "../i18n/LanguageContext";
+import { waBookingUrl } from "../data/contacts";
+import { assetUrl } from "../data/reviews";
+import { doctorUrl } from "../lib/routes";
 
 export default function Doctors() {
+  const { lang, t } = useLang();
+  const doctors = t.doctors.items;
+
   return (
-    <section id="doctors" className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
-      <div
-        className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-brand/10 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-brand-soft blur-3xl"
-        aria-hidden
-      />
+    <section id="doctors" className="scroll-mt-24 py-16 sm:py-20">
+      <div className="section-container">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <h2 className="section-title">{t.doctors.title}</h2>
+          <p className="mt-3 text-base text-ink-muted">{t.doctors.subtitle}</p>
+        </div>
 
-      <div className="section-container relative">
-        <SectionHeading
-          label="Команда"
-          title="Врачи из Турции"
-          subtitle="Высококвалифицированные офтальмохирурги с международным опытом"
-          className="mb-12"
-        />
-
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {DOCTORS.map((doctor) => {
-            const branch = BRANCH_LABELS[doctor.branch] ?? BRANCH_LABELS.almaty;
+        <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2 sm:gap-6">
+          {doctors.map((d) => {
+            const profileUrl = d.profileUrl || doctorUrl(d.id);
+            const bookUrl = waBookingUrl(
+              lang,
+              lang === "ru" ? `Врач: ${d.name}` : `Дәрігер: ${d.name}`,
+            );
+            const tags = (d.tags || []).slice(0, 3);
+            const stats = (d.stats || []).slice(0, 4);
 
             return (
-              <article key={doctor.name} className="doctor-card-site">
-                <a href={doctor.href} className="doctor-card-site__inner group">
-                  <div className="doctor-card-site__photo">
+              <article
+                key={d.id}
+                className="flex flex-col overflow-hidden rounded-[1.75rem] border border-ink/[0.06] bg-white shadow-card transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                <a href={profileUrl} className="flex flex-1 flex-col text-left">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted">
                     <img
-                      src={doctor.image}
-                      alt={doctor.name}
+                      src={assetUrl(d.image)}
+                      alt={d.name}
+                      className="h-full w-full object-cover object-top"
+                      width={480}
+                      height={600}
                       loading="lazy"
-                      width="400"
-                      height="533"
+                      decoding="async"
                     />
                   </div>
-                  <div className="doctor-card-site__body">
-                    <div className="doctor-card-site__meta">
-                      <span className="doctor-card-site__role">{doctor.role}</span>
-                      <span className={branch.className}>{branch.label}</span>
-                    </div>
-                    <h3 className="doctor-card-site__name group-hover:text-brand">
-                      {doctor.name}
+
+                  <div className="flex flex-1 flex-col p-5 sm:p-6">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-brand">
+                      {d.branch}
+                    </p>
+                    <h3 className="mt-1.5 font-display text-xl font-extrabold tracking-tight text-ink">
+                      {d.name}
                     </h3>
-                    <div className="doctor-card-site__tags">
-                      {doctor.tags.map((tag) => (
-                        <span key={tag} className="doctor-card-site__tag">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    {doctor.note ? (
-                      <p className="doctor-card-site__note">
-                        <span className="font-semibold text-ink">Опыт:</span> {doctor.note}
-                      </p>
-                    ) : null}
-                    <div className="doctor-card-site__action">Подробнее →</div>
+                    <p className="mt-1 text-sm font-semibold text-brand-deep">{d.role}</p>
+
+                    {stats.length > 0 && (
+                      <div className="mt-4 grid grid-cols-2 gap-2">
+                        {stats.map((stat) => (
+                          <div
+                            key={stat.label}
+                            className="rounded-xl border border-brand/15 bg-brand-soft/50 px-2.5 py-2 text-center"
+                          >
+                            <p className="text-base font-extrabold text-brand">{stat.value}</p>
+                            <p className="mt-0.5 text-[10px] leading-snug text-ink-muted">
+                              {stat.label}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-ink-muted">
+                      {d.lead}
+                    </p>
+
+                    {tags.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-1.5">
+                        {tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-brand/15 bg-white px-2.5 py-0.5 text-[11px] font-semibold text-brand"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    <span className="btn-ghost mt-4 self-start !px-0">
+                      {t.doctors.more}
+                      <Icon name="arrow" className="h-4 w-4" />
+                    </span>
                   </div>
                 </a>
+
+                <div className="px-5 pb-5 sm:px-6 sm:pb-6">
+                  <a
+                    href={bookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full"
+                  >
+                    <WhatsAppIcon className="h-4 w-4" />
+                    {t.doctors.book}
+                    <Icon name="arrow" className="h-4 w-4" />
+                  </a>
+                </div>
               </article>
             );
           })}
         </div>
-
-        <p className="mt-10 text-center">
-          <a
-            href="/doctors/"
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-2.5 text-sm font-semibold text-white shadow-card transition-all hover:bg-brand-dark"
-          >
-            Все врачи клиники →
-          </a>
-        </p>
       </div>
     </section>
   );

@@ -1,49 +1,111 @@
+import { useRef } from "react";
 import Icon from "./Icon";
-import SectionHeading from "./SectionHeading";
-import { REVIEWS } from "../data/content";
+import { useLang } from "../i18n/LanguageContext";
+import { CLINIC } from "../data/contacts";
+import { getVideoReviews, assetUrl } from "../data/reviews";
 
-export default function Reviews() {
+function VideoCard({ review, openLabel }) {
   return (
-    <section id="reviews" className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="section-container">
-        <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <SectionHeading
-            align="left"
-            label="Отзывы"
-            title="Отзывы наших пациентов"
-            className="max-w-xl text-left sm:mx-0"
-          />
+    <article className="w-[260px] shrink-0 snap-start overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft sm:w-[280px]">
+      <div className="relative aspect-[9/16] bg-surface-muted">
+        <video
+          className="h-full w-full object-cover"
+          src={`${assetUrl(review.src)}#t=0.5`}
+          playsInline
+          controls
+          loading="lazy"
+          preload="metadata"
+          controlsList="nodownload noplaybackrate"
+        />
+      </div>
+      {review.instagramUrl && (
+        <div className="space-y-2 p-4">
           <a
-            href="/otzyvy-asiakoz-almaty/"
-            className="inline-flex shrink-0 items-center gap-1 rounded-full border border-brand/25 bg-brand-soft px-4 py-2 text-sm font-semibold text-brand transition-all hover:bg-brand hover:text-white"
+            href={review.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-brand hover:underline"
           >
-            Все отзывы и видео →
+            {openLabel}
+            <Icon name="arrow" className="h-3.5 w-3.5" />
           </a>
         </div>
+      )}
+    </article>
+  );
+}
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {REVIEWS.map((review) => (
-            <article
-              key={review.name}
-              className="card-premium-tint flex flex-col border-l-4 border-l-brand p-6"
+export default function Reviews() {
+  const { t } = useLang();
+  const trackRef = useRef(null);
+  const videoReviews = getVideoReviews();
+
+  const scrollBy = (dir) => {
+    const el = trackRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * Math.min(300, el.clientWidth * 0.85), behavior: "smooth" });
+  };
+
+  return (
+    <section id="reviews" className="scroll-mt-24 bg-surface-muted py-16 sm:py-20">
+      <div className="section-container">
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-xl">
+            <h2 className="section-title">{t.reviews.title}</h2>
+            <p className="mt-3 text-base text-ink-muted">{t.reviews.subtitle}</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => scrollBy(-1)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink hover:border-brand/30 hover:text-brand"
+              aria-label="Prev"
             >
-              <Icon name="quote" className="h-8 w-8 text-brand" />
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-muted sm:text-base">
-                «{review.text}»
-              </p>
-              <div className="mt-6 flex items-center justify-between gap-3 border-t border-brand/10 pt-5">
-                <div className="min-w-0">
-                  <p className="font-semibold text-ink">{review.name}</p>
-                  <p className="text-xs text-ink-faint">{review.city}</p>
-                </div>
-                <div className="flex gap-0.5 text-amber-400" aria-label={`Оценка ${review.rating} из 5`}>
-                  {Array.from({ length: review.rating }).map((_, i) => (
-                    <Icon key={i} name="star" className="h-4 w-4 fill-current" strokeWidth={0} />
-                  ))}
-                </div>
-              </div>
-            </article>
+              <Icon name="chevronLeft" className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollBy(1)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink hover:border-brand/30 hover:text-brand"
+              aria-label="Next"
+            >
+              <Icon name="chevronRight" className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+
+        <div
+          ref={trackRef}
+          className="scrollbar-hide -mx-5 flex gap-4 overflow-x-auto px-5 pb-2 snap-x snap-mandatory"
+        >
+          {videoReviews.map((review) => (
+            <VideoCard
+              key={review.id}
+              review={review}
+              openLabel={t.reviews.openInIg}
+            />
           ))}
+        </div>
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={CLINIC.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            {t.reviews.allOnIg}
+            <Icon name="instagram" className="h-4 w-4" />
+          </a>
+          <a
+            href={CLINIC.gis.searchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline"
+          >
+            {t.reviews.allOnGis}
+            <Icon name="arrow" className="h-4 w-4" />
+          </a>
         </div>
       </div>
     </section>
