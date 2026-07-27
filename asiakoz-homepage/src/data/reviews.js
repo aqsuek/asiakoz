@@ -54,8 +54,9 @@ export const VIDEO_REVIEWS = [
 
 export const LASER_VIDEO_REVIEWS = Array.from({ length: 10 }, (_, i) => ({
   id: `laser-${i + 1}`,
-  // Absolute path — already on live site at /images/lazer-almaty/
+  // Absolute paths — live site assets at /images/lazer-almaty/
   src: `/images/lazer-almaty/videos/video-${i + 1}.mp4`,
+  poster: `/images/lazer-almaty/posters/video-${i + 1}.jpg`,
 }));
 
 export function getVideoReviews() {

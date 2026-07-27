@@ -1,26 +1,25 @@
 import { useRef } from "react";
 import Icon from "./Icon";
+import ReviewVideo from "./ReviewVideo";
 import { CLINIC } from "../data/contacts";
-import { getVideoReviews, assetUrl } from "../data/reviews";
+import { getVideoReviews } from "../data/reviews";
 import { trackEvent } from "../lib/analytics";
 import { IS_LASER } from "../lib/branch";
 import { useLang } from "../i18n/LanguageContext";
 
-function VideoCard({ review, openLabel }) {
+function VideoCard({ review, openLabel, playLabel, onPlay }) {
   return (
-    <article className="w-[260px] shrink-0 snap-start overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft sm:w-[280px]">
-      <div className="relative aspect-[9/16] bg-surface-muted">
-        <video
-          className="h-full w-full object-cover"
-          src={assetUrl(review.src)}
-          playsInline
-          controls
-          preload="none"
-          controlsList="nodownload noplaybackrate"
-        />
-      </div>
+    <article className="w-[min(240px,78vw)] shrink-0 snap-start overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft sm:w-[260px]">
+      <ReviewVideo
+        src={review.src}
+        poster={review.poster}
+        aspectClass="aspect-[9/16]"
+        maxHeightClass="max-h-[420px]"
+        playLabel={playLabel}
+        onPlay={onPlay}
+      />
       {review.instagramUrl && (
-        <div className="space-y-2 p-4">
+        <div className="space-y-2 p-3">
           <a
             href={review.instagramUrl}
             target="_blank"
@@ -45,17 +44,19 @@ export default function Reviews({ skipFirst = false }) {
   const scrollBy = (dir) => {
     const el = trackRef.current;
     if (!el) return;
-    el.scrollBy({ left: dir * Math.min(300, el.clientWidth * 0.85), behavior: "smooth" });
+    const card = el.querySelector("article");
+    const step = card ? card.offsetWidth + 16 : Math.min(280, el.clientWidth * 0.85);
+    el.scrollBy({ left: dir * step, behavior: "smooth" });
   };
 
   if (!videoReviews.length) return null;
 
   return (
-    <section id="reviews" className="scroll-mt-24 bg-surface-muted py-10 sm:py-12">
+    <section id="reviews" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-8 sm:py-10">
       <div className="section-container">
-        <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
-            <h2 className="section-title text-[1.55rem] sm:text-3xl">{t.reviews.title}</h2>
+            <h2 className="section-title text-[1.4rem] sm:text-3xl">{t.reviews.title}</h2>
             <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.reviews.subtitle}</p>
           </div>
           <div className="flex gap-2">
@@ -80,18 +81,27 @@ export default function Reviews({ skipFirst = false }) {
 
         <div
           ref={trackRef}
-          className="scrollbar-hide -mx-5 flex gap-4 overflow-x-auto px-5 pb-2 snap-x snap-mandatory"
+          className="scrollbar-hide -mx-4 flex gap-3 overflow-x-auto px-4 pb-2 snap-x snap-mandatory touch-pan-x sm:-mx-5 sm:gap-4 sm:px-5"
         >
           {videoReviews.map((review) => (
             <VideoCard
               key={review.id}
               review={review}
               openLabel={t.reviews.openInIg}
+              playLabel={t.laserFeaturedReview?.play || "Play"}
+              onPlay={() =>
+                IS_LASER &&
+                trackEvent("laser_video_play", {
+                  language: lang,
+                  video_id: review.id,
+                  button_location: "reviews_slider",
+                })
+              }
             />
           ))}
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href={CLINIC.instagram.url}
             target="_blank"

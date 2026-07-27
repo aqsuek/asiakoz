@@ -269,7 +269,7 @@ export const branchTranslationOverrides = {
         {
           id: "laser",
           href: "/laser/",
-          title: "650 000 ₸, 700 000 ₸ орнына · диагностика 0 ₸ · {month} соңына дейін",
+          title: "650 000 ₸, 700 000 ₸ орнына · ReLEx SMILE · екі көзге · {month} соңына дейін",
           subtitle: "Лазерлік түзету · түрік дәрігерлер",
           cta: "Толығырақ",
         },
@@ -473,7 +473,7 @@ export const branchTranslationOverrides = {
         subtitle: "Коротко: чем мы занимаемся",
       },
       laserOffer: {
-        title: "650 000 ₸ вместо 700 000 ₸ · диагностика 0 ₸ · до конца {month}",
+        title: "650 000 ₸ вместо 700 000 ₸ · ReLEx SMILE · за оба глаза · до конца {month}",
         subtitle: "Лазерная коррекция у турецких врачей",
         cta: "Подробнее",
       },
@@ -481,7 +481,7 @@ export const branchTranslationOverrides = {
         {
           id: "laser",
           href: "/laser/",
-          title: "650 000 ₸ вместо 700 000 ₸ · диагностика 0 ₸ · до конца {month}",
+          title: "650 000 ₸ вместо 700 000 ₸ · ReLEx SMILE · за оба глаза · до конца {month}",
           subtitle: "Лазерная коррекция · турецкие врачи",
           cta: "Подробнее",
         },

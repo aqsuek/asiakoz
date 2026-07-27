@@ -1,9 +1,8 @@
 import Logo from "./Logo";
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC } from "../data/contacts";
+import { CLINIC, clinicAddress } from "../data/contacts";
 import { homeUrl } from "../lib/routes";
-
 import { IS_LASER } from "../lib/branch";
 
 const LINKS = IS_LASER
@@ -24,12 +23,12 @@ const LINKS = IS_LASER
     ];
 
 export default function Footer() {
-  const { t } = useLang();
+  const { lang, t } = useLang();
 
   return (
-    <footer className="border-t border-ink/[0.06] bg-white pb-[calc(5.5rem+env(safe-area-inset-bottom))] pt-10 sm:pb-12 sm:pt-12">
+    <footer className="border-t border-ink/[0.06] bg-white pb-[calc(4.25rem+env(safe-area-inset-bottom))] pt-8 sm:pb-12 sm:pt-12">
       <div className="section-container">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
@@ -59,7 +58,7 @@ export default function Footer() {
           </nav>
 
           <div className="space-y-2 text-sm text-ink-muted">
-            <p className="font-medium text-ink">{CLINIC.address}</p>
+            <p className="font-medium text-ink">{clinicAddress(lang)}</p>
             {CLINIC.phones.map((phone) => (
               <a
                 key={phone.href}

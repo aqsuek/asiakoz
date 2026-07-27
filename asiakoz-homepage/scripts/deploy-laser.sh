@@ -24,6 +24,14 @@ cp "$APP/public/images/logo-asiakoz.png" "$TARGET/images/"
 cp "$APP/public/images/doctors/mehmet-esat-teker.png" "$TARGET/images/doctors/"
 cp "$APP/public/images/doctors/orel-talip.png" "$TARGET/images/doctors/"
 
+# Video posters for reviews (absolute /images/lazer-almaty/posters/ on live site)
+POSTERS_SRC="$APP/public/images/lazer-almaty/posters"
+POSTERS_LIVE="$LIVE/images/lazer-almaty/posters"
+if [[ -d "$POSTERS_SRC" ]]; then
+  mkdir -p "$POSTERS_LIVE"
+  cp -R "$POSTERS_SRC/"*.jpg "$POSTERS_LIVE/" 2>/dev/null || true
+fi
+
 if [[ ! -f "$TARGET/index.html" ]]; then
   echo "ERROR: dist/index.html missing" >&2
   exit 1

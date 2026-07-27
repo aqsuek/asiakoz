@@ -8,14 +8,18 @@ export default function PriceIncludes() {
   const p = t.laserPrice;
   if (!p) return null;
   const active = isLaserPromoActive();
+  const priceLabel =
+    LASER_PROMO.PRICE_SCOPE === "both_eyes"
+      ? `${LASER_PROMO.currentPrice} ${lang === "ru" ? "за оба глаза" : "екі көзге"}`
+      : LASER_PROMO.currentPrice;
 
   return (
-    <section id="price" className="scroll-mt-24 py-10 sm:py-12">
+    <section id="price" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-10">
       <div className="section-container">
-        <div className="mx-auto max-w-2xl rounded-[1.75rem] border border-brand/20 bg-brand-soft/60 p-5 sm:p-8">
-          <h2 className="section-title text-[1.55rem] sm:text-3xl">
+        <div className="mx-auto max-w-2xl rounded-[1.5rem] border border-brand/20 bg-brand-soft/60 p-4 sm:p-7">
+          <h2 className="section-title text-[1.4rem] sm:text-3xl">
             {active
-              ? (p.title || "").replace("{price}", LASER_PROMO.currentPrice)
+              ? (p.title || "").replace("{price}", priceLabel)
               : p.titleNeutral}
           </h2>
           <ul className="mt-5 space-y-2.5">

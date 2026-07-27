@@ -9,11 +9,10 @@ export const LASER_PROMO = {
   currentPrice: "650 000 ₸",
   oldPrice: "700 000 ₸",
   diagnosticsPrice: "0 ₸",
-  /**
-   * Price applies to: one eye / both eyes — NOT confirmed in project content.
-   * Do not show "за оба глаза" until clinic confirms.
-   */
-  PRICE_SCOPE: "unconfirmed",
+  /** Confirmed by clinic: promo price is for both eyes (ReLEx SMILE). */
+  PRICE_SCOPE: "both_eyes",
+  /** Confirmed promo method */
+  PROMO_METHOD: "ReLEx SMILE",
   spotsLeft: 14,
   /** ISO date (local calendar day). After this date promo badge/urgency is hidden. */
   endDate: "2026-07-31",

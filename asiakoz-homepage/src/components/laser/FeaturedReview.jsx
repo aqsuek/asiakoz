@@ -1,36 +1,20 @@
-import { useRef, useState } from "react";
-import Icon from "../Icon";
+import ReviewVideo from "../ReviewVideo";
 import { useLang } from "../../i18n/LanguageContext";
-import { getVideoReviews, assetUrl } from "../../data/reviews";
+import { getVideoReviews } from "../../data/reviews";
 import { trackEvent } from "../../lib/analytics";
 import { homeUrl } from "../../lib/routes";
 
-export default function FeaturedReview({ skipFirst = false }) {
+export default function FeaturedReview() {
   const { lang, t } = useLang();
-  const videos = getVideoReviews();
-  const review = skipFirst ? videos[0] : videos[0];
-  const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
+  const review = getVideoReviews()[0];
 
   if (!review) return null;
 
-  const onPlay = () => {
-    const el = videoRef.current;
-    if (!el) return;
-    el.play();
-    setPlaying(true);
-    trackEvent("laser_video_play", {
-      language: lang,
-      video_id: review.id,
-      button_location: "featured_review",
-    });
-  };
-
   return (
-    <section id="featured-review" className="scroll-mt-24 py-8 sm:py-10">
+    <section id="featured-review" className="scroll-mt-24 scroll-mb-28 py-6 sm:py-8">
       <div className="section-container">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="section-title text-[1.55rem] sm:text-3xl">
+          <h2 className="section-title text-[1.4rem] sm:text-3xl">
             {t.laserFeaturedReview?.title}
           </h2>
           <p className="mt-2 text-sm text-ink-muted sm:text-base">
@@ -38,34 +22,25 @@ export default function FeaturedReview({ skipFirst = false }) {
           </p>
         </div>
 
-        <div className="relative mx-auto mt-6 max-w-[280px] overflow-hidden rounded-[1.5rem] border border-ink/[0.06] bg-black shadow-card sm:max-w-[320px]">
-          <div className="relative aspect-[9/16]">
-            <video
-              ref={videoRef}
-              className="h-full w-full object-cover"
-              src={assetUrl(review.src)}
-              playsInline
-              controls={playing}
-              preload="none"
-              controlsList="nodownload noplaybackrate"
-              onPlay={() => setPlaying(true)}
-            />
-            {!playing && (
-              <button
-                type="button"
-                onClick={onPlay}
-                className="absolute inset-0 flex items-center justify-center bg-ink/25"
-                aria-label={t.laserFeaturedReview?.play || "Play"}
-              >
-                <span className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-brand shadow-float">
-                  <Icon name="arrow" className="h-7 w-7" />
-                </span>
-              </button>
-            )}
-          </div>
+        <div className="relative mx-auto mt-5 max-w-[260px] overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:max-w-[300px]">
+          <ReviewVideo
+            src={review.src}
+            poster={review.poster}
+            aspectClass="aspect-[9/16]"
+            maxHeightClass="max-h-[520px] sm:max-h-[560px]"
+            playLabel={t.laserFeaturedReview?.play || "Play"}
+            compact
+            onPlay={() =>
+              trackEvent("laser_video_play", {
+                language: lang,
+                video_id: review.id,
+                button_location: "featured_review",
+              })
+            }
+          />
         </div>
 
-        <div className="mt-5 text-center">
+        <div className="mt-4 pb-1 text-center">
           <a href={homeUrl("#booking")} className="btn-primary min-h-12">
             {t.laserFeaturedReview?.cta}
           </a>

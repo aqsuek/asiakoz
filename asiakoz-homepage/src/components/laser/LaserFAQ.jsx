@@ -39,10 +39,10 @@ export default function LaserFAQ() {
   if (!faq?.items?.length) return null;
 
   return (
-    <section id="faq" className="scroll-mt-24 py-10 sm:py-12">
+    <section id="faq" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-10">
       <div className="section-container">
-        <div className="mx-auto mb-6 max-w-2xl text-center">
-          <h2 className="section-title text-[1.55rem] sm:text-3xl">{faq.title}</h2>
+        <div className="mx-auto mb-4 max-w-2xl text-center">
+          <h2 className="section-title text-[1.4rem] sm:text-3xl">{faq.title}</h2>
         </div>
         <div className="mx-auto max-w-2xl divide-y divide-ink/[0.08] rounded-[1.5rem] border border-ink/[0.06] bg-white px-2 shadow-soft sm:px-4">
           {faq.items.map((item, i) => {

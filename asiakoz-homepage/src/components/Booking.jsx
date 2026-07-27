@@ -30,6 +30,7 @@ export default function Booking({ laserMode = false }) {
     diopters: "",
     website: "",
   });
+  const [fieldErrors, setFieldErrors] = useState({});
   const [error, setError] = useState("");
   const [status, setStatus] = useState("idle");
 
@@ -37,6 +38,7 @@ export default function Booking({ laserMode = false }) {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
     setError("");
+    setFieldErrors((prev) => ({ ...prev, [name]: "" }));
     if (status === "idle") {
       trackEvent("laser_form_start", { language: lang, button_location: "booking" });
       setStatus("editing");
@@ -51,20 +53,25 @@ export default function Booking({ laserMode = false }) {
       return;
     }
 
-    if (!form.name.trim() || !form.phone.trim()) {
-      setError(t.booking.required);
-      trackEvent("laser_form_error", { language: lang, reason: "required" });
-      return;
-    }
-
-    if (isLaser && !isValidKzPhone(form.phone)) {
-      setError(t.booking.phoneInvalid || t.booking.required);
-      trackEvent("laser_form_error", { language: lang, reason: "phone" });
-      return;
+    const nextErrors = {};
+    if (!form.name.trim()) nextErrors.name = t.booking.required;
+    if (!form.phone.trim()) nextErrors.phone = t.booking.required;
+    else if (isLaser && !isValidKzPhone(form.phone)) {
+      nextErrors.phone = t.booking.phoneInvalid || t.booking.required;
     }
 
     if (!isLaser && (!form.service || !form.time.trim())) {
       setError(t.booking.required);
+      return;
+    }
+
+    if (Object.keys(nextErrors).length) {
+      setFieldErrors(nextErrors);
+      setError("");
+      trackEvent("laser_form_error", {
+        language: lang,
+        reason: nextErrors.phone && form.phone.trim() ? "phone" : "required",
+      });
       return;
     }
 
@@ -79,7 +86,7 @@ export default function Booking({ laserMode = false }) {
       lines =
         lang === "ru"
           ? [
-              "Здравствуйте! Хочу узнать, подходит ли мне лазерная коррекция.",
+              "Здравствуйте! Хочу узнать, подходит ли мне ReLEx SMILE по акции 650 000 ₸ за оба глаза.",
               `Имя: ${form.name.trim()}`,
               `Телефон: ${phone}`,
               form.diopters.trim() ? `Диоптрии: ${form.diopters.trim()}` : null,
@@ -87,7 +94,7 @@ export default function Booking({ laserMode = false }) {
               utmLine ? `Источник: ${utmLine}` : null,
             ]
           : [
-              "Сәлеметсіз бе! Маған лазерлік коррекция жасауға бола ма — білгім келеді.",
+              "Сәлеметсіз бе! ReLEx SMILE маған жасай ала ма — акция 650 000 ₸ екі көзге.",
               `Аты-жөні: ${form.name.trim()}`,
               `Телефон: ${phone}`,
               form.diopters.trim() ? `Диоптрия: ${form.diopters.trim()}` : null,
@@ -124,15 +131,15 @@ export default function Booking({ laserMode = false }) {
   };
 
   return (
-    <section id="booking" className="scroll-mt-24 py-10 sm:py-14">
+    <section id="booking" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-12">
       <div className="section-container">
-        <div className="mx-auto max-w-2xl overflow-hidden rounded-[1.75rem] border border-ink/[0.06] bg-white p-5 shadow-card sm:p-8">
+        <div className="mx-auto max-w-2xl overflow-hidden rounded-[1.5rem] border border-ink/[0.06] bg-white p-4 shadow-card sm:p-8">
           <div className="text-center">
-            <h2 className="section-title text-[1.55rem] sm:text-3xl">{t.booking.title}</h2>
-            <p className="mt-3 text-sm text-ink-muted sm:text-base">{t.booking.subtitle}</p>
+            <h2 className="section-title text-[1.4rem] sm:text-3xl">{t.booking.title}</h2>
+            <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.booking.subtitle}</p>
           </div>
 
-          <form onSubmit={onSubmit} className="mt-6 space-y-4" noValidate>
+          <form onSubmit={onSubmit} className="mt-5 space-y-3.5" noValidate>
             <input
               type="text"
               name="website"
@@ -153,8 +160,11 @@ export default function Booking({ laserMode = false }) {
                 className="field min-h-12"
                 autoComplete="name"
                 required
-                aria-invalid={Boolean(error) && !form.name.trim()}
+                aria-invalid={Boolean(fieldErrors.name)}
               />
+              {fieldErrors.name && (
+                <p className="mt-1 text-xs font-medium text-red-600">{fieldErrors.name}</p>
+              )}
             </label>
 
             <label className="block">
@@ -168,8 +178,11 @@ export default function Booking({ laserMode = false }) {
                 placeholder="+7"
                 autoComplete="tel"
                 required
-                aria-invalid={Boolean(error) && !form.phone.trim()}
+                aria-invalid={Boolean(fieldErrors.phone)}
               />
+              {fieldErrors.phone && (
+                <p className="mt-1 text-xs font-medium text-red-600">{fieldErrors.phone}</p>
+              )}
             </label>
 
             {isLaser ? (
@@ -244,7 +257,7 @@ export default function Booking({ laserMode = false }) {
 
             <button
               type="submit"
-              className="btn-primary min-h-12 w-full !py-4"
+              className="btn-primary min-h-12 w-full !py-3.5"
               disabled={status === "sending"}
             >
               <WhatsAppIcon className="h-4 w-4" />
@@ -252,7 +265,18 @@ export default function Booking({ laserMode = false }) {
             </button>
 
             {isLaser && t.booking.privacy && (
-              <p className="text-center text-xs leading-relaxed text-ink-faint">{t.booking.privacy}</p>
+              <p className="text-center text-xs leading-relaxed text-ink-faint">
+                {(t.booking.privacyBefore || "") && <span>{t.booking.privacyBefore} </span>}
+                <a
+                  href="/politika-konfidentsialnosti/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-brand underline-offset-2 hover:underline"
+                >
+                  {t.booking.privacyLink || t.booking.privacy}
+                </a>
+                {(t.booking.privacyAfter || "") && <span> {t.booking.privacyAfter}</span>}
+              </p>
             )}
           </form>
         </div>

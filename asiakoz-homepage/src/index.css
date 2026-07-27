@@ -5,6 +5,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    scroll-padding-bottom: 5rem;
   }
 
   body {

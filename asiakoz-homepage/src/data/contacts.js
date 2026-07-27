@@ -42,6 +42,8 @@ const CLINIC_BY_BRANCH = {
     typeRu: "Офтальмологический центр",
     city: "Алматы",
     address: "Алматы, Райымбек даңғылы, 176А",
+    addressRu: "Алматы, проспект Райымбека, 176А",
+    addressKz: "Алматы, Райымбек даңғылы, 176А",
     heroImage: "images/clinic-almaty-laser.png",
     phones: [{ display: "+7 700 360 01 80", href: "tel:+77003600180", tel: "+77003600180" }],
     whatsapp: {
@@ -65,6 +67,8 @@ const CLINIC_BY_BRANCH = {
     typeRu: "Офтальмологический центр",
     city: "Алматы",
     address: "Алматы, Райымбек даңғылы, 176А",
+    addressRu: "Алматы, проспект Райымбека, 176А",
+    addressKz: "Алматы, Райымбек даңғылы, 176А",
     heroImage: "images/clinic-almaty-laser.png",
     phones: [{ display: "+7 700 360 01 80", href: "tel:+77003600180", tel: "+77003600180" }],
     whatsapp: {
@@ -109,6 +113,12 @@ const CLINIC_BY_BRANCH = {
 };
 
 export const CLINIC = CLINIC_BY_BRANCH[BRANCH] || CLINIC_BY_BRANCH.shymkent;
+
+export function clinicAddress(lang = "kz") {
+  if (lang === "ru" && CLINIC.addressRu) return CLINIC.addressRu;
+  if (lang === "kz" && CLINIC.addressKz) return CLINIC.addressKz;
+  return CLINIC.address;
+}
 
 export function waBookingUrl(lang = "kz", extra = "") {
   const cityName = CLINIC.city;
