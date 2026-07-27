@@ -30,10 +30,10 @@ export function formatPromoPrice(value) {
 export function getPromoPriceLabel(lang = "ru") {
   const price = formatPromoPrice(LASER_PROMO.currentPrice);
   if (LASER_PROMO.priceScope === "bothEyes") {
-    return lang === "ru" ? `${price} за оба глаза` : `${price} екі көзге`;
+    return lang === "ru" ? `${price} за оба глаза` : `${price} — екі көзге`;
   }
   if (LASER_PROMO.priceScope === "oneEye") {
-    return lang === "ru" ? `${price} за один глаз` : `${price} бір көзге`;
+    return lang === "ru" ? `${price} за один глаз` : `${price} — бір көзге`;
   }
   return price;
 }
@@ -60,9 +60,10 @@ export function getPromoEndMonthName(lang = "ru") {
     "января", "февраля", "марта", "апреля", "мая", "июня",
     "июля", "августа", "сентября", "октября", "ноября", "декабря",
   ];
+  // Genitive forms for badge: «АКЦИЯ ШІЛДЕНІҢ СОҢЫНА ДЕЙІН»
   const monthsKz = [
-    "қаңтар", "ақпан", "наурыз", "сәуір", "мамыр", "маусым",
-    "шілде", "тамыз", "қыркүйек", "қазан", "қараша", "желтоқсан",
+    "қаңтардың", "ақпанның", "наурыздың", "сәуірдің", "мамырдың", "маусымның",
+    "шілденің", "тамыздың", "қыркүйектің", "қазанның", "қарашаның", "желтоқсанның",
   ];
   return lang === "ru" ? monthsRu[d.getMonth()] : monthsKz[d.getMonth()];
 }

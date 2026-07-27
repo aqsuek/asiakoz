@@ -11,6 +11,7 @@ export default function MobileSticky() {
   const { lang, t } = useLang();
   const [hidden, setHidden] = useState(false);
   const visibleRef = useRef(new Set());
+  const rafRef = useRef(0);
 
   useEffect(() => {
     if (!IS_LASER) return undefined;
@@ -21,12 +22,15 @@ export default function MobileSticky() {
     if (!targets.length) return undefined;
 
     const sync = () => {
-      // Fallback geometric check — reliable on iOS Safari
-      const nearBottom = targets.some((el) => {
-        const r = el.getBoundingClientRect();
-        return r.top < window.innerHeight - 72 && r.bottom > window.innerHeight * 0.35;
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        const nearBottom = targets.some((el) => {
+          const r = el.getBoundingClientRect();
+          // Hide as soon as contacts/footer enter the lower part of the viewport
+          return r.top < window.innerHeight - 56 && r.bottom > 48;
+        });
+        setHidden(nearBottom || visibleRef.current.size > 0);
       });
-      setHidden(nearBottom || visibleRef.current.size > 0);
     };
 
     const observer = new IntersectionObserver(
@@ -39,8 +43,8 @@ export default function MobileSticky() {
       },
       {
         root: null,
-        threshold: [0, 0.05, 0.15, 0.3],
-        rootMargin: "0px 0px -72px 0px",
+        threshold: [0, 0.01, 0.1, 0.25],
+        rootMargin: "0px 0px -20% 0px",
       },
     );
 
@@ -50,6 +54,7 @@ export default function MobileSticky() {
     sync();
 
     return () => {
+      cancelAnimationFrame(rafRef.current);
       observer.disconnect();
       window.removeEventListener("scroll", sync);
       window.removeEventListener("resize", sync);
@@ -65,6 +70,8 @@ export default function MobileSticky() {
           : `Сәлеметсіз бе! ${LASER_PROMO.method} маған жасай ала ма — акция ${price}.`,
       )
     : waBookingUrl(lang);
+
+  const callAria = t.mobile.callAria || t.mobile.call;
 
   return (
     <div
@@ -82,7 +89,7 @@ export default function MobileSticky() {
             trackEvent("laser_phone_click", { language: lang, button_location: "sticky" })
           }
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-white text-ink"
-          aria-label={t.mobile.call}
+          aria-label={callAria}
           tabIndex={hidden ? -1 : 0}
         >
           <Icon name="phone" className="h-4 w-4 text-brand" />

@@ -76,8 +76,18 @@ export default function LaserHero() {
 
             {spots != null && (
               <p className="mt-2 text-sm font-semibold text-ink-muted">
-                {h.spotsLabel}{" "}
-                <span className="text-base font-extrabold text-red-600">{spots}</span>
+                {(h.spotsLabel || "").includes("{n}") ? (
+                  <>
+                    {(h.spotsLabel || "").split("{n}")[0]}
+                    <span className="text-base font-extrabold text-red-600">{spots}</span>
+                    {(h.spotsLabel || "").split("{n}")[1]}
+                  </>
+                ) : (
+                  <>
+                    {h.spotsLabel}{" "}
+                    <span className="text-base font-extrabold text-red-600">{spots}</span>
+                  </>
+                )}
               </p>
             )}
 

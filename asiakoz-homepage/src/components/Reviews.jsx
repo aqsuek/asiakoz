@@ -7,9 +7,15 @@ import { trackEvent } from "../lib/analytics";
 import { IS_LASER } from "../lib/branch";
 import { useLang } from "../i18n/LanguageContext";
 
-function VideoCard({ review, openLabel, playLabel, onPlay }) {
+function VideoCard({ review, openLabel, playLabel, onPlay, wide }) {
   return (
-    <article className="w-[min(240px,78vw)] shrink-0 snap-start overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft sm:w-[260px]">
+    <article
+      className={`shrink-0 overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft ${
+        wide
+          ? "w-[min(320px,86vw)] snap-center"
+          : "w-[min(240px,78vw)] snap-start sm:w-[260px]"
+      }`}
+    >
       <ReviewVideo
         src={review.src}
         poster={review.poster}
@@ -52,7 +58,7 @@ export default function Reviews({ skipFirst = false }) {
   if (!videoReviews.length) return null;
 
   return (
-    <section id="reviews" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-8 sm:py-10">
+    <section id="reviews" className="scroll-mt-24 scroll-mb-28 overflow-x-clip bg-surface-muted py-8 sm:py-10">
       <div className="section-container">
         <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
@@ -81,12 +87,17 @@ export default function Reviews({ skipFirst = false }) {
 
         <div
           ref={trackRef}
-          className="scrollbar-hide -mx-4 flex gap-3 overflow-x-auto px-4 pb-2 snap-x snap-mandatory touch-pan-x sm:-mx-5 sm:gap-4 sm:px-5"
+          className={`scrollbar-hide flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory touch-pan-x sm:gap-4 ${
+            IS_LASER
+              ? "scroll-px-4 px-1 sm:scroll-px-5"
+              : "-mx-4 px-4 sm:-mx-5 sm:px-5"
+          }`}
         >
           {videoReviews.map((review) => (
             <VideoCard
               key={review.id}
               review={review}
+              wide={IS_LASER}
               openLabel={t.reviews.openInIg}
               playLabel={t.laserFeaturedReview?.play || "Play"}
               onPlay={() =>
@@ -99,6 +110,7 @@ export default function Reviews({ skipFirst = false }) {
               }
             />
           ))}
+          {IS_LASER && <div className="w-1 shrink-0" aria-hidden />}
         </div>
 
         <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">

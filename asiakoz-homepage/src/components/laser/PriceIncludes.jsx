@@ -19,6 +19,9 @@ export default function PriceIncludes() {
               ? (p.title || "").replace("{price}", priceLabel)
               : p.titleNeutral}
           </h2>
+          {p.subtitle && (
+            <p className="mt-2 text-sm text-ink-muted sm:text-base">{p.subtitle}</p>
+          )}
           <ul className="mt-5 space-y-2.5">
             {p.items?.map((item) => (
               <li key={item} className="flex gap-2.5 text-sm text-ink sm:text-[15px]">

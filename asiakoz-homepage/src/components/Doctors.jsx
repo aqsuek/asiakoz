@@ -21,7 +21,7 @@ function DoctorCard({ doctor, lang, t }) {
   const stats = (doctor.stats || []).slice(0, 4);
 
   return (
-    <article className="box-border flex w-[86vw] shrink-0 snap-center flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start">
+    <article className="box-border flex w-[min(340px,88vw)] shrink-0 snap-center flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start">
       <a
         href={profileUrl}
         className="relative block shrink-0 overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted lg:w-[200px] lg:min-h-[280px]"
@@ -53,11 +53,13 @@ function DoctorCard({ doctor, lang, t }) {
             <div className="mt-2.5 flex flex-wrap gap-1.5">
               {stats.map((stat) => (
                 <span
-                  key={stat.label}
+                  key={`${stat.value}-${stat.label || ""}`}
                   className="inline-flex max-w-full items-baseline gap-1 rounded-full border border-brand/15 bg-brand-soft/60 px-2 py-1 text-[11px] text-ink-muted"
                 >
                   <span className="shrink-0 font-extrabold text-brand">{stat.value}</span>
-                  <span className="min-w-0 leading-none">{stat.label}</span>
+                  {stat.label ? (
+                    <span className="min-w-0 leading-none">{stat.label}</span>
+                  ) : null}
                 </span>
               ))}
             </div>
@@ -147,13 +149,13 @@ export default function Doctors() {
 
       <div
         ref={trackRef}
-        className="scrollbar-hide flex gap-3 overflow-x-auto px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+        className="scrollbar-hide flex gap-3 overflow-x-auto scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
       >
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} lang={lang} t={t} />
         ))}
         {/* trailing spacer so last card can snap with right padding */}
-        <div className="w-1 shrink-0 sm:w-0" aria-hidden />
+        <div className="w-4 shrink-0 sm:w-5" aria-hidden />
       </div>
     </section>
   );

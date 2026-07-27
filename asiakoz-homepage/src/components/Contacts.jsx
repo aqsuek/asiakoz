@@ -11,7 +11,7 @@ export default function Contacts() {
   const showMap = !IS_LASER;
 
   return (
-    <section id="contacts" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-7 pb-10 sm:py-10">
+    <section id="contacts" className="scroll-mt-24 scroll-mb-28 bg-surface-muted py-7 pb-14 sm:py-10 sm:pb-10">
       <div className="section-container">
         <h2 className="section-title mb-5 text-center text-[1.4rem] sm:mb-8 sm:text-3xl">
           {t.contacts.title}
