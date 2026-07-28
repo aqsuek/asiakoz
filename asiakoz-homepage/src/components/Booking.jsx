@@ -133,7 +133,7 @@ export default function Booking({ laserMode = false }) {
   };
 
   return (
-    <section id="booking" className="scroll-mt-24 scroll-mb-28 py-7 sm:py-12">
+    <section id="booking" className="scroll-mt-24 scroll-mb-28 py-7 pb-20 sm:py-12 sm:pb-12">
       <div className="section-container">
         <div className="mx-auto max-w-2xl overflow-hidden rounded-[1.5rem] border border-ink/[0.06] bg-white p-4 shadow-card sm:p-8">
           <div className="text-center">

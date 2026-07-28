@@ -26,7 +26,13 @@ export default function Footer() {
   const { lang, t } = useLang();
 
   return (
-    <footer className="border-t border-ink/[0.06] bg-white pb-[calc(4.5rem+env(safe-area-inset-bottom))] pt-5 sm:pb-8 sm:pt-8">
+    <footer
+      className={`border-t border-ink/[0.06] bg-white pt-5 sm:pb-8 sm:pt-8 ${
+        IS_LASER
+          ? "pb-[calc(1.25rem+env(safe-area-inset-bottom))]"
+          : "pb-[calc(4.5rem+env(safe-area-inset-bottom))]"
+      }`}
+    >
       <div className="section-container">
         <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           <div>

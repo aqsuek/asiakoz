@@ -21,7 +21,13 @@ function DoctorCard({ doctor, lang, t }) {
   const stats = (doctor.stats || []).slice(0, 4);
 
   return (
-    <article className="box-border flex w-[min(340px,88vw)] shrink-0 snap-center flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start">
+    <article
+      className={`box-border flex shrink-0 flex-col overflow-hidden rounded-[1.35rem] border border-ink/[0.06] bg-white shadow-card sm:w-[340px] lg:w-[520px] lg:flex-row lg:snap-start ${
+        IS_LASER
+          ? "w-[calc(100vw-3rem)] max-w-[340px] snap-center"
+          : "w-[min(340px,88vw)] snap-center"
+      }`}
+    >
       <a
         href={profileUrl}
         className="relative block shrink-0 overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted lg:w-[200px] lg:min-h-[280px]"
@@ -29,7 +35,7 @@ function DoctorCard({ doctor, lang, t }) {
         <img
           src={assetUrl(doctor.image)}
           alt={doctor.name}
-          className="aspect-[4/5] max-h-[220px] w-full object-cover object-[center_15%] sm:max-h-[260px] lg:absolute lg:inset-0 lg:aspect-auto lg:max-h-none lg:h-full"
+          className="aspect-[4/5] max-h-[180px] w-full object-cover object-[center_15%] sm:max-h-[260px] lg:absolute lg:inset-0 lg:aspect-auto lg:max-h-none lg:h-full"
           width={400}
           height={500}
           loading="lazy"
@@ -130,7 +136,7 @@ export default function Doctors() {
                 type="button"
                 onClick={() => scrollBy(-1)}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink transition-colors hover:border-brand/30 hover:text-brand"
-                aria-label="Prev"
+                aria-label={lang === "kz" ? "Алдыңғы" : "Назад"}
               >
                 <Icon name="chevronLeft" className="h-5 w-5" />
               </button>
@@ -138,7 +144,7 @@ export default function Doctors() {
                 type="button"
                 onClick={() => scrollBy(1)}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink transition-colors hover:border-brand/30 hover:text-brand"
-                aria-label="Next"
+                aria-label={lang === "kz" ? "Келесі" : "Вперёд"}
               >
                 <Icon name="chevronRight" className="h-5 w-5" />
               </button>
@@ -149,12 +155,11 @@ export default function Doctors() {
 
       <div
         ref={trackRef}
-        className="scrollbar-hide flex gap-3 overflow-x-auto scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+        className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
       >
         {doctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} lang={lang} t={t} />
         ))}
-        {/* trailing spacer so last card can snap with right padding */}
         <div className="w-4 shrink-0 sm:w-5" aria-hidden />
       </div>
     </section>

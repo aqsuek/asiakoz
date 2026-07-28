@@ -10,7 +10,7 @@ import { trackEvent } from "../lib/analytics";
 export default function MobileSticky() {
   const { lang, t } = useLang();
   const [hidden, setHidden] = useState(false);
-  const visibleRef = useRef(new Set());
+  const hiddenRef = useRef(false);
   const rafRef = useRef(0);
 
   useEffect(() => {
@@ -21,30 +21,33 @@ export default function MobileSticky() {
     const targets = [contacts, footer].filter(Boolean);
     if (!targets.length) return undefined;
 
+    const apply = (next) => {
+      if (hiddenRef.current === next) return;
+      hiddenRef.current = next;
+      setHidden(next);
+    };
+
     const sync = () => {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = requestAnimationFrame(() => {
-        const nearBottom = targets.some((el) => {
+        // Hide when contacts/footer enter the sticky CTA zone (bottom ~96px)
+        const stickyZoneTop = window.innerHeight - 96;
+        const shouldHide = targets.some((el) => {
           const r = el.getBoundingClientRect();
-          // Hide as soon as contacts/footer enter the lower part of the viewport
-          return r.top < window.innerHeight - 56 && r.bottom > 48;
+          return r.top < stickyZoneTop && r.bottom > 0;
         });
-        setHidden(nearBottom || visibleRef.current.size > 0);
+        apply(shouldHide);
       });
     };
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) visibleRef.current.add(entry.target);
-          else visibleRef.current.delete(entry.target);
-        });
+      () => {
         sync();
       },
       {
         root: null,
-        threshold: [0, 0.01, 0.1, 0.25],
-        rootMargin: "0px 0px -20% 0px",
+        threshold: [0, 0.05, 0.15, 0.3, 0.5],
+        rootMargin: "0px 0px -96px 0px",
       },
     );
 

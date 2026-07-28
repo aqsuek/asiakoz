@@ -12,7 +12,7 @@ function VideoCard({ review, openLabel, playLabel, onPlay, wide }) {
     <article
       className={`shrink-0 overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft ${
         wide
-          ? "w-[min(320px,86vw)] snap-center"
+          ? "w-[calc(100vw-3rem)] max-w-[320px] snap-center"
           : "w-[min(240px,78vw)] snap-start sm:w-[260px]"
       }`}
     >
@@ -51,7 +51,9 @@ export default function Reviews({ skipFirst = false }) {
     const el = trackRef.current;
     if (!el) return;
     const card = el.querySelector("article");
-    const step = card ? card.offsetWidth + 16 : Math.min(280, el.clientWidth * 0.85);
+    const styles = getComputedStyle(el);
+    const gap = parseFloat(styles.columnGap || styles.gap) || 12;
+    const step = card ? card.offsetWidth + gap : Math.min(280, el.clientWidth * 0.85);
     el.scrollBy({ left: dir * step, behavior: "smooth" });
   };
 
@@ -70,7 +72,7 @@ export default function Reviews({ skipFirst = false }) {
               type="button"
               onClick={() => scrollBy(-1)}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink hover:border-brand/30 hover:text-brand"
-              aria-label="Prev"
+              aria-label={lang === "kz" ? "Алдыңғы" : "Назад"}
             >
               <Icon name="chevronLeft" className="h-5 w-5" />
             </button>
@@ -78,7 +80,7 @@ export default function Reviews({ skipFirst = false }) {
               type="button"
               onClick={() => scrollBy(1)}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink hover:border-brand/30 hover:text-brand"
-              aria-label="Next"
+              aria-label={lang === "kz" ? "Келесі" : "Вперёд"}
             >
               <Icon name="chevronRight" className="h-5 w-5" />
             </button>
@@ -87,9 +89,9 @@ export default function Reviews({ skipFirst = false }) {
 
         <div
           ref={trackRef}
-          className={`scrollbar-hide flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory touch-pan-x sm:gap-4 ${
+          className={`scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain pb-2 snap-x snap-mandatory touch-pan-x sm:gap-4 ${
             IS_LASER
-              ? "scroll-px-4 px-1 sm:scroll-px-5"
+              ? "scroll-px-4 px-4 sm:scroll-px-5 sm:px-5"
               : "-mx-4 px-4 sm:-mx-5 sm:px-5"
           }`}
         >
@@ -110,7 +112,7 @@ export default function Reviews({ skipFirst = false }) {
               }
             />
           ))}
-          {IS_LASER && <div className="w-1 shrink-0" aria-hidden />}
+          {IS_LASER && <div className="w-4 shrink-0" aria-hidden />}
         </div>
 
         <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">

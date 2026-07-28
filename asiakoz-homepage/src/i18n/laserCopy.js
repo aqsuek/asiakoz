@@ -327,7 +327,7 @@ export const laserOverrides = {
       services: "О коррекции",
       doctors: "Врачи",
       reviews: "Отзывы",
-      faq: "FAQ",
+      faq: "Частые вопросы",
       contacts: "Контакты",
       book: "Записаться на диагностику",
     },
