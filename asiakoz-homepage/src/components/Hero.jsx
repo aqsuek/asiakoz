@@ -1,6 +1,6 @@
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC, waBookingUrl } from "../data/contacts";
+import { CLINIC, clinicAddress, waBookingUrl } from "../data/contacts";
 
 export default function Hero() {
   const { lang, t } = useLang();
@@ -59,9 +59,12 @@ export default function Hero() {
             </div>
             <div className="absolute -bottom-4 left-4 right-4 rounded-2xl border border-ink/[0.06] bg-white/95 p-4 shadow-card backdrop-blur-sm sm:left-6 sm:right-auto sm:max-w-xs">
               <p className="text-xs font-semibold uppercase tracking-wider text-brand">
-                {lang === "ru" ? "Офтальмологический центр" : "Офтальмологиялық орталық"}
+                {lang === "ru" ? CLINIC.typeRu : CLINIC.typeKz}
               </p>
-              <p className="mt-1 text-sm font-bold text-ink">{CLINIC.address}</p>
+              <p className="mt-1 text-sm font-bold text-ink">
+                {lang === "ru" && CLINIC.cityRu ? CLINIC.cityRu : CLINIC.city}
+              </p>
+              <p className="mt-0.5 text-sm text-ink-muted">{clinicAddress(lang)}</p>
             </div>
           </div>
         </div>

@@ -54,7 +54,12 @@ export default function Contacts() {
                     {t.contacts.phone}
                   </p>
                   <div className="mt-1 flex flex-col gap-1">
-                    {CLINIC.phones.map((phone) => (
+                    {CLINIC.phones.map((phone) => {
+                      const label =
+                        lang === "ru"
+                          ? phone.labelRu || phone.label
+                          : phone.labelKz || phone.label;
+                      return (
                       <a
                         key={phone.href}
                         href={phone.href}
@@ -67,9 +72,17 @@ export default function Contacts() {
                         }
                         className="text-[15px] font-semibold text-ink transition-colors hover:text-brand"
                       >
-                        {phone.display}
+                        {label ? (
+                          <span className="block">
+                            <span className="text-xs font-medium text-ink-faint">{label}</span>
+                            <span className="block">{phone.display}</span>
+                          </span>
+                        ) : (
+                          phone.display
+                        )}
                       </a>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               </li>

@@ -165,7 +165,23 @@ export const LASER_VIDEO_REVIEWS = [
 ];
 
 export function getVideoReviews() {
-  return BRANCH === "laser" || BRANCH === "almaty" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;
+  const list =
+    BRANCH === "laser" || BRANCH === "almaty" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;
+  // Home lives at site root; reuse Shymkent review videos (already on Pages)
+  if (BRANCH === "home") {
+    return list.map((item) => ({
+      ...item,
+      src:
+        item.src.startsWith("http") || item.src.startsWith("/")
+          ? item.src
+          : `/shymkent/${item.src}`,
+      ...(item.poster &&
+      !(item.poster.startsWith("http") || item.poster.startsWith("/"))
+        ? { poster: `/shymkent/${item.poster}` }
+        : {}),
+    }));
+  }
+  return list;
 }
 
 export function assetUrl(path) {

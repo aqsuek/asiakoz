@@ -4,7 +4,7 @@ import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { homeUrl } from "../lib/routes";
-import { IS_LASER } from "../lib/branch";
+import { IS_HOME, IS_LASER } from "../lib/branch";
 import { trackEvent } from "../lib/analytics";
 
 const ANCHORS = IS_LASER
@@ -16,13 +16,22 @@ const ANCHORS = IS_LASER
       { key: "faq", hash: "#faq" },
       { key: "contacts", hash: "#contacts" },
     ]
-  : [
-      { key: "about", hash: "#about" },
-      { key: "services", hash: "#services" },
-      { key: "doctors", hash: "#doctors" },
-      { key: "reviews", hash: "#reviews" },
-      { key: "contacts", hash: "#contacts" },
-    ];
+  : IS_HOME
+    ? [
+        { key: "branches", hash: "#branches" },
+        { key: "about", hash: "#about" },
+        { key: "services", hash: "#services" },
+        { key: "doctors", hash: "#doctors" },
+        { key: "reviews", hash: "#reviews" },
+        { key: "contacts", hash: "#contacts" },
+      ]
+    : [
+        { key: "about", hash: "#about" },
+        { key: "services", hash: "#services" },
+        { key: "doctors", hash: "#doctors" },
+        { key: "reviews", hash: "#reviews" },
+        { key: "contacts", hash: "#contacts" },
+      ];
 
 export default function Header() {
   const { lang, setLang, t } = useLang();

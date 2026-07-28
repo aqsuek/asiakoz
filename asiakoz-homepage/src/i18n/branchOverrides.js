@@ -1,6 +1,8 @@
 import { laserOverrides } from './laserCopy';
+import { homeOverrides } from './homeCopy';
 
 export const branchTranslationOverrides = {
+  home: homeOverrides,
   aqtau: {
     kz: {
       seoTitle: "AsiaKoz Ақтау — офтальмологиялық орталық",

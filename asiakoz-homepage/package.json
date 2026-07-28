@@ -10,7 +10,8 @@
     "deploy:shymkent": "bash scripts/deploy-shymkent.sh",
     "deploy:aqtau": "bash scripts/deploy-aqtau.sh",
     "deploy:almaty": "bash scripts/deploy-almaty.sh",
-    "deploy:laser": "bash scripts/deploy-laser.sh"
+    "deploy:laser": "bash scripts/deploy-laser.sh",
+    "deploy:home": "bash scripts/deploy-to-site.sh"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
