@@ -10,22 +10,23 @@ import { useLang } from "../i18n/LanguageContext";
 function VideoCard({ review, openLabel, playLabel, onPlay, wide }) {
   return (
     <article
-      className={`shrink-0 overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft ${
+      className={`flex shrink-0 flex-col overflow-hidden rounded-3xl border border-ink/[0.06] bg-white shadow-soft ${
         wide
-          ? "w-[calc(100vw-3rem)] max-w-[320px] snap-center"
+          ? "w-[86vw] max-w-[300px] snap-center"
           : "w-[min(240px,78vw)] snap-start sm:w-[260px]"
       }`}
     >
       <ReviewVideo
         src={review.src}
         poster={review.poster}
-        aspectClass="aspect-[9/16]"
-        maxHeightClass="max-h-[420px]"
+        aspectClass={wide ? "" : "aspect-[9/16]"}
+        maxHeightClass={wide ? "h-[min(420px,72vw)] w-full" : "max-h-[420px]"}
+        className="w-full"
         playLabel={playLabel}
         onPlay={onPlay}
       />
       {review.instagramUrl && (
-        <div className="space-y-2 p-3">
+        <div className="w-full space-y-2 p-3">
           <a
             href={review.instagramUrl}
             target="_blank"
