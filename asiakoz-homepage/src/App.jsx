@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LanguageProvider } from "./i18n/LanguageContext";
+import { CityProvider } from "./context/CityContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MobileSticky from "./components/MobileSticky";
@@ -7,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import DoctorPage from "./pages/DoctorPage";
 import { parseRoute } from "./lib/routes";
 import { useLang } from "./i18n/LanguageContext";
+import { IS_HOME } from "./lib/branch";
 
 function Router() {
   const { t } = useLang();
@@ -25,7 +27,14 @@ function Router() {
   }, [route, t.seoTitle]);
 
   return (
-    <div id="top" className="min-h-screen bg-surface-warm">
+    <div
+      id="top"
+      className={`min-h-screen bg-surface-warm ${
+        IS_HOME
+          ? "pb-[calc(4.75rem+env(safe-area-inset-bottom))] sm:pb-0"
+          : ""
+      }`}
+    >
       <Header />
       <main>
         {route.name === "doctor" ? (
@@ -43,7 +52,9 @@ function Router() {
 export default function App() {
   return (
     <LanguageProvider>
-      <Router />
+      <CityProvider>
+        <Router />
+      </CityProvider>
     </LanguageProvider>
   );
 }

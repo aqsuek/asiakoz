@@ -13,8 +13,8 @@ export default {
         },
         ink: {
           DEFAULT: "#0C1222",
-          muted: "#5A6578",
-          faint: "#8E99A8",
+          muted: "#4A5568",
+          faint: "#7A8494",
         },
         surface: {
           DEFAULT: "#FFFFFF",

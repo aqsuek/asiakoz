@@ -3,22 +3,24 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
-import { IS_LASER } from "../lib/branch";
+import { IS_HOME, IS_LASER } from "../lib/branch";
+import { useCity } from "../context/CityContext";
+import { phoneHref } from "../data/branches";
 import { getPromoPriceLabel, LASER_PROMO } from "../data/laserPromo";
 import { trackEvent } from "../lib/analytics";
 
 export default function MobileSticky() {
   const { lang, t } = useLang();
+  const { cityId, branch } = useCity();
   const [hidden, setHidden] = useState(false);
   const hiddenRef = useRef(false);
   const rafRef = useRef(0);
 
   useEffect(() => {
-    if (!IS_LASER) return undefined;
-
     const contacts = document.getElementById("contacts");
+    const booking = document.getElementById("booking");
     const footer = document.querySelector("footer");
-    const targets = [contacts, footer].filter(Boolean);
+    const targets = [contacts, booking, footer].filter(Boolean);
     if (!targets.length) return undefined;
 
     const apply = (next) => {
@@ -30,8 +32,7 @@ export default function MobileSticky() {
     const sync = () => {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = requestAnimationFrame(() => {
-        // Hide when contacts/footer enter the sticky CTA zone (bottom ~96px)
-        const stickyZoneTop = window.innerHeight - 96;
+        const stickyZoneTop = window.innerHeight - 88;
         const shouldHide = targets.some((el) => {
           const r = el.getBoundingClientRect();
           return r.top < stickyZoneTop && r.bottom > 0;
@@ -40,16 +41,11 @@ export default function MobileSticky() {
       });
     };
 
-    const observer = new IntersectionObserver(
-      () => {
-        sync();
-      },
-      {
-        root: null,
-        threshold: [0, 0.05, 0.15, 0.3, 0.5],
-        rootMargin: "0px 0px -96px 0px",
-      },
-    );
+    const observer = new IntersectionObserver(() => sync(), {
+      root: null,
+      threshold: [0, 0.05, 0.15, 0.3, 0.5],
+      rootMargin: "0px 0px -88px 0px",
+    });
 
     targets.forEach((el) => observer.observe(el));
     window.addEventListener("scroll", sync, { passive: true });
@@ -72,24 +68,33 @@ export default function MobileSticky() {
           ? `Здравствуйте! Хочу узнать, подходит ли мне ${LASER_PROMO.method} по акции ${price}.`
           : `Сәлеметсіз бе! ${LASER_PROMO.method} маған жасай ала ма — акция ${price}.`,
       )
-    : waBookingUrl(lang);
+    : IS_HOME
+      ? waBookingUrl(lang, "", { branchId: cityId })
+      : waBookingUrl(lang);
 
+  const callHref = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
   const callAria = t.mobile.callAria || t.mobile.call;
 
   return (
     <div
-      className={`fixed inset-x-0 bottom-0 z-50 border-t border-ink/[0.08] bg-white/95 px-2.5 pb-[max(0.35rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl transition-[opacity,transform] duration-300 ease-out will-change-transform sm:hidden ${
+      className={`mobile-sticky-bar fixed inset-x-0 bottom-0 z-50 border-t border-ink/[0.08] bg-white/95 px-2.5 pt-1.5 backdrop-blur-xl transition-[opacity,transform] duration-300 ease-out will-change-transform sm:hidden ${
         hidden
           ? "pointer-events-none translate-y-[110%] opacity-0"
           : "translate-y-0 opacity-100"
       }`}
+      style={{ paddingBottom: "max(0.35rem, env(safe-area-inset-bottom))" }}
       aria-hidden={hidden}
     >
       <div className="mx-auto flex max-w-lg items-center gap-2">
         <a
-          href={CLINIC.phones[0].href}
+          href={callHref}
           onClick={() =>
-            trackEvent("laser_phone_click", { language: lang, button_location: "sticky" })
+            trackEvent(IS_LASER ? "laser_phone_click" : "phone_click", {
+              language: lang,
+              city: IS_HOME ? cityId : undefined,
+              button_location: "sticky",
+              page_url: window.location.href,
+            })
           }
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-white text-ink"
           aria-label={callAria}
@@ -102,7 +107,12 @@ export default function MobileSticky() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() =>
-            trackEvent("laser_whatsapp_click", { language: lang, button_location: "sticky" })
+            trackEvent(IS_LASER ? "laser_whatsapp_click" : "whatsapp_click", {
+              language: lang,
+              city: IS_HOME ? cityId : undefined,
+              button_location: "sticky",
+              page_url: window.location.href,
+            })
           }
           className="inline-flex h-11 min-h-11 flex-1 items-center justify-center gap-1.5 rounded-full bg-[#25D366] px-3 text-[13px] font-semibold leading-tight text-white"
           tabIndex={hidden ? -1 : 0}

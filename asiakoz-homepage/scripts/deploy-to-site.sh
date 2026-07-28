@@ -47,14 +47,16 @@ import re
 p = Path(sys.argv[1])
 t = p.read_text(encoding="utf-8")
 
-title = "AsiaKoz — офтальмологические клиники · Алматы, Актау, Шымкент"
+title = "AsiaKoz — офтальмологические клиники · Алматы, Актау"
 desc = (
     "AsiaKoz — глазные клиники с турецкими офтальмохирургами. "
-    "Филиалы в Алматы, Актау и Шымкенте. Запись: WhatsApp +7 700 360 01 80."
+    "Работаем в Алматы и Актау. Шымкент — открытие скоро. "
+    "Запись: WhatsApp +7 700 360 01 80."
 )
 desc_kz = (
     "AsiaKoz — түрік офтальмохирургтері бар көз клиникалары. "
-    "Филиалдар: Алматы, Ақтау, Шымкент. Жазылу: WhatsApp +7 700 360 01 80."
+    "Алматы мен Ақтауда жұмыс істейміз. Шымкентте жақында ашыламыз. "
+    "Жазылу: WhatsApp +7 700 360 01 80."
 )
 url = "https://asiakoz.com/"
 
@@ -123,19 +125,18 @@ ld = '''{
         "@type": "MedicalOrganization",
         "name": "AsiaKoz",
         "alternateName": ["Азиякөз", "Asiakoz", "Азиякоз"],
-        "description": "Сеть офтальмологических клиник в Казахстане: Алматы, Актау, Шымкент.",
+        "description": "Офтальмологические клиники AsiaKoz в Алматы и Актау. Шымкент — открытие скоро.",
         "url": "https://asiakoz.com/",
         "logo": "https://asiakoz.com/images/logo.png",
         "image": "https://asiakoz.com/images/logo.png",
-        "telephone": ["+77003600180", "+77758630180", "+77080750180"],
+        "telephone": ["+77003600180", "+77758630180"],
         "medicalSpecialty": "Ophthalmology",
         "sameAs": [
           "https://www.instagram.com/asiakoz.clinic/"
         ],
         "areaServed": [
           {"@type": "City", "name": "Алматы"},
-          {"@type": "City", "name": "Актау"},
-          {"@type": "City", "name": "Шымкент"}
+          {"@type": "City", "name": "Актау"}
         ]
       }'''
 t = re.sub(

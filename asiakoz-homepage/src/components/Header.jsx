@@ -5,6 +5,8 @@ import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { homeUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
+import { useCity } from "../context/CityContext";
+import { phoneHref } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
 
 const ANCHORS = IS_LASER
@@ -35,6 +37,7 @@ const ANCHORS = IS_LASER
 
 export default function Header() {
   const { lang, setLang, t } = useLang();
+  const { cityId, branch } = useCity();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -44,7 +47,15 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const bookHref = IS_LASER ? homeUrl("#booking") : waBookingUrl(lang);
+  const bookHref = IS_LASER
+    ? homeUrl("#booking")
+    : IS_HOME
+      ? waBookingUrl(lang, "", { branchId: cityId })
+      : waBookingUrl(lang);
+
+  const phone = IS_HOME
+    ? { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay }
+    : CLINIC.phones[0];
 
   return (
     <header
@@ -54,8 +65,12 @@ export default function Header() {
           : "bg-white/70 backdrop-blur-md"
       }`}
     >
-      <div className="section-container flex h-14 items-center justify-between gap-3 sm:h-[68px]">
-        <Logo />
+      <div
+        className={`section-container flex items-center justify-between gap-2 ${
+          IS_HOME ? "h-16 sm:h-[68px]" : "h-14 sm:h-[68px]"
+        }`}
+      >
+        <Logo compact={IS_HOME} />
 
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navigation">
           {ANCHORS.map((item) => (
@@ -69,7 +84,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3">
           <div
             className="inline-flex rounded-full border border-ink/[0.08] bg-surface-muted p-0.5"
             role="group"
@@ -83,7 +98,7 @@ export default function Header() {
                   setLang(code);
                   if (IS_LASER) trackEvent("laser_language_change", { language: code });
                 }}
-                className={`min-h-9 min-w-9 rounded-full px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide transition-all ${
+                className={`inline-flex h-11 min-w-11 items-center justify-center rounded-full px-2 text-[10px] font-bold uppercase tracking-wide transition-all sm:min-w-9 sm:px-2.5 sm:text-[11px] ${
                   lang === code
                     ? "bg-white text-brand shadow-soft"
                     : "text-ink-faint hover:text-ink"
@@ -130,8 +145,18 @@ export default function Header() {
             ))}
           </nav>
           <div className="mt-3 grid gap-2">
-            <a href={CLINIC.phones[0].href} className="btn-outline min-h-12 w-full">
-              {CLINIC.phones[0].display}
+            <a
+              href={phone.href}
+              onClick={() =>
+                trackEvent("phone_click", {
+                  city: IS_HOME ? cityId : undefined,
+                  button_location: "header_menu",
+                  page_url: window.location.href,
+                })
+              }
+              className="btn-outline min-h-12 w-full"
+            >
+              {phone.display}
             </a>
             <a
               href={bookHref}
