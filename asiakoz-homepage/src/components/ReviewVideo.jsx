@@ -71,8 +71,9 @@ export default function ReviewVideo({
       />
 
       {mediaFailed && (
-        <div className="absolute inset-0 flex items-center justify-center bg-surface-muted px-4 text-center text-sm text-ink-muted">
-          Видео временно недоступно
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-b from-brand-soft via-white to-surface-muted px-4 text-center">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brand">AsiaKoz</span>
+          <span className="text-sm text-ink-muted">Видео временно недоступно</span>
         </div>
       )}
 

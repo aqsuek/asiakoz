@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --mobile-cta-height: 82px;
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
@@ -11,6 +15,7 @@
 
   body {
     @apply bg-surface-warm font-sans text-ink antialiased;
+    padding-bottom: calc(var(--mobile-cta-height) + env(safe-area-inset-bottom));
   }
 
   ::selection {
@@ -18,7 +23,7 @@
   }
 
   section[id] {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 100px;
   }
 
   :focus-visible {
@@ -28,7 +33,7 @@
 
 @layer components {
   .scroll-mt-header {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 100px;
   }
 
   .section-container {
@@ -75,6 +80,12 @@
 
   .mobile-sticky-bar {
     padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding-bottom: 0;
   }
 }
 

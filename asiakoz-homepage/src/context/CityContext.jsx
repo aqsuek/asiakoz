@@ -17,7 +17,7 @@ function readStoredCity() {
   } catch {
     /* ignore */
   }
-  return DEFAULT_BRANCH_ID;
+  return null;
 }
 
 export function CityProvider({ children }) {
@@ -28,7 +28,7 @@ export function CityProvider({ children }) {
   useEffect(() => {
     if (!IS_HOME) return;
     try {
-      localStorage.setItem(CITY_STORAGE_KEY, cityId);
+      if (cityId) localStorage.setItem(CITY_STORAGE_KEY, cityId);
     } catch {
       /* ignore */
     }
@@ -38,7 +38,8 @@ export function CityProvider({ children }) {
     if (!NETWORK_BRANCHES.some((b) => b.id === nextId)) return;
     setCityIdState((prev) => {
       if (prev === nextId) return prev;
-      trackEvent("city_select", {
+      trackEvent("branch_select", {
+        branch: nextId,
         city: nextId,
         page_url: typeof window !== "undefined" ? window.location.href : "",
       });

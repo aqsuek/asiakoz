@@ -121,7 +121,7 @@ export default function Reviews({ skipFirst = false }) {
               caption={t.reviews.caption}
               cityLabel={IS_HOME ? reviewCity : undefined}
               onPlay={() =>
-                trackEvent(IS_LASER ? "laser_video_play" : "review_play", {
+                trackEvent(IS_LASER ? "laser_video_play" : "review_open", {
                   language: lang,
                   video_id: review.id,
                   city: IS_HOME ? cityId : undefined,

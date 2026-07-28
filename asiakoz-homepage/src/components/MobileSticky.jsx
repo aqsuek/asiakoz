@@ -5,14 +5,16 @@ import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
-import { phoneHref } from "../data/branches";
+import { NETWORK_BRANCHES, branchCityName, phoneHref } from "../data/branches";
 import { getPromoPriceLabel, LASER_PROMO } from "../data/laserPromo";
 import { trackEvent } from "../lib/analytics";
 
 export default function MobileSticky() {
   const { lang, t } = useLang();
-  const { cityId, branch } = useCity();
+  const { cityId, branch, setCityId } = useCity();
   const [hidden, setHidden] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [pendingAction, setPendingAction] = useState(null);
   const hiddenRef = useRef(false);
   const rafRef = useRef(0);
 
@@ -75,6 +77,29 @@ export default function MobileSticky() {
   const callHref = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
   const callAria = t.mobile.callAria || t.mobile.call;
 
+  const openPicker = (action) => {
+    setPendingAction(action);
+    setPickerOpen(true);
+  };
+
+  const onPickCity = (id) => {
+    setCityId(id);
+    setPickerOpen(false);
+    if (pendingAction === "phone") {
+      window.location.href = phoneHref(
+        NETWORK_BRANCHES.find((b) => b.id === id)?.phoneTel || branch.phoneTel,
+      );
+      return;
+    }
+    if (pendingAction === "whatsapp") {
+      window.open(
+        waBookingUrl(lang, "", { branchId: id }),
+        "_blank",
+        "noopener,noreferrer",
+      );
+    }
+  };
+
   return (
     <div
       className={`mobile-sticky-bar fixed inset-x-0 bottom-0 z-50 border-t border-ink/[0.08] bg-white/95 px-2.5 pt-1.5 backdrop-blur-xl transition-[opacity,transform] duration-300 ease-out will-change-transform sm:hidden ${
@@ -88,14 +113,19 @@ export default function MobileSticky() {
       <div className="mx-auto flex max-w-lg items-center gap-2">
         <a
           href={callHref}
-          onClick={() =>
+          onClick={(e) => {
+            if (IS_HOME && !cityId) {
+              e.preventDefault();
+              openPicker("phone");
+              return;
+            }
             trackEvent(IS_LASER ? "laser_phone_click" : "phone_click", {
               language: lang,
               city: IS_HOME ? cityId : undefined,
               button_location: "sticky",
               page_url: window.location.href,
-            })
-          }
+            });
+          }}
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-white text-ink"
           aria-label={callAria}
           tabIndex={hidden ? -1 : 0}
@@ -106,14 +136,19 @@ export default function MobileSticky() {
           href={waHref}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() =>
+          onClick={(e) => {
+            if (IS_HOME && !cityId) {
+              e.preventDefault();
+              openPicker("whatsapp");
+              return;
+            }
             trackEvent(IS_LASER ? "laser_whatsapp_click" : "whatsapp_click", {
               language: lang,
               city: IS_HOME ? cityId : undefined,
               button_location: "sticky",
               page_url: window.location.href,
-            })
-          }
+            });
+          }}
           className="inline-flex h-11 min-h-11 flex-1 items-center justify-center gap-1.5 rounded-full bg-[#25D366] px-3 text-[13px] font-semibold leading-tight text-white"
           tabIndex={hidden ? -1 : 0}
         >
@@ -121,6 +156,34 @@ export default function MobileSticky() {
           <span className="truncate">{t.mobile.wa}</span>
         </a>
       </div>
+      {pickerOpen && IS_HOME && (
+        <div className="fixed inset-0 z-[70] flex items-end bg-ink/35">
+          <button
+            type="button"
+            className="absolute inset-0"
+            aria-label="Close city picker"
+            onClick={() => setPickerOpen(false)}
+          />
+          <div className="relative z-10 w-full rounded-t-[1.25rem] bg-white p-4 shadow-float">
+            <p className="mb-2 text-sm font-semibold text-ink">{t.cityPicker?.label}</p>
+            <div className="grid gap-2">
+              {NETWORK_BRANCHES.map((b) => (
+                <button
+                  key={b.id}
+                  type="button"
+                  onClick={() => onPickCity(b.id)}
+                  className="inline-flex min-h-11 items-center justify-between rounded-xl border border-ink/10 px-3.5 text-sm font-semibold text-ink hover:border-brand/30"
+                >
+                  <span>{branchCityName(b, lang)}</span>
+                  {b.status === "coming_soon" ? (
+                    <span className="text-xs text-brand">{t.cityPicker?.soon}</span>
+                  ) : null}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

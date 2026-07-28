@@ -13,7 +13,6 @@ export default function Services() {
   const { lang, t } = useLang();
   const { cityId } = useCity();
   const [active, setActive] = useState(null);
-  const [showAll, setShowAll] = useState(!IS_HOME);
 
   useEffect(() => {
     if (!active) return undefined;
@@ -29,8 +28,7 @@ export default function Services() {
   }, [active]);
 
   const allItems = t.services.items || [];
-  const items =
-    IS_HOME && !showAll ? allItems.slice(0, HOME_PREVIEW) : allItems;
+  const items = IS_HOME ? allItems.slice(0, HOME_PREVIEW) : allItems;
   const service = active ? allItems.find((item) => item.id === active) : null;
 
   const openService = (id) => {
@@ -56,7 +54,7 @@ export default function Services() {
               key={item.id}
               className={`flex flex-col border border-ink/[0.06] bg-white shadow-soft transition-all duration-300 hover:border-brand/20 ${
                 IS_HOME
-                  ? "min-h-[160px] rounded-[1.5rem] p-5 sm:min-h-[180px] sm:p-6"
+                  ? "rounded-[1.5rem] p-5 sm:p-6"
                   : "rounded-3xl p-6 hover:-translate-y-0.5 hover:shadow-card"
               }`}
             >
@@ -85,13 +83,12 @@ export default function Services() {
 
         {IS_HOME && allItems.length > HOME_PREVIEW && (
           <div className="mt-5 flex justify-center">
-            <button
-              type="button"
-              onClick={() => setShowAll((v) => !v)}
+            <a
+              href="/uslugi/"
               className="btn-outline min-h-11 !px-5 !py-2.5 text-sm"
             >
-              {showAll ? t.services.showLess : t.services.showAll}
-            </button>
+              {t.services.showAll}
+            </a>
           </div>
         )}
       </div>

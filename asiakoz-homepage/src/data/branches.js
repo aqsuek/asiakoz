@@ -36,6 +36,8 @@ export const NETWORK_BRANCHES = [
     cityRu: "Алматы",
     addressKz: "Алматы, Райымбек даңғылы, 176А",
     addressRu: "Алматы, проспект Райымбека, 176А",
+    summaryKz: "Лазерлік көру түзету, катаракта, толық диагностика",
+    summaryRu: "Лазерная коррекция, катаракта, полная диагностика",
     phoneDisplay: "+7 700 360 01 80",
     phoneTel: "+77003600180",
     whatsapp: {
@@ -64,6 +66,8 @@ export const NETWORK_BRANCHES = [
     cityRu: "Актау",
     addressKz: "Ақтау, 7А шағынауданы, 11/3",
     addressRu: "Актау, 7А микрорайон, 11/3",
+    summaryKz: "Катаракта, тор қабық, балалар офтальмологиясы",
+    summaryRu: "Катаракта, сетчатка, детская офтальмология",
     phoneDisplay: "+7 775 863 01 80",
     phoneTel: "+77758630180",
     whatsapp: {
@@ -91,6 +95,8 @@ export const NETWORK_BRANCHES = [
     cityRu: "Шымкент",
     addressKz: "Шымкент, Байтұрсынов көшесі, 86/7, Тұран",
     addressRu: "Шымкент, улица Байтурсынова, 86/7, Туран",
+    summaryKz: "Жақында ашылады. Алдын ала жазылу жүріп жатыр",
+    summaryRu: "Скоро открытие. Идет предварительная запись",
     phoneDisplay: "+7 708 075 01 80",
     phoneTel: "+77080750180",
     whatsapp: {

@@ -47,6 +47,22 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!open) {
+      document.body.style.overflow = "";
+      return undefined;
+    }
+    document.body.style.overflow = "hidden";
+    const onKey = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
   const bookHref = IS_LASER
     ? homeUrl("#booking")
     : IS_HOME
@@ -131,7 +147,14 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-ink/[0.06] bg-white px-5 py-4 xl:hidden">
+        <>
+          <button
+            type="button"
+            aria-label="Close menu overlay"
+            className="fixed inset-0 z-40 bg-ink/25 xl:hidden"
+            onClick={() => setOpen(false)}
+          />
+          <div className="relative z-50 border-t border-ink/[0.06] bg-white px-5 py-4 xl:hidden">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {ANCHORS.map((item) => (
               <a
@@ -168,6 +191,7 @@ export default function Header() {
             </a>
           </div>
         </div>
+        </>
       )}
     </header>
   );

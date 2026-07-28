@@ -60,7 +60,7 @@ const CLINIC_BY_BRANCH = {
     address: "Алматы, Райымбек даңғылы, 176А",
     addressRu: "Алматы, проспект Райымбека, 176А",
     addressKz: "Алматы, Райымбек даңғылы, 176А",
-    heroImage: "images/clinic-almaty-laser.png",
+    heroImage: "images/clinic-aktau.png",
     phones: [
       {
         display: formatKzPhoneDisplay("+77003600180"),

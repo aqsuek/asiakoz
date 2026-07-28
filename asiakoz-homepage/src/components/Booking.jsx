@@ -274,30 +274,6 @@ export default function Booking({ laserMode = false }) {
               </label>
             )}
 
-            {!isLaser && (
-              <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-ink">{t.booking.service}</span>
-                <select
-                  name="service"
-                  value={form.service}
-                  onChange={onChange}
-                  className={fieldClass}
-                  required
-                  aria-invalid={Boolean(fieldErrors.service)}
-                >
-                  <option value="">{t.booking.servicePlaceholder}</option>
-                  {t.services.items.map((item) => (
-                    <option key={item.id} value={item.title}>
-                      {item.title}
-                    </option>
-                  ))}
-                </select>
-                {fieldErrors.service && (
-                  <p className="mt-1 text-xs font-medium text-red-600">{fieldErrors.service}</p>
-                )}
-              </label>
-            )}
-
             <label className="block">
               <span className="mb-1.5 block text-sm font-medium text-ink">{t.booking.name}</span>
               <input
@@ -332,6 +308,30 @@ export default function Booking({ laserMode = false }) {
                 <p className="mt-1 text-xs font-medium text-red-600">{fieldErrors.phone}</p>
               )}
             </label>
+
+            {!isLaser && (
+              <label className="block">
+                <span className="mb-1.5 block text-sm font-medium text-ink">{t.booking.service}</span>
+                <select
+                  name="service"
+                  value={form.service}
+                  onChange={onChange}
+                  className={fieldClass}
+                  required
+                  aria-invalid={Boolean(fieldErrors.service)}
+                >
+                  <option value="">{t.booking.servicePlaceholder}</option>
+                  {t.services.items.map((item) => (
+                    <option key={item.id} value={item.title}>
+                      {item.title}
+                    </option>
+                  ))}
+                </select>
+                {fieldErrors.service && (
+                  <p className="mt-1 text-xs font-medium text-red-600">{fieldErrors.service}</p>
+                )}
+              </label>
+            )}
 
             {isLaser ? (
               <>

@@ -51,19 +51,24 @@ export default function Hero() {
             <p className="section-eyebrow mb-3 sm:mb-5">
               {IS_HOME
                 ? lang === "ru"
-                  ? "Алматы · Актау · Шымкент скоро"
-                  : "Алматы · Ақтау · Шымкент жақында"
+                  ? "АЛМАТЫ · АКТАУ — РАБОТАЮТ"
+                  : "АЛМАТЫ · АҚТАУ — ЖҰМЫС ІСТЕЙДІ"
                 : CLINIC.city}
             </p>
-            <h1 className="font-display text-[1.7rem] font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
+            <h1 className="font-display text-[clamp(1.65rem,5.6vw,2.2rem)] font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
               {t.hero.title}
             </h1>
-            <p className="mt-3 text-base font-medium leading-relaxed text-brand-deep sm:mt-5 sm:text-lg">
+            <p className="mt-3 text-[15px] font-medium leading-relaxed text-brand-deep sm:mt-5 sm:text-lg">
               {t.hero.subtitle}
             </p>
-            <p className="mt-3 text-[15px] leading-relaxed text-ink-muted sm:mt-4 sm:text-base">
+            <p className="mt-2.5 text-[14px] leading-relaxed text-ink-muted sm:mt-3 sm:text-base">
               {t.hero.text}
             </p>
+            {IS_HOME && t.hero.badge && (
+              <p className="mt-3 inline-flex rounded-full border border-brand/25 bg-brand-soft px-3 py-1 text-xs font-semibold text-brand">
+                {t.hero.badge}
+              </p>
+            )}
 
             <div className="mt-6 flex flex-col gap-2.5 sm:mt-8 sm:flex-row sm:items-center sm:gap-3">
               <a
@@ -103,7 +108,7 @@ export default function Hero() {
               <img
                 src={`${import.meta.env.BASE_URL}${CLINIC.heroImage}`}
                 alt={t.hero.imageAlt}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover object-center"
                 width={800}
                 height={600}
                 fetchPriority="high"

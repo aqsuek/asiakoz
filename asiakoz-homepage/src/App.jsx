@@ -8,7 +8,6 @@ import HomePage from "./pages/HomePage";
 import DoctorPage from "./pages/DoctorPage";
 import { parseRoute } from "./lib/routes";
 import { useLang } from "./i18n/LanguageContext";
-import { IS_HOME } from "./lib/branch";
 
 function Router() {
   const { t } = useLang();
@@ -27,14 +26,7 @@ function Router() {
   }, [route, t.seoTitle]);
 
   return (
-    <div
-      id="top"
-      className={`min-h-screen bg-surface-warm ${
-        IS_HOME
-          ? "pb-[calc(4.75rem+env(safe-area-inset-bottom))] sm:pb-0"
-          : ""
-      }`}
-    >
+    <div id="top" className="min-h-screen bg-surface-warm">
       <Header />
       <main>
         {route.name === "doctor" ? (
