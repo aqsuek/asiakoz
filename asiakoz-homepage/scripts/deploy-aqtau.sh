@@ -34,3 +34,6 @@ done
 
 echo "Deployed Aqtau landing -> $TARGET"
 echo "URL: https://asiakoz.com/aqtau/"
+
+# Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
+python3 "$LIVE/scripts/fix-seo-indexing.py"

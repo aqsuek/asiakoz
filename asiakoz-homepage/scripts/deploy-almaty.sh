@@ -64,3 +64,6 @@ echo "Doctor pages:"
 for id in "${DOCTOR_IDS[@]}"; do
   echo "  https://asiakoz.com/almaty/doctor/$id/"
 done
+
+# Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
+python3 "$LIVE/scripts/fix-seo-indexing.py"

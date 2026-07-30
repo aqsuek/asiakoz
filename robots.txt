@@ -33,3 +33,6 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://asiakoz.com/sitemap.xml
+
+# Soft-redirect / legacy stubs — keep crawlable for link equity, but prefer sitemap URLs
+# Canonical + noindex are set on the HTML stubs themselves.
