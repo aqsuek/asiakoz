@@ -22,7 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Sync to hosting
+      - name: Sync to hosting (attempt 1)
+        id: ftp_sync_1
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -37,3 +39,47 @@ jobs:
             **/node_modules/**
             **/.github/**
           log-level: standard
+
+      - name: Sync to hosting (attempt 2)
+        id: ftp_sync_2
+        if: steps.ftp_sync_1.outcome == 'failure'
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+          log-level: standard
+
+      - name: Sync to hosting (attempt 3)
+        id: ftp_sync_3
+        if: steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure'
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
+          log-level: standard
+
+      - name: Fail if all FTP attempts failed
+        if: steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' && steps.ftp_sync_3.outcome == 'failure'
+        run: |
+          echo "All FTP deploy attempts failed."
+          exit 1
