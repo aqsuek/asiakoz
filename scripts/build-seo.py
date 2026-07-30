@@ -849,15 +849,23 @@ def patch_static_hreflang_hubs() -> None:
         html = replace_title_desc(html, meta["title"], meta["description"])
         html = set_canonical(html, ru_url)
         html = inject_hreflang(html, ru_url, kk_url)
-        # language switcher link
-        if 'hreflang-switch' not in html:
+        if "hreflang-switch" not in html:
             html = html.replace(
                 "</nav>",
                 f'</nav>\n      <a class="hreflang-switch" href="{kk_url}" hrefLang="kk">KZ</a>',
                 1,
             )
         ru_path.write_text(html, encoding="utf-8")
-        write_kk_hub_from_ru(ru_path, kk_path, key, None, ru_url, kk_url)
+        # Full KK catalog pages are written by scripts/write-kk-catalogs.py (not thin hubs)
+
+
+def write_kk_catalogs() -> None:
+    import subprocess
+    import sys
+
+    script = ROOT / "scripts" / "write-kk-catalogs.py"
+    if script.exists():
+        subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
 
 
 
@@ -1019,6 +1027,7 @@ def main() -> None:
         )
 
     patch_static_hreflang_hubs()
+    write_kk_catalogs()
     restyle_static_pages()
     write_llms()
     entries = collect_urls(lastmod_cache)

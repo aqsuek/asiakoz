@@ -138,13 +138,14 @@ a { color: inherit; text-decoration: none; }
 .logo-mark svg { width: 26px; height: 26px; }
 .logo { align-items: center; }
 .logo-img {
-  height: 44px;
-  width: 44px;
+  height: 40px;
+  width: auto;
+  max-width: min(220px, 58vw);
   display: block;
   object-fit: contain;
   flex-shrink: 0;
 }
-.footer-logo .logo-img { height: 36px; width: 36px; }
+.footer-logo .logo-img { height: 36px; width: auto; max-width: 180px; }
 .logo-icon {
   width: 44px;
   height: 44px;
