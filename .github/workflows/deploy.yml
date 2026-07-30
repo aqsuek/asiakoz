@@ -78,8 +78,16 @@ jobs:
             **/.github/**
           log-level: standard
 
-      - name: Fail if all FTP attempts failed
-        if: ${{ steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' && (steps.ftp_sync_3.outcome == 'failure' || steps.ftp_sync_3.outcome == 'skipped') }}
+      - name: Validate FTP attempts
+        if: ${{ always() }}
         run: |
+          ATTEMPT_1="${{ steps.ftp_sync_1.outcome }}"
+          ATTEMPT_2="${{ steps.ftp_sync_2.outcome }}"
+          ATTEMPT_3="${{ steps.ftp_sync_3.outcome }}"
+          echo "Attempt outcomes: #1=${ATTEMPT_1}, #2=${ATTEMPT_2}, #3=${ATTEMPT_3}"
+          if [[ "${ATTEMPT_1}" == "success" || "${ATTEMPT_2}" == "success" || "${ATTEMPT_3}" == "success" ]]; then
+            echo "At least one FTP sync attempt succeeded."
+            exit 0
+          fi
           echo "All FTP deploy attempts failed."
           exit 1
