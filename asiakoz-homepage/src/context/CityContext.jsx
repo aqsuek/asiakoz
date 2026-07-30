@@ -4,6 +4,7 @@ import {
   DEFAULT_BRANCH_ID,
   NETWORK_BRANCHES,
   getNetworkBranch,
+  isComingSoon as branchIsComingSoon,
 } from "../data/branches";
 import { IS_HOME } from "../lib/branch";
 import { trackEvent } from "../lib/analytics";
@@ -55,7 +56,7 @@ export function CityProvider({ children }) {
       setCityId,
       branch,
       branches: NETWORK_BRANCHES,
-      isComingSoon: branch.status === "coming_soon",
+      isComingSoon: branchIsComingSoon(branch),
     }),
     [cityId, branch],
   );

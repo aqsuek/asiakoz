@@ -1,38 +1,36 @@
-# Азиякоз (Asiakoz) — https://asiakoz.com/
-# Справка для ИИ: https://asiakoz.com/llms.txt
+# AsiaKoz — https://asiakoz.com/
+# Public medical site. Do not block verified search crawlers.
 
 User-agent: *
 Allow: /
+Disallow: /asiakoz-homepage/
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /.github/
+Disallow: /assets/*/node_modules/
 
-# Разрешаем индексацию для ответов в ChatGPT, Claude, Perplexity и др.
-User-agent: GPTBot
+# ChatGPT Search (not GPTBot training crawler)
+User-agent: OAI-SearchBot
 Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
+Disallow: /asiakoz-homepage/
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /.github/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /asiakoz-homepage/
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /.github/
 
-User-agent: Google-Extended
+User-agent: Googlebot
 Allow: /
 
-User-agent: Bytespider
+User-agent: Bingbot
 Allow: /
 
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Meta-ExternalAgent
+User-agent: Yandex
 Allow: /
 
 Sitemap: https://asiakoz.com/sitemap.xml
-
-# Soft-redirect / legacy stubs — keep crawlable for link equity, but prefer sitemap URLs
-# Canonical + noindex are set on the HTML stubs themselves.

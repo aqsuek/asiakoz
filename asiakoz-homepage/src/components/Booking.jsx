@@ -6,7 +6,11 @@ import { trackEvent } from "../lib/analytics";
 import { formatUtmLine, getStoredUtm, captureUtmFromUrl } from "../lib/utm";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
-import { branchCityName, formatKzPhoneDisplay } from "../data/branches";
+import {
+  branchCityName,
+  formatKzPhoneDisplay,
+  isComingSoon as branchIsComingSoon,
+} from "../data/branches";
 import { getPromoPriceLabel, LASER_PROMO } from "../data/laserPromo";
 
 function digitsOnly(value) {
@@ -262,7 +266,7 @@ export default function Booking({ laserMode = false }) {
                   {branches.map((b) => (
                     <option key={b.id} value={b.id}>
                       {branchCityName(b, lang)}
-                      {b.status === "coming_soon"
+                      {branchIsComingSoon(b)
                         ? ` — ${t.cityPicker?.soon || "Скоро"}`
                         : ""}
                     </option>

@@ -20,13 +20,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Врачи-офтальмологи и хирурги — Алматы/Актау | Азиякоз</title>
-  <meta name="description" content="Врачи клиники Азиякоз: офтальмологи и офтальмохирурги в Алматы и Актау. Лазерная коррекция, катаракта, глаукома, витрэктомия, операции на сетчатке, косоглазие. Выберите врача и запишитесь." />
+  <title>Врачи-офтальмологи AsiaKoz — Алматы и Актау</title>
+  <meta name="description" content="Офтальмологи и офтальмохирурги клиники AsiaKoz в Алматы и Актау. Выберите врача и запишитесь через WhatsApp." />
   <link rel="canonical" href="https://asiakoz.com/doctors/" />
-  <meta property="og:site_name" content="Азиякоз" />
+    <link rel="alternate" hreflang="ru-KZ" href="https://asiakoz.com/doctors/" />
+    <link rel="alternate" hreflang="kk-KZ" href="https://asiakoz.com/kk/doctors/" />
+    <link rel="alternate" hreflang="x-default" href="https://asiakoz.com/doctors/" />
+  <meta property="og:site_name" content="AsiaKoz" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Врачи — Азиякоз" />
-  <meta property="og:description" content="Офтальмологи и хирурги. Алматы и Актау." />
+  <meta property="og:title" content="Врачи-офтальмологи AsiaKoz — Алматы и Актау" />
+  <meta property="og:description" content="Офтальмологи и офтальмохирурги клиники AsiaKoz в Алматы и Актау. Выберите врача и запишитесь через WhatsApp." />
   <meta property="og:url" content="https://asiakoz.com/doctors/" />
   <meta property="og:image" content="https://asiakoz.com/images/logo.png" />
   <meta name="twitter:card" content="summary" />
@@ -34,9 +37,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Врачи — Азиякоз",
+    "name": "Врачи AsiaKoz",
     "url": "https://asiakoz.com/doctors/",
-    "isPartOf": { "@type": "WebSite", "name": "Азиякоз", "url": "https://asiakoz.com/" }
+    "isPartOf": { "@type": "WebSite", "name": "AsiaKoz", "url": "https://asiakoz.com/" },
+    "about": "Офтальмологи AsiaKoz в Алматы и Актау"
   }
   </script>
   <link rel="icon" type="image/png" href="../images/logo.png" />
@@ -64,10 +68,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .doctor-action .btn { width: 100%; justify-content: center; padding: 10px 16px; font-size: 13px; }
     .branch-badge-almaty { font-size: 11px; font-weight: 600; color: #047857; background: rgba(16,185,129,0.12); padding: 4px 8px; border-radius: 999px; flex-shrink: 0; }
     .branch-badge-aktau { font-size: 11px; font-weight: 600; color: #0d9488; background: rgba(20,184,166,0.12); padding: 4px 8px; border-radius: 999px; flex-shrink: 0; }
-    .filials-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 32px; }
+    .filials-intro { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 32px; }
+    @media (max-width: 900px) { .filials-intro { grid-template-columns: 1fr; } }
     .filial-box { background: var(--card); border-radius: var(--radius-sm); padding: 18px 20px; box-shadow: var(--shadow); border-left: 4px solid var(--accent); }
     .filial-box.aktau { border-left-color: #0d9488; }
-    .filial-box h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .filial-box h2, .filial-box h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
     .filial-box p { font-size: 13px; color: #475569; margin: 0 0 8px 0; }
     .filial-box ul { margin: 0 0 0 18px; font-size: 13px; color: #475569; line-height: 1.6; }
     @media (max-width: 768px) { .filials-intro { grid-template-columns: 1fr; } .doctors-grid { grid-template-columns: 1fr; } }
@@ -97,10 +102,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
       <nav class="header-nav">
         <a href="/uslugi/">Услуги</a>
-        <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
+        <a href="/almaty/">Алматы</a>
+        <a href="/aqtau/">Актау</a>
         <a href="/doctors/">Врачи</a>
         <a href="/#contacts">Контакты</a>
+        <a href="/kk/doctors/" hreflang="kk">KZ</a>
       </nav>
+      <a class="hreflang-switch" href="https://asiakoz.com/kk/doctors/" hrefLang="kk">KZ</a>
       <div class="header-right">
         <div class="header-schedule">Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</div>
         <div class="header-contacts">
@@ -117,41 +125,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="breadcrumb"><a href="/">Главная</a> / Наши врачи</nav>
 
     <section class="section">
-      <h2 class="section-title">Наши врачи</h2>
-      <p class="section-subtitle">У клиники Азиякоз филиалы в Алматы, Актау и Шымкенте. Турецкие хирурги Али Кескин и Мехмет Есат Текер — в команде Азиякоз.</p>
+      <h1 class="section-title">Врачи AsiaKoz</h1>
+      <p class="section-subtitle">Приём в Алматы и Актау. Шымкент — скоро открытие, предварительная запись на странице филиала.</p>
 
       <div class="filials-intro">
         <div class="filial-box">
-          <h3>Филиал Алматы</h3>
-          <p><strong>Адрес:</strong> пр. Райымбека, 176а</p>
-          <p><strong>Запись:</strong> <a href="tel:+77003600180" class="link">+7 700 360 01 80</a></p>
+          <h2>Филиал Алматы</h2>
+          <p><strong>Адрес:</strong> Алматы, проспект Райымбека, 176А</p>
+          <p><strong>Запись:</strong> <a href="tel:+77003600180" class="link">+7 700 360 01 80</a> · <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp</a></p>
+          <p><a href="/almaty/" class="link">Страница филиала Алматы</a></p>
           <ul>
-            <li>Орел Талип — витреоретинолог, косоглазие, сетчатка</li>
-            <li>Мехмет Есат Текер — ведущий офтальмолог-хирург из Турции, лазерная коррекция, катаракта, глаукома</li>
-            <li>Нұрмұхамед Мусай — главный врач</li>
-            <li>Алия Усманова — ведущий офтальмохирург высшей категории</li>
+            <li><a href="/doctor-orel/">Орел Талип</a> — витреоретинолог, косоглазие, сетчатка</li>
+            <li><a href="/doctor-mehmet-esat-teker/">Мехмет Есат Текер</a> — офтальмолог-хирург, лазерная коррекция, катаракта, глаукома</li>
+            <li><a href="/doctor-musay/">Нұрмұхамед Мусай</a> — главный врач</li>
+            <li><a href="/doctor-aliya/">Алия Усманова</a> — офтальмохирург</li>
           </ul>
         </div>
         <div class="filial-box aktau">
-          <h3>Филиал Ақтау</h3>
-          <p><strong>Адрес:</strong> 7а микрорайон, 11/3, Актау</p>
+          <h2>Филиал Актау</h2>
+          <p><strong>Адрес:</strong> Актау, 7А микрорайон, 11/3</p>
           <p><strong>Запись:</strong> <a href="tel:+77758630180" class="link">+7 775 863 01 80</a> · <a href="https://wa.me/77758630180" target="_blank" rel="noopener" class="link">WhatsApp</a></p>
-          <p style="margin-bottom:8px;"><a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener" class="link">2ГИС: карта и отзывы (4.9)</a></p>
+          <p><a href="/aqtau/" class="link">Страница филиала Актау</a> · <a href="https://2gis.kz/aktau/firm/70000001104276081" target="_blank" rel="noopener" class="link">2ГИС</a></p>
           <ul>
-            <li>Али Кескин — ведущий офтальмолог-хирург из Турции, макула, косоглазие, сетчатка, глаукома</li>
-            <li>Эрол Джошкун — офтальмолог-хирург, косоглазие, катаракта, глаукома</li>
-            <li>Назгуль Сагындыкова — врач-офтальмолог, взрослые и дети, лазерная хирургия, оптометрия</li>
+            <li><a href="/doctor-ali-keskin/">Али Кескин</a> — офтальмолог-хирург, макула, косоглазие, сетчатка, глаукома</li>
+            <li><a href="/doctor-erol/">Эрол Джошкун</a> — офтальмолог-хирург, косоглазие, катаракта, глаукома</li>
+            <li><a href="/doctor-nazgul/">Назгуль Сагындыкова</a> — врач-офтальмолог, взрослые и дети</li>
           </ul>
         </div>
         <div class="filial-box">
-          <h3>Филиал Шымкент</h3>
-          <p><strong>Адрес:</strong> Байтұрсынов көшесі, 86/7, Тұран</p>
-          <p><strong>Запись:</strong> <a href="tel:+77080750180" class="link">+7 708 075 01 80</a> · <a href="https://wa.me/77080750180" target="_blank" rel="noopener" class="link">WhatsApp</a></p>
-          <p style="margin-bottom:8px;"><a href="/shymkent/" class="link">Страница филиала Шымкент</a></p>
-          <ul>
-            <li>Мехмет Есат Текер — ведущий офтальмолог-хирург из Турции</li>
-            <li>Али Кескин — ведущий офтальмолог-хирург из Турции</li>
-          </ul>
+          <h2>Филиал Шымкент</h2>
+          <p><strong>Статус:</strong> Скоро открытие. Идёт предварительная запись</p>
+          <p><strong>Адрес:</strong> Шымкент, улица Байтурсынова, 86/7, мкр. Туран</p>
+          <p><strong>Предварительная запись:</strong> <a href="tel:+77080750180" class="link">+7 708 075 01 80</a> · <a href="https://wa.me/77080750180" target="_blank" rel="noopener" class="link">WhatsApp</a></p>
+          <p><a href="/shymkent/" class="link">Страница филиала Шымкент</a></p>
+          <p>Список врачей для приёма в Шымкенте будет опубликован после открытия филиала.</p>
         </div>
       </div>
 
@@ -163,7 +170,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="doctor-meta"><span class="doctor-role">Витреоретинолог, офтальмолог-хирург</span><span class="branch-badge-almaty">Алматы</span></div>
               <h2 class="doctor-name">Орел Талип</h2>
               <div class="doctor-tags"><span class="doctor-tag">Косоглазие</span><span class="doctor-tag">Витрэктомия</span><span class="doctor-tag">Сетчатка</span></div>
-              <div class="doctor-edu"><b>Базовое образование:</b> указано в личном профиле врача. <b>Сертификаты:</b> сроки действия указаны в профиле.</div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -172,10 +178,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/doctor-ali-keskin/" class="doctor-card-inner">
             <div class="doctor-photo-wrap"><img src="../images/doctor-ali-keskin.png" alt="Али Кескин" /></div>
             <div class="doctor-body">
-              <div class="doctor-meta"><span class="doctor-role">Ведущий офтальмолог-хирург</span><span class="branch-badge-aktau">Ақтау · Шымкент</span></div>
+              <div class="doctor-meta"><span class="doctor-role">Офтальмолог-хирург</span><span class="branch-badge-aktau">Актау</span></div>
               <h2 class="doctor-name">Али Кескин</h2>
               <div class="doctor-tags"><span class="doctor-tag">Макула</span><span class="doctor-tag">Косоглазие</span><span class="doctor-tag">Сетчатка</span></div>
-              <div class="doctor-edu"><b>Опыт:</b> 3500+ витреоретинальных, 3000+ косоглазие, 15 000+ катаракта. <b>Филиалы:</b> Актау, Шымкент</div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -184,10 +189,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/doctor-mehmet-esat-teker/" class="doctor-card-inner">
             <div class="doctor-photo-wrap"><img src="../images/doctor-mehmet-esat-teker.png" alt="Мехмет Есат Текер" /></div>
             <div class="doctor-body">
-              <div class="doctor-meta"><span class="doctor-role">Ведущий офтальмолог-хирург</span><span class="branch-badge-almaty">Алматы · Шымкент</span></div>
+              <div class="doctor-meta"><span class="doctor-role">Офтальмолог-хирург</span><span class="branch-badge-almaty">Алматы</span></div>
               <h2 class="doctor-name">Мехмет Есат Текер</h2>
               <div class="doctor-tags"><span class="doctor-tag">LASIK / Smile</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Лазер</span></div>
-              <div class="doctor-edu"><b>Опыт:</b> 5000+ лазер, 10 000+ катаракта, 6500+ глаукома. <b>Филиалы:</b> Алматы, Шымкент</div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -196,10 +200,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/doctor-erol/" class="doctor-card-inner">
             <div class="doctor-photo-wrap"><img src="../images/doctor-erol.png" alt="Эрол Джошкун" /></div>
             <div class="doctor-body">
-              <div class="doctor-meta"><span class="doctor-role">Офтальмолог-хирург</span><span class="branch-badge-aktau">Ақтау</span></div>
+              <div class="doctor-meta"><span class="doctor-role">Офтальмолог-хирург</span><span class="branch-badge-aktau">Актау</span></div>
               <h2 class="doctor-name">Эрол Джошкун</h2>
               <div class="doctor-tags"><span class="doctor-tag">Косоглазие</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Глаукома</span></div>
-              <div class="doctor-edu"><b>Базовое образование:</b> указано в личном профиле врача. <b>Запись Актау:</b> +7 775 863 01 80</div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -208,10 +211,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/doctor-nazgul/" class="doctor-card-inner">
             <div class="doctor-photo-wrap"><img src="../images/doctor-nazgul.png" alt="Назгуль Сагындыкова" /></div>
             <div class="doctor-body">
-              <div class="doctor-meta"><span class="doctor-role">Врач-офтальмолог</span><span class="branch-badge-aktau">Ақтау</span></div>
+              <div class="doctor-meta"><span class="doctor-role">Врач-офтальмолог</span><span class="branch-badge-aktau">Актау</span></div>
               <h2 class="doctor-name">Назгуль Сагындыкова</h2>
               <div class="doctor-tags"><span class="doctor-tag">Взрослые и дети</span><span class="doctor-tag">Лазерная хирургия</span><span class="doctor-tag">Оптометрия</span></div>
-              <div class="doctor-edu"><b>Базовое образование:</b> указано в личном профиле врача. <b>Запись Актау:</b> +7 775 863 01 80</div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -222,8 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="doctor-body">
               <div class="doctor-meta"><span class="doctor-role">Главный врач</span><span class="branch-badge-almaty">Алматы</span></div>
               <h2 class="doctor-name">Нұрмұхамед Мусай</h2>
-              <div class="doctor-tags"><span class="doctor-tag">Главный врач</span><span class="doctor-tag">Сложные случаи</span></div>
-              <div class="doctor-edu"><b>Базовое образование:</b> указано в личном профиле врача. <b>Сертификаты:</b> сроки действия указаны в профиле.</div>
+              <div class="doctor-tags"><span class="doctor-tag">Главный врач</span></div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -232,10 +233,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/doctor-aliya/" class="doctor-card-inner">
             <div class="doctor-photo-wrap"><img src="../images/doctor-aliya.png" alt="Алия Ганимуратовна Усманова" /></div>
             <div class="doctor-body">
-              <div class="doctor-meta"><span class="doctor-role">Ведущий офтальмохирург высшей категории</span><span class="branch-badge-almaty">Алматы</span></div>
+              <div class="doctor-meta"><span class="doctor-role">Офтальмохирург</span><span class="branch-badge-almaty">Алматы</span></div>
               <h2 class="doctor-name">Алия Усманова</h2>
-              <div class="doctor-tags"><span class="doctor-tag">Лазерная коррекция</span><span class="doctor-tag">Катаракта</span><span class="doctor-tag">Блефаропластика</span></div>
-              <div class="doctor-edu"><b>Базовое образование:</b> указано в личном профиле врача. <b>Сертификаты:</b> сроки действия указаны в профиле.</div>
+              <div class="doctor-tags"><span class="doctor-tag">Лазерная коррекция</span><span class="doctor-tag">Катаракта</span></div>
               <div class="doctor-action"><span class="link">Подробнее →</span></div>
             </div>
           </a>
@@ -253,14 +253,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-inner">
         <div class="footer-col">
           <div class="footer-logo"><img src="../images/logo.png" alt="Азиякоз" class="logo-img" style="height:36px;" /></div>
-          <p class="footer-desc">Офтальмологическая клиника. Турецкие хирурги. Алматы и Актау.</p>
+          <p class="footer-desc">Офтальмологическая клиника AsiaKoz. Алматы и Актау работают. Шымкент — скоро открытие.</p>
         </div>
         <div class="footer-col">
           <div class="footer-title">Навигация</div>
           <a href="/uslugi/">Услуги</a>
-          <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
+          <a href="/almaty/">Алматы</a>
+          <a href="/aqtau/">Актау</a>
+          <a href="/shymkent/">Шымкент</a>
           <a href="/doctors/">Врачи</a>
-          <a href="/#contacts">Контакты</a>
         </div>
         <div class="footer-col">
           <div class="footer-title">Контакты</div>

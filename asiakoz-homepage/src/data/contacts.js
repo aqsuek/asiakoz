@@ -5,6 +5,7 @@ import {
   branchCityName,
   formatKzPhoneDisplay,
   getNetworkBranch,
+  isComingSoon,
   phoneHref,
 } from "./branches";
 
@@ -15,18 +16,15 @@ const CLINIC_BY_BRANCH = {
     typeKz: "Офтальмологиялық орталық",
     typeRu: "Офтальмологический центр",
     city: "Шымкент",
-    address: "Байтұрсынов көшесі, 86/7, Тұран, Шымкент",
+    address: "Шымкент, Байтұрсынов көшесі, 86/7, Тұран",
+    addressRu: "Шымкент, улица Байтурсынова, 86/7, мкр. Туран",
+    addressKz: "Шымкент, Байтұрсынов көшесі, 86/7, Тұран",
     heroImage: "images/shymkent-branch.png",
     phones: [
       {
         display: formatKzPhoneDisplay("+77080750180"),
         href: "tel:+77080750180",
         tel: "+77080750180",
-      },
-      {
-        display: formatKzPhoneDisplay("+77080760180"),
-        href: "tel:+77080760180",
-        tel: "+77080760180",
       },
     ],
     whatsapp: {
@@ -45,10 +43,7 @@ const CLINIC_BY_BRANCH = {
         "https://2gis.kz/shymkent/search/" +
         encodeURIComponent("Байтұрсынов көшесі, 86/7, Тұран, Шымкент") +
         "/tab/routes",
-      embedUrl:
-        "https://2gis.kz/shymkent/search/" +
-        encodeURIComponent("Байтұрсынов көшесі, 86/7") +
-        "?m=69.597%2C42.341%2F16",
+      embedUrl: null,
     },
   },
   almaty: {
@@ -208,7 +203,7 @@ export function waBookingUrl(lang = "kz", extra = "", opts = {}) {
       lang === "ru"
         ? "Здравствуйте! Хочу записаться на лазерную коррекцию зрения в AsiaKoz Алматы (акция)."
         : "Сәлеметсіз бе! AsiaKoz Алматы клиникасында көзді лазерлік түзетуге жазылғым келеді (акция).";
-  } else if (IS_HOME && network?.status === "coming_soon") {
+  } else if (IS_HOME && isComingSoon(network)) {
     message =
       lang === "ru"
         ? "Здравствуйте! Хочу оставить предварительную заявку на открытие филиала AsiaKoz в Шымкенте."

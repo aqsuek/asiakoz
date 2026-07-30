@@ -5,18 +5,45 @@ import { BRANCH } from "../lib/branch";
 
 const LanguageContext = createContext(null);
 
+function pathIsKk(pathname = "") {
+  return pathname === "/kk" || pathname.startsWith("/kk/");
+}
+
 function detectInitialLang() {
-  try {
-    const saved = localStorage.getItem("asiakoz-lang");
-    if (saved === "kz" || saved === "ru") return saved;
-  } catch {
-    /* ignore */
+  if (typeof window !== "undefined" && pathIsKk(window.location.pathname)) {
+    return "kz";
   }
-  return "kz";
+  // Non-/kk/ URLs are the RU canonical versions for SEO
+  if (typeof window !== "undefined") {
+    try {
+      const saved = localStorage.getItem("asiakoz-lang");
+      // Prefer URL language over stale localStorage when on canonical RU path
+      if (!pathIsKk(window.location.pathname)) return "ru";
+      if (saved === "kz" || saved === "ru") return saved;
+    } catch {
+      /* ignore */
+    }
+  }
+  return "ru";
+}
+
+/** Map current path between RU and /kk/ variants */
+export function languagePath(lang, pathname = "") {
+  const path = pathname || (typeof window !== "undefined" ? window.location.pathname : "/");
+  const clean = path.split("?")[0].split("#")[0] || "/";
+  if (lang === "kz") {
+    if (pathIsKk(clean)) return clean.endsWith("/") || clean === "/kk" ? clean : `${clean}/`;
+    if (clean === "/") return "/kk/";
+    return `/kk${clean.endsWith("/") ? clean : `${clean}/`}`;
+  }
+  // ru
+  if (!pathIsKk(clean)) return clean.endsWith("/") || clean === "/" ? clean : `${clean}/`;
+  const stripped = clean.replace(/^\/kk/, "") || "/";
+  return stripped.endsWith("/") || stripped === "/" ? stripped : `${stripped}/`;
 }
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(detectInitialLang);
+  const [lang, setLangState] = useState(detectInitialLang);
   const activeTranslations = useMemo(() => {
     const override = branchTranslationOverrides[BRANCH];
     if (!override) return translations;
@@ -44,6 +71,20 @@ export function LanguageProvider({ children }) {
     };
   }, []);
 
+  const setLang = (next) => {
+    if (next !== "kz" && next !== "ru") return;
+    if (typeof window !== "undefined") {
+      const target = languagePath(next, window.location.pathname);
+      const current = window.location.pathname;
+      if (target !== current && target !== `${current}/` && `${target}` !== current) {
+        // Crawlable language switch via real navigation
+        window.location.assign(target + window.location.search + window.location.hash);
+        return;
+      }
+    }
+    setLangState(next);
+  };
+
   useEffect(() => {
     try {
       localStorage.setItem("asiakoz-lang", lang);
@@ -61,6 +102,7 @@ export function LanguageProvider({ children }) {
     () => ({
       lang,
       setLang,
+      languagePath,
       t: activeTranslations[lang],
     }),
     [lang, activeTranslations]

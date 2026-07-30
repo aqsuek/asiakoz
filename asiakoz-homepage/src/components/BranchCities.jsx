@@ -1,7 +1,12 @@
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { useCity } from "../context/CityContext";
-import { branchAddress, branchCityName, phoneHref } from "../data/branches";
+import {
+  branchAddress,
+  branchCityName,
+  isComingSoon,
+  phoneHref,
+} from "../data/branches";
 import { trackEvent } from "../lib/analytics";
 
 export default function BranchCities() {
@@ -27,7 +32,7 @@ export default function BranchCities() {
         >
           {branches.map((branch) => {
             const selected = cityId === branch.id;
-            const soon = branch.status === "coming_soon";
+            const soon = isComingSoon(branch);
             const name = branchCityName(branch, lang);
             const address = branchAddress(branch, lang);
             const summary = lang === "ru" ? branch.summaryRu : branch.summaryKz;

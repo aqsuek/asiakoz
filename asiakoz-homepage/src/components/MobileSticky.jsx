@@ -5,7 +5,12 @@ import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
-import { NETWORK_BRANCHES, branchCityName, phoneHref } from "../data/branches";
+import {
+  NETWORK_BRANCHES,
+  branchCityName,
+  isComingSoon,
+  phoneHref,
+} from "../data/branches";
 import { getPromoPriceLabel, LASER_PROMO } from "../data/laserPromo";
 import { trackEvent } from "../lib/analytics";
 
@@ -175,7 +180,7 @@ export default function MobileSticky() {
                   className="inline-flex min-h-11 items-center justify-between rounded-xl border border-ink/10 px-3.5 text-sm font-semibold text-ink hover:border-brand/30"
                 >
                   <span>{branchCityName(b, lang)}</span>
-                  {b.status === "coming_soon" ? (
+                  {isComingSoon(b) ? (
                     <span className="text-xs text-brand">{t.cityPicker?.soon}</span>
                   ) : null}
                 </button>

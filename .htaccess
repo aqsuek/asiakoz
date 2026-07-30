@@ -1,0 +1,50 @@
+# AsiaKoz FTP/Apache hosting — permanent redirects for legacy URLs
+# If hosting is not Apache, configure equivalent 301 rules in the panel/CDN.
+
+RewriteEngine On
+
+# Force HTTPS (uncomment if SSL is terminated on Apache)
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://asiakoz.com%{REQUEST_URI} [L,R=301]
+
+# www → apex
+RewriteCond %{HTTP_HOST} ^www\.asiakoz\.com$ [NC]
+RewriteRule ^ https://asiakoz.com%{REQUEST_URI} [L,R=301]
+
+# Confirmed Aktau slug alias → existing permanent /aqtau/
+RewriteRule ^aktau/?$ /aqtau/ [L,R=301]
+RewriteRule ^aktau/(.*)$ /aqtau/$1 [L,R=301]
+
+# Legacy .html stubs → clean trailing-slash URLs
+RewriteRule ^doctors\.html$ /doctors/ [L,R=301]
+RewriteRule ^uslugi\.html$ /uslugi/ [L,R=301]
+RewriteRule ^kosoglazie\.html$ /kosoglazie/ [L,R=301]
+RewriteRule ^kosoglazie-aktau\.html$ /kosoglazie-aktau/ [L,R=301]
+RewriteRule ^lazer-almaty\.html$ /lazer-almaty/ [L,R=301]
+RewriteRule ^katarakta-almaty\.html$ /katarakta-almaty/ [L,R=301]
+RewriteRule ^glaukoma-almaty\.html$ /glaukoma-almaty/ [L,R=301]
+RewriteRule ^vitrektomiya-almaty\.html$ /vitrektomiya-almaty/ [L,R=301]
+RewriteRule ^doctor-aliya\.html$ /doctor-aliya/ [L,R=301]
+RewriteRule ^doctor-erol\.html$ /doctor-erol/ [L,R=301]
+RewriteRule ^doctor-orel\.html$ /doctor-orel/ [L,R=301]
+RewriteRule ^doctor-nazgul\.html$ /doctor-nazgul/ [L,R=301]
+RewriteRule ^doctor-musay\.html$ /doctor-musay/ [L,R=301]
+RewriteRule ^doctor-tekche\.html$ /doctor-mehmet-esat-teker/ [L,R=301]
+RewriteRule ^doctor-gargoni\.html$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^doctor-madina\.html$ /doctors/ [L,R=301]
+
+# Renamed doctor folders
+RewriteRule ^doctor-tekche/?$ /doctor-mehmet-esat-teker/ [L,R=301]
+RewriteRule ^doctor-gargoni/?$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^doctor-gorgani/?$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^doctor-madina/?$ /doctors/ [L,R=301]
+
+# Empty prices stub → services catalog (no invented prices)
+RewriteRule ^prices/?$ /uslugi/ [L,R=301]
+
+# Legacy homepage backup
+RewriteRule ^index\.legacy\.html$ / [L,R=301]
+
+# Prefer trailing slash for directories (if request is a real dir without slash)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ /$1/ [L,R=301]

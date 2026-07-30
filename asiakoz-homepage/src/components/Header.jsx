@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { useLang } from "../i18n/LanguageContext";
+import { languagePath, useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { homeUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
@@ -40,6 +40,11 @@ export default function Header() {
   const { cityId, branch } = useCity();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [path, setPath] = useState("/");
+
+  useEffect(() => {
+    setPath(window.location.pathname);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -106,12 +111,18 @@ export default function Header() {
             role="group"
             aria-label="Language"
           >
-            {["kz", "ru"].map((code) => (
-              <button
+            {["kz", "ru"].map((code) => {
+              const href = languagePath(code, path);
+              return (
+              <a
                 key={code}
-                type="button"
-                onClick={() => {
-                  setLang(code);
+                href={href}
+                onClick={(e) => {
+                  const target = languagePath(code, path);
+                  if (target === path || target === `${path}` ) {
+                    e.preventDefault();
+                    setLang(code);
+                  }
                   if (IS_LASER) trackEvent("laser_language_change", { language: code });
                 }}
                 className={`inline-flex h-11 min-w-11 items-center justify-center rounded-full px-2 text-[10px] font-bold uppercase tracking-wide transition-all sm:min-w-9 sm:px-2.5 sm:text-[11px] ${
@@ -119,11 +130,13 @@ export default function Header() {
                     ? "bg-white text-brand shadow-soft"
                     : "text-ink-faint hover:text-ink"
                 }`}
-                aria-pressed={lang === code}
+                aria-current={lang === code ? "page" : undefined}
+                hrefLang={code === "kz" ? "kk" : "ru"}
               >
-                {code}
-              </button>
-            ))}
+                {code === "kz" ? "KZ" : "RU"}
+              </a>
+              );
+            })}
           </div>
 
           <a

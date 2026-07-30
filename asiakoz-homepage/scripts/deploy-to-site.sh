@@ -164,4 +164,4 @@ echo "Deployed corporate homepage -> $ROOT"
 echo "URL: https://asiakoz.com/"
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
-python3 "$ROOT/scripts/fix-seo-indexing.py"
+python3 "$ROOT/scripts/build-seo.py"

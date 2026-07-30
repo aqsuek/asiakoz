@@ -9,7 +9,7 @@ import {
   NETWORK_BRANCHES,
   branchAddress,
   branchCityName,
-  phoneHref,
+  isComingSoon,
 } from "../data/branches";
 
 const LINKS = IS_LASER
@@ -103,26 +103,24 @@ export default function Footer() {
 
             <div className="mt-5 grid gap-3 sm:grid-cols-3">
               {NETWORK_BRANCHES.map((branch) => (
-                <div
+                <a
                   key={branch.id}
-                  className="rounded-[1.25rem] border border-ink/[0.06] bg-surface-muted/60 px-4 py-3.5 text-sm text-ink-muted"
+                  href={branch.pageHref}
+                  className="rounded-[1.25rem] border border-ink/[0.06] bg-surface-muted/60 px-4 py-3.5 text-sm text-ink-muted transition-colors hover:border-brand/40"
                 >
                   <p className="flex items-center gap-2 font-semibold text-ink">
                     {branchCityName(branch, lang)}
-                    {branch.status === "coming_soon" && (
+                    {isComingSoon(branch) && (
                       <span className="rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-bold uppercase text-brand">
                         {t.footer.soon}
                       </span>
                     )}
                   </p>
                   <p className="mt-1 leading-snug">{branchAddress(branch, lang)}</p>
-                  <a
-                    href={phoneHref(branch.phoneTel)}
-                    className="mt-1.5 block font-semibold text-brand hover:underline"
-                  >
+                  <span className="mt-1.5 block font-semibold text-brand">
                     {branch.phoneDisplay}
-                  </a>
-                </div>
+                  </span>
+                </a>
               ))}
             </div>
           </>

@@ -9,6 +9,7 @@ import {
   branchAddress,
   branchCityName,
   branchHours,
+  isComingSoon as branchIsComingSoon,
   phoneHref,
 } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
@@ -97,7 +98,7 @@ export default function Contacts() {
           >
             {branches.map((b) => {
               const selected = cityId === b.id;
-              const soon = b.status === "coming_soon";
+              const soon = branchIsComingSoon(b);
               return (
                 <button
                   key={b.id}
