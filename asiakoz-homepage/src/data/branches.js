@@ -2,8 +2,8 @@
  * Single source of truth for AsiaKoz network branches.
  * Keep in sync with /data/branches.json (used by SEO scripts).
  *
- * URL note: Aktau live path remains `/aqtau/` (existing permanent URL).
- * Confirmed marketing slug is `aktau`; `/aktau/` redirects to `/aqtau/`.
+ * URL note: Aktau RU canonical path is `/aktau/`; legacy `/aqtau/` redirects to `/aktau/`.
+ * Confirmed marketing slug is `aktau`; `/aqtau/` redirects to `/aktau/`.
  */
 
 export const BRANCH_IDS = ["almaty", "aqtau", "shymkent"];
@@ -104,7 +104,7 @@ export const NETWORK_BRANCHES = [
       embedUrl:
         "https://2gis.kz/aktau/firm/70000001104276081?m=51.14388%2C43.65118%2F16",
     },
-    pageHref: "/aqtau/",
+    pageHref: "/aktau/",
     kkHref: "/kk/aqtau/",
     hoursKz: "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
     hoursRu: "Пн–Пт 09:00–17:00, Сб до 14:00",

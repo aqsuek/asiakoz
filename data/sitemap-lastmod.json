@@ -1,14 +1,14 @@
 {
   "https://asiakoz.com/": {
-    "hash": "0c87e687b4f23696",
+    "hash": "e87b713b5a9fbe54",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/": {
-    "hash": "832e31177a5ae7e0",
+    "hash": "c8e30a7488f87f94",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/almaty/": {
-    "hash": "35012f31d8afe963",
+    "hash": "8f948ea740a4ebd8",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/almaty/": {
@@ -20,11 +20,11 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/aqtau/": {
-    "hash": "ad49d207c3f4fa51",
+    "hash": "fba4ae45c22ba7d2",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/shymkent/": {
-    "hash": "023baf609aef27ad",
+    "hash": "fb7fec82ea403596",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/shymkent/": {
@@ -32,7 +32,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctors/": {
-    "hash": "9ff982189342ad56",
+    "hash": "13e2c9c0b78432c7",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/doctors/": {
@@ -48,31 +48,31 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-orel/": {
-    "hash": "930e5bfd2382510a",
+    "hash": "72488afb8f649a64",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-mehmet-esat-teker/": {
-    "hash": "dc901f62e844844e",
+    "hash": "beef637fc6479aa3",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-aliya/": {
-    "hash": "ca24a8b84c38722e",
+    "hash": "0b2777b818773a14",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-musay/": {
-    "hash": "28bc521cabc543d3",
+    "hash": "b572ef1fdbd9b1c6",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-ali-keskin/": {
-    "hash": "f9b8fad464764e01",
+    "hash": "adb1c2cfb1a2d443",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-erol/": {
-    "hash": "1e5f09048dbc1893",
+    "hash": "849b9c3b9d1c8b4a",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/doctor-nazgul/": {
-    "hash": "d4179c377cb4c31f",
+    "hash": "83f8acc0304159cb",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/ambliopiya-almaty/": {
@@ -340,7 +340,11 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/laser/": {
-    "hash": "df1a5c4c70e011b2",
+    "hash": "8e8f07fd5db9466a",
+    "lastmod": "2026-07-30"
+  },
+  "https://asiakoz.com/aktau/": {
+    "hash": "a4e72ec712f15846",
     "lastmod": "2026-07-30"
   }
 }

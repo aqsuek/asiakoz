@@ -18,7 +18,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
   - RU: https://asiakoz.com/almaty/
   - KK: https://asiakoz.com/kk/almaty/
 - AsiaKoz Актау: Актау, 7А микрорайон, 11/3, тел. +7 775 863 01 80, WhatsApp https://wa.me/77758630180
-  - RU: https://asiakoz.com/aqtau/
+  - RU: https://asiakoz.com/aktau/
   - KK: https://asiakoz.com/kk/aqtau/
 - AsiaKoz Шымкент (Скоро открытие. Идёт предварительная запись): Шымкент, улица Байтурсынова, 86/7, мкр. Туран, тел. +7 708 075 01 80, WhatsApp https://wa.me/77080750180
   - RU: https://asiakoz.com/shymkent/

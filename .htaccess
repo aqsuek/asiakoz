@@ -11,9 +11,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.asiakoz\.com$ [NC]
 RewriteRule ^ https://asiakoz.com%{REQUEST_URI} [L,R=301]
 
-# Confirmed Aktau slug alias → existing permanent /aqtau/
-RewriteRule ^aktau/?$ /aqtau/ [L,R=301]
-RewriteRule ^aktau/(.*)$ /aqtau/$1 [L,R=301]
+# Legacy /aqtau/ alias -> canonical /aktau/
+RewriteRule ^aqtau/?$ /aktau/ [L,R=301]
+RewriteRule ^aqtau/(.*)$ /aktau/$1 [L,R=301]
+RewriteRule ^kk/aktau/?$ /kk/aqtau/ [L,R=301]
 
 # Legacy .html stubs → clean trailing-slash URLs
 RewriteRule ^doctors\.html$ /doctors/ [L,R=301]
@@ -38,6 +39,20 @@ RewriteRule ^doctor-tekche/?$ /doctor-mehmet-esat-teker/ [L,R=301]
 RewriteRule ^doctor-gargoni/?$ /doctor-ali-keskin/ [L,R=301]
 RewriteRule ^doctor-gorgani/?$ /doctor-ali-keskin/ [L,R=301]
 RewriteRule ^doctor-madina/?$ /doctors/ [L,R=301]
+
+
+# Branch doctor shell duplicates -> canonical doctor pages
+RewriteRule ^almaty/doctor/aliya/?$ /doctor-aliya/ [L,R=301]
+RewriteRule ^almaty/doctor/mehmet-esat-teker/?$ /doctor-mehmet-esat-teker/ [L,R=301]
+RewriteRule ^almaty/doctor/orel-talip/?$ /doctor-orel/ [L,R=301]
+RewriteRule ^aktau/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^aktau/doctor/erol-joshkun/?$ /doctor-erol/ [L,R=301]
+RewriteRule ^aktau/doctor/nazgul-sagyndykova/?$ /doctor-nazgul/ [L,R=301]
+RewriteRule ^aqtau/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^aqtau/doctor/erol-joshkun/?$ /doctor-erol/ [L,R=301]
+RewriteRule ^aqtau/doctor/nazgul-sagyndykova/?$ /doctor-nazgul/ [L,R=301]
+RewriteRule ^shymkent/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
+RewriteRule ^shymkent/doctor/mehmet-esat-teker/?$ /doctor-mehmet-esat-teker/ [L,R=301]
 
 # Empty prices stub → services catalog (no invented prices)
 RewriteRule ^prices/?$ /uslugi/ [L,R=301]

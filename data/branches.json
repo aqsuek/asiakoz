@@ -2,7 +2,11 @@
   "siteUrl": "https://asiakoz.com",
   "organization": {
     "name": "AsiaKoz",
-    "alternateName": ["Азиякөз", "Asiakoz", "Азиякоз"],
+    "alternateName": [
+      "Азиякөз",
+      "Asiakoz",
+      "Азиякоз"
+    ],
     "logo": "https://asiakoz.com/images/logo.png",
     "sameAs": [
       "https://www.instagram.com/asiakoz.clinic/"
@@ -35,10 +39,15 @@
       },
       "hoursRu": "Пн–Пт 09:00–17:00, Сб до 14:00",
       "hoursKz": "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
-      "geo": { "latitude": 43.238, "longitude": 76.945 },
+      "geo": {
+        "latitude": 43.238,
+        "longitude": 76.945
+      },
       "summaryRu": "Лазерная коррекция, катаракта, полная диагностика",
       "summaryKz": "Лазерлік көру түзету, катаракта, толық диагностика",
-      "doctorCities": ["almaty"]
+      "doctorCities": [
+        "almaty"
+      ]
     },
     {
       "id": "aqtau",
@@ -53,7 +62,7 @@
       "phone": "+7 775 863 01 80",
       "phoneRaw": "77758630180",
       "whatsapp": "https://wa.me/77758630180",
-      "pageHref": "/aqtau/",
+      "pageHref": "/aktau/",
       "kkHref": "/kk/aqtau/",
       "instagram": {
         "handle": "@asiakoz.clinic",
@@ -66,11 +75,19 @@
       },
       "hoursRu": "Пн–Пт 09:00–17:00, Сб до 14:00",
       "hoursKz": "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
-      "geo": { "latitude": 43.65118, "longitude": 51.14388 },
+      "geo": {
+        "latitude": 43.65118,
+        "longitude": 51.14388
+      },
       "summaryRu": "Катаракта, сетчатка, детская офтальмология",
       "summaryKz": "Катаракта, тор қабық, балалар офтальмологиясы",
-      "doctorCities": ["aqtau"],
-      "urlAliases": ["/aktau/"]
+      "doctorCities": [
+        "aqtau"
+      ],
+      "urlAliases": [
+        "/aqtau/",
+        "/kk/aktau/"
+      ]
     },
     {
       "id": "shymkent",

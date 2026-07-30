@@ -308,6 +308,11 @@ def branch_by_id(bid: str) -> dict:
     return next(b for b in BRANCHES if b["id"] == bid)
 
 
+def branch_dir_name(branch_id: str) -> str:
+    return "aktau" if branch_id == "aqtau" else branch_id
+
+
+
 def schema_organization() -> dict:
     active = [b for b in BRANCHES if b["status"] == "active"]
     return {
@@ -484,7 +489,7 @@ def crawlable_block(branch_id: str | None, lang: str, page_key: str) -> str:
     # nav
     if lang == "ru":
         lines.append(
-            '  <p><a href="/almaty/">Алматы</a> · <a href="/aqtau/">Актау</a> · '
+            '  <p><a href="/almaty/">Алматы</a> · <a href="/aktau/">Актау</a> · '
             '<a href="/shymkent/">Шымкент</a> · <a href="/uslugi/">Услуги</a> · '
             '<a href="/doctors/">Врачи</a></p>'
         )
@@ -631,22 +636,45 @@ def fix_redirect_stubs() -> None:
 
 
 def write_aktau_alias() -> None:
-    """Soft fallback if .htaccess is unsupported: /aktau/ → /aqtau/"""
-    path = ROOT / "aktau" / "index.html"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
+    """Soft fallback if server redirects are unavailable.
+    /aqtau/ -> /aktau/ and /kk/aktau/ -> /kk/aqtau/
+    """
+    ru = ROOT / "aqtau" / "index.html"
+    ru.parent.mkdir(parents=True, exist_ok=True)
+    ru.write_text(
         """<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://asiakoz.com/aqtau/" />
-  <meta http-equiv="refresh" content="0; url=/aqtau/" />
+  <link rel="canonical" href="https://asiakoz.com/aktau/" />
+  <meta http-equiv="refresh" content="0; url=/aktau/" />
   <title>Перенаправление — AsiaKoz Актау</title>
-  <script>location.replace("/aqtau/");</script>
+  <script>location.replace("/aktau/");</script>
 </head>
 <body>
-  <p><a href="/aqtau/">AsiaKoz Актау</a></p>
+  <p><a href="/aktau/">AsiaKoz Актау</a></p>
+</body>
+</html>
+""",
+        encoding="utf-8",
+    )
+
+    kk = ROOT / "kk" / "aktau" / "index.html"
+    kk.parent.mkdir(parents=True, exist_ok=True)
+    kk.write_text(
+        """<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://asiakoz.com/kk/aqtau/" />
+  <meta http-equiv="refresh" content="0; url=/kk/aqtau/" />
+  <title>Басқа бетке өту — AsiaKoz Ақтау</title>
+  <script>location.replace("/kk/aqtau/");</script>
+</head>
+<body>
+  <p><a href="/kk/aqtau/">AsiaKoz Ақтау</a></p>
 </body>
 </html>
 """,
@@ -736,7 +764,7 @@ def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
     add(f"{SITE}/kk/", ROOT / "kk" / "index.html", 0.95)
 
     for b in BRANCHES:
-        add(f"{SITE}{b['pageHref']}", ROOT / b["id"] / "index.html", 0.95)
+        add(f"{SITE}{b['pageHref']}", ROOT / branch_dir_name(b["id"]) / "index.html", 0.95)
         add(f"{SITE}{b['kkHref']}", ROOT / "kk" / b["id"] / "index.html", 0.9)
 
     for key in ("doctors", "uslugi"):
@@ -756,7 +784,7 @@ def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
         rel_s = str(rel).replace("\\", "/")
         if rel_s.startswith("kk/"):
             continue
-        if rel_s in {b["id"] for b in BRANCHES} or rel_s in {"doctors", "uslugi", "aktau", "laser"}:
+        if rel_s in {b["id"] for b in BRANCHES} or rel_s in {"doctors", "uslugi", "aktau", "aqtau", "laser"}:
             continue
         if any(rel_s.startswith(f"{b['id']}/") for b in BRANCHES) or rel_s.startswith("laser/"):
             continue
@@ -829,15 +857,86 @@ def patch_static_hreflang_hubs() -> None:
         write_kk_hub_from_ru(ru_path, kk_path, key, None, ru_url, kk_url)
 
 
+
+def patch_doctor_profile_pages() -> None:
+    """Ensure canonical indexable doctor pages with ProfilePage + Person schema."""
+    city_names = {
+        "almaty": "Алматы",
+        "aqtau": "Актау",
+    }
+    service_map = {
+        "orel-talip": ["https://asiakoz.com/vitrektomiya-almaty/", "https://asiakoz.com/kosoglazie/"],
+        "mehmet-esat-teker": ["https://asiakoz.com/lazer-almaty/", "https://asiakoz.com/katarakta-almaty/"],
+        "aliya": ["https://asiakoz.com/lazer-almaty/", "https://asiakoz.com/katarakta-almaty/"],
+        "musay": ["https://asiakoz.com/uslugi/"],
+        "ali-keskin": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
+        "erol-joshkun": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
+        "nazgul-sagyndykova": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/diagnostika-almaty/"],
+    }
+
+    for d in DOCTORS:
+        path = ROOT / d["slug"] / "index.html"
+        if not path.exists():
+            continue
+        html = path.read_text(encoding="utf-8")
+        ru_url = f"{SITE}{d['href']}"
+        kk_url = f"{SITE}{d.get('kkHref', d['href'])}"
+        title = f"{d['nameRu']} — врач офтальмолог | AsiaKoz"
+        desc = f"{d['nameRu']} — {d['roleRu']}. Приём в клинике AsiaKoz. Контакты и запись на странице врача."
+        html = set_lang(html, "ru")
+        html = ensure_robots(html, "index, follow, max-image-preview:large")
+        html = replace_title_desc(html, title, desc)
+        html = set_canonical(html, ru_url)
+        html = inject_hreflang(html, ru_url, kk_url)
+
+        city = next((c for c in d.get("cities", []) if c in city_names), "almaty")
+        city_name = city_names.get(city, "Алматы")
+        schema = {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "ProfilePage",
+                    "@id": f"{ru_url}#profile",
+                    "url": ru_url,
+                    "name": d["nameRu"],
+                    "inLanguage": "ru-KZ",
+                    "mainEntity": {"@id": f"{ru_url}#person"},
+                    "about": service_map.get(d["id"], ["https://asiakoz.com/uslugi/"]),
+                    "isPartOf": {"@id": f"{SITE}/#website"},
+                },
+                {
+                    "@type": "Person",
+                    "@id": f"{ru_url}#person",
+                    "name": d["nameRu"],
+                    "jobTitle": d["roleRu"],
+                    "image": f"{SITE}{d['image'] if d['image'].startswith('/') else '/' + d['image']}",
+                    "worksFor": {"@id": f"{SITE}/{city if city!='aqtau' else 'aktau'}/#clinic"},
+                    "affiliation": {"@id": f"{SITE}/#organization"},
+                    "knowsAbout": d.get("knowsAbout", []),
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "AsiaKoz", "item": f"{SITE}/"},
+                        {"@type": "ListItem", "position": 2, "name": "Врачи", "item": f"{SITE}/doctors/"},
+                        {"@type": "ListItem", "position": 3, "name": d["nameRu"], "item": ru_url},
+                    ],
+                },
+            ],
+        }
+        html = put_jsonld(html, schema)
+        path.write_text(html, encoding="utf-8")
+
+
 DOCTOR_SPA_CANONICAL = {
     "almaty/doctor/aliya": "https://asiakoz.com/doctor-aliya/",
     "almaty/doctor/mehmet-esat-teker": "https://asiakoz.com/doctor-mehmet-esat-teker/",
     "almaty/doctor/orel-talip": "https://asiakoz.com/doctor-orel/",
     "laser/doctor/mehmet-esat-teker": "https://asiakoz.com/doctor-mehmet-esat-teker/",
     "laser/doctor/orel-talip": "https://asiakoz.com/doctor-orel/",
-    "aqtau/doctor/ali-keskin": "https://asiakoz.com/doctor-ali-keskin/",
-    "aqtau/doctor/erol-joshkun": "https://asiakoz.com/doctor-erol/",
-    "aqtau/doctor/nazgul-sagyndykova": "https://asiakoz.com/doctor-nazgul/",
+    "aktau/doctor/ali-keskin": "https://asiakoz.com/doctor-ali-keskin/",
+    "aktau/doctor/erol-joshkun": "https://asiakoz.com/doctor-erol/",
+    "aktau/doctor/nazgul-sagyndykova": "https://asiakoz.com/doctor-nazgul/",
     "shymkent/doctor/ali-keskin": "https://asiakoz.com/doctor-ali-keskin/",
     "shymkent/doctor/mehmet-esat-teker": "https://asiakoz.com/doctor-mehmet-esat-teker/",
 }
@@ -868,13 +967,14 @@ def main() -> None:
     fix_redirect_stubs()
     write_aktau_alias()
     noindex_doctor_spa_shells()
+    patch_doctor_profile_pages()
 
     # RU SPA shells
     patch_spa_shell(ROOT / "index.html", "home", "ru", None, f"{SITE}/", f"{SITE}/kk/")
     for bid in ("almaty", "aqtau", "shymkent"):
         b = branch_by_id(bid)
         patch_spa_shell(
-            ROOT / bid / "index.html",
+            ROOT / branch_dir_name(bid) / "index.html",
             bid,
             "ru",
             bid,
@@ -887,7 +987,7 @@ def main() -> None:
     for bid in ("almaty", "aqtau", "shymkent"):
         b = branch_by_id(bid)
         write_kk_hub_from_ru(
-            ROOT / bid / "index.html",
+            ROOT / branch_dir_name(bid) / "index.html",
             ROOT / "kk" / bid / "index.html",
             bid,
             bid,

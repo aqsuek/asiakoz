@@ -3,11 +3,11 @@ set -euo pipefail
 
 APP="$(cd "$(dirname "$0")/.." && pwd)"
 LIVE="$(cd "$APP/.." && pwd)"
-TARGET="$LIVE/aqtau"
+TARGET="$LIVE/aktau"
 DOCTOR_IDS=(ali-keskin erol-joshkun nazgul-sagyndykova)
 
 cd "$APP"
-VITE_BASE=/aqtau/ VITE_BRANCH=aqtau npm run build
+VITE_BASE=/aktau/ VITE_BRANCH=aqtau npm run build
 
 rm -rf "$TARGET"
 mkdir -p "$TARGET"
@@ -32,8 +32,8 @@ for id in "${DOCTOR_IDS[@]}"; do
   cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
 done
 
-echo "Deployed Aqtau landing -> $TARGET"
-echo "URL: https://asiakoz.com/aqtau/"
+echo "Deployed Aktau landing -> $TARGET"
+echo "URL: https://asiakoz.com/aktau/"
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$LIVE/scripts/build-seo.py"
