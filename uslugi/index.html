@@ -1,22 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817733574"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17817733574');
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>
-<!-- End Google Tag Manager -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-17817733574');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,480 +13,130 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="alternate" hreflang="ru-KZ" href="https://asiakoz.com/uslugi/" />
     <link rel="alternate" hreflang="kk-KZ" href="https://asiakoz.com/kk/uslugi/" />
     <link rel="alternate" hreflang="x-default" href="https://asiakoz.com/uslugi/" />
-  <meta property="og:site_name" content="Азиякоз" />
+  <meta property="og:site_name" content="AsiaKoz" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Услуги офтальмологической клиники AsiaKoz" />
   <meta property="og:description" content="Диагностика, лазерная коррекция, катаракта, глаукома, витрэктомия и другие услуги AsiaKoz." />
   <meta property="og:url" content="https://asiakoz.com/uslugi/" />
   <meta property="og:image" content="https://asiakoz.com/images/logo.png" />
-  <meta name="twitter:card" content="summary" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Услуги и операции — Азиякоз",
-    "url": "https://asiakoz.com/uslugi/",
-    "isPartOf": { "@type": "WebSite", "name": "Азиякоз", "url": "https://asiakoz.com/" },
-    "about": [
-      "Лазерная коррекция зрения Алматы",
-      "Катаракта Алматы",
-      "Витрэктомия Алматы",
-      "Косоглазие Актау"
-    ]
-  }
+  {"@context":"https://schema.org","@type":"MedicalWebPage","name":"Услуги AsiaKoz","url":"https://asiakoz.com/uslugi/","isPartOf":{"@type":"WebSite","name":"AsiaKoz","url":"https://asiakoz.com/"}}
   </script>
-  <link rel="icon" type="image/png" href="../images/logo.png" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
   <style>
-    .service-block {
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 28px 26px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(15, 23, 42, 0.04);
-    }
-    .service-block h2 {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .service-block .icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: rgba(27, 116, 228, 0.1);
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
-    .service-intro {
-      font-size: 15px;
-      color: #475569;
-      line-height: 1.6;
-      margin-bottom: 18px;
-    }
-    .service-visual {
-      width: 280px;
-      aspect-ratio: 1 / 1;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid rgba(15, 23, 42, 0.08);
-      box-shadow: var(--shadow);
-      background: #f1f5f9;
-    }
-    .service-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .service-block--visual::after { content: ""; display: table; clear: both; }
-    .service-block--visual .service-visual { float: right; margin: 6px 0 12px 18px; }
-    .service-block--visual.alt .service-visual { float: left; margin: 6px 18px 12px 0; }
-    .service-block h3 {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-    .service-block ul {
-      margin: 0 0 0 20px;
-      padding: 0;
-      font-size: 14px;
-      color: #475569;
-      line-height: 1.75;
-    }
-    .service-block ul li { margin-bottom: 6px; }
-    .service-meta {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(15, 23, 42, 0.06);
-    }
-    .nav-services { margin-bottom: 28px; }
-    .route-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 8px;
-    }
-    .route-card {
-      background: #fff;
-      border: 1px solid rgba(15, 23, 42, 0.08);
-      border-radius: 14px;
-      padding: 14px 12px;
-      box-shadow: var(--shadow);
-    }
-    .route-card h3 {
-      font-size: 15px;
-      margin: 0 0 8px;
-      text-transform: none;
-      letter-spacing: 0;
-    }
-    .route-card p {
-      margin: 0 0 10px;
-      color: var(--text-muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .route-links { display: flex; flex-wrap: wrap; gap: 6px; }
-    .route-chip {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      background: rgba(27, 116, 228, 0.08);
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .route-chip:hover { background: rgba(27, 116, 228, 0.16); color: var(--accent); }
-    @media (max-width: 768px) {
-      .service-block { padding: 20px 18px; margin-bottom: 18px; }
-      .service-block h2 { font-size: 18px; flex-wrap: wrap; }
-      .service-intro { font-size: 14px; }
-      .service-block--visual .service-visual,
-      .service-block--visual.alt .service-visual {
-        float: none;
-        width: 100%;
-        max-width: 420px;
-        margin: 10px 0 14px;
-      }
-      .cta-block { padding: 30px 20px; margin-top: 36px; }
-      .cta-block h2 { font-size: 18px; }
-      .route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 480px) {
-      .service-block { padding: 16px 14px; margin-bottom: 16px; }
-      .service-block h2 { font-size: 16px; }
-      .service-block .icon { width: 32px; height: 32px; font-size: 16px; }
-      .service-intro { font-size: 13px; margin-bottom: 14px; }
-      .service-block ul { font-size: 13px; margin-left: 18px; }
-      .cta-block { padding: 26px 16px; }
-      .cta-block h2 { font-size: 17px; }
-      .cta-block p { font-size: 13px; }
-      .route-grid { grid-template-columns: 1fr; }
-    }
-    .nav-services a { color: var(--accent); font-size: 14px; }
-    .nav-services a:hover { text-decoration: underline; }
-    .search-intent { background: var(--card); border-radius: var(--radius-sm); border: 1px solid rgba(15,23,42,0.06); box-shadow: var(--shadow); padding: 16px; margin-bottom: 18px; }
-    .search-intent-title { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
-    .search-intent-links { display: flex; flex-wrap: wrap; gap: 8px; }
-    .search-intent-links a { display: inline-flex; padding: 6px 10px; border-radius: 999px; background: rgba(27,116,228,0.08); border: 1px solid rgba(27,116,228,0.2); color: var(--accent); font-size: 13px; font-weight: 600; }
-    .search-intent-links a:hover { background: rgba(27,116,228,0.16); }
+    .catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+    .catalog-card{background:var(--card,#fff);border:1px solid rgba(15,23,42,.08);border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
+    .catalog-card h2{font-size:17px;margin:0 0 8px;font-weight:700}
+    .catalog-card p{margin:0 0 12px;font-size:14px;line-height:1.55;color:#475569}
+    .catalog-card .meta{font-size:12px;color:#64748b;margin-bottom:10px}
+    .catalog-card a.btn{display:inline-flex;font-size:13px;padding:8px 14px}
+    @media(max-width:700px){.catalog-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <header class="header">
-      <a href="/" class="logo" title="Азиякоз">
-        <img src="../images/logo.png" alt="Азиякоз" class="logo-img" />
-      </a>
+      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/uslugi/">Услуги</a>
-        <a href="/kosoglazie/">Косоглазие</a>
-        <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
         <a href="/doctors/">Врачи</a>
+        <a href="/almaty/">Алматы</a>
+        <a href="/aktau/">Актау</a>
         <a href="/#contacts">Контакты</a>
       </nav>
-      <a class="hreflang-switch" href="https://asiakoz.com/kk/uslugi/" hrefLang="kk">KZ</a>
-      <div class="header-right">
-        <div class="header-schedule">Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</div>
-        <div class="header-contacts">
-          <div class="header-phone"><a href="tel:+77003600180">+7 700 360 01 80</a></div>
-          <a href="https://wa.me/77003600180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-        <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn btn-header">Записаться</a>
-        <a href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener" class="header-instagram" title="Instagram" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-      </div>
+      <a class="hreflang-switch" href="/kk/uslugi/" hreflang="kk">KZ</a>
     </header>
-
-    <nav class="breadcrumb">
-      <a href="/">Главная</a> / Услуги и операции
-    </nav>
+    <nav class="breadcrumb"><a href="/">Главная</a> / Услуги</nav>
 
     <section class="section">
-      <h1 class="section-title">Витрэктомия, косоглазие, лазерная коррекция — услуги Азиякоз</h1>
-      <p class="section-subtitle">Ключевой фокус клиники: витрэктомия, хирургия косоглазия и лазерная коррекция зрения. Также выполняем диагностику и операции по другим офтальмологическим направлениям.</p>
-      <p class="section-subtitle" style="margin-top:-8px; font-size:14px;">По филиалам: <a href="/lazer-almaty/" class="link">лазерная коррекция (Алматы)</a>, <a href="/icl-almaty/" class="link">ICL (Алматы)</a>, <a href="/katarakta-almaty/" class="link">катаракта (Алматы)</a>, <a href="/vitrektomiya-almaty/" class="link">витрэктомия (Алматы)</a>, <a href="/glaukoma-almaty/" class="link">глаукома (Алматы)</a>, <a href="/kosoglazie/" class="link">косоглазие (лендинг)</a>, <a href="/kosoglazie-aktau/" class="link">косоглазие (Актау)</a>.</p>
+      <h1 class="section-title">Услуги AsiaKoz</h1>
+      <p class="section-subtitle">Краткий каталог направлений. Подробности, врачи и запись — на странице услуги. Филиалы: Алматы (работает), Актау (работает), Шымкент — скоро открытие.</p>
 
-      <div class="nav-services">
-        <a href="#katarakta">Катаракта</a> ·
-        <a href="#lazer">Лазерная коррекция</a> ·
-        <a href="/icl-almaty/">ICL</a> ·
-        <a href="#glaukoma">Глаукома</a> ·
-        <a href="#setchatka">Сетчатка</a> ·
-        <a href="#kosoglazie">Косоглазие</a> ·
-        <a href="/deti-almaty/">Детская офтальмология</a> ·
-        <a href="#diagnostika">Диагностика</a>
-      </div>
-
-      <div class="search-intent">
-        <div class="search-intent-title">Быстрый переход</div>
-        <div class="search-intent-links">
-          <a href="/otzyvy-asiakoz-almaty/">Отзывы пациентов</a>
-          <a href="/glaznaya-klinika-almaty/">О клинике</a>
-          <a href="/lazer-almaty/">Лазерная коррекция</a>
-          <a href="/vitrektomiya-almaty/">Витрэктомия</a>
-          <a href="/kosoglazie/">Лечение косоглазия</a>
-        </div>
-      </div>
-
-      <div class="service-block" style="margin-top:0;">
-        <h2><span class="icon">🧭</span> Быстрый поиск и навигация</h2>
-        <p class="service-intro">Выберите ваш сценарий — откроется нужный раздел без лишнего чтения.</p>
-        <div class="route-grid">
-          <article class="route-card">
-            <h3>Срочно</h3>
-            <p>Вспышки, мушки, пелена, резкое ухудшение зрения.</p>
-            <div class="route-links">
-              <a class="route-chip" href="/vspyshki-v-glazah-almaty/">Вспышки</a>
-              <a class="route-chip" href="/mushki-pered-glazami-almaty/">Мушки</a>
-              <a class="route-chip" href="/pelena-pered-glazom-almaty/">Пелена</a>
-              <a class="route-chip" href="/rezkoe-uhudshenie-zreniya-almaty/">Резкое ухудшение</a>
-            </div>
-          </article>
-          <article class="route-card">
-            <h3>Диагностика</h3>
-            <p>Проверка зрения, ОКТ, глазное дно, давление.</p>
-            <div class="route-links">
-              <a class="route-chip" href="/diagnostika-almaty/">Чек-ап глаз</a>
-              <a class="route-chip" href="/okt-glaz-almaty/">ОКТ глаза</a>
-              <a class="route-chip" href="/osmotr-glaznogo-dna-almaty/">Глазное дно</a>
-              <a class="route-chip" href="/tonometriya-almaty/">Тонометрия</a>
-            </div>
-          </article>
-          <article class="route-card">
-            <h3>Операции</h3>
-            <p>Катаракта, лазерная коррекция, глаукома, косоглазие.</p>
-            <div class="route-links">
-              <a class="route-chip" href="/katarakta-almaty/">Катаракта</a>
-              <a class="route-chip" href="/lazer-almaty/">Лазер</a>
-              <a class="route-chip" href="/operatsiya-glaukoma-almaty/">Глаукома</a>
-              <a class="route-chip" href="/kosoglazie/">Косоглазие</a>
-            </div>
-          </article>
-          <article class="route-card">
-            <h3>Детям</h3>
-            <p>Детский офтальмолог, миопия, астигматизм, профосмотр.</p>
-            <div class="route-links">
-              <a class="route-chip" href="/detskiy-oftalmolog-almaty/">Детский офтальмолог</a>
-              <a class="route-chip" href="/miopiya-u-detey-almaty/">Миопия у детей</a>
-              <a class="route-chip" href="/astigmatizm-u-detey-almaty/">Астигматизм у детей</a>
-              <a class="route-chip" href="/profosmotr-pered-shkoloy-almaty/">Профосмотр</a>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- 1. Катаракта -->
-      <div id="katarakta" class="service-block service-block--visual">
-        <h2><span class="icon">👁‍🗨</span> Операция при катаракте</h2>
-        <div class="service-visual"><img src="/images/theme-cataract.jpg" alt="Диагностика и операция при катаракте в Азиякоз" loading="lazy" /></div>
-        <p class="service-intro">Катаракта — помутнение хрусталика глаза, из-за которого снижается острота зрения. Единственный эффективный метод лечения — хирургическое удаление помутневшего хрусталика и установка искусственной интраокулярной линзы.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/katarakta-almaty/">Приём и операция в Алматы →</a>
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Проводим полную диагностику: острота зрения, состояние хрусталика, измерение параметров глаза для подбора линзы.</li>
-          <li>Подбираем тип интраокулярной линзы (монофокальная, мультифокальная, торическая при астигматизме) под ваши потребности.</li>
-          <li>Выполняем операцию факоэмульсификации: через микроразрез удаляем помутневший хрусталик ультразвуком и имплантируем новую линзу.</li>
-          <li>Операция длится около 15–20 минут, чаще под местной анестезией, без госпитализации.</li>
-          <li>Назначаем послеоперационные капли и приглашаем на контрольные осмотры для проверки результата.</li>
-        </ul>
-        <div class="service-meta">Операции выполняют офтальмохирурги с опытом работы в клиниках Турции. Приём в Алматы и Актау по записи.</div>
-      </div>
-
-      <!-- 2. Лазерная коррекция -->
-      <div id="lazer" class="service-block service-block--visual alt">
-        <h2><span class="icon">✨</span> Лазерная коррекция зрения</h2>
-        <div class="service-visual"><img src="/images/theme-laser.jpg" alt="Лазерная коррекция зрения в клинике Азиякоз" loading="lazy" /></div>
-        <p class="service-intro">Позволяет избавиться от очков и контактных линз при близорукости, дальнозоркости и астигматизме. Мы используем современные методики (LASIK, Femto-LASIK, LASEK и др.) и подбираем наиболее безопасный вариант после диагностики.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/lazer-almaty/">Диагностика и коррекция в Алматы →</a>
-        </div>
-        <div class="service-meta" style="margin: -2px 0 14px; border-top: 0; padding-top: 0;">
-          По нарушениям рефракции: <a class="link" href="/miopiya-almaty/">миопия</a>, <a class="link" href="/dalnozorkost-almaty/">дальнозоркость</a>, <a class="link" href="/astigmatizm-almaty/">астигматизм</a>.
-        </div>
-        <div class="service-meta" style="margin: -2px 0 14px; border-top: 0; padding-top: 0;">
-          Дополнительно: <a class="link" href="/keratokonus-almaty/">кератоконус</a> · <a class="link" href="/sukhoy-glaz-almaty/">синдром сухого глаза</a>.
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Проводим расширенную диагностику: острота зрения, рефракция, толщина роговицы, состояние глазного дна. Определяем, подходит ли вам лазерная коррекция.</li>
-          <li>Выбираем методику операции (LASIK, LASEK, ФРК и т.д.) с учётом толщины роговицы, степени нарушения и возраста.</li>
-          <li>Выполняем коррекцию на эксимерном лазере: изменяем форму роговицы так, чтобы фокус попадал на сетчатку.</li>
-          <li>Операция занимает около 10–15 минут на оба глаза. Восстановление зрения — от нескольких часов до нескольких дней в зависимости от методики.</li>
-          <li>Даём рекомендации по режиму и каплям после операции, приглашаем на контрольные осмотры.</li>
-        </ul>
-        <div class="service-meta">Перед операцией обязательна консультация и диагностика. Не всем показана лазерная коррекция — альтернативу подберёт врач (например, <a class="link" href="/icl-almaty/">ICL</a> — по показаниям).</div>
-      </div>
-
-      <!-- 3. Глаукома -->
-      <div id="glaukoma" class="service-block service-block--visual">
-        <h2><span class="icon">📉</span> Диагностика и лечение глаукомы</h2>
-        <div class="service-visual"><img src="/images/theme-glaukoma.jpg" alt="Диагностика и лечение глаукомы" loading="lazy" /></div>
-        <p class="service-intro">Глаукома — хроническое заболевание, при котором повышается внутриглазное давление и повреждается зрительный нерв. Без лечения приводит к необратимой потере зрения. Важно выявить болезнь на ранней стадии и держать давление под контролем.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/glaukoma-almaty/">Диагностика и лечение в Алматы →</a>
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Измеряем внутриглазное давление, осматриваем диск зрительного нерва и поле зрения. При необходимости проводим ОКТ (оптическую когерентную томографию) и гониоскопию.</li>
-          <li>Ставим диагноз и определяем стадию глаукомы. Составляем план наблюдения или лечения.</li>
-          <li>Назначаем капли для снижения давления и при необходимости лазерное лечение (лазерная трабекулопластика и др.).</li>
-          <li>При неэффективности капель и лазера выполняем антиглаукоматозные операции для улучшения оттока жидкости из глаза.</li>
-          <li>Ведём пациентов с глаукомой длительно: регулярные осмотры и коррекция терапии для сохранения зрения.</li>
-        </ul>
-        <div class="service-meta">Регулярный контроль давления и поля зрения — основа профилактики слепоты при глаукоме.</div>
-      </div>
-
-      <!-- 4. Сетчатка -->
-      <div id="setchatka" class="service-block service-block--visual alt">
-        <h2><span class="icon">🧬</span> Заболевания сетчатки и витреоретинальная хирургия</h2>
-        <div class="service-visual"><img src="/images/theme-retina.jpg" alt="Лечение заболеваний сетчатки и витрэктомия" loading="lazy" /></div>
-        <p class="service-intro">Сетчатка — внутренняя оболочка глаза, отвечающая за восприятие изображения. Её заболевания (отслойка, разрывы, диабетическая ретинопатия, макулярные разрывы и др.) требуют точной диагностики и нередко хирургического лечения.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/setchatka-almaty/">Диагностика и лечение сетчатки в Алматы →</a> · <a class="link" href="/vitrektomiya-almaty/">Если нужна операция: витрэктомия →</a>
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Проводим осмотр глазного дна, ОКТ макулы и при необходимости флюоресцентную ангиографию для уточнения диагноза.</li>
-          <li>Выполняем витрэктомию — удаление стекловидного тела и операции на сетчатке при отслойке, макулярном разрыве, кровоизлияниях в стекловидное тело, диабетической ретинопатии.</li>
-          <li>Проводим лазерную коагуляцию сетчатки при разрывах, диабетической ретинопатии и сосудистых заболеваниях.</li>
-          <li>Вводим в полость глаза препараты (ингибиторы VEGF) при возрастной макулодистрофии и отёке макулы.</li>
-          <li>Сопровождаем пациента после операции: контрольные осмотры, рекомендации по положению головы и каплям.</li>
-        </ul>
-        <div class="service-meta">Витреоретинальные операции в Азиякоз выполняют хирурги с большим опытом (в т.ч. из Турции).</div>
-      </div>
-
-      <!-- 5. Косоглазие -->
-      <div id="kosoglazie" class="service-block service-block--visual">
-        <h2><span class="icon">🎯</span> Хирургия косоглазия</h2>
-        <div class="service-visual"><img src="/images/theme-kosoglazie.jpg" alt="Диагностика и лечение косоглазия" loading="lazy" /></div>
-        <p class="service-intro">Косоглазие — нарушение положения глаз, при котором зрительные оси не сходятся на рассматриваемом предмете. Встречается у детей и взрослых. Лечение может быть консервативным (очки, окклюзия, упражнения) или хирургическим.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/kosoglazie/">Лечение косоглазия (подробно) →</a> · <a class="link" href="/kosoglazie-aktau/">Актау →</a>
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Оцениваем угол косоглазия, подвижность глаз, остроту зрения и бинокулярные функции. Определяем причину (рефракция, мышечный дисбаланс и др.).</li>
-          <li>У детей при необходимости назначаем очки, окклюзию (заклейку), аппаратное лечение и наблюдаем до стабилизации.</li>
-          <li>При показаниях к операции выполняем хирургию на глазодвигательных мышцах: ослабление или усиление мышц для выравнивания положения глаз.</li>
-          <li>Операция проводится под общим или местным обезболиванием. После — контроль положения глаз и при необходимости дополнительная коррекция.</li>
-          <li>При амблиопии (ленивый глаз) даём рекомендации по тренировке зрения и наблюдению.</li>
-        </ul>
-        <div class="service-meta">Хирургию косоглазия в Азиякоз проводит витреоретинолог с многолетним опытом (в т.ч. детское и взрослое косоглазие).</div>
-      </div>
-
-      <!-- 6. Детская офтальмология -->
-      <div id="deti" class="service-block service-block--visual alt">
-        <h2><span class="icon">👦</span> Детская офтальмология</h2>
-        <div class="service-visual"><img src="/images/theme-kids.jpg" alt="Детская офтальмология и осмотр детей" loading="lazy" /></div>
-        <p class="service-intro">Зрение ребёнка формируется в первые годы жизни. Своевременная диагностика и лечение косоглазия, амблиопии, нарушений рефракции и других заболеваний помогают избежать стойкого снижения зрения.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/deti-almaty/">Осмотр и лечение детей в Алматы →</a>
-        </div>
-        <div class="service-meta" style="margin: -2px 0 14px; border-top: 0; padding-top: 0;">
-          Также: <a class="link" href="/detskiy-oftalmolog-almaty/">детский офтальмолог</a>.
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Проводим осмотр детей с подбором очков при необходимости: проверка остроты зрения (по возрасту), рефракция, осмотр переднего отрезка и глазного дна.</li>
-          <li>Выявляем косоглазие, амблиопию, врождённую катаракту и глаукому, патологию слёзных путей и другие заболевания.</li>
-          <li>Назначаем лечение: очки, окклюзия, аппаратное лечение, капли. При показаниях направляем на операцию (косоглазие, катаракта и др.).</li>
-          <li>Объясняем родителям план наблюдения и важность выполнения рекомендаций для развития зрения.</li>
-          <li>Ведём ребёнка до стабилизации состояния и при необходимости направляем к смежным специалистам.</li>
-        </ul>
-        <div class="service-meta">Регулярные осмотры у офтальмолога рекомендуются с первого года жизни и перед школой.</div>
-      </div>
-
-      <!-- 7. Диагностика -->
-      <div id="diagnostika" class="service-block service-block--visual">
-        <h2><span class="icon">🔍</span> Полная диагностика глаз</h2>
-        <div class="service-visual"><img src="/images/theme-glaukoma.jpg" alt="Полная диагностика зрения в Азиякоз" loading="lazy" /></div>
-        <p class="service-intro">Комплексное обследование нужно для постановки диагноза, подбора очков или контактных линз, определения показаний к операции и контроля течения заболеваний.</p>
-        <div class="service-meta" style="margin: 10px 0 14px; border-top: 0; padding-top: 0;">
-          <a class="link" href="/diagnostika-almaty/">Чек‑ап и диагностика в Алматы →</a>
-        </div>
-        <div class="service-meta" style="margin: -2px 0 14px; border-top: 0; padding-top: 0;">
-          Также: <a class="link" href="/proverka-zreniya-almaty/">проверка зрения</a> · <a class="link" href="/konsultatsiya-oftalmologa-almaty/">консультация офтальмолога</a> · <a class="link" href="/vtoroe-mnenie-oftalmolog-almaty/">второе мнение</a>.
-        </div>
-        <div class="service-meta" style="margin: -2px 0 14px; border-top: 0; padding-top: 0;">
-          Врачи: <a class="link" href="/oftalmolog-almaty/">офтальмолог</a> · <a class="link" href="/oftalmohirurg-almaty/">офтальмохирург</a>.
-        </div>
-        <h3>Что мы делаем</h3>
-        <ul>
-          <li>Проверяем остроту зрения с коррекцией и без, подбираем очки или уточняем рефракцию на авторефрактометре.</li>
-          <li>Измеряем внутриглазное давление (бесконтактно или контактно по показаниям).</li>
-          <li>Осматриваем передний отрезок глаза (роговица, хрусталик, радужка) и глазное дно (сетчатка, диск зрительного нерва, сосуды) с расширением зрачка при необходимости.</li>
-          <li>При необходимости проводим ОКТ (оптическую когерентную томографию) сетчатки и зрительного нерва, кератотопографию, пахиметрию и другие исследования.</li>
-          <li>По результатам даём заключение, рекомендации и план лечения или наблюдения. При показаниях к операции объясняем варианты и записываем на консультацию хирурга.</li>
-        </ul>
-        <div class="service-meta">Диагностика проводится на современном оборудовании. Длительность приёма — около 30–60 минут в зависимости от объёма.</div>
+      <div class="catalog-grid">
+        <article class="catalog-card" id="diagnostika">
+          <h2>Диагностика зрения</h2>
+          <p class="meta">Филиал: Алматы · Актау</p>
+          <p>Полный осмотр: острота зрения, давление, глазное дно и дополнительные методы по показаниям. Нужна как перед операцией, так и при жалобах на зрение.</p>
+          <a class="btn" href="/diagnostika-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="lazer">
+          <h2>Лазерная коррекция</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>SMILE, Femto-LASIK/LASIK и PRK/LASEK — метод выбираем после диагностики. Подходит не всем: решение принимает врач по параметрам роговицы и противопоказаниям.</p>
+          <a class="btn" href="/lazer-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="katarakta">
+          <h2>Катаракта</h2>
+          <p class="meta">Филиал: Алматы · Актау</p>
+          <p>Диагностика, подбор ИОЛ и факоэмульсификация. Сравниваем монофокальные, торические и мультифокальные линзы по показаниям пациента.</p>
+          <a class="btn" href="/katarakta-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="vitrektomiya">
+          <h2>Витрэктомия</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Хирургия стекловидного тела и сетчатки при отслойке, кровоизлияниях и других показаниях. Тактика — после обследования витреоретинолога.</p>
+          <a class="btn" href="/vitrektomiya-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="glaukoma">
+          <h2>Глаукома</h2>
+          <p class="meta">Филиал: Алматы · Актау</p>
+          <p>Контроль внутриглазного давления, поле зрения, ОКТ. Лечение: капли, лазер или операция — по стадии и ответу на терапию.</p>
+          <a class="btn" href="/glaukoma-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="kosoglazie">
+          <h2>Косоглазие</h2>
+          <p class="meta">Филиал: Алматы · Актау</p>
+          <p>Диагностика и хирургия косоглазия у детей и взрослых. В Актау — отдельная страница с врачами и записью филиала.</p>
+          <a class="btn" href="/kosoglazie/">Алматы</a>
+          <a class="btn btn-outline" href="/kosoglazie-aktau/" style="margin-left:6px;">Актау</a>
+        </article>
+        <article class="catalog-card" id="icl">
+          <h2>ICL</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Имплантация факичных линз — альтернатива лазерной коррекции при высоких степенях нарушения или тонкой роговице, по показаниям.</p>
+          <a class="btn" href="/icl-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="deti">
+          <h2>Детская офтальмология</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Осмотр детей, профосмотры, астигматизм и контроль миопии. План наблюдения или лечения — после приёма детского офтальмолога.</p>
+          <a class="btn" href="/deti-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="retinopatiya">
+          <h2>Диабетическая ретинопатия</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Осмотр глазного дна, ОКТ и лечение осложнений диабета со стороны сетчатки по результатам обследования.</p>
+          <a class="btn" href="/diabeticheskaya-retinopatiya-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="setchatka">
+          <h2>Сетчатка / Retina</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Hub по заболеваниям сетчатки: разрывы, отслойка, макулярные изменения. Отсюда — к профильным страницам и витрэктомии.</p>
+          <a class="btn" href="/setchatka-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card" id="srochno">
+          <h2>Срочные симптомы</h2>
+          <p class="meta">Филиал: Алматы</p>
+          <p>Вспышки, мушки, пелена, резкое ухудшение зрения — когда лучше обратиться к офтальмологу без откладывания.</p>
+          <a class="btn" href="/srochnye-simptomy-glaz-almaty/">Подробнее</a>
+        </article>
+        <article class="catalog-card">
+          <h2>Врачи</h2>
+          <p class="meta">Алматы · Актау</p>
+          <p>Каталог офтальмологов и хирургов сети AsiaKoz. Выберите врача и запишитесь через WhatsApp филиала.</p>
+          <a class="btn" href="/doctors/">Каталог врачей</a>
+        </article>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="section-title">Похожие страницы</h2>
-      <p class="section-subtitle">
-        <a class="link" href="/diagnostika-almaty/">Диагностика</a> ·
-        <a class="link" href="/konsultatsiya-oftalmologa-almaty/">Консультация офтальмолога</a> ·
-        <a class="link" href="/proverka-zreniya-almaty/">Проверка зрения</a> ·
-        <a class="link" href="/katarakta-almaty/">Катаракта</a> ·
-        <a class="link" href="/lazer-almaty/">Лазерная коррекция</a> ·
-        <a class="link" href="/setchatka-almaty/">Сетчатка</a>
-      </p>
-    </section>
-
-    <div class="cta-block">
-      <h2>Запишитесь на консультацию в Азиякоз</h2>
-      <p>Напишите в WhatsApp — подберем врача и удобное время.</p>
-      <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn">Записаться в WhatsApp</a>
+    <div class="cta-block" style="margin-top:28px;">
+      <h2>Запись на консультацию</h2>
+      <p>Алматы: <a href="tel:+77003600180">+7 700 360 01 80</a> · Актау: <a href="tel:+77758630180">+7 775 863 01 80</a></p>
+      <a href="https://wa.me/77003600180" class="btn" target="_blank" rel="noopener">WhatsApp Алматы</a>
+      <a href="https://wa.me/77758630180" class="btn btn-outline" target="_blank" rel="noopener" style="margin-left:8px;">WhatsApp Актау</a>
     </div>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-col">
-          <div class="footer-logo"><img src="../images/logo.png" alt="Азиякоз" class="logo-img" style="height:36px;" /></div>
-          <p class="footer-desc">Офтальмологическая клиника. Турецкие хирурги. Алматы и Актау.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-title">Навигация</div>
-          <a href="/uslugi/">Услуги</a>
-          <a href="/otzyvy-asiakoz-almaty/">Отзывы</a>
-          <a href="/doctors/">Врачи</a>
-          <a href="/#contacts">Контакты</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-title">Контакты</div>
-          <p>Алматы: <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp +7 700 360 01 80</a> · Актау: <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp +7 700 360 01 80</a></p>
-          <p>Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-disclaimer">Имеются противопоказания. Необходима консультация специалиста.</p>
-        <p class="footer-copy">© Азиякоз. Алматы, Актау.</p>
-      </div>
-    </footer>
   </div>
   <script src="/js/compliance.js"></script>
 </body>

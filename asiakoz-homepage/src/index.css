@@ -4,18 +4,18 @@
 
 @layer base {
   :root {
-    --mobile-cta-height: 82px;
+    --mobile-cta-height: 96px;
   }
 
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
-    scroll-padding-bottom: 5rem;
+    scroll-padding-bottom: calc(var(--mobile-cta-height) + 0.5rem);
   }
 
   body {
     @apply bg-surface-warm font-sans text-ink antialiased;
-    padding-bottom: calc(var(--mobile-cta-height) + env(safe-area-inset-bottom));
+    padding-bottom: calc(var(--mobile-cta-height) + env(safe-area-inset-bottom, 0px));
   }
 
   ::selection {

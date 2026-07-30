@@ -961,9 +961,20 @@ def noindex_doctor_spa_shells() -> None:
         print(f"doctor spa noindex: /{rel}/ → {canonical}")
 
 
+def apply_url_merges() -> None:
+    """Thin micro-pages → hub soft redirects + short uslugi catalog."""
+    import subprocess
+    import sys
+
+    script = ROOT / "scripts" / "apply-url-merges.py"
+    if script.exists():
+        subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
+
+
 def main() -> None:
     print("=== AsiaKoz SEO build ===")
     lastmod_cache = load_lastmod()
+    apply_url_merges()
     fix_redirect_stubs()
     write_aktau_alias()
     noindex_doctor_spa_shells()

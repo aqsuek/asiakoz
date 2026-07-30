@@ -1,0 +1,54 @@
+{
+  "note": "Thin micro-pages merge into hub pages. On GitHub Pages: soft fallback (noindex + canonical + meta refresh). On Apache: .htaccess 301.",
+  "merges": [
+    { "from": "/smile-almaty/", "to": "/lazer-almaty/#metody", "title": "ReLEx SMILE → лазерная коррекция" },
+    { "from": "/femto-lasik-almaty/", "to": "/lazer-almaty/#metody", "title": "Femto-LASIK → лазерная коррекция" },
+    { "from": "/prk-lasek-almaty/", "to": "/lazer-almaty/#metody", "title": "PRK/LASEK → лазерная коррекция" },
+
+    { "from": "/toricheskie-linzy-almaty/", "to": "/katarakta-almaty/#iol", "title": "Торические линзы → катаракта" },
+    { "from": "/multifokalnye-linzy-almaty/", "to": "/katarakta-almaty/#iol", "title": "Мультифокальные линзы → катаракта" },
+
+    { "from": "/detskiy-oftalmolog-almaty/", "to": "/deti-almaty/", "title": "Детский офтальмолог → детская офтальмология" },
+    { "from": "/astigmatizm-u-detey-almaty/", "to": "/deti-almaty/#astigmatizm", "title": "Астигматизм у детей → детская офтальмология" },
+    { "from": "/profosmotr-pered-shkoloy-almaty/", "to": "/deti-almaty/#profilakticheskiy-osmotr", "title": "Профосмотр → детская офтальмология" },
+
+    { "from": "/kosoglazie-u-detey-almaty/", "to": "/kosoglazie/#deti", "title": "Косоглазие у детей → косоглазие" },
+    { "from": "/kosoglazie-u-vzroslyh-almaty/", "to": "/kosoglazie/#vzroslye", "title": "Косоглазие у взрослых → косоглазие" },
+    { "from": "/operatsiya-kosoglazie-almaty/", "to": "/kosoglazie/#operatsiya", "title": "Операция косоглазия → косоглазие" },
+
+    { "from": "/proverka-zreniya-almaty/", "to": "/diagnostika-almaty/#proverka", "title": "Проверка зрения → диагностика" },
+    { "from": "/chekap-zreniya-almaty/", "to": "/diagnostika-almaty/#checkup", "title": "Чек-ап зрения → диагностика" },
+    { "from": "/osmotr-glaznogo-dna-almaty/", "to": "/diagnostika-almaty/#glaznoe-dno", "title": "Осмотр глазного дна → диагностика" },
+    { "from": "/konsultatsiya-oftalmologa-almaty/", "to": "/diagnostika-almaty/#konsultatsiya", "title": "Консультация → диагностика" },
+    { "from": "/okt-glaz-almaty/", "to": "/diagnostika-almaty/#okt", "title": "ОКТ глаза → диагностика" },
+    { "from": "/okt-zritelnogo-nerva-almaty/", "to": "/diagnostika-almaty/#okt", "title": "ОКТ зрительного нерва → диагностика" },
+    { "from": "/perimetriya-almaty/", "to": "/diagnostika-almaty/#perimetriya", "title": "Периметрия → диагностика" },
+    { "from": "/tonometriya-almaty/", "to": "/diagnostika-almaty/#tonometriya", "title": "Тонометрия → диагностика" },
+    { "from": "/gonioskopiya-almaty/", "to": "/diagnostika-almaty/#gonioskopiya", "title": "Гониоскопия → диагностика" },
+    { "from": "/oftalmolog-almaty/", "to": "/diagnostika-almaty/#konsultatsiya", "title": "Офтальмолог → диагностика" },
+    { "from": "/oftalmohirurg-almaty/", "to": "/diagnostika-almaty/#konsultatsiya", "title": "Офтальмохирург → диагностика" },
+    { "from": "/podbor-ochkov-almaty/", "to": "/diagnostika-almaty/#podbor-optik", "title": "Подбор очков → диагностика" },
+    { "from": "/podbor-linz-almaty/", "to": "/diagnostika-almaty/#podbor-optik", "title": "Подбор линз → диагностика" },
+
+    { "from": "/vspyshki-v-glazah-almaty/", "to": "/srochnye-simptomy-glaz-almaty/#vspyshki", "title": "Вспышки → срочные симптомы" },
+    { "from": "/mushki-pered-glazami-almaty/", "to": "/srochnye-simptomy-glaz-almaty/#mushki", "title": "Мушки → срочные симптомы" },
+    { "from": "/pelena-pered-glazom-almaty/", "to": "/srochnye-simptomy-glaz-almaty/#pelena", "title": "Пелена → срочные симптомы" },
+    { "from": "/rezkoe-uhudshenie-zreniya-almaty/", "to": "/srochnye-simptomy-glaz-almaty/#rezkoe", "title": "Резкое ухудшение → срочные симптомы" }
+  ],
+  "keep_and_rewrite": [
+    "/miopiya-almaty/",
+    "/dalnozorkost-almaty/",
+    "/astigmatizm-almaty/",
+    "/keratokonus-almaty/",
+    "/sukhoy-glaz-almaty/",
+    "/razryv-setchatki-almaty/",
+    "/otsloyka-setchatki-almaty/",
+    "/makulyarnyy-razryv-almaty/",
+    "/epiretinalnaya-membrana-almaty/",
+    "/intravitrealnye-inektsii-almaty/",
+    "/miopiya-u-detey-almaty/",
+    "/zamena-hrustalika-almaty/",
+    "/vtorichnaya-katarakta-almaty/",
+    "/vtoroe-mnenie-oftalmolog-almaty/"
+  ]
+}

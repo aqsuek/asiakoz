@@ -1,14 +1,14 @@
 {
   "https://asiakoz.com/": {
-    "hash": "e87b713b5a9fbe54",
+    "hash": "c73bdc8c4c7672be",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/": {
-    "hash": "c8e30a7488f87f94",
+    "hash": "974b6154d6476bcc",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/almaty/": {
-    "hash": "8f948ea740a4ebd8",
+    "hash": "a0704e770371bd1f",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/almaty/": {
@@ -24,7 +24,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/shymkent/": {
-    "hash": "fb7fec82ea403596",
+    "hash": "cf88bcd604b733b5",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/shymkent/": {
@@ -40,7 +40,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/uslugi/": {
-    "hash": "8b5ac3fb83975d5a",
+    "hash": "06cc72b51e9e16db",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/uslugi/": {
@@ -100,7 +100,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/deti-almaty/": {
-    "hash": "f42c20a6208b4cab",
+    "hash": "ebcb900612883ed3",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/detskiy-oftalmolog-almaty/": {
@@ -116,7 +116,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/diagnostika-almaty/": {
-    "hash": "0cd72865b4f8e8a7",
+    "hash": "5040bd16c86a28a8",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/epiretinalnaya-membrana-almaty/": {
@@ -148,7 +148,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/katarakta-almaty/": {
-    "hash": "4eb9721eb6fa7c18",
+    "hash": "432bb6d60f036cfa",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/keratokonus-almaty/": {
@@ -160,7 +160,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kosoglazie/": {
-    "hash": "efa89bdfa6c92fde",
+    "hash": "6ee11fa045dd944e",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kosoglazie-aktau/": {
@@ -176,7 +176,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/lazer-almaty/": {
-    "hash": "3bf6f08834c30d0d",
+    "hash": "6c038a42f6d03b76",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/lazernaya-koagulyatsiya-setchatki-almaty/": {
@@ -344,7 +344,11 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/aktau/": {
-    "hash": "a4e72ec712f15846",
+    "hash": "f1c4f19f224834e8",
+    "lastmod": "2026-07-30"
+  },
+  "https://asiakoz.com/srochnye-simptomy-glaz-almaty/": {
+    "hash": "34b2cd7054508323",
     "lastmod": "2026-07-30"
   }
 }

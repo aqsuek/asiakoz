@@ -116,6 +116,8 @@
   },
   "notes": [
     "Shymkent has no active reception — do not list doctors under shymkent city until opening.",
-    "Surgery counts and education placeholders removed from listing until verified in profiles."
+    "Surgery counts and education placeholders removed from listing until verified in profiles.",
+    "TODO (medical editor): university/residency years, certificate numbers + expiry, license, schedule, lastReviewed date — only publish when document-verified.",
+    "TODO: do not publish unverified claim numbers (operations count, years of experience slogans)."
   ]
 }
