@@ -599,7 +599,7 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
 </head>
 <body>
   <div class="container">
-    <header class="header">
+    <header class="site-header">
       <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/kk/almaty/">Алматы</a>
@@ -611,7 +611,10 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
       </nav>
     </header>
     <nav class="breadcrumb"><a href="/kk/">Басты бет</a> / {meta['h1']}</nav>
-    {crawlable_block(branch_id, "kk", page_key)}
+    <section class="spa-hero">
+      <div class="spa-eyebrow">AsiaKoz</div>
+      {crawlable_block(branch_id, "kk", page_key)}
+    </section>
     <p><a class="btn" href="{wa}" target="_blank" rel="noopener">{cta}</a></p>
     <p><a href="{ru_url}">Орысша нұсқа / RU</a></p>
   </div>
@@ -971,6 +974,15 @@ def apply_url_merges() -> None:
         subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
 
 
+def restyle_static_pages() -> None:
+    import subprocess
+    import sys
+
+    script = ROOT / "scripts" / "restyle-static-pages.py"
+    if script.exists():
+        subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
+
+
 def main() -> None:
     print("=== AsiaKoz SEO build ===")
     lastmod_cache = load_lastmod()
@@ -1007,6 +1019,7 @@ def main() -> None:
         )
 
     patch_static_hreflang_hubs()
+    restyle_static_pages()
     write_llms()
     entries = collect_urls(lastmod_cache)
     write_sitemap(entries)

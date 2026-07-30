@@ -24,35 +24,33 @@
   </script>
   <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/css/style.css" />
-  <style>
-    .catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
-    .catalog-card{background:var(--card,#fff);border:1px solid rgba(15,23,42,.08);border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
-    .catalog-card h2{font-size:17px;margin:0 0 8px;font-weight:700}
-    .catalog-card p{margin:0 0 12px;font-size:14px;line-height:1.55;color:#475569}
-    .catalog-card .meta{font-size:12px;color:#64748b;margin-bottom:10px}
-    .catalog-card a.btn{display:inline-flex;font-size:13px;padding:8px 14px}
-    @media(max-width:700px){.catalog-grid{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
-    <header class="header">
+    <header class="site-header">
       <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/uslugi/">Услуги</a>
         <a href="/doctors/">Врачи</a>
         <a href="/almaty/">Алматы</a>
         <a href="/aktau/">Актау</a>
-        <a href="/#contacts">Контакты</a>
+        <a href="/shymkent/">Шымкент</a>
       </nav>
-      <a class="hreflang-switch" href="/kk/uslugi/" hreflang="kk">KZ</a>
+      <div class="header-right">
+        <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Записаться</a>
+        <a class="hreflang-switch" href="/kk/uslugi/" hreflang="kk">KZ</a>
+      </div>
     </header>
     <nav class="breadcrumb"><a href="/">Главная</a> / Услуги</nav>
 
+    <section class="spa-hero">
+      <div class="spa-eyebrow">AsiaKoz · Услуги</div>
+      <h1>Услуги AsiaKoz</h1>
+      <p>Краткий каталог направлений. Подробности, врачи и запись — на странице услуги. Алматы и Актау работают, Шымкент — скоро открытие.</p>
+    </section>
+
     <section class="section">
-      <h1 class="section-title">Услуги AsiaKoz</h1>
-      <p class="section-subtitle">Краткий каталог направлений. Подробности, врачи и запись — на странице услуги. Филиалы: Алматы (работает), Актау (работает), Шымкент — скоро открытие.</p>
 
       <div class="catalog-grid">
         <article class="catalog-card" id="diagnostika">
