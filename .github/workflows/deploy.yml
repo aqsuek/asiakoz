@@ -1,93 +1,16 @@
-# Push в main → заливка статики на хостинг по FTP.
-# GitHub → Settings → Secrets and variables → Actions — добавьте:
-#   FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
-# Если корень сайта не домашняя папка FTP — отредактируйте server-dir ниже (например public_html/).
+# NOTE:
+# This repository is currently served via GitHub Pages + custom domain.
+# FTP deployment is intentionally disabled to avoid false failing runs.
+# If migration to external hosting is needed later, reintroduce FTP deploy separately.
 
-name: Deploy site (FTP)
+name: Deploy site (disabled FTP)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
-concurrency:
-  group: asiakoz-ftp-deploy
-  cancel-in-progress: true
-
 jobs:
-  ftp-deploy:
+  noop:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Sync to hosting (attempt 1)
-        id: ftp_sync_1
-        continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ./
-          protocol: ftp
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.github/**
-          log-level: standard
-
-      - name: Sync to hosting (attempt 2)
-        id: ftp_sync_2
-        if: ${{ steps.ftp_sync_1.outcome == 'failure' }}
-        continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ./
-          protocol: ftp
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.github/**
-          log-level: standard
-
-      - name: Sync to hosting (attempt 3)
-        id: ftp_sync_3
-        if: ${{ steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' }}
-        continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ./
-          protocol: ftp
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.github/**
-          log-level: standard
-
-      - name: Validate FTP attempts
-        if: ${{ always() }}
-        run: |
-          ATTEMPT_1="${{ steps.ftp_sync_1.outcome }}"
-          ATTEMPT_2="${{ steps.ftp_sync_2.outcome }}"
-          ATTEMPT_3="${{ steps.ftp_sync_3.outcome }}"
-          echo "Attempt outcomes: #1=${ATTEMPT_1}, #2=${ATTEMPT_2}, #3=${ATTEMPT_3}"
-          if [[ "${ATTEMPT_1}" == "success" || "${ATTEMPT_2}" == "success" || "${ATTEMPT_3}" == "success" ]]; then
-            echo "At least one FTP sync attempt succeeded."
-            exit 0
-          fi
-          echo "All FTP deploy attempts failed."
-          exit 1
+      - name: Deployment mode
+        run: echo "GitHub Pages serves this repository directly; FTP deploy is disabled."
