@@ -42,7 +42,7 @@ jobs:
 
       - name: Sync to hosting (attempt 2)
         id: ftp_sync_2
-        if: steps.ftp_sync_1.outcome == 'failure'
+        if: ${{ steps.ftp_sync_1.outcome == 'failure' }}
         continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -61,7 +61,7 @@ jobs:
 
       - name: Sync to hosting (attempt 3)
         id: ftp_sync_3
-        if: steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure'
+        if: ${{ steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' }}
         continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -79,7 +79,7 @@ jobs:
           log-level: standard
 
       - name: Fail if all FTP attempts failed
-        if: steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' && steps.ftp_sync_3.outcome == 'failure'
+        if: ${{ steps.ftp_sync_1.outcome == 'failure' && steps.ftp_sync_2.outcome == 'failure' && (steps.ftp_sync_3.outcome == 'failure' || steps.ftp_sync_3.outcome == 'skipped') }}
         run: |
           echo "All FTP deploy attempts failed."
           exit 1
