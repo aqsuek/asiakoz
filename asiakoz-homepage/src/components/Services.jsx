@@ -3,11 +3,19 @@ import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
 import { waBookingUrl } from "../data/contacts";
-import { IS_HOME } from "../lib/branch";
+import { IS_AQTAU, IS_HOME } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { trackEvent } from "../lib/analytics";
 
 const HOME_PREVIEW = 6;
+/** Vision-correction laser is Almaty-only — never show on Aktau. */
+const LASER_CORRECTION_ID = "laser";
+
+function filterBranchServices(items, cityId) {
+  const hideLaser = IS_AQTAU || (IS_HOME && cityId === "aqtau");
+  if (!hideLaser) return items;
+  return items.filter((item) => item.id !== LASER_CORRECTION_ID);
+}
 
 export default function Services() {
   const { lang, t } = useLang();
@@ -27,9 +35,10 @@ export default function Services() {
     };
   }, [active]);
 
-  const allItems = t.services.items || [];
+  const allItems = filterBranchServices(t.services.items || [], cityId);
   const items = IS_HOME ? allItems.slice(0, HOME_PREVIEW) : allItems;
   const service = active ? allItems.find((item) => item.id === active) : null;
+
 
   const openService = (id) => {
     setActive(id);

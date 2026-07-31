@@ -52,6 +52,7 @@ def footer_kk() -> str:
           <div class="footer-title">Байланыс</div>
           <p>Алматы: <a href="tel:+77003600180" class="link">+7 700 360 01 80</a></p>
           <p>Ақтау: <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
+          <p>Шымкент: <a href="tel:+77080750180" class="link">+7 708 075 01 80</a> · <a href="tel:+77080760180" class="link">+7 708 076 01 80</a></p>
         </div>
       </div>
       <div class="footer-bottom">

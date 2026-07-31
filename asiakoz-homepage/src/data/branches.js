@@ -128,6 +128,12 @@ export const NETWORK_BRANCHES = [
     phoneDisplay: "+7 708 075 01 80",
     phoneTel: "+77080750180",
     phoneRaw: "77080750180",
+    phonesExtra: [
+      {
+        display: "+7 708 076 01 80",
+        tel: "+77080760180",
+      },
+    ],
     whatsapp: {
       number: "77080750180",
       url: "https://wa.me/77080750180",

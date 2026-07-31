@@ -26,6 +26,11 @@ const CLINIC_BY_BRANCH = {
         href: "tel:+77080750180",
         tel: "+77080750180",
       },
+      {
+        display: formatKzPhoneDisplay("+77080760180"),
+        href: "tel:+77080760180",
+        tel: "+77080760180",
+      },
     ],
     whatsapp: {
       number: "77080750180",

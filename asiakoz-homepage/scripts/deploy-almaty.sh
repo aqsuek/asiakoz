@@ -67,3 +67,35 @@ done
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$LIVE/scripts/build-seo.py"
+
+# Re-copy doctor shells from SEO-patched Almaty index (correct phones/schema)
+for id in "${DOCTOR_IDS[@]}"; do
+  mkdir -p "$TARGET/doctor/$id"
+  cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
+done
+python3 - <<PY
+from pathlib import Path
+import re
+root = Path(r"""$LIVE""")
+canon = {
+  "aliya": "https://asiakoz.com/doctor-aliya/",
+  "mehmet-esat-teker": "https://asiakoz.com/doctor-mehmet-esat-teker/",
+  "orel-talip": "https://asiakoz.com/doctor-orel/",
+}
+for doc_id, url in canon.items():
+  ru = root / "almaty" / "doctor" / doc_id / "index.html"
+  if not ru.exists():
+    continue
+  for p in (ru, root / "kk" / "almaty" / "doctor" / doc_id / "index.html"):
+    if p != ru:
+      p.parent.mkdir(parents=True, exist_ok=True)
+      p.write_text(ru.read_text(encoding="utf-8"), encoding="utf-8")
+    html = p.read_text(encoding="utf-8")
+    if 'name="robots"' in html:
+      html = re.sub(r'(name="robots" content=")[^"]*(")', r'\1noindex, follow\2', html, count=1, flags=re.I)
+    else:
+      html = html.replace("</title>", '</title>\n  <meta name="robots" content="noindex, follow" />', 1)
+    html = re.sub(r'(rel="canonical" href=")[^"]*(")', rf'\1{url}\2', html, count=1, flags=re.I)
+    p.write_text(html, encoding="utf-8")
+print("almaty doctor shells synced")
+PY

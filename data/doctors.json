@@ -102,10 +102,10 @@
       "roleRu": "Врач-офтальмолог",
       "roleKz": "Дәрігер-офтальмолог",
       "cities": ["aqtau"],
-      "tagsRu": ["Взрослые и дети", "Лазерная хирургия", "Оптометрия"],
-      "tagsKz": ["Ересектер мен балалар", "Лазерлік хирургия", "Оптометрия"],
+      "tagsRu": ["Взрослые и дети", "Оптометрия", "Детская офтальмология"],
+      "tagsKz": ["Ересектер мен балалар", "Оптометрия", "Балалар офтальмологиясы"],
       "image": "/images/doctor-nazgul.png",
-      "knowsAbout": ["pediatric ophthalmology", "optometry", "laser surgery"]
+      "knowsAbout": ["pediatric ophthalmology", "optometry"]
     }
   ],
   "redirects": {

@@ -5,7 +5,8 @@ APP="$(cd "$(dirname "$0")/.." && pwd)"
 # Live site root = parent of asiakoz-homepage (tomorrows-script)
 LIVE="$(cd "$APP/.." && pwd)"
 TARGET="$LIVE/shymkent"
-DOCTOR_IDS=(mehmet-esat-teker ali-keskin)
+# Coming soon: no assigned city doctors yet
+DOCTOR_IDS=()
 
 cd "$APP"
 npm run build
@@ -30,10 +31,12 @@ if [[ ! -f "$TARGET/index.html" ]]; then
 fi
 
 # SPA routes for doctor pages (GitHub Pages needs a real index.html per path)
-for id in "${DOCTOR_IDS[@]}"; do
-  mkdir -p "$TARGET/doctor/$id"
-  cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
-done
+if ((${#DOCTOR_IDS[@]})); then
+  for id in "${DOCTOR_IDS[@]}"; do
+    mkdir -p "$TARGET/doctor/$id"
+    cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
+  done
+fi
 
 SITEMAP="$LIVE/sitemap.xml"
 if [[ -f "$SITEMAP" ]] && ! grep -q 'asiakoz.com/shymkent/' "$SITEMAP"; then
@@ -52,10 +55,14 @@ fi
 
 echo "Deployed Shymkent landing -> $TARGET"
 echo "URL: https://asiakoz.com/shymkent/"
-echo "Doctor pages:"
-for id in "${DOCTOR_IDS[@]}"; do
-  echo "  https://asiakoz.com/shymkent/doctor/$id/"
-done
+if ((${#DOCTOR_IDS[@]})); then
+  echo "Doctor pages:"
+  for id in "${DOCTOR_IDS[@]}"; do
+    echo "  https://asiakoz.com/shymkent/doctor/$id/"
+  done
+else
+  echo "Doctor pages: none (coming soon)"
+fi
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$LIVE/scripts/build-seo.py"
