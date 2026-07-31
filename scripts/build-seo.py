@@ -907,12 +907,13 @@ def patch_static_hreflang_hubs() -> None:
         html = replace_title_desc(html, meta["title"], meta["description"])
         html = set_canonical(html, ru_url)
         html = inject_hreflang(html, ru_url, kk_url)
-        if "hreflang-switch" not in html:
-            html = html.replace(
-                "</nav>",
-                f'</nav>\n      <a class="hreflang-switch" href="{kk_url}" hrefLang="kk">KZ</a>',
-                1,
-            )
+        # Remove legacy lone KZ link (lang switch lives in .lang-switch / SPA header)
+        html = re.sub(
+            r'\s*<a class="hreflang-switch"[^>]*>KZ</a>',
+            "",
+            html,
+            flags=re.I,
+        )
         ru_path.write_text(html, encoding="utf-8")
         # Full KK catalog pages are written by scripts/write-kk-catalogs.py (not thin hubs)
 
