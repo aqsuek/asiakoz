@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
@@ -13,64 +12,6 @@ import {
   phoneHref,
 } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
-
-function LazyMap({ title, embedUrl, fallbackLabel, openLabel, openUrl, onOpen }) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-  const [failed, setFailed] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return undefined;
-    const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          io.disconnect();
-        }
-      },
-      { rootMargin: "120px" },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className="overflow-hidden rounded-[1.5rem] border border-ink/[0.06] bg-white shadow-soft"
-    >
-      {visible && embedUrl && !failed ? (
-        <iframe
-          title={title}
-          src={embedUrl}
-          className="h-[240px] w-full border-0 sm:h-[320px]"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          allowFullScreen
-          onError={() => setFailed(true)}
-        />
-      ) : (
-        <div className="flex h-[240px] flex-col items-center justify-center gap-3 bg-gradient-to-b from-brand-soft to-surface-muted px-5 text-center sm:h-[280px]">
-          <span className="text-xs font-semibold uppercase tracking-wider text-brand">AsiaKoz</span>
-          <p className="max-w-xs text-sm text-ink-muted">{fallbackLabel}</p>
-          {openUrl && (
-            <a
-              href={openUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={onOpen}
-              className="btn-outline min-h-11 !px-4 !py-2 text-sm"
-            >
-              <Icon name="map" className="h-4 w-4" />
-              {openLabel}
-            </a>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
 
 export default function Contacts() {
   const { lang, t } = useLang();
@@ -127,22 +68,7 @@ export default function Contacts() {
             })}
           </div>
 
-          <div className="grid gap-4 lg:grid-cols-2">
-            <LazyMap
-              title={t.contacts.mapTitle}
-              embedUrl={branch.gis.embedUrl}
-              fallbackLabel={t.contacts.mapFallback}
-              openLabel={t.contacts.mapOpen}
-              openUrl={branch.gis.searchUrl}
-              onOpen={() =>
-                trackEvent("map_open", {
-                  city: cityId,
-                  button_location: "contacts_fallback",
-                  page_url: window.location.href,
-                })
-              }
-            />
-
+          <div className="mx-auto max-w-xl">
             <div className="flex flex-col justify-center rounded-[1.5rem] border border-ink/[0.06] bg-white p-5 shadow-soft sm:p-7">
               <ul className="space-y-3.5">
                 <li className="flex gap-3">
@@ -281,7 +207,6 @@ export default function Contacts() {
   }
 
   const address = clinicAddress(lang);
-  const showMap = !IS_LASER;
 
   return (
     <section id="contacts" className="scroll-mt-header bg-surface-muted py-7 pb-16 sm:py-10 sm:pb-10">
@@ -290,17 +215,7 @@ export default function Contacts() {
           {t.contacts.title}
         </h2>
 
-        <div className={`grid gap-5 ${showMap ? "lg:grid-cols-2" : "mx-auto max-w-xl"}`}>
-          {showMap && (
-            <LazyMap
-              title={t.contacts.mapTitle}
-              embedUrl={CLINIC.gis.embedUrl}
-              fallbackLabel={t.contacts.mapFallback || address}
-              openLabel={t.contacts.route}
-              openUrl={CLINIC.gis.searchUrl}
-            />
-          )}
-
+        <div className="mx-auto max-w-xl">
           <div className="flex flex-col justify-center rounded-[1.75rem] border border-ink/[0.06] bg-white p-5 pb-6 shadow-card sm:p-8">
             <ul className="space-y-4">
               <li className="flex gap-3.5">
@@ -356,15 +271,17 @@ export default function Contacts() {
             </ul>
 
             <div className="mt-6 flex flex-col gap-2.5">
-              <a
-                href={CLINIC.gis.routeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline min-h-11 w-full !py-3"
-              >
-                <Icon name="map" className="h-4 w-4" />
-                {t.contacts.route}
-              </a>
+              {!IS_LASER && (
+                <a
+                  href={CLINIC.gis.routeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline min-h-11 w-full !py-3"
+                >
+                  <Icon name="map" className="h-4 w-4" />
+                  {t.contacts.route}
+                </a>
+              )}
               <a
                 href={waBookingUrl(lang)}
                 target="_blank"
