@@ -391,74 +391,62 @@ def write_uslugi_catalog() -> None:
       <div class="catalog-grid">
         <article class="catalog-card" id="diagnostika">
           <h2>Диагностика зрения</h2>
-          <p class="meta">Филиал: Алматы · Актау</p>
           <p>Полный осмотр: острота зрения, давление, глазное дно и дополнительные методы по показаниям. Нужна как перед операцией, так и при жалобах на зрение.</p>
           <a class="btn" href="/diagnostika-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="lazer">
           <h2>Лазерная коррекция</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>SMILE, Femto-LASIK/LASIK и PRK/LASEK — метод выбираем после диагностики. Подходит не всем: решение принимает врач по параметрам роговицы и противопоказаниям.</p>
           <a class="btn" href="/lazer-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="katarakta">
           <h2>Катаракта</h2>
-          <p class="meta">Филиал: Алматы · Актау</p>
           <p>Диагностика, подбор ИОЛ и факоэмульсификация. Сравниваем монофокальные, торические и мультифокальные линзы по показаниям пациента.</p>
           <a class="btn" href="/katarakta-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="vitrektomiya">
           <h2>Витрэктомия</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Хирургия стекловидного тела и сетчатки при отслойке, кровоизлияниях и других показаниях. Тактика — после обследования витреоретинолога.</p>
           <a class="btn" href="/vitrektomiya-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="glaukoma">
           <h2>Глаукома</h2>
-          <p class="meta">Филиал: Алматы · Актау</p>
           <p>Контроль внутриглазного давления, поле зрения, ОКТ. Лечение: капли, лазер или операция — по стадии и ответу на терапию.</p>
           <a class="btn" href="/glaukoma-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="kosoglazie">
           <h2>Косоглазие</h2>
-          <p class="meta">Филиал: Алматы · Актау</p>
           <p>Диагностика и хирургия косоглазия у детей и взрослых. В Актау — отдельная страница с врачами и записью филиала.</p>
           <a class="btn" href="/kosoglazie/">Алматы</a>
           <a class="btn btn-outline" href="/kosoglazie-aktau/" style="margin-left:6px;">Актау</a>
         </article>
         <article class="catalog-card" id="icl">
           <h2>ICL</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Имплантация факичных линз — альтернатива лазерной коррекции при высоких степенях нарушения или тонкой роговице, по показаниям.</p>
           <a class="btn" href="/icl-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="deti">
           <h2>Детская офтальмология</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Осмотр детей, профосмотры, астигматизм и контроль миопии. План наблюдения или лечения — после приёма детского офтальмолога.</p>
           <a class="btn" href="/deti-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="retinopatiya">
           <h2>Диабетическая ретинопатия</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Осмотр глазного дна, ОКТ и лечение осложнений диабета со стороны сетчатки по результатам обследования.</p>
           <a class="btn" href="/diabeticheskaya-retinopatiya-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="setchatka">
           <h2>Сетчатка / Retina</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Hub по заболеваниям сетчатки: разрывы, отслойка, макулярные изменения. Отсюда — к профильным страницам и витрэктомии.</p>
           <a class="btn" href="/setchatka-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card" id="srochno">
           <h2>Срочные симптомы</h2>
-          <p class="meta">Филиал: Алматы</p>
           <p>Вспышки, мушки, пелена, резкое ухудшение зрения — когда лучше обратиться к офтальмологу без откладывания.</p>
           <a class="btn" href="/srochnye-simptomy-glaz-almaty/">Подробнее</a>
         </article>
         <article class="catalog-card">
           <h2>Врачи</h2>
-          <p class="meta">Алматы · Актау</p>
           <p>Каталог офтальмологов и хирургов сети AsiaKoz. Выберите врача и запишитесь через WhatsApp филиала.</p>
           <a class="btn" href="/doctors/">Каталог врачей</a>
         </article>
