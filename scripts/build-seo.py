@@ -553,8 +553,66 @@ def patch_spa_shell(path: Path, page_key: str, lang: str, branch_id: str | None,
     path.write_text(html, encoding="utf-8")
 
 
+def write_kk_spa_shell(ru_path: Path, kk_path: Path, page_key: str, branch_id: str | None, ru_url: str, kk_url: str) -> None:
+    """Copy RU SPA shell under /kk/… so Kazakh URLs load the same React app (assets stay absolute)."""
+    if not ru_path.exists():
+        print(f"skip kk spa (missing ru): {ru_path}")
+        return
+    html = ru_path.read_text(encoding="utf-8")
+    if 'id="root"' not in html:
+        # Fallback only if RU page is not an SPA
+        write_kk_hub_from_ru(ru_path, kk_path, page_key, branch_id, ru_url, kk_url)
+        return
+
+    meta = PAGE_META[page_key]["kk"]
+    html = set_lang(html, "kk")
+    html = ensure_robots(html, "index, follow, max-image-preview:large")
+    html = replace_title_desc(html, meta["title"], meta["description"])
+    html = set_canonical(html, kk_url)
+    html = inject_hreflang(html, ru_url, kk_url)
+    html = re.sub(
+        r'(property="og:url" content=")[^"]*(")',
+        rf"\1{kk_url}\2",
+        html,
+        count=1,
+        flags=re.I,
+    )
+    html = re.sub(
+        r'(property="og:locale" content=")[^"]*(")',
+        r"\1kk_KZ\2",
+        html,
+        count=1,
+        flags=re.I,
+    )
+    if page_key == "home":
+        html = put_jsonld(html, schema_organization())
+    elif page_key == "shymkent":
+        html = put_jsonld(html, schema_shymkent("kk"))
+    elif branch_id in ("almaty", "aqtau"):
+        html = put_jsonld(html, schema_clinic(branch_by_id(branch_id), "kk"))
+    html = inject_seo_static(html, crawlable_block(branch_id, "kk", page_key))
+
+    kk_path.parent.mkdir(parents=True, exist_ok=True)
+    kk_path.write_text(html, encoding="utf-8")
+    print(f"kk spa: {kk_path.relative_to(ROOT)}")
+
+    # Mirror doctor SPA shells so /kk/{branch}/doctor/{id}/ keeps language
+    doctors_dir = ru_path.parent / "doctor"
+    if doctors_dir.is_dir():
+        for doc in doctors_dir.iterdir():
+            src = doc / "index.html"
+            if not src.is_file():
+                continue
+            dest = kk_path.parent / "doctor" / doc.name / "index.html"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            # Doctor shells stay noindex via noindex_doctor_spa_shells(); copy SPA shell as-is for UX
+            dhtml = src.read_text(encoding="utf-8")
+            if 'id="root"' in dhtml:
+                dest.write_text(dhtml, encoding="utf-8")
+
+
 def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id: str | None, ru_url: str, kk_url: str) -> None:
-    """Create indexable KK hub as static HTML (no SPA JS — avoids /kk base-path breakage)."""
+    """Legacy thin KK hub — only used if RU page is not an SPA."""
     kk_path.parent.mkdir(parents=True, exist_ok=True)
     meta = PAGE_META[page_key]["kk"]
     b = branch_by_id(branch_id) if branch_id else None
@@ -600,7 +658,7 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
 <body>
   <div class="container">
     <header class="site-header">
-      <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
+      <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/kk/almaty/">Алматы</a>
         <a href="/kk/aqtau/">Ақтау</a>
@@ -954,7 +1012,17 @@ DOCTOR_SPA_CANONICAL = {
 
 
 def noindex_doctor_spa_shells() -> None:
-    for rel, canonical in DOCTOR_SPA_CANONICAL.items():
+    items = list(DOCTOR_SPA_CANONICAL.items())
+    for rel, canonical in list(DOCTOR_SPA_CANONICAL.items()):
+        parts = rel.split("/")
+        city = parts[0]
+        rest = "/".join(parts[1:])
+        if city == "aktau":
+            items.append((f"kk/aqtau/{rest}", canonical))
+        elif city in ("almaty", "shymkent"):
+            items.append((f"kk/{city}/{rest}", canonical))
+
+    for rel, canonical in items:
         path = ROOT / rel / "index.html"
         if not path.exists():
             continue
@@ -1013,11 +1081,11 @@ def main() -> None:
             f"{SITE}{b['kkHref']}",
         )
 
-    # KK hubs (static)
-    write_kk_hub_from_ru(ROOT / "index.html", ROOT / "kk" / "index.html", "home", None, f"{SITE}/", f"{SITE}/kk/")
+    # KK SPA shells (same React app as RU, Kazakh URL + lang detection)
+    write_kk_spa_shell(ROOT / "index.html", ROOT / "kk" / "index.html", "home", None, f"{SITE}/", f"{SITE}/kk/")
     for bid in ("almaty", "aqtau", "shymkent"):
         b = branch_by_id(bid)
-        write_kk_hub_from_ru(
+        write_kk_spa_shell(
             ROOT / branch_dir_name(bid) / "index.html",
             ROOT / "kk" / bid / "index.html",
             bid,
@@ -1025,6 +1093,9 @@ def main() -> None:
             f"{SITE}{b['pageHref']}",
             f"{SITE}{b['kkHref']}",
         )
+
+    # Doctor SPA shells under /kk/… created above — apply noindex after copy
+    noindex_doctor_spa_shells()
 
     patch_static_hreflang_hubs()
     write_kk_catalogs()

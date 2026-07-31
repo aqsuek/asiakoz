@@ -6,10 +6,11 @@ const LOGO_SRC = `${import.meta.env.BASE_URL}images/logo-asiakoz.png`;
 export default function Logo({ className = "", compact = false }) {
   const { lang } = useLang();
   const label = lang === "ru" ? "AsiaKoz — главный сайт" : "AsiaKoz — негізгі сайт";
+  const href = lang === "kz" ? `${MAIN_SITE}kk/` : MAIN_SITE;
 
   return (
     <a
-      href={MAIN_SITE}
+      href={href}
       className={`inline-flex max-w-[58%] items-center transition-opacity hover:opacity-85 sm:max-w-none ${className}`}
       aria-label={label}
     >

@@ -362,7 +362,7 @@ def write_uslugi_catalog() -> None:
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <header class="site-header">
-      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
+      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
         <a href="/uslugi/">Услуги</a>
         <a href="/doctors/">Врачи</a>
@@ -371,8 +371,11 @@ def write_uslugi_catalog() -> None:
         <a href="/shymkent/">Шымкент</a>
       </nav>
       <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Язык">
+          <a href="/kk/uslugi/" hrefLang="kk">KZ</a>
+          <a class="is-active" hrefLang="ru" aria-current="page">RU</a>
+        </div>
         <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Записаться</a>
-        <a class="hreflang-switch" href="/kk/uslugi/" hreflang="kk">KZ</a>
       </div>
     </header>
     <nav class="breadcrumb"><a href="/">Главная</a> / Услуги</nav>

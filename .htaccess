@@ -73,6 +73,10 @@ RewriteRule ^(.+[^/])$ /$1/ [L,R=301]
 
 
 
+
+
+
+
 # Thin page merges → hub pages
 RewriteRule ^smile\-almaty/?$ /lazer-almaty/ [L,R=301]
 RewriteRule ^femto\-lasik\-almaty/?$ /lazer-almaty/ [L,R=301]

@@ -89,7 +89,7 @@ export default function BranchCities() {
                 <div className="relative z-10 mt-3 flex flex-wrap gap-2">
                   {!soon && (
                     <a
-                      href={branch.pageHref}
+                      href={lang === "kz" ? branch.kkHref : branch.pageHref}
                       onClick={() =>
                         trackEvent("service_open", {
                           city: branch.id,

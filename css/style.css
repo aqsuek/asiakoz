@@ -193,7 +193,44 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 480px) {
   .logo-wordmark { display: none; }
 }
-.header-right { display: flex; align-items: center; gap: 20px; }
+.header-right { display: flex; align-items: center; gap: 12px; }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #f4f7f8;
+}
+.lang-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+  text-decoration: none;
+}
+.lang-switch a.is-active,
+.lang-switch a[aria-current="page"] {
+  background: #fff;
+  color: var(--brand, #00a9c1);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+.lang-switch a:hover { color: var(--text, #0f172a); }
+.hreflang-switch {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand, #00a9c1);
+  text-decoration: none;
+}
 .header-contacts { text-align: right; font-size: 14px; }
 .header-phone { font-weight: 600; color: var(--text); margin-bottom: 4px; }
 .header-whatsapp { font-size: 13px; color: var(--accent); }

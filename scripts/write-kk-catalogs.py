@@ -17,15 +17,18 @@ def header_kk(active: str, ru_url: str) -> str:
     return f"""    <header class="site-header">
       <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
       <nav class="header-nav">
+        <a href="/kk/uslugi/"{' aria-current="page"' if active=='uslugi' else ''}>Қызметтер</a>
+        <a href="/kk/doctors/"{' aria-current="page"' if active=='doctors' else ''}>Дәрігерлер</a>
         <a href="/kk/almaty/">Алматы</a>
         <a href="/kk/aqtau/">Ақтау</a>
         <a href="/kk/shymkent/">Шымкент</a>
-        <a href="/kk/uslugi/"{' aria-current="page"' if active=='uslugi' else ''}>Қызметтер</a>
-        <a href="/kk/doctors/"{' aria-current="page"' if active=='doctors' else ''}>Дәрігерлер</a>
       </nav>
       <div class="header-right">
+        <div class="lang-switch" role="group" aria-label="Тіл">
+          <a class="is-active" hrefLang="kk" aria-current="page">KZ</a>
+          <a href="{ru_url}" hrefLang="ru">RU</a>
+        </div>
         <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Жазылу</a>
-        <a href="{ru_url}" class="hreflang-switch" hreflang="ru">RU</a>
       </div>
     </header>"""
 

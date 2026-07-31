@@ -105,7 +105,7 @@ export default function Footer() {
               {NETWORK_BRANCHES.map((branch) => (
                 <a
                   key={branch.id}
-                  href={branch.pageHref}
+                  href={lang === "kz" ? branch.kkHref : branch.pageHref}
                   className="rounded-[1.25rem] border border-ink/[0.06] bg-surface-muted/60 px-4 py-3.5 text-sm text-ink-muted transition-colors hover:border-brand/40"
                 >
                   <p className="flex items-center gap-2 font-semibold text-ink">

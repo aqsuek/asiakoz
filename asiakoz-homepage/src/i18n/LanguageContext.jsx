@@ -27,19 +27,34 @@ function detectInitialLang() {
   return "ru";
 }
 
-/** Map current path between RU and /kk/ variants */
+function withTrailingSlash(p) {
+  if (!p || p === "/") return "/";
+  return p.endsWith("/") ? p : `${p}/`;
+}
+
+/** Map current path between RU and /kk/ variants (Aktau: /aktau/ ↔ /kk/aqtau/). */
 export function languagePath(lang, pathname = "") {
   const path = pathname || (typeof window !== "undefined" ? window.location.pathname : "/");
   const clean = path.split("?")[0].split("#")[0] || "/";
   if (lang === "kz") {
-    if (pathIsKk(clean)) return clean.endsWith("/") || clean === "/kk" ? clean : `${clean}/`;
+    if (pathIsKk(clean)) return withTrailingSlash(clean === "/kk" ? "/kk/" : clean);
+    // RU Aktau canonical → KK marketing slug
+    if (clean === "/aktau" || clean.startsWith("/aktau/")) {
+      return withTrailingSlash(clean.replace(/^\/aktau/, "/kk/aqtau"));
+    }
+    if (clean === "/aqtau" || clean.startsWith("/aqtau/")) {
+      return withTrailingSlash(clean.replace(/^\/aqtau/, "/kk/aqtau"));
+    }
     if (clean === "/") return "/kk/";
-    return `/kk${clean.endsWith("/") ? clean : `${clean}/`}`;
+    return `/kk${withTrailingSlash(clean)}`;
   }
   // ru
-  if (!pathIsKk(clean)) return clean.endsWith("/") || clean === "/" ? clean : `${clean}/`;
+  if (!pathIsKk(clean)) return withTrailingSlash(clean);
+  if (clean === "/kk/aqtau" || clean.startsWith("/kk/aqtau/") || clean === "/kk/aktau" || clean.startsWith("/kk/aktau/")) {
+    return withTrailingSlash(clean.replace(/^\/kk\/(aqtau|aktau)/, "/aktau"));
+  }
   const stripped = clean.replace(/^\/kk/, "") || "/";
-  return stripped.endsWith("/") || stripped === "/" ? stripped : `${stripped}/`;
+  return withTrailingSlash(stripped);
 }
 
 export function LanguageProvider({ children }) {
