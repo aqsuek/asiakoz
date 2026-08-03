@@ -41,16 +41,14 @@ function DoctorCard({ doctor, lang, t, cityId }) {
             page_url: window.location.href,
           })
         }
-        className={`relative block shrink-0 overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted ${
+        className={`relative block aspect-[3/4] w-full shrink-0 overflow-hidden bg-gradient-to-b from-brand-soft to-surface-muted lg:aspect-auto lg:self-stretch ${
           IS_HOME ? "lg:w-[168px] lg:min-h-[240px]" : "lg:w-[200px] lg:min-h-[280px]"
         }`}
       >
         <img
           src={assetUrl(doctor.image)}
           alt={doctor.name}
-          className={`aspect-[4/5] w-full object-cover object-[center_15%] lg:absolute lg:inset-0 lg:aspect-auto lg:h-full lg:max-h-none ${
-            IS_HOME ? "max-h-[150px] sm:max-h-[200px]" : "max-h-[180px] sm:max-h-[260px]"
-          }`}
+          className="absolute inset-0 h-full w-full object-cover object-[center_18%]"
           width={400}
           height={500}
           loading="lazy"

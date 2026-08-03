@@ -57,35 +57,39 @@ export default function Services() {
           <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.services.subtitle}</p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+        <div className="grid gap-2 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
           {items.map((item) => (
             <article
               key={item.id}
-              className={`flex flex-col border border-ink/[0.06] bg-white shadow-soft transition-all duration-300 hover:border-brand/20 ${
+              className={`flex border border-ink/[0.06] bg-white shadow-soft transition-all duration-300 hover:border-brand/20 ${
                 IS_HOME
-                  ? "rounded-[1.5rem] p-5 sm:p-6"
-                  : "rounded-3xl p-6 hover:-translate-y-0.5 hover:shadow-card"
+                  ? "flex-row items-start gap-3 rounded-2xl p-3.5 sm:flex-col sm:gap-0 sm:rounded-[1.5rem] sm:p-6"
+                  : "flex-row items-start gap-3 rounded-2xl p-3.5 hover:-translate-y-0.5 hover:shadow-card sm:flex-col sm:gap-0 sm:rounded-3xl sm:p-6"
               }`}
             >
               <div
-                className={`mb-3 flex items-center justify-center rounded-2xl bg-brand text-white ${
-                  IS_HOME ? "h-12 w-12" : "mb-4 h-11 w-11"
+                className={`flex shrink-0 items-center justify-center rounded-xl bg-brand text-white sm:mb-3 sm:rounded-2xl ${
+                  IS_HOME ? "h-9 w-9 sm:h-12 sm:w-12" : "h-9 w-9 sm:mb-4 sm:h-11 sm:w-11"
                 }`}
               >
-                <Icon name={item.icon} className="h-5 w-5" />
+                <Icon name={item.icon} className="h-4 w-4 sm:h-5 sm:w-5" />
               </div>
-              <h3 className="text-[15px] font-bold leading-snug text-ink sm:text-lg">
-                {item.title}
-              </h3>
-              <p className="mt-1.5 flex-1 text-sm leading-snug text-ink-muted">{item.short}</p>
-              <button
-                type="button"
-                onClick={() => openService(item.id)}
-                className="btn-ghost mt-3 self-start !px-0 text-sm"
-              >
-                {t.services.more}
-                <Icon name="arrow" className="h-4 w-4" />
-              </button>
+              <div className="min-w-0 flex-1">
+                <h3 className="text-[15px] font-bold leading-snug text-ink sm:text-lg">
+                  {item.title}
+                </h3>
+                <p className="mt-0.5 text-xs leading-snug text-ink-muted sm:mt-1.5 sm:flex-1 sm:text-sm">
+                  {item.short}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => openService(item.id)}
+                  className="btn-ghost mt-1.5 self-start !px-0 text-xs sm:mt-3 sm:text-sm"
+                >
+                  {t.services.more}
+                  <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                </button>
+              </div>
             </article>
           ))}
         </div>
