@@ -1,5 +1,5 @@
 export const PHONE = "+7 700 360 01 80";
-export const PHONE_HREF = "tel:+77003600180";
+export const PHONE_HREF = "tel:+77008880180";
 export const WHATSAPP_URL =
   "https://wa.me/77003600180?text=" +
   encodeURIComponent("Здравствуйте! Хочу записаться в клинику Азиякоз.");

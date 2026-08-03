@@ -14,7 +14,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 ## Филиалы
 
-- AsiaKoz Алматы: Алматы, проспект Райымбека, 176А, тел. +7 700 360 01 80, WhatsApp https://wa.me/77003600180
+- AsiaKoz Алматы: Алматы, проспект Райымбека, 176А, тел. +7 700 888 01 80, WhatsApp https://wa.me/77003600180
   - RU: https://asiakoz.com/almaty/
   - KK: https://asiakoz.com/kk/almaty/
 - AsiaKoz Актау: Актау, 7А микрорайон, 11/3, тел. +7 775 863 01 80, WhatsApp https://wa.me/77758630180
@@ -49,7 +49,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 ## Контакты
 
-- Алматы: +7 700 360 01 80 / https://wa.me/77003600180
+- Алматы: +7 700 888 01 80 / https://wa.me/77003600180
 - Актау: +7 775 863 01 80 / https://wa.me/77758630180
 - Instagram: https://www.instagram.com/asiakoz.clinic/
 - Шымкент Instagram: https://www.instagram.com/asiakoz.shymkent/

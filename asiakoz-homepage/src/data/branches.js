@@ -52,9 +52,9 @@ export const NETWORK_BRANCHES = [
     addressRu: "Алматы, проспект Райымбека, 176А",
     summaryKz: "Лазерлік көру түзету, катаракта, толық диагностика",
     summaryRu: "Лазерная коррекция, катаракта, полная диагностика",
-    phoneDisplay: "+7 700 360 01 80",
-    phoneTel: "+77003600180",
-    phoneRaw: "77003600180",
+    phoneDisplay: "+7 700 888 01 80",
+    phoneTel: "+77008880180",
+    phoneRaw: "77008880180",
     whatsapp: {
       number: "77003600180",
       url: "https://wa.me/77003600180",

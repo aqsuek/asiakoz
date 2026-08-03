@@ -63,9 +63,9 @@ const CLINIC_BY_BRANCH = {
     heroImage: "images/clinic-building.png",
     phones: [
       {
-        display: formatKzPhoneDisplay("+77003600180"),
-        href: "tel:+77003600180",
-        tel: "+77003600180",
+        display: formatKzPhoneDisplay("+77008880180"),
+        href: "tel:+77008880180",
+        tel: "+77008880180",
       },
     ],
     whatsapp: {
@@ -94,9 +94,9 @@ const CLINIC_BY_BRANCH = {
     heroImage: "images/clinic-almaty-laser.png",
     phones: [
       {
-        display: formatKzPhoneDisplay("+77003600180"),
-        href: "tel:+77003600180",
-        tel: "+77003600180",
+        display: formatKzPhoneDisplay("+77008880180"),
+        href: "tel:+77008880180",
+        tel: "+77008880180",
       },
     ],
     whatsapp: {
@@ -155,7 +155,7 @@ const CLINIC_BY_BRANCH = {
     address: "Алматы, Райымбек даңғылы, 176А",
     addressRu: "Алматы, проспект Райымбека, 176А",
     addressKz: "Алматы, Райымбек даңғылы, 176А",
-    heroImage: "images/clinic-almaty-laser.png",
+    heroImage: "images/clinic-building.png",
     phones: NETWORK_BRANCHES.map((b) => ({
       display: b.phoneDisplay,
       href: phoneHref(b.phoneTel),

@@ -50,7 +50,7 @@ def footer_kk() -> str:
         </div>
         <div class="footer-col">
           <div class="footer-title">Байланыс</div>
-          <p>Алматы: <a href="tel:+77003600180" class="link">+7 700 360 01 80</a></p>
+          <p>Алматы: <a href="tel:+77008880180" class="link">+7 700 888 01 80</a></p>
           <p>Ақтау: <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
           <p>Шымкент: <a href="tel:+77080750180" class="link">+7 708 075 01 80</a> · <a href="tel:+77080760180" class="link">+7 708 076 01 80</a></p>
         </div>
@@ -131,7 +131,7 @@ def write_kk_uslugi() -> None:
     </section>
     <div class="cta-block">
       <h2>Кеңеске жазылу</h2>
-      <p>Алматы: <a href="tel:+77003600180">+7 700 360 01 80</a> · Ақтау: <a href="tel:+77758630180">+7 775 863 01 80</a></p>
+      <p>Алматы: <a href="tel:+77008880180">+7 700 888 01 80</a> · Ақтау: <a href="tel:+77758630180">+7 775 863 01 80</a></p>
       <a href="https://wa.me/77003600180" class="btn" target="_blank" rel="noopener">WhatsApp Алматы</a>
       <a href="https://wa.me/77758630180" class="btn btn-outline" target="_blank" rel="noopener" style="margin-left:8px;">WhatsApp Ақтау</a>
     </div>
@@ -202,7 +202,7 @@ def write_kk_doctors() -> None:
       </div>
     </section>
     <div class="spa-branch-grid">
-      <article class="spa-branch-card"><h2>Алматы</h2><p>Райымбек даңғылы, 176А</p><p><a class="link" href="tel:+77003600180">+7 700 360 01 80</a></p><p><a class="link" href="/kk/almaty/">Филиал беті →</a></p></article>
+      <article class="spa-branch-card"><h2>Алматы</h2><p>Райымбек даңғылы, 176А</p><p><a class="link" href="tel:+77008880180">+7 700 360 01 80</a></p><p><a class="link" href="/kk/almaty/">Филиал беті →</a></p></article>
       <article class="spa-branch-card"><h2>Ақтау</h2><p>7А ш/а, 11/3</p><p><a class="link" href="tel:+77758630180">+7 775 863 01 80</a></p><p><a class="link" href="/kk/aqtau/">Филиал беті →</a></p></article>
       <article class="spa-branch-card soon"><h2>Шымкент</h2><p>Жақында ашылады. Алдын ала жазылу.</p><p><a class="link" href="tel:+77080750180">+7 708 075 01 80</a></p><p><a class="link" href="/kk/shymkent/">Филиал беті →</a></p></article>
     </div>
