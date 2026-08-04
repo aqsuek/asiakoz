@@ -11,6 +11,8 @@ import { trackEvent } from "../lib/analytics";
 
 function DoctorCard({ doctor, lang, t, cityId }) {
   const profileUrl = doctor.profileUrl || doctorUrl(doctor.id);
+  const doctorCity =
+    Array.isArray(doctor.cities) && doctor.cities.length ? doctor.cities[0] : cityId;
   const bookExtra = IS_LASER
     ? lang === "ru"
       ? `Здравствуйте! Хочу записаться на консультацию по лазерной коррекции к доктору ${doctor.name}.`
@@ -18,7 +20,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
     : lang === "ru"
       ? `Врач: ${doctor.name}`
       : `Дәрігер: ${doctor.name}`;
-  const bookUrl = waBookingUrl(lang, bookExtra, IS_HOME ? { branchId: cityId } : {});
+  const bookUrl = waBookingUrl(lang, bookExtra, IS_HOME ? { branchId: doctorCity } : {});
   const stats = (doctor.stats || []).slice(0, IS_HOME ? 3 : 4);
 
   return (
@@ -37,7 +39,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
           trackEvent("doctor_open", {
             doctor_id: doctor.id,
             doctor_name: doctor.name,
-            city: IS_HOME ? cityId : undefined,
+            city: IS_HOME ? doctorCity : undefined,
             page_url: window.location.href,
           })
         }
@@ -63,7 +65,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
             trackEvent("doctor_open", {
               doctor_id: doctor.id,
               doctor_name: doctor.name,
-              city: IS_HOME ? cityId : undefined,
+              city: IS_HOME ? doctorCity : undefined,
               page_url: window.location.href,
             })
           }
@@ -113,7 +115,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
               language: lang,
               doctor_name: doctor.name,
               doctor_id: doctor.id,
-              city: IS_HOME ? cityId : undefined,
+              city: IS_HOME ? doctorCity : undefined,
               button_location: "doctors",
               page_url: window.location.href,
             })
@@ -134,10 +136,9 @@ export default function Doctors() {
   const trackRef = useRef(null);
   const [activeIdx, setActiveIdx] = useState(0);
 
+  // Network home shows all active-branch doctors; city picker does not filter this strip.
   const allDoctors = t.doctors.items || [];
-  const doctors = IS_HOME
-    ? allDoctors.filter((d) => !d.cities || d.cities.includes(cityId))
-    : allDoctors;
+  const doctors = allDoctors;
 
   const scrollBy = (dir) => {
     const el = trackRef.current;
