@@ -9,7 +9,7 @@ import { useCity } from "../context/CityContext";
 import { useLang } from "../i18n/LanguageContext";
 import { MAIN_INSTAGRAM } from "../data/branches";
 
-function VideoCard({ review, openLabel, playLabel, caption, cityLabel, onPlay, wide }) {
+function VideoCard({ review, openLabel, playLabel, caption, onPlay, wide }) {
   return (
     <article
       className={`flex shrink-0 flex-col overflow-hidden border border-ink/[0.06] bg-white shadow-soft ${
@@ -28,9 +28,6 @@ function VideoCard({ review, openLabel, playLabel, caption, cityLabel, onPlay, w
         onPlay={onPlay}
       />
       <div className="w-full space-y-1.5 p-3">
-        {cityLabel && (
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">{cityLabel}</p>
-        )}
         <p className="text-sm font-semibold leading-snug text-ink">
           {review.title || caption}
         </p>
@@ -71,9 +68,6 @@ export default function Reviews({ skipFirst = false }) {
 
   const igUrl = IS_HOME ? MAIN_INSTAGRAM.url : CLINIC.instagram.url;
   const gisUrl = IS_HOME ? branch.gis.searchUrl : CLINIC.gis.searchUrl;
-  // Videos are from @asiakoz.shymkent — label city honestly, do not invent procedure
-  const reviewCity =
-    lang === "ru" ? "Шымкент" : "Шымкент";
 
   return (
     <section id="reviews" className="scroll-mt-header overflow-x-clip bg-surface-muted py-7 sm:py-10">
@@ -119,7 +113,6 @@ export default function Reviews({ skipFirst = false }) {
               openLabel={t.reviews.openInIg}
               playLabel={t.reviews.play || t.laserFeaturedReview?.play || "Play"}
               caption={t.reviews.caption}
-              cityLabel={IS_HOME ? reviewCity : undefined}
               onPlay={() =>
                 trackEvent(IS_LASER ? "laser_video_play" : "review_open", {
                   language: lang,
