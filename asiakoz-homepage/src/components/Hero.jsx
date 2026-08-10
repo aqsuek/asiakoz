@@ -51,8 +51,8 @@ export default function Hero() {
             <p className="section-eyebrow mb-3 sm:mb-5">
               {IS_HOME
                 ? lang === "ru"
-                  ? "АЛМАТЫ · АКТАУ — РАБОТАЮТ"
-                  : "АЛМАТЫ · АҚТАУ — ЖҰМЫС ІСТЕЙДІ"
+                  ? "АЛМАТЫ · АКТАУ · ШЫМКЕНТ — РАБОТАЮТ"
+                  : "АЛМАТЫ · АҚТАУ · ШЫМКЕНТ — ЖҰМЫС ІСТЕЙДІ"
                 : CLINIC.city}
             </p>
             <h1 className="font-display text-[clamp(1.65rem,5.6vw,2.2rem)] font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">

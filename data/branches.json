@@ -93,7 +93,7 @@
     {
       "id": "shymkent",
       "slug": "shymkent",
-      "status": "coming-soon",
+      "status": "active",
       "nameRu": "AsiaKoz Шымкент",
       "nameKz": "AsiaKoz Шымкент",
       "cityRu": "Шымкент",
@@ -116,13 +116,13 @@
         "routeUrl": "https://2gis.kz/shymkent/search/%D0%91%D0%B0%D0%B9%D1%82%D2%B1%D1%80%D1%81%D1%8B%D0%BD%D0%BE%D0%B2%20%D0%BA%D3%A9%D1%88%D0%B5%D1%81%D1%96%2C%2086%2F7%2C%20%D0%A2%D2%B1%D1%80%D0%B0%D0%BD%2C%20%D0%A8%D1%8B%D0%BC%D0%BA%D0%B5%D0%BD%D1%82/tab/routes",
         "embedUrl": null
       },
-      "hoursRu": null,
-      "hoursKz": null,
+      "hoursRu": "Пн–Пт 09:00–17:00, Сб до 14:00",
+      "hoursKz": "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
       "geo": null,
-      "summaryRu": "Скоро открытие. Идёт предварительная запись",
-      "summaryKz": "Жақында ашылады. Алдын ала жазылу жүріп жатыр",
-      "statusTextRu": "Скоро открытие. Идёт предварительная запись",
-      "statusTextKz": "Жақында ашылады. Алдын ала жазылу жүріп жатыр",
+      "summaryRu": "Диагностика, катаракта, офтальмохирургия",
+      "summaryKz": "Диагностика, катаракта, офтальмохирургия",
+      "statusTextRu": "Работает",
+      "statusTextKz": "Жұмыс істейді",
       "doctorCities": []
     }
   ]

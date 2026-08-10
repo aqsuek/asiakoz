@@ -61,7 +61,7 @@ if ((${#DOCTOR_IDS[@]})); then
     echo "  https://asiakoz.com/shymkent/doctor/$id/"
   done
 else
-  echo "Doctor pages: none (coming soon)"
+  echo "Doctor pages: none yet"
 fi
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy

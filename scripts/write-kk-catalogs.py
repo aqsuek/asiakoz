@@ -38,7 +38,7 @@ def footer_kk() -> str:
       <div class="footer-inner">
         <div class="footer-col">
           <div class="footer-logo"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></div>
-          <p class="footer-desc">AsiaKoz. Алматы мен Ақтау жұмыс істейді. Шымкент — жақында ашылады.</p>
+          <p class="footer-desc">AsiaKoz. Алматы, Ақтау және Шымкент жұмыс істейді.</p>
         </div>
         <div class="footer-col">
           <div class="footer-title">Навигация</div>
@@ -122,7 +122,7 @@ def write_kk_uslugi() -> None:
     <section class="spa-hero">
       <div class="spa-eyebrow">AsiaKoz · Қызметтер</div>
       <h1>AsiaKoz қызметтері</h1>
-      <p>Бағыттардың қысқа каталогы. Толығырақ ақпарат пен жазылу — қызмет бетінде. Алматы мен Ақтау жұмыс істейді, Шымкент — жақында ашылады.</p>
+      <p>Бағыттардың қысқа каталогы. Толығырақ ақпарат пен жазылу — қызмет бетінде. Алматы, Ақтау және Шымкент жұмыс істейді.</p>
     </section>
     <section class="section">
       <div class="catalog-grid">
@@ -195,7 +195,7 @@ def write_kk_doctors() -> None:
     <section class="spa-hero">
       <div class="spa-eyebrow">AsiaKoz · Дәрігерлер</div>
       <h1>AsiaKoz дәрігерлері</h1>
-      <p>Қабылдау Алматы мен Ақтауда. Шымкент — жақында ашылады, алдын ала жазылу филиал бетінде.</p>
+      <p>Қабылдау Алматы, Ақтау және Шымкентте.</p>
       <div class="spa-actions">
         <a class="btn" href="https://wa.me/77003600180" target="_blank" rel="noopener">WhatsApp Алматы</a>
         <a class="btn btn-outline" href="https://wa.me/77758630180" target="_blank" rel="noopener">WhatsApp Ақтау</a>
@@ -204,7 +204,7 @@ def write_kk_doctors() -> None:
     <div class="spa-branch-grid">
       <article class="spa-branch-card"><h2>Алматы</h2><p>Райымбек даңғылы, 176А</p><p><a class="link" href="tel:+77008880180">+7 700 360 01 80</a></p><p><a class="link" href="/kk/almaty/">Филиал беті →</a></p></article>
       <article class="spa-branch-card"><h2>Ақтау</h2><p>7А ш/а, 11/3</p><p><a class="link" href="tel:+77758630180">+7 775 863 01 80</a></p><p><a class="link" href="/kk/aqtau/">Филиал беті →</a></p></article>
-      <article class="spa-branch-card soon"><h2>Шымкент</h2><p>Жақында ашылады. Алдын ала жазылу.</p><p><a class="link" href="tel:+77080750180">+7 708 075 01 80</a></p><p><a class="link" href="/kk/shymkent/">Филиал беті →</a></p></article>
+      <article class="spa-branch-card"><h2>Шымкент</h2><p>Жұмыс істейді.</p><p><a class="link" href="tel:+77080750180">+7 708 075 01 80</a></p><p><a class="link" href="/kk/shymkent/">Филиал беті →</a></p></article>
     </div>
     <section class="section">
       <h2 class="section-title">Дәрігерлер каталогы</h2>

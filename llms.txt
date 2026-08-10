@@ -10,7 +10,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 - Алматы — работает
 - Актау — работает
-- Шымкент — скоро открытие, идёт предварительная запись
+- Шымкент — работает
 
 ## Филиалы
 
@@ -20,7 +20,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 - AsiaKoz Актау: Актау, 7А микрорайон, 11/3, тел. +7 775 863 01 80, WhatsApp https://wa.me/77758630180
   - RU: https://asiakoz.com/aktau/
   - KK: https://asiakoz.com/kk/aqtau/
-- AsiaKoz Шымкент (Скоро открытие. Идёт предварительная запись): Шымкент, улица Байтурсынова, 86/7, мкр. Туран, тел. +7 708 075 01 80, WhatsApp https://wa.me/77080750180
+- AsiaKoz Шымкент: Шымкент, улица Байтурсынова, 86/7, мкр. Туран, тел. +7 708 075 01 80, WhatsApp https://wa.me/77080750180
   - RU: https://asiakoz.com/shymkent/
   - KK: https://asiakoz.com/kk/shymkent/
 
@@ -51,5 +51,6 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 - Алматы: +7 700 888 01 80 / https://wa.me/77003600180
 - Актау: +7 775 863 01 80 / https://wa.me/77758630180
+- Шымкент: +7 708 075 01 80 / https://wa.me/77080750180
 - Instagram: https://www.instagram.com/asiakoz.clinic/
 - Шымкент Instagram: https://www.instagram.com/asiakoz.shymkent/
