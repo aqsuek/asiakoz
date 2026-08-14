@@ -8,5 +8,15 @@
     "language": "ru",
     "session_id": "mssodrb1-zbrbe1dv",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786695601293-poaza9",
+    "ts": 1786695601293,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mssoexgj-cua5zfd5",
+    "referrer": "https://www.google.com/"
   }
 ]
