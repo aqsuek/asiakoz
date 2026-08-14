@@ -95,5 +95,15 @@
     "language": "ru",
     "session_id": "msssjazg-agfyah30",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786702661009-nsobok",
+    "ts": 1786702661009,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msssm9dn-qk1xl5s4",
+    "referrer": "https://l.instagram.com/"
   }
 ]
