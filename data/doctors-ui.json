@@ -1,62 +1,5 @@
 [
   {
-    "id": "mehmet-esat-teker",
-    "cities": [
-      "almaty"
-    ],
-    "profileUrl": "/laser/doctor/mehmet-esat-teker/",
-    "image": "images/doctors/mehmet-esat-teker.png",
-    "fromTurkey": true,
-    "nameRu": "Мехмет Есат Текер",
-    "nameKz": "Мехмет Есат Текер",
-    "branchRu": "Алматы · Лазерный хирург",
-    "branchKz": "Алматы · Лазерлік хирург",
-    "roleRu": "Ведущий офтальмолог и хирург",
-    "roleKz": "Жетекші офтальмолог-хирург",
-    "experienceRu": "5 000+ лазерных коррекций · 20+ лет опыта",
-    "experienceKz": "5 000+ лазерлік коррекция · 20+ жыл тәжірибе",
-    "leadRu": "Специалист из Турции. Основное направление — лазерная коррекция зрения.",
-    "leadKz": "Түркиядан келген маман. Негізгі бағыты — лазерлік көру коррекциясы.",
-    "bioRu": "Ведущий офтальмохирург с опытом в лазерной коррекции.",
-    "bioKz": "Лазерлік көру коррекциясы бағытында тәжірибесі бар жетекші офтальмохирург.",
-    "tagsRu": [
-      "Лазер",
-      "Диагностика"
-    ],
-    "tagsKz": [
-      "Лазер",
-      "Диагностика"
-    ],
-    "stats": [
-      {
-        "valueRu": "5 000+",
-        "valueKz": "5 000+",
-        "labelRu": "лазерных коррекций",
-        "labelKz": "лазерлік коррекция"
-      },
-      {
-        "valueRu": "20+",
-        "valueKz": "20+ жыл",
-        "labelRu": "лет опыта",
-        "labelKz": "тәжірибе"
-      },
-      {
-        "valueRu": "Специалист",
-        "valueKz": "Түркиядан",
-        "labelRu": "из Турции",
-        "labelKz": "маман"
-      }
-    ],
-    "specialties": [
-      {
-        "titleRu": "Лазерная коррекция",
-        "titleKz": "Лазерлік коррекция",
-        "textRu": "Миопия, астигматизм.",
-        "textKz": "Миопия, астигматизмді түзету."
-      }
-    ]
-  },
-  {
     "id": "orel-talip",
     "cities": [
       "almaty"
@@ -111,7 +54,9 @@
         "textRu": "Опыт 8 000+ коррекций.",
         "textKz": "8 000+ лазерлік коррекция."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   },
   {
     "id": "aliya",
@@ -170,7 +115,9 @@
         "textRu": "Близорукость, дальнозоркость, астигматизм.",
         "textKz": "Миопия, гиперметропия, астигматизм."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   },
   {
     "id": "musay",
@@ -221,7 +168,9 @@
         "textRu": "Организация диагностики и плана лечения.",
         "textKz": "Диагностика мен емдеу жоспарын ұйымдастыру."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   },
   {
     "id": "ali-keskin",
@@ -278,7 +227,9 @@
         "textRu": "Факоэмульсификация и ИОЛ.",
         "textKz": "Факоэмульсификация және ИОЛ."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   },
   {
     "id": "erol-joshkun",
@@ -337,7 +288,9 @@
         "textRu": "Факоэмульсификация и замена хрусталика.",
         "textKz": "Факоэмульсификация және линза ауыстыру."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   },
   {
     "id": "nazgul-sagyndykova",
@@ -396,6 +349,8 @@
         "textRu": "Полное обследование взрослых и детей.",
         "textKz": "Ересектер мен балаларға толық тексеру."
       }
-    ]
+    ],
+    "temporaryActive": false,
+    "temporaryUntil": null
   }
 ]
