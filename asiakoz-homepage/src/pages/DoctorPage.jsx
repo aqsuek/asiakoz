@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Icon from "../components/Icon";
 import WhatsAppIcon from "../components/WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
@@ -6,10 +6,25 @@ import { waBookingUrl } from "../data/contacts";
 import { assetUrl } from "../data/reviews";
 import { CLINIC } from "../data/contacts";
 import { homeUrl } from "../lib/routes";
+import { IS_HOME } from "../lib/branch";
+import { getDoctorById } from "../lib/doctors";
 
 export default function DoctorPage({ doctorId }) {
   const { lang, t } = useLang();
-  const doctor = t.doctors.items.find((item) => item.id === doctorId);
+  const [remoteDoctor, setRemoteDoctor] = useState(IS_HOME ? undefined : null);
+
+  useEffect(() => {
+    if (!IS_HOME) return undefined;
+    let cancelled = false;
+    getDoctorById(doctorId, lang).then((item) => {
+      if (!cancelled) setRemoteDoctor(item || null);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [doctorId, lang]);
+
+  const doctor = IS_HOME ? remoteDoctor : t.doctors.items.find((item) => item.id === doctorId);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,6 +38,14 @@ export default function DoctorPage({ doctorId }) {
       document.title = prev;
     };
   }, [doctor]);
+
+  if (IS_HOME && remoteDoctor === undefined) {
+    return (
+      <section className="section-container py-20 text-center">
+        <p className="text-ink-muted">{t.news?.loading || "Жүктелуде…"}</p>
+      </section>
+    );
+  }
 
   if (!doctor) {
     return (

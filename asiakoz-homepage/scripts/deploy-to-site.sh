@@ -41,6 +41,10 @@ if [[ -f "$APP/public/data/posts.json" ]]; then
   mkdir -p "$ROOT/data"
   cp "$APP/public/data/posts.json" "$ROOT/data/posts.json"
 fi
+if [[ -f "$APP/public/data/doctors-ui.json" ]]; then
+  mkdir -p "$ROOT/data"
+  cp "$APP/public/data/doctors-ui.json" "$ROOT/data/doctors-ui.json"
+fi
 
 # SPA shells for /news/ and article slugs (corporate homepage)
 mkdir -p "$ROOT/news"

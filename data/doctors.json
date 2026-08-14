@@ -1,111 +1,197 @@
 {
   "doctors": [
     {
-      "id": "orel-talip",
-      "slug": "doctor-orel",
-      "href": "/doctor-orel/",
-      "kkHref": "/kk/doctor-orel/",
-      "nameRu": "Орел Талип",
-      "nameKz": "Орел Талип",
-      "roleRu": "Витреоретинолог, офтальмолог-хирург",
-      "roleKz": "Витреоретинолог, офтальмолог-хирург",
-      "cities": ["almaty"],
-      "tagsRu": ["Косоглазие", "Витрэктомия", "Сетчатка"],
-      "tagsKz": ["Қылилық", "Витрэктомия", "Тор қабық"],
-      "image": "/images/doctor-orel.png",
-      "knowsAbout": ["vitreoretinal surgery", "strabismus", "retina"]
-    },
-    {
       "id": "mehmet-esat-teker",
       "slug": "doctor-mehmet-esat-teker",
-      "href": "/doctor-mehmet-esat-teker/",
-      "kkHref": "/kk/doctor-mehmet-esat-teker/",
+      "href": "/laser/doctor/mehmet-esat-teker/",
+      "kkHref": "/kk/laser/doctor/mehmet-esat-teker/",
       "nameRu": "Мехмет Есат Текер",
       "nameKz": "Мехмет Есат Текер",
-      "roleRu": "Офтальмолог-хирург",
-      "roleKz": "Офтальмолог-хирург",
-      "cities": ["almaty"],
-      "tagsRu": ["Лазерная коррекция", "Катаракта", "Глаукома"],
-      "tagsKz": ["Лазерлік түзету", "Катаракта", "Глаукома"],
-      "image": "/images/doctor-mehmet-esat-teker.png",
-      "knowsAbout": ["laser vision correction", "cataract", "glaucoma"],
+      "roleRu": "Ведущий офтальмолог и хирург",
+      "roleKz": "Жетекші офтальмолог-хирург",
+      "cities": [
+        "almaty"
+      ],
+      "tagsRu": [
+        "Лазер",
+        "Диагностика"
+      ],
+      "tagsKz": [
+        "Лазер",
+        "Диагностика"
+      ],
+      "image": "/images/doctors/mehmet-esat-teker.png",
+      "knowsAbout": [
+        "Лазер",
+        "Диагностика"
+      ],
       "fromTurkey": true
+    },
+    {
+      "id": "orel-talip",
+      "slug": "doctor-orel-talip",
+      "href": "/laser/doctor/orel-talip/",
+      "kkHref": "/kk/laser/doctor/orel-talip/",
+      "nameRu": "Орел Талип",
+      "nameKz": "Орел Талип",
+      "roleRu": "Офтальмохирург",
+      "roleKz": "Офтальмохирург",
+      "cities": [
+        "almaty"
+      ],
+      "tagsRu": [
+        "Лазер",
+        "FEBO"
+      ],
+      "tagsKz": [
+        "Лазер",
+        "FEBO"
+      ],
+      "image": "/images/doctors/orel-talip.png",
+      "knowsAbout": [
+        "Лазер",
+        "FEBO"
+      ]
     },
     {
       "id": "aliya",
       "slug": "doctor-aliya",
-      "href": "/doctor-aliya/",
-      "kkHref": "/kk/doctor-aliya/",
-      "nameRu": "Алия Усманова",
-      "nameKz": "Алия Усманова",
-      "roleRu": "Офтальмохирург",
-      "roleKz": "Офтальмохирург",
-      "cities": ["almaty"],
-      "tagsRu": ["Лазерная коррекция", "Катаракта"],
-      "tagsKz": ["Лазерлік түзету", "Катаракта"],
-      "image": "/images/doctor-aliya.png",
-      "knowsAbout": ["laser vision correction", "cataract"]
+      "href": "/almaty/doctor/aliya/",
+      "kkHref": "/kk/almaty/doctor/aliya/",
+      "nameRu": "Алия Ганимуратовна Усманова",
+      "nameKz": "Алия Ганимуратовна Усманова",
+      "roleRu": "Ведущий офтальмохирург высшей категории",
+      "roleKz": "Жетекші офтальмохирург, жоғары санат",
+      "cities": [
+        "almaty"
+      ],
+      "tagsRu": [
+        "Лазер",
+        "Катаракта",
+        "Блефаропластика"
+      ],
+      "tagsKz": [
+        "Лазер",
+        "Катаракта",
+        "Блефаропластика"
+      ],
+      "image": "/images/doctors/aliya.png",
+      "knowsAbout": [
+        "Лазер",
+        "Катаракта",
+        "Блефаропластика"
+      ]
     },
     {
       "id": "musay",
       "slug": "doctor-musay",
       "href": "/doctor-musay/",
       "kkHref": "/kk/doctor-musay/",
-      "nameRu": "Нұрмұхамед Мусай",
+      "nameRu": "Нурмухамед Мусай",
       "nameKz": "Нұрмұхамед Мусай",
       "roleRu": "Главный врач",
       "roleKz": "Бас дәрігер",
-      "cities": ["almaty"],
-      "tagsRu": ["Главный врач"],
-      "tagsKz": ["Бас дәрігер"],
-      "image": "/images/doctor-musay.png",
-      "knowsAbout": ["ophthalmology"]
+      "cities": [
+        "almaty"
+      ],
+      "tagsRu": [
+        "Главный врач",
+        "Алматы"
+      ],
+      "tagsKz": [
+        "Бас дәрігер",
+        "Алматы"
+      ],
+      "image": "/images/doctors/musay.png",
+      "knowsAbout": [
+        "Главный врач",
+        "Алматы"
+      ]
     },
     {
       "id": "ali-keskin",
       "slug": "doctor-ali-keskin",
-      "href": "/doctor-ali-keskin/",
-      "kkHref": "/kk/doctor-ali-keskin/",
+      "href": "/aktau/doctor/ali-keskin/",
+      "kkHref": "/kk/aktau/doctor/ali-keskin/",
       "nameRu": "Али Кескин",
       "nameKz": "Али Кескин",
-      "roleRu": "Офтальмолог-хирург",
-      "roleKz": "Офтальмолог-хирург",
-      "cities": ["aqtau"],
-      "tagsRu": ["Макула", "Косоглазие", "Сетчатка", "Глаукома"],
-      "tagsKz": ["Макула", "Қылилық", "Тор қабық", "Глаукома"],
-      "image": "/images/doctor-ali-keskin.png",
-      "knowsAbout": ["macula", "strabismus", "retina", "glaucoma"],
+      "roleRu": "Ведущий офтальмохирург",
+      "roleKz": "Жетекші офтальмохирург",
+      "cities": [
+        "aqtau"
+      ],
+      "tagsRu": [
+        "Катаракта",
+        "Хирургия"
+      ],
+      "tagsKz": [
+        "Катаракта",
+        "Хирургия"
+      ],
+      "image": "/images/doctors/ali-keskin.png",
+      "knowsAbout": [
+        "Катаракта",
+        "Хирургия"
+      ],
       "fromTurkey": true
     },
     {
       "id": "erol-joshkun",
-      "slug": "doctor-erol",
-      "href": "/doctor-erol/",
-      "kkHref": "/kk/doctor-erol/",
+      "slug": "doctor-erol-joshkun",
+      "href": "/aktau/doctor/erol-joshkun/",
+      "kkHref": "/kk/aktau/doctor/erol-joshkun/",
       "nameRu": "Эрол Джошкун",
       "nameKz": "Эрол Джошкун",
       "roleRu": "Офтальмолог-хирург",
       "roleKz": "Офтальмолог-хирург",
-      "cities": ["aqtau"],
-      "tagsRu": ["Косоглазие", "Катаракта", "Глаукома"],
-      "tagsKz": ["Қылилық", "Катаракта", "Глаукома"],
-      "image": "/images/doctor-erol.png",
-      "knowsAbout": ["strabismus", "cataract", "glaucoma"]
+      "cities": [
+        "aqtau"
+      ],
+      "tagsRu": [
+        "Катаракта",
+        "Глаукома",
+        "Косоглазие"
+      ],
+      "tagsKz": [
+        "Катаракта",
+        "Глаукома",
+        "Қылилық"
+      ],
+      "image": "/images/doctors/erol-joshkun.png",
+      "knowsAbout": [
+        "Катаракта",
+        "Глаукома",
+        "Косоглазие"
+      ]
     },
     {
       "id": "nazgul-sagyndykova",
-      "slug": "doctor-nazgul",
-      "href": "/doctor-nazgul/",
-      "kkHref": "/kk/doctor-nazgul/",
-      "nameRu": "Назгуль Сагындыкова",
-      "nameKz": "Назгүл Сағындықова",
+      "slug": "doctor-nazgul-sagyndykova",
+      "href": "/aktau/doctor/nazgul-sagyndykova/",
+      "kkHref": "/kk/aktau/doctor/nazgul-sagyndykova/",
+      "nameRu": "Назгуль Темирбеккызы Сагындыкова",
+      "nameKz": "Назгуль Темірбекқызы Сагындыкова",
       "roleRu": "Врач-офтальмолог",
       "roleKz": "Дәрігер-офтальмолог",
-      "cities": ["aqtau"],
-      "tagsRu": ["Взрослые и дети", "Оптометрия", "Детская офтальмология"],
-      "tagsKz": ["Ересектер мен балалар", "Оптометрия", "Балалар офтальмологиясы"],
-      "image": "/images/doctor-nazgul.png",
-      "knowsAbout": ["pediatric ophthalmology", "optometry"]
+      "cities": [
+        "aqtau"
+      ],
+      "tagsRu": [
+        "Диагностика",
+        "Оптометрия",
+        "Дети"
+      ],
+      "tagsKz": [
+        "Диагностика",
+        "Оптометрия",
+        "Балалар"
+      ],
+      "image": "/images/doctors/nazgul-sagyndykova.png",
+      "knowsAbout": [
+        "Диагностика",
+        "Оптометрия",
+        "Дети"
+      ]
     }
   ],
   "redirects": {
@@ -115,9 +201,6 @@
     "/doctor-madina/": "/doctors/"
   },
   "notes": [
-    "Shymkent has no active reception — do not list doctors under shymkent city until opening.",
-    "Surgery counts and education placeholders removed from listing until verified in profiles.",
-    "TODO (medical editor): university/residency years, certificate numbers + expiry, license, schedule, lastReviewed date — only publish when document-verified.",
-    "TODO: do not publish unverified claim numbers (operations count, years of experience slogans)."
+    "Shymkent has no active reception — do not list doctors under shymkent city until opening."
   ]
 }

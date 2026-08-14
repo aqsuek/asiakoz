@@ -8,6 +8,7 @@ import { doctorUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { trackEvent } from "../lib/analytics";
+import { loadDoctors, localizeDoctor } from "../lib/doctors";
 
 function DoctorCard({ doctor, lang, t, cityId }) {
   const profileUrl = doctor.profileUrl || doctorUrl(doctor.id);
@@ -135,9 +136,22 @@ export default function Doctors() {
   const { cityId } = useCity();
   const trackRef = useRef(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [remoteDoctors, setRemoteDoctors] = useState(null);
 
-  // Network home shows all active-branch doctors; city picker does not filter this strip.
-  const allDoctors = t.doctors.items || [];
+  useEffect(() => {
+    if (!IS_HOME) return undefined;
+    let cancelled = false;
+    loadDoctors().then((items) => {
+      if (!cancelled) setRemoteDoctors(items);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const allDoctors = IS_HOME
+    ? (remoteDoctors ?? []).map((d) => localizeDoctor(d, lang))
+    : t.doctors.items || [];
   const doctors = allDoctors;
 
   const scrollBy = (dir) => {
@@ -164,6 +178,16 @@ export default function Doctors() {
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => el.removeEventListener("scroll", onScroll);
   }, [doctors.length]);
+
+  if (IS_HOME && remoteDoctors === null) {
+    return (
+      <section id="doctors" className="scroll-mt-header overflow-x-clip py-7 sm:py-10">
+        <div className="section-container">
+          <p className="text-sm text-ink-muted">{t.news?.loading || "Жүктелуде…"}</p>
+        </div>
+      </section>
+    );
+  }
 
   if (!allDoctors.length) return null;
 

@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const tabs = [
   { href: "/", label: "Статистика" },
   { href: "/news", label: "Жаңалықтар / Vlog" },
+  { href: "/doctors", label: "Дәрігерлер" },
 ];
 
 export default function AdminNav({ onLogout }) {

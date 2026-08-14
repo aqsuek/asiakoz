@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import LoginScreen from "./components/LoginScreen";
 import { isAuthed, logout } from "./lib/auth";
+import DoctorsPage from "./pages/DoctorsPage";
 import NewsPage from "./pages/NewsPage";
 import StatsPage from "./pages/StatsPage";
 
@@ -39,6 +40,12 @@ export default function App() {
         path="/news"
         element={
           <Protected>{(onLogout) => <NewsPage onLogout={onLogout} />}</Protected>
+        }
+      />
+      <Route
+        path="/doctors"
+        element={
+          <Protected>{(onLogout) => <DoctorsPage onLogout={onLogout} />}</Protected>
         }
       />
       <Route path="*" element={<Navigate to="/" replace />} />
