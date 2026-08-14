@@ -1,33 +1,6 @@
 {
   "doctors": [
     {
-      "id": "mehmet-esat-teker",
-      "slug": "doctor-mehmet-esat-teker",
-      "href": "/laser/doctor/mehmet-esat-teker/",
-      "kkHref": "/kk/laser/doctor/mehmet-esat-teker/",
-      "nameRu": "Мехмет Есат Текер",
-      "nameKz": "Мехмет Есат Текер",
-      "roleRu": "Ведущий офтальмолог и хирург",
-      "roleKz": "Жетекші офтальмолог-хирург",
-      "cities": [
-        "almaty"
-      ],
-      "tagsRu": [
-        "Лазер",
-        "Диагностика"
-      ],
-      "tagsKz": [
-        "Лазер",
-        "Диагностика"
-      ],
-      "image": "/images/doctors/mehmet-esat-teker.png",
-      "knowsAbout": [
-        "Лазер",
-        "Диагностика"
-      ],
-      "fromTurkey": true
-    },
-    {
       "id": "orel-talip",
       "slug": "doctor-orel-talip",
       "href": "/laser/doctor/orel-talip/",
