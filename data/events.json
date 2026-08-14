@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "1786695545454-1tv9dv",
+    "ts": 1786695545454,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mssodrb1-zbrbe1dv",
+    "referrer": "https://www.google.com/"
+  }
+]
