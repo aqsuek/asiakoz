@@ -203,5 +203,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mst1o3os-qvf383bs"
+  },
+  {
+    "id": "1786717884011-ry1q9x",
+    "ts": 1786717884011,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mst1o3os-qvf383bs",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
