@@ -9,14 +9,19 @@ export default function LoginScreen({ onSuccess }) {
   return (
     <main style={{ minHeight: "100vh", display: "grid", placeItems: "center", padding: 24 }}>
       <form
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
           setError("");
-          if (!login(username, password)) {
-            setError("Логин немесе пароль қате");
-            return;
+          try {
+            const ok = await login(username, password);
+            if (!ok) {
+              setError("Логин немесе пароль қате");
+              return;
+            }
+            onSuccess();
+          } catch {
+            setError("GitHub конфигурациясы жоқ. Deploy қайта іске қосылсын.");
           }
-          onSuccess();
         }}
         style={{
           width: "min(380px, 100%)",
