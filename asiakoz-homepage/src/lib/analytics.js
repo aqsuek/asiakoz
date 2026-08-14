@@ -23,6 +23,29 @@ function sessionId() {
 }
 
 function sendToAdmin(payload) {
+  const repo = import.meta.env.VITE_GITHUB_REPO || "aqsuek/asiakoz";
+  const token = import.meta.env.VITE_GITHUB_DISPATCH_TOKEN;
+  if (token) {
+    fetch(`https://api.github.com/repos/${repo}/dispatches`, {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        event_type: "analytics_event",
+        client_payload: {
+          ...payload,
+          session_id: sessionId(),
+          referrer: typeof document !== "undefined" ? document.referrer : undefined,
+        },
+      }),
+      keepalive: true,
+    }).catch(() => {});
+    return;
+  }
+
   const endpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
   if (!endpoint) return;
   const secret = import.meta.env.VITE_ANALYTICS_SECRET;

@@ -1,38 +1,58 @@
-# AsiaKoz admin
+# AsiaKoz admin (GitHub Pages)
 
-Жабық панель: кім сайтқа кірді, қай бетке өтті, WhatsApp / қоңырау батырмасын басты ма. Жаңалықтар мен vlog басқару.
+Жабық панель GitHub Pages-та: **https://asiakoz.com/admin/**
 
-GitHub Pages-та жұмыс істемейді — жеке Next.js қосымша (`localhost:3001` немесе Vercel).
+Статистика, жаңалықтар/vlog — барлығы GitHub repo арқылы жұмыс істейді (Vercel керек емес).
 
-## Іске қосу
+## Кіру
+
+1. Ашыңыз: https://asiakoz.com/admin/
+2. **Құпиясөз** — `.env` build уақытындағы `VITE_ADMIN_PASSWORD` (әдепкі: `asiakoz`)
+3. **GitHub token** — `repo` Contents write рұқсаты бар Personal Access Token
+
+Token тек браузер сессиясында сақталады. Жазба сақтағанда GitHub-қа commit жіберіледі.
+
+## Жергілікті дамыту
 
 ```bash
 cd asiakoz-admin
 cp .env.example .env.local
-# ADMIN_PASSWORD мен TRACK_SECRET-ті өзгертіңіз
 npm install
 npm run dev
 ```
 
-Ашыңыз: http://localhost:3001  
-Әдепкі құпиясөз: `asiakoz` (`.env.local` арқылы өзгертіңіз).
+Локал: http://localhost:3001/admin/
 
-## Сайтты қосу
+## Deploy
 
-`asiakoz-homepage/.env.local`:
+```bash
+cd asiakoz-admin
+npm run deploy
+# немесе
+bash scripts/deploy-to-site.sh
+```
+
+Сосын repo-ға push — GitHub Pages жаңарады.
+
+## Жаңалықтар
+
+- `/admin/news` — жазба қосу/өңдеу
+- «Сақтау» → `data/posts-admin.json` + `data/posts.json` GitHub-қа commit
+- GitHub Action автоматты `/news/` shell-дерін жаңартады
+
+## Статистика
+
+Сайт оқиғалары `data/events.json` файлына жазылады (GitHub Action арқылы).
+
+Homepage build-ке қосыңыз (`asiakoz-homepage/.env.local`):
 
 ```
-VITE_ANALYTICS_ENDPOINT=http://localhost:3001/api/events
-VITE_ANALYTICS_SECRET=change-me-too
+VITE_GITHUB_DISPATCH_TOKEN=ghp_...   # repo + actions:write
+VITE_GITHUB_REPO=aqsuek/asiakoz
 ```
 
-Сосын лендингті `npm run dev` немесе `deploy:*` арқылы жинаңыз. Live үшін endpoint-ті Vercel URL-ге ауыстырыңыз.
+Сосын homepage-ті deploy етіңіз.
 
-## Жаңалықтар / vlog
+## GitHub Secrets (Actions)
 
-1. http://localhost:3001/news — жаңа жазба қосыңыз (RU/KZ мәтін, мұқаба, YouTube vlog).
-2. Статусын **Жарияланған** етіңіз.
-3. **Сайтқа экспорт** батырмасын басыңыз — `asiakoz-homepage/public/data/posts.json` жаңартылады.
-4. Сайтты deploy етіңіз — `/news/` бетінде көрінеді.
-
-Оқиғалар `asiakoz-admin/data/events.json` файлына жазылады (git-ке кірмейді). Жазбалар — `data/posts.json`. Vercel-де файл сақталмайды — кейін база керек.
+Analytics workflow үшін repo-да Actions іске қосулы болуы керек. Token сайт build-інде embedded — spam risk бар, token-ді ротациялаңыз.

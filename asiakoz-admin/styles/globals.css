@@ -1,9 +1,0 @@
-* { box-sizing: border-box; }
-html, body { margin: 0; }
-body {
-  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  background: #FAFCFD;
-  color: #0C1222;
-}
-a { color: inherit; }
-button, input { font: inherit; }

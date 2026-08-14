@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link, useLocation } from "react-router-dom";
 
 const tabs = [
   { href: "/", label: "Статистика" },
@@ -7,7 +6,7 @@ const tabs = [
 ];
 
 export default function AdminNav({ onLogout }) {
-  const router = useRouter();
+  const location = useLocation();
 
   return (
     <header style={{ display: "flex", justifyContent: "space-between", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
@@ -19,33 +18,30 @@ export default function AdminNav({ onLogout }) {
         {tabs.map((tab) => (
           <Link
             key={tab.href}
-            href={tab.href}
+            to={tab.href}
             style={{
-              textDecoration: "none",
               borderRadius: 999,
               padding: "8px 14px",
               fontWeight: 700,
-              background: router.pathname === tab.href ? "#00A9C1" : "#EDFAFC",
-              color: router.pathname === tab.href ? "#fff" : "#0B3A4A",
+              background: location.pathname === tab.href ? "#00A9C1" : "#EDFAFC",
+              color: location.pathname === tab.href ? "#fff" : "#0B3A4A",
             }}
           >
             {tab.label}
           </Link>
         ))}
-        <button
-          type="button"
-          onClick={onLogout}
-          style={{
-            border: "1px solid rgba(12,18,34,0.12)",
-            background: "#fff",
-            borderRadius: 999,
-            padding: "8px 12px",
-            cursor: "pointer",
-          }}
-        >
+        <button type="button" onClick={onLogout} style={btnGhost}>
           Шығу
         </button>
       </div>
     </header>
   );
 }
+
+const btnGhost = {
+  border: "1px solid rgba(12,18,34,0.12)",
+  background: "#fff",
+  borderRadius: 999,
+  padding: "8px 12px",
+  cursor: "pointer",
+};

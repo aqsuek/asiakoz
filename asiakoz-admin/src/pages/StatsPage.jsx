@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import AdminNav from "../components/AdminNav";
+import { readPublicJson } from "../lib/github";
+import { summarize } from "../lib/store";
 
 const EVENT_LABELS = {
   page_view: "Кіру",
@@ -14,14 +16,7 @@ const EVENT_LABELS = {
 
 function Stat({ label, value, hint }) {
   return (
-    <div
-      style={{
-        background: "#fff",
-        border: "1px solid rgba(12,18,34,0.06)",
-        borderRadius: 16,
-        padding: 18,
-      }}
-    >
+    <div style={cardStyle}>
       <div style={{ fontSize: 12, color: "#4A5568", fontWeight: 600 }}>{label}</div>
       <div style={{ fontSize: 28, fontWeight: 800, marginTop: 6, color: "#0B3A4A" }}>{value}</div>
       {hint ? <div style={{ fontSize: 12, color: "#7A8494", marginTop: 4 }}>{hint}</div> : null}
@@ -37,141 +32,36 @@ function formatTime(ts) {
   }
 }
 
-export default function AdminHome() {
-  const [authed, setAuthed] = useState(null);
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+export default function StatsPage({ onLogout }) {
   const [stats, setStats] = useState(null);
   const [days, setDays] = useState(7);
-
-  async function loadAuth() {
-    const res = await fetch("/api/login");
-    const data = await res.json();
-    setAuthed(Boolean(data.ok));
-  }
-
-  async function loadStats(nextDays = days) {
-    const res = await fetch(`/api/stats?days=${nextDays}`);
-    if (res.status === 401) {
-      setAuthed(false);
-      return;
-    }
-    setStats(await res.json());
-  }
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    loadAuth();
-  }, []);
-
-  useEffect(() => {
-    if (authed) loadStats(days);
-  }, [authed, days]);
+    readPublicJson("data/events.json")
+      .then((events) => setStats(summarize(events, days)))
+      .catch(() => setError("Статистика жүктелмеді"));
+  }, [days]);
 
   const maxDay = useMemo(() => {
     if (!stats?.byDay?.length) return 1;
     return Math.max(1, ...stats.byDay.map((d) => d.views + d.whatsapp));
   }, [stats]);
 
-  if (authed === null) {
-    return <main style={{ padding: 40 }}>Жүктелуде…</main>;
-  }
-
-  if (!authed) {
-    return (
-      <main style={{ minHeight: "100vh", display: "grid", placeItems: "center", padding: 24 }}>
-        <form
-          onSubmit={async (e) => {
-            e.preventDefault();
-            setError("");
-            const res = await fetch("/api/login", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ password }),
-            });
-            if (!res.ok) {
-              setError("Құпиясөз қате");
-              return;
-            }
-            setAuthed(true);
-          }}
-          style={{
-            width: "min(380px, 100%)",
-            background: "#fff",
-            border: "1px solid rgba(12,18,34,0.06)",
-            borderRadius: 20,
-            padding: 28,
-          }}
-        >
-          <p style={{ margin: 0, color: "#00A9C1", fontWeight: 700, fontSize: 13 }}>ASIAKOZ</p>
-          <h1 style={{ margin: "8px 0 4px", fontSize: 24 }}>Админ панель</h1>
-          <p style={{ margin: "0 0 18px", color: "#4A5568", fontSize: 14 }}>
-            Кірулер, беттер және WhatsApp кликтері
-          </p>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Құпиясөз"
-            style={{
-              width: "100%",
-              border: "1px solid rgba(12,18,34,0.12)",
-              borderRadius: 12,
-              padding: "12px 14px",
-              marginBottom: 12,
-            }}
-          />
-          {error ? <p style={{ color: "#b42318", fontSize: 13 }}>{error}</p> : null}
-          <button
-            type="submit"
-            style={{
-              width: "100%",
-              background: "#00A9C1",
-              color: "#fff",
-              border: 0,
-              borderRadius: 12,
-              padding: "12px 14px",
-              fontWeight: 700,
-              cursor: "pointer",
-            }}
-          >
-            Кіру
-          </button>
-        </form>
-      </main>
-    );
-  }
-
   const today = stats?.today || {};
   const period = stats?.period || {};
 
   return (
     <main style={{ maxWidth: 1100, margin: "0 auto", padding: "28px 20px 64px" }}>
-      <AdminNav
-        onLogout={async () => {
-          await fetch("/api/login", { method: "DELETE" });
-          setAuthed(false);
-        }}
-      />
+      <AdminNav onLogout={onLogout} />
       <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 16 }}>
         {[7, 30].map((n) => (
-          <button
-            key={n}
-            type="button"
-            onClick={() => setDays(n)}
-            style={{
-              border: 0,
-              borderRadius: 999,
-              padding: "8px 12px",
-              cursor: "pointer",
-              background: days === n ? "#00A9C1" : "#EDFAFC",
-              color: days === n ? "#fff" : "#0B3A4A",
-              fontWeight: 700,
-            }}
-          >
+          <button key={n} type="button" onClick={() => setDays(n)} style={pill(days === n)}>
             {n} күн
           </button>
         ))}
       </div>
+      {error ? <p style={{ color: "#b42318", marginTop: 12 }}>{error}</p> : null}
 
       <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12, marginTop: 24 }}>
         <Stat label="Бүгін кірді" value={today.visitors ?? "—"} hint={`${today.pageViews || 0} бет көрінісі`} />
@@ -180,15 +70,7 @@ export default function AdminHome() {
         <Stat label="WhatsApp кезеңде" value={period.whatsapp ?? "—"} hint={`Қоңырау: ${period.phone || 0}`} />
       </section>
 
-      <section
-        style={{
-          marginTop: 20,
-          background: "#fff",
-          border: "1px solid rgba(12,18,34,0.06)",
-          borderRadius: 16,
-          padding: 18,
-        }}
-      >
+      <section style={{ ...cardStyle, marginTop: 20 }}>
         <h2 style={{ margin: "0 0 14px", fontSize: 16 }}>Күн бойынша</h2>
         <div style={{ display: "flex", alignItems: "flex-end", gap: 8, height: 140 }}>
           {(stats?.byDay || []).map((d) => (
@@ -209,14 +91,7 @@ export default function AdminHome() {
       </section>
 
       <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 16, marginTop: 16 }}>
-        <section
-          style={{
-            background: "#fff",
-            border: "1px solid rgba(12,18,34,0.06)",
-            borderRadius: 16,
-            padding: 18,
-          }}
-        >
+        <section style={cardStyle}>
           <h2 style={{ margin: "0 0 12px", fontSize: 16 }}>Қай бетке өтті</h2>
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
             <thead>
@@ -243,14 +118,7 @@ export default function AdminHome() {
           </table>
         </section>
 
-        <section
-          style={{
-            background: "#fff",
-            border: "1px solid rgba(12,18,34,0.06)",
-            borderRadius: 16,
-            padding: 18,
-          }}
-        >
+        <section style={cardStyle}>
           <h2 style={{ margin: "0 0 12px", fontSize: 16 }}>Қалалар</h2>
           {(stats?.cities || []).map((c) => (
             <div key={c.city} style={{ padding: "10px 0", borderTop: "1px solid rgba(12,18,34,0.06)" }}>
@@ -264,15 +132,7 @@ export default function AdminHome() {
         </section>
       </div>
 
-      <section
-        style={{
-          marginTop: 16,
-          background: "#fff",
-          border: "1px solid rgba(12,18,34,0.06)",
-          borderRadius: 16,
-          padding: 18,
-        }}
-      >
+      <section style={{ ...cardStyle, marginTop: 16 }}>
         <h2 style={{ margin: "0 0 12px", fontSize: 16 }}>Соңғы әрекеттер</h2>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
           <thead>
@@ -297,10 +157,26 @@ export default function AdminHome() {
               ))}
           </tbody>
         </table>
-        <p style={{ fontSize: 12, color: "#7A8494", marginTop: 12 }}>
-          WhatsApp бағаны — сайттағы батырманы басу. Чатта хабарлама жазылғанын сайт көрмейді.
-        </p>
       </section>
     </main>
   );
+}
+
+const cardStyle = {
+  background: "#fff",
+  border: "1px solid rgba(12,18,34,0.06)",
+  borderRadius: 16,
+  padding: 18,
+};
+
+function pill(active) {
+  return {
+    border: 0,
+    borderRadius: 999,
+    padding: "8px 12px",
+    cursor: "pointer",
+    background: active ? "#00A9C1" : "#EDFAFC",
+    color: active ? "#fff" : "#0B3A4A",
+    fontWeight: 700,
+  };
 }

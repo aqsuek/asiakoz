@@ -1,45 +1,10 @@
-const fs = require("fs");
-const path = require("path");
-
-const FILE = path.join(process.cwd(), "data", "events.json");
-const MAX_EVENTS = 20000;
-
-function ensureFile() {
-  const dir = path.dirname(FILE);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  if (!fs.existsSync(FILE)) fs.writeFileSync(FILE, "[]", "utf8");
-}
-
-function readEvents() {
-  ensureFile();
-  try {
-    const raw = fs.readFileSync(FILE, "utf8");
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeEvents(events) {
-  ensureFile();
-  fs.writeFileSync(FILE, JSON.stringify(events.slice(-MAX_EVENTS)), "utf8");
-}
-
-function appendEvent(event) {
-  const events = readEvents();
-  events.push(event);
-  writeEvents(events);
-  return event;
-}
-
 function startOfDay(d = new Date()) {
   const x = new Date(d);
   x.setHours(0, 0, 0, 0);
   return x.getTime();
 }
 
-function summarize(events, days = 7) {
+export function summarize(events, days = 7) {
   const now = Date.now();
   const from = now - days * 24 * 60 * 60 * 1000;
   const todayStart = startOfDay();
@@ -108,5 +73,3 @@ function summarize(events, days = 7) {
     recent: [...events].slice(-80).reverse(),
   };
 }
-
-module.exports = { readEvents, appendEvent, summarize };

@@ -17,6 +17,7 @@ LASTMOD_CACHE = ROOT / "data" / "sitemap-lastmod.json"
 SKIP_DIRS = {
     "asiakoz-homepage",
     "asiakoz-admin",
+    "admin",
     ".git",
     "assets",
     "node_modules",

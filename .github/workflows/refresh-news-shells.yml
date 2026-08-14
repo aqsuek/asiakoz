@@ -1,0 +1,51 @@
+name: Refresh news shells
+
+on:
+  push:
+    paths:
+      - data/posts.json
+      - data/posts-admin.json
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh /news/ SPA shells
+        run: |
+          python3 - data/posts.json index.html <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          posts_file = Path(sys.argv[1])
+          shell_path = Path(sys.argv[2])
+          root = shell_path.parent
+          shell = shell_path.read_text(encoding="utf-8")
+          posts = json.loads(posts_file.read_text(encoding="utf-8")) if posts_file.exists() else []
+
+          for rel in ("news", "kk/news"):
+              dest = root / rel
+              dest.mkdir(parents=True, exist_ok=True)
+              (dest / "index.html").write_text(shell, encoding="utf-8")
+
+          for post in posts:
+              slug = post.get("slug")
+              if not slug:
+                  continue
+              for rel in (f"news/{slug}", f"kk/news/{slug}"):
+                  dest = root / rel
+                  dest.mkdir(parents=True, exist_ok=True)
+                  (dest / "index.html").write_text(shell, encoding="utf-8")
+          print(f"refreshed news shells for {len(posts)} posts")
+          PY
+      - name: Commit shells
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news kk/news
+          git diff --staged --quiet || git commit -m "chore(news): refresh SPA shells"
+          git push
