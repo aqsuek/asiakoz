@@ -185,5 +185,14 @@
     "language": "ru",
     "session_id": "mst0lr7r-wrn4fg17",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786717773407-cspmkd",
+    "ts": 1786717773407,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mst1m95i-ntakp0kl"
   }
 ]
