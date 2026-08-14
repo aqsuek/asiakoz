@@ -125,5 +125,15 @@
     "language": "ru",
     "session_id": "mssv3z4w-qwlrffz4",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786706884928-taeswh",
+    "ts": 1786706884928,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mssv4w83-4rtav3po",
+    "referrer": "https://www.google.com/"
   }
 ]
