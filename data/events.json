@@ -155,5 +155,15 @@
     "language": "ru",
     "session_id": "msswokxc-rsf550qg",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786713390394-x4ukno",
+    "ts": 1786713390394,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mssz05mr-ofl1czvj",
+    "referrer": "https://l.wl.co/"
   }
 ]
