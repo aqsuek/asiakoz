@@ -75,6 +75,11 @@ function DoctorCard({ doctor, lang, t, cityId }) {
           {doctor.branch && (
             <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
               {doctor.branch}
+              {doctor.temporaryActive && IS_HOME ? (
+                <span className="ml-1.5 normal-case text-brand-deep/80">
+                  · {lang === "ru" ? "временно" : "уақытша"}
+                </span>
+              ) : null}
             </p>
           )}
           <h3 className="mt-0.5 break-words font-display text-base font-extrabold tracking-tight text-ink sm:text-lg">

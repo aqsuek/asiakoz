@@ -17,6 +17,8 @@ export function localizeDoctor(raw, lang = "ru") {
     lead: ru ? raw.leadRu : raw.leadKz || raw.leadRu,
     bio: ru ? raw.bioRu : raw.bioKz || raw.bioRu,
     tags: ru ? raw.tagsRu || [] : raw.tagsKz || raw.tagsRu || [],
+    temporaryActive: Boolean(raw.temporaryActive),
+    temporaryUntil: raw.temporaryUntil || null,
     stats: (raw.stats || []).map((s) => ({
       value: ru ? s.valueRu : s.valueKz || s.valueRu,
       label: ru ? s.labelRu : s.labelKz || s.labelRu,

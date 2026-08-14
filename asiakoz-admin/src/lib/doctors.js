@@ -11,6 +11,72 @@ const CITY_LABELS = {
   shymkent: { ru: "Шымкент", kz: "Шымкент" },
 };
 
+const CITY_OPTIONS = Object.keys(CITY_LABELS);
+
+function parseDate(value) {
+  if (!value) return null;
+  const d = new Date(`${String(value).slice(0, 10)}T12:00:00`);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function isTemporaryActive(temp) {
+  if (!temp?.city) return false;
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
+  const from = parseDate(temp.from);
+  const until = parseDate(temp.until);
+  if (from && today < from) return false;
+  if (until && today > until) return false;
+  return true;
+}
+
+function normalizeTemporaryAssignment(input, existing) {
+  const raw = input?.temporaryAssignment ?? existing?.temporaryAssignment ?? null;
+  if (!raw || raw.enabled === false) return null;
+  const city = String(raw.city || "").trim();
+  if (!city) return null;
+  return {
+    enabled: true,
+    city,
+    from: String(raw.from || "").slice(0, 10) || null,
+    until: String(raw.until || "").slice(0, 10) || null,
+    branchRu: String(raw.branchRu || "").trim(),
+    branchKz: String(raw.branchKz || "").trim(),
+    leadRu: String(raw.leadRu || "").trim(),
+    leadKz: String(raw.leadKz || "").trim(),
+  };
+}
+
+function resolveDoctorForPublish(d) {
+  const temp = d.temporaryAssignment;
+  const temporaryActive = isTemporaryActive(temp);
+  const cities = [...new Set([...(d.cities || []), ...(temporaryActive && temp?.city ? [temp.city] : [])])];
+  const cityLabel = temp?.city ? CITY_LABELS[temp.city] : null;
+
+  let branchRu = d.branchRu;
+  let branchKz = d.branchKz;
+  let leadRu = d.leadRu;
+  let leadKz = d.leadKz;
+
+  if (temporaryActive && temp) {
+    branchRu = temp.branchRu || (cityLabel ? `${cityLabel.ru} · ${d.roleRu || "Офтальмолог"}` : branchRu);
+    branchKz = temp.branchKz || (cityLabel ? `${cityLabel.kz} · ${d.roleKz || d.roleRu || "Офтальмолог"}` : branchKz);
+    if (temp.leadRu) leadRu = temp.leadRu;
+    if (temp.leadKz) leadKz = temp.leadKz;
+  }
+
+  return {
+    ...d,
+    cities,
+    branchRu,
+    branchKz,
+    leadRu,
+    leadKz,
+    temporaryActive,
+    temporaryUntil: temporaryActive ? temp?.until || null : null,
+  };
+}
+
 function slugify(text = "") {
   return String(text)
     .toLowerCase()
@@ -29,6 +95,13 @@ function parseList(value) {
     .filter(Boolean);
 }
 
+function parseCities(value) {
+  if (Array.isArray(value)) {
+    return value.map((v) => String(v).trim()).filter((id) => CITY_OPTIONS.includes(id));
+  }
+  return parseList(value).filter((id) => CITY_OPTIONS.includes(id));
+}
+
 function normalizeDoctor(input = {}, existing, allDoctors = []) {
   const now = new Date().toISOString();
   const nameRu = String(input.nameRu || existing?.nameRu || "").trim();
@@ -41,14 +114,16 @@ function normalizeDoctor(input = {}, existing, allDoctors = []) {
     n += 1;
   }
 
-  const cities = parseList(input.cities ?? existing?.cities ?? []);
+  const cities = parseCities(input.cities ?? existing?.cities ?? []);
   const active = input.active === false || input.active === "false" ? false : true;
+  const temporaryAssignment = normalizeTemporaryAssignment(input, existing);
 
   return {
     id,
     active,
     sortOrder: Number(input.sortOrder ?? existing?.sortOrder ?? allDoctors.length + 1) || 0,
     cities,
+    temporaryAssignment,
     profileUrl: String(input.profileUrl || existing?.profileUrl || `/doctor/${id}/`).trim(),
     image: String(input.image || existing?.image || "").trim(),
     fromTurkey: Boolean(input.fromTurkey ?? existing?.fromTurkey),
@@ -74,27 +149,29 @@ function normalizeDoctor(input = {}, existing, allDoctors = []) {
 }
 
 function seoDoctor(d) {
-  const slug = `doctor-${d.id}`;
+  const resolved = resolveDoctorForPublish(d);
+  const slug = `doctor-${resolved.id}`;
   return {
-    id: d.id,
+    id: resolved.id,
     slug,
-    href: d.profileUrl || `/doctor-${d.id}/`,
-    kkHref: `/kk${d.profileUrl || `/doctor-${d.id}/`}`,
-    nameRu: d.nameRu,
-    nameKz: d.nameKz,
-    roleRu: d.roleRu,
-    roleKz: d.roleKz,
-    cities: d.cities,
-    tagsRu: d.tagsRu,
-    tagsKz: d.tagsKz,
-    image: d.image.startsWith("/") ? d.image : `/${d.image}`,
-    knowsAbout: d.tagsRu,
-    ...(d.fromTurkey ? { fromTurkey: true } : {}),
+    href: resolved.profileUrl || `/doctor-${resolved.id}/`,
+    kkHref: `/kk${resolved.profileUrl || `/doctor-${resolved.id}/`}`,
+    nameRu: resolved.nameRu,
+    nameKz: resolved.nameKz,
+    roleRu: resolved.roleRu,
+    roleKz: resolved.roleKz,
+    cities: resolved.cities,
+    tagsRu: resolved.tagsRu,
+    tagsKz: resolved.tagsKz,
+    image: resolved.image.startsWith("/") ? resolved.image : `/${resolved.image}`,
+    knowsAbout: resolved.tagsRu,
+    ...(resolved.fromTurkey ? { fromTurkey: true } : {}),
   };
 }
 
 function uiDoctor(d) {
-  const { active, createdAt, updatedAt, sortOrder, ...rest } = d;
+  const resolved = resolveDoctorForPublish(d);
+  const { active, createdAt, updatedAt, sortOrder, temporaryAssignment, ...rest } = resolved;
   return rest;
 }
 
@@ -216,4 +293,4 @@ export async function toggleDoctorActive(id, active) {
   return next.find((d) => d.id === id);
 }
 
-export { CITY_LABELS };
+export { CITY_LABELS, CITY_OPTIONS, isTemporaryActive, resolveDoctorForPublish };

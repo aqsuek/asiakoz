@@ -88,6 +88,11 @@ export default function DoctorPage({ doctorId }) {
             <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
               <p className="text-xs font-semibold uppercase tracking-wider text-brand">
                 {doctor.branch}
+                {doctor.temporaryActive ? (
+                  <span className="ml-1.5 normal-case text-brand-deep/80">
+                    · {lang === "ru" ? "временно" : "уақытша"}
+                  </span>
+                ) : null}
               </p>
               <h1 className="mt-2 font-display text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
                 {doctor.name}
