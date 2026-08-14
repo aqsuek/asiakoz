@@ -233,5 +233,15 @@
     "language": "ru",
     "session_id": "mst34s6u-ps8zlr5x",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786725709034-z6kfnd",
+    "ts": 1786725709034,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mst6c5zr-iv390k0t",
+    "referrer": "https://l.instagram.com/"
   }
 ]
