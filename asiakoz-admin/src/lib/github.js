@@ -9,6 +9,21 @@ function headers(token) {
   };
 }
 
+function decodeBase64Utf8(base64 = "") {
+  const binary = atob(base64.replace(/\n/g, ""));
+  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  return new TextDecoder("utf-8").decode(bytes);
+}
+
+function encodeBase64Utf8(text = "") {
+  const bytes = new TextEncoder().encode(text);
+  let binary = "";
+  bytes.forEach((byte) => {
+    binary += String.fromCharCode(byte);
+  });
+  return btoa(binary);
+}
+
 export async function readRepoJson(path, token) {
   const res = await fetch(`${API}/repos/${REPO}/contents/${path}`, {
     headers: token ? headers(token) : { Accept: "application/vnd.github+json" },
@@ -16,13 +31,13 @@ export async function readRepoJson(path, token) {
   if (res.status === 404) return { data: [], sha: null };
   if (!res.ok) throw new Error(`read_failed:${path}`);
   const payload = await res.json();
-  const text = atob(payload.content.replace(/\n/g, ""));
+  const text = decodeBase64Utf8(payload.content);
   return { data: JSON.parse(text), sha: payload.sha };
 }
 
 export async function writeRepoJson(path, data, token, sha) {
   const body = JSON.stringify(data, null, 2) + "\n";
-  const content = btoa(unescape(encodeURIComponent(body)));
+  const content = encodeBase64Utf8(body);
   const res = await fetch(`${API}/repos/${REPO}/contents/${path}`, {
     method: "PUT",
     headers: {
