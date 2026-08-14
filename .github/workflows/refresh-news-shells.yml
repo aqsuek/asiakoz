@@ -3,6 +3,8 @@ name: Refresh news shells
 on:
   push:
     paths:
+      - index.html
+      - assets/home/**
       - data/posts.json
       - data/posts-admin.json
 
