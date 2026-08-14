@@ -2,8 +2,8 @@ import { useState } from "react";
 import { login } from "../lib/auth";
 
 export default function LoginScreen({ onSuccess }) {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [githubToken, setGithubToken] = useState("");
   const [error, setError] = useState("");
 
   return (
@@ -12,14 +12,14 @@ export default function LoginScreen({ onSuccess }) {
         onSubmit={(e) => {
           e.preventDefault();
           setError("");
-          if (!login(password, githubToken)) {
-            setError("Құпиясөз немесе GitHub token қате");
+          if (!login(username, password)) {
+            setError("Логин немесе пароль қате");
             return;
           }
           onSuccess();
         }}
         style={{
-          width: "min(420px, 100%)",
+          width: "min(380px, 100%)",
           background: "#fff",
           border: "1px solid rgba(12,18,34,0.06)",
           borderRadius: 20,
@@ -29,29 +29,28 @@ export default function LoginScreen({ onSuccess }) {
         <p style={{ margin: 0, color: "#00A9C1", fontWeight: 700, fontSize: 13 }}>ASIAKOZ</p>
         <h1 style={{ margin: "8px 0 4px", fontSize: 24 }}>Админ панель</h1>
         <p style={{ margin: "0 0 18px", color: "#4A5568", fontSize: 14 }}>
-          GitHub арқылы жұмыс істейді. Token — repo Contents write рұқсатымен.
+          Логин мен парольмен кіріңіз
         </p>
         <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Құпиясөз"
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Логин"
+          autoComplete="username"
           style={inputStyle}
         />
         <input
           type="password"
-          value={githubToken}
-          onChange={(e) => setGithubToken(e.target.value)}
-          placeholder="GitHub token (ghp_...)"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Пароль"
+          autoComplete="current-password"
           style={{ ...inputStyle, marginTop: 12 }}
         />
         {error ? <p style={{ color: "#b42318", fontSize: 13 }}>{error}</p> : null}
         <button type="submit" style={{ ...btnPrimary, marginTop: 12 }}>
           Кіру
         </button>
-        <p style={{ fontSize: 12, color: "#7A8494", marginTop: 14, lineHeight: 1.5 }}>
-          Token тек браузер сессиясында сақталады. Жаңалық сақтағанда GitHub repo-ға commit жіберіледі, 1–2 минуттан кейін сайт жаңарады.
-        </p>
       </form>
     </main>
   );

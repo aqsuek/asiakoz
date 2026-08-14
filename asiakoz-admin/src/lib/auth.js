@@ -18,23 +18,22 @@ export function clearSession() {
 }
 
 export function isAuthed() {
-  const session = getSession();
-  return Boolean(session?.passwordOk && session?.githubToken);
+  return Boolean(getSession()?.ok);
 }
 
 export function getGithubToken() {
-  return getSession()?.githubToken || "";
+  return import.meta.env.VITE_GITHUB_TOKEN || "";
 }
 
-export function verifyPassword(password) {
-  const expected = import.meta.env.VITE_ADMIN_PASSWORD || "asiakoz";
-  return password === expected;
+export function canWriteToGithub() {
+  return Boolean(getGithubToken());
 }
 
-export function login(password, githubToken) {
-  if (!verifyPassword(password)) return false;
-  if (!githubToken?.trim()) return false;
-  saveSession({ passwordOk: true, githubToken: githubToken.trim() });
+export function login(username, password) {
+  const expectedUser = import.meta.env.VITE_ADMIN_LOGIN || "aqsuek";
+  const expectedPass = import.meta.env.VITE_ADMIN_PASSWORD || "asiakoz";
+  if (username.trim() !== expectedUser || password !== expectedPass) return false;
+  saveSession({ ok: true });
   return true;
 }
 

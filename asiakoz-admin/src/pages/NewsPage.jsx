@@ -70,7 +70,11 @@ export default function NewsPage({ onLogout }) {
       await loadPosts();
       editPost(post);
     } catch (err) {
-      setError(err.message || "Сақтау сәтсіз");
+      if (err.message === "github_token_missing") {
+        setError("Сақтау конфигурациясы жоқ. Админ build-ке GitHub token қосу керек.");
+      } else {
+        setError(err.message || "Сақтау сәтсіз");
+      }
     } finally {
       setSaving(false);
     }

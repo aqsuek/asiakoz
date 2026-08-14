@@ -86,6 +86,7 @@ async function loadAdminPosts() {
 
 async function persistPosts(posts) {
   const token = getGithubToken();
+  if (!token) throw new Error("github_token_missing");
   const [adminMeta, publicMeta] = await Promise.all([
     readRepoJson(ADMIN_FILE, token).catch(() => ({ sha: null })),
     readRepoJson(PUBLIC_FILE, token).catch(() => ({ sha: null })),

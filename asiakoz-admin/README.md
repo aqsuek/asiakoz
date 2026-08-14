@@ -7,10 +7,10 @@
 ## Кіру
 
 1. Ашыңыз: https://asiakoz.com/admin/
-2. **Құпиясөз** — `.env` build уақытындағы `VITE_ADMIN_PASSWORD` (әдепкі: `asiakoz`)
-3. **GitHub token** — `repo` Contents write рұқсаты бар Personal Access Token
+2. **Логин:** `aqsuek`
+3. **Пароль:** `asiakoz`
 
-Token тек браузер сессиясында сақталады. Жазба сақтағанда GitHub-қа commit жіберіледі.
+GitHub token кіргенде енгізу керек емес — ол build уақытында `.env.local` арқылы қосылады.
 
 ## Жергілікті дамыту
 
