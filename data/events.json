@@ -223,5 +223,15 @@
     "language": "ru",
     "session_id": "mst1o3os-qvf383bs",
     "referrer": "https://asiakoz.com/laser/"
+  },
+  {
+    "id": "1786720321944-2n1sug",
+    "ts": 1786720321944,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mst34s6u-ps8zlr5x",
+    "referrer": "https://www.google.com/"
   }
 ]
