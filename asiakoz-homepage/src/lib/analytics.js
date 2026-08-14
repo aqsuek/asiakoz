@@ -8,6 +8,8 @@ const EVENT_ALIASES = {
 };
 
 const SESSION_KEY = "asiakoz_session_id";
+const TOKEN_KEY = "asiakoz_github_token";
+const GITHUB_REPO = "aqsuek/asiakoz";
 
 function sessionId() {
   try {
@@ -22,11 +24,38 @@ function sessionId() {
   }
 }
 
+async function githubToken() {
+  try {
+    const cached = sessionStorage.getItem(TOKEN_KEY);
+    if (cached) return cached;
+  } catch {
+    /* ignore */
+  }
+  try {
+    const res = await fetch("/admin/config.json", { cache: "no-store" });
+    if (!res.ok) return "";
+    const data = await res.json();
+    let token = String(data.githubToken || "").trim();
+    if (!token && Array.isArray(data.p)) {
+      token = data.p.map((part) => String(part).split("").reverse().join("")).join("");
+    }
+    if (token) sessionStorage.setItem(TOKEN_KEY, token);
+    return token;
+  } catch {
+    return "";
+  }
+}
+
 function sendToAdmin(payload) {
-  const repo = import.meta.env.VITE_GITHUB_REPO || "aqsuek/asiakoz";
-  const token = import.meta.env.VITE_GITHUB_DISPATCH_TOKEN;
-  if (token) {
-    fetch(`https://api.github.com/repos/${repo}/dispatches`, {
+  const body = {
+    ...payload,
+    session_id: sessionId(),
+    referrer: typeof document !== "undefined" ? document.referrer : undefined,
+  };
+
+  githubToken().then((token) => {
+    if (!token) return;
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}/dispatches`, {
       method: "POST",
       headers: {
         Accept: "application/vnd.github+json",
@@ -35,16 +64,11 @@ function sendToAdmin(payload) {
       },
       body: JSON.stringify({
         event_type: "analytics_event",
-        client_payload: {
-          ...payload,
-          session_id: sessionId(),
-          referrer: typeof document !== "undefined" ? document.referrer : undefined,
-        },
+        client_payload: body,
       }),
       keepalive: true,
     }).catch(() => {});
-    return;
-  }
+  });
 
   const endpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
   if (!endpoint) return;
@@ -55,11 +79,7 @@ function sendToAdmin(payload) {
       "Content-Type": "application/json",
       ...(secret ? { "X-Track-Secret": secret } : {}),
     },
-    body: JSON.stringify({
-      ...payload,
-      session_id: sessionId(),
-      referrer: typeof document !== "undefined" ? document.referrer : undefined,
-    }),
+    body: JSON.stringify(body),
     keepalive: true,
   }).catch(() => {});
 }

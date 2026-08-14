@@ -36,11 +36,27 @@ export default function StatsPage({ onLogout }) {
   const [stats, setStats] = useState(null);
   const [days, setDays] = useState(7);
   const [error, setError] = useState("");
+  const [updatedAt, setUpdatedAt] = useState(null);
+  const [refreshing, setRefreshing] = useState(false);
+
+  async function loadStats(nextDays = days) {
+    setRefreshing(true);
+    try {
+      const events = await readPublicJson("data/events.json");
+      setStats(summarize(events, nextDays));
+      setUpdatedAt(new Date());
+      setError("");
+    } catch {
+      setError("Статистика жүктелмеді");
+    } finally {
+      setRefreshing(false);
+    }
+  }
 
   useEffect(() => {
-    readPublicJson("data/events.json")
-      .then((events) => setStats(summarize(events, days)))
-      .catch(() => setError("Статистика жүктелмеді"));
+    loadStats(days);
+    const timer = setInterval(() => loadStats(days), 45000);
+    return () => clearInterval(timer);
   }, [days]);
 
   const maxDay = useMemo(() => {
@@ -54,13 +70,24 @@ export default function StatsPage({ onLogout }) {
   return (
     <main style={{ maxWidth: 1100, margin: "0 auto", padding: "28px 20px 64px" }}>
       <AdminNav onLogout={onLogout} />
-      <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 16 }}>
+      <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 16, flexWrap: "wrap" }}>
         {[7, 30].map((n) => (
           <button key={n} type="button" onClick={() => setDays(n)} style={pill(days === n)}>
             {n} күн
           </button>
         ))}
+        <button type="button" onClick={() => loadStats(days)} style={pill(false)} disabled={refreshing}>
+          {refreshing ? "Жаңарту…" : "Жаңарту"}
+        </button>
+        {updatedAt ? (
+          <span style={{ fontSize: 12, color: "#7A8494" }}>
+            Соңғы жаңарту: {formatTime(updatedAt.getTime())}
+          </span>
+        ) : null}
       </div>
+      <p style={{ fontSize: 12, color: "#7A8494", marginTop: 8 }}>
+        Жаңа кіру 1–2 минутта пайда болады (GitHub Action). Бет 45 секунд сайын өзі жаңартылады.
+      </p>
       {error ? <p style={{ color: "#b42318", marginTop: 12 }}>{error}</p> : null}
 
       <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12, marginTop: 24 }}>
