@@ -175,5 +175,15 @@
     "language": "ru",
     "session_id": "mst0bbdp-71aicf6o",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1786716074764-xjr7wi",
+    "ts": 1786716074764,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mst0lr7r-wrn4fg17",
+    "referrer": "https://www.google.com/"
   }
 ]
