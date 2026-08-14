@@ -145,5 +145,15 @@
     "language": "ru",
     "session_id": "msswokxc-rsf550qg",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786709535511-y5r7i9",
+    "ts": 1786709535511,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "msswokxc-rsf550qg",
+    "referrer": "https://www.google.com/"
   }
 ]
