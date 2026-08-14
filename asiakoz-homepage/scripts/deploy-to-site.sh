@@ -37,6 +37,39 @@ if [[ -d "$APP/public/videos" ]]; then
   mkdir -p "$ROOT/videos"
   cp -R "$APP/public/videos/"* "$ROOT/videos/" 2>/dev/null || true
 fi
+if [[ -f "$APP/public/data/posts.json" ]]; then
+  mkdir -p "$ROOT/data"
+  cp "$APP/public/data/posts.json" "$ROOT/data/posts.json"
+fi
+
+# SPA shells for /news/ and article slugs (corporate homepage)
+mkdir -p "$ROOT/news"
+cp "$ROOT/index.html" "$ROOT/news/index.html"
+mkdir -p "$ROOT/kk/news"
+cp "$ROOT/index.html" "$ROOT/kk/news/index.html"
+if command -v python3 >/dev/null 2>&1; then
+  python3 - "$ROOT/data/posts.json" "$ROOT/index.html" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+posts_file = Path(sys.argv[1])
+shell = Path(sys.argv[2]).read_text(encoding="utf-8")
+root = shell_path = Path(sys.argv[2]).parent
+posts = []
+if posts_file.exists():
+    posts = json.loads(posts_file.read_text(encoding="utf-8"))
+for post in posts:
+    slug = post.get("slug")
+    if not slug:
+        continue
+    for rel in (f"news/{slug}", f"kk/news/{slug}"):
+        dest_dir = root / rel
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        (dest_dir / "index.html").write_text(shell, encoding="utf-8")
+print(f"News SPA shells: {len(posts)} posts")
+PY
+fi
 
 # SEO meta for corporate homepage (source index.html is Shymkent-default)
 python3 - "$ROOT/index.html" <<'PY'
@@ -166,3 +199,31 @@ echo "URL: https://asiakoz.com/"
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$ROOT/scripts/build-seo.py"
+
+# Recopy news SPA shells after homepage SEO so /news/ still loads the same app
+if [[ -f "$ROOT/index.html" ]]; then
+  mkdir -p "$ROOT/news" "$ROOT/kk/news"
+  cp "$ROOT/index.html" "$ROOT/news/index.html"
+  cp "$ROOT/index.html" "$ROOT/kk/news/index.html"
+  if [[ -f "$ROOT/data/posts.json" ]]; then
+    python3 - "$ROOT/data/posts.json" "$ROOT/index.html" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+posts_file = Path(sys.argv[1])
+shell = Path(sys.argv[2]).read_text(encoding="utf-8")
+root = Path(sys.argv[2]).parent
+posts = json.loads(posts_file.read_text(encoding="utf-8")) if posts_file.exists() else []
+for post in posts:
+    slug = post.get("slug")
+    if not slug:
+        continue
+    for rel in (f"news/{slug}", f"kk/news/{slug}"):
+        dest_dir = root / rel
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        (dest_dir / "index.html").write_text(shell, encoding="utf-8")
+print(f"News SPA shells refreshed: {len(posts)} posts")
+PY
+  fi
+fi

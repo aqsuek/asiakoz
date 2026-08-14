@@ -1,39 +1,39 @@
 {
   "https://asiakoz.com/": {
-    "hash": "be4f7aca4d0199d7",
-    "lastmod": "2026-08-10"
+    "hash": "e4b816b06ffa6a63",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/": {
-    "hash": "b8c78d3651f964ad",
-    "lastmod": "2026-08-10"
+    "hash": "a690a28e9145a1a0",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/almaty/": {
-    "hash": "9b0d40bc2d255b0d",
-    "lastmod": "2026-08-10"
+    "hash": "3aa96aeea010bc10",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/almaty/": {
-    "hash": "0d0d85d2564a9d0f",
-    "lastmod": "2026-08-10"
+    "hash": "a9f53fe19cdf6ae4",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/aqtau/": {
     "hash": "60e786fe54701d7d",
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/aqtau/": {
-    "hash": "e304805f19307e43",
-    "lastmod": "2026-08-10"
+    "hash": "97ea4dfc0f082d91",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/shymkent/": {
-    "hash": "28b18d436382f830",
-    "lastmod": "2026-08-10"
+    "hash": "1b592ae738527737",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/shymkent/": {
-    "hash": "fbf0bc9e75c6f345",
-    "lastmod": "2026-08-10"
+    "hash": "e5eda5d5f1a79d53",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctors/": {
-    "hash": "525258d5205559c5",
-    "lastmod": "2026-08-10"
+    "hash": "38e32d05d1c81542",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/doctors/": {
     "hash": "b56c394fb66ad04d",
@@ -132,8 +132,8 @@
     "lastmod": "2026-08-03"
   },
   "https://asiakoz.com/glaznaya-klinika-almaty/": {
-    "hash": "6272f8d9214051d6",
-    "lastmod": "2026-08-03"
+    "hash": "881b4786360902bd",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/gonioskopiya-almaty/": {
     "hash": "82d8efcd193834f2",
@@ -344,11 +344,19 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/aktau/": {
-    "hash": "a4e72ec712f15846",
-    "lastmod": "2026-08-10"
+    "hash": "f1c4f19f224834e8",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/srochnye-simptomy-glaz-almaty/": {
     "hash": "41a7f51352917db6",
     "lastmod": "2026-08-03"
+  },
+  "https://asiakoz.com/news/": {
+    "hash": "eb169c098dab45f1",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/news/shymkent-ashyldy/": {
+    "hash": "eb169c098dab45f1",
+    "lastmod": "2026-08-14"
   }
 }

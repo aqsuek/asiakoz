@@ -7,6 +7,40 @@ const EVENT_ALIASES = {
   form_success: "appointment_submit",
 };
 
+const SESSION_KEY = "asiakoz_session_id";
+
+function sessionId() {
+  try {
+    let id = sessionStorage.getItem(SESSION_KEY);
+    if (!id) {
+      id = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+      sessionStorage.setItem(SESSION_KEY, id);
+    }
+    return id;
+  } catch {
+    return undefined;
+  }
+}
+
+function sendToAdmin(payload) {
+  const endpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
+  if (!endpoint) return;
+  const secret = import.meta.env.VITE_ANALYTICS_SECRET;
+  fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...(secret ? { "X-Track-Secret": secret } : {}),
+    },
+    body: JSON.stringify({
+      ...payload,
+      session_id: sessionId(),
+      referrer: typeof document !== "undefined" ? document.referrer : undefined,
+    }),
+    keepalive: true,
+  }).catch(() => {});
+}
+
 /**
  * Push analytics events without PII (no name/phone/diagnosis).
  * Accepts legacy event names and also emits required organic_* aliases.
@@ -15,7 +49,6 @@ export function trackEvent(eventName, payload = {}) {
   if (typeof window === "undefined") return;
 
   const safe = { ...payload };
-  // Strip accidental PII keys if callers pass them
   delete safe.name;
   delete safe.phone;
   delete safe.phone_number;
@@ -41,4 +74,10 @@ export function trackEvent(eventName, payload = {}) {
   if (alias && alias !== eventName) {
     window.dataLayer.push({ ...base, event: alias });
   }
+
+  sendToAdmin(base);
+}
+
+export function trackPageView(extra = {}) {
+  trackEvent("page_view", extra);
 }

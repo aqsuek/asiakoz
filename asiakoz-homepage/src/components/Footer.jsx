@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, clinicAddress } from "../data/contacts";
-import { homeUrl } from "../lib/routes";
+import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import {
   MAIN_INSTAGRAM,
@@ -28,6 +28,7 @@ const LINKS = IS_LASER
         { key: "services", hash: "#services" },
         { key: "doctors", hash: "#doctors" },
         { key: "reviews", hash: "#reviews" },
+        { key: "news", href: newsUrl() },
         { key: "contacts", hash: "#contacts" },
       ]
     : [
@@ -83,8 +84,8 @@ export default function Footer() {
               <nav className="flex flex-col gap-1">
                 {LINKS.map((link) => (
                   <a
-                    key={link.hash}
-                    href={homeUrl(link.hash)}
+                    key={link.key}
+                    href={link.href || homeUrl(link.hash)}
                     className="py-1 text-sm text-ink-muted transition-colors hover:text-brand"
                   >
                     {t.nav[link.key]}
@@ -145,8 +146,8 @@ export default function Footer() {
             <nav className="flex flex-col gap-1.5">
               {LINKS.map((link) => (
                 <a
-                  key={link.hash}
-                  href={homeUrl(link.hash)}
+                  key={link.key}
+                  href={link.href || homeUrl(link.hash)}
                   className="py-0.5 text-sm text-ink-muted transition-colors hover:text-brand"
                 >
                   {t.nav[link.key]}

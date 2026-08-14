@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Icon from "./Icon";
 import { languagePath, useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
-import { homeUrl } from "../lib/routes";
+import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { phoneHref } from "../data/branches";
@@ -25,6 +25,7 @@ const ANCHORS = IS_LASER
         { key: "services", hash: "#services" },
         { key: "doctors", hash: "#doctors" },
         { key: "reviews", hash: "#reviews" },
+        { key: "news", href: newsUrl() },
         { key: "contacts", hash: "#contacts" },
       ]
     : [
@@ -96,8 +97,8 @@ export default function Header() {
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navigation">
           {ANCHORS.map((item) => (
             <a
-              key={item.hash}
-              href={homeUrl(item.hash)}
+              key={item.key}
+              href={item.href || homeUrl(item.hash)}
               className="text-[13px] font-medium text-ink-muted transition-colors hover:text-ink"
             >
               {t.nav[item.key] || item.key}
@@ -171,8 +172,8 @@ export default function Header() {
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {ANCHORS.map((item) => (
               <a
-                key={item.hash}
-                href={homeUrl(item.hash)}
+                key={item.key}
+                href={item.href || homeUrl(item.hash)}
                 onClick={() => setOpen(false)}
                 className="rounded-xl px-3 py-3 text-sm font-medium text-ink hover:bg-surface-muted"
               >
