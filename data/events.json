@@ -369,5 +369,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "msu6ogev-3bceg7tj"
+  },
+  {
+    "id": "1786787363414-pfxlcg",
+    "ts": 1786787363414,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msu71pad-t1c5158y",
+    "referrer": "https://l.instagram.com/"
   }
 ]
