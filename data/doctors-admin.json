@@ -2,7 +2,7 @@
   "doctors": [
     {
       "id": "mehmet-esat-teker",
-      "active": false,
+      "active": true,
       "sortOrder": 1,
       "cities": [
         "almaty"
