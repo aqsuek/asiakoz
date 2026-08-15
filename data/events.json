@@ -262,5 +262,15 @@
     "session_id": "mstt047u-uqmwphl4",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1786776435876-4c91sd",
+    "ts": 1786776435876,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msu0jco4-bwl8jhvl",
+    "referrer": "https://www.google.com/"
   }
 ]
