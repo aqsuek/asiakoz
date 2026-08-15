@@ -282,5 +282,14 @@
     "language": "ru",
     "session_id": "msu1dfnn-e3w6zom6",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786778341547-j8ek6b",
+    "ts": 1786778341547,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "msu1o959-2enj8s12"
   }
 ]
