@@ -428,5 +428,15 @@
     "language": "ru",
     "session_id": "msujkm88-56gdt09e",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786810590149-1eb03p",
+    "ts": 1786810590149,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msukvk6g-017f6kw8",
+    "referrer": "https://www.google.com/"
   }
 ]
