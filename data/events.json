@@ -243,5 +243,14 @@
     "language": "ru",
     "session_id": "mst6c5zr-iv390k0t",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1786753384030-de4sru",
+    "ts": 1786753384030,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mstmtehy-9xy47yvq"
   }
 ]
