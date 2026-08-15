@@ -252,5 +252,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mstmtehy-9xy47yvq"
+  },
+  {
+    "id": "1786763771408-lvcbk9",
+    "ts": 1786763771408,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mstt047u-uqmwphl4",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
