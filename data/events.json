@@ -311,5 +311,15 @@
     "language": "ru",
     "session_id": "msu3h7r8-itqy764u",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786782315654-r0ce1b",
+    "ts": 1786782315654,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mssofjfl-92qkz3di",
+    "referrer": "https://asiakoz.com/news/shymkent-ashyldy/"
   }
 ]
