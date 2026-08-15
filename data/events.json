@@ -458,5 +458,17 @@
     "language": "ru",
     "session_id": "msulj37f-adoo4uuv",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1786814349673-zfrqbn",
+    "ts": 1786814349673,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msun46vx-urzq2uyz",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
