@@ -379,5 +379,15 @@
     "language": "ru",
     "session_id": "msu71pad-t1c5158y",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1786796721173-lt5ebk",
+    "ts": 1786796721173,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msucmbfq-tfwd55mk",
+    "referrer": "https://www.google.com/"
   }
 ]
