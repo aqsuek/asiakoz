@@ -687,5 +687,15 @@
     "language": "ru",
     "session_id": "msvrt78u-ctysfvxq",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786882851724-ajjd0u",
+    "ts": 1786882851724,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msvrwaz1-a3wx1h0o",
+    "referrer": "https://www.google.com/"
   }
 ]
