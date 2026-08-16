@@ -803,5 +803,14 @@
     "language": "ru",
     "session_id": "msvzap2a-ejtmokn4",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1786896886020-1gnlab",
+    "ts": 1786896886020,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msw098b8-vcqd2wm6"
   }
 ]
