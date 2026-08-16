@@ -567,5 +567,15 @@
     "language": "ru",
     "session_id": "msv9frmk-u6cdya60",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786859837160-zswv1v",
+    "ts": 1786859837160,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msve74pd-p7c3i8i6",
+    "referrer": "https://asiakoz.com/"
   }
 ]
