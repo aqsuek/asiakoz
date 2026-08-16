@@ -822,5 +822,15 @@
     "language": "ru",
     "session_id": "msw17a1x-0twezlqr",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1786902193905-ll1rtt",
+    "ts": 1786902193905,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msw3ey7e-vozj4cys",
+    "referrer": "https://asiakoz.com/news/"
   }
 ]
