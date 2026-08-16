@@ -783,5 +783,15 @@
     "language": "ru",
     "session_id": "msvzap2a-ejtmokn4",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786895582455-0ex1e0",
+    "ts": 1786895582455,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msvzap2a-ejtmokn4",
+    "referrer": "https://asiakoz.com/"
   }
 ]
