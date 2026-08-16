@@ -882,5 +882,15 @@
     "language": "ru",
     "session_id": "msw87l6z-uhbk5o9z",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1786920769540-odk8cp",
+    "ts": 1786920769540,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msweh5f9-l7heqm1b",
+    "referrer": "https://www.google.com/"
   }
 ]
