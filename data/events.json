@@ -852,5 +852,15 @@
     "language": "ru",
     "session_id": "msw4gkey-dvi3kivg",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786904119298-28b6be",
+    "ts": 1786904119298,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msw4gkey-dvi3kivg",
+    "referrer": "https://www.google.com/"
   }
 ]
