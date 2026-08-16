@@ -892,5 +892,15 @@
     "language": "ru",
     "session_id": "msweh5f9-l7heqm1b",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786923647032-g2tmx1",
+    "ts": 1786923647032,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mswg6skp-i5tgzj0v",
+    "referrer": "https://www.google.com/"
   }
 ]
