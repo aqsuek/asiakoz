@@ -557,5 +557,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "msv1g5fl-gcp7hl79"
+  },
+  {
+    "id": "1786851843981-3bq1de",
+    "ts": 1786851843981,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msv9frmk-u6cdya60",
+    "referrer": "https://www.google.com/"
   }
 ]
