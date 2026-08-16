@@ -539,5 +539,14 @@
     "language": "ru",
     "session_id": "msv4yk6s-lc7ogsvg",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1786849911896-22kgwa",
+    "ts": 1786849911896,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msv8ae68-8wbh5tgj"
   }
 ]
