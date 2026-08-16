@@ -707,5 +707,14 @@
     "language": "ru",
     "session_id": "msvs491u-tyh7ohk5",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786884210510-jbf2m6",
+    "ts": 1786884210510,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msv1g5gg-ymun4q1w"
   }
 ]
