@@ -726,5 +726,14 @@
     "session_id": "msvt52n7-9air525j",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786888813876-c8pgcq",
+    "ts": 1786888813876,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msvvg5qy-wvdrerke"
   }
 ]
