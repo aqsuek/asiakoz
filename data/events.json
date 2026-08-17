@@ -1213,5 +1213,15 @@
     "language": "ru",
     "session_id": "msxu4n3y-1agf63fg",
     "utm_source": "chatgpt.com"
+  },
+  {
+    "id": "1787007602373-2eqrrg",
+    "ts": 1787007602373,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msxu68wg-ocucay67",
+    "referrer": "https://www.google.com/"
   }
 ]
