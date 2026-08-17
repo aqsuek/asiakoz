@@ -941,5 +941,14 @@
     "language": "ru",
     "session_id": "mssofjfl-92qkz3di",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1786941711882-v5scoc",
+    "ts": 1786941711882,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mswqxx7j-dlo82lsv"
   }
 ]
