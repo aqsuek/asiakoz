@@ -1068,5 +1068,15 @@
     "language": "ru",
     "session_id": "msx9fnox-g4ghbxh4",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786974673818-n135ue",
+    "ts": 1786974673818,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msxak31c-x4st1brg",
+    "referrer": "https://asiakoz.com/doctor-mehmet-esat-teker/"
   }
 ]
