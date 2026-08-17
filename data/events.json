@@ -1184,5 +1184,15 @@
     "language": "ru",
     "session_id": "msxq677g-t5sr8jb1",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1787001024520-0otx7p",
+    "ts": 1787001024520,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msxq677g-t5sr8jb1",
+    "referrer": "https://asiakoz.com/doctor-erol/"
   }
 ]
