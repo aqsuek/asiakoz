@@ -960,5 +960,15 @@
     "language": "ru",
     "session_id": "mswthwoh-9yy8d313",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1786945823347-wseeyo",
+    "ts": 1786945823347,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mswgj79h-fg0v19h3",
+    "referrer": "https://www.google.com/"
   }
 ]
