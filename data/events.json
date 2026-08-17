@@ -911,5 +911,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mswgw04o-tmzynqsg"
+  },
+  {
+    "id": "1786936263805-30moss",
+    "ts": 1786936263805,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mswnotn1-q68x1vyb",
+    "referrer": "https://www.google.com/"
   }
 ]
