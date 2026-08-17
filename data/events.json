@@ -1203,5 +1203,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "msxtrsrf-s2bz9myb"
+  },
+  {
+    "id": "1787007527216-i01iv0",
+    "ts": 1787007527216,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msxu4n3y-1agf63fg",
+    "utm_source": "chatgpt.com"
   }
 ]
