@@ -980,5 +980,15 @@
     "language": "ru",
     "session_id": "mswvgyxf-e412exy1",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1786959531465-95hcnp",
+    "ts": 1786959531465,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msx1jx4r-4f59uxau",
+    "referrer": "https://www.google.com/"
   }
 ]
