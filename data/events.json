@@ -1321,5 +1321,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "msyic4cw-don6zm4j"
+  },
+  {
+    "id": "1787049441700-uny90l",
+    "ts": 1787049441701,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msyj31ew-tfkhbhcc",
+    "referrer": "https://l.wl.co/"
   }
 ]
