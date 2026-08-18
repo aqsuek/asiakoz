@@ -1233,5 +1233,15 @@
     "language": "ru",
     "session_id": "msy5fnhe-dou1rr50",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787026598741-qa7ga4",
+    "ts": 1787026598741,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "msy5fnhe-dou1rr50",
+    "referrer": "https://asiakoz.com/kk/news/shymkent-ashyldy/"
   }
 ]
