@@ -1302,5 +1302,15 @@
     "language": "ru",
     "session_id": "msybsw3d-rkkeafty",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787038051603-fcldrw",
+    "ts": 1787038051603,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msycaup9-04p7v98i",
+    "referrer": "https://www.google.com/"
   }
 ]
