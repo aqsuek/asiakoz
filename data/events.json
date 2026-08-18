@@ -1408,5 +1408,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "msyrsjub-2xjhderk"
+  },
+  {
+    "id": "1787064732041-yxfvz2",
+    "ts": 1787064732041,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msys69l2-co72mkxd"
   }
 ]
