@@ -1253,5 +1253,15 @@
     "language": "ru",
     "session_id": "msy5hxdz-up79rn7c",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787026721320-nsbfgo",
+    "ts": 1787026721320,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "msy5jswg-uspgjh27",
+    "referrer": "https://www.google.com/"
   }
 ]
