@@ -1532,5 +1532,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "msz37lmy-55okraq5"
+  },
+  {
+    "id": "1787089228365-qxcg32",
+    "ts": 1787089228365,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msz6rqn9-vi53xh2c",
+    "referrer": "https://yandex.ru/"
   }
 ]
