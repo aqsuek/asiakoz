@@ -1341,5 +1341,14 @@
     "language": "ru",
     "session_id": "msyjqb4b-vxs17mbe",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787051508319-yn5uz1",
+    "ts": 1787051508319,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msykbbx4-f14c6ug6"
   }
 ]
