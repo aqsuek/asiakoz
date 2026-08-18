@@ -1523,5 +1523,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "msz62lvl-iznekoxy"
+  },
+  {
+    "id": "1787088507607-g66cpe",
+    "ts": 1787088507607,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msz37lmy-55okraq5"
   }
 ]
