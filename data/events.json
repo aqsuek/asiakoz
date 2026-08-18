@@ -1283,5 +1283,14 @@
     "language": "ru",
     "session_id": "msy5nlr4-flacbtvj",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787032515556-eotoy5",
+    "ts": 1787032515556,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "msy900pa-2fkstik2"
   }
 ]
