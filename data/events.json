@@ -1399,5 +1399,14 @@
     "language": "ru",
     "session_id": "msyqtz6y-w3v2boo9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787064088500-wielvy",
+    "ts": 1787064088500,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msyrsjub-2xjhderk"
   }
 ]
