@@ -1331,5 +1331,15 @@
     "language": "ru",
     "session_id": "msyj31ew-tfkhbhcc",
     "referrer": "https://l.wl.co/"
+  },
+  {
+    "id": "1787050532568-rcnz8y",
+    "ts": 1787050532568,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msyjqb4b-vxs17mbe",
+    "referrer": "https://www.google.com/"
   }
 ]
