@@ -1467,5 +1467,15 @@
     "language": "ru",
     "session_id": "msyxmryb-4kf5rf41",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787074223400-m7bz83",
+    "ts": 1787074223400,
+    "event": "form_submit",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "msyxmryb-4kf5rf41",
+    "referrer": "https://www.google.com/"
   }
 ]
