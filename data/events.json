@@ -1610,5 +1610,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mszme11h-vfqrt15f"
+  },
+  {
+    "id": "1787123945143-um9d81",
+    "ts": 1787123945143,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszrfuqw-ks0uu165",
+    "referrer": "https://www.facebook.com/"
   }
 ]
