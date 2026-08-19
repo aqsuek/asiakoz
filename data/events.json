@@ -1582,5 +1582,15 @@
     "language": "ru",
     "session_id": "mszjvqpl-wjao89de",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1787114158729-o6jniy",
+    "ts": 1787114158729,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszlm3gj-hhvnk2cy",
+    "referrer": "https://www.google.com/"
   }
 ]
