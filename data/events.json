@@ -1821,5 +1821,14 @@
     "language": "ru",
     "session_id": "mt0c01br-7yvgfqy5",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1787158901115-jnjb6i",
+    "ts": 1787158901115,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt0c8dau-xic47lbu"
   }
 ]
