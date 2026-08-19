@@ -1918,5 +1918,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt0kvuyl-lqff3ilo"
+  },
+  {
+    "id": "1787176609620-mkxxwa",
+    "ts": 1787176609620,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszbrpeo-h5ylyscw"
   }
 ]
