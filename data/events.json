@@ -1572,5 +1572,15 @@
     "language": "ru",
     "session_id": "mszgkq4u-jluq2bcq",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1787111251010-p8i90i",
+    "ts": 1787111251010,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszjvqpl-wjao89de",
+    "referrer": "https://yandex.kz/"
   }
 ]
