@@ -1620,5 +1620,15 @@
     "language": "ru",
     "session_id": "mszrfuqw-ks0uu165",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1787124233846-6uk2sx",
+    "ts": 1787124233846,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszrm1sn-6763drfu",
+    "referrer": "https://www.google.com/"
   }
 ]
