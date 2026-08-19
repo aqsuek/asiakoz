@@ -1659,5 +1659,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mszsmdcf-mngkr4aq"
+  },
+  {
+    "id": "1787127108972-8h5vdx",
+    "ts": 1787127108972,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "msztbmte-1g1122cs",
+    "referrer": "https://www.google.com/"
   }
 ]
