@@ -1669,5 +1669,15 @@
     "language": "ru",
     "session_id": "msztbmte-1g1122cs",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787127212355-47z5fw",
+    "ts": 1787127212355,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "msztbmte-1g1122cs",
+    "button_location": "contacts",
+    "referrer": "https://www.google.com/"
   }
 ]
