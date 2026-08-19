@@ -1679,5 +1679,15 @@
     "session_id": "msztbmte-1g1122cs",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787128579849-5b7vs2",
+    "ts": 1787128579849,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszu74mw-7wxcfbbs",
+    "referrer": "https://www.google.com/"
   }
 ]
