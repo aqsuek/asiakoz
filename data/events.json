@@ -1811,5 +1811,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt0bnnde-9a7m6agi"
+  },
+  {
+    "id": "1787158481760-mvn3hc",
+    "ts": 1787158481760,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt0c01br-7yvgfqy5",
+    "referrer": "https://www.facebook.com/"
   }
 ]
