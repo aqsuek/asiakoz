@@ -1870,5 +1870,14 @@
     "language": "ru",
     "session_id": "mt0chqi7-fd8s0iye",
     "referrer": "https://asiakoz.com/news/shymkent-ashyldy/"
+  },
+  {
+    "id": "1787159853971-y2ashx",
+    "ts": 1787159853971,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt0cthrt-gqwmm8l1"
   }
 ]
