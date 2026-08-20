@@ -2080,5 +2080,16 @@
     "language": "ru",
     "session_id": "mt1mnggq-3cmkl5v3",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787236869004-yjtkx0",
+    "ts": 1787236869004,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mt1mnggq-3cmkl5v3",
+    "button_location": "branches_book",
+    "referrer": "https://www.google.com/"
   }
 ]
