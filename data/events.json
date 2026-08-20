@@ -1993,5 +1993,15 @@
     "language": "ru",
     "session_id": "mt19izku-jk162eg9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787216252202-a2v8im",
+    "ts": 1787216252202,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1ae9uo-l1w20dk1",
+    "referrer": "https://www.google.com/"
   }
 ]
