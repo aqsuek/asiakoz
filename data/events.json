@@ -2003,5 +2003,14 @@
     "language": "ru",
     "session_id": "mt1ae9uo-l1w20dk1",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787216329510-ma65dr",
+    "ts": 1787216329510,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1afzbs-71odu6bk"
   }
 ]
