@@ -2101,5 +2101,15 @@
     "language": "ru",
     "session_id": "mt1najdm-9dw3xrla",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787242818814-hx9q9a",
+    "ts": 1787242818814,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1qbrmu-srl4ejyq",
+    "referrer": "https://yandex.kz/"
   }
 ]
