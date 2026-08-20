@@ -1973,5 +1973,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt11ag5c-gcp7hl79"
+  },
+  {
+    "id": "1787214791238-jp9jyl",
+    "ts": 1787214791238,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt19izku-jk162eg9",
+    "referrer": "https://www.google.com/"
   }
 ]
