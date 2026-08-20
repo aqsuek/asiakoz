@@ -2041,5 +2041,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mszbrpem-1d57hdzz"
+  },
+  {
+    "id": "1787218269336-ysippj",
+    "ts": 1787218269336,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt1b8gm2-r8g0p6zt",
+    "referrer": "https://www.google.com/"
   }
 ]
