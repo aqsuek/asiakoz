@@ -2051,5 +2051,14 @@
     "language": "ru",
     "session_id": "mt1b8gm2-r8g0p6zt",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787223913869-zoapba",
+    "ts": 1787223913869,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1eyj7m-c8z4u7v2"
   }
 ]
