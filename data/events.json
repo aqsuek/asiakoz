@@ -2120,5 +2120,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt1qkxk4-8ujp839c"
+  },
+  {
+    "id": "1787247820305-waucsw",
+    "ts": 1787247820305,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1t6xdn-n8dd45ei",
+    "referrer": "https://www.google.com/"
   }
 ]
