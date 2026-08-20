@@ -1964,5 +1964,14 @@
     "language": "ru",
     "session_id": "mt10ei01-8pemmt1j",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1787200982406-4ri9j2",
+    "ts": 1787200982406,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt11ag5c-gcp7hl79"
   }
 ]
