@@ -2032,5 +2032,14 @@
     "session_id": "mt1b8gm2-r8g0p6zt",
     "button_location": "service_modal",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787218068442-bo2al2",
+    "ts": 1787218068442,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszbrpem-1d57hdzz"
   }
 ]
