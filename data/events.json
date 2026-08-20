@@ -1954,5 +1954,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mszbrpfj-gcp7hl79"
+  },
+  {
+    "id": "1787199478098-dd6wdl",
+    "ts": 1787199478098,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt10ei01-8pemmt1j",
+    "referrer": "https://www.google.kz/"
   }
 ]
