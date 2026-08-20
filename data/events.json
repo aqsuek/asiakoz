@@ -2012,5 +2012,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt1afzbs-71odu6bk"
+  },
+  {
+    "id": "1787217659869-m2z7cy",
+    "ts": 1787217659869,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1b8gm2-r8g0p6zt",
+    "referrer": "https://www.google.com/"
   }
 ]
