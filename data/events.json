@@ -2111,5 +2111,14 @@
     "language": "ru",
     "session_id": "mt1qbrmu-srl4ejyq",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1787243247116-8vdhay",
+    "ts": 1787243247116,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt1qkxk4-8ujp839c"
   }
 ]
