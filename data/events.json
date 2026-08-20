@@ -1945,5 +1945,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt0scp63-1y548nzj"
+  },
+  {
+    "id": "1787187168961-wuwgso",
+    "ts": 1787187168961,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mszbrpfj-gcp7hl79"
   }
 ]
