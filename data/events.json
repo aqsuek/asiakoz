@@ -2022,5 +2022,15 @@
     "language": "ru",
     "session_id": "mt1b8gm2-r8g0p6zt",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787217779608-eezjis",
+    "ts": 1787217779608,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mt1b8gm2-r8g0p6zt",
+    "button_location": "service_modal",
+    "referrer": "https://www.google.com/"
   }
 ]
