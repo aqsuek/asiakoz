@@ -2342,5 +2342,14 @@
     "language": "ru",
     "session_id": "mt2wfcip-u8nwngue",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787313900974-g9w9hu",
+    "ts": 1787313900974,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt2wjcrb-duv92opu"
   }
 ]
