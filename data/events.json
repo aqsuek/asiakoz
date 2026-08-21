@@ -2238,5 +2238,14 @@
     "language": "ru",
     "session_id": "mt2n26vi-i2n4srvt",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1787299280310-17bugx",
+    "ts": 1787299280310,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt2ntwfh-i6qugem7"
   }
 ]
