@@ -2417,5 +2417,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt39oyi7-xlb51onq"
+  },
+  {
+    "id": "1787337521438-nmojyo",
+    "ts": 1787337521438,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt3alc75-zagqwl2c"
   }
 ]
