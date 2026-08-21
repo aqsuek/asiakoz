@@ -2399,5 +2399,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt33140z-qfahv0uz"
+  },
+  {
+    "id": "1787329006161-106s6i",
+    "ts": 1787329006161,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt35j047-ef0qk0n5"
   }
 ]
