@@ -2157,5 +2157,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mt2irqmc-h8xrymun"
+  },
+  {
+    "id": "1787290844585-gtqp6h",
+    "ts": 1787290844585,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mt2is4kg-5gp5tuqe",
+    "button_location": "branches_book",
+    "referrer": "https://www.google.com/"
   }
 ]
