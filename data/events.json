@@ -2322,5 +2322,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt2upuqi-lcfp40kz"
+  },
+  {
+    "id": "1787312677080-uzduvu",
+    "ts": 1787312677080,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt2vnzbk-d2xd2060",
+    "referrer": "https://www.google.com/"
   }
 ]
