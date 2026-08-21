@@ -2228,5 +2228,15 @@
     "language": "ru",
     "session_id": "mt2me72m-6a4n85i9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787297992872-dyaoua",
+    "ts": 1787297992872,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt2n26vi-i2n4srvt",
+    "referrer": "https://www.facebook.com/"
   }
 ]
