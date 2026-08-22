@@ -2560,5 +2560,15 @@
     "language": "ru",
     "session_id": "mt49m7bq-869txzqs",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787396362116-p9c2w0",
+    "ts": 1787396362116,
+    "event": "phone_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mt49m7bq-869txzqs",
+    "button_location": "contacts_call",
+    "referrer": "https://www.google.com/"
   }
 ]
