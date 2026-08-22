@@ -2608,5 +2608,15 @@
     "language": "ru",
     "session_id": "mt4mqgxa-gicetdbm",
     "referrer": "https://www.yandex.kz/"
+  },
+  {
+    "id": "1787417564214-nkd5qb",
+    "ts": 1787417564214,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt4m93ro-0qpv7b4y",
+    "referrer": "https://www.google.com/"
   }
 ]
