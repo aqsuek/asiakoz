@@ -2628,5 +2628,14 @@
     "language": "ru",
     "session_id": "mt4okyam-iaaevudl",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1787433372662-wfz6p7",
+    "ts": 1787433372662,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt4vo0k7-m3blezlp"
   }
 ]
