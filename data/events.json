@@ -2444,5 +2444,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt26neqm-noeo4gfx"
+  },
+  {
+    "id": "1787360850160-9wvtyt",
+    "ts": 1787360850160,
+    "event": "page_view",
+    "page_path": "/kk/news/shymkent-ashyldy/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt3ohkop-neerdr5k"
   }
 ]
