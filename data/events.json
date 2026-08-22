@@ -2501,5 +2501,15 @@
     "language": "ru",
     "session_id": "mt3ynpgb-7yqbpcvb",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787381071248-kmq2id",
+    "ts": 1787381071248,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt40j0o9-h06j7jyl",
+    "referrer": "https://www.google.com/"
   }
 ]
