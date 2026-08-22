@@ -2570,5 +2570,14 @@
     "session_id": "mt49m7bq-869txzqs",
     "button_location": "contacts_call",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787397439419-qrr035",
+    "ts": 1787397439419,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt4a9sx4-3uchwhkw"
   }
 ]
