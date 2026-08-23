@@ -2802,5 +2802,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt60kxin-r33cagmk"
+  },
+  {
+    "id": "1787502167098-kcnf85",
+    "ts": 1787502167099,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt60mi8n-luki673s"
   }
 ]
