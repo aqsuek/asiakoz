@@ -2783,5 +2783,15 @@
     "language": "ru",
     "session_id": "mt5wi34j-pha2v6ij",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787495293008-pzk2gb",
+    "ts": 1787495293008,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mt5wi34j-pha2v6ij",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
