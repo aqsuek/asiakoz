@@ -2665,5 +2665,15 @@
     "language": "ru",
     "session_id": "mt590yzs-dshg7xgl",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787455966181-xgdkm5",
+    "ts": 1787455966181,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt594753-3ht2fxn6",
+    "referrer": "https://www.google.com/"
   }
 ]
