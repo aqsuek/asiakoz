@@ -2773,5 +2773,15 @@
     "language": "ru",
     "session_id": "mt5w5yv3-6huylbwq",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787495242349-usmlap",
+    "ts": 1787495242349,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt5wi34j-pha2v6ij",
+    "referrer": "https://www.google.com/"
   }
 ]
