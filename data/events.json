@@ -2646,5 +2646,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt4zerqm-26s3l0p8"
+  },
+  {
+    "id": "1787448636465-baiasp",
+    "ts": 1787448636465,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt54r5oc-58z2vj5u"
   }
 ]
