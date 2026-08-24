@@ -1254,18 +1254,21 @@ a { color: inherit; text-decoration: none; }
   .container { padding-bottom: 110px; }
 }
 
-/* Витрэктомия / SEO service landing */
-.vitrektomiya-hero {
+/* SEO service landings: витрэктомия, катаракта */
+.vitrektomiya-hero,
+.katarakta-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
   gap: 22px;
   align-items: stretch;
   overflow: hidden;
 }
-.vitrektomiya-hero__text {
+.vitrektomiya-hero__text,
+.katarakta-hero__text {
   min-width: 0;
 }
-.vitrektomiya-hero__media {
+.vitrektomiya-hero__media,
+.katarakta-hero__media {
   position: relative;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -1273,7 +1276,8 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid rgba(12, 18, 34, 0.06);
   min-height: 280px;
 }
-.vitrektomiya-hero__media > img {
+.vitrektomiya-hero__media > img,
+.katarakta-hero__media > img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1282,7 +1286,8 @@ a { color: inherit; text-decoration: none; }
   object-position: center;
   display: block;
 }
-.vitrektomiya-hero__doctor {
+.vitrektomiya-hero__doctor,
+.katarakta-hero__doctor {
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -1297,7 +1302,8 @@ a { color: inherit; text-decoration: none; }
   text-decoration: none;
   color: inherit;
 }
-.vitrektomiya-hero__doctor img {
+.vitrektomiya-hero__doctor img,
+.katarakta-hero__doctor img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1305,14 +1311,16 @@ a { color: inherit; text-decoration: none; }
   object-position: top;
   flex-shrink: 0;
 }
-.vitrektomiya-hero__doctor span {
+.vitrektomiya-hero__doctor span,
+.katarakta-hero__doctor span {
   display: flex;
   flex-direction: column;
   font-size: 12px;
   line-height: 1.3;
   color: var(--text-muted);
 }
-.vitrektomiya-hero__doctor strong {
+.vitrektomiya-hero__doctor strong,
+.katarakta-hero__doctor strong {
   font-size: 13px;
   color: var(--text);
 }
@@ -1321,6 +1329,9 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin: 16px 0 4px;
+}
+.hero-facts--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .hero-fact {
   background: #fff;
@@ -1454,16 +1465,88 @@ a { color: inherit; text-decoration: none; }
 }
 .med-trust p { margin: 0 0 8px; }
 .med-trust p:last-child { margin-bottom: 0; }
+.surgeon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.surgeon-grid .surgeon-featured {
+  max-width: none;
+}
+.iol-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.iol-compare article {
+  background: #fff;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  border-radius: 1.25rem;
+  padding: 18px 16px;
+  box-shadow: var(--shadow);
+}
+.iol-compare h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+.iol-compare ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.iol-compare li { margin-bottom: 6px; }
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.plain-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.plain-list li { margin-bottom: 6px; }
+.price-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+@media (max-width: 1100px) {
+  .hero-facts--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 900px) {
-  .vitrektomiya-hero { grid-template-columns: 1fr; }
-  .vitrektomiya-hero__media {
+  .vitrektomiya-hero,
+  .katarakta-hero { grid-template-columns: 1fr; }
+  .vitrektomiya-hero__media,
+  .katarakta-hero__media {
     min-height: 0;
     aspect-ratio: 16 / 10;
   }
+  .katarakta-hero__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .katarakta-hero .spa-actions { order: 1; }
+  .katarakta-hero .hero-facts { order: 2; }
+  .katarakta-hero .hero-address,
+  .katarakta-hero .hero-contacts-note { order: 3; }
   .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .price-grid { grid-template-columns: 1fr; }
+  .price-grid,
+  .surgeon-grid,
+  .iol-compare { grid-template-columns: 1fr; }
   .surgeon-featured { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
-  .hero-facts { grid-template-columns: 1fr; }
+  .hero-facts,
+  .hero-facts--4,
+  .symptom-grid { grid-template-columns: 1fr; }
 }

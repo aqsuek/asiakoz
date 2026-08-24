@@ -142,6 +142,26 @@
           window.gtag_report_conversion();
         }
       }
+
+      var ctaId = link.getAttribute("data-cta");
+      if (ctaId) {
+        pushDataLayer("cta_click", {
+          cta_id: ctaId,
+          link_url: href,
+          link_text: (link.textContent || "").trim()
+        });
+      }
+    });
+
+    document.addEventListener("toggle", function (e) {
+      var details = e.target;
+      if (!details || details.tagName !== "DETAILS") return;
+      if (!details.closest("#faq")) return;
+      var summary = details.querySelector("summary");
+      pushDataLayer("faq_toggle", {
+        faq_question: summary ? (summary.textContent || "").trim() : "",
+        faq_open: details.open
+      });
     });
   }
 
