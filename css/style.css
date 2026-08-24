@@ -526,6 +526,15 @@ a { color: inherit; text-decoration: none; }
   aspect-ratio: 9/16;
 }
 .video-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-card:has(.video-caption) {
+  aspect-ratio: auto;
+  height: auto;
+}
+.video-card:has(.video-caption) video {
+  aspect-ratio: 9/16;
+  height: auto;
+  max-height: none;
+}
 @media (max-width: 900px) {
   .video-card {
     box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(15, 23, 42, 0.06);
@@ -1261,4 +1270,152 @@ a { color: inherit; text-decoration: none; }
   .header-nav { display: none; }
   .header-contacts { display: none; }
   .container { padding-bottom: 110px; }
+}
+
+/* Витрэктомия / SEO service landing */
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0 4px;
+}
+.hero-fact {
+  background: #fff;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  border-radius: 1rem;
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+}
+.hero-fact b {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent-deep, #0B3A4A);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.hero-fact span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.hero-address,
+.hero-contacts-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.price-card {
+  background: #fff;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  border-radius: 1.35rem;
+  padding: 20px 18px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.price-card--accent {
+  background: linear-gradient(160deg, #fff 0%, var(--accent-soft, #EDFAFC) 100%);
+  border-color: rgba(0, 169, 193, 0.25);
+}
+.price-card__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.price-card__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.price-card__value {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--accent-deep, #0B3A4A);
+  line-height: 1.25;
+}
+.price-card__text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+.price-card .btn { align-self: flex-start; margin-top: auto; }
+.urgent-alert {
+  border-radius: 1.35rem;
+  border: 1px solid rgba(180, 83, 9, 0.22);
+  background: linear-gradient(160deg, #fffbeb 0%, #fff 70%);
+  padding: 20px 18px;
+  box-shadow: var(--shadow);
+}
+.urgent-alert__title {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #92400e;
+  line-height: 1.3;
+}
+.urgent-alert p {
+  margin: 0 0 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.section-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 1rem;
+  background: var(--accent-soft, #EDFAFC);
+  border: 1px solid rgba(0, 169, 193, 0.18);
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+.surgeon-featured {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  max-width: 720px;
+  text-decoration: none;
+  color: inherit;
+}
+.surgeon-featured .lp-doctor-photo {
+  min-height: 220px;
+}
+.video-caption {
+  margin: 0;
+  padding: 10px 12px 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.med-trust {
+  background: #fff;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  border-radius: 1.25rem;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+.med-trust p { margin: 0 0 8px; }
+.med-trust p:last-child { margin-bottom: 0; }
+@media (max-width: 900px) {
+  .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .price-grid { grid-template-columns: 1fr; }
+  .surgeon-featured { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .hero-facts { grid-template-columns: 1fr; }
 }

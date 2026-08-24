@@ -8,11 +8,11 @@
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/almaty/": {
-    "hash": "3aa96aeea010bc10",
+    "hash": "769792433e31b757",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/almaty/": {
-    "hash": "a9f53fe19cdf6ae4",
+    "hash": "95ec35bfaf273b90",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/aqtau/": {
@@ -20,15 +20,15 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/kk/aqtau/": {
-    "hash": "97ea4dfc0f082d91",
+    "hash": "b570f2812b58f01e",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/shymkent/": {
-    "hash": "1b592ae738527737",
+    "hash": "97aa7a88d9d7579b",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/kk/shymkent/": {
-    "hash": "e5eda5d5f1a79d53",
+    "hash": "3382d2882fccec25",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctors/": {
@@ -52,20 +52,20 @@
     "lastmod": "2026-08-03"
   },
   "https://asiakoz.com/doctor-mehmet-esat-teker/": {
-    "hash": "8d467519c9b487b9",
-    "lastmod": "2026-08-03"
+    "hash": "2402fa60a18058ff",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctor-aliya/": {
-    "hash": "6fefd767ff63878e",
-    "lastmod": "2026-08-03"
+    "hash": "7dffdda6bcd2c689",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctor-musay/": {
-    "hash": "5a0a618c0633d570",
-    "lastmod": "2026-08-03"
+    "hash": "d3242206a3c14b69",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctor-ali-keskin/": {
-    "hash": "243e3be3ba289a41",
-    "lastmod": "2026-07-30"
+    "hash": "62191dba68a87f38",
+    "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/doctor-erol/": {
     "hash": "6b82c845e3377260",
@@ -316,8 +316,8 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/vitrektomiya-almaty/": {
-    "hash": "d179c5fcfde76d73",
-    "lastmod": "2026-08-03"
+    "hash": "601ce7226c838fdc",
+    "lastmod": "2026-08-24"
   },
   "https://asiakoz.com/vmd-almaty/": {
     "hash": "d8bb550e4ce1182e",
@@ -344,7 +344,7 @@
     "lastmod": "2026-07-30"
   },
   "https://asiakoz.com/aktau/": {
-    "hash": "f1c4f19f224834e8",
+    "hash": "080b198d118ad8b5",
     "lastmod": "2026-08-14"
   },
   "https://asiakoz.com/srochnye-simptomy-glaz-almaty/": {
@@ -357,6 +357,30 @@
   },
   "https://asiakoz.com/news/shymkent-ashyldy/": {
     "hash": "eb169c098dab45f1",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/laser/doctor/mehmet-esat-teker/": {
+    "hash": "2402fa60a18058ff",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/laser/doctor/orel-talip/": {
+    "hash": "8da0740d9f9f5e53",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/almaty/doctor/aliya/": {
+    "hash": "7dffdda6bcd2c689",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/aktau/doctor/ali-keskin/": {
+    "hash": "62191dba68a87f38",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/aktau/doctor/erol-joshkun/": {
+    "hash": "cd6cd1a6eeeffbb8",
+    "lastmod": "2026-08-14"
+  },
+  "https://asiakoz.com/aktau/doctor/nazgul-sagyndykova/": {
+    "hash": "e829add219227966",
     "lastmod": "2026-08-14"
   }
 }
