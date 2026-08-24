@@ -2882,5 +2882,15 @@
     "language": "ru",
     "session_id": "mt6mfbay-4figesk5",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787541620966-0wb5o2",
+    "ts": 1787541620966,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6o428p-354kqrgr",
+    "referrer": "https://www.google.com/"
   }
 ]
