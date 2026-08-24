@@ -2902,5 +2902,15 @@
     "language": "ru",
     "session_id": "mt6o6vub-r741qeab",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787543666345-87r355",
+    "ts": 1787543666345,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6pbzw1-d1r7hpv2",
+    "referrer": "https://www.google.com/"
   }
 ]
