@@ -2951,5 +2951,15 @@
     "language": "ru",
     "session_id": "mt6s4ly3-dptnrpqp",
     "referrer": "https://asiakoz.com/shymkent/"
+  },
+  {
+    "id": "1787551302772-koe0ij",
+    "ts": 1787551302772,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6tvmaz-3vlufqrg",
+    "referrer": "https://www.google.com/"
   }
 ]
