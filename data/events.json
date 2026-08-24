@@ -2981,5 +2981,15 @@
     "language": "ru",
     "session_id": "mt6u9s3g-asrh0lpv",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1787552992316-8nzv0a",
+    "ts": 1787552992316,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6uuaff-bmiij17o",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
