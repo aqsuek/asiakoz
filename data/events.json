@@ -3101,5 +3101,15 @@
     "language": "ru",
     "session_id": "mt71j6lb-qk64g6qn",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787570402647-15tvi1",
+    "ts": 1787570402647,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt757cui-urt411h5",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
