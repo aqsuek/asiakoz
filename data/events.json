@@ -3072,5 +3072,15 @@
     "session_id": "mt6xgyh6-hin1vouc",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787558173878-91lp4u",
+    "ts": 1787558173878,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6xyvro-l3dieapk",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
