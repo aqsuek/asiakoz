@@ -2941,5 +2941,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mt6rvs0y-cnk22dm5"
+  },
+  {
+    "id": "1787548357891-oiodha",
+    "ts": 1787548357891,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt6s4ly3-dptnrpqp",
+    "referrer": "https://asiakoz.com/shymkent/"
   }
 ]
