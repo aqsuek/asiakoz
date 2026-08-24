@@ -209,17 +209,8 @@
       header.classList.add("site-header");
     });
 
-    document.querySelectorAll("a.logo").forEach(function (logo) {
-      if (logo.querySelector(".logo-wordmark")) return;
-      var img = logo.querySelector(".logo-img");
-      if (!img) return;
-      var wrap = document.createElement("span");
-      wrap.className = "logo-wordmark";
-      wrap.innerHTML =
-        '<span class="logo-text-title">Asiakoz</span>' +
-        '<span class="logo-text-sub">Түрік көз клиникасы</span>' +
-        '<span class="logo-text-sub logo-text-sub--ru">Турецкая глазная клиника</span>';
-      logo.appendChild(wrap);
+    document.querySelectorAll(".logo-wordmark").forEach(function (el) {
+      if (el.parentNode) el.parentNode.removeChild(el);
     });
 
     if (!document.getElementById("asiakoz-wa-fixed") && !document.querySelector(".sticky-whatsapp")) {

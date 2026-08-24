@@ -170,28 +170,10 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   object-fit: contain;
 }
-.logo-wordmark {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-  min-width: 0;
-}
-.logo-text-title {
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  font-size: 14px;
-  color: var(--accent);
-}
+.logo-wordmark,
+.logo-text-title,
 .logo-text-sub {
-  font-size: 9px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-top: 3px;
-  line-height: 1.25;
-}
-.logo-text-sub--ru { display: block; }
-@media (max-width: 480px) {
-  .logo-wordmark { display: none; }
+  display: none;
 }
 .header-right { display: flex; align-items: center; gap: 12px; }
 .lang-switch {
@@ -1273,9 +1255,70 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Витрэктомия / SEO service landing */
+.vitrektomiya-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
+  gap: 22px;
+  align-items: stretch;
+  overflow: hidden;
+}
+.vitrektomiya-hero__text {
+  min-width: 0;
+}
+.vitrektomiya-hero__media {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #f4f8fa;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  min-height: 280px;
+}
+.vitrektomiya-hero__media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.vitrektomiya-hero__doctor {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100% - 24px);
+  padding: 8px 12px 8px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  text-decoration: none;
+  color: inherit;
+}
+.vitrektomiya-hero__doctor img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+}
+.vitrektomiya-hero__doctor span {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--text-muted);
+}
+.vitrektomiya-hero__doctor strong {
+  font-size: 13px;
+  color: var(--text);
+}
 .hero-facts {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin: 16px 0 4px;
 }
@@ -1412,6 +1455,11 @@ a { color: inherit; text-decoration: none; }
 .med-trust p { margin: 0 0 8px; }
 .med-trust p:last-child { margin-bottom: 0; }
 @media (max-width: 900px) {
+  .vitrektomiya-hero { grid-template-columns: 1fr; }
+  .vitrektomiya-hero__media {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
   .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .price-grid { grid-template-columns: 1fr; }
   .surgeon-featured { grid-template-columns: 1fr; }
