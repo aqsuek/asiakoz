@@ -3030,5 +3030,15 @@
     "language": "ru",
     "session_id": "mt6xdhrn-diyj2oxf",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787557289212-yez4qm",
+    "ts": 1787557289212,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt6xg0cu-uf80swfe",
+    "referrer": "https://www.google.com/"
   }
 ]
