@@ -3111,5 +3111,14 @@
     "language": "ru",
     "session_id": "mt757cui-urt411h5",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1787571376972-gxsqs5",
+    "ts": 1787571376972,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt75tsz8-o7rgtmjq"
   }
 ]
