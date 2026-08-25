@@ -3422,5 +3422,14 @@
     "session_id": "mt8dar2z-absk38o8",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787645579299-j2k51s",
+    "ts": 1787645579299,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8e08w1-vdnb1154"
   }
 ]
