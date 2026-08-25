@@ -3310,5 +3310,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787639692561-q0e1ca",
+    "ts": 1787639692561,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8ahzn8-lygoh8ox",
+    "referrer": "https://www.google.com/"
   }
 ]
