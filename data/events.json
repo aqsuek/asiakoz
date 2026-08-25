@@ -3543,5 +3543,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt7wetfl-neerdr5k"
+  },
+  {
+    "id": "1787654259401-likhyz",
+    "ts": 1787654259401,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8j6344-zf7h2uz6"
   }
 ]
