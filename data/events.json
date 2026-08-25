@@ -3646,5 +3646,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt8p7cix-lhw7tdnk"
+  },
+  {
+    "id": "1787664742668-28r00r",
+    "ts": 1787664742668,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8pf0vr-ywt09oi5"
   }
 ]
