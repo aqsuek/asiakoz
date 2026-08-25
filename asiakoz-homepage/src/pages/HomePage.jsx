@@ -17,6 +17,8 @@ import ProcessSteps from "../components/laser/ProcessSteps";
 import PriceIncludes from "../components/laser/PriceIncludes";
 import CompactAdvantages from "../components/laser/CompactAdvantages";
 import LaserFAQ from "../components/laser/LaserFAQ";
+import CityFAQ from "../components/CityFAQ";
+import CityLenses from "../components/CityLenses";
 import { IS_ALMATY, IS_HOME, IS_LASER } from "../lib/branch";
 
 function LaserHome() {
@@ -49,9 +51,11 @@ export default function HomePage() {
       {IS_HOME && <BranchCities />}
       {IS_ALMATY && <QuickPaths />}
       <Advantages />
+      {IS_ALMATY && <CityLenses />}
       <Services />
       <Doctors />
       <Reviews />
+      <CityFAQ />
       <Booking />
       <Contacts />
     </>

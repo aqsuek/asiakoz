@@ -1497,6 +1497,50 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.55;
 }
 .iol-compare li { margin-bottom: 6px; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.iol-table-wrap {
+  margin: 18px 0 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid rgba(12, 18, 34, 0.06);
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.iol-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.iol-table th,
+.iol-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(12, 18, 34, 0.06);
+}
+.iol-table thead th {
+  background: #f4f8fa;
+  font-size: 13px;
+  color: var(--text);
+}
+.iol-table tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.iol-table tbody td {
+  color: var(--text-muted);
+}
+.iol-table tbody tr:last-child th,
+.iol-table tbody tr:last-child td {
+  border-bottom: 0;
+}
 .symptom-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1542,7 +1586,8 @@ a { color: inherit; text-decoration: none; }
   .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .price-grid,
   .surgeon-grid,
-  .iol-compare { grid-template-columns: 1fr; }
+  .iol-compare,
+  .why-grid { grid-template-columns: 1fr; }
   .surgeon-featured { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
