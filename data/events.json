@@ -3254,5 +3254,15 @@
     "language": "ru",
     "session_id": "mt88jhfc-77tusn8n",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787636426985-g1u02i",
+    "ts": 1787636426985,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt88jhfc-77tusn8n",
+    "referrer": "https://www.google.com/"
   }
 ]
