@@ -3412,5 +3412,15 @@
     "language": "ru",
     "session_id": "mt8dar2z-absk38o8",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787644430806-o85fat",
+    "ts": 1787644430806,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mt8dar2z-absk38o8",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
