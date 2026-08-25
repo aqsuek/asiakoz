@@ -3771,5 +3771,14 @@
     "language": "ru",
     "session_id": "mt8xwbeb-c519ckbh",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787679094758-5e28ju",
+    "ts": 1787679094758,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8xymlt-mujofhvs"
   }
 ]
