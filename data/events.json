@@ -3664,5 +3664,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mt8pow95-40zw59ke"
+  },
+  {
+    "id": "1787665552167-maq0a3",
+    "ts": 1787665552167,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt8pwfu9-xgx5bez3",
+    "referrer": "https://www.google.kz/"
   }
 ]
