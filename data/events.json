@@ -4232,5 +4232,15 @@
     "language": "ru",
     "session_id": "mt9vek9k-o81stchr",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787735336394-rfgtsh",
+    "ts": 1787735336394,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mt9vek9k-o81stchr",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
