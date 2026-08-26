@@ -4079,5 +4079,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787726592762-jrgmcp",
+    "ts": 1787726592762,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt9q8cx2-9hwavmwt"
   }
 ]
