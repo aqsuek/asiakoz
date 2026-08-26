@@ -4330,5 +4330,15 @@
     "session_id": "mt9xq6cv-heelqipi",
     "button_location": "branches_book",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787739538985-j2dxkb",
+    "ts": 1787739538985,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt9xy2w2-qza169qu",
+    "referrer": "https://www.google.com/"
   }
 ]
