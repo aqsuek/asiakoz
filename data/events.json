@@ -4222,5 +4222,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1787735266243-agqjbl",
+    "ts": 1787735266243,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt9vek9k-o81stchr",
+    "referrer": "https://www.google.com/"
   }
 ]
