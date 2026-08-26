@@ -4097,5 +4097,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mt9qj7oe-p11kopct"
+  },
+  {
+    "id": "1787727167445-dxzfbr",
+    "ts": 1787727167445,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt9qkxxr-px61ztdn",
+    "referrer": "https://www.google.com/"
   }
 ]
