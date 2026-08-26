@@ -4529,5 +4529,15 @@
     "language": "ru",
     "session_id": "mtaao3ii-vq2f6tso",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787761989079-gsc05i",
+    "ts": 1787761989079,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtaatcm9-t6mm0j42",
+    "referrer": "https://l.wl.co/"
   }
 ]
