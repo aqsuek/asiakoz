@@ -4290,5 +4290,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787736073680-1a94w7",
+    "ts": 1787736073680,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mt9vvumw-9dhgufbf"
   }
 ]
