@@ -4319,5 +4319,16 @@
     "language": "ru",
     "session_id": "mt9wuyjz-lykvt9d5",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1787739173567-b3g8r3",
+    "ts": 1787739173567,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mt9xq6cv-heelqipi",
+    "button_location": "branches_book",
+    "referrer": "https://www.google.com/"
   }
 ]
