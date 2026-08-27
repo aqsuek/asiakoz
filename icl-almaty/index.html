@@ -97,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </nav>
       <div class="header-right">
         <div class="header-schedule">Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</div>
-        <div class="header-contacts"><div class="header-phone"><a href="tel:+77008880180">+7 700 888 01 80</a></div><a href="https://wa.me/77003600180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="header-contacts"><a href="https://wa.me/77003600180" class="header-whatsapp" target="_blank" rel="noopener">WhatsApp</a></div>
         <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn btn-header">Записаться</a>
       </div>
     </header>
@@ -114,10 +114,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="pill"><b>Без лазера на роговице</b><span>Линза имплантируется внутрь глаза — если метод вам подходит.</span></div>
         <div class="pill"><b>Подбор по параметрам</b><span>Размер и оптическая сила рассчитываются по измерениям.</span></div>
         <div class="pill"><b>Контроль и сопровождение</b><span>Контрольные осмотры и рекомендации после процедуры.</span></div>
+        <div class="pill"><b>Офтальмохирург</b><span>Мехмет Есат Текер — турецкий специалист, 20+ лет хирургического опыта.</span></div>
       </div>
       <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
         <a class="btn" href="https://wa.me/77003600180" target="_blank" rel="noopener">Записаться в WhatsApp (Алматы)</a>
-        <a class="btn btn-outline" href="tel:+77008880180">Позвонить</a>
       </div>
       <p style="margin-top:12px;"><b>Адрес:</b> Алматы, пр. Райымбека, 176а</p>
     </section>
@@ -218,7 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="footer-col">
           <div class="footer-title">Контакты</div>
-          <p>Алматы: <a href="tel:+77008880180" class="link">+7 700 888 01 80</a> · <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp +7 700 360 01 80</a></p>
+          <p>Алматы: <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp +7 700 360 01 80</a></p>
           <p>Пн–Пт 09:00–17:00, Сб до 14:00, Вс — выходной</p>
         </div>
       </div>
@@ -241,5 +241,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
   </script>
   <script src="/js/compliance.js"></script>
+<script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
+  }
+});
+</script>
 </body>
 </html>
