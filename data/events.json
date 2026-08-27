@@ -5053,5 +5053,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787819294084-azpd4z",
+    "ts": 1787819294084,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb9fnvi-5z1zubz3"
   }
 ]
