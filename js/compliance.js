@@ -131,10 +131,6 @@
         if (typeof window.gtag_report_conversion === "function") {
           window.gtag_report_conversion();
         }
-      });
-        if (typeof window.gtag_report_conversion === "function") {
-          window.gtag_report_conversion();
-        }
       }
 
       var ctaId = link.getAttribute("data-cta");
