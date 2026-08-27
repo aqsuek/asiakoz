@@ -4726,5 +4726,16 @@
     "language": "ru",
     "session_id": "mtazwfh0-38jd0dq7",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787803313010-j8u3yt",
+    "ts": 1787803313010,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtazwfh0-38jd0dq7",
+    "button_location": "branches_book",
+    "referrer": "https://www.google.com/"
   }
 ]
