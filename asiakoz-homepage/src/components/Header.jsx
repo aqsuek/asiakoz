@@ -10,7 +10,6 @@ import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import { phoneHref } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
-import { homeUrl } from "../lib/routes";
 import { CORPORATE_NAV_ITEMS, navItemHref } from "../lib/siteNav";
 
 export default function Header() {
@@ -48,7 +47,13 @@ export default function Header() {
   }, [open]);
 
   const bookHref = IS_LASER
-    ? homeUrl("#booking")
+    ? waBookingUrl(
+        lang,
+        lang === "ru"
+          ? "Здравствуйте! Хочу записаться на лазерную коррекцию."
+          : "Сәлеметсіз бе! Лазерлік түзетуге жазылғым келеді.",
+        { branchId: cityId },
+      )
     : waBookingUrl(lang, "", { branchId: cityId });
 
   const phone = { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay };

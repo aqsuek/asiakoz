@@ -49,6 +49,8 @@ t = re.sub(
 p.write_text(t, encoding="utf-8")
 PY
 
+bash "$(dirname "$0")/append-compliance.sh" "$INDEX"
+
 echo "Deployed Shymkent landing -> $TARGET"
 echo "URL: https://asiakoz.com/shymkent/"
 

@@ -1,4 +1,5 @@
 import { getStoredUtm } from "./utm";
+import { reportWhatsAppConversion } from "./whatsapp";
 
 const EVENT_ALIASES = {
   whatsapp_click: "organic_whatsapp_click",
@@ -112,6 +113,10 @@ export function trackEvent(eventName, payload = {}) {
 
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(base);
+
+  if (eventName === "whatsapp_click" || eventName === "booking_click" || eventName === "laser_booking_click") {
+    reportWhatsAppConversion();
+  }
 
   const alias = EVENT_ALIASES[eventName];
   if (alias && alias !== eventName) {

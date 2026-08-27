@@ -18,13 +18,20 @@ import CompactAdvantages from "../components/laser/CompactAdvantages";
 import LaserFAQ from "../components/laser/LaserFAQ";
 import CityFAQ from "../components/CityFAQ";
 import CityLenses from "../components/CityLenses";
+import MidPageCta from "../components/conversion/MidPageCta";
+import WhatsAppFunnel from "../components/conversion/WhatsAppFunnel";
+import { useLang } from "../i18n/LanguageContext";
 import { IS_ALMATY, IS_LASER } from "../lib/branch";
 
 function LaserHome() {
+  const { lang } = useLang();
+  const topic = lang === "ru" ? "лазерная коррекция" : "лазерлік түзету";
+
   return (
     <>
       <LaserHero />
       <TrustStrip />
+      <MidPageCta topic={topic} />
       <FeaturedReview />
       <Suitability />
       <LaserMethods />
@@ -34,6 +41,7 @@ function LaserHome() {
       <CompactAdvantages />
       <Reviews skipFirst />
       <LaserFAQ />
+      <WhatsAppFunnel />
       <Booking laserMode />
       <Contacts />
     </>
@@ -51,9 +59,11 @@ export default function HomePage() {
       <Advantages />
       {IS_ALMATY && <CityLenses />}
       <Services />
+      <MidPageCta />
       <Doctors />
       <Reviews />
       <CityFAQ />
+      <WhatsAppFunnel />
       <Booking />
       <Contacts />
     </>

@@ -319,11 +319,10 @@
       document.body.appendChild(bar);
     }
     applyCityChrome();
+    if (typeof window.asiakozEnhanceWaLinks === "function") {
+      window.asiakozEnhanceWaLinks();
+    }
   }
-
-  window.addEventListener("storage", function (e) {
-    if (e.key === "asiakoz-home-city" || e.key === null) applyCityChrome();
-  });
 
   document.addEventListener("DOMContentLoaded", function () {
     enforceWhatsAppOnly();
@@ -333,5 +332,8 @@
     injectCookieBanner();
     enrichFooter();
     attachAnalyticsEvents();
+    if (typeof window.asiakozCaptureAttribution === "function") {
+      window.asiakozCaptureAttribution();
+    }
   });
 })();

@@ -192,9 +192,9 @@ PY
 # Append compliance.js if missing
 if ! grep -q 'compliance.js' "$ROOT/index.html"; then
   if [[ "$(uname)" == "Darwin" ]]; then
-    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=7"></script>\n</body>|' "$ROOT/index.html"
+    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=11"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
   else
-    sed -i 's|</body>|  <script src="/js/compliance.js?v=7"></script>\n</body>|' "$ROOT/index.html"
+    sed -i 's|</body>|  <script src="/js/compliance.js?v=11"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
   fi
 fi
 

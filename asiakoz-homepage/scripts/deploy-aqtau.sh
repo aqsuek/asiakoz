@@ -32,6 +32,9 @@ for id in "${DOCTOR_IDS[@]}"; do
   cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
 done
 
+INDEX="$TARGET/index.html"
+bash "$(dirname "$0")/append-compliance.sh" "$INDEX"
+
 echo "Deployed Aktau landing -> $TARGET"
 echo "URL: https://asiakoz.com/aktau/"
 

@@ -43,6 +43,8 @@ t = re.sub(
 p.write_text(t, encoding="utf-8")
 PY
 
+bash "$(dirname "$0")/append-compliance.sh" "$INDEX"
+
 SITEMAP="$LIVE/sitemap.xml"
 if [[ -f "$SITEMAP" ]] && ! grep -q 'asiakoz.com/almaty/' "$SITEMAP"; then
   if [[ "$(uname)" == "Darwin" ]]; then

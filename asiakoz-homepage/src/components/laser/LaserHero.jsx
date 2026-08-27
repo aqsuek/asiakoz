@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 import WhatsAppIcon from "../WhatsAppIcon";
 import { useLang } from "../../i18n/LanguageContext";
-import { CLINIC } from "../../data/contacts";
+import { CLINIC, waBookingUrl } from "../../data/contacts";
 import {
   isLaserPromoActive,
   getPromoSpots,
   getPromoPriceLabel,
   getPromoOldPriceLabel,
   getPromoEndMonthName,
+  LASER_PROMO,
 } from "../../data/laserPromo";
 import { trackEvent } from "../../lib/analytics";
 import { captureUtmFromUrl } from "../../lib/utm";
+import { onWhatsAppClick } from "../../lib/whatsapp";
 import { assetUrl } from "../../data/reviews";
-import { homeUrl } from "../../lib/routes";
+import { useCity } from "../../context/CityContext";
 
 const CHIP_ROTATE_MS = 4000;
 
@@ -56,6 +58,7 @@ function DoctorChipCard({ chip }) {
 
 export default function LaserHero() {
   const { lang, t } = useLang();
+  const { cityId } = useCity();
   const h = t.laserHero || {};
   const active = isLaserPromoActive();
   const monthName = getPromoEndMonthName(lang);
@@ -84,6 +87,14 @@ export default function LaserHero() {
   }, [chips.length]);
 
   const chip = chips[chipIndex] || chips[0];
+  const price = getPromoPriceLabel(lang);
+  const waHref = waBookingUrl(
+    lang,
+    lang === "ru"
+      ? `Здравствуйте! Хочу узнать, подходит ли мне ${LASER_PROMO.method} по акции ${price}.`
+      : `Сәлеметсіз бе! ${LASER_PROMO.method} маған жасай ала ма — акция ${price}.`,
+    { branchId: cityId },
+  );
 
   return (
     <section id="promo" className="scroll-mt-24 scroll-mb-28 pb-4 pt-2 sm:pb-8 sm:pt-6">
@@ -149,13 +160,16 @@ export default function LaserHero() {
 
             <div className="mt-3 flex flex-col gap-2 sm:mt-4 sm:flex-row sm:items-center">
               <a
-                href={homeUrl("#booking")}
-                onClick={() =>
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  onWhatsAppClick("laser_hero_primary", { language: lang, city: cityId });
                   trackEvent("laser_hero_cta_click", {
                     language: lang,
                     button_location: "hero_primary",
-                  })
-                }
+                  });
+                }}
                 className="btn-primary min-h-11 w-full !py-3 sm:w-auto"
               >
                 <WhatsAppIcon className="h-4 w-4" />

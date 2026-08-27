@@ -4,6 +4,7 @@ import { CityProvider } from "./context/CityContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MobileSticky from "./components/MobileSticky";
+import AdStickyBar from "./components/conversion/AdStickyBar";
 import HomePage from "./pages/HomePage";
 import DoctorPage from "./pages/DoctorPage";
 import NewsPage from "./pages/NewsPage";
@@ -40,6 +41,7 @@ function Router() {
   return (
     <div id="top" className="min-h-screen bg-surface-warm">
       <Header />
+      <AdStickyBar />
       <main>
         {route.name === "doctor" ? (
           <DoctorPage doctorId={route.id} />

@@ -623,6 +623,34 @@ def city_switch_html(dx_id: str, current_city: str, lang: str) -> str:
     return f'<nav class="city-switch" aria-label="{title}">{"".join(links)}</nav>'
 
 
+def conversion_funnel_html(city: str, lang: str, topic: str) -> str:
+    c = CITIES[city]
+    greet = "Сәлеметсіз бе!" if lang == "kk" else "Здравствуйте!"
+    text = f"{greet} {topic} — {c['kk' if lang == 'kk' else 'ru']}."
+    wa = f"https://wa.me/{c['wa']}?text=" + __import__("urllib.parse", fromlist=["quote"]).quote(text)
+    if lang == "kk":
+        return f"""    <section class="wa-funnel" aria-label="Жазылу">
+      <h2>Қалай жазылуға болады</h2>
+      <p>3 қарапайым қадам — қоңыраусыз</p>
+      <ol>
+        <li><span class="step-num">1</span><strong>WhatsApp-қа жазыңыз</strong><br/>Симптомыңызды жазыңыз — дәрігер жауап береді.</li>
+        <li><span class="step-num">2</span><strong>Кеңес алыңыз</strong><br/>Диагностика, баға және уақытты нақтылаймыз.</li>
+        <li><span class="step-num">3</span><strong>Клиникаға келіңіз</strong><br/>Кездесу күні мен мекенжайды растаймыз.</li>
+      </ol>
+      <p style="margin-top:16px"><a class="btn" data-cta="funnel-whatsapp" href="{wa}" target="_blank" rel="noopener">WhatsApp арқылы жазылу</a></p>
+    </section>"""
+    return f"""    <section class="wa-funnel" aria-label="Запись">
+      <h2>Как записаться</h2>
+      <p>3 простых шага — без звонка</p>
+      <ol>
+        <li><span class="step-num">1</span><strong>Напишите в WhatsApp</strong><br/>Опишите симптом — врач ответит лично.</li>
+        <li><span class="step-num">2</span><strong>Получите консультацию</strong><br/>Уточним диагностику, цену и время.</li>
+        <li><span class="step-num">3</span><strong>Приходите в клинику</strong><br/>Подтвердим дату и адрес.</li>
+      </ol>
+      <p style="margin-top:16px"><a class="btn" data-cta="funnel-whatsapp" href="{wa}" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>"""
+
+
 def cta_html(city: str, lang: str, topic: str) -> str:
     c = CITIES[city]
     greet = "Сәлеметсіз бе!" if lang == "kk" else "Здравствуйте!"
@@ -841,6 +869,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
       <p>{lead}</p>
       <div class="pill-grid">{facts}</div>
       {cta_html(city, lang, copy['name'])}
+      {conversion_funnel_html(city, lang, copy['name'])}
       <p class="hero-address"><b>{'Мекенжай' if lang == 'kk' else 'Адрес'}:</b> {address} · <a class="link" href="{c['kk_href'] if lang == 'kk' else c['href']}">{city_name}</a></p>
       <p>{'Instagram'}: <a class="link" href="{c['ig']}" target="_blank" rel="noopener">{c['ig_handle']}</a></p>
     </section>
@@ -886,7 +915,8 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
       </div>
     </footer>
   </div>
-  <script src="/js/compliance.js?v=10"></script>
+  <script src="/js/compliance.js?v=11"></script>
+  <script src="/js/conversion.js?v=1"></script>
 </body>
 </html>
 """

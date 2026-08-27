@@ -1,4 +1,5 @@
 import { BRANCH, IS_HOME } from "../lib/branch";
+import { appendAttributionToMessage } from "../lib/utm";
 import {
   NETWORK_BRANCHES,
   branchAddress,
@@ -235,7 +236,8 @@ export function waBookingUrl(lang = "kz", extra = "", opts = {}) {
   }
 
   const body = extra ? `${message}\n\n${extra}` : message;
-  return `${waUrl}?text=${encodeURIComponent(body)}`;
+  const withAttribution = appendAttributionToMessage(body, lang);
+  return `${waUrl}?text=${encodeURIComponent(withAttribution)}`;
 }
 
 export function networkBranchAddress(branchId, lang = "kz") {
