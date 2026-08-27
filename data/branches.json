@@ -11,7 +11,7 @@
     "logo": "https://asiakoz.com/images/logo.png",
     "sameAs": [
       "https://www.instagram.com/asiakoz.clinic/",
-      "https://www.instagram.com/asiakoz.aktau/",
+      "https://www.instagram.com/asiakoz.aqtau/",
       "https://www.instagram.com/asiakoz.shymkent/"
     ]
   },
@@ -68,8 +68,8 @@
       "pageHref": "/aktau/",
       "kkHref": "/kk/aqtau/",
       "instagram": {
-        "handle": "@asiakoz.aktau",
-        "url": "https://www.instagram.com/asiakoz.aktau/"
+        "handle": "@asiakoz.aqtau",
+        "url": "https://www.instagram.com/asiakoz.aqtau/"
       },
       "gis": {
         "searchUrl": "https://2gis.kz/aktau/firm/70000001104276081",
@@ -121,11 +121,11 @@
       "hoursRu": "Пн–Пт 09:00–17:00, Сб до 14:00",
       "hoursKz": "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
       "geo": null,
-      "summaryRu": "Диагностика, катаракта, офтальмохирургия",
-      "summaryKz": "Диагностика, катаракта, офтальмохирургия",
+      "summaryRu": "Диагностика, лазерная коррекция, катаракта",
+      "summaryKz": "Диагностика, лазерлік түзету, катаракта",
       "statusTextRu": "Работает",
       "statusTextKz": "Жұмыс істейді",
-      "doctorCities": []
+      "doctorCities": ["shymkent"]
     }
   ]
 }

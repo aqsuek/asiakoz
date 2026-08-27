@@ -135,8 +135,8 @@ const CLINIC_BY_BRANCH = {
       url: "https://wa.me/77758630180",
     },
     instagram: {
-      handle: "@asiakoz.aktau",
-      url: "https://www.instagram.com/asiakoz.aktau/",
+      handle: "@asiakoz.aqtau",
+      url: "https://www.instagram.com/asiakoz.aqtau/",
     },
     gis: {
       searchUrl: "https://2gis.kz/aktau/firm/70000001104276081",

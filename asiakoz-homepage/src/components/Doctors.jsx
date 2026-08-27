@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
@@ -8,7 +8,7 @@ import { doctorUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { trackEvent } from "../lib/analytics";
-import { loadDoctors, localizeDoctor } from "../lib/doctors";
+import { doctorsForCity, loadDoctors, localizeDoctor } from "../lib/doctors";
 
 function DoctorCard({ doctor, lang, t, cityId }) {
   const profileUrl = doctor.profileUrl || doctorUrl(doctor.id);
@@ -154,10 +154,25 @@ export default function Doctors() {
     };
   }, []);
 
-  const allDoctors = IS_HOME
-    ? (remoteDoctors ?? []).map((d) => localizeDoctor(d, lang))
-    : t.doctors.items || [];
-  const doctors = allDoctors;
+  const allDoctors = useMemo(
+    () =>
+      IS_HOME
+        ? (remoteDoctors ?? []).map((d) => localizeDoctor(d, lang))
+        : t.doctors.items || [],
+    [remoteDoctors, lang, t.doctors.items],
+  );
+
+  const doctors = useMemo(
+    () => (IS_HOME ? doctorsForCity(allDoctors, cityId) : allDoctors),
+    [allDoctors, cityId],
+  );
+
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    el.scrollTo({ left: 0 });
+    setActiveIdx(0);
+  }, [cityId, doctors.length]);
 
   const scrollBy = (dir) => {
     const el = trackRef.current;
@@ -239,7 +254,7 @@ export default function Doctors() {
         <>
           <div
             ref={trackRef}
-            className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x [-webkit-overflow-scrolling:touch] sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+            className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch] sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
           >
             {doctors.map((doctor) => (
               <DoctorCard

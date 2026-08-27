@@ -3,13 +3,65 @@ import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
 import { waBookingUrl } from "../data/contacts";
-import { IS_AQTAU, IS_HOME } from "../lib/branch";
+import { IS_AQTAU, IS_ALMATY, IS_HOME, BRANCH } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { trackEvent } from "../lib/analytics";
 
 const HOME_PREVIEW = 6;
-/** Vision-correction laser is Almaty-only — never show on Aktau. */
+/** Vision-correction laser is not offered in Aktau. */
 const LASER_CORRECTION_ID = "laser";
+
+const SERVICE_PAGES = {
+  laser: { almaty: "/lazer-almaty/", shymkent: "/lazer-shymkent/" },
+  cataract: {
+    almaty: "/katarakta-almaty/",
+    aqtau: "/katarakta-aktau/",
+    shymkent: "/katarakta-shymkent/",
+  },
+  vitrectomy: {
+    almaty: "/vitrektomiya-almaty/",
+    aqtau: "/vitrektomiya-aktau/",
+    shymkent: "/vitrektomiya-shymkent/",
+  },
+  strabismus: {
+    almaty: "/kosoglazie/",
+    aqtau: "/kosoglazie-aktau/",
+    shymkent: "/kosoglazie-shymkent/",
+  },
+  glaucoma: {
+    almaty: "/glaukoma-almaty/",
+    aqtau: "/glaukoma-aktau/",
+    shymkent: "/glaukoma-shymkent/",
+  },
+  retina: {
+    almaty: "/setchatka-almaty/",
+    aqtau: "/vitrektomiya-aktau/",
+    shymkent: "/vitrektomiya-shymkent/",
+  },
+  kids: {
+    almaty: "/deti-almaty/",
+    aqtau: "/deti-aktau/",
+    shymkent: "/deti-shymkent/",
+  },
+  diagnostics: {
+    almaty: "/diagnostika-almaty/",
+    aqtau: "/diagnostika-aktau/",
+    shymkent: "/diagnostika-shymkent/",
+  },
+  cornea: { almaty: "/peresadka-rogovitsy-almaty/" },
+};
+
+function serviceCityId(homeCityId) {
+  if (IS_HOME) return homeCityId;
+  if (IS_ALMATY) return "almaty";
+  if (IS_AQTAU) return "aqtau";
+  if (BRANCH === "shymkent") return "shymkent";
+  return homeCityId;
+}
+
+function serviceHref(id, city) {
+  return SERVICE_PAGES[id]?.[city] || null;
+}
 
 function filterBranchServices(items, cityId) {
   const hideLaser = IS_AQTAU || (IS_HOME && cityId === "aqtau");
@@ -38,6 +90,7 @@ export default function Services() {
   const allItems = filterBranchServices(t.services.items || [], cityId);
   const items = IS_HOME ? allItems.slice(0, HOME_PREVIEW) : allItems;
   const service = active ? allItems.find((item) => item.id === active) : null;
+  const city = serviceCityId(cityId);
 
 
   const openService = (id) => {
@@ -81,14 +134,24 @@ export default function Services() {
                 <p className="mt-0.5 text-xs leading-snug text-ink-muted sm:mt-1.5 sm:flex-1 sm:text-sm">
                   {item.short}
                 </p>
-                <button
-                  type="button"
-                  onClick={() => openService(item.id)}
-                  className="btn-ghost mt-1.5 self-start !px-0 text-xs sm:mt-3 sm:text-sm"
-                >
-                  {t.services.more}
-                  <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                </button>
+                {serviceHref(item.id, city) ? (
+                  <a
+                    href={serviceHref(item.id, city)}
+                    className="btn-ghost mt-1.5 self-start !px-0 text-xs sm:mt-3 sm:text-sm"
+                  >
+                    {t.services.more}
+                    <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                  </a>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => openService(item.id)}
+                    className="btn-ghost mt-1.5 self-start !px-0 text-xs sm:mt-3 sm:text-sm"
+                  >
+                    {t.services.more}
+                    <Icon name="arrow" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                  </button>
+                )}
               </div>
             </article>
           ))}

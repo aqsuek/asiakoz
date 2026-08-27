@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import LaserOfferBanner from "../components/LaserOfferBanner";
 import QuickPaths from "../components/QuickPaths";
-import BranchCities from "../components/BranchCities";
 import Advantages from "../components/Advantages";
 import Services from "../components/Services";
 import Doctors from "../components/Doctors";
@@ -19,7 +18,7 @@ import CompactAdvantages from "../components/laser/CompactAdvantages";
 import LaserFAQ from "../components/laser/LaserFAQ";
 import CityFAQ from "../components/CityFAQ";
 import CityLenses from "../components/CityLenses";
-import { IS_ALMATY, IS_HOME, IS_LASER } from "../lib/branch";
+import { IS_ALMATY, IS_LASER } from "../lib/branch";
 
 function LaserHome() {
   return (
@@ -48,7 +47,6 @@ export default function HomePage() {
     <>
       {IS_ALMATY && <LaserOfferBanner />}
       <Hero />
-      {IS_HOME && <BranchCities />}
       {IS_ALMATY && <QuickPaths />}
       <Advantages />
       {IS_ALMATY && <CityLenses />}

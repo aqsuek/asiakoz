@@ -4,6 +4,7 @@ import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
+import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
   NETWORK_BRANCHES,
@@ -81,6 +82,7 @@ export default function MobileSticky() {
 
   const callHref = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
   const callAria = t.mobile.callAria || t.mobile.call;
+  const showPhone = showsPhoneCta(cityId);
 
   const openPicker = (action) => {
     setPendingAction(action);
@@ -116,6 +118,7 @@ export default function MobileSticky() {
       aria-hidden={hidden}
     >
       <div className="mx-auto flex max-w-lg items-center gap-2">
+        {showPhone && (
         <a
           href={callHref}
           onClick={(e) => {
@@ -137,6 +140,7 @@ export default function MobileSticky() {
         >
           <Icon name="phone" className="h-4 w-4 text-brand" />
         </a>
+        )}
         <a
           href={waHref}
           target="_blank"

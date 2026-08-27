@@ -2,6 +2,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, clinicAddress, waBookingUrl } from "../data/contacts";
 import { IS_HOME } from "../lib/branch";
+import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
   branchAddress,
@@ -12,9 +13,10 @@ import { trackEvent } from "../lib/analytics";
 
 export default function Hero() {
   const { lang, t } = useLang();
-  const { cityId, branch, isComingSoon } = useCity();
+  const { cityId, branch } = useCity();
 
   const phoneHrefValue = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
+  const showPhone = showsPhoneCta(cityId);
   const waHref = IS_HOME
     ? waBookingUrl(lang, "", { branchId: cityId })
     : waBookingUrl(lang);
@@ -24,15 +26,7 @@ export default function Hero() {
       ? CLINIC.cityRu
       : CLINIC.city;
   const address = IS_HOME ? branchAddress(branch, lang) : clinicAddress(lang);
-  const typeLabel = IS_HOME
-    ? isComingSoon
-      ? t.cityPicker?.soonBadge || (lang === "ru" ? "Скоро открытие" : "Жақында ашылу")
-      : lang === "ru"
-        ? CLINIC.typeRu
-        : CLINIC.typeKz
-    : lang === "ru"
-      ? CLINIC.typeRu
-      : CLINIC.typeKz;
+  const typeLabel = lang === "ru" ? CLINIC.typeRu : CLINIC.typeKz;
 
   return (
     <section className="relative overflow-hidden pb-8 pt-5 sm:pb-14 sm:pt-10">
@@ -51,8 +45,8 @@ export default function Hero() {
             <p className="section-eyebrow mb-3 sm:mb-5">
               {IS_HOME
                 ? lang === "ru"
-                  ? "АЛМАТЫ · АКТАУ · ШЫМКЕНТ — РАБОТАЮТ"
-                  : "АЛМАТЫ · АҚТАУ · ШЫМКЕНТ — ЖҰМЫС ІСТЕЙДІ"
+                  ? "АЛМАТЫ · АКТАУ · ШЫМКЕНТ"
+                  : "АЛМАТЫ · АҚТАУ · ШЫМКЕНТ"
                 : CLINIC.city}
             </p>
             <h1 className="font-display text-[clamp(1.65rem,5.6vw,2.2rem)] font-extrabold leading-[1.12] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
@@ -87,19 +81,21 @@ export default function Hero() {
                 <WhatsAppIcon className="h-4 w-4" />
                 {t.hero.wa}
               </a>
-              <a
-                href={phoneHrefValue}
-                onClick={() =>
-                  trackEvent("phone_click", {
-                    city: IS_HOME ? cityId : undefined,
-                    button_location: "hero",
-                    page_url: window.location.href,
-                  })
-                }
-                className="btn-outline"
-              >
-                {t.hero.call}
-              </a>
+              {showPhone && (
+                <a
+                  href={phoneHrefValue}
+                  onClick={() =>
+                    trackEvent("phone_click", {
+                      city: IS_HOME ? cityId : undefined,
+                      button_location: "hero",
+                      page_url: window.location.href,
+                    })
+                  }
+                  className="btn-outline"
+                >
+                  {t.hero.call}
+                </a>
+              )}
             </div>
           </div>
 

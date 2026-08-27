@@ -30,6 +30,11 @@ export function localizeDoctor(raw, lang = "ru") {
   };
 }
 
+export function doctorsForCity(doctors, cityId) {
+  if (!cityId) return doctors;
+  return doctors.filter((d) => (d.cities || []).includes(cityId));
+}
+
 export async function loadDoctors(force = false) {
   const now = Date.now();
   if (!force && cache && now - cacheTs < TTL) return cache;

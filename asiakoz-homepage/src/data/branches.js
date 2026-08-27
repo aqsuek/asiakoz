@@ -95,8 +95,8 @@ export const NETWORK_BRANCHES = [
       url: "https://wa.me/77758630180",
     },
     instagram: {
-      handle: "@asiakoz.aktau",
-      url: "https://www.instagram.com/asiakoz.aktau/",
+      handle: "@asiakoz.aqtau",
+      url: "https://www.instagram.com/asiakoz.aqtau/",
     },
     gis: {
       searchUrl: "https://2gis.kz/aktau/firm/70000001104276081",
@@ -121,10 +121,8 @@ export const NETWORK_BRANCHES = [
     cityRu: "Шымкент",
     addressKz: "Шымкент, Байтұрсынов көшесі, 86/7, Тұран",
     addressRu: "Шымкент, улица Байтурсынова, 86/7, мкр. Туран",
-    summaryKz: "Диагностика, катаракта, офтальмохирургия",
-    summaryRu: "Диагностика, катаракта, офтальмохирургия",
-    statusTextKz: "Жұмыс істейді",
-    statusTextRu: "Работает",
+    summaryKz: "Диагностика, лазерлік түзету, катаракта",
+    summaryRu: "Диагностика, лазерная коррекция, катаракта",
     phoneDisplay: "+7 708 075 01 80",
     phoneTel: "+77080750180",
     phoneRaw: "77080750180",
@@ -157,7 +155,7 @@ export const NETWORK_BRANCHES = [
     hoursKz: "Дс–Жм 09:00–17:00, Сб 14:00-ге дейін",
     hoursRu: "Пн–Пт 09:00–17:00, Сб до 14:00",
     geo: null,
-    doctorCities: [],
+    doctorCities: ["shymkent"],
   },
 ];
 

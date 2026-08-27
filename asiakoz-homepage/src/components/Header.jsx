@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
+import CityPickerButton from "./CityPickerButton";
 import { languagePath, useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
+import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import { phoneHref } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
@@ -20,7 +22,6 @@ const ANCHORS = IS_LASER
     ]
   : IS_HOME
     ? [
-        { key: "branches", hash: "#branches" },
         { key: "about", hash: "#about" },
         { key: "services", hash: "#services" },
         { key: "doctors", hash: "#doctors" },
@@ -78,6 +79,7 @@ export default function Header() {
   const phone = IS_HOME
     ? { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay }
     : CLINIC.phones[0];
+  const showPhone = showsPhoneCta(cityId);
 
   return (
     <header
@@ -93,6 +95,8 @@ export default function Header() {
         }`}
       >
         <Logo compact={IS_HOME} />
+
+        {IS_HOME ? <CityPickerButton className="min-w-0" /> : null}
 
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navigation">
           {ANCHORS.map((item) => (
@@ -182,19 +186,21 @@ export default function Header() {
             ))}
           </nav>
           <div className="mt-3 grid gap-2">
-            <a
-              href={phone.href}
-              onClick={() =>
-                trackEvent("phone_click", {
-                  city: IS_HOME ? cityId : undefined,
-                  button_location: "header_menu",
-                  page_url: window.location.href,
-                })
-              }
-              className="btn-outline min-h-12 w-full"
-            >
-              {phone.display}
-            </a>
+            {showPhone && (
+              <a
+                href={phone.href}
+                onClick={() =>
+                  trackEvent("phone_click", {
+                    city: IS_HOME ? cityId : undefined,
+                    button_location: "header_menu",
+                    page_url: window.location.href,
+                  })
+                }
+                className="btn-outline min-h-12 w-full"
+              >
+                {phone.display}
+              </a>
+            )}
             <a
               href={bookHref}
               {...(!IS_LASER ? { target: "_blank", rel: "noopener noreferrer" } : {})}

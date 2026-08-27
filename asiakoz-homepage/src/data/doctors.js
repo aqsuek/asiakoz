@@ -75,6 +75,17 @@ export const NETWORK_DOCTORS = [
     cities: ["aqtau"],
     image: "images/doctors/nazgul-sagyndykova.png",
   },
+  {
+    id: "kadyr-kyrboga",
+    href: "/shymkent/doctor/kadyr-kyrboga/",
+    nameRu: "Кадыр Кырбога",
+    nameKz: "Қадыр Қырбога",
+    roleRu: "Витреоретинальный хирург",
+    roleKz: "Витреоретиналды хирург",
+    cities: ["shymkent"],
+    image: "images/doctors/kadyr-kyrboga.png",
+    fromTurkey: true,
+  },
 ];
 
 export function doctorsForCity(cityId) {

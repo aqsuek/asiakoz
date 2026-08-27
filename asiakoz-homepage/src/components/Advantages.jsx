@@ -67,7 +67,7 @@ export default function Advantages() {
 
       <div
         ref={trackRef}
-        className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+        className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory [touch-action:pan-x_pan-y] sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
       >
         {items.map((item, i) => (
           <article

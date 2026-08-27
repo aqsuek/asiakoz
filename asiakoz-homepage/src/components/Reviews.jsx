@@ -99,7 +99,7 @@ export default function Reviews({ skipFirst = false }) {
 
         <div
           ref={trackRef}
-          className={`scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain pb-2 snap-x snap-mandatory touch-pan-x sm:gap-4 ${
+          className={`scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain pb-2 snap-x snap-mandatory [touch-action:pan-x_pan-y] sm:gap-4 ${
             IS_LASER
               ? "scroll-px-4 px-4 sm:scroll-px-5 sm:px-5"
               : "-mx-4 px-4 sm:-mx-5 sm:px-5"

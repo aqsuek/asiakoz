@@ -4,7 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "VITE_BRANCH=home VITE_BASE=/ vite --port 5173",
+    "dev:home": "VITE_BRANCH=home VITE_BASE=/ vite --port 5173",
+    "dev:shymkent": "VITE_BRANCH=shymkent VITE_BASE=/shymkent/ vite --port 5174",
+    "dev:almaty": "VITE_BRANCH=almaty VITE_BASE=/almaty/ vite --port 5175",
+    "dev:aktau": "VITE_BRANCH=aqtau VITE_BASE=/aktau/ vite --port 5176",
+    "dev:laser": "VITE_BRANCH=laser VITE_BASE=/laser/ vite --port 5177",
     "build": "vite build",
     "preview": "vite preview",
     "deploy:shymkent": "bash scripts/deploy-shymkent.sh",

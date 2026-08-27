@@ -3,6 +3,7 @@ import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
 import { trackEvent } from "../lib/analytics";
 import { IS_HOME, IS_LASER } from "../lib/branch";
+import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
   branchCityName,
@@ -22,6 +23,7 @@ export default function Booking({ laserMode = false }) {
   const phone = IS_HOME
     ? { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay }
     : CLINIC.phones[0];
+  const showPhone = showsPhoneCta(cityId);
 
   const onBook = () => {
     trackEvent(isLaser ? "laser_booking_click" : "booking_click", {
@@ -88,9 +90,11 @@ export default function Booking({ laserMode = false }) {
               <WhatsAppIcon className="h-4 w-4" />
               {t.booking.submit}
             </a>
-            <a href={phone.href} className="btn-outline min-h-12 w-full !py-3">
-              {t.contacts.call}: {phone.display}
-            </a>
+            {showPhone && (
+              <a href={phone.href} className="btn-outline min-h-12 w-full !py-3">
+                {t.contacts.call}: {phone.display}
+              </a>
+            )}
           </div>
 
           {t.booking.privacyLink && (

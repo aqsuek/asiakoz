@@ -192,6 +192,36 @@
         "Оптометрия",
         "Дети"
       ]
+    },
+    {
+      "id": "kadyr-kyrboga",
+      "slug": "doctor-kadyr-kyrboga",
+      "href": "/shymkent/doctor/kadyr-kyrboga/",
+      "kkHref": "/kk/shymkent/doctor/kadyr-kyrboga/",
+      "nameRu": "Кадыр Кырбога",
+      "nameKz": "Қадыр Қырбога",
+      "roleRu": "Витреоретинальный хирург",
+      "roleKz": "Витреоретиналды хирург",
+      "cities": [
+        "shymkent"
+      ],
+      "tagsRu": [
+        "Витрэктомия",
+        "Сетчатка",
+        "Хирургия"
+      ],
+      "tagsKz": [
+        "Витрэктомия",
+        "Торлық қабық",
+        "Хирургия"
+      ],
+      "image": "/images/doctors/kadyr-kyrboga.png",
+      "knowsAbout": [
+        "Витрэктомия",
+        "Сетчатка",
+        "Хирургия"
+      ],
+      "fromTurkey": true
     }
   ],
   "redirects": {
@@ -200,7 +230,5 @@
     "/doctor-tekche/": "/doctor-mehmet-esat-teker/",
     "/doctor-madina/": "/doctors/"
   },
-  "notes": [
-    "Shymkent has no active reception — do not list doctors under shymkent city until opening."
-  ]
+  "notes": []
 }

@@ -23,7 +23,7 @@ function readStoredCity() {
 
 export function CityProvider({ children }) {
   const [cityId, setCityIdState] = useState(() =>
-    IS_HOME ? readStoredCity() : DEFAULT_BRANCH_ID,
+    IS_HOME ? readStoredCity() || DEFAULT_BRANCH_ID : DEFAULT_BRANCH_ID,
   );
 
   useEffect(() => {

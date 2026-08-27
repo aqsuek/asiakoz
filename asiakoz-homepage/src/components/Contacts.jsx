@@ -3,19 +3,19 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, clinicAddress, waBookingUrl } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
+import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
   branchAddress,
   branchCityName,
   branchHours,
-  isComingSoon as branchIsComingSoon,
   phoneHref,
 } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
 
 export default function Contacts() {
   const { lang, t } = useLang();
-  const { cityId, setCityId, branch, branches, isComingSoon } = useCity();
+  const { cityId, setCityId, branch, branches } = useCity();
 
   if (IS_HOME) {
     const address = branchAddress(branch, lang);
@@ -24,6 +24,7 @@ export default function Contacts() {
       href: phoneHref(branch.phoneTel),
       display: branch.phoneDisplay,
     };
+    const showPhone = showsPhoneCta(cityId);
 
     return (
       <section id="contacts" className="scroll-mt-header bg-surface-muted py-7 pb-8 sm:py-10">
@@ -39,7 +40,6 @@ export default function Contacts() {
           >
             {branches.map((b) => {
               const selected = cityId === b.id;
-              const soon = branchIsComingSoon(b);
               return (
                 <button
                   key={b.id}
@@ -54,15 +54,6 @@ export default function Contacts() {
                   }`}
                 >
                   {branchCityName(b, lang)}
-                  {soon && (
-                    <span
-                      className={`rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase ${
-                        selected ? "bg-white/20 text-white" : "bg-brand/10 text-brand"
-                      }`}
-                    >
-                      {t.cityPicker?.soon || "Скоро"}
-                    </span>
-                  )}
                 </button>
               );
             })}
@@ -77,24 +68,12 @@ export default function Contacts() {
                   </span>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
-                      {t.contacts.status}
-                    </p>
-                    <p className="mt-1 text-[15px] font-semibold text-ink">
-                      {isComingSoon ? t.contacts.statusSoon : t.contacts.statusOpen}
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
-                    <Icon name="map" className="h-5 w-5" />
-                  </span>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
                       {t.contacts.location}
                     </p>
                     <p className="mt-1 text-[15px] font-medium leading-snug text-ink">{address}</p>
                   </div>
                 </li>
+                {showPhone && (
                 <li className="flex gap-3">
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
                     <Icon name="phone" className="h-5 w-5" />
@@ -118,6 +97,7 @@ export default function Contacts() {
                     </a>
                   </div>
                 </li>
+                )}
                 {hours && (
                   <li className="flex gap-3">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
@@ -184,20 +164,22 @@ export default function Contacts() {
                   <WhatsAppIcon className="h-4 w-4" />
                   {t.contacts.wa}
                 </a>
-                <a
-                  href={phone.href}
-                  onClick={() =>
-                    trackEvent("phone_click", {
-                      city: cityId,
-                      button_location: "contacts_call",
-                      page_url: window.location.href,
-                    })
-                  }
-                  className="btn-outline min-h-11 w-full !py-3"
-                >
-                  <Icon name="phone" className="h-4 w-4" />
-                  {t.contacts.call}
-                </a>
+                {showPhone && (
+                  <a
+                    href={phone.href}
+                    onClick={() =>
+                      trackEvent("phone_click", {
+                        city: cityId,
+                        button_location: "contacts_call",
+                        page_url: window.location.href,
+                      })
+                    }
+                    className="btn-outline min-h-11 w-full !py-3"
+                  >
+                    <Icon name="phone" className="h-4 w-4" />
+                    {t.contacts.call}
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -207,6 +189,7 @@ export default function Contacts() {
   }
 
   const address = clinicAddress(lang);
+  const showPhone = showsPhoneCta();
 
   return (
     <section id="contacts" className="scroll-mt-header bg-surface-muted py-7 pb-16 sm:py-10 sm:pb-10">
@@ -229,6 +212,7 @@ export default function Contacts() {
                   <p className="mt-1 text-[15px] font-medium leading-snug text-ink">{address}</p>
                 </div>
               </li>
+              {showPhone && (
               <li className="flex gap-3.5">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
                   <Icon name="phone" className="h-5 w-5" />
@@ -250,6 +234,7 @@ export default function Contacts() {
                   </div>
                 </div>
               </li>
+              )}
               <li className="flex gap-3.5">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
                   <Icon name="instagram" className="h-5 w-5" />
@@ -291,10 +276,12 @@ export default function Contacts() {
                 <WhatsAppIcon className="h-4 w-4" />
                 {t.contacts.wa}
               </a>
-              <a href={CLINIC.phones[0].href} className="btn-outline min-h-11 w-full !py-3">
-                <Icon name="phone" className="h-4 w-4" />
-                {t.contacts.call}
-              </a>
+              {showPhone && (
+                <a href={CLINIC.phones[0].href} className="btn-outline min-h-11 w-full !py-3">
+                  <Icon name="phone" className="h-4 w-4" />
+                  {t.contacts.call}
+                </a>
+              )}
             </div>
           </div>
         </div>

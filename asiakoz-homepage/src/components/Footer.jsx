@@ -4,12 +4,8 @@ import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, clinicAddress } from "../data/contacts";
 import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
-import {
-  NETWORK_BRANCHES,
-  branchAddress,
-  branchCityName,
-  isComingSoon,
-} from "../data/branches";
+import { showsPhoneCta } from "../lib/contactPolicy";
+import { NETWORK_BRANCHES } from "../data/branches";
 
 const LINKS = IS_LASER
   ? [
@@ -22,7 +18,6 @@ const LINKS = IS_LASER
     ]
   : IS_HOME
     ? [
-        { key: "branches", hash: "#branches" },
         { key: "about", hash: "#about" },
         { key: "services", hash: "#services" },
         { key: "doctors", hash: "#doctors" },
@@ -40,6 +35,7 @@ const LINKS = IS_LASER
 
 export default function Footer() {
   const { lang, t } = useLang();
+  const showPhone = showsPhoneCta();
 
   return (
     <footer
@@ -94,29 +90,6 @@ export default function Footer() {
                 </a>
               </nav>
             </div>
-
-            <div className="mt-5 grid gap-3 sm:grid-cols-3">
-              {NETWORK_BRANCHES.map((branch) => (
-                <a
-                  key={branch.id}
-                  href={lang === "kz" ? branch.kkHref : branch.pageHref}
-                  className="rounded-[1.25rem] border border-ink/[0.06] bg-surface-muted/60 px-4 py-3.5 text-sm text-ink-muted transition-colors hover:border-brand/40"
-                >
-                  <p className="flex items-center gap-2 font-semibold text-ink">
-                    {branchCityName(branch, lang)}
-                    {isComingSoon(branch) && (
-                      <span className="rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-bold uppercase text-brand">
-                        {t.footer.soon}
-                      </span>
-                    )}
-                  </p>
-                  <p className="mt-1 leading-snug">{branchAddress(branch, lang)}</p>
-                  <span className="mt-1.5 block font-semibold text-brand">
-                    {branch.phoneDisplay}
-                  </span>
-                </a>
-              ))}
-            </div>
           </>
         ) : (
           <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
@@ -150,15 +123,16 @@ export default function Footer() {
 
             <div className="space-y-1.5 text-sm text-ink-muted">
               <p className="font-medium text-ink">{clinicAddress(lang)}</p>
-              {CLINIC.phones.map((phone) => (
-                <a
-                  key={phone.href}
-                  href={phone.href}
-                  className="block py-0.5 font-semibold text-brand hover:underline"
-                >
-                  {phone.display}
-                </a>
-              ))}
+              {showPhone &&
+                CLINIC.phones.map((phone) => (
+                  <a
+                    key={phone.href}
+                    href={phone.href}
+                    className="block py-0.5 font-semibold text-brand hover:underline"
+                  >
+                    {phone.display}
+                  </a>
+                ))}
               <a
                 href={CLINIC.instagram.url}
                 target="_blank"

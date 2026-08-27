@@ -62,20 +62,19 @@ export default function BranchCities() {
                       </span>
                     )}
                   </span>
-                  <span className="mt-1 block text-xs text-ink-muted">
-                    {soon ? picker.soonBadge : picker.open}
-                  </span>
                   <p className="mt-2 text-sm leading-snug text-ink-muted">{address}</p>
                   {summary ? (
                     <p className="mt-1 text-sm leading-snug text-ink-muted">{summary}</p>
                   ) : null}
-                  <a
-                    href={phoneHref(branch.phoneTel)}
-                    className="mt-2 block text-sm font-semibold text-brand hover:underline"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {branch.phoneDisplay}
-                  </a>
+                  {branch.id !== "almaty" && (
+                    <a
+                      href={phoneHref(branch.phoneTel)}
+                      className="mt-2 block text-sm font-semibold text-brand hover:underline"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {branch.phoneDisplay}
+                    </a>
+                  )}
                   {!summary && (
                     <p className="mt-1 text-sm leading-snug text-ink-muted">
                       {soon
