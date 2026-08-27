@@ -5692,5 +5692,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mt6rvs19-a3qu1gcz"
+  },
+  {
+    "id": "1787866972123-mxb3h9",
+    "ts": 1787866972123,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtc1tgnp-e5gdo7sv",
+    "referrer": "http://localhost:8767/katarakta-almaty/?v=e"
   }
 ]
