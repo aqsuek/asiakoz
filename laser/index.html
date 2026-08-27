@@ -11,7 +11,7 @@
     <title>Лазерная коррекция зрения в Алматы — AsiaKoz</title>
     <meta
       name="description"
-      content="Азиякөз — Шымкенттегі офтальмологиялық орталық. Диагностика, лазерлік түзету, катаракта, витрэктомия, қылилық, глаукома және балалар офтальмологиясы. Жазылу: WhatsApp немесе телефон."
+      content="Лазерная коррекция зрения в AsiaKoz Алматы. Диагностика, подбор метода и запись только через WhatsApp."
     />
     <link rel="canonical" href="https://asiakoz.com/laser/" />
     <meta property="og:site_name" content="Азиякөз" />
@@ -21,45 +21,39 @@
     <meta property="og:title" content="Лазерная коррекция зрения в Алматы — AsiaKoz" />
     <meta
       property="og:description"
-      content="Түрік дәрігерлерінің тәжірибесі, заманауи диагностика және көз ауруларын кешенді емдеу. Шымкент, Байтұрсынов көшесі, 86/7."
+      content="Лазерная коррекция зрения в Алматы у турецких офтальмохирургов. Запись через WhatsApp."
     />
     <meta property="og:url" content="https://asiakoz.com/laser/" />
     <meta property="og:image" content="https://asiakoz.com/images/logo.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="AsiaKoz Шымкент — офтальмологиялық орталық" />
+    <meta name="twitter:title" content="Лазерная коррекция зрения в Алматы — AsiaKoz" />
     <meta
       name="twitter:description"
-      content="Офтальмологиялық орталық Шымкентте. Жазылу WhatsApp немесе телефон арқылы."
+      content="Лазерная коррекция зрения в Алматы. Запись через WhatsApp."
     />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
         "name": "Азиякөз",
-        "alternateName": ["AsiaKoz", "Asiakoz", "Азиякоз", "AsiaKoz Шымкент"],
-        "description": "Офтальмологиялық орталық Шымкентте. Диагностика, лазерлік түзету, катаракта, витрэктомия, қылилық, глаукома, балалар офтальмологиясы.",
+        "alternateName": ["AsiaKoz", "Asiakoz", "Азиякоз", "AsiaKoz Алматы"],
+        "description": "Лазерная коррекция зрения в Алматы. Диагностика и подбор метода офтальмохирургом.",
         "url": "https://asiakoz.com/laser/",
         "logo": "https://asiakoz.com/images/logo.png",
         "image": "https://asiakoz.com/images/logo.png",
-        "telephone": ["+77080750180", "+77080760180"],
         "medicalSpecialty": "Ophthalmology",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Байтұрсынов көшесі, 86/7, Тұран",
-          "addressLocality": "Шымкент",
+          "streetAddress": "проспект Райымбека, 176А",
+          "addressLocality": "Алматы",
           "addressCountry": "KZ"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 42.341,
-          "longitude": 69.597
-        },
         "sameAs": [
-          "https://www.instagram.com/asiakoz.shymkent/"
+          "https://www.instagram.com/asiakoz.clinic/"
         ],
         "areaServed": {
           "@type": "City",
-          "name": "Шымкент"
+          "name": "Алматы"
         }
       }
     </script>
@@ -89,5 +83,28 @@
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="root"></div>
-  </body>
+  <script>
+(function () {
+  function cleanPhoneCtas() {
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (link) { link.remove(); });
+    document.querySelectorAll('label, span, p').forEach(function (node) {
+      if (node.childElementCount === 0 && node.textContent.trim() === 'Номер телефона') node.textContent = 'Номер WhatsApp';
+    });
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href*="wa.me"]');
+    if (link) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
+    }
+  });
+  document.addEventListener('submit', function (event) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'form_submit', page_path: location.pathname, form_id: event.target.id || event.target.getAttribute('name') || 'lead_form' });
+  });
+  new MutationObserver(cleanPhoneCtas).observe(document.documentElement, { childList: true, subtree: true });
+  document.addEventListener('DOMContentLoaded', cleanPhoneCtas);
+})();
+</script>
+</body>
 </html>
