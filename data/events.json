@@ -4801,5 +4801,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787805383337-tyxb3l",
+    "ts": 1787805383337,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb15isc-ho0dub2w",
+    "referrer": "https://www.google.com/"
   }
 ]
