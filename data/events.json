@@ -5837,5 +5837,14 @@
     "language": "ru",
     "session_id": "mtbyr9dd-s7hgcugi",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1787871477715-jrljvw",
+    "ts": 1787871477715,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtc4felb-pl3nlg1n"
   }
 ]
