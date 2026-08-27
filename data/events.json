@@ -4737,5 +4737,15 @@
     "session_id": "mtazwfh0-38jd0dq7",
     "button_location": "branches_book",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787804083234-o48y8y",
+    "ts": 1787804083234,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb0dn5x-0jnjko5l",
+    "referrer": "https://www.google.com/"
   }
 ]
