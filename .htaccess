@@ -1,27 +1,35 @@
 # AsiaKoz FTP/Apache hosting — permanent redirects for legacy URLs
 # If hosting is not Apache, configure equivalent 301 rules in the panel/CDN.
 
+
 RewriteEngine On
+
 
 # Force HTTPS (uncomment if SSL is terminated on Apache)
 # RewriteCond %{HTTPS} !=on
 # RewriteRule ^ https://asiakoz.com%{REQUEST_URI} [L,R=301]
 
+
 # www → apex
 RewriteCond %{HTTP_HOST} ^www\.asiakoz\.com$ [NC]
 RewriteRule ^ https://asiakoz.com%{REQUEST_URI} [L,R=301]
+
 
 # Legacy /aqtau/ alias -> canonical /aktau/
 RewriteRule ^aqtau/?$ /aktau/ [L,R=301]
 RewriteRule ^aqtau/(.*)$ /aktau/$1 [L,R=301]
 RewriteRule ^kk/aktau/?$ /kk/aqtau/ [L,R=301]
 
+
+# Duplicate laser landing → canonical paid-traffic landing
+RewriteRule ^lazer-almaty/?$ /laser/ [L,R=301]
+
 # Legacy .html stubs → clean trailing-slash URLs
 RewriteRule ^doctors\.html$ /doctors/ [L,R=301]
 RewriteRule ^uslugi\.html$ /uslugi/ [L,R=301]
 RewriteRule ^kosoglazie\.html$ /kosoglazie/ [L,R=301]
 RewriteRule ^kosoglazie-aktau\.html$ /kosoglazie-aktau/ [L,R=301]
-RewriteRule ^lazer-almaty\.html$ /lazer-almaty/ [L,R=301]
+RewriteRule ^lazer-almaty\.html$ /laser/ [L,R=301]
 RewriteRule ^katarakta-almaty\.html$ /katarakta-almaty/ [L,R=301]
 RewriteRule ^glaukoma-almaty\.html$ /glaukoma-almaty/ [L,R=301]
 RewriteRule ^vitrektomiya-almaty\.html$ /vitrektomiya-almaty/ [L,R=301]
@@ -34,106 +42,3 @@ RewriteRule ^doctor-tekche\.html$ /doctor-mehmet-esat-teker/ [L,R=301]
 RewriteRule ^doctor-gargoni\.html$ /doctor-ali-keskin/ [L,R=301]
 RewriteRule ^doctor-madina\.html$ /doctors/ [L,R=301]
 
-# Renamed doctor folders
-RewriteRule ^doctor-tekche/?$ /doctor-mehmet-esat-teker/ [L,R=301]
-RewriteRule ^doctor-gargoni/?$ /doctor-ali-keskin/ [L,R=301]
-RewriteRule ^doctor-gorgani/?$ /doctor-ali-keskin/ [L,R=301]
-RewriteRule ^doctor-madina/?$ /doctors/ [L,R=301]
-
-
-# Branch doctor shell duplicates -> canonical doctor pages
-RewriteRule ^almaty/doctor/aliya/?$ /doctor-aliya/ [L,R=301]
-RewriteRule ^almaty/doctor/mehmet-esat-teker/?$ /doctor-mehmet-esat-teker/ [L,R=301]
-RewriteRule ^almaty/doctor/orel-talip/?$ /doctor-orel/ [L,R=301]
-RewriteRule ^aktau/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
-RewriteRule ^aktau/doctor/erol-joshkun/?$ /doctor-erol/ [L,R=301]
-RewriteRule ^aktau/doctor/nazgul-sagyndykova/?$ /doctor-nazgul/ [L,R=301]
-RewriteRule ^aqtau/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
-RewriteRule ^aqtau/doctor/erol-joshkun/?$ /doctor-erol/ [L,R=301]
-RewriteRule ^aqtau/doctor/nazgul-sagyndykova/?$ /doctor-nazgul/ [L,R=301]
-RewriteRule ^shymkent/doctor/ali-keskin/?$ /doctor-ali-keskin/ [L,R=301]
-RewriteRule ^shymkent/doctor/mehmet-esat-teker/?$ /doctor-mehmet-esat-teker/ [L,R=301]
-
-# Empty prices stub → services catalog (no invented prices)
-RewriteRule ^prices/?$ /uslugi/ [L,R=301]
-
-# Legacy homepage backup
-RewriteRule ^index\.legacy\.html$ / [L,R=301]
-
-# Prefer trailing slash for directories (if request is a real dir without slash)
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+[^/])$ /$1/ [L,R=301]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Thin page merges → hub pages
-RewriteRule ^smile\-almaty/?$ /lazer-almaty/ [L,R=301]
-RewriteRule ^femto\-lasik\-almaty/?$ /lazer-almaty/ [L,R=301]
-RewriteRule ^prk\-lasek\-almaty/?$ /lazer-almaty/ [L,R=301]
-RewriteRule ^toricheskie\-linzy\-almaty/?$ /katarakta-almaty/ [L,R=301]
-RewriteRule ^multifokalnye\-linzy\-almaty/?$ /katarakta-almaty/ [L,R=301]
-RewriteRule ^detskiy\-oftalmolog\-almaty/?$ /deti-almaty/ [L,R=301]
-RewriteRule ^astigmatizm\-u\-detey\-almaty/?$ /deti-almaty/ [L,R=301]
-RewriteRule ^profosmotr\-pered\-shkoloy\-almaty/?$ /deti-almaty/ [L,R=301]
-RewriteRule ^kosoglazie\-u\-detey\-almaty/?$ /kosoglazie/ [L,R=301]
-RewriteRule ^kosoglazie\-u\-vzroslyh\-almaty/?$ /kosoglazie/ [L,R=301]
-RewriteRule ^operatsiya\-kosoglazie\-almaty/?$ /kosoglazie/ [L,R=301]
-RewriteRule ^proverka\-zreniya\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^chekap\-zreniya\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^osmotr\-glaznogo\-dna\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^konsultatsiya\-oftalmologa\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^okt\-glaz\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^okt\-zritelnogo\-nerva\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^perimetriya\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^tonometriya\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^gonioskopiya\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^oftalmolog\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^oftalmohirurg\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^podbor\-ochkov\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^podbor\-linz\-almaty/?$ /diagnostika-almaty/ [L,R=301]
-RewriteRule ^vspyshki\-v\-glazah\-almaty/?$ /srochnye-simptomy-glaz-almaty/ [L,R=301]
-RewriteRule ^mushki\-pered\-glazami\-almaty/?$ /srochnye-simptomy-glaz-almaty/ [L,R=301]
-RewriteRule ^pelena\-pered\-glazom\-almaty/?$ /srochnye-simptomy-glaz-almaty/ [L,R=301]
-RewriteRule ^rezkoe\-uhudshenie\-zreniya\-almaty/?$ /srochnye-simptomy-glaz-almaty/ [L,R=301]
