@@ -4921,5 +4921,17 @@
     "language": "ru",
     "session_id": "mtb3t1gr-giqk07le",
     "referrer": "https://l.wl.co/"
+  },
+  {
+    "id": "1787810016755-8yhet8",
+    "ts": 1787810016755,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtb3vg3d-2isxtj7r",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
