@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://asiakoz.com/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kk/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/almaty/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kk/almaty/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/aktau/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kk/aqtau/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/shymkent/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kk/shymkent/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/doctors/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -111,6 +111,12 @@
   <url>
     <loc>https://asiakoz.com/aktau/doctor/nazgul-sagyndykova/</loc>
     <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/shymkent/doctor/kadyr-kyrboga/</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -206,7 +212,7 @@
   </url>
   <url>
     <loc>https://asiakoz.com/glaukoma-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -218,7 +224,7 @@
   </url>
   <url>
     <loc>https://asiakoz.com/icl-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -230,30 +236,24 @@
   </url>
   <url>
     <loc>https://asiakoz.com/katarakta-almaty/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/keratokonus-almaty/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kosoglazie/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/kosoglazie-aktau/</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/lazer-almaty/</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -368,7 +368,7 @@
   </url>
   <url>
     <loc>https://asiakoz.com/vitrektomiya-almaty/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -392,13 +392,13 @@
   </url>
   <url>
     <loc>https://asiakoz.com/zamena-hrustalika-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/laser/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>

@@ -122,37 +122,38 @@
       <p>Алматы, Райымбек даңғылы, 176А</p>
       <p><a href="tel:+77008880180">+7 700 888 01 80</a> · <a href="https://wa.me/77003600180">WhatsApp</a></p>
       <p><a href="https://2gis.kz/kk/almaty/firm/70000001081905733">Карта</a></p>
-      <h2>Неге asiakoz Алматыны таңдайды</h2>
-      <ul>
-        <li>Алматы командасы: Мехмет Есат Текер, Орел Талип, Алия Усманова, Нұрмұхамед Мусай</li>
-        <li>Катарактаны Мехмет Есат Текер, Орел Талип және Алия Усманова жасайды</li>
-        <li>ИОЛ таңдау диагностикадан кейін — 20 000 ₸</li>
-        <li>Катаракта операциясының бағдарлы құны — 350 000–1 200 000 ₸</li>
-        <li>Мекенжайы: Райымбек даңғылы, 176а</li>
-      </ul>
-      <h2>Жасанды хрусталиктер</h2>
-      <ul>
-        <li>Монофокалды ИОЛ — негізінен бір қашықтық</li>
-        <li>Ториялық ИОЛ — катаракта және астигматизм</li>
-        <li>Мультифокалды ИОЛ — бірнеше қашықтық, көзілдіріктен бас тартуға кепілдік жоқ</li>
-        <li>EDOF ИОЛ — алыс және орта қашықтық</li>
-      </ul>
-      <p><a href="/katarakta-almaty/">Алматыдағы катаракта операциясы</a></p>
-      <h2>Сұрақ-жауап</h2>
-      <h3>Неге asiakoz Алматыны таңдайды?</h3>
-      <p>Алматыда Мехмет Есат Текер, Орел Талип, Алия Усманова және бас дәрігер Нұрмұхамед Мусай қабылдайды. Катарактаны Мехмет, Орел және Алия жасайды. Мекенжайы: Райымбек даңғылы, 176а.</p>
-      <h3>Диагностика қанша тұрады?</h3>
-      <p>Толық диагностика және офтальмолог-хирург қабылдауы — 20 000 ₸.</p>
-      <h3>Катарактада қандай линза қойылады?</h3>
-      <p>Монофокалды, ториялық, мультифокалды және EDOF. Нақты түрін дәрігер өлшемнен кейін таңдайды.</p>
       <h2>Дәрігерлер</h2><ul>
-        <li><a href="/doctor-mehmet-esat-teker/">Мехмет Есат Текер</a></li>
-        <li><a href="/doctor-orel/">Орел Талип</a></li>
-        <li><a href="/doctor-aliya/">Алия Ганимуратовна Усманова</a></li>
+        <li><a href="/kk/laser/doctor/mehmet-esat-teker/">Мехмет Есат Текер</a></li>
+        <li><a href="/kk/laser/doctor/orel-talip/">Орел Талип</a></li>
+        <li><a href="/kk/almaty/doctor/aliya/">Алия Ганимуратовна Усманова</a></li>
         <li><a href="/kk/doctor-musay/">Нұрмұхамед Мусай</a></li>
       </ul>
       <p><a href="/kk/almaty/">Алматы</a> · <a href="/kk/aqtau/">Ақтау</a> · <a href="/kk/shymkent/">Шымкент</a> · <a href="/kk/uslugi/">Қызметтер</a> · <a href="/kk/doctors/">Дәрігерлер</a></p>
     </section>
     </noscript>
-  </body>
+    <noscript>
+    </noscript>
+    <noscript>
+    </noscript>
+  <script>
+function cleanAlmatyPhoneCtas() {
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) { link.remove(); });
+  document.querySelectorAll('body *').forEach(function (node) {
+    if (node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE' && node.childElementCount === 0) {
+      node.textContent = node.textContent.replace(/,?\s*call-центр \+7 700 888 01 80\.?/gi, '.').replace(/\.\./g, '.');
+      if (node.textContent.trim() === '+7 700 888 01 80') node.remove();
+    }
+  });
+}
+new MutationObserver(cleanAlmatyPhoneCtas).observe(document.documentElement, { childList: true, subtree: true });
+document.addEventListener('DOMContentLoaded', cleanAlmatyPhoneCtas);
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
+  }
+});
+</script>
+</body>
 </html>
