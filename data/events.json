@@ -5491,5 +5491,14 @@
     "language": "ru",
     "session_id": "mtbwbiz7-t2uejtc7",
     "referrer": "https://asiakoz.com/uslugi/"
+  },
+  {
+    "id": "1787861577748-an0c5b",
+    "ts": 1787861577748,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbyipq2-tv5k3rwl"
   }
 ]
