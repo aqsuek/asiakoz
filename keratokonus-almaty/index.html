@@ -52,11 +52,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <section class="section">
       <h1 class="section-title">Кератоконус в Алматы</h1>
-      <p class="section-subtitle">Кератоконус - это истончение и изменение формы роговицы, которое может вызывать прогрессирующее снижение зрения. Важно выявлять изменения на ранних этапах.</p>
+      <p class="section-subtitle">Кератоконус — истончение и изменение формы роговицы, которое может вызывать прогрессирующее снижение зрения. В AsiaKoz Алматы обследование и тактику лечения определяет офтальмохирург после диагностики.</p>
+      <p><b>Мехмет Есат Текер</b> — турецкий офтальмохирург, 20+ лет хирургического опыта.</p>
+      <p><a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn">Записаться в WhatsApp (Алматы)</a></p>
       <div class="grid-3">
         <div class="card"><div class="card-title">Точная диагностика</div><p class="card-text">Кератотопография, пахиметрия, оценка рефракции и роговицы.</p></div>
         <div class="card"><div class="card-title">Подбор тактики</div><p class="card-text">Коррекция очками/линзами и другие методы по показаниям.</p></div>
         <div class="card"><div class="card-title">Наблюдение</div><p class="card-text">Контроль динамики и своевременное изменение плана.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Лечение роговицы по показаниям</h2>
+      <div class="grid-3">
+        <div class="card"><div class="card-title">Кросслинкинг</div><p class="card-text">Метод укрепления роговицы может рассматриваться при прогрессировании кератоконуса. Решение принимается после обследования.</p></div>
+        <div class="card"><div class="card-title">Оптическая коррекция</div><p class="card-text">Очки или контактные линзы подбираются с учётом формы роговицы и качества зрения.</p></div>
+        <div class="card"><div class="card-title">Контроль динамики</div><p class="card-text">Повторные измерения помогают оценить прогрессирование и своевременно изменить план.</p></div>
       </div>
     </section>
 
@@ -73,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="link" href="/konsultatsiya-oftalmologa-almaty/">Консультация офтальмолога</a> ·
         <a class="link" href="/proverka-zreniya-almaty/">Проверка зрения</a> ·
         <a class="link" href="/katarakta-almaty/">Катаракта</a> ·
-        <a class="link" href="/lazer-almaty/">Лазерная коррекция</a> ·
+        <a class="link" href="/laser/">Лазерная коррекция</a> ·
         <a class="link" href="/setchatka-almaty/">Сетчатка</a>
       </p>
     </section>
@@ -85,5 +96,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <script src="/js/compliance.js"></script>
+<script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
+  }
+});
+</script>
 </body>
 </html>
