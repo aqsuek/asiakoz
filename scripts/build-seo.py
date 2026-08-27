@@ -1067,6 +1067,9 @@ def sync_kk_doctor_static_pages() -> None:
             continue
         kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
         kk_path = ROOT / kk_href.strip("/") / "index.html"
+        if kk_path.exists() and "<!-- kk-handcrafted -->" in kk_path.read_text(encoding="utf-8"):
+            print(f"kk doctor static (skip handcrafted): {kk_href}")
+            continue
         kk_path.parent.mkdir(parents=True, exist_ok=True)
         html = ru_path.read_text(encoding="utf-8")
         html = set_lang(html, "kk")
