@@ -4716,5 +4716,15 @@
     "session_id": "mtaz1vnh-nutonq59",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787803279351-87z2rs",
+    "ts": 1787803279351,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtazwfh0-38jd0dq7",
+    "referrer": "https://www.google.com/"
   }
 ]
