@@ -131,13 +131,7 @@
         if (typeof window.gtag_report_conversion === "function") {
           window.gtag_report_conversion();
         }
-      }
-
-      if (href.indexOf("tel:") === 0) {
-        pushDataLayer("phone_click", {
-          phone_number: href.replace("tel:", ""),
-          link_text: (link.textContent || "").trim()
-        });
+      });
         if (typeof window.gtag_report_conversion === "function") {
           window.gtag_report_conversion();
         }
@@ -222,6 +216,13 @@
     });
   }
 
+
+  function enforceWhatsAppOnly() {
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+      link.remove();
+    });
+  }
+
   function initSiteChrome() {
     if (document.getElementById("root")) return;
 
@@ -262,6 +263,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    enforceWhatsAppOnly();
+    new MutationObserver(enforceWhatsAppOnly).observe(document.documentElement, { childList: true, subtree: true });
     initSiteChrome();
     attachConsentToForms();
     injectCookieBanner();
