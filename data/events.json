@@ -5573,5 +5573,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtbzg4gu-mk3sqdou"
+  },
+  {
+    "id": "1787863029573-drdq50",
+    "ts": 1787863029573,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbyr9dd-s7hgcugi",
+    "referrer": "https://asiakoz.com/"
   }
 ]
