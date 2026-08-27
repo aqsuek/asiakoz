@@ -5,11 +5,16 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from site_nav import header_nav_html  # noqa: E402
+
 SITE = "https://asiakoz.com"
 MERGES_PATH = ROOT / "data" / "url-merges.json"
+NAV_RU = header_nav_html("ru")
 
 
 def load_merges() -> list[dict]:
@@ -277,13 +282,8 @@ def write_emergency_hub() -> None:
 <body>
   <div class="container">
     <header class="site-header">
-      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav">
-        <a href="/uslugi/">Услуги</a>
-        <a href="/diagnostika-almaty/">Диагностика</a>
-        <a href="/doctors/">Врачи</a>
-        <a href="/almaty/">Алматы</a>
-      </nav>
+      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
+""" + NAV_RU + """
       <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Записаться</a>
     </header>
     <nav class="breadcrumb"><a href="/">Главная</a> / <a href="/uslugi/">Услуги</a> / Срочные симптомы</nav>
@@ -363,13 +363,7 @@ def write_uslugi_catalog() -> None:
   <div class="container">
     <header class="site-header">
       <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav">
-        <a href="/uslugi/">Услуги</a>
-        <a href="/doctors/">Врачи</a>
-        <a href="/almaty/">Алматы</a>
-        <a href="/aktau/">Актау</a>
-        <a href="/shymkent/">Шымкент</a>
-      </nav>
+""" + NAV_RU + """
       <div class="header-right">
         <div class="lang-switch" role="group" aria-label="Язык">
           <a href="/kk/uslugi/" hrefLang="kk">KZ</a>

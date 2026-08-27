@@ -11,6 +11,7 @@ export const translations = {
       doctors: "Дәрігерлер",
       reviews: "Пікірлер",
       contacts: "Байланыс",
+      news: "Жаңалықтар",
       book: "Қабылдауға жазылу",
     },
     hero: {
@@ -327,6 +328,7 @@ export const translations = {
       doctors: "Врачи",
       reviews: "Отзывы",
       contacts: "Контакты",
+      news: "Новости",
       book: "Записаться на приём",
     },
     hero: {

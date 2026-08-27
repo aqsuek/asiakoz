@@ -1,40 +1,16 @@
 import Logo from "./Logo";
 import Icon from "./Icon";
+import { homeOverrides } from "../i18n/homeCopy";
 import { useLang } from "../i18n/LanguageContext";
 import { CLINIC, clinicAddress } from "../data/contacts";
-import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { NETWORK_BRANCHES } from "../data/branches";
-
-const LINKS = IS_LASER
-  ? [
-      { key: "about", hash: "#promo" },
-      { key: "services", hash: "#suitability" },
-      { key: "doctors", hash: "#doctors" },
-      { key: "reviews", hash: "#reviews" },
-      { key: "faq", hash: "#faq" },
-      { key: "contacts", hash: "#contacts" },
-    ]
-  : IS_HOME
-    ? [
-        { key: "about", hash: "#about" },
-        { key: "services", hash: "#services" },
-        { key: "doctors", hash: "#doctors" },
-        { key: "reviews", hash: "#reviews" },
-        { key: "news", href: newsUrl() },
-        { key: "contacts", hash: "#contacts" },
-      ]
-    : [
-        { key: "about", hash: "#about" },
-        { key: "services", hash: "#services" },
-        { key: "doctors", hash: "#doctors" },
-        { key: "reviews", hash: "#reviews" },
-        { key: "contacts", hash: "#contacts" },
-      ];
+import { CORPORATE_NAV_ITEMS, navItemHref } from "../lib/siteNav";
 
 export default function Footer() {
   const { lang, t } = useLang();
+  const navLabels = homeOverrides[lang === "kz" ? "kz" : "ru"].nav;
   const showPhone = showsPhoneCta();
 
   return (
@@ -71,13 +47,13 @@ export default function Footer() {
               </div>
 
               <nav className="flex flex-col gap-1">
-                {LINKS.map((link) => (
+                {CORPORATE_NAV_ITEMS.map((link) => (
                   <a
                     key={link.key}
-                    href={link.href || homeUrl(link.hash)}
+                    href={navItemHref(link)}
                     className="py-1 text-sm text-ink-muted transition-colors hover:text-brand"
                   >
-                    {t.nav[link.key]}
+                    {navLabels[link.key]}
                   </a>
                 ))}
                 <a
@@ -110,13 +86,13 @@ export default function Footer() {
             </div>
 
             <nav className="flex flex-col gap-1.5">
-              {LINKS.map((link) => (
+              {CORPORATE_NAV_ITEMS.map((link) => (
                 <a
                   key={link.key}
-                  href={link.href || homeUrl(link.hash)}
+                  href={navItemHref(link)}
                   className="py-0.5 text-sm text-ink-muted transition-colors hover:text-brand"
                 >
-                  {t.nav[link.key]}
+                  {navLabels[link.key]}
                 </a>
               ))}
             </nav>

@@ -6,10 +6,13 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import sys
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from site_nav import header_nav_html  # noqa: E402
 SITE = "https://asiakoz.com"
 TODAY = date.today().isoformat()
 LASTMOD_CACHE = ROOT / "data" / "sitemap-lastmod.json"
@@ -683,14 +686,10 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
   <div class="container">
     <header class="site-header">
       <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav">
-        <a href="/kk/almaty/">Алматы</a>
-        <a href="/kk/aqtau/">Ақтау</a>
-        <a href="/kk/shymkent/">Шымкент</a>
-        <a href="/kk/uslugi/">Қызметтер</a>
-        <a href="/kk/doctors/">Дәрігерлер</a>
-        <a href="{ru_url}" hreflang="ru">RU</a>
-      </nav>
+{header_nav_html("kk")}
+      <div class="header-right">
+        <a href="{ru_url}" hreflang="ru" class="btn btn-outline">RU</a>
+      </div>
     </header>
     <nav class="breadcrumb"><a href="/kk/">Басты бет</a> / {meta['h1']}</nav>
     <section class="spa-hero">

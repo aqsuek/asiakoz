@@ -2,47 +2,24 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
 import CityPickerButton from "./CityPickerButton";
+import { homeOverrides } from "../i18n/homeCopy";
 import { languagePath, useLang } from "../i18n/LanguageContext";
 import { CLINIC, waBookingUrl } from "../data/contacts";
-import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import { phoneHref } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
-
-const ANCHORS = IS_LASER
-  ? [
-      { key: "about", hash: "#promo" },
-      { key: "services", hash: "#suitability" },
-      { key: "doctors", hash: "#doctors" },
-      { key: "reviews", hash: "#reviews" },
-      { key: "faq", hash: "#faq" },
-      { key: "contacts", hash: "#contacts" },
-    ]
-  : IS_HOME
-    ? [
-        { key: "about", hash: "#about" },
-        { key: "services", hash: "#services" },
-        { key: "doctors", hash: "#doctors" },
-        { key: "reviews", hash: "#reviews" },
-        { key: "news", href: newsUrl() },
-        { key: "contacts", hash: "#contacts" },
-      ]
-    : [
-        { key: "about", hash: "#about" },
-        { key: "services", hash: "#services" },
-        { key: "doctors", hash: "#doctors" },
-        { key: "reviews", hash: "#reviews" },
-        { key: "contacts", hash: "#contacts" },
-      ];
+import { homeUrl } from "../lib/routes";
+import { CORPORATE_NAV_ITEMS, navItemHref } from "../lib/siteNav";
 
 export default function Header() {
-  const { lang, setLang, t } = useLang();
+  const { lang, setLang } = useLang();
   const { cityId, branch } = useCity();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [path, setPath] = useState("/");
+  const navLabels = homeOverrides[lang === "kz" ? "kz" : "ru"].nav;
 
   useEffect(() => {
     setPath(window.location.pathname);
@@ -99,13 +76,13 @@ export default function Header() {
         {IS_HOME ? <CityPickerButton className="min-w-0" /> : null}
 
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navigation">
-          {ANCHORS.map((item) => (
+          {CORPORATE_NAV_ITEMS.map((item) => (
             <a
               key={item.key}
-              href={item.href || homeUrl(item.hash)}
+              href={navItemHref(item)}
               className="text-[13px] font-medium text-ink-muted transition-colors hover:text-ink"
             >
-              {t.nav[item.key] || item.key}
+              {navLabels[item.key] || item.key}
             </a>
           ))}
         </nav>
@@ -149,7 +126,7 @@ export default function Header() {
             {...(!IS_LASER ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="btn-primary hidden !px-4 !py-2.5 text-[13px] lg:inline-flex"
           >
-            {t.nav.book}
+            {navLabels.book}
           </a>
 
           <button
@@ -174,14 +151,14 @@ export default function Header() {
           />
           <div className="relative z-50 border-t border-ink/[0.06] bg-white px-5 py-4 xl:hidden">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
-            {ANCHORS.map((item) => (
+            {CORPORATE_NAV_ITEMS.map((item) => (
               <a
                 key={item.key}
-                href={item.href || homeUrl(item.hash)}
+                href={navItemHref(item)}
                 onClick={() => setOpen(false)}
                 className="rounded-xl px-3 py-3 text-sm font-medium text-ink hover:bg-surface-muted"
               >
-                {t.nav[item.key] || item.key}
+                {navLabels[item.key] || item.key}
               </a>
             ))}
           </nav>
@@ -207,7 +184,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className="btn-primary min-h-12 w-full"
             >
-              {t.nav.book}
+              {navLabels.book}
             </a>
           </div>
         </div>

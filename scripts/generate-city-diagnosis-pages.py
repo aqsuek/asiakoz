@@ -5,10 +5,14 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 SITE = "https://asiakoz.com"
+
+from site_nav import footer_nav_html, header_nav_html
 
 with (ROOT / "data" / "branches.json").open(encoding="utf-8") as f:
     BRANCHES_FILE = json.load(f)
@@ -773,7 +777,9 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     doctor_img = DOCTORS[doc_ids[0]]["img"]
     doctor_alt = DOCTORS[doc_ids[0]]["name"]
     schema = json_ld(dx_id, city, lang, copy, url, f"{SITE}{image}")
-    og_locale = "kk_KZ" if lang == "kk" else "ru_KZ"
+    og_locale = "kk_KZ" if lang == "kk" else "ru_RU"
+    corp_header_nav = header_nav_html(lang)
+    corp_footer_nav = footer_nav_html(lang)
 
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
@@ -807,12 +813,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
   <div class="container">
     <header class="site-header">
       <a href="{home}" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav">
-        <a href="{uslugi}">{crumb_uslugi}</a>
-        <a href="/almaty/">Алматы</a>
-        <a href="/aktau/">Актау</a>
-        <a href="/shymkent/">Шымкент</a>
-      </nav>
+{corp_header_nav}
       <div class="header-right">
         <div class="lang-switch" role="group" aria-label="Language">{lang_switch}</div>
         {phone_head}
@@ -864,8 +865,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
         </div>
         <div class="footer-col">
           <div class="footer-title">{'Навигация' if lang == 'kk' else 'Навигация'}</div>
-          <a href="{uslugi}">{crumb_uslugi}</a>
-          <a href="{c['kk_href'] if lang == 'kk' else c['href']}">{city_name}</a>
+{corp_footer_nav}
         </div>
         <div class="footer-col">
           <div class="footer-title">{'Байланыс' if lang == 'kk' else 'Контакты'}</div>

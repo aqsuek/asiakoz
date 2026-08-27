@@ -3,9 +3,11 @@
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 SITE = "https://asiakoz.com"
 
 GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817733574"></script>
@@ -13,16 +15,13 @@ GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>"""
 
 
+from site_nav import footer_nav_html, header_nav_html
+
+
 def header_kk(active: str, ru_url: str) -> str:
     return f"""    <header class="site-header">
       <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
-      <nav class="header-nav">
-        <a href="/kk/uslugi/"{' aria-current="page"' if active=='uslugi' else ''}>Қызметтер</a>
-        <a href="/kk/doctors/"{' aria-current="page"' if active=='doctors' else ''}>Дәрігерлер</a>
-        <a href="/kk/almaty/">Алматы</a>
-        <a href="/kk/aqtau/">Ақтау</a>
-        <a href="/kk/shymkent/">Шымкент</a>
-      </nav>
+{header_nav_html("kk")}
       <div class="header-right">
         <div class="lang-switch" role="group" aria-label="Тіл">
           <a class="is-active" hrefLang="kk" aria-current="page">KZ</a>
@@ -42,11 +41,7 @@ def footer_kk() -> str:
         </div>
         <div class="footer-col">
           <div class="footer-title">Навигация</div>
-          <a href="/kk/uslugi/">Қызметтер</a>
-          <a href="/kk/doctors/">Дәрігерлер</a>
-          <a href="/kk/almaty/">Алматы</a>
-          <a href="/kk/aqtau/">Ақтау</a>
-          <a href="/kk/shymkent/">Шымкент</a>
+{footer_nav_html("kk")}
         </div>
         <div class="footer-col">
           <div class="footer-title">Байланыс</div>

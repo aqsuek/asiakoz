@@ -19,6 +19,18 @@ function stripKk(pathname = "") {
   return path;
 }
 
+export function corporateHomeUrl(hash = "") {
+  const h = hash ? (hash.startsWith("#") ? hash : `#${hash}`) : "";
+  const prefix = kkPrefix();
+  if (!h) return `${prefix}/` || "/";
+  return `${prefix}/${h}`;
+}
+
+export function corporateNewsUrl() {
+  const prefix = kkPrefix();
+  return `${prefix}/news/`;
+}
+
 export function homeUrl(hash = "") {
   const h = hash ? (hash.startsWith("#") ? hash : `#${hash}`) : "";
   const prefix = kkPrefix();

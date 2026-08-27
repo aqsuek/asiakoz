@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Normalize static HTML chrome to SPA-like Almaty/Shymkent header/footer style."""
+"""Normalize static HTML chrome to unified corporate homepage navigation."""
 
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from site_nav import HEADER_NAV_KK, HEADER_NAV_RU  # noqa: E402
 
 SKIP = {
     "asiakoz-homepage",
@@ -18,41 +21,34 @@ SKIP = {
     "shymkent",
     "laser",
     "aqtau",
-    "kk",
     "videos",
     "data",
     "scripts",
 }
-
-HEADER_NAV = """      <nav class="header-nav">
-        <a href="/uslugi/">Услуги</a>
-        <a href="/almaty/">Алматы</a>
-        <a href="/aktau/">Актау</a>
-        <a href="/doctors/">Врачи</a>
-        <a href="/shymkent/">Шымкент</a>
-      </nav>"""
 
 
 def should_skip(path: Path) -> bool:
     return any(p in SKIP for p in path.parts)
 
 
-def normalize_header(html: str) -> str:
-    # Force sticky site-header class
+def is_kk_page(path: Path) -> bool:
+    rel = path.relative_to(ROOT)
+    return str(rel).startswith("kk/")
+
+
+def normalize_header(html: str, kk: bool) -> str:
     html = re.sub(r'<header class="header"', '<header class="site-header"', html)
-    # Ensure logo uses absolute /images path when relative ../images
     html = html.replace('src="../images/logo.png"', 'src="/images/logo.png"')
     html = html.replace('href="../css/style.css"', 'href="/css/style.css"')
     html = html.replace('href="../images/logo.png"', 'href="/images/logo.png"')
-    # Soft-replace cramped nav blocks with unified nav if classic header-nav present and missing branch links
-    if 'class="header-nav"' in html and "/shymkent/" not in html.split('class="header-nav"', 1)[1][:500]:
+    nav = HEADER_NAV_KK if kk else HEADER_NAV_RU
+    if 'class="header-nav"' in html:
         html = re.sub(
-            r'<nav class="header-nav">[\s\S]*?</nav>',
-            HEADER_NAV,
+            r'<nav class="header-nav"[^>]*>[\s\S]*?</nav>',
+            nav,
             html,
             count=1,
         )
-    # Add spa-eyebrow before first h1 in seo-hero if missing
     if "spa-eyebrow" not in html and 'class="seo-hero"' in html:
         html = html.replace(
             '<section class="seo-hero">',
@@ -70,11 +66,11 @@ def main() -> None:
         if should_skip(path):
             continue
         html = path.read_text(encoding="utf-8", errors="ignore")
-        if "noindex" in html.lower() and "http-equiv=\"refresh\"" in html.lower():
+        if "noindex" in html.lower() and 'http-equiv="refresh"' in html.lower():
             continue
         if "/css/style.css" not in html and "css/style.css" not in html:
             continue
-        new = normalize_header(html)
+        new = normalize_header(html, is_kk_page(path))
         if new != html:
             path.write_text(new, encoding="utf-8")
             n += 1
