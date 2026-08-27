@@ -5780,5 +5780,15 @@
     "language": "ru",
     "session_id": "mtc3ki89-l0u1o1uf",
     "referrer": "http://localhost:5174/"
+  },
+  {
+    "id": "1787870148281-kh86ta",
+    "ts": 1787870148281,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtc3pmw1-pi1cl1op",
+    "referrer": "http://localhost:5174/"
   }
 ]
