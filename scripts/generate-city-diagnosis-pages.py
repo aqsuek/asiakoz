@@ -591,6 +591,14 @@ DIAGNOSES = {
 }
 
 
+try:
+    from almaty_landing_data import ALMATY_LANDINGS  # noqa: E402
+
+    DIAGNOSES.update(ALMATY_LANDINGS)
+except ImportError:
+    pass
+
+
 def page_url(dx_id: str, city: str, lang: str) -> str:
     folder = DIAGNOSES[dx_id]["folder"](city)
     if lang == "kk":

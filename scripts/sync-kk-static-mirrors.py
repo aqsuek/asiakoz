@@ -63,6 +63,11 @@ KK_PHRASES: list[tuple[str, str]] = [
 def should_mirror(rel_s: str, html: str) -> bool:
     if not rel_s or rel_s.startswith("kk/"):
         return False
+    kk_path = ROOT / "kk" / rel_s / "index.html"
+    if kk_path.exists():
+        kk_html = kk_path.read_text(encoding="utf-8", errors="ignore")
+        if '"@type": "FAQPage"' in kk_html and 'lang="kk"' in kk_html:
+            return False
     if any(rel_s.startswith(p) for p in STATIC_SKIP_PREFIXES):
         return False
     if rel_s in {"almaty", "aktau", "aqtau", "shymkent", "laser", "doctors", "uslugi", "news"}:

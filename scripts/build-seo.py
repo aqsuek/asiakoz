@@ -1152,10 +1152,20 @@ def restyle_static_pages() -> None:
         subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
 
 
+def generate_city_diagnosis_pages() -> None:
+    import subprocess
+    import sys
+
+    script = ROOT / "scripts" / "generate-city-diagnosis-pages.py"
+    if script.exists():
+        subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
+
+
 def main() -> None:
     print("=== AsiaKoz SEO build ===")
     lastmod_cache = load_lastmod()
     apply_url_merges()
+    generate_city_diagnosis_pages()
     fix_redirect_stubs()
     write_aktau_alias()
     ensure_doctor_spa_shells()
