@@ -4933,5 +4933,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787810693549-sekyrz",
+    "ts": 1787810693549,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb4b9nc-0zcmyzky"
   }
 ]
