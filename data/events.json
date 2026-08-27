@@ -5583,5 +5583,15 @@
     "language": "ru",
     "session_id": "mtbyr9dd-s7hgcugi",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1787863054116-kkn3al",
+    "ts": 1787863054116,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtbyr9dd-s7hgcugi",
+    "referrer": "https://asiakoz.com/"
   }
 ]
