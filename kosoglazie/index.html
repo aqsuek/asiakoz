@@ -646,15 +646,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     })();
     (function() {
-      var months = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
-      var now = new Date();
-      var monthName = months[now.getMonth()];
-      var year = now.getFullYear();
-      var key = 'promo_spots_' + year + '_' + String(now.getMonth() + 1).padStart(2, '0');
-        spotsEl.textContent = spots;
-      }
-    })();
-    (function() {
       var problem = document.getElementById('problem');
       var problemOtherRow = document.getElementById('problemOtherRow');
       var problemOther = document.getElementById('problemOther');
