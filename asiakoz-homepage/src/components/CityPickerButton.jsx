@@ -8,7 +8,6 @@ import {
   branchCityName,
   isComingSoon,
 } from "../data/branches";
-import { IS_HOME } from "../lib/branch";
 
 export default function CityPickerButton({ className = "" }) {
   const { lang, t } = useLang();
@@ -50,8 +49,6 @@ export default function CityPickerButton({ className = "" }) {
       document.removeEventListener("mousedown", onClick);
     };
   }, [open]);
-
-  if (!IS_HOME) return null;
 
   const currentName = branchCityName(branch, lang);
 

@@ -224,6 +224,69 @@
     });
   }
 
+  function readStoredCityId() {
+    var valid = { almaty: 1, aqtau: 1, shymkent: 1 };
+    try {
+      var ls = localStorage.getItem("asiakoz-home-city");
+      if (valid[ls]) return ls;
+    } catch (e) {}
+    var m = document.cookie.match(/(?:^|; )asiakoz-city=([^;]*)/);
+    if (m && valid[m[1]]) return m[1];
+    var path = location.pathname;
+    if (path.indexOf("/aktau") !== -1 || path.indexOf("/aqtau") !== -1) return "aqtau";
+    if (path.indexOf("/shymkent") !== -1) return "shymkent";
+    return "almaty";
+  }
+
+  var CITY_CONTACTS = {
+    almaty: {
+      wa: "77003600180",
+      tel: "+77008880180",
+      display: "+7 700 888 01 80",
+      waText: "Здравствуйте! Хочу записаться в клинику Азиякоз Алматы."
+    },
+    aqtau: {
+      wa: "77758630180",
+      tel: "+77758630180",
+      display: "+7 775 863 01 80",
+      waText: "Здравствуйте! Хочу записаться в клинику Азиякоз Актау."
+    },
+    shymkent: {
+      wa: "77080750180",
+      tel: "+77080750180",
+      display: "+7 708 075 01 80",
+      waText: "Здравствуйте! Хочу записаться в клинику Азиякоз Шымкент."
+    }
+  };
+
+  function applyCityChrome() {
+    if (document.getElementById("root")) return;
+    var city = readStoredCityId();
+    var contact = CITY_CONTACTS[city] || CITY_CONTACTS.almaty;
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
+      var href = a.getAttribute("href") || "";
+      if (href.indexOf("wa.me") === -1) return;
+      var textMatch = href.match(/[?&]text=([^&]*)/);
+      var text = textMatch ? textMatch[1] : encodeURIComponent(contact.waText);
+      a.setAttribute("href", "https://wa.me/" + contact.wa + "?text=" + text);
+    });
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+      a.setAttribute("href", "tel:" + contact.tel);
+      var label = (a.textContent || "").trim();
+      if (label.indexOf("+7") === 0) a.textContent = contact.display;
+    });
+    var fab = document.getElementById("asiakoz-wa-fixed");
+    if (fab) {
+      var link = fab.querySelector("a");
+      if (link) {
+        link.setAttribute(
+          "href",
+          "https://wa.me/" + contact.wa + "?text=" + encodeURIComponent(contact.waText)
+        );
+      }
+    }
+  }
+
   function initSiteChrome() {
     if (document.getElementById("root")) return;
 
@@ -236,16 +299,10 @@
     });
 
     if (!document.getElementById("asiakoz-wa-fixed") && !document.querySelector(".sticky-whatsapp")) {
-      var aktauPaths = ["/kosoglazie-aktau", "/doctor-erol", "/doctor-nazgul"];
-      var isAktau = aktauPaths.some(function (p) {
-        return window.location.pathname.indexOf(p) === 0;
-      });
-      var waPhone = isAktau ? "77758630180" : "77003600180";
-      var waText = encodeURIComponent(
-        isAktau
-          ? "Здравствуйте! Хочу записаться в клинику Азиякоз Актау."
-          : "Здравствуйте! Хочу записаться в клинику Азиякоз."
-      );
+      var city = readStoredCityId();
+      var contact = CITY_CONTACTS[city] || CITY_CONTACTS.almaty;
+      var waPhone = contact.wa;
+      var waText = encodeURIComponent(contact.waText);
       var waSvg =
         '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
       var bar = document.createElement("div");
@@ -261,7 +318,12 @@
         "</a>";
       document.body.appendChild(bar);
     }
+    applyCityChrome();
   }
+
+  window.addEventListener("storage", function (e) {
+    if (e.key === "asiakoz-home-city" || e.key === null) applyCityChrome();
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     enforceWhatsAppOnly();

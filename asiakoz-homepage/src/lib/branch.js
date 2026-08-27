@@ -8,3 +8,11 @@ export const IS_AQTAU = BRANCH === "aqtau";
 export const IS_LASER = BRANCH === "laser";
 export const IS_ALMATY = BRANCH === "almaty";
 export const IS_HOME = BRANCH === "home";
+
+/** Default city when nothing is stored yet. */
+export function branchDefaultCityId() {
+  if (IS_ALMATY || IS_LASER) return "almaty";
+  if (IS_AQTAU) return "aqtau";
+  if (BRANCH === "shymkent") return "shymkent";
+  return "almaty";
+}

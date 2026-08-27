@@ -66,11 +66,9 @@ export default function Reviews({ skipFirst = false }) {
 
   if (!videoReviews.length) return null;
 
-  const igHandle = IS_HOME
-    ? branch?.instagram?.handle || MAIN_INSTAGRAM.handle
-    : CLINIC.instagram.handle;
-  const igUrl = IS_HOME ? branch?.instagram?.url || MAIN_INSTAGRAM.url : CLINIC.instagram.url;
-  const gisUrl = IS_HOME ? branch.gis.searchUrl : CLINIC.gis.searchUrl;
+  const igHandle = branch?.instagram?.handle || MAIN_INSTAGRAM.handle;
+  const igUrl = branch?.instagram?.url || MAIN_INSTAGRAM.url;
+  const gisUrl = branch.gis.searchUrl;
   const reviewsSubtitle =
     lang === "kz"
       ? `Instagram-дағы нақты видеопікірлер — ${igHandle}.`
@@ -124,7 +122,7 @@ export default function Reviews({ skipFirst = false }) {
                 trackEvent(IS_LASER ? "laser_video_play" : "review_open", {
                   language: lang,
                   video_id: review.id,
-                  city: IS_HOME ? cityId : undefined,
+                  city: cityId,
                   button_location: "reviews_slider",
                   page_url: window.location.href,
                 })
@@ -143,7 +141,7 @@ export default function Reviews({ skipFirst = false }) {
               trackEvent(IS_LASER ? "laser_instagram_click" : "instagram_click", {
                 language: lang,
                 button_location: "reviews_instagram",
-                city: IS_HOME ? cityId : undefined,
+                city: cityId,
                 page_url: window.location.href,
               })
             }
@@ -160,7 +158,7 @@ export default function Reviews({ skipFirst = false }) {
               trackEvent(IS_LASER ? "laser_reviews_2gis_click" : "map_open", {
                 language: lang,
                 button_location: "reviews_2gis",
-                city: IS_HOME ? cityId : undefined,
+                city: cityId,
                 page_url: window.location.href,
               })
             }

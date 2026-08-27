@@ -3,7 +3,7 @@ import Icon from "./Icon";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
 import { waBookingUrl } from "../data/contacts";
-import { IS_AQTAU, IS_ALMATY, IS_HOME, BRANCH } from "../lib/branch";
+import { IS_HOME } from "../lib/branch";
 import { useCity } from "../context/CityContext";
 import { trackEvent } from "../lib/analytics";
 
@@ -27,20 +27,12 @@ const SERVICE_PAGES = {
   diagnostics: { almaty: "/diagnostika-almaty/" },
 };
 
-function serviceCityId(homeCityId) {
-  if (IS_HOME) return homeCityId;
-  if (IS_ALMATY) return "almaty";
-  if (IS_AQTAU) return "aqtau";
-  if (BRANCH === "shymkent") return "shymkent";
-  return homeCityId;
-}
-
 function serviceHref(id, city) {
   return SERVICE_PAGES[id]?.[city] || null;
 }
 
 function filterBranchServices(items, cityId) {
-  const hideLaser = IS_AQTAU || (IS_HOME && cityId === "aqtau");
+  const hideLaser = cityId === "aqtau";
   if (!hideLaser) return items;
   return items.filter((item) => item.id !== LASER_CORRECTION_ID);
 }
@@ -66,14 +58,14 @@ export default function Services() {
   const allItems = filterBranchServices(t.services.items || [], cityId);
   const items = IS_HOME ? allItems.slice(0, HOME_PREVIEW) : allItems;
   const service = active ? allItems.find((item) => item.id === active) : null;
-  const city = serviceCityId(cityId);
+  const city = cityId;
 
 
   const openService = (id) => {
     setActive(id);
     trackEvent("service_open", {
       service_id: id,
-      city: IS_HOME ? cityId : undefined,
+      city: cityId,
       page_url: window.location.href,
     });
   };
@@ -195,13 +187,13 @@ export default function Services() {
               href={waBookingUrl(
                 lang,
                 lang === "ru" ? `Услуга: ${service.title}` : `Қызмет: ${service.title}`,
-                IS_HOME ? { branchId: cityId } : {},
+                { branchId: cityId },
               )}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() =>
                 trackEvent("whatsapp_click", {
-                  city: IS_HOME ? cityId : undefined,
+                  city: cityId,
                   service: service.title,
                   button_location: "service_modal",
                   page_url: window.location.href,

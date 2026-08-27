@@ -4,7 +4,7 @@ import Icon from "./Icon";
 import CityPickerButton from "./CityPickerButton";
 import { homeOverrides } from "../i18n/homeCopy";
 import { languagePath, useLang } from "../i18n/LanguageContext";
-import { CLINIC, waBookingUrl } from "../data/contacts";
+import { waBookingUrl } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
@@ -49,13 +49,9 @@ export default function Header() {
 
   const bookHref = IS_LASER
     ? homeUrl("#booking")
-    : IS_HOME
-      ? waBookingUrl(lang, "", { branchId: cityId })
-      : waBookingUrl(lang);
+    : waBookingUrl(lang, "", { branchId: cityId });
 
-  const phone = IS_HOME
-    ? { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay }
-    : CLINIC.phones[0];
+  const phone = { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay };
   const showPhone = showsPhoneCta(cityId);
 
   return (
@@ -73,7 +69,7 @@ export default function Header() {
       >
         <Logo compact={IS_HOME} />
 
-        {IS_HOME ? <CityPickerButton className="min-w-0" /> : null}
+        <CityPickerButton className="min-w-0" />
 
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Navigation">
           {CORPORATE_NAV_ITEMS.map((item) => (
@@ -168,7 +164,7 @@ export default function Header() {
                 href={phone.href}
                 onClick={() =>
                   trackEvent("phone_click", {
-                    city: IS_HOME ? cityId : undefined,
+                    city: cityId,
                     button_location: "header_menu",
                     page_url: window.location.href,
                   })

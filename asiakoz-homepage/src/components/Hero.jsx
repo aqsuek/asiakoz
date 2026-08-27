@@ -1,12 +1,13 @@
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC, clinicAddress, waBookingUrl } from "../data/contacts";
-import { IS_HOME } from "../lib/branch";
+import { CLINIC, waBookingUrl } from "../data/contacts";
+import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
   branchAddress,
   branchCityName,
+  branchHeroImage,
   phoneHref,
 } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
@@ -15,18 +16,16 @@ export default function Hero() {
   const { lang, t } = useLang();
   const { cityId, branch } = useCity();
 
-  const phoneHrefValue = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
+  const phoneHrefValue = phoneHref(branch.phoneTel);
   const showPhone = showsPhoneCta(cityId);
-  const waHref = IS_HOME
-    ? waBookingUrl(lang, "", { branchId: cityId })
-    : waBookingUrl(lang);
-  const cityLabel = IS_HOME
-    ? branchCityName(branch, lang)
-    : lang === "ru" && CLINIC.cityRu
-      ? CLINIC.cityRu
-      : CLINIC.city;
-  const address = IS_HOME ? branchAddress(branch, lang) : clinicAddress(lang);
+  const waHref = waBookingUrl(lang, "", { branchId: cityId });
+  const cityLabel = branchCityName(branch, lang);
+  const address = branchAddress(branch, lang);
   const typeLabel = lang === "ru" ? CLINIC.typeRu : CLINIC.typeKz;
+  const heroImage =
+    IS_LASER && cityId === "almaty"
+      ? "images/clinic-almaty-laser.png"
+      : branchHeroImage(cityId);
 
   return (
     <section className="relative overflow-hidden pb-8 pt-5 sm:pb-14 sm:pt-10">
@@ -71,7 +70,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 onClick={() =>
                   trackEvent("whatsapp_click", {
-                    city: IS_HOME ? cityId : undefined,
+                    city: cityId,
                     button_location: "hero",
                     page_url: window.location.href,
                   })
@@ -86,7 +85,7 @@ export default function Hero() {
                   href={phoneHrefValue}
                   onClick={() =>
                     trackEvent("phone_click", {
-                      city: IS_HOME ? cityId : undefined,
+                      city: cityId,
                       button_location: "hero",
                       page_url: window.location.href,
                     })
@@ -102,7 +101,7 @@ export default function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-[1.75rem] border border-ink/[0.06] bg-white shadow-soft sm:rounded-[2rem] sm:shadow-float">
               <img
-                src={`${import.meta.env.BASE_URL}${CLINIC.heroImage}`}
+                src={`${import.meta.env.BASE_URL}${heroImage}`}
                 alt={t.hero.imageAlt}
                 className="aspect-[4/3] w-full object-cover object-center"
                 width={800}

@@ -2,16 +2,19 @@ import Logo from "./Logo";
 import Icon from "./Icon";
 import { homeOverrides } from "../i18n/homeCopy";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC, clinicAddress } from "../data/contacts";
+import { CLINIC } from "../data/contacts";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { NETWORK_BRANCHES } from "../data/branches";
 import { CORPORATE_NAV_ITEMS, navItemHref } from "../lib/siteNav";
+import { useCity } from "../context/CityContext";
+import { phoneHref } from "../data/branches";
 
 export default function Footer() {
   const { lang, t } = useLang();
+  const { cityId, branch } = useCity();
   const navLabels = homeOverrides[lang === "kz" ? "kz" : "ru"].nav;
-  const showPhone = showsPhoneCta();
+  const showPhone = showsPhoneCta(cityId);
 
   return (
     <footer
@@ -75,7 +78,7 @@ export default function Footer() {
                 {t.footer.tagline}
               </p>
               <a
-                href={CLINIC.instagram.url}
+                href={branch.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink-muted transition-colors hover:border-brand hover:text-brand"
@@ -98,24 +101,24 @@ export default function Footer() {
             </nav>
 
             <div className="space-y-1.5 text-sm text-ink-muted">
-              <p className="font-medium text-ink">{clinicAddress(lang)}</p>
-              {showPhone &&
-                CLINIC.phones.map((phone) => (
-                  <a
-                    key={phone.href}
-                    href={phone.href}
-                    className="block py-0.5 font-semibold text-brand hover:underline"
-                  >
-                    {phone.display}
-                  </a>
-                ))}
+              <p className="font-medium text-ink">
+                {lang === "ru" ? branch.addressRu : branch.addressKz}
+              </p>
+              {showPhone && (
+                <a
+                  href={phoneHref(branch.phoneTel)}
+                  className="block py-0.5 font-semibold text-brand hover:underline"
+                >
+                  {branch.phoneDisplay}
+                </a>
+              )}
               <a
-                href={CLINIC.instagram.url}
+                href={branch.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block py-0.5 hover:text-brand"
               >
-                {CLINIC.instagram.handle}
+                {branch.instagram.handle}
               </a>
             </div>
           </div>

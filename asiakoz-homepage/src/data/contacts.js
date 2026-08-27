@@ -208,12 +208,12 @@ export function waBookingUrl(lang = "kz", extra = "", opts = {}) {
       lang === "ru"
         ? "Здравствуйте! Хочу записаться на лазерную коррекцию зрения в AsiaKoz Алматы (акция)."
         : "Сәлеметсіз бе! AsiaKoz Алматы клиникасында көзді лазерлік түзетуге жазылғым келеді (акция).";
-  } else if (IS_HOME && isComingSoon(network)) {
+  } else if (network && isComingSoon(network)) {
     message =
       lang === "ru"
         ? "Здравствуйте! Хочу оставить предварительную заявку на открытие филиала AsiaKoz в Шымкенте."
         : "Сәлеметсіз бе! AsiaKoz Шымкент филиалының ашылуына алдын ала өтінім қалдырғым келеді.";
-  } else if (IS_HOME && network) {
+  } else if (network) {
     message =
       lang === "ru"
         ? "Здравствуйте! Хочу записаться в AsiaKoz."
@@ -222,7 +222,7 @@ export function waBookingUrl(lang = "kz", extra = "", opts = {}) {
       message +=
         lang === "ru" ? `\n\nГород: ${cityName}` : `\n\nҚала: ${cityName}`;
     }
-  } else if (BRANCH === "home") {
+  } else if (IS_HOME) {
     message =
       lang === "ru"
         ? "Здравствуйте! Хочу записаться в AsiaKoz."

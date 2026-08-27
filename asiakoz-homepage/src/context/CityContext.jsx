@@ -1,44 +1,39 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import {
-  CITY_STORAGE_KEY,
-  DEFAULT_BRANCH_ID,
   NETWORK_BRANCHES,
   getNetworkBranch,
   isComingSoon as branchIsComingSoon,
 } from "../data/branches";
-import { IS_HOME } from "../lib/branch";
+import { branchDefaultCityId } from "../lib/branch";
+import { readStoredCityId, writeStoredCityId } from "../lib/cityStorage";
 import { trackEvent } from "../lib/analytics";
 
 const CityContext = createContext(null);
 
-function readStoredCity() {
-  try {
-    const saved = localStorage.getItem(CITY_STORAGE_KEY);
-    if (NETWORK_BRANCHES.some((b) => b.id === saved)) return saved;
-  } catch {
-    /* ignore */
-  }
-  return null;
-}
-
 export function CityProvider({ children }) {
-  const [cityId, setCityIdState] = useState(() =>
-    IS_HOME ? readStoredCity() || DEFAULT_BRANCH_ID : DEFAULT_BRANCH_ID,
+  const [cityId, setCityIdState] = useState(
+    () => readStoredCityId() || branchDefaultCityId(),
   );
 
   useEffect(() => {
-    if (!IS_HOME) return;
-    try {
-      if (cityId) localStorage.setItem(CITY_STORAGE_KEY, cityId);
-    } catch {
-      /* ignore */
-    }
+    writeStoredCityId(cityId);
   }, [cityId]);
+
+  useEffect(() => {
+    const onStorage = (e) => {
+      if (e.key && e.key !== "asiakoz-home-city") return;
+      const next = readStoredCityId();
+      if (next) setCityIdState(next);
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, []);
 
   const setCityId = (nextId) => {
     if (!NETWORK_BRANCHES.some((b) => b.id === nextId)) return;
     setCityIdState((prev) => {
       if (prev === nextId) return prev;
+      writeStoredCityId(nextId);
       trackEvent("branch_select", {
         branch: nextId,
         city: nextId,
@@ -67,10 +62,11 @@ export function CityProvider({ children }) {
 export function useCity() {
   const ctx = useContext(CityContext);
   if (!ctx) {
+    const fallback = branchDefaultCityId();
     return {
-      cityId: DEFAULT_BRANCH_ID,
+      cityId: fallback,
       setCityId: () => {},
-      branch: getNetworkBranch(DEFAULT_BRANCH_ID),
+      branch: getNetworkBranch(fallback),
       branches: NETWORK_BRANCHES,
       isComingSoon: false,
     };

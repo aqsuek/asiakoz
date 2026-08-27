@@ -177,6 +177,16 @@ export function getNetworkBranch(id) {
   return NETWORK_BRANCHES.find((b) => b.id === id || b.slug === id) || NETWORK_BRANCHES[0];
 }
 
+const HERO_IMAGES = {
+  almaty: "images/clinic-building.png",
+  aqtau: "images/clinic-aktau.png",
+  shymkent: "images/shymkent-branch.png",
+};
+
+export function branchHeroImage(branchId) {
+  return HERO_IMAGES[branchId] || HERO_IMAGES.almaty;
+}
+
 export function branchCityName(branch, lang = "kz") {
   return lang === "ru" ? branch.cityRu : branch.cityKz;
 }

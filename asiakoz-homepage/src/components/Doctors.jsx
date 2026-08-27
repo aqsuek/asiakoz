@@ -21,7 +21,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
     : lang === "ru"
       ? `Врач: ${doctor.name}`
       : `Дәрігер: ${doctor.name}`;
-  const bookUrl = waBookingUrl(lang, bookExtra, IS_HOME ? { branchId: doctorCity } : {});
+  const bookUrl = waBookingUrl(lang, bookExtra, { branchId: doctorCity });
   const stats = (doctor.stats || []).slice(0, IS_HOME ? 3 : 4);
 
   return (
@@ -40,7 +40,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
           trackEvent("doctor_open", {
             doctor_id: doctor.id,
             doctor_name: doctor.name,
-            city: IS_HOME ? doctorCity : undefined,
+            city: doctorCity,
             page_url: window.location.href,
           })
         }
@@ -66,7 +66,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
             trackEvent("doctor_open", {
               doctor_id: doctor.id,
               doctor_name: doctor.name,
-              city: IS_HOME ? doctorCity : undefined,
+              city: doctorCity,
               page_url: window.location.href,
             })
           }
@@ -121,7 +121,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
               language: lang,
               doctor_name: doctor.name,
               doctor_id: doctor.id,
-              city: IS_HOME ? doctorCity : undefined,
+              city: doctorCity,
               button_location: "doctors",
               page_url: window.location.href,
             })
@@ -144,7 +144,6 @@ export default function Doctors() {
   const [remoteDoctors, setRemoteDoctors] = useState(null);
 
   useEffect(() => {
-    if (!IS_HOME) return undefined;
     let cancelled = false;
     loadDoctors().then((items) => {
       if (!cancelled) setRemoteDoctors(items);
@@ -155,15 +154,12 @@ export default function Doctors() {
   }, []);
 
   const allDoctors = useMemo(
-    () =>
-      IS_HOME
-        ? (remoteDoctors ?? []).map((d) => localizeDoctor(d, lang))
-        : t.doctors.items || [],
-    [remoteDoctors, lang, t.doctors.items],
+    () => (remoteDoctors ?? []).map((d) => localizeDoctor(d, lang)),
+    [remoteDoctors, lang],
   );
 
   const doctors = useMemo(
-    () => (IS_HOME ? doctorsForCity(allDoctors, cityId) : allDoctors),
+    () => doctorsForCity(allDoctors, cityId),
     [allDoctors, cityId],
   );
 

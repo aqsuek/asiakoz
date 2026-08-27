@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import WhatsAppIcon from "./WhatsAppIcon";
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC, waBookingUrl } from "../data/contacts";
-import { IS_HOME, IS_LASER } from "../lib/branch";
+import { waBookingUrl } from "../data/contacts";
+import { IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
 import { useCity } from "../context/CityContext";
 import {
@@ -76,11 +76,9 @@ export default function MobileSticky() {
           ? `Здравствуйте! Хочу узнать, подходит ли мне ${LASER_PROMO.method} по акции ${price}.`
           : `Сәлеметсіз бе! ${LASER_PROMO.method} маған жасай ала ма — акция ${price}.`,
       )
-    : IS_HOME
-      ? waBookingUrl(lang, "", { branchId: cityId })
-      : waBookingUrl(lang);
+    : waBookingUrl(lang, "", { branchId: cityId });
 
-  const callHref = IS_HOME ? phoneHref(branch.phoneTel) : CLINIC.phones[0].href;
+  const callHref = phoneHref(branch.phoneTel);
   const callAria = t.mobile.callAria || t.mobile.call;
   const showPhone = showsPhoneCta(cityId);
 
@@ -122,14 +120,14 @@ export default function MobileSticky() {
         <a
           href={callHref}
           onClick={(e) => {
-            if (IS_HOME && !cityId) {
+            if (!cityId) {
               e.preventDefault();
               openPicker("phone");
               return;
             }
             trackEvent(IS_LASER ? "laser_phone_click" : "phone_click", {
               language: lang,
-              city: IS_HOME ? cityId : undefined,
+              city: cityId,
               button_location: "sticky",
               page_url: window.location.href,
             });
@@ -146,14 +144,14 @@ export default function MobileSticky() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => {
-            if (IS_HOME && !cityId) {
+            if (!cityId) {
               e.preventDefault();
               openPicker("whatsapp");
               return;
             }
             trackEvent(IS_LASER ? "laser_whatsapp_click" : "whatsapp_click", {
               language: lang,
-              city: IS_HOME ? cityId : undefined,
+              city: cityId,
               button_location: "sticky",
               page_url: window.location.href,
             });
@@ -165,7 +163,7 @@ export default function MobileSticky() {
           <span className="truncate">{t.mobile.wa}</span>
         </a>
       </div>
-      {pickerOpen && IS_HOME && (
+      {pickerOpen && (
         <div className="fixed inset-0 z-[70] flex items-end bg-ink/35">
           <button
             type="button"

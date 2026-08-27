@@ -1,6 +1,6 @@
 import WhatsAppIcon from "./WhatsAppIcon";
 import { useLang } from "../i18n/LanguageContext";
-import { CLINIC, waBookingUrl } from "../data/contacts";
+import { waBookingUrl } from "../data/contacts";
 import { trackEvent } from "../lib/analytics";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import { showsPhoneCta } from "../lib/contactPolicy";
@@ -16,19 +16,15 @@ export default function Booking({ laserMode = false }) {
   const { cityId, setCityId, branch, branches } = useCity();
   const isLaser = laserMode || IS_LASER;
 
-  const bookHref = IS_HOME
-    ? waBookingUrl(lang, "", { branchId: cityId })
-    : waBookingUrl(lang);
+  const bookHref = waBookingUrl(lang, "", { branchId: cityId });
 
-  const phone = IS_HOME
-    ? { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay }
-    : CLINIC.phones[0];
+  const phone = { href: phoneHref(branch.phoneTel), display: branch.phoneDisplay };
   const showPhone = showsPhoneCta(cityId);
 
   const onBook = () => {
     trackEvent(isLaser ? "laser_booking_click" : "booking_click", {
       language: lang,
-      city: IS_HOME ? cityId : undefined,
+      city: cityId,
       button_location: "booking",
       page_url: window.location.href,
     });
@@ -43,8 +39,7 @@ export default function Booking({ laserMode = false }) {
             <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.booking.subtitle}</p>
           </div>
 
-          {IS_HOME && (
-            <div
+          <div
               className="mt-5 flex gap-2 overflow-x-auto pb-1 snap-x snap-mandatory scrollbar-hide sm:justify-center"
               role="group"
               aria-label={t.booking.city}
@@ -77,7 +72,6 @@ export default function Booking({ laserMode = false }) {
                 );
               })}
             </div>
-          )}
 
           <div className="mt-5 flex flex-col gap-2">
             <a
