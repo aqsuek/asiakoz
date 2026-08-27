@@ -4845,5 +4845,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787807340227-zeuksu",
+    "ts": 1787807340227,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb2bfta-lcocdcpk",
+    "referrer": "https://www.google.com/"
   }
 ]
