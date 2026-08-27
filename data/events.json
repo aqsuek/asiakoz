@@ -4985,5 +4985,15 @@
     "language": "ru",
     "session_id": "mtb4pia4-3wk14m7q",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787812387455-7krbx4",
+    "ts": 1787812387455,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtb5bld9-nhd29114",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
