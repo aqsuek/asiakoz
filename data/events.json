@@ -4911,5 +4911,15 @@
     "language": "ru",
     "session_id": "mtb3pqrr-fta6y582",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787809841412-obeo7h",
+    "ts": 1787809841412,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtb3t1gr-giqk07le",
+    "referrer": "https://l.wl.co/"
   }
 ]
