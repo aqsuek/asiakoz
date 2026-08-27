@@ -5846,5 +5846,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtc4felb-pl3nlg1n"
+  },
+  {
+    "id": "1787871504878-ez9cq9",
+    "ts": 1787871504878,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mt6rvs19-a3qu1gcz",
+    "referrer": "https://asiakoz.com/"
   }
 ]
