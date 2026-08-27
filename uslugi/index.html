@@ -133,14 +133,6 @@
     </div>
   </div>
   <script src="/js/compliance.js"></script>
-<script>
-document.addEventListener('click', function (event) {
-  var link = event.target.closest('a[href*="wa.me"]');
-  if (link) {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
-  }
-});
-</script>
+
 </body>
 </html>
