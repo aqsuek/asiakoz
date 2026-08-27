@@ -158,7 +158,10 @@
 function cleanAlmatyPhoneCtas() {
   document.querySelectorAll('a[href^="tel:"]').forEach(function (link) { link.remove(); });
   document.querySelectorAll('body *').forEach(function (node) {
-    if (node.childElementCount === 0 && node.textContent.trim() === '+7 700 888 01 80') node.remove();
+    if (node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE' && node.childElementCount === 0) {
+      node.textContent = node.textContent.replace(/,?\s*call-центр \+7 700 888 01 80\.?/gi, '.').replace(/\.\./g, '.');
+      if (node.textContent.trim() === '+7 700 888 01 80') node.remove();
+    }
   });
 }
 new MutationObserver(cleanAlmatyPhoneCtas).observe(document.documentElement, { childList: true, subtree: true });
