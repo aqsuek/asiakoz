@@ -4684,5 +4684,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787800790980-beuf81",
+    "ts": 1787800790980,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtayf1b3-l0gwd1zk",
+    "referrer": "https://www.google.com/"
   }
 ]
