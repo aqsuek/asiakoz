@@ -4779,5 +4779,15 @@
     "language": "ru",
     "session_id": "mtb0gmgx-kyu2xqy9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787804257395-ycae51",
+    "ts": 1787804257395,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "language": "ru",
+    "session_id": "mtb0gz8v-d91k6tqu",
+    "button_location": "contacts",
+    "referrer": "https://www.google.com/"
   }
 ]
