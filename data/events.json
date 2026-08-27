@@ -5232,5 +5232,15 @@
     "language": "ru",
     "session_id": "mtbfbc1h-5p5zach4",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787829443687-ih7jb1",
+    "ts": 1787829443687,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtbfbc1h-5p5zach4",
+    "referrer": "https://asiakoz.com/"
   }
 ]
