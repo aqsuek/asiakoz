@@ -5702,5 +5702,14 @@
     "language": "kk",
     "session_id": "mtc1tgnp-e5gdo7sv",
     "referrer": "http://localhost:8767/katarakta-almaty/?v=e"
+  },
+  {
+    "id": "1787867997506-q5h1g0",
+    "ts": 1787867997506,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtarairu-vn58hmii"
   }
 ]
