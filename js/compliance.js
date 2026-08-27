@@ -217,6 +217,11 @@
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.remove();
     });
+    document.querySelectorAll('body *').forEach(function (node) {
+      if (node.childElementCount === 0 && node.textContent.trim() === '+7 700 888 01 80') {
+        node.remove();
+      }
+    });
   }
 
   function initSiteChrome() {
