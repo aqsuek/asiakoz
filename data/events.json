@@ -5307,5 +5307,15 @@
     "language": "ru",
     "session_id": "mtbliuho-ggldm1m2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787840467181-v6r3mb",
+    "ts": 1787840467181,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbm19j6-unm964cd",
+    "referrer": "https://www.google.com/"
   }
 ]
