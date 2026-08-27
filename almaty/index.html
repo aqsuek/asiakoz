@@ -47,7 +47,7 @@
             "@id": "https://asiakoz.com/almaty/#clinic",
             "name": "AsiaKoz Алматы",
             "url": "https://asiakoz.com/almaty/",
-            "telephone": "+77008880180",
+
             "image": "https://asiakoz.com/images/logo.png",
             "parentOrganization": {
               "@id": "https://asiakoz.com/#organization"
@@ -120,7 +120,7 @@
       <h1>AsiaKoz Алматы</h1>
       <p>Офтальмологическая клиника. Лазерная коррекция, катаракта, диагностика.</p>
       <p>Алматы, проспект Райымбека, 176А</p>
-      <p><a href="tel:+77008880180">+7 700 888 01 80</a> · <a href="https://wa.me/77003600180">WhatsApp</a></p>
+      <p><a href="https://wa.me/77003600180">WhatsApp +7 700 360 01 80</a></p>
       <p><a href="https://2gis.kz/kk/almaty/firm/70000001081905733">Карта</a></p>
       <h2>Почему выбирают asiakoz в Алматы</h2>
       <ul>
@@ -154,5 +154,14 @@
       <p><a href="/almaty/">Алматы</a> · <a href="/aktau/">Актау</a> · <a href="/shymkent/">Шымкент</a> · <a href="/uslugi/">Услуги</a> · <a href="/doctors/">Врачи</a></p>
     </section>
     </noscript>
-  </body>
+  <script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'whatsapp_click', page_path: location.pathname, link_url: link.href });
+  }
+});
+</script>
+</body>
 </html>
