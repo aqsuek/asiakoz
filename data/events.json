@@ -5711,5 +5711,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtarairu-vn58hmii"
+  },
+  {
+    "id": "1787868930905-6bzrwu",
+    "ts": 1787868930905,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtc2zfe4-mdneke4t"
   }
 ]
