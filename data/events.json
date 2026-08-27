@@ -5720,5 +5720,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtc2zfe4-mdneke4t"
+  },
+  {
+    "id": "1787869122609-fj3d2b",
+    "ts": 1787869122609,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt6rvs19-a3qu1gcz",
+    "referrer": "https://asiakoz.com/"
   }
 ]
