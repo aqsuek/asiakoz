@@ -5665,5 +5665,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mt6rvs0y-cnk22dm5"
+  },
+  {
+    "id": "1787866483526-kaut1s",
+    "ts": 1787866483526,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mt6rvs0y-cnk22dm5"
   }
 ]
