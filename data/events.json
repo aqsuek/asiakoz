@@ -5287,5 +5287,15 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtbkteu5-l0qfzajc"
+  },
+  {
+    "id": "1787839028211-lqepww",
+    "ts": 1787839028211,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbl6iao-nn50tbqd",
+    "referrer": "https://www.facebook.com/"
   }
 ]
