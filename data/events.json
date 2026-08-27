@@ -5808,5 +5808,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtc4felb-pl3nlg1n"
+  },
+  {
+    "id": "1787871402455-whhj0b",
+    "ts": 1787871402455,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtc4felb-pl3nlg1n"
   }
 ]
