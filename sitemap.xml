@@ -73,22 +73,40 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/laser/doctor/mehmet-esat-teker/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://asiakoz.com/doctor-mehmet-esat-teker/</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/laser/doctor/orel-talip/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://asiakoz.com/kk/doctor-mehmet-esat-teker/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/doctor-orel/</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/almaty/doctor/aliya/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://asiakoz.com/kk/doctor-orel/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/doctor-aliya/</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/doctor-aliya/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/doctor-musay/</loc>
@@ -97,22 +115,46 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/aktau/doctor/ali-keskin/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://asiakoz.com/kk/doctor-musay/</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/aktau/doctor/erol-joshkun/</loc>
+    <loc>https://asiakoz.com/doctor-ali-keskin/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/aktau/doctor/nazgul-sagyndykova/</loc>
+    <loc>https://asiakoz.com/kk/doctor-ali-keskin/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/doctor-erol/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/doctor-erol/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/doctor-nazgul/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/doctor-nazgul/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/doctor-kadyr-kyrboga/</loc>
@@ -121,26 +163,32 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://asiakoz.com/kk/doctor-kadyr-kyrboga/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://asiakoz.com/ambliopiya-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/astigmatizm-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/bol-v-glazu-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/dalnozorkost-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -164,13 +212,13 @@
   </url>
   <url>
     <loc>https://asiakoz.com/diabeticheskaya-retinopatiya-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/diabeticheskiy-otek-makuly-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -193,44 +241,8 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://asiakoz.com/doctor-ali-keskin/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/doctor-aliya/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/doctor-erol/</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/doctor-mehmet-esat-teker/</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/doctor-nazgul/</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://asiakoz.com/doctor-orel/</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://asiakoz.com/epiretinalnaya-membrana-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -254,7 +266,7 @@
   </url>
   <url>
     <loc>https://asiakoz.com/glaznaya-klinika-almaty/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -266,7 +278,7 @@
   </url>
   <url>
     <loc>https://asiakoz.com/intravitrealnye-inektsii-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -320,31 +332,31 @@
   </url>
   <url>
     <loc>https://asiakoz.com/lazernaya-koagulyatsiya-setchatki-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/makula-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/makulyarnyy-razryv-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/miopiya-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/miopiya-u-detey-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -362,19 +374,19 @@
   </url>
   <url>
     <loc>https://asiakoz.com/operatsiya-glaukoma-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/otsloyka-setchatki-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/otzyvy-asiakoz-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -386,49 +398,49 @@
   </url>
   <url>
     <loc>https://asiakoz.com/pokrasnenie-glaza-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/politika-konfidentsialnosti/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/polzovatelskoe-soglashenie/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/pterigiym-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/razryv-setchatki-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/setchatka-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/srochnye-simptomy-glaz-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/sukhoy-glaz-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -452,19 +464,19 @@
   </url>
   <url>
     <loc>https://asiakoz.com/vmd-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/vtorichnaya-katarakta-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/vtoroe-mnenie-oftalmolog-almaty/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -473,6 +485,348 @@
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/aktau/doctor/ali-keskin/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/aktau/doctor/erol-joshkun/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/aktau/doctor/nazgul-sagyndykova/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/ambliopiya-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/astigmatizm-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/bol-v-glazu-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/dalnozorkost-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/deti-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/deti-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/deti-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/diabeticheskaya-retinopatiya-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/diabeticheskiy-otek-makuly-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/diagnostika-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/diagnostika-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/diagnostika-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/epiretinalnaya-membrana-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/glaukoma-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/glaukoma-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/glaukoma-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/glaznaya-klinika-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/icl-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/intravitrealnye-inektsii-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/katarakta-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/katarakta-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/katarakta-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/keratokonus-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/kosoglazie/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/kosoglazie-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/kosoglazie-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/laser/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/lazer-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/lazernaya-koagulyatsiya-setchatki-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/makula-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/makulyarnyy-razryv-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/miopiya-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/miopiya-u-detey-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/news/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/news/shymkent-ashyldy/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/operatsiya-glaukoma-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/otsloyka-setchatki-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/otzyvy-asiakoz-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/peresadka-rogovitsy-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/pokrasnenie-glaza-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/politika-konfidentsialnosti/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/polzovatelskoe-soglashenie/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/pterigiym-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/razryv-setchatki-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/setchatka-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/srochnye-simptomy-glaz-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/sukhoy-glaz-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vitrektomiya-aktau/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vitrektomiya-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vitrektomiya-shymkent/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vmd-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vtorichnaya-katarakta-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/vtoroe-mnenie-oftalmolog-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asiakoz.com/kk/zamena-hrustalika-almaty/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://asiakoz.com/laser/</loc>

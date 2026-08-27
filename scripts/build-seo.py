@@ -117,6 +117,26 @@ PAGE_META = {
             "lead": "Офтальмологиялық клиника. Диагностика, катаракта, хирургия.",
         },
     },
+    "laser": {
+        "ru": {
+            "title": "Лазерная коррекция зрения в Алматы — AsiaKoz",
+            "description": (
+                "Лазерная коррекция зрения в Алматы у турецких офтальмохирургов. "
+                "Полная диагностика, подбор метода LASIK/SMILE и запись в AsiaKoz."
+            ),
+            "h1": "Лазерная коррекция зрения в Алматы",
+            "lead": "Диагностика и лазерная коррекция у опытных хирургов.",
+        },
+        "kk": {
+            "title": "Алматыдағы лазерлік көру түзету — AsiaKoz",
+            "description": (
+                "Алматыдағы лазерлік көру түзету — түрік офтальмохирургтері. "
+                "Толық диагностика, LASIK/SMILE әдісін таңдау және AsiaKoz-қа жазылу."
+            ),
+            "h1": "Алматыдағы лазерлік көру түзету",
+            "lead": "Тәжірибелі хирургтерде диагностика және лазерлік түзету.",
+        },
+    },
     "doctors": {
         "ru": {
             "title": "Врачи-офтальмологи AsiaKoz — Алматы, Актау и Шымкент",
@@ -832,9 +852,15 @@ def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
         add(f"{SITE}/kk/{key}/", ROOT / "kk" / key / "index.html", 0.85)
 
     for d in DOCTORS:
-        add(f"{SITE}{d['href']}", ROOT / d["slug"] / "index.html", 0.85)
+        ru_url = f"{SITE}/{d['slug']}/"
+        kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
+        kk_url = f"{SITE}{kk_href}"
+        add(ru_url, ROOT / d["slug"] / "index.html", 0.85)
+        kk_path = ROOT / kk_href.strip("/") / "index.html"
+        if kk_path.exists():
+            add(kk_url, kk_path, 0.8)
 
-    # Static medical landings (RU only for now)
+    # Static medical landings (RU)
     for path in sorted(ROOT.rglob("index.html")):
         if any(p in SKIP_DIRS for p in path.parts):
             continue
@@ -853,8 +879,30 @@ def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
             continue
         add(f"{SITE}/{rel_s}/", path, 0.8)
 
+    # KK static mirrors
+    kk_root = ROOT / "kk"
+    if kk_root.is_dir():
+        for path in sorted(kk_root.rglob("index.html")):
+            if any(p in SKIP_DIRS for p in path.parts):
+                continue
+            rel = path.parent.relative_to(ROOT)
+            rel_s = str(rel).replace("\\", "/")
+            if rel_s == "kk":
+                continue
+            if not rel_s.startswith("kk/"):
+                continue
+            html = path.read_text(encoding="utf-8")
+            if is_redirect(html) or "noindex" in html.lower():
+                continue
+            if any(rel_s.startswith(f"kk/{b['id']}/doctor/") for b in BRANCHES):
+                continue
+            if rel_s.startswith("kk/laser/doctor/") or rel_s.startswith("kk/almaty/doctor/"):
+                continue
+            add(f"{SITE}/{rel_s}/", path, 0.75)
+
     # laser promo
     add(f"{SITE}/laser/", ROOT / "laser" / "index.html", 0.9)
+    add(f"{SITE}/kk/laser/", ROOT / "kk" / "laser" / "index.html", 0.85)
 
     # dedupe
     seen = set()
@@ -950,8 +998,9 @@ def patch_doctor_profile_pages() -> None:
         if not path.exists():
             continue
         html = path.read_text(encoding="utf-8")
-        ru_url = f"{SITE}{d['href']}"
-        kk_url = f"{SITE}{d.get('kkHref', d['href'])}"
+        ru_url = f"{SITE}/{d['slug']}/"
+        kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
+        kk_url = f"{SITE}{kk_href}"
         title = f"{d['nameRu']} — врач офтальмолог | AsiaKoz"
         desc = f"{d['nameRu']} — {d['roleRu']}. Приём в клинике AsiaKoz. Контакты и запись на странице врача."
         html = set_lang(html, "ru")
@@ -1012,20 +1061,18 @@ DOCTOR_SPA_CANONICAL = {
 }
 
 def sync_kk_doctor_static_pages() -> None:
-    """Mirror indexable doctor profile pages under /kk/ when kkHref is set."""
+    """Mirror indexable doctor profile pages under /kk/{slug}/."""
     for d in DOCTORS:
-        kk_href = d.get("kkHref", "")
-        if not kk_href.startswith("/kk/"):
-            continue
         ru_path = ROOT / d["slug"] / "index.html"
-        kk_path = ROOT / kk_href.strip("/") / "index.html"
         if not ru_path.exists():
             continue
+        kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
+        kk_path = ROOT / kk_href.strip("/") / "index.html"
         kk_path.parent.mkdir(parents=True, exist_ok=True)
         html = ru_path.read_text(encoding="utf-8")
         html = set_lang(html, "kk")
         kk_url = f"{SITE}{kk_href}"
-        ru_url = f"{SITE}{d['href']}"
+        ru_url = f"{SITE}/{d['slug']}/"
         html = set_canonical(html, kk_url)
         html = inject_hreflang(html, ru_url, kk_url)
         kk_path.write_text(html, encoding="utf-8")
@@ -1129,6 +1176,14 @@ def main() -> None:
             f"{SITE}{b['pageHref']}",
             f"{SITE}{b['kkHref']}",
         )
+    patch_spa_shell(
+        ROOT / "laser" / "index.html",
+        "laser",
+        "ru",
+        "almaty",
+        f"{SITE}/laser/",
+        f"{SITE}/kk/laser/",
+    )
 
     # KK SPA shells (same React app as RU, Kazakh URL + lang detection)
     write_kk_spa_shell(ROOT / "index.html", ROOT / "kk" / "index.html", "home", None, f"{SITE}/", f"{SITE}/kk/")
@@ -1142,12 +1197,26 @@ def main() -> None:
             f"{SITE}{b['pageHref']}",
             f"{SITE}{b['kkHref']}",
         )
+    write_kk_spa_shell(
+        ROOT / "laser" / "index.html",
+        ROOT / "kk" / "laser" / "index.html",
+        "laser",
+        "almaty",
+        f"{SITE}/laser/",
+        f"{SITE}/kk/laser/",
+    )
 
     # Doctor SPA shells under /kk/… created above — apply noindex after copy
     noindex_doctor_spa_shells()
 
     patch_static_hreflang_hubs()
     write_kk_catalogs()
+    import subprocess
+    import sys
+
+    mirror_script = ROOT / "scripts" / "sync-kk-static-mirrors.py"
+    if mirror_script.exists():
+        subprocess.check_call([sys.executable, str(mirror_script)], cwd=str(ROOT))
     restyle_static_pages()
     write_llms()
     entries = collect_urls(lastmod_cache)

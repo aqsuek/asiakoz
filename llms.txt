@@ -39,13 +39,13 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 - https://asiakoz.com/doctors/
 - https://asiakoz.com/kk/doctors/
-- Мехмет Есат Текер (almaty): https://asiakoz.com/laser/doctor/mehmet-esat-teker/
-- Орел Талип (almaty): https://asiakoz.com/laser/doctor/orel-talip/
-- Алия Ганимуратовна Усманова (almaty): https://asiakoz.com/almaty/doctor/aliya/
+- Мехмет Есат Текер (almaty): https://asiakoz.com/doctor-mehmet-esat-teker/
+- Орел Талип (almaty): https://asiakoz.com/doctor-orel/
+- Алия Ганимуратовна Усманова (almaty): https://asiakoz.com/doctor-aliya/
 - Нурмухамед Мусай (almaty): https://asiakoz.com/doctor-musay/
-- Али Кескин (aqtau): https://asiakoz.com/aktau/doctor/ali-keskin/
-- Эрол Джошкун (aqtau): https://asiakoz.com/aktau/doctor/erol-joshkun/
-- Назгуль Темирбеккызы Сагындыкова (aqtau): https://asiakoz.com/aktau/doctor/nazgul-sagyndykova/
+- Али Кескин (aqtau): https://asiakoz.com/doctor-ali-keskin/
+- Эрол Джошкун (aqtau): https://asiakoz.com/doctor-erol/
+- Назгуль Темирбеккызы Сагындыкова (aqtau): https://asiakoz.com/doctor-nazgul/
 - Кадыр Кырбога (shymkent): https://asiakoz.com/doctor-kadyr-kyrboga/
 
 ## Контакты
