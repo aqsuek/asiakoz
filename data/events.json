@@ -5926,5 +5926,15 @@
     "language": "ru",
     "session_id": "mt6rvs19-a3qu1gcz",
     "referrer": "https://asiakoz.com/doctor-kadyr-kyrboga/"
+  },
+  {
+    "id": "1787873398564-2ousao",
+    "ts": 1787873398564,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtbyr9dd-s7hgcugi",
+    "referrer": "https://asiakoz.com/"
   }
 ]
