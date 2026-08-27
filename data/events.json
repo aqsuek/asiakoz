@@ -5297,5 +5297,15 @@
     "language": "ru",
     "session_id": "mtbl6iao-nn50tbqd",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1787839625936-zh9iuh",
+    "ts": 1787839625936,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbliuho-ggldm1m2",
+    "referrer": "https://www.google.com/"
   }
 ]
