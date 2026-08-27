@@ -155,6 +155,14 @@
     </section>
     </noscript>
   <script>
+function cleanAlmatyPhoneCtas() {
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) { link.remove(); });
+  document.querySelectorAll('body *').forEach(function (node) {
+    if (node.childElementCount === 0 && node.textContent.trim() === '+7 700 888 01 80') node.remove();
+  });
+}
+new MutationObserver(cleanAlmatyPhoneCtas).observe(document.documentElement, { childList: true, subtree: true });
+document.addEventListener('DOMContentLoaded', cleanAlmatyPhoneCtas);
 document.addEventListener('click', function (event) {
   var link = event.target.closest('a[href*="wa.me"]');
   if (link) {
