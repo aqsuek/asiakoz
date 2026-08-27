@@ -126,7 +126,7 @@ export default function Header() {
                   }
                   if (IS_LASER) trackEvent("laser_language_change", { language: code });
                 }}
-                className={`inline-flex h-11 min-w-11 items-center justify-center rounded-full px-2 text-[10px] font-bold uppercase tracking-wide transition-all sm:min-w-9 sm:px-2.5 sm:text-[11px] ${
+                className={`inline-flex h-11 min-w-[2.75rem] items-center justify-center rounded-full px-2 text-[10px] font-bold uppercase tracking-wide transition-all sm:min-w-11 sm:px-2.5 sm:text-[11px] ${
                   lang === code
                     ? "bg-white text-brand shadow-soft"
                     : "text-ink-faint hover:text-ink"
@@ -134,7 +134,7 @@ export default function Header() {
                 aria-current={lang === code ? "page" : undefined}
                 hrefLang={code === "kz" ? "kk" : "ru"}
               >
-                {code === "kz" ? "KZ" : "RU"}
+                {code === "kz" ? "ҚАЗ" : "РУС"}
               </a>
               );
             })}

@@ -95,8 +95,8 @@ export const NETWORK_BRANCHES = [
       url: "https://wa.me/77758630180",
     },
     instagram: {
-      handle: "@asiakoz.clinic",
-      url: "https://www.instagram.com/asiakoz.clinic/",
+      handle: "@asiakoz.aktau",
+      url: "https://www.instagram.com/asiakoz.aktau/",
     },
     gis: {
       searchUrl: "https://2gis.kz/aktau/firm/70000001104276081",

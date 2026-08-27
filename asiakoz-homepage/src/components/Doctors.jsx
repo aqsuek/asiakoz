@@ -186,7 +186,7 @@ export default function Doctors() {
 
   if (IS_HOME && remoteDoctors === null) {
     return (
-      <section id="doctors" className="scroll-mt-header overflow-x-clip py-7 sm:py-10">
+      <section id="doctors" className="scroll-mt-header py-7 sm:py-10">
         <div className="section-container">
           <p className="text-sm text-ink-muted">{t.news?.loading || "Жүктелуде…"}</p>
         </div>
@@ -199,7 +199,7 @@ export default function Doctors() {
   const showArrows = doctors.length > 1;
 
   return (
-    <section id="doctors" className="scroll-mt-header overflow-x-clip py-7 sm:py-10">
+    <section id="doctors" className="scroll-mt-header py-7 sm:py-10">
       <div className="section-container">
         <div className="mb-4 flex flex-col gap-3 sm:mb-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
@@ -239,7 +239,7 @@ export default function Doctors() {
         <>
           <div
             ref={trackRef}
-            className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
+            className="scrollbar-hide flex gap-3 overflow-x-auto overscroll-x-contain scroll-px-4 px-4 pb-1 snap-x snap-mandatory touch-pan-x [-webkit-overflow-scrolling:touch] sm:gap-4 sm:scroll-px-5 sm:px-5 lg:px-[max(1.25rem,calc((100vw-1200px)/2+2rem))]"
           >
             {doctors.map((doctor) => (
               <DoctorCard

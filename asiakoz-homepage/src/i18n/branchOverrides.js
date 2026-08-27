@@ -498,7 +498,7 @@ export const branchTranslationOverrides = {
       },
       booking: {
         title: "Жазылу",
-        subtitle: "Форманы толтырыңыз — өтінім WhatsApp-қа кетеді.",
+        subtitle: "WhatsApp-қа жазыңыз — өтінім филиалға кетеді.",
       },
       footer: {
         tagline: "Азиякөз — көз клиникасы, Алматы",
@@ -819,7 +819,7 @@ export const branchTranslationOverrides = {
       },
       booking: {
         title: "Запись",
-        subtitle: "Заполните форму — заявка уйдёт в WhatsApp.",
+        subtitle: "Напишите в WhatsApp — заявка уйдёт в филиал.",
       },
       footer: {
         tagline: "Азиякөз — глазная клиника, Алматы",

@@ -10,7 +10,9 @@
     ],
     "logo": "https://asiakoz.com/images/logo.png",
     "sameAs": [
-      "https://www.instagram.com/asiakoz.clinic/"
+      "https://www.instagram.com/asiakoz.clinic/",
+      "https://www.instagram.com/asiakoz.aktau/",
+      "https://www.instagram.com/asiakoz.shymkent/"
     ]
   },
   "branches": [
@@ -66,8 +68,8 @@
       "pageHref": "/aktau/",
       "kkHref": "/kk/aqtau/",
       "instagram": {
-        "handle": "@asiakoz.clinic",
-        "url": "https://www.instagram.com/asiakoz.clinic/"
+        "handle": "@asiakoz.aktau",
+        "url": "https://www.instagram.com/asiakoz.aktau/"
       },
       "gis": {
         "searchUrl": "https://2gis.kz/aktau/firm/70000001104276081",

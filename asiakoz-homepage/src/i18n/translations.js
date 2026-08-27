@@ -285,7 +285,7 @@ export const translations = {
     },
     booking: {
       title: "Қабылдауға жазылыңыз",
-      subtitle: "Форманы толтырыңыз — өтінім WhatsApp арқылы жіберіледі.",
+      subtitle: "WhatsApp арқылы жазылыңыз — өтінім филиалға кетеді.",
       name: "Аты-жөніңіз",
       phone: "Телефон нөміріңіз",
       service: "Қажетті қызмет",
@@ -601,7 +601,7 @@ export const translations = {
     },
     booking: {
       title: "Запишитесь на приём",
-      subtitle: "Заполните форму — заявка отправится в WhatsApp.",
+      subtitle: "Напишите в WhatsApp — заявка уйдёт в филиал.",
       name: "Ваше имя",
       phone: "Номер телефона",
       service: "Нужная услуга",

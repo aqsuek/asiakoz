@@ -5,7 +5,6 @@ import { CLINIC, clinicAddress } from "../data/contacts";
 import { homeUrl, newsUrl } from "../lib/routes";
 import { IS_HOME, IS_LASER } from "../lib/branch";
 import {
-  MAIN_INSTAGRAM,
   NETWORK_BRANCHES,
   branchAddress,
   branchCityName,
@@ -60,24 +59,18 @@ export default function Footer() {
                   {t.footer.tagline}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <a
-                    href={MAIN_INSTAGRAM.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-ink/10 px-3 text-xs font-semibold text-ink-muted hover:border-brand hover:text-brand"
-                  >
-                    <Icon name="instagram" className="h-3.5 w-3.5" />
-                    {MAIN_INSTAGRAM.handle}
-                  </a>
-                  <a
-                    href="https://www.instagram.com/asiakoz.shymkent/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-ink/10 px-3 text-xs font-semibold text-ink-muted hover:border-brand hover:text-brand"
-                  >
-                    <Icon name="instagram" className="h-3.5 w-3.5" />
-                    @asiakoz.shymkent
-                  </a>
+                  {NETWORK_BRANCHES.map((b) => (
+                    <a
+                      key={b.id}
+                      href={b.instagram.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-ink/10 px-3 text-xs font-semibold text-ink-muted hover:border-brand hover:text-brand"
+                    >
+                      <Icon name="instagram" className="h-3.5 w-3.5" />
+                      {b.instagram.handle}
+                    </a>
+                  ))}
                 </div>
               </div>
 
