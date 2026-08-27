@@ -5564,5 +5564,14 @@
     "city": "home",
     "language": "ru",
     "session_id": "mtbzboxb-3w3oux6i"
+  },
+  {
+    "id": "1787862988764-bwhbtl",
+    "ts": 1787862988764,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbzg4gu-mk3sqdou"
   }
 ]
