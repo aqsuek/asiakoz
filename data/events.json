@@ -5108,5 +5108,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787824757787-jv2oso",
+    "ts": 1787824757787,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtbcoegt-8pp125q3",
+    "referrer": "https://www.google.com/"
   }
 ]
