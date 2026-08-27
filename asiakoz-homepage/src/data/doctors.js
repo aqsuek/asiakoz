@@ -77,7 +77,7 @@ export const NETWORK_DOCTORS = [
   },
   {
     id: "kadyr-kyrboga",
-    href: "/shymkent/doctor/kadyr-kyrboga/",
+    href: "/doctor-kadyr-kyrboga/",
     nameRu: "Кадыр Кырбога",
     nameKz: "Қадыр Қырбога",
     roleRu: "Витреоретинальный хирург",

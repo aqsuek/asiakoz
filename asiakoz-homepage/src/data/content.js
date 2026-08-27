@@ -67,7 +67,7 @@ export const TRUST_STATS = [
   { value: "12 000+", label: "успешных операций" },
   { value: "4.8–4.9", label: "рейтинг в 2ГИС" },
   { value: "900+", label: "отзывов пациентов" },
-  { value: "2", label: "филиала в Казахстане" },
+  { value: "3", label: "филиала в Казахстане" },
 ];
 
 export const SERVICES = [

@@ -46,7 +46,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 - Али Кескин (aqtau): https://asiakoz.com/aktau/doctor/ali-keskin/
 - Эрол Джошкун (aqtau): https://asiakoz.com/aktau/doctor/erol-joshkun/
 - Назгуль Темирбеккызы Сагындыкова (aqtau): https://asiakoz.com/aktau/doctor/nazgul-sagyndykova/
-- Кадыр Кырбога (shymkent): https://asiakoz.com/shymkent/doctor/kadyr-kyrboga/
+- Кадыр Кырбога (shymkent): https://asiakoz.com/doctor-kadyr-kyrboga/
 
 ## Контакты
 

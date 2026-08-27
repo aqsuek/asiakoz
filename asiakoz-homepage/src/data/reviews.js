@@ -175,17 +175,17 @@ export const LASER_VIDEO_REVIEWS = [
 export function getVideoReviews() {
   const list =
     BRANCH === "laser" || BRANCH === "almaty" ? LASER_VIDEO_REVIEWS : VIDEO_REVIEWS;
-  // Home lives at site root; reuse Shymkent review videos (already on Pages)
+  // Home lives at site root; review media is deployed to /videos/ and /images/reviews/
   if (BRANCH === "home") {
     return list.map((item) => ({
       ...item,
       src:
         item.src.startsWith("http") || item.src.startsWith("/")
           ? item.src
-          : `/shymkent/${item.src}`,
+          : `/${item.src.replace(/^\//, "")}`,
       ...(item.poster &&
       !(item.poster.startsWith("http") || item.poster.startsWith("/"))
-        ? { poster: `/shymkent/${item.poster}` }
+        ? { poster: `/${item.poster.replace(/^\//, "")}` }
         : {}),
     }));
   }

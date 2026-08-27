@@ -932,6 +932,7 @@ def patch_doctor_profile_pages() -> None:
     city_names = {
         "almaty": "Алматы",
         "aqtau": "Актау",
+        "shymkent": "Шымкент",
     }
     service_map = {
         "orel-talip": ["https://asiakoz.com/vitrektomiya-almaty/", "https://asiakoz.com/kosoglazie/"],
@@ -941,6 +942,7 @@ def patch_doctor_profile_pages() -> None:
         "ali-keskin": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
         "erol-joshkun": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
         "nazgul-sagyndykova": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/diagnostika-almaty/"],
+        "kadyr-kyrboga": ["https://asiakoz.com/vitrektomiya-almaty/", "https://asiakoz.com/kosoglazie/"],
     }
 
     for d in DOCTORS:
@@ -1006,9 +1008,55 @@ DOCTOR_SPA_CANONICAL = {
     "aktau/doctor/ali-keskin": "https://asiakoz.com/doctor-ali-keskin/",
     "aktau/doctor/erol-joshkun": "https://asiakoz.com/doctor-erol/",
     "aktau/doctor/nazgul-sagyndykova": "https://asiakoz.com/doctor-nazgul/",
-    "shymkent/doctor/ali-keskin": "https://asiakoz.com/doctor-ali-keskin/",
-    "shymkent/doctor/mehmet-esat-teker": "https://asiakoz.com/doctor-mehmet-esat-teker/",
+    "shymkent/doctor/kadyr-kyrboga": "https://asiakoz.com/doctor-kadyr-kyrboga/",
 }
+
+def sync_kk_doctor_static_pages() -> None:
+    """Mirror indexable doctor profile pages under /kk/ when kkHref is set."""
+    for d in DOCTORS:
+        kk_href = d.get("kkHref", "")
+        if not kk_href.startswith("/kk/"):
+            continue
+        ru_path = ROOT / d["slug"] / "index.html"
+        kk_path = ROOT / kk_href.strip("/") / "index.html"
+        if not ru_path.exists():
+            continue
+        kk_path.parent.mkdir(parents=True, exist_ok=True)
+        html = ru_path.read_text(encoding="utf-8")
+        html = set_lang(html, "kk")
+        kk_url = f"{SITE}{kk_href}"
+        ru_url = f"{SITE}{d['href']}"
+        html = set_canonical(html, kk_url)
+        html = inject_hreflang(html, ru_url, kk_url)
+        kk_path.write_text(html, encoding="utf-8")
+        print(f"kk doctor static: {kk_href}")
+
+def ensure_doctor_spa_shells() -> None:
+    """Create missing SPA shells (and KK mirrors) from branch index.html."""
+    for rel in DOCTOR_SPA_CANONICAL:
+        parts = rel.split("/")
+        city = parts[0]
+        doc_id = parts[-1]
+        src = ROOT / city / "index.html"
+        if not src.exists():
+            continue
+        shell = src.read_text(encoding="utf-8")
+        dest = ROOT / rel / "index.html"
+        if not dest.exists():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_text(shell, encoding="utf-8")
+            print(f"doctor spa created: /{rel}/")
+        if city == "aktau":
+            kk_rel = f"kk/aqtau/{'/'.join(parts[1:])}"
+        elif city == "laser":
+            kk_rel = f"kk/{rel}"
+        else:
+            kk_rel = f"kk/{rel}"
+        kk_dest = ROOT / kk_rel / "index.html"
+        if not kk_dest.exists():
+            kk_dest.parent.mkdir(parents=True, exist_ok=True)
+            kk_dest.write_text(shell, encoding="utf-8")
+            print(f"doctor spa created: /{kk_rel}/")
 
 def noindex_doctor_spa_shells() -> None:
     items = list(DOCTOR_SPA_CANONICAL.items())
@@ -1018,7 +1066,7 @@ def noindex_doctor_spa_shells() -> None:
         rest = "/".join(parts[1:])
         if city == "aktau":
             items.append((f"kk/aqtau/{rest}", canonical))
-        elif city in ("almaty", "shymkent"):
+        elif city in ("almaty", "shymkent", "laser"):
             items.append((f"kk/{city}/{rest}", canonical))
 
     for rel, canonical in items:
@@ -1064,8 +1112,10 @@ def main() -> None:
     apply_url_merges()
     fix_redirect_stubs()
     write_aktau_alias()
+    ensure_doctor_spa_shells()
     noindex_doctor_spa_shells()
     patch_doctor_profile_pages()
+    sync_kk_doctor_static_pages()
 
     # RU SPA shells
     patch_spa_shell(ROOT / "index.html", "home", "ru", None, f"{SITE}/", f"{SITE}/kk/")

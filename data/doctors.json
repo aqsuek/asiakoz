@@ -137,7 +137,7 @@
     },
     {
       "id": "erol-joshkun",
-      "slug": "doctor-erol-joshkun",
+      "slug": "doctor-erol",
       "href": "/aktau/doctor/erol-joshkun/",
       "kkHref": "/kk/aktau/doctor/erol-joshkun/",
       "nameRu": "Эрол Джошкун",
@@ -166,7 +166,7 @@
     },
     {
       "id": "nazgul-sagyndykova",
-      "slug": "doctor-nazgul-sagyndykova",
+      "slug": "doctor-nazgul",
       "href": "/aktau/doctor/nazgul-sagyndykova/",
       "kkHref": "/kk/aktau/doctor/nazgul-sagyndykova/",
       "nameRu": "Назгуль Темирбеккызы Сагындыкова",
@@ -196,8 +196,8 @@
     {
       "id": "kadyr-kyrboga",
       "slug": "doctor-kadyr-kyrboga",
-      "href": "/shymkent/doctor/kadyr-kyrboga/",
-      "kkHref": "/kk/shymkent/doctor/kadyr-kyrboga/",
+      "href": "/doctor-kadyr-kyrboga/",
+      "kkHref": "/kk/doctor-kadyr-kyrboga/",
       "nameRu": "Кадыр Кырбога",
       "nameKz": "Қадыр Қырбога",
       "roleRu": "Витреоретинальный хирург",

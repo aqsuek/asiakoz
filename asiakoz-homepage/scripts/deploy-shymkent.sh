@@ -2,20 +2,17 @@
 set -euo pipefail
 
 APP="$(cd "$(dirname "$0")/.." && pwd)"
-# Live site root = parent of asiakoz-homepage (tomorrows-script)
 LIVE="$(cd "$APP/.." && pwd)"
 TARGET="$LIVE/shymkent"
-# Coming soon: no assigned city doctors yet
-DOCTOR_IDS=()
+DOCTOR_IDS=(kadyr-kyrboga)
 
 cd "$APP"
-npm run build
+VITE_BASE=/shymkent/ VITE_BRANCH=shymkent npm run build
 
 rm -rf "$TARGET"
 mkdir -p "$TARGET"
 cp -R "$APP/dist/"* "$TARGET/"
 
-# Public media (videos, doctor photos) if present
 if [[ -d "$APP/public/videos" ]]; then
   mkdir -p "$TARGET/videos"
   cp -R "$APP/public/videos/"* "$TARGET/videos/"
@@ -30,39 +27,64 @@ if [[ ! -f "$TARGET/index.html" ]]; then
   exit 1
 fi
 
-# SPA routes for doctor pages (GitHub Pages needs a real index.html per path)
-if ((${#DOCTOR_IDS[@]})); then
-  for id in "${DOCTOR_IDS[@]}"; do
-    mkdir -p "$TARGET/doctor/$id"
-    cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
-  done
-fi
+for id in "${DOCTOR_IDS[@]}"; do
+  mkdir -p "$TARGET/doctor/$id"
+  cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
+done
 
-SITEMAP="$LIVE/sitemap.xml"
-if [[ -f "$SITEMAP" ]] && ! grep -q 'asiakoz.com/shymkent/' "$SITEMAP"; then
-  if [[ "$(uname)" == "Darwin" ]]; then
-    sed -i '' 's|</urlset>|  <url>\
-    <loc>https://asiakoz.com/shymkent/</loc>\
-    <changefreq>weekly</changefreq>\
-    <priority>0.95</priority>\
-  </url>\
-</urlset>|' "$SITEMAP"
-  else
-    sed -i 's|</urlset>|  <url>\n    <loc>https://asiakoz.com/shymkent/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.95</priority>\n  </url>\n</urlset>|' "$SITEMAP"
-  fi
-  echo "Added /shymkent/ to sitemap.xml"
-fi
+INDEX="$TARGET/index.html"
+python3 - "$INDEX" <<'PY'
+import re, sys
+from pathlib import Path
+p = Path(sys.argv[1])
+t = p.read_text(encoding="utf-8")
+t = re.sub(r'asiakoz-build" content="[^"]*"', 'asiakoz-build" content="2026-08-28-shymkent-v1"', t, count=1)
+t = t.replace("https://asiakoz.com/", "https://asiakoz.com/shymkent/")
+t = re.sub(
+    r"<title>[^<]*</title>",
+    "<title>AsiaKoz Шымкент — офтальмологиялық клиника</title>",
+    t,
+    count=1,
+)
+p.write_text(t, encoding="utf-8")
+PY
 
 echo "Deployed Shymkent landing -> $TARGET"
 echo "URL: https://asiakoz.com/shymkent/"
-if ((${#DOCTOR_IDS[@]})); then
-  echo "Doctor pages:"
-  for id in "${DOCTOR_IDS[@]}"; do
-    echo "  https://asiakoz.com/shymkent/doctor/$id/"
-  done
-else
-  echo "Doctor pages: none yet"
-fi
 
-# Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$LIVE/scripts/build-seo.py"
+
+for id in "${DOCTOR_IDS[@]}"; do
+  mkdir -p "$TARGET/doctor/$id"
+  cp "$TARGET/index.html" "$TARGET/doctor/$id/index.html"
+done
+
+python3 - <<PY
+from pathlib import Path
+import re
+root = Path(r"""$LIVE""")
+canon = {
+  "kadyr-kyrboga": "https://asiakoz.com/doctor-kadyr-kyrboga/",
+}
+for doc_id, url in canon.items():
+  ru = root / "shymkent" / "doctor" / doc_id / "index.html"
+  if not ru.exists():
+    continue
+  for p in (ru, root / "kk" / "shymkent" / "doctor" / doc_id / "index.html"):
+    if p != ru:
+      p.parent.mkdir(parents=True, exist_ok=True)
+      p.write_text(ru.read_text(encoding="utf-8"), encoding="utf-8")
+    html = p.read_text(encoding="utf-8")
+    if 'name="robots"' in html:
+      html = re.sub(r'(name="robots" content=")[^"]*(")', r'\1noindex, follow\2', html, count=1, flags=re.I)
+    else:
+      html = html.replace("</title>", '</title>\n  <meta name="robots" content="noindex, follow" />', 1)
+    html = re.sub(r'(rel="canonical" href=")[^"]*(")', rf'\1{url}\2', html, count=1, flags=re.I)
+    p.write_text(html, encoding="utf-8")
+print("shymkent doctor shells synced")
+PY
+
+echo "Doctor pages:"
+for id in "${DOCTOR_IDS[@]}"; do
+  echo "  https://asiakoz.com/shymkent/doctor/$id/"
+done

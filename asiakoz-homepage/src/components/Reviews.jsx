@@ -66,8 +66,15 @@ export default function Reviews({ skipFirst = false }) {
 
   if (!videoReviews.length) return null;
 
-  const igUrl = IS_HOME ? MAIN_INSTAGRAM.url : CLINIC.instagram.url;
+  const igHandle = IS_HOME
+    ? branch?.instagram?.handle || MAIN_INSTAGRAM.handle
+    : CLINIC.instagram.handle;
+  const igUrl = IS_HOME ? branch?.instagram?.url || MAIN_INSTAGRAM.url : CLINIC.instagram.url;
   const gisUrl = IS_HOME ? branch.gis.searchUrl : CLINIC.gis.searchUrl;
+  const reviewsSubtitle =
+    lang === "kz"
+      ? `Instagram-дағы нақты видеопікірлер — ${igHandle}.`
+      : `Реальные видеоотзывы из Instagram — ${igHandle}.`;
 
   return (
     <section id="reviews" className="scroll-mt-header overflow-x-clip bg-surface-muted py-7 sm:py-10">
@@ -75,7 +82,7 @@ export default function Reviews({ skipFirst = false }) {
         <div className="mb-4 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
             <h2 className="section-title text-[1.35rem] sm:text-3xl">{t.reviews.title}</h2>
-            <p className="mt-2 text-sm text-ink-muted sm:text-base">{t.reviews.subtitle}</p>
+            <p className="mt-2 text-sm text-ink-muted sm:text-base">{reviewsSubtitle}</p>
           </div>
           <div className="flex gap-2">
             <button
