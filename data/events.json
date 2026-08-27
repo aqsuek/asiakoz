@@ -5790,5 +5790,14 @@
     "language": "ru",
     "session_id": "mtc3pmw1-pi1cl1op",
     "referrer": "http://localhost:5174/"
+  },
+  {
+    "id": "1787871354499-t7fize",
+    "ts": 1787871354499,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtc4felb-pl3nlg1n"
   }
 ]
