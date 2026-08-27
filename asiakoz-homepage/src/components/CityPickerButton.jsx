@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Icon from "./Icon";
 import { useLang } from "../i18n/LanguageContext";
 import { useCity } from "../context/CityContext";
@@ -13,13 +14,30 @@ export default function CityPickerButton({ className = "" }) {
   const { lang, t } = useLang();
   const { cityId, branch, setCityId } = useCity();
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const rootRef = useRef(null);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
     if (!open) return undefined;
+
     const onKey = (e) => {
       if (e.key === "Escape") setOpen(false);
     };
+
+    const mobile = window.matchMedia("(max-width: 639px)").matches;
+    if (mobile) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", onKey);
+      return () => {
+        document.body.style.overflow = "";
+        window.removeEventListener("keydown", onKey);
+      };
+    }
+
     const onClick = (e) => {
       if (rootRef.current && !rootRef.current.contains(e.target)) {
         setOpen(false);
@@ -36,6 +54,58 @@ export default function CityPickerButton({ className = "" }) {
   if (!IS_HOME) return null;
 
   const currentName = branchCityName(branch, lang);
+
+  const cityOptions = (
+    <ul role="listbox" className="grid gap-1" aria-label={t.cityPicker?.label}>
+      {NETWORK_BRANCHES.map((item) => {
+        const selected = item.id === cityId;
+        return (
+          <li key={item.id} role="option" aria-selected={selected}>
+            <button
+              type="button"
+              onClick={() => {
+                setCityId(item.id);
+                setOpen(false);
+              }}
+              className={`inline-flex min-h-11 w-full items-center justify-between rounded-xl px-3 text-sm font-semibold transition-colors ${
+                selected
+                  ? "bg-brand text-white"
+                  : "text-ink hover:bg-surface-muted"
+              }`}
+            >
+              <span>{branchCityName(item, lang)}</span>
+              {isComingSoon(item) ? (
+                <span className={`text-xs ${selected ? "text-white/80" : "text-brand"}`}>
+                  {t.cityPicker?.soon}
+                </span>
+              ) : null}
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+
+  const mobilePicker =
+    mounted && open
+      ? createPortal(
+          <div className="fixed inset-0 z-[80] flex items-end bg-ink/35 sm:hidden">
+            <button
+              type="button"
+              className="absolute inset-0"
+              aria-label="Close city picker"
+              onClick={() => setOpen(false)}
+            />
+            <div className="relative z-10 w-full rounded-t-[1.25rem] border border-ink/[0.06] bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-float">
+              <p className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-ink-faint">
+                {t.cityPicker?.label}
+              </p>
+              {cityOptions}
+            </div>
+          </div>,
+          document.body,
+        )
+      : null;
 
   return (
     <div className={`relative shrink-0 ${className}`} ref={rootRef}>
@@ -56,50 +126,14 @@ export default function CityPickerButton({ className = "" }) {
       </button>
 
       {open ? (
-        <>
-          <button
-            type="button"
-            className="fixed inset-0 z-[60] bg-ink/25 sm:hidden"
-            aria-label="Close city picker"
-            onClick={() => setOpen(false)}
-          />
-          <div className="fixed inset-x-3 bottom-3 z-[70] rounded-[1.25rem] border border-ink/[0.06] bg-white p-3 shadow-float sm:absolute sm:inset-x-auto sm:bottom-auto sm:left-0 sm:top-[calc(100%+0.5rem)] sm:w-64 sm:p-2">
-            <p className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-ink-faint">
-              {t.cityPicker?.label}
-            </p>
-            <ul role="listbox" className="grid gap-1" aria-label={t.cityPicker?.label}>
-              {NETWORK_BRANCHES.map((item) => {
-                const selected = item.id === cityId;
-                return (
-                  <li key={item.id} role="option" aria-selected={selected}>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setCityId(item.id);
-                        setOpen(false);
-                      }}
-                      className={`inline-flex min-h-11 w-full items-center justify-between rounded-xl px-3 text-sm font-semibold transition-colors ${
-                        selected
-                          ? "bg-brand text-white"
-                          : "text-ink hover:bg-surface-muted"
-                      }`}
-                    >
-                      <span>{branchCityName(item, lang)}</span>
-                      {isComingSoon(item) ? (
-                        <span
-                          className={`text-xs ${selected ? "text-white/80" : "text-brand"}`}
-                        >
-                          {t.cityPicker?.soon}
-                        </span>
-                      ) : null}
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </>
+        <div className="absolute left-0 top-[calc(100%+0.5rem)] z-[70] hidden w-64 rounded-[1.25rem] border border-ink/[0.06] bg-white p-2 shadow-float sm:block">
+          <p className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-ink-faint">
+            {t.cityPicker?.label}
+          </p>
+          {cityOptions}
+        </div>
       ) : null}
+      {mobilePicker}
     </div>
   );
 }

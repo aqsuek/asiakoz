@@ -11,44 +11,20 @@ const HOME_PREVIEW = 6;
 /** Vision-correction laser is not offered in Aktau. */
 const LASER_CORRECTION_ID = "laser";
 
+/** Only paths that exist on asiakoz.com — missing city pages open the in-app modal. */
 const SERVICE_PAGES = {
-  laser: { almaty: "/lazer-almaty/", shymkent: "/lazer-shymkent/" },
-  cataract: {
-    almaty: "/katarakta-almaty/",
-    aqtau: "/katarakta-aktau/",
-    shymkent: "/katarakta-shymkent/",
-  },
-  vitrectomy: {
-    almaty: "/vitrektomiya-almaty/",
-    aqtau: "/vitrektomiya-aktau/",
-    shymkent: "/vitrektomiya-shymkent/",
-  },
+  laser: { almaty: "/lazer-almaty/" },
+  cataract: { almaty: "/katarakta-almaty/" },
+  vitrectomy: { almaty: "/vitrektomiya-almaty/" },
   strabismus: {
     almaty: "/kosoglazie/",
     aqtau: "/kosoglazie-aktau/",
-    shymkent: "/kosoglazie-shymkent/",
+    shymkent: "/kosoglazie/",
   },
-  glaucoma: {
-    almaty: "/glaukoma-almaty/",
-    aqtau: "/glaukoma-aktau/",
-    shymkent: "/glaukoma-shymkent/",
-  },
-  retina: {
-    almaty: "/setchatka-almaty/",
-    aqtau: "/vitrektomiya-aktau/",
-    shymkent: "/vitrektomiya-shymkent/",
-  },
-  kids: {
-    almaty: "/deti-almaty/",
-    aqtau: "/deti-aktau/",
-    shymkent: "/deti-shymkent/",
-  },
-  diagnostics: {
-    almaty: "/diagnostika-almaty/",
-    aqtau: "/diagnostika-aktau/",
-    shymkent: "/diagnostika-shymkent/",
-  },
-  cornea: { almaty: "/peresadka-rogovitsy-almaty/" },
+  glaucoma: { almaty: "/glaukoma-almaty/" },
+  retina: { almaty: "/setchatka-almaty/" },
+  kids: { almaty: "/deti-almaty/" },
+  diagnostics: { almaty: "/diagnostika-almaty/" },
 };
 
 function serviceCityId(homeCityId) {
