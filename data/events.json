@@ -6522,5 +6522,15 @@
     "language": "ru",
     "session_id": "mtcn3n9e-dglii088",
     "referrer": "http://localhost:5174/"
+  },
+  {
+    "id": "1787916731245-4ebpn9",
+    "ts": 1787916731245,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcn3n9e-dglii088",
+    "referrer": "https://asiakoz.com/?_gl=1*dofie*_gcl_au*MTU1MDQ4NTQwNC4xNzg3ODY5ODAy*_ga*OTA3NTQ1MTczLjE3ODc4Njk4MDI.*_ga_E1HKM9LJ7J*czE3ODc4Njk4MDIkbzEkZzEkdDE3ODc4Njk4MzIkajMwJGwwJGgw"
   }
 ]
