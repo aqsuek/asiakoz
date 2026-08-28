@@ -6084,5 +6084,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtcfr7vu-91sg3upk"
+  },
+  {
+    "id": "1787891751519-els8za",
+    "ts": 1787891751519,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtc2eyj6-neerdr5k"
   }
 ]
