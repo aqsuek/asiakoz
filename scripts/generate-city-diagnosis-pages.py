@@ -13,7 +13,16 @@ sys.path.insert(0, str(ROOT / "scripts"))
 SITE = "https://asiakoz.com"
 
 from site_nav import footer_nav_html, header_nav_html
-from landing_sections import enrich_copy, extended_body_html
+from landing_sections import enrich_copy, hubs_html, med_trust_html, methods_html, prices_html
+from premium_content import DOCTOR_BIOS, build_premium
+from premium_sections import (
+    other_cities_html,
+    premium_body_html,
+    premium_faq_html,
+    premium_hero_html,
+    reviews_section_html,
+    surgeon_grid_html,
+)
 
 with (ROOT / "data" / "branches.json").open(encoding="utf-8") as f:
     BRANCHES_FILE = json.load(f)
@@ -696,15 +705,20 @@ def doctors_html(ids: list[str], city: str, lang: str) -> str:
 def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) -> str:
     c = CITIES[city]
     enriched = enrich_copy(copy, dx_id, lang)
-    city_name = c["ru"] if lang == "ru" else c["kk"]
-    address = c["address_ru"] if lang == "ru" else c["address_kk"]
+    premium = build_premium(dx_id, lang, copy, city_name := (c["ru"] if lang == "ru" else c["kk"]), address := (c["address_ru"] if lang == "ru" else c["address_kk"]))
+    all_faq = list(enriched["faq"])
+    seen_faq = {q for q, _ in all_faq}
+    for q, a in premium.get("extra_faq", []):
+        if q not in seen_faq:
+            all_faq.append((q, a))
+            seen_faq.add(q)
     faq = [
         {
             "@type": "Question",
             "name": q,
             "acceptedAnswer": {"@type": "Answer", "text": a.format(city=city_name, address=address)},
         }
-        for q, a in enriched["faq"]
+        for q, a in all_faq[:20]
     ]
     uslugi_url = f"{SITE}/kk/uslugi/" if lang == "kk" else f"{SITE}/uslugi/"
     graph: list[dict] = [
@@ -848,7 +862,52 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     og_locale = "kk_KZ" if lang == "kk" else "ru_RU"
     corp_header_nav = header_nav_html(lang)
     corp_footer_nav = footer_nav_html(lang)
-    extended = extended_body_html(copy, lang, fmt, c, dx_id)
+    enriched = enrich_copy(copy, dx_id, lang)
+    premium = build_premium(dx_id, lang, copy, city_name, address)
+    doc_ids = dx["doctors"].get(city, c["doctors"])
+    lead_doc = DOCTORS[doc_ids[0]]
+    spec_short = lead_doc["spec_ru"].split("·")[0].strip() if lang == "ru" else lead_doc["spec_kk"].split("·")[0].strip()
+    hero = premium_hero_html(
+        h1=h1,
+        lead=lead,
+        hero_facts=premium["hero_facts"],
+        image=image,
+        img_alt=img_alt,
+        city_name=city_name,
+        address=address,
+        branch_href=c["kk_href"] if lang == "kk" else c["href"],
+        wa=c["wa"],
+        lang=lang,
+        topic=copy["name"],
+        doctor_href=lead_doc["href"],
+        doctor_img=lead_doc["img"],
+        doctor_name=lead_doc["name"],
+        doctor_role=f" · {spec_short} · {city_name}",
+        phone=c.get("phone"),
+        phone_display=c.get("phone_display"),
+    )
+    body = premium_body_html(
+        premium,
+        enriched,
+        lang,
+        fmt,
+        c,
+        dx_id,
+        prices_html,
+        hubs_html,
+        med_trust_html,
+        methods_html,
+    )
+    surgeons = surgeon_grid_html(doc_ids, DOCTORS, DOCTOR_BIOS, city_name, lang, c["wa"], copy["name"])
+    reviews = reviews_section_html(city_name, lang, c["ig"])
+    other_cities = other_cities_html(dx_id, city, dx["cities"], CITIES, lang)
+    all_faq = list(enriched["faq"])
+    seen_faq = {q for q, _ in all_faq}
+    for q, a in premium.get("extra_faq", []):
+        if q not in seen_faq:
+            all_faq.append((q, fmt(a)))
+            seen_faq.add(q)
+    faq_block = premium_faq_html([(q, fmt(a)) for q, a in all_faq[:18]], lang)
 
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
@@ -892,33 +951,13 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     </header>
     <nav class="breadcrumb"><a href="{home}">{crumb_home}</a> / <a href="{uslugi}">{crumb_uslugi}</a> / {copy['name']} ({city_name})</nav>
     {city_switch_html(dx_id, city, lang)}
-    <section class="seo-hero spa-hero">
-      <div class="spa-eyebrow">AsiaKoz · {city_name}</div>
-      <h1>{h1}</h1>
-      <div class="lp-media-row">
-        <img class="lp-hero-photo" src="{image}" alt="{img_alt}" width="1200" height="800" />
-        <img class="lp-hero-photo" src="{second_img if second_img != image else doctor_img}" alt="{second_alt if second_img != image else doctor_alt}" width="800" height="600" />
-      </div>
-      <p>{lead}</p>
-      <div class="pill-grid">{facts}</div>
-      {cta_html(city, lang, copy['name'])}
-      {conversion_funnel_html(city, lang, copy['name'])}
-      <p class="hero-address"><b>{'Мекенжай' if lang == 'kk' else 'Адрес'}:</b> {address} · <a class="link" href="{c['kk_href'] if lang == 'kk' else c['href']}">{city_name}</a></p>
-      <p>{'Instagram'}: <a class="link" href="{c['ig']}" target="_blank" rel="noopener">{c['ig_handle']}</a></p>
-    </section>
-{extended}
-    <section class="section">
-      <h2 class="section-title">{'Қалай өтеді' if lang == 'kk' else 'Как это проходит'}</h2>
-      <div class="steps-grid">{steps}</div>
-    </section>
-    <section class="section">
-      <h2 class="section-title">{doctors_title}</h2>
-      {doctors_html(doc_ids, city, lang)}
-    </section>
-    <section class="section faq">
-      <h2 class="section-title">{faq_title}</h2>
-      {faq}
-    </section>
+{hero}
+{body}
+{conversion_funnel_html(city, lang, copy['name'])}
+{surgeons}
+{other_cities}
+{reviews}
+{faq_block}
     <section class="section">
       <h2 class="section-title">{related_title}</h2>
       <p>{' · '.join(related)}</p>
