@@ -6216,5 +6216,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787899844325-8bvglo",
+    "ts": 1787899844325,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcew494-6q6k09c9",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
