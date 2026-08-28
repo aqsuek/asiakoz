@@ -6462,5 +6462,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtcew494-6q6k09c9"
+  },
+  {
+    "id": "1787913737123-hn084e",
+    "ts": 1787913737123,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtcf27wd-gqan18n9",
+    "referrer": "https://www.google.com/"
   }
 ]
