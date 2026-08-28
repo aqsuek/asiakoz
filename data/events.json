@@ -6287,5 +6287,17 @@
     "language": "ru",
     "session_id": "mt6rvs19-a3qu1gcz",
     "referrer": "https://asiakoz.com/vitrektomiya-almaty/"
+  },
+  {
+    "id": "1787903030866-1txbl7",
+    "ts": 1787903030866,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcnab11-r0nbjibr",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
