@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://asiakoz.com"
 CANON = ROOT / "images" / "doctors"
 LEGACY_DIR = ROOT / "images"
-CACHE = "20260828f"
+CACHE = "20260828g"
 
 # Canonical filename in images/doctors/ -> legacy filename in images/
 IMAGE_ALIASES = {
