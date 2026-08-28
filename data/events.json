@@ -6453,5 +6453,14 @@
     "language": "kk",
     "session_id": "mtcrpkdl-7lmshs0j",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787911038510-fkbseh",
+    "ts": 1787911038510,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtcew494-6q6k09c9"
   }
 ]
