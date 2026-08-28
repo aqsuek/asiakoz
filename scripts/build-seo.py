@@ -266,6 +266,42 @@ def set_lang(html: str, lang: str) -> str:
     return re.sub(r'(<html[^>]*lang=["\'])[^"\']*(["\'])', rf"\1{lang}\2", html, count=1, flags=re.I)
 
 
+def set_og_locale(html: str, locale: str) -> str:
+    if re.search(r'property="og:locale"', html, re.I):
+        html = re.sub(
+            r'(property="og:locale" content=")[^"]*(")',
+            rf"\1{locale}\2",
+            html,
+            count=1,
+            flags=re.I,
+        )
+    else:
+        html = re.sub(
+            r"(</head>)",
+            f'  <meta property="og:locale" content="{locale}" />\n  \\1',
+            html,
+            count=1,
+            flags=re.I,
+        )
+    return html
+
+
+def doctor_profile_meta(d: dict, lang: str) -> tuple[str, str]:
+    if lang == "kk":
+        title = f"{d['nameKz']} — офтальмолог-дәрігер | AsiaKoz"
+        desc = (
+            f"{d['nameKz']} — {d['roleKz']}. "
+            "AsiaKoz клиникасында қабылдау. Байланыс және жазылу."
+        )
+    else:
+        title = f"{d['nameRu']} — врач офтальмолог | AsiaKoz"
+        desc = (
+            f"{d['nameRu']} — {d['roleRu']}. "
+            "Приём в клинике AsiaKoz. Контакты и запись на странице врача."
+        )
+    return title, desc
+
+
 def replace_title_desc(html: str, title: str, description: str) -> str:
     html = re.sub(r"<title>[^<]*</title>", f"<title>{title}</title>", html, count=1)
     html = re.sub(
@@ -570,6 +606,9 @@ def patch_spa_shell(path: Path, page_key: str, lang: str, branch_id: str | None,
         count=1,
         flags=re.I,
     )
+    if lang == "ru":
+        html = set_og_locale(html, "ru_KZ")
+        html = re.sub(r'\s*<meta property="og:locale:alternate"[^>]*>', "", html, flags=re.I)
     if page_key == "home":
         html = put_jsonld(html, schema_organization())
     elif page_key == "shymkent":
@@ -798,7 +837,7 @@ def write_llms() -> None:
             "",
             f"- {SITE}/uslugi/",
             f"- {SITE}/kk/uslugi/",
-            f"- {SITE}/lazer-almaty/",
+            f"- {SITE}/laser/",
             f"- {SITE}/katarakta-almaty/",
             f"- {SITE}/glaukoma-almaty/",
             f"- {SITE}/vitrektomiya-almaty/",
@@ -1000,13 +1039,13 @@ def patch_doctor_profile_pages() -> None:
         ru_url = f"{SITE}/{d['slug']}/"
         kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
         kk_url = f"{SITE}{kk_href}"
-        title = f"{d['nameRu']} — врач офтальмолог | AsiaKoz"
-        desc = f"{d['nameRu']} — {d['roleRu']}. Приём в клинике AsiaKoz. Контакты и запись на странице врача."
+        title, desc = doctor_profile_meta(d, "ru")
         html = set_lang(html, "ru")
         html = ensure_robots(html, "index, follow, max-image-preview:large")
         html = replace_title_desc(html, title, desc)
         html = set_canonical(html, ru_url)
         html = inject_hreflang(html, ru_url, kk_url)
+        html = set_og_locale(html, "ru_KZ")
 
         city = next((c for c in d.get("cities", []) if c in city_names), "almaty")
         city_name = city_names.get(city, "Алматы")
@@ -1093,8 +1132,18 @@ def sync_kk_doctor_static_pages() -> None:
         html = set_lang(html, "kk")
         kk_url = f"{SITE}{kk_href}"
         ru_url = f"{SITE}/{d['slug']}/"
+        title, desc = doctor_profile_meta(d, "kk")
+        html = replace_title_desc(html, title, desc)
         html = set_canonical(html, kk_url)
         html = inject_hreflang(html, ru_url, kk_url)
+        html = set_og_locale(html, "kk_KZ")
+        html = re.sub(r"<h1>[^<]+</h1>", f"<h1>{d['nameKz']}</h1>", html, count=1)
+        html = re.sub(
+            r'(<div class="doctor-role">)[^<]+(</div>)',
+            rf"\1{d['roleKz']}\2",
+            html,
+            count=1,
+        )
         kk_path.write_text(html, encoding="utf-8")
         print(f"kk doctor static: {kk_href}")
 
@@ -1171,6 +1220,66 @@ def restyle_static_pages() -> None:
     script = ROOT / "scripts" / "restyle-static-pages.py"
     if script.exists():
         subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
+
+
+def normalize_og_locale() -> None:
+    """Ensure og:locale matches html lang on static pages."""
+    skip = {"asiakoz-homepage", "asiakoz-admin", ".git", "node_modules"}
+    for path in ROOT.rglob("index.html"):
+        if any(part in skip for part in path.parts):
+            continue
+        html = path.read_text(encoding="utf-8")
+        if 'property="og:locale"' not in html:
+            continue
+        lang_match = re.search(r'<html[^>]*lang=["\']([^"\']+)["\']', html, re.I)
+        lang = (lang_match.group(1) if lang_match else "ru").lower()
+        target = "kk_KZ" if lang.startswith("kk") else "ru_KZ"
+        new = set_og_locale(html, target)
+        if new != html:
+            path.write_text(new, encoding="utf-8")
+            print(f"og:locale: {path.relative_to(ROOT)} → {target}")
+
+
+def fix_branch_spa_hreflang() -> None:
+    """Vite SPA shells may ship stale kk/aktau alternates — enforce branches.json."""
+    for bid in ("almaty", "aqtau", "shymkent", "laser"):
+        if bid == "laser":
+            ru_url = f"{SITE}/laser/"
+            kk_url = f"{SITE}/kk/laser/"
+            path = ROOT / "laser" / "index.html"
+        else:
+            b = branch_by_id(bid)
+            ru_url = f"{SITE}{b['pageHref']}"
+            kk_url = f"{SITE}{b['kkHref']}"
+            path = ROOT / branch_dir_name(bid) / "index.html"
+        if not path.exists():
+            continue
+        html = path.read_text(encoding="utf-8")
+        if 'id="root"' not in html:
+            continue
+        html = inject_hreflang(html, ru_url, kk_url)
+        if bid != "laser":
+            html = set_og_locale(html, "ru_KZ")
+        path.write_text(html, encoding="utf-8")
+        print(f"branch hreflang: {path.relative_to(ROOT)}")
+
+
+def noindex_legacy_root_html() -> None:
+    """Legacy root *.html stubs should not compete with clean URLs."""
+    skip = {
+        "index.html",
+        "google9c0f5b4f3ae36021.html",
+        "yandex_badee5fc204b49c5.html",
+    }
+    for path in ROOT.glob("*.html"):
+        if path.name in skip:
+            continue
+        html = path.read_text(encoding="utf-8")
+        if "noindex" in html.lower():
+            continue
+        html = ensure_robots(html, "noindex, follow")
+        path.write_text(html, encoding="utf-8")
+        print(f"legacy noindex: {path.name}")
 
 
 def generate_city_diagnosis_pages() -> None:
@@ -1254,6 +1363,9 @@ def main() -> None:
     if mirror_script.exists():
         subprocess.check_call([sys.executable, str(mirror_script)], cwd=str(ROOT))
     restyle_static_pages()
+    normalize_og_locale()
+    noindex_legacy_root_html()
+    fix_branch_spa_hreflang()
     write_llms()
     entries = collect_urls(lastmod_cache)
     write_sitemap(entries)

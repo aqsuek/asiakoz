@@ -893,7 +893,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     doctor_img = DOCTORS[doc_ids[0]]["img"]
     doctor_alt = DOCTORS[doc_ids[0]]["name"]
     schema = json_ld(dx_id, city, lang, copy, url, f"{SITE}{image}")
-    og_locale = "kk_KZ" if lang == "kk" else "ru_RU"
+    og_locale = "kk_KZ" if lang == "kk" else "ru_KZ"
     corp_header_nav = header_nav_html(lang)
     corp_footer_nav = footer_nav_html(lang)
     enriched = enrich_copy(copy, dx_id, lang)

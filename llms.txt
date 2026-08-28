@@ -28,7 +28,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 - https://asiakoz.com/uslugi/
 - https://asiakoz.com/kk/uslugi/
-- https://asiakoz.com/lazer-almaty/
+- https://asiakoz.com/laser/
 - https://asiakoz.com/katarakta-almaty/
 - https://asiakoz.com/glaukoma-almaty/
 - https://asiakoz.com/vitrektomiya-almaty/
@@ -39,7 +39,7 @@ Sitemap: https://asiakoz.com/sitemap.xml
 
 - https://asiakoz.com/doctors/
 - https://asiakoz.com/kk/doctors/
-- Мехмет Есат Текер (almaty): https://asiakoz.com/doctor-mehmet-esat-teker/
+- Мехмет Есат Текер (almaty, shymkent): https://asiakoz.com/doctor-mehmet-esat-teker/
 - Орел Талип (almaty): https://asiakoz.com/doctor-orel/
 - Алия Ганимуратовна Усманова (almaty): https://asiakoz.com/doctor-aliya/
 - Нурмухамед Мусай (almaty): https://asiakoz.com/doctor-musay/
