@@ -402,6 +402,9 @@ def related_services_grid_html(links: list[tuple[str, str]], lang: str) -> str:
     </section>"""
 
 
+from premium_deep import deep_section_html
+
+
 def premium_body_html(
     premium: dict[str, Any],
     copy: dict[str, Any],
@@ -436,6 +439,7 @@ def premium_body_html(
             alt_treatment_html(premium.get("alt_title", ""), premium.get("alt_paras", []), lang),
             diagnostics_list_html(premium.get("diagnostics", []), lang, diag_link),
             methods_html_fn(enriched.get("methods") or enriched.get("facts", []), lang, fmt),
+            deep_section_html(premium.get("deep")),
             indications_grid_html(premium.get("indications", []), lang),
             how_steps_html(premium.get("how_steps", []), lang),
             preparation_html(premium.get("preparation", []), lang),
