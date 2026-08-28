@@ -6012,5 +6012,14 @@
     "language": "ru",
     "session_id": "mtcew494-6q6k09c9",
     "button_location": "service_modal"
+  },
+  {
+    "id": "1787888987266-bkqclj",
+    "ts": 1787888987266,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcew494-6q6k09c9"
   }
 ]
