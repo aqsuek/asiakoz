@@ -49,6 +49,9 @@
       },
       "breadcrumb": {
         "@id": "https://asiakoz.com/kk/glaznaya-klinika-almaty/#breadcrumb"
+      },
+      "reviewedBy": {
+        "@id": "https://asiakoz.com/doctor-musay/#person"
       }
     },
     {
@@ -94,61 +97,101 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Мекенжай?",
+          "name": "Толық диагностикаға не кіреді?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Райымбек 176А."
+            "text": "Көру, рефракция, қысым, көз түбі.Кеңейтілген — көрсеткіш бойынша."
           }
         },
         {
           "@type": "Question",
-          "name": "Жолдама?",
+          "name": "Диагностика қанша уақыт?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Жоқ."
+            "text": "40 мин – 2 сағат."
           }
         },
         {
           "@type": "Question",
-          "name": "Лазер?",
+          "name": "AsiaKoz Алматы қаласына қалай жазылуға болады?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Алматыда."
+            "text": "Сайтта форма жоқ — WhatsApp: +7 700 360 01 80. Шағым мен ыңғайлы уақытты жазыңыз.Call-центр: +7 700 888 01 80. Мекенжай: Райымбек 176А."
           }
         },
         {
           "@type": "Question",
-          "name": "AsiaKoz-қа қалай жазылуға болады?",
+          "name": "Диагностика қанша тұрады?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Алматы филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ."
+            "text": "Толық диагностика және дәрігер қабылдауы — 20 000 ₸-дан.Баға ориентирлік, жария оферта емес."
           }
         },
         {
           "@type": "Question",
-          "name": "Алғашқы қабылдау қанша уақыт?",
+          "name": "Емхана жолдамасы керек пе?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Диагностика көлеміне байланысты."
+            "text": "Жоқ. Тікелей келуге болады.Бұрынғы ОКТ пен қорытындыларды алып келіңіз."
           }
         },
         {
           "@type": "Question",
-          "name": "Жолдама керек пе?",
+          "name": "Көрудің толық қалпына келуіне кепілдік бар ма?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Жоқ. Алматы филиалына тікелей келуге болады."
+            "text": "Жоқ. Прогноз жеке — диагностикадан кейін дәрігер түсіндіреді."
           }
         },
         {
           "@type": "Question",
-          "name": "Қанша тұрады?",
+          "name": "Алматы клиникасы қайда?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "20 000 ₸-дан."
+            "text": "AsiaKoz Алматы: Райымбек 176А. Филиал беті."
           }
         }
       ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://asiakoz.com/doctor-musay/#person",
+      "name": "Нурмухамед Мусай",
+      "url": "https://asiakoz.com/doctor-musay/",
+      "image": "https://asiakoz.com/images/doctor-musay.png",
+      "jobTitle": "Алматы филиалының бас дәрігері",
+      "worksFor": {
+        "@id": "https://asiakoz.com/almaty/#clinic"
+      }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://asiakoz.com/doctor-aliya/#person",
+      "name": "Алия Усманова",
+      "url": "https://asiakoz.com/doctor-aliya/",
+      "image": "https://asiakoz.com/images/doctor-aliya.png",
+      "jobTitle": "Офтальмохирург · лазер, катаракта, блефаропластика",
+      "worksFor": {
+        "@id": "https://asiakoz.com/almaty/#clinic"
+      }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://asiakoz.com/doctor-mehmet-esat-teker/#person",
+      "name": "Мехмет Есат Текер",
+      "url": "https://asiakoz.com/doctor-mehmet-esat-teker/",
+      "image": "https://asiakoz.com/images/doctor-mehmet-esat-teker.png",
+      "jobTitle": "Түрік офтальмохирург · лазер, катаракта, глаукома",
+      "worksFor": {
+        "@id": "https://asiakoz.com/almaty/#clinic"
+      }
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/kk/glaznaya-klinika-almaty/#procedure",
+      "name": "Көз клиникасы",
+      "description": "AsiaKoz Алматы: диагностика, лазер, катаракта, тор қабық. WhatsApp жазылу.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -196,6 +239,21 @@
         </a>
       </div>
     </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Алматы қаласындағы бағалар</h2>
+      <p class="section-subtitle">Баға ориентирлік. Нақты сома диагностикадан кейін.</p>
+      <div class="price-grid">
+        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Диагностика және дәрігер қабылдауы</h3>
+          <p class="price-card__value">20 000 ₸-дан</p>
+          <p class="price-card__text">Зерттеулер тізімі көрсеткіш бойынша.</p>
+        </article>
+
+      </div>
+      <p class="price-note">Жария оферта емес.</p>
+    </section>
+
     <section class="section" id="why-almaty">
       <h2 class="section-title">Неге AsiaKoz Алматы қаласында</h2>
       <p class="section-subtitle">Алматы филиалында диагностика алдымен, емдеу — көрсеткіш бойынша.</p>
@@ -370,7 +428,13 @@
     </section>
     <section class="section faq" id="faq">
       <h2 class="section-title">Сұрақ-жауап</h2>
-      <details><summary>Мекенжай?</summary><p>Райымбек 176А.</p></details><details><summary>Жолдама?</summary><p>Жоқ.</p></details><details><summary>Лазер?</summary><p>Алматыда.</p></details><details><summary>AsiaKoz-қа қалай жазылуға болады?</summary><p>Алматы филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ.</p></details><details><summary>Алғашқы қабылдау қанша уақыт?</summary><p>Диагностика көлеміне байланысты.</p></details><details><summary>Жолдама керек пе?</summary><p>Жоқ. Алматы филиалына тікелей келуге болады.</p></details><details><summary>Қанша тұрады?</summary><p>20 000 ₸-дан.</p></details>
+      <details open><summary>Толық диагностикаға не кіреді?</summary><p>Көру, рефракция, қысым, көз түбі.</p><p>Кеңейтілген — көрсеткіш бойынша.</p></details>
+      <details><summary>Диагностика қанша уақыт?</summary><p>40 мин – 2 сағат.</p></details>
+      <details><summary>AsiaKoz Алматы қаласына қалай жазылуға болады?</summary><p>Сайтта форма жоқ — WhatsApp: +7 700 360 01 80. Шағым мен ыңғайлы уақытты жазыңыз.</p><p>Call-центр: +7 700 888 01 80. Мекенжай: Райымбек 176А.</p></details>
+      <details><summary>Диагностика қанша тұрады?</summary><p>Толық диагностика және дәрігер қабылдауы — 20 000 ₸-дан.</p><p>Баға ориентирлік, жария оферта емес.</p></details>
+      <details><summary>Емхана жолдамасы керек пе?</summary><p>Жоқ. Тікелей келуге болады.</p><p>Бұрынғы ОКТ пен қорытындыларды алып келіңіз.</p></details>
+      <details><summary>Көрудің толық қалпына келуіне кепілдік бар ма?</summary><p>Жоқ. Прогноз жеке — диагностикадан кейін дәрігер түсіндіреді.</p></details>
+      <details><summary>Алматы клиникасы қайда?</summary><p>AsiaKoz Алматы: Райымбек 176А. <a class="link" href="/kk/almaty/">Филиал беті</a>.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Басқа қалалар мен бағыттар</h2>

@@ -15,6 +15,8 @@ SITE = "https://asiakoz.com"
 from site_nav import footer_nav_html, header_nav_html
 from landing_sections import enrich_copy, hubs_html, med_trust_html, methods_html, prices_html
 from premium_content import DOCTOR_BIOS, build_premium
+from premium_hub_sections import hub_price_html, urgent_alert_html
+from premium_mega_faq import get_mega_faq, is_hub_boost, mega_faq_html
 from premium_sections import (
     other_cities_html,
     premium_body_html,
@@ -702,24 +704,39 @@ def doctors_html(ids: list[str], city: str, lang: str) -> str:
     return note + '<div class="lp-doctors">\n' + "\n".join(cards) + "\n      </div>"
 
 
+import re
+
+def _faq_plain(html: str) -> str:
+    return re.sub(r"<[^>]+>", "", html).strip()[:500]
+
+
 def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) -> str:
     c = CITIES[city]
     enriched = enrich_copy(copy, dx_id, lang)
-    premium = build_premium(dx_id, lang, copy, city_name := (c["ru"] if lang == "ru" else c["kk"]), address := (c["address_ru"] if lang == "ru" else c["address_kk"]))
-    all_faq = list(enriched["faq"])
-    seen_faq = {q for q, _ in all_faq}
-    for q, a in premium.get("extra_faq", []):
-        if q not in seen_faq:
-            all_faq.append((q, a))
-            seen_faq.add(q)
-    faq = [
-        {
-            "@type": "Question",
-            "name": q,
-            "acceptedAnswer": {"@type": "Answer", "text": a.format(city=city_name, address=address)},
-        }
-        for q, a in all_faq[:20]
-    ]
+    city_name = c["ru"] if lang == "ru" else c["kk"]
+    address = c["address_ru"] if lang == "ru" else c["address_kk"]
+    premium = build_premium(dx_id, lang, copy, city_name, address)
+    if is_hub_boost(dx_id, city):
+        mega = get_mega_faq(dx_id, lang, enriched["name"], city_name, c["wa"])
+        faq = [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": _faq_plain(a)}}
+            for q, a in mega[:20]
+        ]
+    else:
+        all_faq = list(enriched["faq"])
+        seen_faq = {q for q, _ in all_faq}
+        for q, a in premium.get("extra_faq", []):
+            if q not in seen_faq:
+                all_faq.append((q, a))
+                seen_faq.add(q)
+        faq = [
+            {
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {"@type": "Answer", "text": a.format(city=city_name, address=address)},
+            }
+            for q, a in all_faq[:20]
+        ]
     uslugi_url = f"{SITE}/kk/uslugi/" if lang == "kk" else f"{SITE}/uslugi/"
     graph: list[dict] = [
         {
@@ -758,7 +775,24 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
         },
         {"@type": "FAQPage", "@id": f"{url}#faq", "mainEntity": faq},
     ]
-    if enriched.get("prices"):
+    if is_hub_boost(dx_id, city):
+        dx = DIAGNOSES[dx_id]
+        doc_ids = dx["doctors"].get(city, c["doctors"])
+        for did in doc_ids:
+            d = DOCTORS[did]
+            graph.append(
+                {
+                    "@type": "Physician",
+                    "@id": f"{SITE}{d['href']}#person",
+                    "name": d["name"],
+                    "url": f"{SITE}{d['href']}",
+                    "image": f"{SITE}{d['img']}",
+                    "jobTitle": d["spec_ru"] if lang == "ru" else d["spec_kk"],
+                    "worksFor": {"@id": f"{SITE}/{c['slug']}/#clinic"},
+                }
+            )
+        graph[0]["reviewedBy"] = {"@id": f"{SITE}{DOCTORS[doc_ids[0]]['href']}#person"}
+    if enriched.get("prices") or is_hub_boost(dx_id, city):
         graph.append(
             {
                 "@type": "MedicalProcedure",
@@ -886,9 +920,15 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
         phone=c.get("phone"),
         phone_display=c.get("phone_display"),
     )
+    hub_boost = is_hub_boost(dx_id, city)
+    hub_price = hub_price_html(dx_id, lang, city_name, c["wa"], copy["name"]) if hub_boost else ""
+    urgent = urgent_alert_html(dx_id, lang, city_name, c["wa"]) if hub_boost else ""
+    enriched_for_body = dict(enriched)
+    if hub_boost:
+        enriched_for_body["prices"] = []
     body = premium_body_html(
         premium,
-        enriched,
+        enriched_for_body,
         lang,
         fmt,
         c,
@@ -901,13 +941,16 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     surgeons = surgeon_grid_html(doc_ids, DOCTORS, DOCTOR_BIOS, city_name, lang, c["wa"], copy["name"])
     reviews = reviews_section_html(city_name, lang, c["ig"])
     other_cities = other_cities_html(dx_id, city, dx["cities"], CITIES, lang)
-    all_faq = list(enriched["faq"])
-    seen_faq = {q for q, _ in all_faq}
-    for q, a in premium.get("extra_faq", []):
-        if q not in seen_faq:
-            all_faq.append((q, fmt(a)))
-            seen_faq.add(q)
-    faq_block = premium_faq_html([(q, fmt(a)) for q, a in all_faq[:18]], lang)
+    if hub_boost:
+        faq_block = mega_faq_html(get_mega_faq(dx_id, lang, copy["name"], city_name, c["wa"]), lang)
+    else:
+        all_faq = list(enriched["faq"])
+        seen_faq = {q for q, _ in all_faq}
+        for q, a in premium.get("extra_faq", []):
+            if q not in seen_faq:
+                all_faq.append((q, fmt(a)))
+                seen_faq.add(q)
+        faq_block = premium_faq_html([(q, fmt(a)) for q, a in all_faq[:18]], lang)
 
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
@@ -952,6 +995,8 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     <nav class="breadcrumb"><a href="{home}">{crumb_home}</a> / <a href="{uslugi}">{crumb_uslugi}</a> / {copy['name']} ({city_name})</nav>
     {city_switch_html(dx_id, city, lang)}
 {hero}
+{hub_price}
+{urgent}
 {body}
 {conversion_funnel_html(city, lang, copy['name'])}
 {surgeons}
