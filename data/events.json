@@ -5993,5 +5993,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787888927591-skzd9s",
+    "ts": 1787888927591,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcew494-6q6k09c9"
   }
 ]
