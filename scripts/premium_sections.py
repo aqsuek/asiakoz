@@ -5,6 +5,12 @@ from __future__ import annotations
 import urllib.parse
 from typing import Any, Callable
 
+CITY_RU_LOCATIVE = {
+    "Алматы": "в Алматы",
+    "Актау": "в Актау",
+    "Шымкент": "в Шымкенте",
+}
+
 
 def _paras_html(paras: list[str]) -> str:
     out = []
@@ -283,7 +289,11 @@ def surgeon_grid_html(
     wa: str,
     topic: str,
 ) -> str:
-    title = f"AsiaKoz дәрігерлері — {city_name}" if lang == "kk" else f"Врачи AsiaKoz в {city_name}"
+    title = (
+        f"AsiaKoz дәрігерлері — {city_name}"
+        if lang == "kk"
+        else f"Врачи AsiaKoz {CITY_RU_LOCATIVE.get(city_name, f'в {city_name}')}"
+    )
     sub = (
         "Конкретті дәрігерді тексеруден кейін таңдаймыз."
         if lang == "kk"

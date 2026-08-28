@@ -39,6 +39,34 @@ GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-17817733574');</script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>"""
 
+# Canonical doctor lists per branch (must match data/doctors.json cities).
+CITY_DOCTORS: dict[str, list[str]] = {
+    "almaty": ["mehmet", "orel", "aliya", "musay"],
+    "aktau": ["ali-keskin", "erol", "nazgul"],
+    "shymkent": ["kadyr", "mehmet"],
+}
+
+CITY_RU_LOCATIVE = {
+    "Алматы": "в Алматы",
+    "Актау": "в Актау",
+    "Шымкент": "в Шымкенте",
+}
+
+
+def resolve_doc_ids(dx: dict, city: str) -> list[str]:
+    """Return doctors for a city page — never show doctors from other branches."""
+    allowed_order = CITY_DOCTORS[city]
+    allowed = set(allowed_order)
+    preferred = dx.get("doctors", {}).get(city) or CITIES[city]["doctors"]
+    ordered: list[str] = []
+    for did in preferred:
+        if did in allowed and did not in ordered:
+            ordered.append(did)
+    for did in allowed_order:
+        if did not in ordered:
+            ordered.append(did)
+    return ordered
+
 CITIES = {
     "almaty": {
         "slug": "almaty",
@@ -53,7 +81,7 @@ CITIES = {
         "phone_display": None,
         "ig": "https://www.instagram.com/asiakoz.clinic/",
         "ig_handle": "@asiakoz.clinic",
-        "doctors": ["mehmet", "orel", "aliya", "musay"],
+        "doctors": CITY_DOCTORS["almaty"],
         "clinic_img": "/images/clinic-building.png",
         "clinic_alt_ru": "Клиника AsiaKoz в Алматы, проспект Райымбека, 176А",
         "clinic_alt_kk": "AsiaKoz Алматы клиникасы, Райымбек даңғылы, 176А",
@@ -71,7 +99,7 @@ CITIES = {
         "phone_display": "+7 775 863 01 80",
         "ig": "https://www.instagram.com/asiakoz.aqtau/",
         "ig_handle": "@asiakoz.aqtau",
-        "doctors": ["ali-keskin", "erol", "nazgul"],
+        "doctors": CITY_DOCTORS["aktau"],
         "clinic_img": "/images/clinic-aktau.png",
         "clinic_alt_ru": "Клиника AsiaKoz в Актау, 7А микрорайон",
         "clinic_alt_kk": "AsiaKoz Ақтау клиникасы, 7А шағынауданы",
@@ -89,7 +117,7 @@ CITIES = {
         "phone_display": "+7 708 075 01 80",
         "ig": "https://www.instagram.com/asiakoz.shymkent/",
         "ig_handle": "@asiakoz.shymkent",
-        "doctors": ["mehmet", "aliya"],
+        "doctors": CITY_DOCTORS["shymkent"],
         "clinic_img": "/images/shymkent-branch.png",
         "clinic_alt_ru": "Филиал AsiaKoz в Шымкенте, мкр. Туран",
         "clinic_alt_kk": "AsiaKoz Шымкент филиалы, Тұран",
@@ -146,6 +174,13 @@ DOCTORS = {
         "spec_ru": "Офтальмолог · диагностика, дети и взрослые",
         "spec_kk": "Офтальмолог · диагностика, балалар мен ересектер",
     },
+    "kadyr": {
+        "href": "/doctor-kadyr-kyrboga/",
+        "img": "/images/doctor-kadyr-kyrboga.png",
+        "name": "Кадыр Кырбога",
+        "spec_ru": "Офтальмохирург · лазер, катаракта, косоглазие, глаукома",
+        "spec_kk": "Офтальмохирург · лазер, катаракта, қылилық, глаукома",
+    },
 }
 
 # slug_fn(city) -> folder name. Almaty kosoglazie stays /kosoglazie/
@@ -158,7 +193,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["mehmet", "orel", "aliya", "musay"],
             "aktau": ["ali-keskin", "erol"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Катаракта",
@@ -212,7 +247,7 @@ DIAGNOSES = {
         "skip_write": ["almaty"],
         "folder": lambda c: f"lazer-{c}",
         "image": "/images/clinic-almaty-laser.png",
-        "doctors": {"almaty": ["mehmet", "orel", "aliya"], "shymkent": ["mehmet", "aliya"]},
+        "doctors": {"almaty": ["mehmet", "orel", "aliya"], "shymkent": ["kadyr", "mehmet"]},
         "ru": {
             "name": "Лазерная коррекция",
             "h1": "Лазерная коррекция зрения в {city}",
@@ -268,7 +303,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["mehmet", "aliya", "musay"],
             "aktau": ["ali-keskin", "erol"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Глаукома",
@@ -325,7 +360,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["orel", "mehmet"],
             "aktau": ["ali-keskin"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Витрэктомия",
@@ -382,7 +417,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["orel", "mehmet"],
             "aktau": ["ali-keskin", "erol", "nazgul"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Косоглазие",
@@ -439,7 +474,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["musay", "aliya", "mehmet"],
             "aktau": ["nazgul", "erol", "ali-keskin"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Диагностика зрения",
@@ -496,7 +531,7 @@ DIAGNOSES = {
         "doctors": {
             "almaty": ["musay", "aliya"],
             "aktau": ["nazgul", "erol"],
-            "shymkent": ["mehmet", "aliya"],
+            "shymkent": ["kadyr", "mehmet"],
         },
         "ru": {
             "name": "Детская офтальмология",
@@ -777,7 +812,7 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
     ]
     if is_hub_boost(dx_id, city):
         dx = DIAGNOSES[dx_id]
-        doc_ids = dx["doctors"].get(city, c["doctors"])
+        doc_ids = resolve_doc_ids(dx, city)
         for did in doc_ids:
             d = DOCTORS[did]
             graph.append(
@@ -849,7 +884,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
         f"<details><summary>{q}</summary><p>{fmt(a)}</p></details>"
         for q, a in enrich_copy(copy, dx_id, lang)["faq"]
     )
-    doc_ids = dx["doctors"].get(city, c["doctors"])
+    doc_ids = resolve_doc_ids(dx, city)
     related = []
     for other in dx["cities"]:
         if other == city:
@@ -898,7 +933,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     corp_footer_nav = footer_nav_html(lang)
     enriched = enrich_copy(copy, dx_id, lang)
     premium = build_premium(dx_id, lang, copy, city_name, address)
-    doc_ids = dx["doctors"].get(city, c["doctors"])
+    doc_ids = resolve_doc_ids(dx, city)
     lead_doc = DOCTORS[doc_ids[0]]
     spec_short = lead_doc["spec_ru"].split("·")[0].strip() if lang == "ru" else lead_doc["spec_kk"].split("·")[0].strip()
     hero = premium_hero_html(

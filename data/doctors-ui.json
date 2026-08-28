@@ -2,15 +2,16 @@
   {
     "id": "mehmet-esat-teker",
     "cities": [
-      "almaty"
+      "almaty",
+      "shymkent"
     ],
     "profileUrl": "/doctor-mehmet-esat-teker/",
     "image": "images/doctors/mehmet-esat-teker.png?v=20260828g",
     "fromTurkey": true,
     "nameRu": "Мехмет Есат Текер",
     "nameKz": "Мехмет Есат Текер",
-    "branchRu": "Алматы · Лазерный хирург",
-    "branchKz": "Алматы · Лазерлік хирург",
+    "branchRu": "Алматы · Шымкент · Лазерный хирург",
+    "branchKz": "Алматы · Шымкент · Лазерлік хирург",
     "roleRu": "Ведущий офтальмолог и хирург",
     "roleKz": "Жетекші офтальмолог-хирург",
     "experienceRu": "5 000+ лазерных коррекций · 20+ лет опыта",
