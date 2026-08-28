@@ -6063,5 +6063,17 @@
     "language": "ru",
     "session_id": "mtcf27wd-gqan18n9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787890088637-01gafa",
+    "ts": 1787890088637,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcfkzbh-o1qbpdr3",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
