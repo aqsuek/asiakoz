@@ -1044,6 +1044,24 @@ def patch_doctor_profile_pages() -> None:
             ],
         }
         html = put_jsonld(html, schema)
+        legacy = {
+            "mehmet-esat-teker": "/images/doctors/mehmet-esat-teker.png",
+            "orel-talip": "/images/doctors/orel-talip.png",
+            "aliya": "/images/doctors/aliya.png",
+            "musay": "/images/doctors/musay.png",
+            "ali-keskin": "/images/doctors/ali-keskin.png",
+            "erol-joshkun": "/images/doctors/erol-joshkun.png",
+            "nazgul-sagyndykova": "/images/doctors/nazgul-sagyndykova.png",
+            "kadyr-kyrboga": "/images/doctors/kadyr-kyrboga.png",
+        }.get(d["id"], d["image"])
+        rel_img = ".." + legacy if legacy.startswith("/images/") else d["image"]
+        html = re.sub(
+            r'(<div class="doctor-photo-wrap"><img src=")[^"]+(" alt=")[^"]*(")',
+            rf'\1{rel_img}\2{d["nameRu"]}\3',
+            html,
+            count=1,
+        )
+        html = re.sub(r"<h1>[^<]+</h1>", f'<h1>{d["nameRu"]}</h1>', html, count=1)
         path.write_text(html, encoding="utf-8")
 
 
@@ -1168,6 +1186,12 @@ def main() -> None:
     print("=== AsiaKoz SEO build ===")
     lastmod_cache = load_lastmod()
     apply_url_merges()
+    import subprocess
+    import sys
+
+    sync_script = ROOT / "scripts" / "sync-doctors.py"
+    if sync_script.exists():
+        subprocess.check_call([sys.executable, str(sync_script)], cwd=str(ROOT))
     generate_city_diagnosis_pages()
     fix_redirect_stubs()
     write_aktau_alias()

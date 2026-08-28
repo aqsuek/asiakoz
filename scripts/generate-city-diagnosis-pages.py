@@ -114,7 +114,7 @@ DOCTORS = {
     "aliya": {
         "href": "/doctor-aliya/",
         "img": "/images/doctor-aliya.png",
-        "name": "Алия Усманова",
+        "name": "Алия Ганимуратовна Усманова",
         "spec_ru": "Офтальмохирург · лазер, катаракта, блефаропластика",
         "spec_kk": "Офтальмохирург · лазер, катаракта, блефаропластика",
     },
@@ -141,8 +141,8 @@ DOCTORS = {
     },
     "nazgul": {
         "href": "/doctor-nazgul/",
-        "img": "/images/doctors/nazgul-sagyndykova.png",
-        "name": "Назгуль Сагындыкова",
+        "img": "/images/doctor-nazgul.png",
+        "name": "Назгуль Темирбеккызы Сагындыкова",
         "spec_ru": "Офтальмолог · диагностика, дети и взрослые",
         "spec_kk": "Офтальмолог · диагностика, балалар мен ересектер",
     },
@@ -262,7 +262,7 @@ DIAGNOSES = {
     },
     "glaukoma": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": [],
+        "skip_write": ["almaty"],
         "folder": lambda c: f"glaukoma-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {
@@ -433,7 +433,7 @@ DIAGNOSES = {
     },
     "diagnostika": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": [],
+        "skip_write": ["almaty"],
         "folder": lambda c: f"diagnostika-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {
@@ -490,7 +490,7 @@ DIAGNOSES = {
     },
     "deti": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": [],
+        "skip_write": ["almaty"],
         "folder": lambda c: f"deti-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {

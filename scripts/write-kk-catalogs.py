@@ -141,87 +141,13 @@ def write_kk_uslugi() -> None:
 
 
 def write_kk_doctors() -> None:
-    path = ROOT / "kk" / "doctors" / "index.html"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    doctors = [
-        ("/doctor-orel/", "/images/doctor-orel.png", "Орел Талип", "Витреоретинолог", "almaty", ["Қылилық", "Витрэктомия", "Тор қабық"]),
-        ("/doctor-mehmet-esat-teker/", "/images/doctor-mehmet-esat-teker.png", "Мехмет Есат Текер", "Офтальмолог-хирург", "almaty", ["Лазер", "Катаракта", "Глаукома"]),
-        ("/doctor-aliya/", "/images/doctor-aliya.png", "Алия Усманова", "Офтальмохирург", "almaty", ["Лазер", "Катаракта"]),
-        ("/doctor-musay/", "/images/doctor-musay.png", "Нұрмұхамед Мусай", "Бас дәрігер", "almaty", ["Бас дәрігер"]),
-        ("/doctor-ali-keskin/", "/images/doctor-ali-keskin.png", "Али Кескин", "Офтальмолог-хирург", "aktau", ["Макула", "Қылилық", "Тор қабық"]),
-        ("/doctor-erol/", "/images/doctor-erol.png", "Эрол Джошкун", "Офтальмолог-хирург", "aktau", ["Қылилық", "Катаракта", "Глаукома"]),
-        ("/doctor-nazgul/", "/images/doctor-nazgul.png", "Назгуль Сагындыкова", "Дәрігер-офтальмолог", "aktau", ["Ересектер мен балалар"]),
-    ]
-    cards = []
-    for href, img, name, role, city, tags in doctors:
-        badge = "branch-badge-almaty" if city == "almaty" else "branch-badge-aktau"
-        city_label = "Алматы" if city == "almaty" else "Ақтау"
-        tags_html = "".join(f'<span class="doctor-tag">{t}</span>' for t in tags)
-        cards.append(
-            f"""        <article class="doctor-card"><a class="doctor-card-inner" href="{href}"><div class="doctor-photo-wrap"><img src="{img}" alt="{name}" loading="lazy" /></div><div class="doctor-body"><div class="doctor-meta"><span class="doctor-role">{role}</span><span class="{badge}">{city_label}</span></div><h3 class="doctor-name">{name}</h3><div class="doctor-tags">{tags_html}</div><div class="doctor-action">Толығырақ →</div></div></a></article>"""
-        )
-    html = f"""<!DOCTYPE html>
-<html lang="kk">
-<head>
-{GTM}
-  <meta charset="UTF-8" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AsiaKoz дәрігер-офтальмологтары — Алматы және Ақтау</title>
-  <meta name="description" content="AsiaKoz клиникасының офтальмологтары мен офтальмохирургтері Алматы мен Ақтауда. Дәрігерді таңдап, WhatsApp арқылы жазылыңыз." />
-  <link rel="canonical" href="{SITE}/kk/doctors/" />
-  <link rel="alternate" hreflang="ru-KZ" href="{SITE}/doctors/" />
-  <link rel="alternate" hreflang="kk-KZ" href="{SITE}/kk/doctors/" />
-  <link rel="alternate" hreflang="x-default" href="{SITE}/doctors/" />
-  <meta property="og:site_name" content="AsiaKoz" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="kk_KZ" />
-  <meta property="og:title" content="AsiaKoz дәрігерлері" />
-  <meta property="og:description" content="Алматы мен Ақтаудағы AsiaKoz дәрігерлері." />
-  <meta property="og:url" content="{SITE}/kk/doctors/" />
-  <meta property="og:image" content="{SITE}/images/logo-asiakoz.png" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
-  <div class="container">
-{header_kk('doctors', '/doctors/')}
-    <nav class="breadcrumb"><a href="/kk/">Басты бет</a> / Дәрігерлер</nav>
-    <section class="spa-hero">
-      <div class="spa-eyebrow">AsiaKoz · Дәрігерлер</div>
-      <h1>AsiaKoz дәрігерлері</h1>
-      <p>Қабылдау Алматы, Ақтау және Шымкентте.</p>
-      <div class="spa-actions">
-        <a class="btn" href="https://wa.me/77003600180" target="_blank" rel="noopener">WhatsApp Алматы</a>
-        <a class="btn btn-outline" href="https://wa.me/77758630180" target="_blank" rel="noopener">WhatsApp Ақтау</a>
-      </div>
-    </section>
-    <div class="spa-branch-grid">
-      <article class="spa-branch-card"><h2>Алматы</h2><p>Райымбек даңғылы, 176А</p><p><a class="link" href="tel:+77008880180">+7 700 360 01 80</a></p><p><a class="link" href="/kk/almaty/">Филиал беті →</a></p></article>
-      <article class="spa-branch-card"><h2>Ақтау</h2><p>7А ш/а, 11/3</p><p><a class="link" href="tel:+77758630180">+7 775 863 01 80</a></p><p><a class="link" href="/kk/aqtau/">Филиал беті →</a></p></article>
-      <article class="spa-branch-card"><h2>Шымкент</h2><p>Жұмыс істейді.</p><p><a class="link" href="tel:+77080750180">+7 708 075 01 80</a></p><p><a class="link" href="/kk/shymkent/">Филиал беті →</a></p></article>
-    </div>
-    <section class="section">
-      <h2 class="section-title">Дәрігерлер каталогы</h2>
-      <p class="section-subtitle">Дәрігерді таңдап, профиль арқылы жазылыңыз.</p>
-      <div class="doctors-grid">
-{chr(10).join(cards)}
-      </div>
-    </section>
-    <div class="cta-block">
-      <h2>Қабылдауға жазылу</h2>
-      <p>WhatsApp арқылы жазылыңыз — дәрігер мен уақытты таңдаймыз.</p>
-      <a href="https://wa.me/77003600180" class="btn" target="_blank" rel="noopener">WhatsApp Алматы</a>
-      <a href="https://wa.me/77758630180" class="btn btn-outline" target="_blank" rel="noopener" style="margin-left:8px;">WhatsApp Ақтау</a>
-    </div>
-{footer_kk()}
-  </div>
-  <script src="/js/compliance.js"></script>
-</body>
-</html>
-"""
-    path.write_text(html, encoding="utf-8")
-    print("wrote: /kk/doctors/ full catalog")
+    import subprocess
+    import sys
+
+    script = ROOT / "scripts" / "sync-doctors.py"
+    if script.exists():
+        subprocess.check_call([sys.executable, str(script)], cwd=str(ROOT))
+        print("wrote: /kk/doctors/ via sync-doctors.py")
 
 
 def swap_logos_in_static() -> None:

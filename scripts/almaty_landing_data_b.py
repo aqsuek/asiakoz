@@ -481,3 +481,5 @@ ALMATY_LANDINGS_B: dict[str, dict] = {
         ],
     ),
 }
+
+ALMATY_LANDINGS_B["icl"]["skip_write"] = ["almaty"]

@@ -313,7 +313,8 @@ ALMATY_LANDINGS.update(
 # Retina cluster + related services
 ALMATY_LANDINGS.update(
     {
-        "setchatka": _dx(
+        "setchatka": {
+            **(_dx(
             "setchatka-almaty",
             IMG_RETINA,
             DOCS_RETINA,
@@ -363,7 +364,9 @@ ALMATY_LANDINGS.update(
                     ("Инъекция бар ма?", "Көрсеткіш бойынша."),
                 ],
             ),
-        ),
+        )),
+            "skip_write": ["almaty"],
+        },
         "razryv-setchatki": _dx(
             "razryv-setchatki-almaty",
             IMG_RETINA,
