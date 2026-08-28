@@ -6267,5 +6267,15 @@
     "language": "ru",
     "session_id": "mt6rvs19-a3qu1gcz",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1787902713644-2mu5kd",
+    "ts": 1787902713644,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtcn3n9e-dglii088",
+    "referrer": "http://localhost:5174/"
   }
 ]
