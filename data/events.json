@@ -6616,5 +6616,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787920509341-84sd28",
+    "ts": 1787920509341,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtcuk0xk-moyoanjj",
+    "referrer": "https://asiakoz.com/doctor-kadyr-kyrboga/"
   }
 ]
