@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 SITE = "https://asiakoz.com"
 
 from site_nav import footer_nav_html, header_nav_html
+from landing_sections import enrich_copy, extended_body_html
 
 with (ROOT / "data" / "branches.json").open(encoding="utf-8") as f:
     BRANCHES_FILE = json.load(f)
@@ -250,7 +251,7 @@ DIAGNOSES = {
     },
     "glaukoma": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": ["almaty"],
+        "skip_write": [],
         "folder": lambda c: f"glaukoma-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {
@@ -421,7 +422,7 @@ DIAGNOSES = {
     },
     "diagnostika": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": ["almaty"],
+        "skip_write": [],
         "folder": lambda c: f"diagnostika-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {
@@ -478,7 +479,7 @@ DIAGNOSES = {
     },
     "deti": {
         "cities": ["almaty", "aktau", "shymkent"],
-        "skip_write": ["almaty"],
+        "skip_write": [],
         "folder": lambda c: f"deti-{c}",
         "image": "/images/clinic-building.png",
         "doctors": {
@@ -694,37 +695,67 @@ def doctors_html(ids: list[str], city: str, lang: str) -> str:
 
 def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) -> str:
     c = CITIES[city]
+    enriched = enrich_copy(copy, dx_id, lang)
+    city_name = c["ru"] if lang == "ru" else c["kk"]
+    address = c["address_ru"] if lang == "ru" else c["address_kk"]
     faq = [
         {
             "@type": "Question",
             "name": q,
-            "acceptedAnswer": {"@type": "Answer", "text": a},
+            "acceptedAnswer": {"@type": "Answer", "text": a.format(city=city_name, address=address)},
         }
-        for q, a in copy["faq"]
+        for q, a in enriched["faq"]
     ]
-    graph = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "MedicalWebPage",
-                "url": url,
-                "name": copy["title"].format(city=c["ru"] if lang == "ru" else c["kk"], address=c["address_ru"] if lang == "ru" else c["address_kk"]),
-                "inLanguage": "ru-KZ" if lang == "ru" else "kk-KZ",
-                "primaryImageOfPage": image,
-                "about": copy["name"],
-                "isPartOf": {"@type": "WebSite", "name": "AsiaKoz", "url": f"{SITE}/"},
+    uslugi_url = f"{SITE}/kk/uslugi/" if lang == "kk" else f"{SITE}/uslugi/"
+    graph: list[dict] = [
+        {
+            "@type": "MedicalWebPage",
+            "@id": f"{url}#webpage",
+            "url": url,
+            "name": enriched["title"].format(city=city_name, address=address),
+            "description": enriched["desc"].format(city=city_name, address=address),
+            "inLanguage": "ru-KZ" if lang == "ru" else "kk-KZ",
+            "primaryImageOfPage": {"@type": "ImageObject", "url": image},
+            "about": {"@type": "MedicalCondition", "name": enriched["name"]},
+            "isPartOf": {"@type": "WebSite", "name": "AsiaKoz", "url": f"{SITE}/"},
+            "breadcrumb": {"@id": f"{url}#breadcrumb"},
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": f"{url}#breadcrumb",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "AsiaKoz", "item": f"{SITE}/"},
+                {"@type": "ListItem", "position": 2, "name": "Услуги" if lang == "ru" else "Қызметтер", "item": uslugi_url},
+                {"@type": "ListItem", "position": 3, "name": enriched["name"], "item": url},
+            ],
+        },
+        {
+            "@type": "MedicalClinic",
+            "@id": f"{SITE}/{c['slug']}/#clinic",
+            "name": f"AsiaKoz {city_name}",
+            "url": f"{SITE}{c['href']}",
+            "telephone": c["phone"] or f"+{c['wa']}",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": address,
+                "addressLocality": city_name,
+                "addressCountry": "KZ",
             },
+        },
+        {"@type": "FAQPage", "@id": f"{url}#faq", "mainEntity": faq},
+    ]
+    if enriched.get("prices"):
+        graph.append(
             {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "AsiaKoz", "item": f"{SITE}/"},
-                    {"@type": "ListItem", "position": 2, "name": copy["name"], "item": url},
-                ],
-            },
-            {"@type": "FAQPage", "mainEntity": faq},
-        ],
-    }
-    return json.dumps(graph, ensure_ascii=False, indent=2)
+                "@type": "MedicalProcedure",
+                "@id": f"{url}#procedure",
+                "name": enriched["name"],
+                "description": enriched["lead"].format(city=city_name, address=address)[:500],
+                "procedureType": "https://schema.org/SurgicalProcedure",
+            }
+        )
+    payload = {"@context": "https://schema.org", "@graph": graph}
+    return json.dumps(payload, ensure_ascii=False, indent=2)
 
 
 def render_page(dx_id: str, city: str, lang: str) -> str:
@@ -767,7 +798,8 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
         for i, (t, p) in enumerate(copy["steps"], 1)
     )
     faq = "".join(
-        f"<details><summary>{q}</summary><p>{fmt(a)}</p></details>" for q, a in copy["faq"]
+        f"<details><summary>{q}</summary><p>{fmt(a)}</p></details>"
+        for q, a in enrich_copy(copy, dx_id, lang)["faq"]
     )
     doc_ids = dx["doctors"].get(city, c["doctors"])
     related = []
@@ -816,6 +848,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     og_locale = "kk_KZ" if lang == "kk" else "ru_RU"
     corp_header_nav = header_nav_html(lang)
     corp_footer_nav = footer_nav_html(lang)
+    extended = extended_body_html(copy, lang, fmt, c, dx_id)
 
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
@@ -873,6 +906,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
       <p class="hero-address"><b>{'Мекенжай' if lang == 'kk' else 'Адрес'}:</b> {address} · <a class="link" href="{c['kk_href'] if lang == 'kk' else c['href']}">{city_name}</a></p>
       <p>{'Instagram'}: <a class="link" href="{c['ig']}" target="_blank" rel="noopener">{c['ig_handle']}</a></p>
     </section>
+{extended}
     <section class="section">
       <h2 class="section-title">{'Қалай өтеді' if lang == 'kk' else 'Как это проходит'}</h2>
       <div class="steps-grid">{steps}</div>

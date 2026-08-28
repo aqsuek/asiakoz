@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/katarakta-shymkent/#webpage",
       "url": "https://asiakoz.com/katarakta-shymkent/",
       "name": "Катаракта в Шымкент — операция и подбор ИОЛ | AsiaKoz",
+      "description": "Катаракта в Шымкент: диагностика, подбор искусственного хрусталика и факоэмульсификация в AsiaKoz. Адрес: Шымкент, улица Байтурсынова, 86/7, мкр. Туран. Запись в WhatsApp.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/katarakta-almaty.webp",
-      "about": "Катаракта",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/katarakta-almaty.webp"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Катаракта"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/katarakta-shymkent/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/katarakta-shymkent/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Катаракта",
           "item": "https://asiakoz.com/katarakta-shymkent/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/shymkent/#clinic",
+      "name": "AsiaKoz Шымкент",
+      "url": "https://asiakoz.com/shymkent/",
+      "telephone": "+77080750180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Шымкент, улица Байтурсынова, 86/7, мкр. Туран",
+        "addressLocality": "Шымкент",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/katarakta-shymkent/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Мультифокальные и EDOF-ИОЛ возможны не всем. Сначала биометрия и состояние сетчатки."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/katarakta-shymkent/#procedure",
+      "name": "Катаракта",
+      "description": "Катаракта — помутнение хрусталика, из-за которого зрение «плывёт», появляется пелена и блики. В филиале AsiaKoz в Шымкент проводим диагностику, рассчитываем ИОЛ и оперируем методом факоэмульсификации. Тип линзы подбирается после обследования — не по шаблону.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,74 @@
       <p class="hero-address"><b>Адрес:</b> Шымкент, улица Байтурсынова, 86/7, мкр. Туран · <a class="link" href="/shymkent/">Шымкент</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.shymkent/" target="_blank" rel="noopener">@asiakoz.shymkent</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое катаракта</h2>
+      <p>Катаракта — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при катаракта</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Шымкент уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Диагностика</h3>
+          <p class="card-text">Острота зрения, биометрия, состояние сетчатки и роговицы</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Операция</h3>
+          <p class="card-text">ФЭК с имплантацией ИОЛ по показаниям</p>
+        </article>        <article class="card">
+          <h3 class="card-title">ИОЛ</h3>
+          <p class="card-text">Монофокальные, торические, мультифокальные — после расчёта</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article>        <article class="price-card price-card--accent">
+          <p class="price-card__label">Операция</p>
+          <h3 class="price-card__title">Операция катаракты (ФЭК + ИОЛ)</h3>
+          <p class="price-card__value">350 000–1 200 000 ₸</p>
+          <p class="price-card__text">Зависит от типа ИОЛ и клинической ситуации.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77080750180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9A%D0%B0%D1%82%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B0" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Шымкент</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/diagnostika-almaty/">Диагностика</a> · <a class="link" href="/zamena-hrustalika-almaty/">Замена хрусталика</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Осмотр</h3><p>Врач подтверждает катаракту и оценивает глаз целиком — не только хрусталик.</p></div><div class="step-card"><div class="step-num">2</div><h3>Расчёт ИОЛ</h3><p>Подбираем линзу под ваш глаз, астигматизм и зрительные задачи.</p></div><div class="step-card"><div class="step-num">3</div><h3>Операция</h3><p>Факоэмульсификация занимает минуты; план и ограничения объясняем заранее.</p></div><div class="step-card"><div class="step-num">4</div><h3>Контроль</h3><p>Осмотры после операции — по графику филиала в Шымкент.</p></div></div>
@@ -162,7 +293,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>Когда пора оперировать катаракту?</summary><p>Когда мутный хрусталик мешает жить, работать или водить — решение после диагностики, а не «по возрасту».</p></details><details><summary>Больно ли делать операцию?</summary><p>Операция обычно под местной анестезией. Ощущения и ограничения врач объясняет на приёме.</p></details><details><summary>Можно ли подобрать линзу без очков?</summary><p>Мультифокальные и EDOF-ИОЛ возможны не всем. Сначала биометрия и состояние сетчатки.</p></details>
+      <details><summary>Когда пора оперировать катаракту?</summary><p>Когда мутный хрусталик мешает жить, работать или водить — решение после диагностики, а не «по возрасту».</p></details><details><summary>Больно ли делать операцию?</summary><p>Операция обычно под местной анестезией. Ощущения и ограничения врач объясняет на приёме.</p></details><details><summary>Можно ли подобрать линзу без очков?</summary><p>Мультифокальные и EDOF-ИОЛ возможны не всем. Сначала биометрия и состояние сетчатки.</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>

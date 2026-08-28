@@ -233,3 +233,16 @@ print(f"News SPA shells refreshed: {len(posts)} posts")
 PY
   fi
 fi
+
+# Fail deploy if Kazakh homepage shell drifts from RU (prevents blank /kk/)
+if [[ -f "$ROOT/index.html" && -f "$ROOT/kk/index.html" ]]; then
+  ru_js=$(grep -oE '/assets/home/index-[^"]+\.js' "$ROOT/index.html" | head -1)
+  kk_js=$(grep -oE '/assets/home/index-[^"]+\.js' "$ROOT/kk/index.html" | head -1)
+  ru_css=$(grep -oE '/assets/home/index-[^"]+\.css' "$ROOT/index.html" | head -1)
+  kk_css=$(grep -oE '/assets/home/index-[^"]+\.css' "$ROOT/kk/index.html" | head -1)
+  if [[ -z "$ru_js" || "$ru_js" != "$kk_js" || -z "$ru_css" || "$ru_css" != "$kk_css" ]]; then
+    echo "ERROR: /kk/index.html assets must match /index.html (ru=$ru_js/$ru_css kk=$kk_js/$kk_css)" >&2
+    exit 1
+  fi
+  echo "Verified: /kk/ SPA shell assets match /"
+fi

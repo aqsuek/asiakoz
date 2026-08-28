@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/kk/glaukoma-aktau/#webpage",
       "url": "https://asiakoz.com/kk/glaukoma-aktau/",
       "name": "Ақтау қаласындағы глаукома — қысым диагностикасы | AsiaKoz",
+      "description": "Ақтау қаласындағы глаукома: тонометрия, көру өрісі, ОКТ, тамшы, лазер немесе операция. Ақтау, 7А шағынауданы, 11/3.",
       "inLanguage": "kk-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/clinic-aktau.png",
-      "about": "Глаукома",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/clinic-aktau.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Глаукома"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/kk/glaukoma-aktau/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/kk/glaukoma-aktau/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Қызметтер",
+          "item": "https://asiakoz.com/kk/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Глаукома",
           "item": "https://asiakoz.com/kk/glaukoma-aktau/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/aktau/#clinic",
+      "name": "AsiaKoz Ақтау",
+      "url": "https://asiakoz.com/aktau/",
+      "telephone": "+77758630180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ақтау, 7А шағынауданы, 11/3",
+        "addressLocality": "Ақтау",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/kk/glaukoma-aktau/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Өріс немесе жүйке нашарласа."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "AsiaKoz-қа қалай жазылуға болады?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ақтау филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Алғашқы қабылдау қанша уақыт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Диагностика көлеміне байланысты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Жолдама керек пе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Жоқ. Ақтау филиалына тікелей келуге болады."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/kk/glaukoma-aktau/#procedure",
+      "name": "Глаукома",
+      "description": "Глаукома көру жүйкесін зақымдайды, көбіне ауыртпай. Ақтау филиалында қысым, жүйке және көру өрісі тексеріледі. Ем: тамшы → лазер → операция.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Мекенжай:</b> Ақтау, 7А шағынауданы, 11/3 · <a class="link" href="/kk/aqtau/">Ақтау</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.aqtau/" target="_blank" rel="noopener">@asiakoz.aqtau</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Глаукома деген не</h2>
+      <p>Глаукома — көз ауруы/жағдайы, оны тек тексеруден кейін диагноз қойылады. Интернеттегі жалпы сипаттама нақты емдеу әдісін ауыстырмайды.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Негізгі белгілер</h2>
+      <ul class="symptom-grid"><li>көрудің бұзылуы немесе тұрақсыздығы</li><li>көздің шаршауы, қызару немесе құрғақтық</li><li>жыпылық, ұшқын немесе «ұшқындар»</li><li>бір көзбен қосарланған көру</li><li>жарыққа сезімталдық</li></ul>
+      <p class="section-note">Бұл белгілер басқа көз ауруларында да болуы мүмкін. Диагноз — тек дәрігер тексеруінен кейін.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Қашан дәрігерге жүгіну керек</h2>
+      <p>Көз дәрігеріне жүгіну керек, егер белгілер 2–3 күннен астам сақталса, көру кенет нашарласа немесе бір көздегі өзгеріс ерекше болса. Ақтау филиалында шұғыл тексеру қажеттілігін WhatsApp арқылы нақтылаймыз.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Емдеу әдістері</h2>
+      <p class="section-subtitle">Таңдалған әдіс тексеру нәтижесіне байланысты — барлық опция бәріне көрсетілмейді.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Бір сан емес</h3>
+          <p class="card-text">Жүйке, өріс және динамика</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Тамшы</h3>
+          <p class="card-text">Сұлбаны таңдау және бақылау</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Хирургия</h3>
+          <p class="card-text">Тамшы мен лазер жетпесе</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Бағалар</h2>
+      <p class="section-subtitle">Баға ориентирлік. Нақты сома диагностикадан кейін.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Көзді тексеру және дәрігер қабылдауы</h3>
+          <p class="price-card__value">20 000 ₸-дан</p>
+          <p class="price-card__text">Нақты зерттеулер тізімі көрсеткіш бойынша.</p>
+        </article></div>
+      <p class="price-note">Көрсетілген баға жария оферта емес.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77758630180?text=%D0%A1%D3%99%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%81%D1%96%D0%B7%20%D0%B1%D0%B5%21%20%D0%93%D0%BB%D0%B0%D1%83%D0%BA%D0%BE%D0%BC%D0%B0" target="_blank" rel="noopener">WhatsApp-қа жазу</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Неге AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Түрік хирургтер</h3>
+          <p class="card-text">AsiaKoz желісінде тәжірибелі офтальмохирургтер жұмыс істейді.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Диагностика алдымен</h3>
+          <p class="card-text">Емдеу жоспары тексеруден кейін — қысымсыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Түсінікті маршрут</h3>
+          <p class="card-text">Көрсеткіш болмаса операция ұсынбаймыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Ақтау филиалы</h3>
+          <p class="card-text">Мекенжай, WhatsApp және дәрігерлер бір бетте.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Байланысты қызметтер</h2>
+      <p><a class="link" href="/kk/diagnostika-almaty/">Диагностика</a> · <a class="link" href="/kk/operatsiya-glaukoma-almaty/">Глаукома операциясы</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медициналық ескерту:</b> Сайттағы ақпарат таныстыру үшін. Диагноз және емдеу жоспарын тек дәрігер белгілейді.</p>
+      <p>Қарсы көрсеткіштер бар. Маман кеңесін алмай операцияға жазылмаңыз.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Қалай өтеді</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Диагностика</h3><p>Қысым, жүйке, периметрия, ОКТ.</p></div><div class="step-card"><div class="step-num">2</div><h3>Жоспар</h3><p>Сатысы, мақсатты қысым, Ақтау кестесі.</p></div><div class="step-card"><div class="step-num">3</div><h3>Ем</h3><p>Тамшы; қажет болса лазер.</p></div><div class="step-card"><div class="step-num">4</div><h3>Операция</h3><p>Консервативті бақылау жетпесе.</p></div></div>
@@ -162,7 +288,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Сұрақ-жауап</h2>
-      <details><summary>Глаукома толық жазыла ма?</summary><p>Көбіне қысымды тұрақты бақылау — көруді сақтау үшін.</p></details><details><summary>Тамшыны неге үзбеу керек?</summary><p>Қысым секірсе жүйке зақындала береді.</p></details><details><summary>Операция қашан?</summary><p>Өріс немесе жүйке нашарласа.</p></details>
+      <details><summary>Глаукома толық жазыла ма?</summary><p>Көбіне қысымды тұрақты бақылау — көруді сақтау үшін.</p></details><details><summary>Тамшыны неге үзбеу керек?</summary><p>Қысым секірсе жүйке зақындала береді.</p></details><details><summary>Операция қашан?</summary><p>Өріс немесе жүйке нашарласа.</p></details><details><summary>AsiaKoz-қа қалай жазылуға болады?</summary><p>Ақтау филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ.</p></details><details><summary>Алғашқы қабылдау қанша уақыт?</summary><p>Диагностика көлеміне байланысты.</p></details><details><summary>Жолдама керек пе?</summary><p>Жоқ. Ақтау филиалына тікелей келуге болады.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Басқа қалалар мен бағыттар</h2>

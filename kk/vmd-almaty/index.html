@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/kk/vmd-almaty/#webpage",
       "url": "https://asiakoz.com/kk/vmd-almaty/",
       "name": "Алматы қаласындағы ВМД | AsiaKoz",
+      "description": "Алматы қаласындағы ВМД: диагностика және ем. Алматы, Райымбек даңғылы, 176А.",
       "inLanguage": "kk-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/vitrektomiya-almaty.webp",
-      "about": "ВМД",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/vitrektomiya-almaty.webp"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "ВМД"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/kk/vmd-almaty/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/kk/vmd-almaty/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Қызметтер",
+          "item": "https://asiakoz.com/kk/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "ВМД",
           "item": "https://asiakoz.com/kk/vmd-almaty/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/almaty/#clinic",
+      "name": "AsiaKoz Алматы",
+      "url": "https://asiakoz.com/almaty/",
+      "telephone": "+77003600180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Алматы, Райымбек даңғылы, 176А",
+        "addressLocality": "Алматы",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/kk/vmd-almaty/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -82,6 +114,30 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Жеке."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AsiaKoz-қа қалай жазылуға болады?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Алматы филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Алғашқы қабылдау қанша уақыт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Диагностика көлеміне байланысты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Жолдама керек пе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Жоқ. Алматы филиалына тікелей келуге болады."
           }
         }
       ]
@@ -135,6 +191,58 @@
       <p class="hero-address"><b>Мекенжай:</b> Алматы, Райымбек даңғылы, 176А · <a class="link" href="/kk/almaty/">Алматы</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener">@asiakoz.clinic</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">ВМД деген не</h2>
+      <p>ВМД — көз ауруы/жағдайы, оны тек тексеруден кейін диагноз қойылады. Интернеттегі жалпы сипаттама нақты емдеу әдісін ауыстырмайды.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Негізгі белгілер</h2>
+      <ul class="symptom-grid"><li>көрудің бұзылуы немесе тұрақсыздығы</li><li>көздің шаршауы, қызару немесе құрғақтық</li><li>жыпылық, ұшқын немесе «ұшқындар»</li><li>бір көзбен қосарланған көру</li><li>жарыққа сезімталдық</li></ul>
+      <p class="section-note">Бұл белгілер басқа көз ауруларында да болуы мүмкін. Диагноз — тек дәрігер тексеруінен кейін.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Қашан дәрігерге жүгіну керек</h2>
+      <p>Көз дәрігеріне жүгіну керек, егер белгілер 2–3 күннен астам сақталса, көру кенет нашарласа немесе бір көздегі өзгеріс ерекше болса. Алматы филиалында шұғыл тексеру қажеттілігін WhatsApp арқылы нақтылаймыз.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Емдеу әдістері</h2>
+      <p class="section-subtitle">Таңдалған әдіс тексеру нәтижесіне байланысты — барлық опция бәріне көрсетілмейді.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Форма</h3>
+          <p class="card-text">Құрғақ/дымқыл</p>
+        </article>        <article class="card">
+          <h3 class="card-title">ОКТ</h3>
+          <p class="card-text">Тактика</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Инъекция</h3>
+          <p class="card-text">Дымқылда</p>
+        </article></div>
+    </section>
+
+    <section class="section" id="why">
+      <h2 class="section-title">Неге AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Түрік хирургтер</h3>
+          <p class="card-text">AsiaKoz желісінде тәжірибелі офтальмохирургтер жұмыс істейді.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Диагностика алдымен</h3>
+          <p class="card-text">Емдеу жоспары тексеруден кейін — қысымсыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Түсінікті маршрут</h3>
+          <p class="card-text">Көрсеткіш болмаса операция ұсынбаймыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Алматы филиалы</h3>
+          <p class="card-text">Мекенжай, WhatsApp және дәрігерлер бір бетте.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Байланысты қызметтер</h2>
+      <p><a class="link" href="/kk/diagnostika-almaty/">Көру диагностикасы</a> · <a class="link" href="/kk/uslugi/">Барлық қызметтер</a> · <a class="link" href="/kk/doctors/">Дәрігерлер</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медициналық ескерту:</b> Сайттағы ақпарат таныстыру үшін. Диагноз және емдеу жоспарын тек дәрігер белгілейді.</p>
+      <p>Қарсы көрсеткіштер бар. Маман кеңесін алмай операцияға жазылмаңыз.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Қалай өтеді</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Қабылдау</h3><p>Алматы филиалында шағым және диагностика.</p></div><div class="step-card"><div class="step-num">2</div><h3>Тексеру</h3><p>ОКТ, қысым — көрсеткіш бойынша.</p></div><div class="step-card"><div class="step-num">3</div><h3>Жоспар</h3><p>Ем нұсқаларын түсіндіреміз.</p></div><div class="step-card"><div class="step-num">4</div><h3>Бақылау</h3><p>Кесте бойынша қайта қаралу.</p></div></div>
@@ -162,7 +270,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Сұрақ-жауап</h2>
-      <details><summary>Толық жаза ма?</summary><p>Дымқылды бақылайды.</p></details><details><summary>Витамин?</summary><p>Кеңес.</p></details><details><summary>Жиілік?</summary><p>Жеке.</p></details>
+      <details><summary>Толық жаза ма?</summary><p>Дымқылды бақылайды.</p></details><details><summary>Витамин?</summary><p>Кеңес.</p></details><details><summary>Жиілік?</summary><p>Жеке.</p></details><details><summary>AsiaKoz-қа қалай жазылуға болады?</summary><p>Алматы филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ.</p></details><details><summary>Алғашқы қабылдау қанша уақыт?</summary><p>Диагностика көлеміне байланысты.</p></details><details><summary>Жолдама керек пе?</summary><p>Жоқ. Алматы филиалына тікелей келуге болады.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Басқа қалалар мен бағыттар</h2>

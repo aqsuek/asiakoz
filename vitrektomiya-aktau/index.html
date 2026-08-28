@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/vitrektomiya-aktau/#webpage",
       "url": "https://asiakoz.com/vitrektomiya-aktau/",
       "name": "Витрэктомия в Актау — сетчатка, отслойка, гемофтальм | AsiaKoz",
+      "description": "Витрэктомия в Актау: отслойка сетчатки, кровоизлияние, макулярный разрыв. Диагностика витреоретинолога. Актау, 7А микрорайон, 11/3. WhatsApp.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/vitrektomiya-almaty.webp",
-      "about": "Витрэктомия",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/vitrektomiya-almaty.webp"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Витрэктомия"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/vitrektomiya-aktau/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/vitrektomiya-aktau/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Витрэктомия",
           "item": "https://asiakoz.com/vitrektomiya-aktau/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/aktau/#clinic",
+      "name": "AsiaKoz Актау",
+      "url": "https://asiakoz.com/aktau/",
+      "telephone": "+77758630180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Актау, 7А микрорайон, 11/3",
+        "addressLocality": "Актау",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/vitrektomiya-aktau/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -73,7 +105,7 @@
           "name": "Можно ли лететь в другой город?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "При отслойке лучше не откладывать. Маршрут подскажем после осмотра в {city}."
+            "text": "При отслойке лучше не откладывать. Маршрут подскажем после осмотра в Актау."
           }
         },
         {
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Зависит от макулы и срока отслойки. Честный прогноз — после обследования."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Актау — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Актау."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/vitrektomiya-aktau/#procedure",
+      "name": "Витрэктомия",
+      "description": "Витрэктомия — операция на стекловидном теле и сетчатке. Её назначают не «для профилактики», а при конкретных показаниях: отслойка, плотный гемофтальм, макулярный разрыв, тяжёлая диабетическая ретинопатия. В Актау начинаем с осмотра глазного дна и ОКТ. Если случай требует другого филиала сети — говорим прямо.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Адрес:</b> Актау, 7А микрорайон, 11/3 · <a class="link" href="/aktau/">Актау</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.aqtau/" target="_blank" rel="noopener">@asiakoz.aqtau</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое витрэктомия</h2>
+      <p>Витрэктомия — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при витрэктомия</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Актау уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Симптомы</h3>
+          <p class="card-text">Вспышки, занавеска, резкая «пыль» — не ждать недели</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Диагностика</h3>
+          <p class="card-text">Глазное дно, ОКТ, УЗИ по показаниям</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Тактика</h3>
+          <p class="card-text">Лазер, инъекции или витрэктомия — после осмотра</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77758630180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%92%D0%B8%D1%82%D1%80%D1%8D%D0%BA%D1%82%D0%BE%D0%BC%D0%B8%D1%8F" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Актау</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/setchatka-almaty/">Болезни сетчатки</a> · <a class="link" href="/diagnostika-almaty/">Диагностика</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Срочность</h3><p>Оцениваем, нужна ли диагностика сегодня.</p></div><div class="step-card"><div class="step-num">2</div><h3>Картина</h3><p>Сетчатка, макула, стекловидное тело.</p></div><div class="step-card"><div class="step-num">3</div><h3>План</h3><p>Наблюдение, лазер, уколы или операция.</p></div><div class="step-card"><div class="step-num">4</div><h3>После</h3><p>Положения головы и осмотры — как скажет хирург.</p></div></div>
@@ -154,7 +280,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>Всегда ли нужна операция?</summary><p>Нет. Часть разрывов закрывают лазером, часть кровоизлияний рассасывается под контролем.</p></details><details><summary>Можно ли лететь в другой город?</summary><p>При отслойке лучше не откладывать. Маршрут подскажем после осмотра в Актау.</p></details><details><summary>Вернётся ли зрение на 100%?</summary><p>Зависит от макулы и срока отслойки. Честный прогноз — после обследования.</p></details>
+      <details><summary>Всегда ли нужна операция?</summary><p>Нет. Часть разрывов закрывают лазером, часть кровоизлияний рассасывается под контролем.</p></details><details><summary>Можно ли лететь в другой город?</summary><p>При отслойке лучше не откладывать. Маршрут подскажем после осмотра в Актау.</p></details><details><summary>Вернётся ли зрение на 100%?</summary><p>Зависит от макулы и срока отслойки. Честный прогноз — после обследования.</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Актау — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Актау.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>

@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/peresadka-rogovitsy-almaty/#webpage",
       "url": "https://asiakoz.com/peresadka-rogovitsy-almaty/",
       "name": "Пересадка роговицы в Алматы — кератопластика | AsiaKoz",
+      "description": "Кератопластика в Алматы: диагностика роговицы, показания к пересадке при кератоконусе, рубцах и дистрофиях. AsiaKoz, Райымбека 176А. Запись WhatsApp.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/clinic-almaty-laser.png",
-      "about": "Пересадка роговицы",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/clinic-almaty-laser.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Пересадка роговицы"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/peresadka-rogovitsy-almaty/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/peresadka-rogovitsy-almaty/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Пересадка роговицы",
           "item": "https://asiakoz.com/peresadka-rogovitsy-almaty/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/almaty/#clinic",
+      "name": "AsiaKoz Алматы",
+      "url": "https://asiakoz.com/almaty/",
+      "telephone": "+77003600180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Алматы, проспект Райымбека, 176А",
+        "addressLocality": "Алматы",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/peresadka-rogovitsy-almaty/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -91,8 +123,39 @@
             "@type": "Answer",
             "text": "Отторжение, инфекция, астигматизм, повторные операции. Это серьёзная хирургия — решение только после диагностики."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Алматы — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Алматы."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/peresadka-rogovitsy-almaty/#procedure",
+      "name": "Пересадка роговицы",
+      "description": "Пересадка роговицы — это не «лазер» и не замена хрусталика. Кератопластику рассматривают при далеко зашедшем кератоконусе, рубцах, дистрофиях и других состояниях, когда оптика роговицы уже не восстановить кросслинкингом или линзами. В Алматы начинаем с топографии, пахиметрии и осмотра хирурга. Донорская ткань, объём операции (сквозная или послойная) и прогноз — только после обследования. Не обещаем «новую идеальную роговицу за один визит».",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -143,6 +206,69 @@
       <p class="hero-address"><b>Адрес:</b> Алматы, проспект Райымбека, 176А · <a class="link" href="/almaty/">Алматы</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.clinic/" target="_blank" rel="noopener">@asiakoz.clinic</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое пересадка роговицы</h2>
+      <p>Пересадка роговицы — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при пересадка роговицы</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Алматы уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Показания</h3>
+          <p class="card-text">Кератоконус, рубцы, дистрофии — не все случаи</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">Топография, толщина, сетчатка, слеза</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Не лазер</h3>
+          <p class="card-text">Это хирургия роговицы, отдельный маршрут</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77003600180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B5%D1%80%D0%B5%D1%81%D0%B0%D0%B4%D0%BA%D0%B0%20%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%D0%B8%D1%86%D1%8B" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Алматы</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/diagnostika-almaty/">Диагностика зрения</a> · <a class="link" href="/uslugi/">Все услуги</a> · <a class="link" href="/doctors/">Врачи</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Обследование</h3><p>Форма роговицы, толщина, прозрачность, глазное дно.</p></div><div class="step-card"><div class="step-num">2</div><h3>Альтернативы</h3><p>Жёсткие линзы, кросслинкинг, ИОЛ — если ещё работают.</p></div><div class="step-card"><div class="step-num">3</div><h3>Показание к пересадке</h3><p>Когда оптика роговицы не восстановить иначе.</p></div><div class="step-card"><div class="step-num">4</div><h3>План</h3><p>Тип кератопластики, сроки, риски отторжения — на консультации в Алматы.</p></div></div>
@@ -178,7 +304,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>Это то же самое, что лазерная коррекция?</summary><p>Нет. Лазер меняет форму здоровой роговицы. Пересадка заменяет повреждённую ткань.</p></details><details><summary>Делают ли пересадку в Актау или Шымкенте?</summary><p>Маршрут по кератопластике — Алматы. Другие филиалы: диагностика и направление.</p></details><details><summary>Откуда донорская роговица?</summary><p>Ткань и логистику обсуждает врач после того, как подтверждены показания. Не публикуем выдуманные сроки банка.</p></details><details><summary>Какие риски?</summary><p>Отторжение, инфекция, астигматизм, повторные операции. Это серьёзная хирургия — решение только после диагностики.</p></details>
+      <details><summary>Это то же самое, что лазерная коррекция?</summary><p>Нет. Лазер меняет форму здоровой роговицы. Пересадка заменяет повреждённую ткань.</p></details><details><summary>Делают ли пересадку в Актау или Шымкенте?</summary><p>Маршрут по кератопластике — Алматы. Другие филиалы: диагностика и направление.</p></details><details><summary>Откуда донорская роговица?</summary><p>Ткань и логистику обсуждает врач после того, как подтверждены показания. Не публикуем выдуманные сроки банка.</p></details><details><summary>Какие риски?</summary><p>Отторжение, инфекция, астигматизм, повторные операции. Это серьёзная хирургия — решение только после диагностики.</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Алматы — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Алматы.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>

@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/kk/deti-aktau/#webpage",
       "url": "https://asiakoz.com/kk/deti-aktau/",
       "name": "Ақтау қаласындағы балалар офтальмологы | AsiaKoz",
+      "description": "Ақтау қаласындағы балалар офтальмологы: профосмотр, миопия, қылилық. Ақтау, 7А шағынауданы, 11/3.",
       "inLanguage": "kk-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/clinic-aktau.png",
-      "about": "Балалар офтальмологиясы",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/clinic-aktau.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Балалар офтальмологиясы"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/kk/deti-aktau/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/kk/deti-aktau/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Қызметтер",
+          "item": "https://asiakoz.com/kk/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Балалар офтальмологиясы",
           "item": "https://asiakoz.com/kk/deti-aktau/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/aktau/#clinic",
+      "name": "AsiaKoz Ақтау",
+      "url": "https://asiakoz.com/aktau/",
+      "telephone": "+77758630180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ақтау, 7А шағынауданы, 11/3",
+        "addressLocality": "Ақтау",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/kk/deti-aktau/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Тексеруден кейін осында немесе желі ішінде жолдаймыз."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "AsiaKoz-қа қалай жазылуға болады?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ақтау филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Алғашқы қабылдау қанша уақыт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Диагностика көлеміне байланысты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Жолдама керек пе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Жоқ. Ақтау филиалына тікелей келуге болады."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/kk/deti-aktau/#procedure",
+      "name": "Балалар офтальмологиясы",
+      "description": "Бала көруін мектепке дейін кейінге қалдырмау керек. Ақтау филиалында өткірлік, рефракция, бинокулярлық және амблиопия тексеріледі.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Мекенжай:</b> Ақтау, 7А шағынауданы, 11/3 · <a class="link" href="/kk/aqtau/">Ақтау</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.aqtau/" target="_blank" rel="noopener">@asiakoz.aqtau</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Балалар офтальмологиясы деген не</h2>
+      <p>Балалар офтальмологиясы — көз ауруы/жағдайы, оны тек тексеруден кейін диагноз қойылады. Интернеттегі жалпы сипаттама нақты емдеу әдісін ауыстырмайды.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Негізгі белгілер</h2>
+      <ul class="symptom-grid"><li>көрудің бұзылуы немесе тұрақсыздығы</li><li>көздің шаршауы, қызару немесе құрғақтық</li><li>жыпылық, ұшқын немесе «ұшқындар»</li><li>бір көзбен қосарланған көру</li><li>жарыққа сезімталдық</li></ul>
+      <p class="section-note">Бұл белгілер басқа көз ауруларында да болуы мүмкін. Диагноз — тек дәрігер тексеруінен кейін.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Қашан дәрігерге жүгіну керек</h2>
+      <p>Көз дәрігеріне жүгіну керек, егер белгілер 2–3 күннен астам сақталса, көру кенет нашарласа немесе бір көздегі өзгеріс ерекше болса. Ақтау филиалында шұғыл тексеру қажеттілігін WhatsApp арқылы нақтылаймыз.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Емдеу әдістері</h2>
+      <p class="section-subtitle">Таңдалған әдіс тексеру нәтижесіне байланысты — барлық опция бәріне көрсетілмейді.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Профосмотр</h3>
+          <p class="card-text">Балабақша мен мектеп алдында</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Миопия</h3>
+          <p class="card-text">Үдеуді бақылау</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Қылилық</h3>
+          <p class="card-text">Ерте диагностика</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Бағалар</h2>
+      <p class="section-subtitle">Баға ориентирлік. Нақты сома диагностикадан кейін.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Көзді тексеру және дәрігер қабылдауы</h3>
+          <p class="price-card__value">20 000 ₸-дан</p>
+          <p class="price-card__text">Нақты зерттеулер тізімі көрсеткіш бойынша.</p>
+        </article></div>
+      <p class="price-note">Көрсетілген баға жария оферта емес.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77758630180?text=%D0%A1%D3%99%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%81%D1%96%D0%B7%20%D0%B1%D0%B5%21%20%D0%91%D0%B0%D0%BB%D0%B0%D0%BB%D0%B0%D1%80%20%D0%BE%D1%84%D1%82%D0%B0%D0%BB%D1%8C%D0%BC%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%D1%81%D1%8B" target="_blank" rel="noopener">WhatsApp-қа жазу</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Неге AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Түрік хирургтер</h3>
+          <p class="card-text">AsiaKoz желісінде тәжірибелі офтальмохирургтер жұмыс істейді.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Диагностика алдымен</h3>
+          <p class="card-text">Емдеу жоспары тексеруден кейін — қысымсыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Түсінікті маршрут</h3>
+          <p class="card-text">Көрсеткіш болмаса операция ұсынбаймыз.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Ақтау филиалы</h3>
+          <p class="card-text">Мекенжай, WhatsApp және дәрігерлер бір бетте.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Байланысты қызметтер</h2>
+      <p><a class="link" href="/kk/kosoglazie/">Қылилық</a> · <a class="link" href="/kk/miopiya-u-detey-almaty/">Балалардағы миопия</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медициналық ескерту:</b> Сайттағы ақпарат таныстыру үшін. Диагноз және емдеу жоспарын тек дәрігер белгілейді.</p>
+      <p>Қарсы көрсеткіштер бар. Маман кеңесін алмай операцияға жазылмаңыз.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Қалай өтеді</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Жасы мен шағым</h3><p>Тақтаны көрмеу, бір көзді жұмып қарау.</p></div><div class="step-card"><div class="step-num">2</div><h3>Тексеру</h3><p>Қажет болса циклоплегиямен рефракция.</p></div><div class="step-card"><div class="step-num">3</div><h3>Жоспар</h3><p>Көзілдірік, бақылау немесе хирургияға жолдау.</p></div><div class="step-card"><div class="step-num">4</div><h3>Қайта қаралу</h3><p>Ақтау филиалында.</p></div></div>
@@ -162,7 +288,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Сұрақ-жауап</h2>
-      <details><summary>Алғашқы тексеру қашан?</summary><p>Нәрестелік және балабақша/мектеп алдында; қылилықта ертерек.</p></details><details><summary>Тамшы ауыра ма?</summary><p>Қысқа уақыт жағымсыз, бірақ жиі қажет.</p></details><details><summary>Балаға операция осында ма?</summary><p>Тексеруден кейін осында немесе желі ішінде жолдаймыз.</p></details>
+      <details><summary>Алғашқы тексеру қашан?</summary><p>Нәрестелік және балабақша/мектеп алдында; қылилықта ертерек.</p></details><details><summary>Тамшы ауыра ма?</summary><p>Қысқа уақыт жағымсыз, бірақ жиі қажет.</p></details><details><summary>Балаға операция осында ма?</summary><p>Тексеруден кейін осында немесе желі ішінде жолдаймыз.</p></details><details><summary>AsiaKoz-қа қалай жазылуға болады?</summary><p>Ақтау филиалының WhatsApp-ына жазыңыз — сайтта форма жоқ.</p></details><details><summary>Алғашқы қабылдау қанша уақыт?</summary><p>Диагностика көлеміне байланысты.</p></details><details><summary>Жолдама керек пе?</summary><p>Жоқ. Ақтау филиалына тікелей келуге болады.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Басқа қалалар мен бағыттар</h2>

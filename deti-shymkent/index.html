@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/deti-shymkent/#webpage",
       "url": "https://asiakoz.com/deti-shymkent/",
       "name": "Детский офтальмолог в Шымкент — проверка зрения, косоглазие | AsiaKoz",
+      "description": "Детский офтальмолог в Шымкент: профосмотр, миопия, астигматизм, косоглазие. Шымкент, улица Байтурсынова, 86/7, мкр. Туран. Запись WhatsApp.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/shymkent-branch.png",
-      "about": "Детская офтальмология",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/shymkent-branch.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Детская офтальмология"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/deti-shymkent/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/deti-shymkent/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Детская офтальмология",
           "item": "https://asiakoz.com/deti-shymkent/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/shymkent/#clinic",
+      "name": "AsiaKoz Шымкент",
+      "url": "https://asiakoz.com/shymkent/",
+      "telephone": "+77080750180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Шымкент, улица Байтурсынова, 86/7, мкр. Туран",
+        "addressLocality": "Шымкент",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/deti-shymkent/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "После осмотра скажем, оперируем здесь или направляем внутри сети."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/deti-shymkent/#procedure",
+      "name": "Детская офтальмология",
+      "description": "Детское зрение нельзя «подождать до школы». В Шымкент смотрим остроту, рефракцию, бинокулярность, исключаем амблиопию. Косоглазие и прогрессирующая миопия требуют графика, а не разовой консультации. Если нужна операция — маршрутизируем к хирургу сети после детского осмотра.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Адрес:</b> Шымкент, улица Байтурсынова, 86/7, мкр. Туран · <a class="link" href="/shymkent/">Шымкент</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.shymkent/" target="_blank" rel="noopener">@asiakoz.shymkent</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое детская офтальмология</h2>
+      <p>Детская офтальмология — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при детская офтальмология</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Шымкент уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Профосмотр</h3>
+          <p class="card-text">Перед садом и школой — не формальная справка</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Миопия</h3>
+          <p class="card-text">Контроль прогрессии, а не только новые очки</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Косоглазие</h3>
+          <p class="card-text">Ранняя диагностика важнее «перерастёт»</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77080750180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D1%84%D1%82%D0%B0%D0%BB%D1%8C%D0%BC%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Шымкент</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/kosoglazie/">Косоглазие</a> · <a class="link" href="/miopiya-u-detey-almaty/">Миопия у детей</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Возраст и жалобы</h3><p>Трудности с доской, прищур, закрывает один глаз.</p></div><div class="step-card"><div class="step-num">2</div><h3>Осмотр</h3><p>Рефракция в условиях циклоплегии — по показаниям.</p></div><div class="step-card"><div class="step-num">3</div><h3>План</h3><p>Очки, наблюдение, окклюзия или направление на хирургию.</p></div><div class="step-card"><div class="step-num">4</div><h3>Контроль</h3><p>Повтор в филиале Шымкент по срокам врача.</p></div></div>
@@ -162,7 +288,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>С какого возраста первый осмотр?</summary><p>Планово — в младенчестве и перед садом/школой; раньше — при косоглазии или семейном риске.</p></details><details><summary>Больно ли капать капли?</summary><p>Неприятно коротко. Для точной рефракции у детей это часто необходимо.</p></details><details><summary>Делают ли операции детям в этом филиале?</summary><p>После осмотра скажем, оперируем здесь или направляем внутри сети.</p></details>
+      <details><summary>С какого возраста первый осмотр?</summary><p>Планово — в младенчестве и перед садом/школой; раньше — при косоглазии или семейном риске.</p></details><details><summary>Больно ли капать капли?</summary><p>Неприятно коротко. Для точной рефракции у детей это часто необходимо.</p></details><details><summary>Делают ли операции детям в этом филиале?</summary><p>После осмотра скажем, оперируем здесь или направляем внутри сети.</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>

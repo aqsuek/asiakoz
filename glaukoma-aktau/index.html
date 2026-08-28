@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/glaukoma-aktau/#webpage",
       "url": "https://asiakoz.com/glaukoma-aktau/",
       "name": "Глаукома в Актау — диагностика давления и лечение | AsiaKoz",
+      "description": "Глаукома в Актау: тонометрия, поля зрения, ОКТ, капли, лазер или операция по стадии. AsiaKoz, Актау, 7А микрорайон, 11/3. Запись WhatsApp.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/clinic-aktau.png",
-      "about": "Глаукома",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/clinic-aktau.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Глаукома"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/glaukoma-aktau/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/glaukoma-aktau/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Глаукома",
           "item": "https://asiakoz.com/glaukoma-aktau/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/aktau/#clinic",
+      "name": "AsiaKoz Актау",
+      "url": "https://asiakoz.com/aktau/",
+      "telephone": "+77758630180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Актау, 7А микрорайон, 11/3",
+        "addressLocality": "Актау",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/glaukoma-aktau/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Если поля или нерв ухудшаются при максимальной терапии."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Актау — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Актау."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/glaukoma-aktau/#procedure",
+      "name": "Глаукома",
+      "description": "Глаукома повреждает зрительный нерв — часто без боли. В Актау измеряем внутриглазное давление, оцениваем диск нерва и поле зрения, при необходимости делаем ОКТ. Лечение ступеньками: капли → лазер → операция, если давление не держится.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Адрес:</b> Актау, 7А микрорайон, 11/3 · <a class="link" href="/aktau/">Актау</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.aqtau/" target="_blank" rel="noopener">@asiakoz.aqtau</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое глаукома</h2>
+      <p>Глаукома — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при глаукома</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Актау уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Не «давление одно число»</h3>
+          <p class="card-text">Смотрим нерв, поля и динамику</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Капли</h3>
+          <p class="card-text">Подбор схемы и контроль, а не бесконечная смена флаконов</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Хирургия</h3>
+          <p class="card-text">Если капель и лазера недостаточно</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77758630180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%93%D0%BB%D0%B0%D1%83%D0%BA%D0%BE%D0%BC%D0%B0" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Актау</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/diagnostika-almaty/">Диагностика</a> · <a class="link" href="/operatsiya-glaukoma-almaty/">Операция при глаукоме</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Диагностика</h3><p>Давление, осмотр нерва, периметрия, ОКТ по показаниям.</p></div><div class="step-card"><div class="step-num">2</div><h3>План</h3><p>Стадия, целевое давление, график визитов в Актау.</p></div><div class="step-card"><div class="step-num">3</div><h3>Терапия</h3><p>Капли; при необходимости — лазерные методы.</p></div><div class="step-card"><div class="step-num">4</div><h3>Операция</h3><p>Когда консервативного контроля мало — обсуждаем хирургию.</p></div></div>
@@ -162,7 +288,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>Можно ли вылечить глаукому навсегда?</summary><p>Чаще это хронический контроль давления, чтобы сохранить зрение.</p></details><details><summary>Почему нельзя пропускать капли?</summary><p>Скачки давления продолжают повреждать нерв — даже если «глаз не болит».</p></details><details><summary>Когда нужна операция?</summary><p>Если поля или нерв ухудшаются при максимальной терапии.</p></details>
+      <details><summary>Можно ли вылечить глаукому навсегда?</summary><p>Чаще это хронический контроль давления, чтобы сохранить зрение.</p></details><details><summary>Почему нельзя пропускать капли?</summary><p>Скачки давления продолжают повреждать нерв — даже если «глаз не болит».</p></details><details><summary>Когда нужна операция?</summary><p>Если поля или нерв ухудшаются при максимальной терапии.</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Актау — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Актау.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>

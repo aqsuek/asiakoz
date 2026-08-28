@@ -29,19 +29,31 @@
   "@graph": [
     {
       "@type": "MedicalWebPage",
+      "@id": "https://asiakoz.com/lazer-shymkent/#webpage",
       "url": "https://asiakoz.com/lazer-shymkent/",
       "name": "Лазерная коррекция зрения в Шымкент — SMILE, Femto-LASIK | AsiaKoz",
+      "description": "Лазерная коррекция зрения в Шымкент: диагностика роговицы, подбор метода SMILE / Femto-LASIK / PRK. В Актау лазерной коррекции нет. Запись WhatsApp AsiaKoz Шымкент.",
       "inLanguage": "ru-KZ",
-      "primaryImageOfPage": "https://asiakoz.com/images/clinic-almaty-laser.png",
-      "about": "Лазерная коррекция",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://asiakoz.com/images/clinic-almaty-laser.png"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Лазерная коррекция"
+      },
       "isPartOf": {
         "@type": "WebSite",
         "name": "AsiaKoz",
         "url": "https://asiakoz.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://asiakoz.com/lazer-shymkent/#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://asiakoz.com/lazer-shymkent/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -52,13 +64,33 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Услуги",
+          "item": "https://asiakoz.com/uslugi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Лазерная коррекция",
           "item": "https://asiakoz.com/lazer-shymkent/"
         }
       ]
     },
     {
+      "@type": "MedicalClinic",
+      "@id": "https://asiakoz.com/shymkent/#clinic",
+      "name": "AsiaKoz Шымкент",
+      "url": "https://asiakoz.com/shymkent/",
+      "telephone": "+77080750180",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Шымкент, улица Байтурсынова, 86/7, мкр. Туран",
+        "addressLocality": "Шымкент",
+        "addressCountry": "KZ"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://asiakoz.com/lazer-shymkent/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -83,8 +115,39 @@
             "@type": "Answer",
             "text": "Рассматриваем ICL или другие варианты, не «продаём лазер всем»."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться в AsiaKoz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится первичный приём?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли направление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент."
+          }
         }
       ]
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://asiakoz.com/lazer-shymkent/#procedure",
+      "name": "Лазерная коррекция",
+      "description": "Лазерная коррекция помогает снизить зависимость от очков при миопии, гиперметропии и астигматизме — но только если роговица и глаз позволяют. В Шымкент сначала полная диагностика: толщина и топография роговицы, сетчатка, сухость. Метод выбирает хирург, не рекламный баннер. В Актау лазерной коррекции нет — этот филиал на сетчатку, катаракту и детский приём.",
+      "procedureType": "https://schema.org/SurgicalProcedure"
     }
   ]
 }
@@ -135,6 +198,69 @@
       <p class="hero-address"><b>Адрес:</b> Шымкент, улица Байтурсынова, 86/7, мкр. Туран · <a class="link" href="/shymkent/">Шымкент</a></p>
       <p>Instagram: <a class="link" href="https://www.instagram.com/asiakoz.shymkent/" target="_blank" rel="noopener">@asiakoz.shymkent</a></p>
     </section>
+    <section class="section" id="what">
+      <h2 class="section-title">Что такое лазерная коррекция</h2>
+      <p>Лазерная коррекция — состояние глаза, диагноз которого ставят только после осмотра. Общее описание в интернете не заменяет индивидуальный план лечения.</p>
+    </section>
+    <section class="section" id="symptoms">
+      <h2 class="section-title">Основные симптомы</h2>
+      <ul class="symptom-grid"><li>снижение или изменение зрения при лазерная коррекция</li><li>усталость, резь, покраснение или сухость глаз</li><li>вспышки, мушки или «пыль» перед глазом</li><li>двоение изображения одним глазом</li><li>повышенная чувствительность к свету</li></ul>
+      <p class="section-note">Эти симптомы могут встречаться и при других заболеваниях. Точный диагноз — после осмотра врача.</p>
+    </section>
+    <section class="section" id="when">
+      <h2 class="section-title">Когда обратиться к врачу</h2>
+      <p>Обратиться к офтальмологу стоит, если симптомы сохраняются более 2–3 дней, зрение ухудшается быстро или изменения заметны в одном глазу. В филиале Шымкент уточним срочность осмотра через WhatsApp.</p>
+    </section>
+    <section class="section" id="methods">
+      <h2 class="section-title">Методы лечения</h2>
+      <p class="section-subtitle">Метод выбирается по результатам обследования — не все варианты показаны каждому пациенту.</p>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Не всем</h3>
+          <p class="card-text">Противопоказания снимает только обследование</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Методы</h3>
+          <p class="card-text">SMILE, Femto-LASIK/LASIK, PRK/LASEK — по роговице</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Актау</h3>
+          <p class="card-text">Лазерной коррекции в Актау нет</p>
+        </article></div>
+    </section>
+    <section class="section" id="price">
+      <h2 class="section-title">Стоимость</h2>
+      <p class="section-subtitle">Цены ориентировочные. Точная сумма — после диагностики.</p>
+      <div class="price-grid">        <article class="price-card">
+          <p class="price-card__label">Диагностика</p>
+          <h3 class="price-card__title">Осмотр и диагностика зрения</h3>
+          <p class="price-card__value">от 20 000 ₸</p>
+          <p class="price-card__text">Точный перечень исследований — по показаниям врача.</p>
+        </article></div>
+      <p class="price-note">Указанная стоимость не является публичной офертой.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://wa.me/77080750180?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9B%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
+    </section>
+    <section class="section" id="why">
+      <h2 class="section-title">Почему AsiaKoz</h2>
+      <div class="why-grid">        <article class="card">
+          <h3 class="card-title">Турецкие хирурги</h3>
+          <p class="card-text">В сети AsiaKoz работают опытные офтальмохирурги.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Сначала диагностика</h3>
+          <p class="card-text">План лечения — после обследования, без давления.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Понятный маршрут</h3>
+          <p class="card-text">Операцию предлагаем только по показаниям.</p>
+        </article>        <article class="card">
+          <h3 class="card-title">Филиал в Шымкент</h3>
+          <p class="card-text">Адрес, WhatsApp и врачи — на одной странице.</p>
+        </article></div>
+    </section>
+    <section class="section" id="related-services">
+      <h2 class="section-title">Связанные услуги</h2>
+      <p><a class="link" href="/diagnostika-almaty/">Диагностика зрения</a> · <a class="link" href="/uslugi/">Все услуги</a> · <a class="link" href="/doctors/">Врачи</a></p>
+    </section>
+    <section class="med-trust">
+      <p><b>Медицинское уведомление:</b> Информация на сайте носит ознакомительный характер. Диагноз и план лечения определяет только врач.</p>
+      <p>Имеются противопоказания. Не записывайтесь на операцию без консультации специалиста.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Как это проходит</h2>
       <div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Диагностика</h3><p>Проверяем, можно ли оперировать лазерным методом именно ваш глаз.</p></div><div class="step-card"><div class="step-num">2</div><h3>Метод</h3><p>Хирург объясняет, почему SMILE, Femto или поверхность — и когда лучше ICL.</p></div><div class="step-card"><div class="step-num">3</div><h3>Операция</h3><p>В день коррекции — по записи филиала Шымкент.</p></div><div class="step-card"><div class="step-num">4</div><h3>Контроль</h3><p>Осмотры на следующий день и по графику врача.</p></div></div>
@@ -162,7 +288,7 @@
     </section>
     <section class="section faq">
       <h2 class="section-title">Вопросы и ответы</h2>
-      <details><summary>Делают ли лазер в Актау?</summary><p>Нет. Лазерная коррекция — в Алматы и Шымкенте. Актау: катаракта, сетчатка, дети.</p></details><details><summary>С какого возраста можно?</summary><p>После стабилизации рефракции и при отсутствии противопоказаний — решает врач.</p></details><details><summary>Что если роговица тонкая?</summary><p>Рассматриваем ICL или другие варианты, не «продаём лазер всем».</p></details>
+      <details><summary>Делают ли лазер в Актау?</summary><p>Нет. Лазерная коррекция — в Алматы и Шымкенте. Актау: катаракта, сетчатка, дети.</p></details><details><summary>С какого возраста можно?</summary><p>После стабилизации рефракции и при отсутствии противопоказаний — решает врач.</p></details><details><summary>Что если роговица тонкая?</summary><p>Рассматриваем ICL или другие варианты, не «продаём лазер всем».</p></details><details><summary>Как записаться в AsiaKoz?</summary><p>Напишите в WhatsApp филиала Шымкент — без формы на сайте. Укажите жалобу и удобное время.</p></details><details><summary>Сколько длится первичный приём?</summary><p>Зависит от объёма диагностики. Базовый осмотр быстрее, расширенное обследование — дольше.</p></details><details><summary>Нужно ли направление?</summary><p>Нет. Можно обратиться напрямую в клинику AsiaKoz в Шымкент.</p></details>
     </section>
     <section class="section">
       <h2 class="section-title">Другие филиалы и направления</h2>
