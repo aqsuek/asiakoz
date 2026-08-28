@@ -197,6 +197,7 @@ export const translations = {
           id: "mehmet-esat-teker",
           name: "Мехмет Есат Текер",
           image: "images/doctors/mehmet-esat-teker.png",
+          profileUrl: "/doctor-mehmet-esat-teker/",
           branch: "Алматы · Шымкент · Азиякөз",
           role: "Жетекші офтальмолог және хирург",
           experience:
@@ -246,6 +247,7 @@ export const translations = {
           id: "ali-keskin",
           name: "Али Кескин",
           image: "images/doctors/ali-keskin.png",
+          profileUrl: "/doctor-ali-keskin/",
           branch: "Ақтау · Шымкент · Азиякөз",
           role: "Жетекші офтальмолог және хирург",
           experience:
@@ -278,6 +280,7 @@ export const translations = {
           id: "kadyr-kyrboga",
           name: "Қадыр Қырбога",
           image: "images/doctors/kadyr-kyrboga.png",
+          profileUrl: "/doctor-kadyr-kyrboga/",
           branch: "Шымкент · AsiaKoz",
           role: "Білікті офтальмохирург",
           experience: "20+ жыл · 20 000+ операция",
@@ -576,6 +579,7 @@ export const translations = {
           id: "mehmet-esat-teker",
           name: "Мехмет Есат Текер",
           image: "images/doctors/mehmet-esat-teker.png",
+          profileUrl: "/doctor-mehmet-esat-teker/",
           branch: "Алматы · Шымкент · Азиякөз",
           role: "Ведущий офтальмолог и хирург",
           experience:
@@ -625,6 +629,7 @@ export const translations = {
           id: "ali-keskin",
           name: "Али Кескин",
           image: "images/doctors/ali-keskin.png",
+          profileUrl: "/doctor-ali-keskin/",
           branch: "Актау · Шымкент · Азиякөз",
           role: "Ведущий офтальмолог и хирург",
           experience:
@@ -657,6 +662,7 @@ export const translations = {
           id: "kadyr-kyrboga",
           name: "Кадыр Кырбога",
           image: "images/doctors/kadyr-kyrboga.png",
+          profileUrl: "/doctor-kadyr-kyrboga/",
           branch: "Шымкент · AsiaKoz",
           role: "Квалифицированный офтальмохирург",
           experience: "20+ лет · 20 000+ операций",

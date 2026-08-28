@@ -1,5 +1,29 @@
 const BASE = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
 
+/** Canonical static doctor profile pages (SEO). */
+export const DOCTOR_PROFILE_PATHS = {
+  "mehmet-esat-teker": {
+    ru: "/doctor-mehmet-esat-teker/",
+    kz: "/kk/doctor-mehmet-esat-teker/",
+  },
+  "orel-talip": { ru: "/doctor-orel/", kz: "/kk/doctor-orel/" },
+  aliya: { ru: "/doctor-aliya/", kz: "/kk/doctor-aliya/" },
+  musay: { ru: "/doctor-musay/", kz: "/kk/doctor-musay/" },
+  "ali-keskin": { ru: "/doctor-ali-keskin/", kz: "/kk/doctor-ali-keskin/" },
+  "erol-joshkun": { ru: "/doctor-erol/", kz: "/kk/doctor-erol/" },
+  "nazgul-sagyndykova": { ru: "/doctor-nazgul/", kz: "/kk/doctor-nazgul/" },
+  "kadyr-kyrboga": {
+    ru: "/doctor-kadyr-kyrboga/",
+    kz: "/kk/doctor-kadyr-kyrboga/",
+  },
+};
+
+export function doctorProfileUrl(id, lang = "ru") {
+  const entry = DOCTOR_PROFILE_PATHS[id];
+  if (!entry) return null;
+  return lang === "kz" ? entry.kz : entry.ru;
+}
+
 function isKkPath(pathname = "") {
   return pathname === "/kk" || pathname.startsWith("/kk/");
 }
@@ -41,9 +65,9 @@ export function homeUrl(hash = "") {
 }
 
 export function doctorUrl(id) {
-  const prefix = kkPrefix();
-  if (!BASE) return `${prefix}/doctor/${id}/`;
-  return `${prefix}${BASE}/doctor/${id}/`;
+  const lang =
+    typeof window !== "undefined" && isKkPath(window.location.pathname) ? "kz" : "ru";
+  return doctorProfileUrl(id, lang) || "/doctors/";
 }
 
 export function newsUrl() {

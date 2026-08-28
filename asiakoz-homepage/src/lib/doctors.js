@@ -1,3 +1,5 @@
+import { doctorProfileUrl } from "./routes";
+
 let cache = null;
 let cacheTs = 0;
 const TTL = 60_000;
@@ -5,10 +7,13 @@ const TTL = 60_000;
 export function localizeDoctor(raw, lang = "ru") {
   if (!raw) return null;
   const ru = lang === "ru";
+  const profileUrl = ru
+    ? raw.profileUrl || doctorProfileUrl(raw.id, "ru")
+    : raw.profileUrlKz || doctorProfileUrl(raw.id, "kz");
   return {
     id: raw.id,
     cities: raw.cities || [],
-    profileUrl: raw.profileUrl || null,
+    profileUrl,
     image: raw.image || "",
     name: ru ? raw.nameRu : raw.nameKz || raw.nameRu,
     branch: ru ? raw.branchRu : raw.branchKz || raw.branchRu,
