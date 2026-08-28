@@ -70,7 +70,8 @@ for post in posts:
     for rel in (f"news/{slug}", f"kk/news/{slug}"):
         dest_dir = root / rel
         dest_dir.mkdir(parents=True, exist_ok=True)
-        (dest_dir / "index.html").write_text(shell, encoding="utf-8")
+        shell_src = root / "kk" / "index.html" if rel.startswith("kk/") else root / "index.html"
+        (dest_dir / "index.html").write_text(shell_src.read_text(encoding="utf-8"), encoding="utf-8")
 print(f"News SPA shells: {len(posts)} posts")
 PY
 fi
@@ -192,9 +193,9 @@ PY
 # Append compliance.js if missing
 if ! grep -q 'compliance.js' "$ROOT/index.html"; then
   if [[ "$(uname)" == "Darwin" ]]; then
-    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=11"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
+    sed -i '' 's|</body>|  <script src="/js/compliance.js?v=12"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
   else
-    sed -i 's|</body>|  <script src="/js/compliance.js?v=11"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
+    sed -i 's|</body>|  <script src="/js/compliance.js?v=12"></script>\n  <script src="/js/conversion.js?v=1"></script>\n</body>|' "$ROOT/index.html"
   fi
 fi
 
@@ -205,10 +206,10 @@ echo "URL: https://asiakoz.com/"
 python3 "$ROOT/scripts/build-seo.py"
 
 # Recopy news SPA shells after homepage SEO so /news/ still loads the same app
-if [[ -f "$ROOT/index.html" ]]; then
+if [[ -f "$ROOT/index.html" && -f "$ROOT/kk/index.html" ]]; then
   mkdir -p "$ROOT/news" "$ROOT/kk/news"
   cp "$ROOT/index.html" "$ROOT/news/index.html"
-  cp "$ROOT/index.html" "$ROOT/kk/news/index.html"
+  cp "$ROOT/kk/index.html" "$ROOT/kk/news/index.html"
   if [[ -f "$ROOT/data/posts.json" ]]; then
     python3 - "$ROOT/data/posts.json" "$ROOT/index.html" <<'PY'
 import json
@@ -226,7 +227,8 @@ for post in posts:
     for rel in (f"news/{slug}", f"kk/news/{slug}"):
         dest_dir = root / rel
         dest_dir.mkdir(parents=True, exist_ok=True)
-        (dest_dir / "index.html").write_text(shell, encoding="utf-8")
+        shell_src = root / "kk" / "index.html" if rel.startswith("kk/") else root / "index.html"
+        (dest_dir / "index.html").write_text(shell_src.read_text(encoding="utf-8"), encoding="utf-8")
 print(f"News SPA shells refreshed: {len(posts)} posts")
 PY
   fi

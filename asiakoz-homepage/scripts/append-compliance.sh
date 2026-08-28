@@ -15,5 +15,5 @@ append_before_body() {
   fi
 }
 
-append_before_body '<script src="/js/compliance.js?v=11"></script>'
+append_before_body '<script src="/js/compliance.js?v=12"></script>'
 append_before_body '<script src="/js/conversion.js?v=1"></script>'

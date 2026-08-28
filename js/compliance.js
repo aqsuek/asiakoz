@@ -213,7 +213,13 @@
   }
 
 
+  function isSpaPage() {
+    return Boolean(document.getElementById("root"));
+  }
+
+  /** Static HTML only — React SPA hides phone CTAs via contactPolicy. */
   function enforceWhatsAppOnly() {
+    if (isSpaPage()) return;
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.remove();
     });
@@ -325,8 +331,13 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    enforceWhatsAppOnly();
-    new MutationObserver(enforceWhatsAppOnly).observe(document.documentElement, { childList: true, subtree: true });
+    if (!isSpaPage()) {
+      enforceWhatsAppOnly();
+      new MutationObserver(enforceWhatsAppOnly).observe(document.documentElement, {
+        childList: true,
+        subtree: true,
+      });
+    }
     initSiteChrome();
     attachConsentToForms();
     injectCookieBanner();

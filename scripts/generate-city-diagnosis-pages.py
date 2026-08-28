@@ -915,7 +915,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
       </div>
     </footer>
   </div>
-  <script src="/js/compliance.js?v=11"></script>
+  <script src="/js/compliance.js?v=12"></script>
   <script src="/js/conversion.js?v=1"></script>
 </body>
 </html>
