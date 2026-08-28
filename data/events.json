@@ -6021,5 +6021,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtcew494-6q6k09c9"
+  },
+  {
+    "id": "1787889218582-dl70fg",
+    "ts": 1787889218582,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtcf27wd-gqan18n9",
+    "referrer": "https://www.google.com/"
   }
 ]
