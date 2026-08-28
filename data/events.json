@@ -6002,5 +6002,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtcew494-6q6k09c9"
+  },
+  {
+    "id": "1787888965244-i4xc11",
+    "ts": 1787888965244,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtcew494-6q6k09c9",
+    "button_location": "service_modal"
   }
 ]
