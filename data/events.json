@@ -7164,5 +7164,15 @@
     "language": "ru",
     "session_id": "mte8eagi-5mk2u8xf",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1787999425130-vgpvzx",
+    "ts": 1787999425130,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mte8eagi-5mk2u8xf",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
