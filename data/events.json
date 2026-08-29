@@ -7154,5 +7154,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1787999116832-zaxtar",
+    "ts": 1787999116832,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mte8eagi-5mk2u8xf",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
