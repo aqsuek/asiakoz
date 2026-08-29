@@ -7282,5 +7282,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1788011728442-afwjwi",
+    "ts": 1788011728442,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mteg06st-eshfube0",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
