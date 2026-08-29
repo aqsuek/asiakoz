@@ -7142,5 +7142,17 @@
     "language": "ru",
     "session_id": "mte7ws3w-ohnasui1",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1787998929828-ebayxn",
+    "ts": 1787998929828,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mte8dwsj-c6hyt9qm",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
