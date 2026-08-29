@@ -7270,5 +7270,17 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1788008842067-j0e1a4",
+    "ts": 1788008842067,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtee8c2o-u3i5pomi",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/news/"
   }
 ]
