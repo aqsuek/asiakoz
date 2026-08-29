@@ -7246,5 +7246,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtdm683l-xlb51onq"
+  },
+  {
+    "id": "1788008758967-bibfmv",
+    "ts": 1788008758967,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtee8c2o-u3i5pomi",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacPBdbxzfZLgdVOY-nkykfOUmLo1e_k0mjnwg0tKeubuARolrsEhAWaJMf4Ww_aem_s5GabiwGGRcCUdbAJqcvkQ"
   }
 ]
