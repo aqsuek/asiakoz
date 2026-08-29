@@ -7445,5 +7445,14 @@
     "language": "ru",
     "session_id": "mteviv9o-dr20kl5k",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788038147262-sngpdm",
+    "ts": 1788038147262,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtevqho3-onmkvi22"
   }
 ]
