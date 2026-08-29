@@ -7174,5 +7174,17 @@
     "language": "ru",
     "session_id": "mte8eagi-5mk2u8xf",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1788001175157-01yo1x",
+    "ts": 1788001175157,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mte9przw-q3xih4js",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
