@@ -8141,5 +8141,15 @@
     "language": "ru",
     "session_id": "mtg41ke3-6ifz4ls7",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1788114041594-msgi2h",
+    "ts": 1788114041594,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtg4ws6v-hqk85ys5",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
