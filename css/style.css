@@ -999,7 +999,7 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(180deg, rgba(0, 169, 193, 0.12) 0%, var(--accent-soft) 50%, #fff 100%) !important;
 }
 .doctor-photo-wrap img,
-.lp-doctor-photo img {
+.lp-doctor-card:not(.surgeon-featured) .lp-doctor-photo img {
   object-fit: contain !important;
   object-position: center bottom !important;
 }
@@ -1494,8 +1494,31 @@ a { color: inherit; text-decoration: none; }
 .surgeon-featured .lp-doctor-photo {
   aspect-ratio: 3 / 4;
   min-height: 0;
+  min-width: 0;
   height: auto;
   align-self: stretch;
+  overflow: hidden;
+}
+.surgeon-featured .lp-doctor-body {
+  min-width: 0;
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.surgeon-featured .lp-doctor-body h3 {
+  font-size: 17px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+.surgeon-featured .lp-doctor-body .spec {
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.surgeon-featured .lp-doctor-body .card-text {
+  font-size: 13px;
+  line-height: 1.5;
 }
 .surgeon-grid .surgeon-featured .lp-doctor-photo img,
 .surgeon-featured .lp-doctor-photo img {
@@ -1645,7 +1668,28 @@ a { color: inherit; text-decoration: none; }
   .surgeon-grid,
   .iol-compare,
   .why-grid { grid-template-columns: 1fr; }
-  .surgeon-featured { grid-template-columns: 120px minmax(0, 1fr); }
+  .surgeon-featured { grid-template-columns: 112px minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .surgeon-featured {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: none;
+  }
+  .surgeon-featured .lp-doctor-photo {
+    aspect-ratio: 16 / 10;
+    max-height: 220px;
+    width: 100%;
+  }
+  .surgeon-featured .lp-doctor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    object-position: center 18% !important;
+  }
+  .surgeon-featured .lp-doctor-body {
+    padding: 16px;
+  }
 }
 @media (max-width: 560px) {
   .hero-facts,

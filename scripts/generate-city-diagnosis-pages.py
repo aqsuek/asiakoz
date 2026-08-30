@@ -1009,7 +1009,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
   <meta property="og:image" content="{SITE}{image}" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20260828c" />
+  <link rel="stylesheet" href="/css/style.css?v=20260830a" />
   <script type="application/ld+json">
 {schema}
   </script>
