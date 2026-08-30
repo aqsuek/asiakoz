@@ -7560,5 +7560,15 @@
     "language": "ru",
     "session_id": "mtfdw4xs-lv2b6hjh",
     "referrer": "https://yandex.ru/"
+  },
+  {
+    "id": "1788069428521-gityeh",
+    "ts": 1788069428521,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtfecss4-7d4pm19m",
+    "referrer": "https://www.google.com/"
   }
 ]
