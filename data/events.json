@@ -8121,5 +8121,15 @@
     "language": "ru",
     "session_id": "mtg0or20-89gsg8eg",
     "referrer": "https://asiakoz.com/uslugi/"
+  },
+  {
+    "id": "1788107121960-4iqfpc",
+    "ts": 1788107121960,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtg0or20-89gsg8eg",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
