@@ -7704,5 +7704,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788082094091-gjo1qw",
+    "ts": 1788082094091,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtflwd4k-htojheym",
+    "referrer": "https://asiakoz.com/lazer-almaty/"
   }
 ]
