@@ -7849,5 +7849,16 @@
     "session_id": "mtfphi6d-r6t3lao4",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788088246647-q4nftd",
+    "ts": 1788088246647,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtfphi6d-r6t3lao4",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
