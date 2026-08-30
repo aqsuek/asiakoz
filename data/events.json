@@ -7881,5 +7881,15 @@
     "session_id": "mtfcwscp-qug7fofs",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788088372438-13fgrb",
+    "ts": 1788088372438,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtfpmtjv-5c9nu50c",
+    "referrer": "https://www.google.com/"
   }
 ]
