@@ -7860,5 +7860,15 @@
     "session_id": "mtfphi6d-r6t3lao4",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788088295027-j9v2ys",
+    "ts": 1788088295027,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtfcwscp-qug7fofs",
+    "referrer": "https://www.google.com/"
   }
 ]
