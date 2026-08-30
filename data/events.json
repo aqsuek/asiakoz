@@ -7870,5 +7870,16 @@
     "language": "ru",
     "session_id": "mtfcwscp-qug7fofs",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788088323874-ofwv3u",
+    "ts": 1788088323874,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtfcwscp-qug7fofs",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
