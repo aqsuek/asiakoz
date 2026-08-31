@@ -8504,5 +8504,15 @@
     "language": "kk",
     "session_id": "mtgtfe2g-w9m0sfml",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788155326649-nf0ave",
+    "ts": 1788155326649,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtgthzaf-hnzvl5xt",
+    "referrer": "https://www.google.com/"
   }
 ]
