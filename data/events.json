@@ -8713,5 +8713,15 @@
     "language": "ru",
     "session_id": "mtgwf1v2-zctbmunb",
     "referrer": "https://asiakoz.com/almaty/"
+  },
+  {
+    "id": "1788160453013-dz7exr",
+    "ts": 1788160453013,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtgwju5e-2tv3utuo",
+    "referrer": "https://www.google.com/"
   }
 ]
