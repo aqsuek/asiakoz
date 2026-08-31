@@ -8606,5 +8606,15 @@
     "language": "ru",
     "session_id": "mtcuk0xk-moyoanjj",
     "referrer": "https://asiakoz.com/kk/almaty/"
+  },
+  {
+    "id": "1788157250817-la2so4",
+    "ts": 1788157250817,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtgun50s-9jhta44f",
+    "referrer": "https://asiakoz.com/kk/katarakta-almaty/"
   }
 ]
