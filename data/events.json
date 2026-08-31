@@ -8288,5 +8288,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788142898458-8fdfdx",
+    "ts": 1788142898458,
+    "event": "whatsapp_click",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtgm1wug-9xa1t4p8",
+    "button_location": "mid_page_cta",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJmZGlkFlDYrlM_OQkoh0CpjlWCaDFmHUA4cQ9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafUd8vVAUw7Q3a-jg9vpv8cgX7PzjgKNWIb7iS5Wy5e4sOdkY_FdBtKgaKjKg_aem_SeHrkUQ16sMHylNUWYWrjg"
   }
 ]
