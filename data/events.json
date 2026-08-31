@@ -8752,5 +8752,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtgwxymg-gmuxipak"
+  },
+  {
+    "id": "1788161138184-f4ro1f",
+    "ts": 1788161138184,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtgwxymg-gmuxipak",
+    "referrer": "https://asiakoz.com/katarakta-almaty/"
   }
 ]
