@@ -9139,5 +9139,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mth03vbr-f3vuhw79"
+  },
+  {
+    "id": "1788191369150-9jg74b",
+    "ts": 1788191369150,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mthewkn9-k167qksm"
   }
 ]
