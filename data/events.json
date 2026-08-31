@@ -9215,5 +9215,15 @@
     "language": "ru",
     "session_id": "mthmaxbc-xfrd0rq2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788203781842-fkees3",
+    "ts": 1788203781842,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "tr-TR",
+    "session_id": "mthmaxbc-xfrd0rq2",
+    "referrer": "https://www.google.com/"
   }
 ]
