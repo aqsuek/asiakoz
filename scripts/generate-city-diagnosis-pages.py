@@ -645,6 +645,13 @@ try:
 except ImportError:
     pass
 
+try:
+    from kk_almaty_hub_overrides import KK_ALMATY_HUB_OVERRIDES  # noqa: E402
+
+    DIAGNOSES.update(KK_ALMATY_HUB_OVERRIDES)
+except ImportError:
+    pass
+
 
 def page_url(dx_id: str, city: str, lang: str) -> str:
     folder = DIAGNOSES[dx_id]["folder"](city)
@@ -1098,14 +1105,15 @@ def main() -> None:
     for dx_id, dx in DIAGNOSES.items():
         for city in dx["cities"]:
             for lang in ("ru", "kk"):
-                if city in dx.get("skip_write", []) and dx_id != "peresadka-rogovitsy":
+                if city in dx.get("skip_write", []) and lang == "ru":
                     continue
                 folder = dx["folder"](city)
                 dest = ROOT / ("kk" if lang == "kk" else "") / folder / "index.html"
-                if lang == "ru":
-                    dest = ROOT / folder / "index.html"
                 dest.parent.mkdir(parents=True, exist_ok=True)
-                dest.write_text(render_page(dx_id, city, lang), encoding="utf-8")
+                html = render_page(dx_id, city, lang)
+                if lang == "kk":
+                    html = html.rstrip() + "\n<!-- kk-generated -->\n"
+                dest.write_text(html, encoding="utf-8")
                 written += 1
                 print(f"write: {dest.relative_to(ROOT)}")
 

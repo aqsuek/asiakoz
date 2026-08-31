@@ -47,9 +47,6 @@ KK_PHRASES: list[tuple[str, str]] = [
     ("Отзывы", "Пікірлер"),
     ("Наши врачи", "Біздің дәрігерлер"),
     ("Актау", "Ақтау"),
-    ("в Алматы", "Алматыда"),
-    ("в Актау", "Ақтауда"),
-    ("в Шымкенте", "Шымкентте"),
     ("Косоглазие", "Қылилық"),
     ("Лазерная коррекция", "Лазерлік түзету"),
     ("Подробнее", "Толығырақ"),
@@ -60,12 +57,85 @@ KK_PHRASES: list[tuple[str, str]] = [
 ]
 
 
+# Kazakh phrases that correctly use «Алматыда» / «Ақтауда» / «Шымкентте» — do not revert.
+_KK_CITY_PROTECT: tuple[str, ...] = (
+    "Алматыда кім емдейді?",
+    "Алматыдағы",
+    "Алматыда топография",
+    "Лазерлік түзету — Алматыда",
+    "Ақтауда лазер",
+    "Ақтау және Шымкентте",
+    "Шымкенттегі",
+)
+
+HANDCRAFTED_KK_SLUGS = frozenset({"otzyvy-asiakoz-almaty"})
+
+KK_OWNED_MARKERS = (
+    "<!-- kk-generated -->",
+    "<!-- news-generated -->",
+    "<!-- kk-doctor-generated -->",
+)
+
+
+def _patch_lang_switch(html: str, rel_s: str) -> str:
+    from lang_switch import patch_lang_switch
+
+    return patch_lang_switch(html, rel_s)
+
+
+def _skip_mirror(rel_s: str) -> bool:
+    try:
+        from kk_hub_slugs import GENERATOR_KK_SLUGS
+    except ImportError:
+        return False
+    return rel_s in GENERATOR_KK_SLUGS
+
+
+def revert_ru_hybrid_city_locatives(html: str) -> str:
+    """Undo broken «в Алматы» → «Алматыда» in Russian kk mirror copy."""
+    placeholders: list[str] = []
+
+    for needle in _KK_CITY_PROTECT:
+        while needle in html:
+            idx = html.index(needle)
+            placeholders.append(needle)
+            token = f"@@CITYPH{len(placeholders) - 1}@@"
+            html = html[:idx] + token + html[idx + len(needle) :]
+
+    html = html.replace("Алматыда", "в Алматы")
+    html = html.replace("Ақтауда", "в Актау")
+    html = html.replace("Шымкентте", "в Шымкенте")
+
+    for i, ph in enumerate(placeholders):
+        html = html.replace(f"@@CITYPH{i}@@", ph)
+    return html
+
+
+def fix_stale_kk_hybrid_locatives() -> int:
+    count = 0
+    for path in sorted((ROOT / "kk").rglob("index.html")):
+        html = path.read_text(encoding="utf-8")
+        fixed = revert_ru_hybrid_city_locatives(html)
+        if fixed != html:
+            path.write_text(fixed, encoding="utf-8")
+            count += 1
+    if count:
+        print(f"kk hybrid city locatives fixed: {count}")
+    return count
+
+
 def should_mirror(rel_s: str, html: str) -> bool:
     if not rel_s or rel_s.startswith("kk/"):
+        return False
+    if _skip_mirror(rel_s):
+        return False
+    if rel_s in HANDCRAFTED_KK_SLUGS:
         return False
     kk_path = ROOT / "kk" / rel_s / "index.html"
     if kk_path.exists():
         kk_html = kk_path.read_text(encoding="utf-8", errors="ignore")
+        if any(m in kk_html for m in KK_OWNED_MARKERS):
+            return False
         if '"@type": "FAQPage"' in kk_html and 'lang="kk"' in kk_html:
             return False
     if any(rel_s.startswith(p) for p in STATIC_SKIP_PREFIXES):
@@ -85,10 +155,20 @@ def localize_html(html: str) -> str:
     return html
 
 
+STATIC_ROOT_ASSETS = frozenset({
+    "favicon.ico",
+    "favicon.png",
+    "apple-touch-icon.png",
+    "site.webmanifest",
+})
+
+
 def fix_internal_links(html: str) -> str:
     def repl(m: re.Match) -> str:
         path = m.group(1)
         if path.startswith(("kk/", "http", "#", "tel:", "mailto:", "images/", "css/", "js/")):
+            return m.group(0)
+        if path in STATIC_ROOT_ASSETS:
             return m.group(0)
         return f'href="/kk/{path}"'
 
@@ -116,6 +196,10 @@ def sync_kk_static_mirrors() -> int:
         kh = set_canonical(kh, kk_url)
         kh = inject_hreflang(kh, ru_url, kk_url)
         kh = fix_internal_links(kh)
+        kh = _patch_lang_switch(kh, f"kk/{rel_s}")
+        from lang_switch import patch_kk_static_chrome
+
+        kh = patch_kk_static_chrome(kh, f"kk/{rel_s}")
         kh = re.sub(
             r'(property="og:url" content=")[^"]*(")',
             rf"\1{kk_url}\2",
@@ -164,4 +248,5 @@ def patch_ru_hreflang() -> int:
 
 if __name__ == "__main__":
     sync_kk_static_mirrors()
+    fix_stale_kk_hybrid_locatives()
     patch_ru_hreflang()

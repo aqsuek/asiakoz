@@ -1191,16 +1191,25 @@ def noindex_doctor_spa_shells() -> None:
             continue
         html = path.read_text(encoding="utf-8")
         html = ensure_robots(html, "noindex, follow")
-        html = set_canonical(html, canonical)
+        is_kk_shell = rel.startswith("kk/")
+        target = canonical
+        if is_kk_shell:
+            parsed = canonical.replace(SITE, "").rstrip("/")
+            target = f"{SITE}/kk{parsed}/"
+            html = set_lang(html, "kk")
+            ru_url = canonical
+            kk_url = target
+            html = inject_hreflang(html, ru_url, kk_url)
+        html = set_canonical(html, target)
         html = re.sub(
             r'(property="og:url" content=")[^"]*(")',
-            rf"\1{canonical}\2",
+            rf"\1{target}\2",
             html,
             count=1,
             flags=re.I,
         )
         path.write_text(html, encoding="utf-8")
-        print(f"doctor spa noindex: /{rel}/ → {canonical}")
+        print(f"doctor spa noindex: /{rel}/ → {target}")
 
 
 def apply_url_merges() -> None:
@@ -1307,7 +1316,18 @@ def main() -> None:
     ensure_doctor_spa_shells()
     noindex_doctor_spa_shells()
     patch_doctor_profile_pages()
-    sync_kk_doctor_static_pages()
+
+    mirror_script = ROOT / "scripts" / "sync-kk-static-mirrors.py"
+    if mirror_script.exists():
+        subprocess.check_call([sys.executable, str(mirror_script)], cwd=str(ROOT))
+
+    news_script = ROOT / "scripts" / "render-news-pages.py"
+    if news_script.exists():
+        subprocess.check_call([sys.executable, str(news_script)], cwd=str(ROOT))
+
+    kk_doctor_script = ROOT / "scripts" / "render-doctor-kk-pages.py"
+    if kk_doctor_script.exists():
+        subprocess.check_call([sys.executable, str(kk_doctor_script)], cwd=str(ROOT))
 
     # RU SPA shells
     patch_spa_shell(ROOT / "index.html", "home", "ru", None, f"{SITE}/", f"{SITE}/kk/")
@@ -1362,6 +1382,16 @@ def main() -> None:
     mirror_script = ROOT / "scripts" / "sync-kk-static-mirrors.py"
     if mirror_script.exists():
         subprocess.check_call([sys.executable, str(mirror_script)], cwd=str(ROOT))
+
+    lang_script = ROOT / "scripts" / "lang_switch.py"
+    if lang_script.exists():
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location("lang_switch", lang_script)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        mod.patch_all_lang_switches()
+
     restyle_static_pages()
     normalize_og_locale()
     noindex_legacy_root_html()

@@ -17,6 +17,7 @@ DX_CATEGORY: dict[str, str] = {
     "diabeticheskiy-otek-makuly": "retina",
     "makula": "retina",
     "lazernaya-koagulyatsiya": "retina",
+    "srochnye-simptomy": "retina",
     "vitrektomiya": "retina",
     "glaukoma": "glaucoma",
     "operatsiya-glaukoma": "glaucoma",

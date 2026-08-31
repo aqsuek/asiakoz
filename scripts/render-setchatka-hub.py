@@ -312,12 +312,8 @@ def main() -> None:
     ru_out = insert_treatment_table(ru_out, "ru")
     (ROOT / "setchatka-almaty" / "index.html").write_text(ru_out, encoding="utf-8")
 
-    kk_out = make_kk_from_ru(ru_out)
-    kk_out = insert_treatment_table(kk_out, "kk")
-    (ROOT / "kk" / "setchatka-almaty" / "index.html").write_text(kk_out, encoding="utf-8")
-
     print(f"RU: {len(ru_out.splitlines())} lines -> setchatka-almaty/index.html")
-    print(f"KK: {len(kk_out.splitlines())} lines -> kk/setchatka-almaty/index.html")
+    print("KK: skipped (generate-city-diagnosis-pages)")
 
 
 if __name__ == "__main__":

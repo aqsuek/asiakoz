@@ -301,6 +301,9 @@ def make_kk_from_ru(ru_html: str, slug: str) -> str:
         count=1,
         flags=re.DOTALL,
     )
+    from lang_switch import patch_kk_static_chrome
+
+    kh = patch_kk_static_chrome(kh, f"kk/{slug}")
     return kh
 
 
@@ -459,5 +462,10 @@ def render_hub(cfg: HubConfig, source: Path | None = None) -> tuple[str, str]:
     dest_ru.parent.mkdir(parents=True, exist_ok=True)
     dest_kk.parent.mkdir(parents=True, exist_ok=True)
     dest_ru.write_text(ru_out, encoding="utf-8")
-    dest_kk.write_text(kk_out, encoding="utf-8")
+    try:
+        from kk_hub_slugs import GENERATOR_KK_SLUGS
+    except ImportError:
+        GENERATOR_KK_SLUGS = frozenset()
+    if cfg.slug not in GENERATOR_KK_SLUGS:
+        dest_kk.write_text(kk_out, encoding="utf-8")
     return ru_out, kk_out
