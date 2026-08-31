@@ -9088,5 +9088,17 @@
     "language": "ru",
     "session_id": "mthax9cr-zpyt9ua8",
     "referrer": "https://asiakoz.com/uslugi/"
+  },
+  {
+    "id": "1788186594209-xl4a8l",
+    "ts": 1788186594209,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mthc426d-rkt28rvs",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
