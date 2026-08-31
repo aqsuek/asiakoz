@@ -9100,5 +9100,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788189090150-bw7ewb",
+    "ts": 1788189090150,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mthdljwc-dxcdup7r",
+    "button_location": "hero",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
