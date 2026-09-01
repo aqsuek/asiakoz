@@ -9741,5 +9741,15 @@
     "language": "tr",
     "session_id": "mtihtu67-4cd058zp",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788257016210-sfja8e",
+    "ts": 1788257016210,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "tr",
+    "session_id": "mtihtu67-4cd058zp",
+    "referrer": "https://www.google.com/"
   }
 ]
