@@ -10019,5 +10019,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mtj13oyg-xlb51onq"
+  },
+  {
+    "id": "1788294125025-b7nihq",
+    "ts": 1788294125025,
+    "event": "page_view",
+    "page_path": "/laser/doctor/orel-talip/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mth7nelc-pg9s63fs"
   }
 ]
