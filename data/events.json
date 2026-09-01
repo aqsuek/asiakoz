@@ -9642,5 +9642,17 @@
     "language": "ru",
     "session_id": "mtifp4ha-dq6dvfr9",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1788254573929-04u7f9",
+    "ts": 1788254573929,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtigl3pe-8k5pt41l",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
