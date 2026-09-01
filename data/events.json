@@ -10160,5 +10160,16 @@
     "language": "ru",
     "session_id": "mtj7y2hn-pspb5w1w",
     "utm_source": "chatgpt.com"
+  },
+  {
+    "id": "1788300658955-1hz8yr",
+    "ts": 1788300658955,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtj7y2hn-pspb5w1w",
+    "utm_source": "chatgpt.com",
+    "referrer": "https://asiakoz.com/index.html?utm_source=chatgpt.com"
   }
 ]
