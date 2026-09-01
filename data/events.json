@@ -9622,5 +9622,15 @@
     "language": "ru",
     "session_id": "mtif5lnk-zvsdtiy5",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1788253080517-boc7kd",
+    "ts": 1788253080517,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtifp4ha-dq6dvfr9",
+    "referrer": "https://yandex.kz/"
   }
 ]
