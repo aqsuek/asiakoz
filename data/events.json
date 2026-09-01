@@ -9409,5 +9409,14 @@
     "session_id": "mti8gu1z-ekigiknc",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788241070303-lh85qk",
+    "ts": 1788241070303,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mthwhs4r-neerdr5k"
   }
 ]
