@@ -9731,5 +9731,15 @@
     "language": "ru",
     "session_id": "mtihtu67-4cd058zp",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788256986115-xymhm1",
+    "ts": 1788256986115,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "tr",
+    "session_id": "mtihtu67-4cd058zp",
+    "referrer": "https://www.google.com/"
   }
 ]
