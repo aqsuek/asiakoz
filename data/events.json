@@ -9935,5 +9935,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788278625122-rixfjs",
+    "ts": 1788278625122,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtiuwpwq-9fil9up5",
+    "referrer": "https://www.google.com/"
   }
 ]
