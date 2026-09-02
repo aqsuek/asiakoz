@@ -11013,5 +11013,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtkgxt2u-beukcj5s"
+  },
+  {
+    "id": "1788379431850-nyzvox",
+    "ts": 1788379431850,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtkix5ww-fjkrydd5",
+    "referrer": "https://www.google.com/"
   }
 ]
