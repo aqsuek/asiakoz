@@ -10522,5 +10522,15 @@
     "language": "ru",
     "session_id": "mtjtx7o1-wfi6zq54",
     "referrer": "http://m.facebook.com/"
+  },
+  {
+    "id": "1788337455481-l1x42q",
+    "ts": 1788337455481,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtjtxnup-htytdfx4",
+    "referrer": "http://m.facebook.com/"
   }
 ]
