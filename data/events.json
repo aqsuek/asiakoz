@@ -10577,5 +10577,15 @@
     "session_id": "mtjvqzqg-5jh87rt1",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788341287610-63q36a",
+    "ts": 1788341287610,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtjw7orm-do1e3w54",
+    "referrer": "https://l.instagram.com/"
   }
 ]
