@@ -10500,5 +10500,17 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "mtjrtq52-30k7pq3y"
+  },
+  {
+    "id": "1788336085551-qfdrnu",
+    "ts": 1788336085551,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtjt495u-8f04vro3",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
