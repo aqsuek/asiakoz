@@ -10910,5 +10910,14 @@
     "language": "ru",
     "session_id": "mtk9hy64-o39eokmz",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788364006794-h9mg0s",
+    "ts": 1788364006794,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtk9sosh-2x657g1l"
   }
 ]
