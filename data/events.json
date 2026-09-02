@@ -10467,5 +10467,17 @@
     "language": "ru",
     "session_id": "mtjqict5-nj6mr1ca",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1788332876911-5n6sml",
+    "ts": 1788332876911,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtkh0b02-1clfsv9c",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
