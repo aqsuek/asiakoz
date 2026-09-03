@@ -11150,5 +11150,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788406297696-jm4we4",
+    "ts": 1788406297696,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtkyx6tk-lc3txkdi",
+    "referrer": "https://asiakoz.com/doctor-orel/"
   }
 ]
