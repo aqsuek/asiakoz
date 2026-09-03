@@ -11600,5 +11600,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtlaa7mw-neerdr5k"
+  },
+  {
+    "id": "1788425630437-lenk90",
+    "ts": 1788425630437,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtlafjo8-xiqgivl7",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
