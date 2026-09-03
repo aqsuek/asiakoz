@@ -11688,5 +11688,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788430338078-6hdazb",
+    "ts": 1788430338078,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtlcvnwq-67xr92up",
+    "referrer": "https://asiakoz.com/shymkent/?fbclid=PAcGRvZgJmZGlkFlDb33IXAV2qNzIRjhWVJsRaK1B8ZtJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadCepktJ_h-8lIh5Le8zVDfamWQNDJULnX05O_ZqlWIsVDbPrgJw6P_0_gIeQ_aem_UoJSYGEWPpxslZSM9EvX8g"
   }
 ]
