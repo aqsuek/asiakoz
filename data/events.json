@@ -11579,5 +11579,17 @@
     "language": "kk",
     "session_id": "mtl96ya8-cl9g9320",
     "referrer": "https://asiakoz.com/kk/news/shymkent-ashyldy/"
+  },
+  {
+    "id": "1788425190305-wiiz6e",
+    "ts": 1788425190305,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtla62xv-csprtq5g",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
