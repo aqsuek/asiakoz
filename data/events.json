@@ -11569,5 +11569,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788423560434-i746wq",
+    "ts": 1788423560434,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtl96ya8-cl9g9320",
+    "referrer": "https://asiakoz.com/kk/news/shymkent-ashyldy/"
   }
 ]
