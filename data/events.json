@@ -11363,5 +11363,15 @@
     "language": "ru",
     "session_id": "mtl3kpj0-989jd964",
     "button_location": "sticky"
+  },
+  {
+    "id": "1788415000205-kc1lo5",
+    "ts": 1788415000205,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtcf27wd-gqan18n9",
+    "referrer": "https://www.google.com/"
   }
 ]
