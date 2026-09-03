@@ -11190,5 +11190,14 @@
     "language": "ru",
     "session_id": "mtkze0sf-zyp18fz7",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788408008934-hrhxm0",
+    "ts": 1788408008934,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtkzxrht-vk3rqjw8"
   }
 ]
