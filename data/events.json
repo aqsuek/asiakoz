@@ -12233,5 +12233,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1788497342097-27jinu",
+    "ts": 1788497342097,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtmh4k2j-nrga26nr",
+    "referrer": "https://l.instagram.com/"
   }
 ]
