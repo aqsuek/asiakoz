@@ -12143,5 +12143,14 @@
     "language": "ru",
     "session_id": "mtmfjh7j-r7f9b8nc",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788495105703-cpifr6",
+    "ts": 1788495105703,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtmfso4m-w4o8kvur"
   }
 ]
