@@ -12722,5 +12722,15 @@
     "language": "ru",
     "session_id": "mtmvbrxo-ikbudj6a",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788521793322-xf7xw1",
+    "ts": 1788521793322,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtmvoitc-z3cl2kj1",
+    "referrer": "https://www.google.com/"
   }
 ]
