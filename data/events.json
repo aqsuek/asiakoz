@@ -12265,5 +12265,14 @@
     "language": "ru",
     "session_id": "mtmi7pl1-1wf492kq",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788499229141-cpi9xz",
+    "ts": 1788499229141,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtmi920g-pkyrptdd"
   }
 ]
