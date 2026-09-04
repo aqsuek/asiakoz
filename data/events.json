@@ -12654,5 +12654,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mtmt4285-k1oef2h7"
+  },
+  {
+    "id": "1788517504409-qmfbnm",
+    "ts": 1788517504409,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtmt4k1a-zy6ktiz6",
+    "referrer": "https://asiakoz.com/almaty/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadaLnxtczbseVhrvi6FNeDgb4VELYLupc_GUjH65md8mUHGtrfIu4eT5BUNeQ_aem_7QN_sDnopxE6FMsscglIGA"
   }
 ]
