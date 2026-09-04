@@ -12328,5 +12328,17 @@
     "language": "ru",
     "session_id": "mtmjhx2g-ox4zrnc4",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788503280618-8akeco",
+    "ts": 1788503280618,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtmknvgf-9cm3norz",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
