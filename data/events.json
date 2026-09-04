@@ -12676,5 +12676,17 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788519475437-tehtdc",
+    "ts": 1788519475437,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtmuawco-d37vzjfs",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
