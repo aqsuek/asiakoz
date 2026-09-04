@@ -12274,5 +12274,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtmi920g-pkyrptdd"
+  },
+  {
+    "id": "1788499674571-1nrypd",
+    "ts": 1788499674571,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtmiil3a-2slmr0v5"
   }
 ]
