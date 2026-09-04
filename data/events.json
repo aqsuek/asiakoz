@@ -12502,5 +12502,15 @@
     "language": "ru",
     "session_id": "mtmpbz59-h198mgda",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788511827816-comjex",
+    "ts": 1788511827816,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtmpqylp-zqm2h070",
+    "referrer": "https://l.instagram.com/"
   }
 ]
