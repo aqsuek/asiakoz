@@ -12123,5 +12123,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtmdmzz7-9zu6m1fu"
+  },
+  {
+    "id": "1788493147695-5sel70",
+    "ts": 1788493147695,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "home",
+    "language": "ru",
+    "session_id": "mtmemnp1-nser7rdb",
+    "referrer": "https://www.google.com/"
   }
 ]
