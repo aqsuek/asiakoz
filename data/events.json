@@ -12255,5 +12255,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788499176518-1z7hyy",
+    "ts": 1788499176518,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtmi7pl1-1wf492kq",
+    "referrer": "https://www.google.com/"
   }
 ]
