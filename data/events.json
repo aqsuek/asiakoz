@@ -13295,5 +13295,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtnws356-809q3zni"
+  },
+  {
+    "id": "1788584125204-qqy3fc",
+    "ts": 1788584125204,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtnws356-809q3zni",
+    "button_location": "sticky"
   }
 ]
