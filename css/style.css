@@ -1301,6 +1301,7 @@ a { color: inherit; text-decoration: none; }
 
 /* SEO service landings: витрэктомия, катаракта */
 .vitrektomiya-hero,
+.setchatka-hero,
 .katarakta-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
@@ -1309,10 +1310,12 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
 }
 .vitrektomiya-hero__text,
+.setchatka-hero__text,
 .katarakta-hero__text {
   min-width: 0;
 }
 .vitrektomiya-hero__media,
+.setchatka-hero__media,
 .katarakta-hero__media {
   position: relative;
   border-radius: 1.5rem;
@@ -1322,6 +1325,7 @@ a { color: inherit; text-decoration: none; }
   min-height: 280px;
 }
 .vitrektomiya-hero__media > img,
+.setchatka-hero__media > img,
 .katarakta-hero__media > img {
   position: absolute;
   inset: 0;
@@ -1332,6 +1336,7 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 .vitrektomiya-hero__doctor,
+.setchatka-hero__doctor,
 .katarakta-hero__doctor {
   position: absolute;
   right: 12px;
@@ -1348,6 +1353,7 @@ a { color: inherit; text-decoration: none; }
   color: inherit;
 }
 .vitrektomiya-hero__doctor img,
+.setchatka-hero__doctor img,
 .katarakta-hero__doctor img {
   width: 44px;
   height: 44px;
@@ -1357,6 +1363,7 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
 }
 .vitrektomiya-hero__doctor span,
+.setchatka-hero__doctor span,
 .katarakta-hero__doctor span {
   display: flex;
   flex-direction: column;
@@ -1365,6 +1372,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-muted);
 }
 .vitrektomiya-hero__doctor strong,
+.setchatka-hero__doctor strong,
 .katarakta-hero__doctor strong {
   font-size: 13px;
   color: var(--text);
@@ -1649,8 +1657,10 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 900px) {
   .vitrektomiya-hero,
+  .setchatka-hero,
   .katarakta-hero { grid-template-columns: 1fr; }
   .vitrektomiya-hero__media,
+  .setchatka-hero__media,
   .katarakta-hero__media {
     min-height: 0;
     aspect-ratio: 16 / 10;
