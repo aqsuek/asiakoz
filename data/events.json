@@ -14053,5 +14053,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtoshsmo-e59rqq51"
+  },
+  {
+    "id": "1788637445040-2y4uap",
+    "ts": 1788637445040,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtosjdmr-tdyj0ngc",
+    "referrer": "https://asiakoz.com/vitrektomiya-almaty/"
   }
 ]
