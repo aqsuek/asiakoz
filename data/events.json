@@ -13939,5 +13939,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788631313554-vbtjpo",
+    "ts": 1788631313554,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtoow30h-r1lvqejp"
   }
 ]
