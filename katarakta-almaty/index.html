@@ -51,6 +51,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="/css/style.css?v=20260830a" />
   <link rel="preload" as="image" href="/images/katarakta-almaty.webp?v=20260824d" />
+  <style>
+    .cataract-medical-visual {
+      position: relative;
+      overflow: hidden;
+      width: min(100%, 920px);
+      margin: 26px auto 4px;
+      border: 1px solid rgba(14,165,233,0.18);
+      border-radius: 22px;
+      background: #edfaff;
+      box-shadow: 0 18px 42px rgba(14,116,144,0.13);
+    }
+    .cataract-medical-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    .cataract-medical-visual figcaption {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      left: 14px;
+      padding: 10px 13px;
+      border: 1px solid rgba(255,255,255,0.78);
+      border-radius: 13px;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(8px);
+      color: #365469;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    @media (max-width: 700px) {
+      .cataract-medical-visual { margin-top: 20px; border-radius: 18px; }
+      .cataract-medical-visual figcaption {
+        position: static;
+        border: 0;
+        border-radius: 0;
+        background: rgba(255,255,255,0.94);
+      }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -510,6 +552,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Катаракта обычно развивается постепенно, но скорость её прогрессирования у разных пациентов отличается.
         Подтвердить диагноз и определить подходящую тактику лечения может офтальмолог после обследования.
       </p>
+      <figure class="cataract-medical-visual">
+        <img src="/images/katarakta/illustrations/cataract-cloudy-vision-3d.webp" alt="3D-иллюстрация помутнения хрусталика и изменения зрения при катаракте" width="1200" height="800" loading="lazy" />
+        <figcaption>Схематическая иллюстрация: при помутнении хрусталика изображение может становиться менее чётким, снижаются контрастность и яркость цветов.</figcaption>
+      </figure>
     </section>
 
     <section class="section" id="symptoms">
@@ -587,6 +633,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Контактные линзы и очки не возвращают прозрачность уже помутневшему хрусталику.
         При катаракте основной метод — факоэмульсификация с имплантацией ИОЛ по показаниям врача.
       </p>
+      <figure class="cataract-medical-visual">
+        <img src="/images/katarakta/illustrations/cataract-iol-replacement-3d.webp" alt="3D-иллюстрация помутневшего хрусталика и положения интраокулярной линзы" width="1200" height="800" loading="lazy" />
+        <figcaption>Схематическая иллюстрация: помутневший естественный хрусталик удаляют, а рассчитанную интраокулярную линзу устанавливают внутрь глаза.</figcaption>
+      </figure>
       <div class="iol-table-wrap" role="region" aria-label="Сравнение типов искусственных хрусталиков" tabindex="0">
         <table class="iol-table">
           <thead>
