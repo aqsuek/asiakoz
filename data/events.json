@@ -13265,5 +13265,16 @@
     "language": "ru",
     "session_id": "mtnw52et-ele30br0",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788583242687-wcmoud",
+    "ts": 1788583242688,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtnw52et-ele30br0",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
