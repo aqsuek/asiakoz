@@ -13414,5 +13414,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mto0ecdw-aw1e5141"
+  },
+  {
+    "id": "1788591211131-mjj2lx",
+    "ts": 1788591211131,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mto10jyb-6n76wp2d",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
