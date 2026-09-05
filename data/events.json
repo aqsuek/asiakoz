@@ -13424,5 +13424,17 @@
     "language": "ru",
     "session_id": "mto10jyb-6n76wp2d",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1788592128103-hwhe52",
+    "ts": 1788592128103,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mto1k7g6-g2h5vmpr",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
