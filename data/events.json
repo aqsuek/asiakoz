@@ -13276,5 +13276,15 @@
     "session_id": "mtnw52et-ele30br0",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788583290893-7qp0mf",
+    "ts": 1788583290893,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtnw52et-ele30br0",
+    "referrer": "https://www.google.com/"
   }
 ]
