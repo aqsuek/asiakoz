@@ -144,6 +144,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .lp-hero-doctor img { width: 88px; height: 104px; object-fit: cover; object-position: top; border-radius: 14px; }
     .lp-hero-doctor strong { display: block; font-size: 16px; margin-bottom: 5px; }
     .lp-hero-doctor span { display: block; color: var(--text-muted); font-size: 13px; line-height: 1.45; }
+    .medical-visual {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      border: 1px solid rgba(14,165,233,0.18);
+      border-radius: 22px;
+      background: #edfaff;
+      box-shadow: 0 18px 42px rgba(14,116,144,0.13);
+    }
+    .medical-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    .medical-visual figcaption {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      padding: 9px 12px;
+      border: 1px solid rgba(255,255,255,0.75);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(8px);
+      color: #365469;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .hero-medical-visual { margin-bottom: 14px; }
+    .content-visual-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      align-items: center;
+      gap: 26px;
+      margin-top: 24px;
+    }
+    .content-visual-grid .grid-2 { margin: 0; }
+    .content-visual-grid.is-reversed { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
     .section-kicker { color: var(--accent); font-size: 13px; font-weight: 750; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
     .section-note {
       margin-top: 16px;
@@ -367,6 +407,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .lp-hero + .section { border-top: none; padding-top: 0; }
       .promo-block { flex-direction: column; text-align: center; padding: 16px; }
       .lp-hero { grid-template-columns: 1fr; padding: 28px 20px; margin-bottom: 28px; }
+      .content-visual-grid,
+      .content-visual-grid.is-reversed { grid-template-columns: 1fr; gap: 18px; }
+      .content-visual-grid.is-reversed .medical-visual { order: -1; }
       .lp-hero-cta { flex-direction: column; }
       .lp-hero-cta .btn { width: 100%; justify-content: center; }
       .form-block { padding: 24px 20px; }
@@ -394,6 +437,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 480px) {
       .section { padding: 20px 0 24px; margin-bottom: 28px; border-top-color: rgba(15, 23, 42, 0.12); }
       .lp-hero { padding: 22px 16px; }
+      .medical-visual { border-radius: 18px; }
+      .medical-visual figcaption { position: static; border: 0; border-radius: 0; background: rgba(255,255,255,0.92); }
       .lp-hero-doctor { grid-template-columns: 72px minmax(0, 1fr); gap: 12px; padding: 12px; }
       .lp-hero-doctor img { width: 72px; height: 86px; }
       .section-title { font-size: 18px; margin-bottom: 14px; }
@@ -455,7 +500,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <p class="lp-hero-address"><b>Клиника Asiakoz:</b> Алматы, проспект Райымбека, 176а · <a class="link" href="/almaty/">страница филиала</a></p>
       </div>
-      <div class="lp-hero-doctors" aria-label="Офтальмохирурги по косоглазию">
+      <div class="lp-hero-doctors" aria-label="Иллюстрация и офтальмохирурги по косоглазию">
+        <figure class="medical-visual hero-medical-visual">
+          <img src="/images/kosoglazie/illustrations/strabismus-alignment-3d.webp" alt="Схематическая 3D-иллюстрация положения глаз при косоглазии" width="1200" height="800" fetchpriority="high" />
+          <figcaption>Схематично: врач оценивает направление каждого глаза и их совместную работу.</figcaption>
+        </figure>
         <a class="lp-hero-doctor" href="/doctor-orel/">
           <img src="/images/doctor-orel.png?v=20260828g" alt="Офтальмохирург Орел Талип" width="88" height="104" fetchpriority="high" />
           <span><strong>Орел Талип</strong>Офтальмохирург · операция при косоглазии · Алматы</span>
@@ -549,14 +598,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Косоглазие описывает положение глаз. Амблиопия, или «ленивый глаз», — это снижение зрения,
         которое формируется в детстве, когда мозг недостаточно использует изображение от одного глаза.
       </p>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-title">Лечение амблиопии</div>
-          <p class="card-text">Врач может назначить постоянное ношение очков, окклюзию сильного глаза или специальные капли. Схема и длительность зависят от возраста и зрения ребёнка.</p>
-        </div>
-        <div class="card">
-          <div class="card-title">Что делает операция</div>
-          <p class="card-text">Операция меняет положение глаз, но сама по себе не заменяет лечение амблиопии. Очки или окклюзия могут понадобиться до и после хирургии.</p>
+      <div class="content-visual-grid">
+        <figure class="medical-visual">
+          <img src="/images/kosoglazie/illustrations/amblyopia-vision-pathways-3d.webp" alt="Схематическая 3D-иллюстрация зрительных путей при амблиопии" width="1200" height="800" loading="lazy" />
+          <figcaption>Схема помогает понять принцип: мозг может по-разному использовать изображение от двух глаз.</figcaption>
+        </figure>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">Лечение амблиопии</div>
+            <p class="card-text">Врач может назначить постоянное ношение очков, окклюзию сильного глаза или специальные капли. Схема и длительность зависят от возраста и зрения ребёнка.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">Что делает операция</div>
+            <p class="card-text">Операция меняет положение глаз, но сама по себе не заменяет лечение амблиопии. Очки или окклюзия могут понадобиться до и после хирургии.</p>
+          </div>
         </div>
       </div>
       <p style="margin-top:14px;"><a class="link" href="/ambliopiya-almaty/">Подробнее об амблиопии у детей в Алматы →</a></p>
@@ -595,11 +650,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Операция выполняется на глазодвигательных мышцах. Хирург изменяет место их прикрепления или длину,
         чтобы ослабить либо усилить действие выбранных мышц и улучшить положение глаз.
       </p>
-      <div class="grid-2">
-        <div class="card"><div class="card-title">На одном или двух глазах</div><p class="card-text">Выбор зависит не от того, какой глаз заметно отклонён, а от типа косоглазия, измерений и расчёта хирурга.</p></div>
-        <div class="card"><div class="card-title">Анестезия</div><p class="card-text">Детям обычно требуется общая анестезия. Для взрослых возможны разные варианты. Конкретный план определяют хирург и анестезиолог.</p></div>
-        <div class="card"><div class="card-title">Ожидаемый результат</div><p class="card-text">Цель — улучшить положение глаз и, когда это возможно, функциональные показатели. Точный результат зависит от исходного состояния.</p></div>
-        <div class="card"><div class="card-title">Дополнительное лечение</div><p class="card-text">После операции могут сохраняться очки, лечение амблиопии или наблюдение. Иногда требуется дополнительная коррекция.</p></div>
+      <div class="content-visual-grid is-reversed">
+        <div class="grid-2">
+          <div class="card"><div class="card-title">На одном или двух глазах</div><p class="card-text">Выбор зависит не от того, какой глаз заметно отклонён, а от типа косоглазия, измерений и расчёта хирурга.</p></div>
+          <div class="card"><div class="card-title">Анестезия</div><p class="card-text">Детям обычно требуется общая анестезия. Для взрослых возможны разные варианты. Конкретный план определяют хирург и анестезиолог.</p></div>
+          <div class="card"><div class="card-title">Ожидаемый результат</div><p class="card-text">Цель — улучшить положение глаз и, когда это возможно, функциональные показатели. Точный результат зависит от исходного состояния.</p></div>
+          <div class="card"><div class="card-title">Дополнительное лечение</div><p class="card-text">После операции могут сохраняться очки, лечение амблиопии или наблюдение. Иногда требуется дополнительная коррекция.</p></div>
+        </div>
+        <figure class="medical-visual">
+          <img src="/images/kosoglazie/illustrations/eye-muscles-surgery-3d.webp" alt="3D-иллюстрация глазного яблока и глазодвигательных мышц" width="1200" height="800" loading="lazy" />
+          <figcaption>Схематическая иллюстрация: операция выполняется на глазодвигательных мышцах снаружи глаза.</figcaption>
+        </figure>
       </div>
       <p class="section-note">Операция не предполагает удаления глаза из глазницы. Доступ к мышцам выполняется через ткань, покрывающую белую часть глаза.</p>
     </section>
