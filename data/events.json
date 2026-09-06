@@ -14206,5 +14206,16 @@
     "language": "kk",
     "session_id": "mtp7xoew-9pghy25r",
     "referrer": "https://asiakoz.com/shymkent/"
+  },
+  {
+    "id": "1788663394207-34f3pp",
+    "ts": 1788663394207,
+    "event": "whatsapp_click",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mtp7xoew-9pghy25r",
+    "button_location": "mid_page_cta",
+    "referrer": "https://asiakoz.com/shymkent/"
   }
 ]
