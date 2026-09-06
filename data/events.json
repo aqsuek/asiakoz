@@ -14153,5 +14153,16 @@
     "language": "ru",
     "session_id": "mtp4oo6c-mwbyiepr",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788657919730-4obrb5",
+    "ts": 1788657919730,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtp4oo6c-mwbyiepr",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
