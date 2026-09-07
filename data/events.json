@@ -15296,5 +15296,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788765059502-pyc0mb",
+    "ts": 1788765059502,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtqwimp8-iqzuw7dh",
+    "referrer": "https://asiakoz.com/doctor-aliya/"
   }
 ]
