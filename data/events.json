@@ -15672,5 +15672,17 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788783006900-fxptp4",
+    "ts": 1788783006900,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtr75rr9-vq27rtif",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJmZGlkFlDfX94pjlQ1Q5wjWaqwrVRtWHxP_CNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafiHe0vVGwKt2URdAVZ0fT7HSO0plbBB79lF9qkVgMG4ZCfQ7kZg3wLKofEVA_aem_ynaAJsfQ3eTHlpYeQRYHxQ"
   }
 ]
