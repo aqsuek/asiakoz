@@ -118,10 +118,11 @@ def doctor_card(d: dict, lang: str) -> str:
     tags = d["tagsKz"] if lang == "kk" else d["tagsRu"]
     city_label = meta["kk"] if lang == "kk" else meta["ru"]
     action = "Толығырақ →" if lang == "kk" else "Подробнее →"
+    href = (d.get("kkHref") or f"/kk/{d['slug']}/") if lang == "kk" else d["href"]
     tags_html = "".join(f'<span class="doctor-tag">{t}</span>' for t in tags)
     img = img_src(legacy_img(d["id"]))
     return (
-        f'        <article class="doctor-card"><a class="doctor-card-inner" href="{d["href"]}">'
+        f'        <article class="doctor-card"><a class="doctor-card-inner" href="{href}">'
         f'<div class="doctor-photo-wrap"><img src="{img}" alt="{name}" loading="lazy" /></div>'
         f'<div class="doctor-body"><div class="doctor-meta"><span class="doctor-role">{role}</span>'
         f'<span class="{meta["badge"]}">{city_label}</span></div>'

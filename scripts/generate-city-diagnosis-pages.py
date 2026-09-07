@@ -124,9 +124,16 @@ CITIES = {
     },
 }
 
+def doctor_href(d: dict, lang: str) -> str:
+    if lang == "kk":
+        return d.get("href_kk") or f"/kk{d['href']}"
+    return d["href"]
+
+
 DOCTORS = {
     "mehmet": {
         "href": "/doctor-mehmet-esat-teker/",
+        "href_kk": "/kk/doctor-mehmet-esat-teker/",
         "img": "/images/doctor-mehmet-esat-teker.png",
         "name": "Мехмет Есат Текер",
         "spec_ru": "Турецкий офтальмохирург · лазер, катаракта, глаукома",
@@ -134,6 +141,7 @@ DOCTORS = {
     },
     "orel": {
         "href": "/doctor-orel/",
+        "href_kk": "/kk/doctor-orel/",
         "img": "/images/doctor-orel.png",
         "name": "Орел Талип",
         "spec_ru": "Витреоретинолог · сетчатка, витрэктомия, косоглазие",
@@ -141,6 +149,7 @@ DOCTORS = {
     },
     "aliya": {
         "href": "/doctor-aliya/",
+        "href_kk": "/kk/doctor-aliya/",
         "img": "/images/doctor-aliya.png",
         "name": "Алия Ганимуратовна Усманова",
         "spec_ru": "Офтальмохирург · лазер, катаракта, блефаропластика",
@@ -148,6 +157,7 @@ DOCTORS = {
     },
     "musay": {
         "href": "/doctor-musay/",
+        "href_kk": "/kk/doctor-musay/",
         "img": "/images/doctor-musay.png",
         "name": "Нурмухамед Мусай",
         "spec_ru": "Главный врач филиала Алматы",
@@ -155,6 +165,7 @@ DOCTORS = {
     },
     "ali-keskin": {
         "href": "/doctor-ali-keskin/",
+        "href_kk": "/kk/doctor-ali-keskin/",
         "img": "/images/doctor-ali-keskin.png",
         "name": "Али Кескин",
         "spec_ru": "Офтальмохирург · катаракта, сетчатка, косоглазие",
@@ -162,6 +173,7 @@ DOCTORS = {
     },
     "erol": {
         "href": "/doctor-erol/",
+        "href_kk": "/kk/doctor-erol/",
         "img": "/images/doctor-erol.png",
         "name": "Эрол Джошкун",
         "spec_ru": "Офтальмохирург · катаракта, глаукома, косоглазие",
@@ -169,6 +181,7 @@ DOCTORS = {
     },
     "nazgul": {
         "href": "/doctor-nazgul/",
+        "href_kk": "/kk/doctor-nazgul/",
         "img": "/images/doctor-nazgul.png",
         "name": "Назгуль Темирбеккызы Сагындыкова",
         "spec_ru": "Офтальмолог · диагностика, дети и взрослые",
@@ -176,6 +189,7 @@ DOCTORS = {
     },
     "kadyr": {
         "href": "/doctor-kadyr-kyrboga/",
+        "href_kk": "/kk/doctor-kadyr-kyrboga/",
         "img": "/images/doctor-kadyr-kyrboga.png",
         "name": "Кадыр Кырбога",
         "spec_ru": "Офтальмохирург · лазер, катаракта, косоглазие, глаукома",
@@ -727,7 +741,7 @@ def doctors_html(ids: list[str], city: str, lang: str) -> str:
         d = DOCTORS[did]
         spec = d["spec_kk"] if lang == "kk" else d["spec_ru"]
         cards.append(
-            f"""        <a href="{d['href']}" class="lp-doctor-card">
+            f"""        <a href="{doctor_href(d, lang)}" class="lp-doctor-card">
           <div class="lp-doctor-photo"><img src="{d['img']}" alt="{d['name']}" loading="lazy" width="400" height="400" /></div>
           <div class="lp-doctor-body">
             <h3>{d['name']}</h3>
@@ -955,7 +969,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
         wa=c["wa"],
         lang=lang,
         topic=copy["name"],
-        doctor_href=lead_doc["href"],
+        doctor_href=doctor_href(lead_doc, lang),
         doctor_img=lead_doc["img"],
         doctor_name=lead_doc["name"],
         doctor_role=f" · {spec_short} · {city_name}",
@@ -1016,7 +1030,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
   <meta property="og:image" content="{SITE}{image}" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20260830a" />
+  <link rel="stylesheet" href="/css/style.css?v=20260907a" />
   <script type="application/ld+json">
 {schema}
   </script>

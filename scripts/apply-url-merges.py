@@ -262,6 +262,9 @@ def write_emergency_hub() -> None:
     html = """<!DOCTYPE html>
 <html lang="ru">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817733574"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-17817733574');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJ4QBS3W');</script>
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -280,6 +283,7 @@ def write_emergency_hub() -> None:
   </script>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <header class="site-header">
       <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
@@ -321,6 +325,7 @@ def write_emergency_hub() -> None:
 
     <p style="margin:24px 0;"><a class="link" href="/diagnostika-almaty/">Диагностика зрения в Алматы →</a> · <a class="link" href="/setchatka-almaty/">Сетчатка →</a></p>
   </div>
+  <script src="/js/conversion.js?v=1"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>

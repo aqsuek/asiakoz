@@ -18,14 +18,14 @@ GTM = """<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17817
 from site_nav import footer_nav_html, header_nav_html
 
 
-def header_kk(active: str, ru_url: str) -> str:
+def header_kk(ru_url: str, kk_url: str) -> str:
     return f"""    <header class="site-header">
       <a href="/kk/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
 {header_nav_html("kk")}
       <div class="header-right">
         <div class="lang-switch" role="group" aria-label="Тіл">
-          <a class="is-active" hrefLang="kk" aria-current="page">KZ</a>
-          <a href="{ru_url}" hrefLang="ru">RU</a>
+          <a class="is-active" href="{kk_url}" hreflang="kk" aria-current="page">ҚАЗ</a>
+          <a href="{ru_url}" hreflang="ru">РУС</a>
         </div>
         <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Жазылу</a>
       </div>
@@ -61,17 +61,17 @@ def write_kk_uslugi() -> None:
     path = ROOT / "kk" / "uslugi" / "index.html"
     path.parent.mkdir(parents=True, exist_ok=True)
     cards = [
-        ("diagnostika", "Көру диагностикасы", "Толық тексеру: көру өткірлігі, қысым, көз түбі және көрсеткіш бойынша қосымша әдістер.", "/diagnostika-almaty/"),
-        ("lazer", "Лазерлік түзету", "SMILE, Femto-LASIK/LASIK және PRK/LASEK — әдіс диагностикадан кейін таңдалады.", "/lazer-almaty/"),
-        ("katarakta", "Катаракта", "Диагностика, ИОЛ таңдау және факоэмульсификация. Монофокалды, ториктік және мультифокалды линзалар.", "/katarakta-almaty/"),
-        ("vitrektomiya", "Витрэктомия", "Шыны тәрізді дене мен тор қабық хирургиясы. Тактиканы витреоретинолог анықтайды.", "/vitrektomiya-almaty/"),
-        ("glaukoma", "Глаукома", "Көзішілік қысымды бақылау, көру өрісі, ОКТ. Тамшы, лазер немесе операция — сатысына қарай.", "/glaukoma-almaty/"),
-        ("kosoglazie", "Қылилық", "Балалар мен ересектердегі қылилық диагностикасы және хирургиясы.", "/kosoglazie/", "/kosoglazie-aktau/"),
-        ("icl", "ICL", "Факикалық линза имплантациясы — лазерлік түзетуге балама, көрсеткіш бойынша.", "/icl-almaty/"),
-        ("deti", "Балалар офтальмологиясы", "Балаларды тексеру, профосмотр, астигматизм және миопияны бақылау.", "/deti-almaty/"),
-        ("retinopatiya", "Диабеттік ретинопатия", "Көз түбін тексеру, ОКТ және диабет асқынуларын емдеу.", "/diabeticheskaya-retinopatiya-almaty/"),
-        ("setchatka", "Тор қабық / Retina", "Тор қабық аурулары бойынша негізгі бет: жыртылу, ажырау, макула өзгерістері.", "/setchatka-almaty/"),
-        ("srochno", "Шұғыл белгілер", "Жыпылық, шыбындар, перде, көрудің күрт нашарлауы — қашан дереу қаралу керек.", "/srochnye-simptomy-glaz-almaty/"),
+        ("diagnostika", "Көру диагностикасы", "Толық тексеру: көру өткірлігі, қысым, көз түбі және көрсеткіш бойынша қосымша әдістер.", "/kk/diagnostika-almaty/"),
+        ("lazer", "Лазерлік түзету", "SMILE, Femto-LASIK/LASIK және PRK/LASEK — әдіс диагностикадан кейін таңдалады.", "/kk/lazer-almaty/"),
+        ("katarakta", "Катаракта", "Диагностика, ИОЛ таңдау және факоэмульсификация. Монофокалды, ториктік және мультифокалды линзалар.", "/kk/katarakta-almaty/"),
+        ("vitrektomiya", "Витрэктомия", "Шыны тәрізді дене мен тор қабық хирургиясы. Тактиканы витреоретинолог анықтайды.", "/kk/vitrektomiya-almaty/"),
+        ("glaukoma", "Глаукома", "Көзішілік қысымды бақылау, көру өрісі, ОКТ. Тамшы, лазер немесе операция — сатысына қарай.", "/kk/glaukoma-almaty/"),
+        ("kosoglazie", "Қылилық", "Балалар мен ересектердегі қылилық диагностикасы және хирургиясы.", "/kk/kosoglazie/", "/kk/kosoglazie-aktau/"),
+        ("icl", "ICL", "Факикалық линза имплантациясы — лазерлік түзетуге балама, көрсеткіш бойынша.", "/kk/icl-almaty/"),
+        ("deti", "Балалар офтальмологиясы", "Балаларды тексеру, профосмотр, астигматизм және миопияны бақылау.", "/kk/deti-almaty/"),
+        ("retinopatiya", "Диабеттік ретинопатия", "Көз түбін тексеру, ОКТ және диабет асқынуларын емдеу.", "/kk/diabeticheskaya-retinopatiya-almaty/"),
+        ("setchatka", "Тор қабық / Retina", "Тор қабық аурулары бойынша негізгі бет: жыртылу, ажырау, макула өзгерістері.", "/kk/setchatka-almaty/"),
+        ("srochno", "Шұғыл белгілер", "Жыпылық, шыбындар, перде, көрудің күрт нашарлауы — қашан дереу қаралу керек.", "/kk/srochnye-simptomy-glaz-almaty/"),
         ("doctors", "Дәрігерлер", "AsiaKoz офтальмологтары мен хирургтерінің каталогы.", "/kk/doctors/"),
     ]
     cards_html = []
@@ -95,7 +95,7 @@ def write_kk_uslugi() -> None:
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AsiaKoz офтальмологиялық клиникасының қызметтері</title>
-  <meta name="description" content="Диагностика, лазерлік түзету, катаракта, глаукома, витрэктомия және AsiaKoz-тың басқа қызметтері. Алматы мен Ақтау." />
+  <meta name="description" content="Диагностика, лазерлік түзету, катаракта, глаукома, витрэктомия және AsiaKoz-тың басқа қызметтері. Алматы, Ақтау және Шымкент." />
   <link rel="canonical" href="{SITE}/kk/uslugi/" />
   <link rel="alternate" hreflang="ru-KZ" href="{SITE}/uslugi/" />
   <link rel="alternate" hreflang="kk-KZ" href="{SITE}/kk/uslugi/" />
@@ -112,7 +112,7 @@ def write_kk_uslugi() -> None:
 </head>
 <body>
   <div class="container">
-{header_kk('uslugi', '/uslugi/')}
+{header_kk('/uslugi/', '/kk/uslugi/')}
     <nav class="breadcrumb"><a href="/kk/">Басты бет</a> / Қызметтер</nav>
     <section class="spa-hero">
       <div class="spa-eyebrow">AsiaKoz · Қызметтер</div>
@@ -132,6 +132,7 @@ def write_kk_uslugi() -> None:
     </div>
 {footer_kk()}
   </div>
+  <script src="/js/conversion.js?v=1"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>

@@ -305,8 +305,9 @@ def surgeon_grid_html(
         spec = d["spec_kk"] if lang == "kk" else d["spec_ru"]
         bio = bios.get(did, {}).get(lang, spec)
         branch = f"AsiaKoz · {city_name}"
+        href = d.get("href_kk", f"/kk{d['href']}") if lang == "kk" else d["href"]
         cards.append(
-            f"""        <a href="{d['href']}" class="lp-doctor-card surgeon-featured">
+            f"""        <a href="{href}" class="lp-doctor-card surgeon-featured">
           <div class="lp-doctor-photo">
             <img src="{d['img']}" alt="{d['name']}" width="400" height="500" loading="lazy" decoding="async" />
           </div>

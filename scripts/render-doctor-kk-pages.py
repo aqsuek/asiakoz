@@ -177,6 +177,7 @@ def render_page(ui: dict, meta: dict | None) -> str:
       <div class="footer-bottom"><p class="footer-disclaimer">Қарсы көрсеткіштер бар. Маман кеңесі қажет.</p><p class="footer-copy">© Азиякөз. Алматы, Ақтау.</p></div>
     </footer>
   </div>
+  <script src="/js/conversion.js?v=1"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>

@@ -823,10 +823,20 @@ def build_premium(
         else:
             out[key] = val.format(city=city_name, address=address) if isinstance(val, str) else val
 
+    def _fmt(val: str) -> str:
+        if isinstance(val, str) and ("{city}" in val or "{address}" in val):
+            return val.format(city=city_name, address=address)
+        return val
+
     # Use copy lead as first what paragraph if not overridden
     lead = copy.get("lead", "").format(city=city_name, address=address)
-    what = [lead] + out.get("what_extra", [])
-    out["what_paras"] = what
+    what_extra = [_fmt(p) if isinstance(p, str) else p for p in out.get("what_extra", [])]
+    out["what_paras"] = [lead] + what_extra
+
+    if out.get("when_note"):
+        out["when_note"] = _fmt(out["when_note"])
+    if out.get("recovery"):
+        out["recovery"] = [(_fmt(t), _fmt(d)) for t, d in out["recovery"]]
 
     if not out.get("symptoms") and "symptoms" in copy:
         pass

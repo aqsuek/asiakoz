@@ -55,6 +55,11 @@ def body_html(text: str) -> str:
     return "".join(f"<p>{html.escape(p)}</p>" for p in paras)
 
 
+POST_WA = {
+    "shymkent-ashyldy": "77080750180",
+}
+
+
 def shell(
     *,
     lang: str,
@@ -66,6 +71,7 @@ def shell(
     breadcrumb: str,
     body: str,
     lang_switch: str,
+    wa_phone: str = "77003600180",
 ) -> str:
     home = "/kk/" if lang == "kk" else "/"
     logo_title = "Азиякөз" if lang == "kk" else "Азиякоз"
@@ -121,7 +127,7 @@ def shell(
 {header_nav}
       <div class="header-right">
 {lang_switch}
-        <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn btn-header">{"Жазылу" if lang == "kk" else "Записаться"}</a>
+        <a href="https://wa.me/{wa_phone}" target="_blank" rel="noopener" class="btn btn-header">{"Жазылу" if lang == "kk" else "Записаться"}</a>
       </div>
     </header>
     {breadcrumb}
@@ -129,7 +135,7 @@ def shell(
     <div class="cta-block">
       <h2>{cta_h}</h2>
       <p>{cta_p}</p>
-      <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="btn">{cta_btn}</a>
+      <a href="https://wa.me/{wa_phone}" target="_blank" rel="noopener" class="btn">{cta_btn}</a>
     </div>
     <footer class="site-footer">
       <div class="footer-inner">
@@ -144,7 +150,7 @@ def shell(
         <div class="footer-col">
           <div class="footer-title">{"Контакты" if lang == "ru" else "Байланыс"}</div>
           <p>{"Алматы" if lang == "ru" else "Алматы"}: <a href="tel:+77008880180" class="link">+7 700 888 01 80</a></p>
-          <a href="https://wa.me/77003600180" target="_blank" rel="noopener" class="link">WhatsApp</a>
+          <a href="https://wa.me/{wa_phone}" target="_blank" rel="noopener" class="link">WhatsApp</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -153,6 +159,7 @@ def shell(
       </div>
     </footer>
   </div>
+  <script src="/js/conversion.js?v=1"></script>
   <script src="/js/compliance.js"></script>
 </body>
 </html>
@@ -268,6 +275,7 @@ def render_article(post: dict, lang: str) -> str:
         breadcrumb=crumb,
         body=body,
         lang_switch=lang_switch_block(lang, f"/news/{slug}/", f"/kk/news/{slug}/"),
+        wa_phone=POST_WA.get(slug, "77003600180"),
     )
 
 

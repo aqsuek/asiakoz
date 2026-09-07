@@ -1299,10 +1299,14 @@ a { color: inherit; text-decoration: none; }
   .container { padding-bottom: 110px; }
 }
 
-/* SEO service landings: витрэктомия, катаракта */
+/* SEO service landings: катаракта / витрэктомия / handcrafted hubs */
 .vitrektomiya-hero,
-.setchatka-hero,
-.katarakta-hero {
+.katarakta-hero,
+.glaukoma-hero,
+.icl-hero,
+.diagnostika-hero,
+.deti-hero,
+.setchatka-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(260px, 0.88fr);
   gap: 22px;
@@ -1310,13 +1314,21 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
 }
 .vitrektomiya-hero__text,
-.setchatka-hero__text,
-.katarakta-hero__text {
+.katarakta-hero__text,
+.glaukoma-hero__text,
+.icl-hero__text,
+.diagnostika-hero__text,
+.deti-hero__text,
+.setchatka-hero__text {
   min-width: 0;
 }
 .vitrektomiya-hero__media,
-.setchatka-hero__media,
-.katarakta-hero__media {
+.katarakta-hero__media,
+.glaukoma-hero__media,
+.icl-hero__media,
+.diagnostika-hero__media,
+.deti-hero__media,
+.setchatka-hero__media {
   position: relative;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -1325,8 +1337,12 @@ a { color: inherit; text-decoration: none; }
   min-height: 280px;
 }
 .vitrektomiya-hero__media > img,
-.setchatka-hero__media > img,
-.katarakta-hero__media > img {
+.katarakta-hero__media > img,
+.glaukoma-hero__media > img,
+.icl-hero__media > img,
+.diagnostika-hero__media > img,
+.deti-hero__media > img,
+.setchatka-hero__media > img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1336,25 +1352,35 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 .vitrektomiya-hero__doctor,
-.setchatka-hero__doctor,
-.katarakta-hero__doctor {
+.katarakta-hero__doctor,
+.glaukoma-hero__doctor,
+.icl-hero__doctor,
+.diagnostika-hero__doctor,
+.deti-hero__doctor,
+.setchatka-hero__doctor {
   position: absolute;
+  left: 12px;
   right: 12px;
   bottom: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: calc(100% - 24px);
+  max-width: min(320px, calc(100% - 24px));
   padding: 8px 12px 8px 8px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
   text-decoration: none;
   color: inherit;
+  z-index: 2;
 }
 .vitrektomiya-hero__doctor img,
-.setchatka-hero__doctor img,
-.katarakta-hero__doctor img {
+.katarakta-hero__doctor img,
+.glaukoma-hero__doctor img,
+.icl-hero__doctor img,
+.diagnostika-hero__doctor img,
+.deti-hero__doctor img,
+.setchatka-hero__doctor img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1363,19 +1389,31 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
 }
 .vitrektomiya-hero__doctor span,
-.setchatka-hero__doctor span,
-.katarakta-hero__doctor span {
+.katarakta-hero__doctor span,
+.glaukoma-hero__doctor span,
+.icl-hero__doctor span,
+.diagnostika-hero__doctor span,
+.deti-hero__doctor span,
+.setchatka-hero__doctor span {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   font-size: 12px;
   line-height: 1.3;
   color: var(--text-muted);
 }
 .vitrektomiya-hero__doctor strong,
-.setchatka-hero__doctor strong,
-.katarakta-hero__doctor strong {
+.katarakta-hero__doctor strong,
+.glaukoma-hero__doctor strong,
+.icl-hero__doctor strong,
+.diagnostika-hero__doctor strong,
+.deti-hero__doctor strong,
+.setchatka-hero__doctor strong {
   font-size: 13px;
   color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .hero-facts {
   display: grid;
@@ -1657,22 +1695,60 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 900px) {
   .vitrektomiya-hero,
-  .setchatka-hero,
-  .katarakta-hero { grid-template-columns: 1fr; }
+  .katarakta-hero,
+  .glaukoma-hero,
+  .icl-hero,
+  .diagnostika-hero,
+  .deti-hero,
+  .setchatka-hero { grid-template-columns: 1fr; }
   .vitrektomiya-hero__media,
-  .setchatka-hero__media,
-  .katarakta-hero__media {
+  .katarakta-hero__media,
+  .glaukoma-hero__media,
+  .icl-hero__media,
+  .diagnostika-hero__media,
+  .deti-hero__media,
+  .setchatka-hero__media {
     min-height: 0;
     aspect-ratio: 16 / 10;
   }
-  .katarakta-hero__text {
+  .katarakta-hero__text,
+  .glaukoma-hero__text,
+  .icl-hero__text,
+  .diagnostika-hero__text,
+  .deti-hero__text,
+  .setchatka-hero__text,
+  .vitrektomiya-hero__text {
     display: flex;
     flex-direction: column;
   }
-  .katarakta-hero .spa-actions { order: 1; }
-  .katarakta-hero .hero-facts { order: 2; }
+  .katarakta-hero .spa-actions,
+  .glaukoma-hero .spa-actions,
+  .icl-hero .spa-actions,
+  .diagnostika-hero .spa-actions,
+  .deti-hero .spa-actions,
+  .setchatka-hero .spa-actions,
+  .vitrektomiya-hero .spa-actions { order: 1; }
+  .katarakta-hero .hero-facts,
+  .glaukoma-hero .hero-facts,
+  .icl-hero .hero-facts,
+  .diagnostika-hero .hero-facts,
+  .deti-hero .hero-facts,
+  .setchatka-hero .hero-facts,
+  .vitrektomiya-hero .hero-facts { order: 2; }
   .katarakta-hero .hero-address,
-  .katarakta-hero .hero-contacts-note { order: 3; }
+  .katarakta-hero .hero-contacts-note,
+  .glaukoma-hero .hero-address,
+  .glaukoma-hero .hero-contacts-note,
+  .icl-hero .hero-address,
+  .icl-hero .hero-contacts-note,
+  .diagnostika-hero .hero-address,
+  .diagnostika-hero .hero-contacts-note,
+  .deti-hero .hero-address,
+  .deti-hero .hero-contacts-note,
+  .setchatka-hero .hero-address,
+  .setchatka-hero .hero-contacts-note,
+  .vitrektomiya-hero .hero-address,
+  .vitrektomiya-hero .hero-contacts-note { order: 3; }
   .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .price-grid,
   .surgeon-grid,
@@ -1705,4 +1781,33 @@ a { color: inherit; text-decoration: none; }
   .hero-facts,
   .hero-facts--4,
   .symptom-grid { grid-template-columns: 1fr; }
+  .vitrektomiya-hero__doctor,
+  .katarakta-hero__doctor,
+  .glaukoma-hero__doctor,
+  .icl-hero__doctor,
+  .diagnostika-hero__doctor,
+  .deti-hero__doctor,
+  .setchatka-hero__doctor {
+    max-width: calc(100% - 24px);
+    border-radius: 1rem;
+  }
+  .vitrektomiya-hero__doctor span,
+  .katarakta-hero__doctor span,
+  .glaukoma-hero__doctor span,
+  .icl-hero__doctor span,
+  .diagnostika-hero__doctor span,
+  .deti-hero__doctor span,
+  .setchatka-hero__doctor span {
+    font-size: 11px;
+  }
+  .vitrektomiya-hero__doctor strong,
+  .katarakta-hero__doctor strong,
+  .glaukoma-hero__doctor strong,
+  .icl-hero__doctor strong,
+  .diagnostika-hero__doctor strong,
+  .deti-hero__doctor strong,
+  .setchatka-hero__doctor strong {
+    font-size: 12px;
+    white-space: normal;
+  }
 }

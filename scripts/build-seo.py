@@ -852,7 +852,9 @@ def write_llms() -> None:
     )
     for d in DOCTORS:
         cities = ", ".join(d["cities"])
+        kk_href = d.get("kkHref") or f"/kk/{d['slug']}/"
         lines.append(f"- {d['nameRu']} ({cities}): {SITE}{d['href']}")
+        lines.append(f"  - KK: {SITE}{kk_href}")
     lines.extend(
         [
             "",
@@ -933,6 +935,8 @@ def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
             if is_redirect(html) or "noindex" in html.lower():
                 continue
             if any(rel_s.startswith(f"kk/{b['id']}/doctor/") for b in BRANCHES):
+                continue
+            if rel_s.startswith("kk/aktau/doctor/"):
                 continue
             if rel_s.startswith("kk/laser/doctor/") or rel_s.startswith("kk/almaty/doctor/"):
                 continue
@@ -1182,6 +1186,7 @@ def noindex_doctor_spa_shells() -> None:
         rest = "/".join(parts[1:])
         if city == "aktau":
             items.append((f"kk/aqtau/{rest}", canonical))
+            items.append((f"kk/aktau/{rest}", canonical))
         elif city in ("almaty", "shymkent", "laser"):
             items.append((f"kk/{city}/{rest}", canonical))
 
@@ -1291,6 +1296,29 @@ def noindex_legacy_root_html() -> None:
         print(f"legacy noindex: {path.name}")
 
 
+def inject_conversion_js() -> None:
+    """Add conversion.js before compliance.js on static pages missing UTM capture."""
+    tag = '<script src="/js/conversion.js?v=1"></script>'
+    n = 0
+    for path in ROOT.rglob("index.html"):
+        if any(p in SKIP_DIRS for p in path.parts):
+            continue
+        html = path.read_text(encoding="utf-8")
+        if 'id="root"' in html or "conversion.js" in html or "compliance.js" not in html:
+            continue
+        if is_redirect(html):
+            continue
+        new_html = html.replace(
+            '<script src="/js/compliance.js"></script>',
+            f"{tag}\n  <script src=\"/js/compliance.js\"></script>",
+            1,
+        )
+        if new_html != html:
+            path.write_text(new_html, encoding="utf-8")
+            n += 1
+    print(f"conversion.js injected on {n} pages")
+
+
 def generate_city_diagnosis_pages() -> None:
     import subprocess
     import sys
@@ -1396,6 +1424,7 @@ def main() -> None:
     normalize_og_locale()
     noindex_legacy_root_html()
     fix_branch_spa_hreflang()
+    inject_conversion_js()
     write_llms()
     entries = collect_urls(lastmod_cache)
     write_sitemap(entries)

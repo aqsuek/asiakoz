@@ -157,11 +157,16 @@
 
   function injectCookieBanner() {
     if (localStorage.getItem("asiakoz_cookie_accepted") === "1") return;
+    var isKk = location.pathname.indexOf("/kk/") === 0;
+    var text = isKk
+      ? "Сайттың дұрыс жұмыс істеуі үшін cookie файлдарын қолданамыз."
+      : "Мы используем cookie для корректной работы сайта и улучшения сервиса.";
+    var btnLabel = isKk ? "Қабылдау" : "Принять";
     var banner = document.createElement("div");
     banner.className = "cookie-banner";
     banner.innerHTML =
-      '<div class="cookie-banner__text">Мы используем cookie для корректной работы сайта и улучшения сервиса.</div>' +
-      '<button class="btn cookie-banner__btn" type="button">Принять</button>';
+      '<div class="cookie-banner__text">' + text + "</div>" +
+      '<button class="btn cookie-banner__btn" type="button">' + btnLabel + "</button>";
     document.body.appendChild(banner);
     var btn = banner.querySelector("button");
     btn.addEventListener("click", function () {
@@ -238,10 +243,20 @@
     } catch (e) {}
     var m = document.cookie.match(/(?:^|; )asiakoz-city=([^;]*)/);
     if (m && valid[m[1]]) return m[1];
+    return "almaty";
+  }
+
+  function detectCityFromUrl() {
     var path = location.pathname;
     if (path.indexOf("/aktau") !== -1 || path.indexOf("/aqtau") !== -1) return "aqtau";
     if (path.indexOf("/shymkent") !== -1) return "shymkent";
-    return "almaty";
+    if (path.indexOf("-aktau") !== -1 || path.indexOf("-aqtau") !== -1) return "aqtau";
+    if (path.indexOf("-shymkent") !== -1) return "shymkent";
+    return null;
+  }
+
+  function resolveCityId() {
+    return detectCityFromUrl() || readStoredCityId();
   }
 
   var CITY_CONTACTS = {
@@ -267,7 +282,7 @@
 
   function applyCityChrome() {
     if (document.getElementById("root")) return;
-    var city = readStoredCityId();
+    var city = resolveCityId();
     var contact = CITY_CONTACTS[city] || CITY_CONTACTS.almaty;
     document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
       var href = a.getAttribute("href") || "";
@@ -305,7 +320,7 @@
     });
 
     if (!document.getElementById("asiakoz-wa-fixed") && !document.querySelector(".sticky-whatsapp")) {
-      var city = readStoredCityId();
+      var city = resolveCityId();
       var contact = CITY_CONTACTS[city] || CITY_CONTACTS.almaty;
       var waPhone = contact.wa;
       var waText = encodeURIComponent(contact.waText);
