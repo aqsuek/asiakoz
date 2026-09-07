@@ -15743,5 +15743,15 @@
     "session_id": "mtr98cmd-frb25ghg",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788786556793-xkv3md",
+    "ts": 1788786556793,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtr9bgcx-ecwogu9i",
+    "utm_source": "chatgpt.com"
   }
 ]
