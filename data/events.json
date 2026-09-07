@@ -14928,5 +14928,15 @@
     "language": "ru",
     "session_id": "mtqq7imd-7vhicoga",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788754518779-wl196o",
+    "ts": 1788754518779,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtqq7imd-7vhicoga",
+    "referrer": "https://www.google.com/"
   }
 ]
