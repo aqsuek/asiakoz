@@ -15100,5 +15100,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtqsw1me-3bzvhsm2"
+  },
+  {
+    "id": "1788760166150-bqx715",
+    "ts": 1788760166150,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtqh4w3l-smg8jjaj"
   }
 ]
