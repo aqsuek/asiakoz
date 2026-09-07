@@ -701,8 +701,8 @@ def conversion_funnel_html(city: str, lang: str, topic: str) -> str:
       <h2>Қалай жазылуға болады</h2>
       <p>3 қарапайым қадам — қоңыраусыз</p>
       <ol>
-        <li><span class="step-num">1</span><strong>WhatsApp-қа жазыңыз</strong><br/>Симптомыңызды жазыңыз — дәрігер жауап береді.</li>
-        <li><span class="step-num">2</span><strong>Кеңес алыңыз</strong><br/>Диагностика, баға және уақытты нақтылаймыз.</li>
+        <li><span class="step-num">1</span><strong>WhatsApp-қа жазыңыз</strong><br/>Симптомыңызды жазыңыз — колл-центр жауап береді.</li>
+        <li><span class="step-num">2</span><strong>Бағдар алыңыз</strong><br/>Бағыт, баға және уақытты нақтылаймыз.</li>
         <li><span class="step-num">3</span><strong>Клиникаға келіңіз</strong><br/>Кездесу күні мен мекенжайды растаймыз.</li>
       </ol>
       <p style="margin-top:16px"><a class="btn" data-cta="funnel-whatsapp" href="{wa}" target="_blank" rel="noopener">WhatsApp арқылы жазылу</a></p>
@@ -711,8 +711,8 @@ def conversion_funnel_html(city: str, lang: str, topic: str) -> str:
       <h2>Как записаться</h2>
       <p>3 простых шага — без звонка</p>
       <ol>
-        <li><span class="step-num">1</span><strong>Напишите в WhatsApp</strong><br/>Опишите симптом — врач ответит лично.</li>
-        <li><span class="step-num">2</span><strong>Получите консультацию</strong><br/>Уточним диагностику, цену и время.</li>
+        <li><span class="step-num">1</span><strong>Напишите в WhatsApp</strong><br/>Опишите симптом — ответит колл-центр.</li>
+        <li><span class="step-num">2</span><strong>Получите ориентир</strong><br/>Уточним направление, цену и время.</li>
         <li><span class="step-num">3</span><strong>Приходите в клинику</strong><br/>Подтвердим дату и адрес.</li>
       </ol>
       <p style="margin-top:16px"><a class="btn" data-cta="funnel-whatsapp" href="{wa}" target="_blank" rel="noopener">Записаться в WhatsApp</a></p>
