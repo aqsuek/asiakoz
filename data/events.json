@@ -15764,5 +15764,15 @@
     "session_id": "mtr9bhxh-1obwd4ht",
     "button_location": "contacts",
     "utm_source": "chatgpt.com"
+  },
+  {
+    "id": "1788787358653-30ko58",
+    "ts": 1788787358653,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtr9so23-gkik36z7",
+    "referrer": "https://asiakoz.com/doctor-mehmet-esat-teker/"
   }
 ]
