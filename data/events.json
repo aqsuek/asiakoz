@@ -15362,5 +15362,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788767804293-ur94qr",
+    "ts": 1788767804293,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtqy5h05-s3qict34",
+    "referrer": "https://asiakoz.com/"
   }
 ]
