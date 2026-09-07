@@ -15581,5 +15581,17 @@
     "language": "ru",
     "session_id": "mtr3g6bj-oe81d8f6",
     "referrer": "https://asiakoz.com/doctor-mehmet-esat-teker/"
+  },
+  {
+    "id": "1788776988403-csfni7",
+    "ts": 1788776988404,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtr3lm9i-ky7vy6fo",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
