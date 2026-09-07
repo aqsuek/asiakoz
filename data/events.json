@@ -15486,5 +15486,15 @@
     "session_id": "mtqzzxy8-z4orlc44",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788772208211-ueb8je",
+    "ts": 1788772208211,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtr0ru2o-e2dlk8n6",
+    "referrer": "https://www.google.com/"
   }
 ]
