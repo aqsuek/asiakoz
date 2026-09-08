@@ -16645,5 +16645,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtslvr8y-s0gp4efx"
+  },
+  {
+    "id": "1788868374583-al69yw",
+    "ts": 1788868374583,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "tr",
+    "session_id": "mtslvr8y-s0gp4efx"
   }
 ]
