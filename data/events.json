@@ -17000,5 +17000,16 @@
     "language": "kk",
     "session_id": "mtsxllgv-hldxb5qj",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788887858158-qnu0f6",
+    "ts": 1788887858158,
+    "event": "whatsapp_click",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtsxllgv-hldxb5qj",
+    "button_location": "mid_page_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
