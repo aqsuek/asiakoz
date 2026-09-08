@@ -16338,5 +16338,14 @@
     "language": "tr",
     "session_id": "mtsbjlji-lur3df6z",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788851133758-z2hlhq",
+    "ts": 1788851133758,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtsbrkpk-gqzffsvt"
   }
 ]
