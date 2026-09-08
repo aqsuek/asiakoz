@@ -16615,5 +16615,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mtsl1xyu-l7eczu5o"
+  },
+  {
+    "id": "1788868132768-0wp1xe",
+    "ts": 1788868132768,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtslvr8y-s0gp4efx"
   }
 ]
