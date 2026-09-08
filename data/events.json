@@ -16441,5 +16441,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788855529580-gctqpe",
+    "ts": 1788855529580,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtsedsxm-6laccinw",
+    "referrer": "https://www.google.com/"
   }
 ]
