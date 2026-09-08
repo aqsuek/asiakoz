@@ -16387,5 +16387,16 @@
     "language": "ru",
     "session_id": "mtsbjlji-lur3df6z",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788851796960-t8tba0",
+    "ts": 1788851796960,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtsbjlji-lur3df6z",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
