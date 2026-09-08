@@ -16097,5 +16097,17 @@
     "session_id": "mts5grio-ryofo04s",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788841122605-jxqy9o",
+    "ts": 1788841122605,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mts5rejf-14nnqwae",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
