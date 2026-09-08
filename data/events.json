@@ -16141,5 +16141,17 @@
     "language": "ru",
     "session_id": "mts60avm-lz56hl0v",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788842500602-lau7q5",
+    "ts": 1788842500602,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mts6misy-46jpkob7",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
