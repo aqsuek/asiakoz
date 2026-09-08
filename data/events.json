@@ -16308,5 +16308,15 @@
     "language": "tr",
     "session_id": "mtsbjlji-lur3df6z",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788851018750-ndhgcz",
+    "ts": 1788851018750,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "tr",
+    "session_id": "mtsbjlji-lur3df6z",
+    "referrer": "https://www.google.com/"
   }
 ]
