@@ -16636,5 +16636,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788868225088-hkcxpe",
+    "ts": 1788868225088,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtslvr8y-s0gp4efx"
   }
 ]
