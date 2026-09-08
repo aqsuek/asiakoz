@@ -16266,5 +16266,17 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtsbah8f-d7d2oril"
+  },
+  {
+    "id": "1788850704493-8w4ri0",
+    "ts": 1788850704493,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtsbid04-35xcg7w0",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
