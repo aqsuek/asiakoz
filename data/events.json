@@ -16347,5 +16347,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtsbrkpk-gqzffsvt"
+  },
+  {
+    "id": "1788851163878-zr7iw2",
+    "ts": 1788851163878,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "tr",
+    "session_id": "mtsbjlji-lur3df6z",
+    "referrer": "https://www.google.com/"
   }
 ]
