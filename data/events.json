@@ -16771,5 +16771,15 @@
     "session_id": "mtso2j6g-6ozbo1zq",
     "button_location": "contacts",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1788872578347-aj40ey",
+    "ts": 1788872578347,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtsoj7j2-k4tiehys",
+    "referrer": "https://yandex.kz/"
   }
 ]
