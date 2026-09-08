@@ -16377,5 +16377,15 @@
     "session_id": "mtsbwws5-qul5rd9r",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788851443720-crp4yx",
+    "ts": 1788851443720,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtsbjlji-lur3df6z",
+    "referrer": "https://www.google.com/"
   }
 ]
