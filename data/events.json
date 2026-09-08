@@ -17098,5 +17098,15 @@
     "language": "ru",
     "session_id": "mtt1wrzf-dzcqmzpk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788895380681-c9css6",
+    "ts": 1788895380682,
+    "event": "page_view",
+    "page_path": "/index.html",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtt23qei-o9tt8mwx",
+    "utm_source": "chatgpt.com"
   }
 ]
