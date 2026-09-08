@@ -16398,5 +16398,15 @@
     "session_id": "mtsbjlji-lur3df6z",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788852392964-05yc3t",
+    "ts": 1788852392964,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtscik74-q3c0qth4",
+    "referrer": "https://www.google.com/"
   }
 ]
