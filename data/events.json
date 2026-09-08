@@ -17150,5 +17150,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtt7jsvp-5664fb2n"
+  },
+  {
+    "id": "1788907445786-g73ie0",
+    "ts": 1788907445787,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtqq7imd-7vhicoga",
+    "referrer": "https://www.google.com/"
   }
 ]
