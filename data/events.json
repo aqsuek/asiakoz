@@ -17011,5 +17011,15 @@
     "session_id": "mtsxllgv-hldxb5qj",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788888164112-hl3duk",
+    "ts": 1788888164112,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtsxt97p-ehfyprpr",
+    "referrer": "https://www.google.com/"
   }
 ]
