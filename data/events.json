@@ -16328,5 +16328,15 @@
     "language": "tr",
     "session_id": "mtsbjlji-lur3df6z",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788851086707-1af46f",
+    "ts": 1788851086707,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "tr",
+    "session_id": "mtsbjlji-lur3df6z",
+    "referrer": "https://www.google.com/"
   }
 ]
