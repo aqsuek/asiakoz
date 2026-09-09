@@ -17290,5 +17290,14 @@
     "language": "ru",
     "session_id": "mttk1je5-150a3qgg",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788927577216-gmb244",
+    "ts": 1788927577216,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mttl9zj1-bfgzg2t6"
   }
 ]
