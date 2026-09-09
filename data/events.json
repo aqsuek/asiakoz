@@ -17953,5 +17953,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788966213074-kf726h",
+    "ts": 1788966213074,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtu8a1jn-aie0vowx"
   }
 ]
