@@ -17540,5 +17540,14 @@
     "session_id": "mttpmj36-hiueqzxb",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788935671599-mwh8l6",
+    "ts": 1788935671599,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mttq3fnp-8rsdxwws"
   }
 ]
