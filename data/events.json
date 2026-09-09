@@ -17570,5 +17570,15 @@
     "session_id": "mttq709r-uhw5il71",
     "button_location": "mid_page_cta",
     "referrer": "https://cityorg.net/"
+  },
+  {
+    "id": "1788936844371-gcicc7",
+    "ts": 1788936844371,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mttqvbs8-ns26whzw",
+    "utm_source": "chatgpt.com"
   }
 ]
