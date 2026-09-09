@@ -17549,5 +17549,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mttq3fnp-8rsdxwws"
+  },
+  {
+    "id": "1788935837016-v34hew",
+    "ts": 1788935837016,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mttq709r-uhw5il71",
+    "referrer": "https://cityorg.net/"
   }
 ]
