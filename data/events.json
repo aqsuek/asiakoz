@@ -17485,5 +17485,16 @@
     "language": "kk",
     "session_id": "mttofhkk-jqcgwgoy",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788932931007-qpimfb",
+    "ts": 1788932931007,
+    "event": "phone_click",
+    "page_path": "/kk/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mttofhkk-jqcgwgoy",
+    "button_location": "contacts",
+    "referrer": "https://www.google.com/"
   }
 ]
