@@ -17633,5 +17633,14 @@
     "language": "ru",
     "session_id": "mttrd01f-2wm39mcd",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1788938347904-gpg90f",
+    "ts": 1788938347904,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mttrovxv-fyfjw1bn"
   }
 ]
