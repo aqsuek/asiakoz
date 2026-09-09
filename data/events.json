@@ -18013,5 +18013,17 @@
     "language": "ru",
     "session_id": "mtubtvz8-5jcsw44s",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1788973405436-eegznj",
+    "ts": 1788973405437,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtuck6a0-4uybp6v7",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
