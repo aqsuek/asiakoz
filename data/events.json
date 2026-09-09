@@ -17443,5 +17443,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1788932585081-k2ve5j",
+    "ts": 1788932585081,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtto8dz3-vsk7d6rl",
+    "referrer": "https://www.google.com/"
   }
 ]
