@@ -18945,5 +18945,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789048094905-if7fvj",
+    "ts": 1789048094905,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtvksddi-m0p0v49f",
+    "referrer": "https://asiakoz.com/katarakta-almaty/"
   }
 ]
