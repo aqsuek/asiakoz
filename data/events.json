@@ -18860,5 +18860,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789043949978-d8lead",
+    "ts": 1789043949978,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtvikasp-eelsykmn",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
