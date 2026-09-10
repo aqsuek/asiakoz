@@ -18871,5 +18871,17 @@
     "session_id": "mtvikasp-eelsykmn",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789045229749-k8nf31",
+    "ts": 1789045229749,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtvjbn4h-hdevplim",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
