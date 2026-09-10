@@ -18435,5 +18435,15 @@
     "language": "ru",
     "session_id": "mtv4izhg-crqlzy96",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789021221169-7n1u1t",
+    "ts": 1789021221169,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtv4zm5f-ktxw62qx",
+    "referrer": "https://l.wl.co/"
   }
 ]
