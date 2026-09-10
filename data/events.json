@@ -18425,5 +18425,15 @@
     "language": "ru",
     "session_id": "mtv3qqby-1pa04tf1",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789020374482-c685ch",
+    "ts": 1789020374482,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtv4izhg-crqlzy96",
+    "referrer": "https://l.instagram.com/"
   }
 ]
