@@ -18776,5 +18776,15 @@
     "language": "ru",
     "session_id": "mtvea0s6-pt85kf6y",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789039028541-7xwh0p",
+    "ts": 1789039028541,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtvfmtjs-dowvf5lt",
+    "referrer": "https://www.google.com/"
   }
 ]
