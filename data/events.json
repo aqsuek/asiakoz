@@ -18976,5 +18976,16 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mtvlqfqm-vke3vd9x"
+  },
+  {
+    "id": "1789049374706-85d5mn",
+    "ts": 1789049374706,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtvlsfuy-o87aoms0",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
