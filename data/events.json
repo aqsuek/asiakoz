@@ -18902,5 +18902,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtvk7i2d-8ovrjw9b"
+  },
+  {
+    "id": "1789047701927-mhcj4p",
+    "ts": 1789047701927,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtvksddi-m0p0v49f",
+    "referrer": "https://yandex.kz/"
   }
 ]
