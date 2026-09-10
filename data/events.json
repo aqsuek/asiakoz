@@ -18328,5 +18328,14 @@
     "language": "ru",
     "session_id": "mtv10oeg-uf8vzl7l",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1789014738136-zlfpxl",
+    "ts": 1789014738136,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mtv163b8-77p3auno"
   }
 ]
