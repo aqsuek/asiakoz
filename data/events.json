@@ -18415,5 +18415,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mtv3e56n-n1095d6e"
+  },
+  {
+    "id": "1789019056480-arz72o",
+    "ts": 1789019056480,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtv3qqby-1pa04tf1",
+    "referrer": "https://yandex.kz/"
   }
 ]
