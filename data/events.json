@@ -18466,5 +18466,15 @@
     "session_id": "mtv5fs5e-4l4q007p",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789022035214-umq8sj",
+    "ts": 1789022035214,
+    "event": "page_view",
+    "page_path": "/kk/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtv5im5b-bsqk8kyb",
+    "referrer": "https://www.google.com/"
   }
 ]
