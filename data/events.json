@@ -20052,5 +20052,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtx2ocz0-n21pro2c"
+  },
+  {
+    "id": "1789138745206-nsvpqf",
+    "ts": 1789138745206,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtx2ztir-lwbaah34"
   }
 ]
