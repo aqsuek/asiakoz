@@ -19761,5 +19761,17 @@
     "session_id": "mtwsm0eg-8uadcs8y",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789121836901-yrl1er",
+    "ts": 1789121836901,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtwsxdhi-6jsgs7qq",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
