@@ -20196,5 +20196,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtxaozl1-c60pwvso"
+  },
+  {
+    "id": "1789152549761-4b1x3w",
+    "ts": 1789152549761,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtxb7txq-2jnfhqlt",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
