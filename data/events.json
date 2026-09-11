@@ -19694,5 +19694,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mtwr7vsz-tinps7jj"
+  },
+  {
+    "id": "1789119023923-87sapf",
+    "ts": 1789119023923,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtwr7vsz-tinps7jj",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
