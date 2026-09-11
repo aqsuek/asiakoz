@@ -20164,5 +20164,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789150230240-g4byfa",
+    "ts": 1789150230240,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtx9tw33-h6plbjvo",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
