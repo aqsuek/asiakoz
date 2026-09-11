@@ -19371,5 +19371,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mtw6warn-neerdr5k"
+  },
+  {
+    "id": "1789095926216-g50p53",
+    "ts": 1789095926216,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtwdibvm-2aowrcgu",
+    "referrer": "https://www.google.com/"
   }
 ]
