@@ -20175,5 +20175,17 @@
     "session_id": "mtx9tw33-h6plbjvo",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789150651446-4takdq",
+    "ts": 1789150651446,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtxa2xrg-b1e0684h",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
