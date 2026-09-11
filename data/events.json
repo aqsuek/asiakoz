@@ -20206,5 +20206,17 @@
     "language": "ru",
     "session_id": "mtxb7txq-2jnfhqlt",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1789153252601-39l1mu",
+    "ts": 1789153252601,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtxbkto2-pc1b43be",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
