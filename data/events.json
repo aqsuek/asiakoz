@@ -20300,5 +20300,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mtxm6vmy-z3vmxy4e"
+  },
+  {
+    "id": "1789171001918-k2b3rr",
+    "ts": 1789171001918,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtxm7f5l-flqy3yjr"
   }
 ]
