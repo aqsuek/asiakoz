@@ -20424,5 +20424,15 @@
     "language": "ru",
     "session_id": "mtxtgqo8-osguog7i",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789183224941-clnkk8",
+    "ts": 1789183224941,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mtxtgqo8-osguog7i",
+    "referrer": "https://www.google.com/"
   }
 ]
