@@ -21009,5 +21009,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mtys9ntj-5h5cl9qe"
+  },
+  {
+    "id": "1789241681736-g9kutg",
+    "ts": 1789241681736,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtysa74q-a06wty60"
   }
 ]
