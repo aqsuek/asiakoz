@@ -20560,5 +20560,16 @@
     "language": "ru",
     "session_id": "mty0mw03-lv8oe2uc",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789195256494-s1mq5c",
+    "ts": 1789195256494,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mty0mw03-lv8oe2uc",
+    "button_location": "mid_page_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
