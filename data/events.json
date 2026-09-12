@@ -20361,5 +20361,14 @@
     "language": "ru",
     "session_id": "mtxrlcan-9vvy24ad",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789180437505-pwu6rl",
+    "ts": 1789180437505,
+    "event": "page_view",
+    "page_path": "/almaty/doctor/aliya/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtxrpyaa-neerdr5k"
   }
 ]
