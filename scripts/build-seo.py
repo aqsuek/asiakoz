@@ -815,6 +815,7 @@ def write_llms() -> None:
         "",
         f"Сайт: {SITE}/",
         f"Sitemap: {SITE}/sitemap.xml",
+        f"HTML sitemap: {SITE}/sitemap.html",
         f"Политика конфиденциальности: {SITE}/politika-konfidentsialnosti/",
         "",
         "## Статус филиалов",
@@ -979,6 +980,74 @@ def write_sitemap(entries: list[tuple[str, str, float]]) -> None:
     print(f"sitemap: {len(entries)} urls")
 
 
+def write_html_sitemap(entries: list[tuple[str, str, float]]) -> None:
+    """Crawlable HTML sitemap for users and Google discovery."""
+    groups: dict[str, list[str]] = {
+        "Главные": [],
+        "Филиалы": [],
+        "Врачи": [],
+        "Услуги и диагнозы": [],
+        "Новости": [],
+        "Қазақша (KK)": [],
+    }
+    for url, _lm, _pri in entries:
+        path = url.replace(SITE, "") or "/"
+        if path.startswith("/kk/"):
+            groups["Қазақша (KK)"].append(url)
+        elif path in ("/", "/uslugi/", "/doctors/", "/laser/", "/sitemap.html"):
+            groups["Главные"].append(url)
+        elif path in ("/almaty/", "/aktau/", "/aqtau/", "/shymkent/"):
+            groups["Филиалы"].append(url)
+        elif "/doctor-" in path or path == "/doctors/":
+            groups["Врачи"].append(url)
+        elif "/news" in path:
+            groups["Новости"].append(url)
+        else:
+            groups["Услуги и диагнозы"].append(url)
+
+    sections = []
+    for title, urls in groups.items():
+        if not urls:
+            continue
+        items = "\n".join(
+            f'        <li><a href="{u}">{u.replace(SITE, "") or "/"}</a></li>'
+            for u in sorted(set(urls))
+        )
+        sections.append(f"      <h2>{title}</h2>\n      <ul>\n{items}\n      </ul>")
+
+    html = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Карта сайта AsiaKoz — все страницы</title>
+  <meta name="description" content="Полный список страниц сайта AsiaKoz для поиска: филиалы, врачи, услуги, диагнозы, новости. RU и KK." />
+  <link rel="canonical" href="{SITE}/sitemap.html" />
+  <link rel="stylesheet" href="/css/style.css?v=20260907a" />
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="/" class="logo" title="AsiaKoz"><img src="/images/logo-asiakoz.png" alt="AsiaKoz" class="logo-img" /></a>
+      <a href="https://wa.me/77003600180" class="btn btn-header" target="_blank" rel="noopener">Записаться</a>
+    </header>
+    <nav class="breadcrumb"><a href="/">Главная</a> / Карта сайта</nav>
+    <section class="section">
+      <h1 class="section-title">Карта сайта AsiaKoz</h1>
+      <p class="section-subtitle">Все индексируемые страницы сайта. XML: <a class="link" href="/sitemap.xml">sitemap.xml</a></p>
+{chr(10).join(sections)}
+    </section>
+  </div>
+  <script src="/js/conversion.js?v=1"></script>
+  <script src="/js/compliance.js"></script>
+</body>
+</html>
+"""
+    (ROOT / "sitemap.html").write_text(html, encoding="utf-8")
+    print(f"html sitemap: {len(entries)} urls")
+
+
 def patch_static_hreflang_hubs() -> None:
     pairs = [
         ("doctors", ROOT / "doctors" / "index.html", ROOT / "kk" / "doctors" / "index.html"),
@@ -1026,8 +1095,8 @@ def patch_doctor_profile_pages() -> None:
     }
     service_map = {
         "orel-talip": ["https://asiakoz.com/vitrektomiya-almaty/", "https://asiakoz.com/kosoglazie/"],
-        "mehmet-esat-teker": ["https://asiakoz.com/lazer-almaty/", "https://asiakoz.com/katarakta-almaty/"],
-        "aliya": ["https://asiakoz.com/lazer-almaty/", "https://asiakoz.com/katarakta-almaty/"],
+        "mehmet-esat-teker": ["https://asiakoz.com/laser/", "https://asiakoz.com/katarakta-almaty/"],
+        "aliya": ["https://asiakoz.com/laser/", "https://asiakoz.com/katarakta-almaty/"],
         "musay": ["https://asiakoz.com/uslugi/"],
         "ali-keskin": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
         "erol-joshkun": ["https://asiakoz.com/kosoglazie-aktau/", "https://asiakoz.com/katarakta-almaty/"],
@@ -1282,6 +1351,7 @@ def noindex_legacy_root_html() -> None:
     """Legacy root *.html stubs should not compete with clean URLs."""
     skip = {
         "index.html",
+        "sitemap.html",
         "google9c0f5b4f3ae36021.html",
         "yandex_badee5fc204b49c5.html",
     }
@@ -1427,7 +1497,19 @@ def main() -> None:
     inject_conversion_js()
     write_llms()
     entries = collect_urls(lastmod_cache)
+    # Always include HTML sitemap itself
+    entries.append((f"{SITE}/sitemap.html", TODAY, 0.7))
+    # dedupe again after append
+    seen = set()
+    deduped = []
+    for u, lm, p in entries:
+        if u in seen:
+            continue
+        seen.add(u)
+        deduped.append((u, lm, p))
+    entries = deduped
     write_sitemap(entries)
+    write_html_sitemap(entries)
     save_lastmod(lastmod_cache)
     print("done")
 

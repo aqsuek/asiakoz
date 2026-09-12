@@ -34,3 +34,4 @@ User-agent: Yandex
 Allow: /
 
 Sitemap: https://asiakoz.com/sitemap.xml
+Sitemap: https://asiakoz.com/sitemap.html

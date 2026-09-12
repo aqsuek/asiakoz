@@ -1,9 +1,9 @@
 {
   "note": "Thin micro-pages merge into hub pages. On GitHub Pages: soft fallback (noindex + canonical + meta refresh). On Apache: .htaccess 301.",
   "merges": [
-    { "from": "/smile-almaty/", "to": "/lazer-almaty/#metody", "title": "ReLEx SMILE → лазерная коррекция" },
-    { "from": "/femto-lasik-almaty/", "to": "/lazer-almaty/#metody", "title": "Femto-LASIK → лазерная коррекция" },
-    { "from": "/prk-lasek-almaty/", "to": "/lazer-almaty/#metody", "title": "PRK/LASEK → лазерная коррекция" },
+    { "from": "/smile-almaty/", "to": "/laser/", "title": "ReLEx SMILE → лазерная коррекция" },
+    { "from": "/femto-lasik-almaty/", "to": "/laser/", "title": "Femto-LASIK → лазерная коррекция" },
+    { "from": "/prk-lasek-almaty/", "to": "/laser/", "title": "PRK/LASEK → лазерная коррекция" },
 
     { "from": "/toricheskie-linzy-almaty/", "to": "/katarakta-almaty/#iol", "title": "Торические линзы → катаракта" },
     { "from": "/multifokalnye-linzy-almaty/", "to": "/katarakta-almaty/#iol", "title": "Мультифокальные линзы → катаракта" },

@@ -87,10 +87,14 @@ RewriteRule ^doctor-madina\.html$ /doctors/ [L,R=301]
 
 
 
+
+
+
+
 # Thin page merges → hub pages
-RewriteRule ^smile\-almaty/?$ /lazer-almaty/ [L,R=301]
-RewriteRule ^femto\-lasik\-almaty/?$ /lazer-almaty/ [L,R=301]
-RewriteRule ^prk\-lasek\-almaty/?$ /lazer-almaty/ [L,R=301]
+RewriteRule ^smile\-almaty/?$ /laser/ [L,R=301]
+RewriteRule ^femto\-lasik\-almaty/?$ /laser/ [L,R=301]
+RewriteRule ^prk\-lasek\-almaty/?$ /laser/ [L,R=301]
 RewriteRule ^toricheskie\-linzy\-almaty/?$ /katarakta-almaty/ [L,R=301]
 RewriteRule ^multifokalnye\-linzy\-almaty/?$ /katarakta-almaty/ [L,R=301]
 RewriteRule ^detskiy\-oftalmolog\-almaty/?$ /deti-almaty/ [L,R=301]

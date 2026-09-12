@@ -4,6 +4,7 @@
 
 Сайт: https://asiakoz.com/
 Sitemap: https://asiakoz.com/sitemap.xml
+HTML sitemap: https://asiakoz.com/sitemap.html
 Политика конфиденциальности: https://asiakoz.com/politika-konfidentsialnosti/
 
 ## Статус филиалов
