@@ -20808,5 +20808,14 @@
     "language": "ru",
     "session_id": "mtyct1k3-ek19q0x2",
     "button_location": "mid_page_cta"
+  },
+  {
+    "id": "1789217778934-gds6i1",
+    "ts": 1789217778934,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtye1y3q-cg8vu34p"
   }
 ]
