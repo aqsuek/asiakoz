@@ -20798,5 +20798,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mtyct1k3-ek19q0x2"
+  },
+  {
+    "id": "1789215707416-f2sxro",
+    "ts": 1789215707416,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtyct1k3-ek19q0x2",
+    "button_location": "mid_page_cta"
   }
 ]
