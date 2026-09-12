@@ -20737,5 +20737,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789211587928-q3c1hq",
+    "ts": 1789211587928,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mtyadcui-o67kc6vy",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
