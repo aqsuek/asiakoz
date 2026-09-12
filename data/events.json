@@ -20929,5 +20929,17 @@
     "language": "ru",
     "session_id": "mtykd74p-s92st0er",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789228492499-r44c8h",
+    "ts": 1789228492499,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtykfmek-mkpchfax",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
