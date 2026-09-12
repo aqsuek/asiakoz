@@ -20951,5 +20951,17 @@
     "language": "ru",
     "session_id": "mtylb8bf-2wkfw9rr",
     "referrer": "https://asiakoz.com/smile-almaty/"
+  },
+  {
+    "id": "1789230632512-czn299",
+    "ts": 1789230632512,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtylpk7u-vcdmpzu4",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
