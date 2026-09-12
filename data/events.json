@@ -20454,5 +20454,14 @@
     "language": "ru",
     "session_id": "mtxva81m-v9vkef8t",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1789188470301-ranmj6",
+    "ts": 1789188470301,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtxwkpy9-neerdr5k"
   }
 ]
