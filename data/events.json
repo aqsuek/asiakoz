@@ -21638,5 +21638,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789313775459-fo0a5h",
+    "ts": 1789313775459,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtzz7hxv-rzzem96f",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJmZGlkFlDlKybdPtDfO1nHDhd4etD0_gfDNpFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafMo5HDGREX7IhpUPAzGKyy4FPq-cV7VbdB10zppXO0LPPUESfdbgH2t-tPkA_aem__7Hpm-kb69ALO-XG4MK_PA"
   }
 ]
