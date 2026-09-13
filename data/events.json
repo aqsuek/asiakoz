@@ -21464,5 +21464,15 @@
     "language": "kk",
     "session_id": "mtzq8x4u-htjhg21h",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789298846370-ivalwl",
+    "ts": 1789298846370,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtzqbktb-7coikwyg",
+    "referrer": "https://yandex.kz/"
   }
 ]
