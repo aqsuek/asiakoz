@@ -21114,5 +21114,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mtz87475-fkikkzr7"
+  },
+  {
+    "id": "1789268445409-7qe2te",
+    "ts": 1789268445409,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtz87xh5-mfzu30js"
   }
 ]
