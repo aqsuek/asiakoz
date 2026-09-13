@@ -21445,5 +21445,14 @@
     "language": "kk",
     "session_id": "mtzpmef0-du2bzzpm",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789297705113-517c66",
+    "ts": 1789297705113,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtyqw9i9-vn58hmii"
   }
 ]
