@@ -21454,5 +21454,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mtyqw9i9-vn58hmii"
+  },
+  {
+    "id": "1789298720413-vkg3xq",
+    "ts": 1789298720413,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mtzq8x4u-htjhg21h",
+    "referrer": "https://www.google.com/"
   }
 ]
