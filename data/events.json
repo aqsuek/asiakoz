@@ -21626,5 +21626,17 @@
     "language": "ru",
     "session_id": "mtzxy85s-4s7bqipq",
     "referrer": "https://asiakoz.com/katarakta-almaty/"
+  },
+  {
+    "id": "1789312328372-u7y74h",
+    "ts": 1789312328372,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtzycfsy-ho5la0bn",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
