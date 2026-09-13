@@ -21616,5 +21616,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789311660779-pe26m4",
+    "ts": 1789311660779,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mtzxy85s-4s7bqipq",
+    "referrer": "https://asiakoz.com/katarakta-almaty/"
   }
 ]
