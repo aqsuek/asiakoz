@@ -22550,5 +22550,16 @@
     "language": "ru",
     "session_id": "mu116j7m-66fs0kpv",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789377595291-tqq2m8",
+    "ts": 1789377595291,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu116j7m-66fs0kpv",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
