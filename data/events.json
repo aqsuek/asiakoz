@@ -21900,5 +21900,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789354821438-bsc659",
+    "ts": 1789354821438,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu0nnaud-u0idwy2q",
+    "referrer": "https://www.google.com/"
   }
 ]
