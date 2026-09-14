@@ -22723,5 +22723,17 @@
     "session_id": "mu12qv6n-q3u8dbs7",
     "button_location": "sticky",
     "referrer": "https://asiakoz.com/almaty?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaccxgbGo-NRjAsgq6p-sD4TuwGRhhQY2QOo91mg0iuT402wIpXvclAAgjHzmQ_aem_SEFWUvY9RTF0X6Zce9G1hQ"
+  },
+  {
+    "id": "1789380224171-8yz773",
+    "ts": 1789380224171,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu12rt5w-e5vrwpes",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
