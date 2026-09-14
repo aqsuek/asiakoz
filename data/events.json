@@ -22624,5 +22624,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mu120xz1-qwlih4be"
+  },
+  {
+    "id": "1789379324546-wb6ull",
+    "ts": 1789379324547,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mu128ewv-7707vrxn",
+    "referrer": "https://www.google.com/"
   }
 ]
