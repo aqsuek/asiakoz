@@ -22615,5 +22615,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789378991637-vj8z8m",
+    "ts": 1789378991637,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu120xz1-qwlih4be"
   }
 ]
