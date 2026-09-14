@@ -22634,5 +22634,17 @@
     "language": "kk",
     "session_id": "mu128ewv-7707vrxn",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789379438835-pt8tb9",
+    "ts": 1789379438835,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu12avu8-zwhy8pw0",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
