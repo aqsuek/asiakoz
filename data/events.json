@@ -22382,5 +22382,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789374186030-kbt5qp",
+    "ts": 1789374186030,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu0z6csw-onivt6be"
   }
 ]
