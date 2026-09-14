@@ -22129,5 +22129,14 @@
     "session_id": "mu0t2rfw-fgc8yrwh",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789364636770-711w7w",
+    "ts": 1789364636770,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mu0thm08-1t8nbp1e"
   }
 ]
