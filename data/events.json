@@ -22118,5 +22118,16 @@
     "language": "ru",
     "session_id": "mu0t2rfw-fgc8yrwh",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789364050227-is32bl",
+    "ts": 1789364050227,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu0t2rfw-fgc8yrwh",
+    "button_location": "mid_page_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
