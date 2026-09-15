@@ -23791,5 +23791,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789460814726-0knto7",
+    "ts": 1789460814726,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2er2dn-am2q9fgv",
+    "referrer": "https://asiakoz.com/kk/doctor-mehmet-esat-teker/"
   }
 ]
