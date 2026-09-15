@@ -24253,5 +24253,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mu2x0vwf-43pb3jcj"
+  },
+  {
+    "id": "1789492453742-gvpctv",
+    "ts": 1789492453742,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2xl720-sckxo3fb",
+    "referrer": "https://www.google.com/"
   }
 ]
