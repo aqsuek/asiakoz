@@ -23350,5 +23350,15 @@
     "language": "ru",
     "session_id": "mu25uh6c-2a3lr0hc",
     "referrer": "https://yandex.com/maps/org/asiakoz/98562283977/?ll=76.918866%2C43.267840&z=15"
+  },
+  {
+    "id": "1789445993405-im57lf",
+    "ts": 1789445993405,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu25xfzt-htwkfnf7",
+    "referrer": "https://www.google.com/"
   }
 ]
