@@ -23340,5 +23340,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789445852481-9mxfrj",
+    "ts": 1789445852481,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu25uh6c-2a3lr0hc",
+    "referrer": "https://yandex.com/maps/org/asiakoz/98562283977/?ll=76.918866%2C43.267840&z=15"
   }
 ]
