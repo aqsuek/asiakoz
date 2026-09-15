@@ -23590,5 +23590,15 @@
     "language": "ru",
     "session_id": "mu2ao600-b623cfd5",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789454766454-nay2md",
+    "ts": 1789454766454,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2b5f4s-ngyx8kyc",
+    "referrer": "https://l.instagram.com/"
   }
 ]
