@@ -24244,5 +24244,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mu2wqy5x-gw6ifx84"
+  },
+  {
+    "id": "1789491507462-196l76",
+    "ts": 1789491507462,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mu2x0vwf-43pb3jcj"
   }
 ]
