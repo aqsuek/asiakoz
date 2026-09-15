@@ -23974,5 +23974,17 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mu2j1cwf-gq6fesrn"
+  },
+  {
+    "id": "1789468049460-2ut0l1",
+    "ts": 1789468049460,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mu2j23tm-8m85byze",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
