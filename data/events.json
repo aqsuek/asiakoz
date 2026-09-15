@@ -24194,5 +24194,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789487185394-qj33cf",
+    "ts": 1789487185394,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2ug7ze-yt3t4g8s",
+    "referrer": "https://asiakoz.com/doctor-mehmet-esat-teker/"
   }
 ]
