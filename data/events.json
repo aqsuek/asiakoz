@@ -23482,5 +23482,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789450845874-tazxjp",
+    "ts": 1789450845874,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mu28td9w-6g3tqy41",
+    "referrer": "https://l.instagram.com/"
   }
 ]
