@@ -23671,5 +23671,17 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789455287183-49v29i",
+    "ts": 1789455287183,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mu2bf23c-m9nhkotr",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/"
   }
 ]
