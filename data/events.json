@@ -23426,5 +23426,15 @@
     "language": "ru",
     "session_id": "mu27f4hu-47gyhsni",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789449334166-e75gbn",
+    "ts": 1789449334166,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu27x022-g0syx0rz",
+    "referrer": "https://www.google.com/"
   }
 ]
