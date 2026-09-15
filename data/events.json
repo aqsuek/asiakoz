@@ -23759,5 +23759,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789460245908-fhs0az",
+    "ts": 1789460245908,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2eeuag-ul7jq6tl",
+    "referrer": "https://www.google.com/"
   }
 ]
