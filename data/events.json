@@ -23737,5 +23737,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mu2cuevj-ccr40lkp"
+  },
+  {
+    "id": "1789458125903-nha1ny",
+    "ts": 1789458125903,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mu2d5iob-zcl9a2r0",
+    "referrer": "https://asiakoz.com/kk/doctor-mehmet-esat-teker/"
   }
 ]
