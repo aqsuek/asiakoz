@@ -24302,5 +24302,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mu2yuwb1-70kts0v1"
+  },
+  {
+    "id": "1789495570920-2rjmae",
+    "ts": 1789495570920,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu2zg0lo-0lvm1o3q",
+    "referrer": "https://www.google.com/"
   }
 ]
