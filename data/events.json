@@ -23568,5 +23568,17 @@
     "language": "ru",
     "session_id": "mu2a08ph-dbtjlz8u",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1789453169627-hw8xv0",
+    "ts": 1789453169627,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu2a79p6-5wfny0um",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
