@@ -24940,5 +24940,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789555118967-sxvjqs",
+    "ts": 1789555118967,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu3ytxa9-n1206ejw",
+    "button_location": "contacts_call",
+    "referrer": "https://www.google.com/"
   }
 ]
