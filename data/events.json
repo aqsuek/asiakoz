@@ -24951,5 +24951,15 @@
     "session_id": "mu3ytxa9-n1206ejw",
     "button_location": "contacts_call",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789555215813-7xgehs",
+    "ts": 1789555215813,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mu3yyezb-skd78sgi",
+    "referrer": "https://www.google.com/"
   }
 ]
