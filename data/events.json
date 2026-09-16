@@ -25157,5 +25157,17 @@
     "language": "ru",
     "session_id": "mu46s5zo-stf0mi7w",
     "referrer": "https://asiakoz.com/lazer-almaty/"
+  },
+  {
+    "id": "1789568560510-z69sem",
+    "ts": 1789568560510,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu46webi-io3yqv9h",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
