@@ -25312,5 +25312,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789577787523-habrod",
+    "ts": 1789577787523,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mu4cc4lm-ethlgbju",
+    "referrer": "https://www.google.com/"
   }
 ]
