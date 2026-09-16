@@ -25364,5 +25364,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mu4daaac-lnzrahyk"
+  },
+  {
+    "id": "1789584388236-mq2pky",
+    "ts": 1789584388236,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu4gb9zu-f106gebu",
+    "referrer": "https://www.google.com/"
   }
 ]
