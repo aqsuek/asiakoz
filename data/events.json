@@ -25733,5 +25733,16 @@
     "language": "ru",
     "session_id": "mu53wfiy-vbk8ap25",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789624030192-ejyoic",
+    "ts": 1789624030192,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu53wfiy-vbk8ap25",
+    "button_location": "hero",
+    "referrer": "https://yandex.kz/"
   }
 ]
