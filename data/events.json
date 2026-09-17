@@ -25820,5 +25820,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789630066636-rn36ms",
+    "ts": 1789630066636,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu57itmz-c5svp70i",
+    "referrer": "https://asiakoz.com/doctors/"
   }
 ]
