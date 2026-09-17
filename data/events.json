@@ -25613,5 +25613,15 @@
     "session_id": "mu51rosf-dua7ndqh",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789620980895-6wwqdx",
+    "ts": 1789620980895,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu5243m1-hbzqpy6w",
+    "referrer": "https://asiakoz.com/kk/news/shymkent-ashyldy/"
   }
 ]
