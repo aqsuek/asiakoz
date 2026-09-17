@@ -25645,5 +25645,15 @@
     "language": "ru",
     "session_id": "mu52c2px-imhfc5xk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789621555603-lwiuou",
+    "ts": 1789621555603,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu52g9gd-2q216spv",
+    "referrer": "https://link.2gis.com/"
   }
 ]
