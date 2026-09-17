@@ -25744,5 +25744,14 @@
     "session_id": "mu53wfiy-vbk8ap25",
     "button_location": "hero",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789625535261-g65uqj",
+    "ts": 1789625535261,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu54tofe-z7desp8a"
   }
 ]
