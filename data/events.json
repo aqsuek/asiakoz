@@ -26043,5 +26043,15 @@
     "language": "ru",
     "session_id": "mu5cn4yi-zmhfdpjr",
     "button_location": "funnel_cta"
+  },
+  {
+    "id": "1789638799783-mxe1p2",
+    "ts": 1789638799783,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu5cpz7y-f44lhxmd",
+    "referrer": "https://www.google.com/"
   }
 ]
