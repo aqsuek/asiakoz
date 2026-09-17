@@ -25478,5 +25478,16 @@
     "language": "ru",
     "session_id": "mu4xuygv-n0rhnspf",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789613868370-aq5zmd",
+    "ts": 1789613868370,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu4xvjg4-fj940o4w",
+    "button_location": "hero",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
