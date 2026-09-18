@@ -26562,5 +26562,15 @@
     "language": "ru",
     "session_id": "mu6g61vb-hefp1fwm",
     "button_location": "sticky"
+  },
+  {
+    "id": "1789705575590-kx66n8",
+    "ts": 1789705575590,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu6g61vb-hefp1fwm",
+    "button_location": "hero"
   }
 ]
