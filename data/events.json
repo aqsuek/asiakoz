@@ -27488,5 +27488,15 @@
     "session_id": "mu7auzpi-sdmhntur",
     "button_location": "sticky",
     "referrer": "https://asiakoz.com/peresadka-rogovitsy-almaty/"
+  },
+  {
+    "id": "1789757583778-ow1z46",
+    "ts": 1789757583778,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu7bftsn-pnbby9ov",
+    "referrer": "https://www.google.com/"
   }
 ]
