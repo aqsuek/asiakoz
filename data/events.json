@@ -26871,5 +26871,17 @@
     "language": "ru",
     "session_id": "mu6q6fce-ltxy7teo",
     "referrer": "https://asiakoz.com/diagnostika-almaty/"
+  },
+  {
+    "id": "1789722247775-mulipq",
+    "ts": 1789722247775,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu6qegb0-9ncmfgj7",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
