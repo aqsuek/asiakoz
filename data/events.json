@@ -27101,5 +27101,15 @@
     "session_id": "mu6uco0n-33sxac0d",
     "button_location": "mid_page_cta",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1789729700441-cj7mgn",
+    "ts": 1789729700441,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu6uua0s-pm05rdmx",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
