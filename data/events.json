@@ -27090,5 +27090,16 @@
     "language": "kk",
     "session_id": "mu6uco0n-33sxac0d",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1789729032162-fecupn",
+    "ts": 1789729032162,
+    "event": "whatsapp_click",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mu6uco0n-33sxac0d",
+    "button_location": "mid_page_cta",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
