@@ -26861,5 +26861,15 @@
     "session_id": "mu6pm85k-y801pmbn",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789721877439-0x0eta",
+    "ts": 1789721877439,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu6q6fce-ltxy7teo",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
