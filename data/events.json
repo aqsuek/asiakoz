@@ -26620,5 +26620,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789708758252-bhg6fu",
+    "ts": 1789708758252,
+    "event": "page_view",
+    "page_path": "/index.html",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu66z9fn-wcvepk46"
   }
 ]
