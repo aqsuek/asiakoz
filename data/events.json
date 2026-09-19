@@ -28209,5 +28209,15 @@
     "language": "ru",
     "session_id": "mu8tt9ks-8a6kqhco",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789854473382-abgdkv",
+    "ts": 1789854473382,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu8x4l87-n0elii4k",
+    "referrer": "https://www.google.com/"
   }
 ]
