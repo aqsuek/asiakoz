@@ -27721,5 +27721,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789794039395-kn7uvy",
+    "ts": 1789794039395,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu7wskri-3tjpxszt",
+    "referrer": "https://asiakoz.com/glaukoma-almaty/"
   }
 ]
