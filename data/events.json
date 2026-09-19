@@ -27581,5 +27581,15 @@
     "language": "ru",
     "session_id": "mu7qt4br-imebj7qs",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789784423834-xhqx7m",
+    "ts": 1789784423834,
+    "event": "branch_select",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mu7qt4br-imebj7qs",
+    "referrer": "https://www.google.com/"
   }
 ]
