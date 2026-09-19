@@ -27611,5 +27611,15 @@
     "language": "ru",
     "session_id": "mu7t5b0u-tr9pxdsk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789787373509-m32uzh",
+    "ts": 1789787373509,
+    "event": "branch_select",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mu7t5b0u-tr9pxdsk",
+    "referrer": "https://www.google.com/"
   }
 ]
