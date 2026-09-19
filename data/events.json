@@ -28006,5 +28006,15 @@
     "language": "ru",
     "session_id": "mu8d5vo0-nn1zmpht",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789822250761-foy5bz",
+    "ts": 1789822250761,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mu8dxzzz-yzewv1kn",
+    "referrer": "https://asiakoz.com/glaukoma-almaty/"
   }
 ]
