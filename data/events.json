@@ -28103,5 +28103,15 @@
     "language": "ru",
     "session_id": "mu8kevh0-3ojfaf49",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789833227905-mmr9fz",
+    "ts": 1789833227905,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mu8kghqq-2vubwvda",
+    "referrer": "https://www.google.com/"
   }
 ]
