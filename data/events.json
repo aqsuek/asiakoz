@@ -29974,5 +29974,17 @@
     "language": "ru",
     "session_id": "mubt3se3-c2ljfxpr",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790029451100-4hw1wj",
+    "ts": 1790029451100,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mubtawfm-no67xr34",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
