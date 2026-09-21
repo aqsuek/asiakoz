@@ -29207,5 +29207,17 @@
     "session_id": "muay9ig7-qh0uv6bn",
     "button_location": "hero",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789978101680-ilt22z",
+    "ts": 1789978101680,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muayqdde-hs8xypbp",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
