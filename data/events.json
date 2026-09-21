@@ -29522,5 +29522,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mub5ymrv-sm0cae0c"
+  },
+  {
+    "id": "1789991326117-fblzzh",
+    "ts": 1789991326117,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mub6lrao-7f6xnzky",
+    "referrer": "https://www.google.com.hk/"
   }
 ]
