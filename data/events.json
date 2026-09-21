@@ -29291,5 +29291,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mub0niuz-6w65rngs"
+  },
+  {
+    "id": "1789981554475-ts0fxh",
+    "ts": 1789981554475,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mub0s8kz-2tusgptt",
+    "referrer": "https://www.google.com/"
   }
 ]
