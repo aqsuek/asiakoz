@@ -29071,5 +29071,15 @@
     "language": "ru",
     "session_id": "muarhk21-3ar33so0",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789965978868-4xnuka",
+    "ts": 1789965978868,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muarhk21-3ar33so0",
+    "referrer": "https://www.google.com/"
   }
 ]
