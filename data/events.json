@@ -29301,5 +29301,15 @@
     "language": "ru",
     "session_id": "mub0s8kz-2tusgptt",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789981592906-vvo3vz",
+    "ts": 1789981592906,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mub0s8kz-2tusgptt",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
