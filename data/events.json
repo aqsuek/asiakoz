@@ -29532,5 +29532,15 @@
     "language": "ru",
     "session_id": "mub6lrao-7f6xnzky",
     "referrer": "https://www.google.com.hk/"
+  },
+  {
+    "id": "1789991348504-mwr5wd",
+    "ts": 1789991348504,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mub6l065-xlq2z1hd",
+    "referrer": "https://asiakoz.com/"
   }
 ]
