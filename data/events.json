@@ -29000,5 +29000,17 @@
     "session_id": "muapwcvw-xfoex92d",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1789963620078-ulj67n",
+    "ts": 1789963620078,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muaq40zl-zywikjkp",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
