@@ -29661,5 +29661,16 @@
     "session_id": "mubc2izf-jv3u4ztz",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790000605524-b3qvgc",
+    "ts": 1790000605524,
+    "event": "phone_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mubc2izf-jv3u4ztz",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
