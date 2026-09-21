@@ -28939,5 +28939,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muaob8ha-dcrhzhoo"
+  },
+  {
+    "id": "1789961396708-9ko0pk",
+    "ts": 1789961396709,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muamcg7d-cdh15yva"
   }
 ]
