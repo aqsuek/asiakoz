@@ -29021,5 +29021,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muaqksde-jywew37a"
+  },
+  {
+    "id": "1789964440485-434b2v",
+    "ts": 1789964440485,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muaqksde-jywew37a",
+    "button_location": "sticky"
   }
 ]
