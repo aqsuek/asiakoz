@@ -29040,5 +29040,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muaqry6m-geg59q70"
+  },
+  {
+    "id": "1789964827796-loryj2",
+    "ts": 1789964827796,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muaqry6m-geg59q70"
   }
 ]
