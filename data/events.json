@@ -29447,5 +29447,16 @@
     "language": "ru",
     "session_id": "mub3ch0m-juypqpop",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1789985875292-3pdc5u",
+    "ts": 1789985875292,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mub3ch0m-juypqpop",
+    "button_location": "sticky",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
