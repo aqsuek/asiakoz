@@ -29152,5 +29152,17 @@
     "language": "ru",
     "session_id": "muavokia-jo6abs0u",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789975344873-mxfdb9",
+    "ts": 1789975344873,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muax2kq7-9so0mc73",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
