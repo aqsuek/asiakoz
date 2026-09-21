@@ -29196,5 +29196,16 @@
     "language": "ru",
     "session_id": "muay9ig7-qh0uv6bn",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1789977371746-c9ojoo",
+    "ts": 1789977371746,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "muay9ig7-qh0uv6bn",
+    "button_location": "hero",
+    "referrer": "https://yandex.kz/"
   }
 ]
