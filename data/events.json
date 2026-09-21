@@ -29391,5 +29391,15 @@
     "language": "ru",
     "session_id": "mub1t656-u5sdrc4w",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1789984251471-uuieyd",
+    "ts": 1789984251471,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mub2e4jv-7tszvwk2",
+    "referrer": "https://asiakoz.com/almaty?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacibLn50ls782OU8rBercAfqNnpStgl6H6a_T4NeRiG1JGYixFrj34e8CHsxw_aem_OPPYDHoV5cwHOcIGZLJIfw"
   }
 ]
