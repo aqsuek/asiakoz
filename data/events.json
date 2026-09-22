@@ -30551,5 +30551,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muciux1c-70gobfc0"
+  },
+  {
+    "id": "1790072430681-onuq31",
+    "ts": 1790072430681,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muciw605-py38fr46"
   }
 ]
