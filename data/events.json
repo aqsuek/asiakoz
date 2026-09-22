@@ -30467,5 +30467,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mucg4co6-qiccncpr"
+  },
+  {
+    "id": "1790069941637-z9df1n",
+    "ts": 1790069941637,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mucheq3j-nb68dk1p",
+    "referrer": "https://www.facebook.com/"
   }
 ]
