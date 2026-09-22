@@ -30614,5 +30614,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790075415082-jesctb",
+    "ts": 1790075415082,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muckneq6-e1e18301",
+    "referrer": "https://www.google.com/"
   }
 ]
