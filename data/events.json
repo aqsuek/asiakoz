@@ -30477,5 +30477,15 @@
     "language": "ru",
     "session_id": "mucheq3j-nb68dk1p",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1790070050592-qjy26p",
+    "ts": 1790070050592,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muchgmd4-frd4mdvb",
+    "referrer": "https://l.wl.co/"
   }
 ]
