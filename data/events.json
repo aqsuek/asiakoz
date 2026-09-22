@@ -30148,5 +30148,15 @@
     "language": "ru",
     "session_id": "muc6ix68-kpqouwhe",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790052040563-ldw2ab",
+    "ts": 1790052040563,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muc6r65x-ai8oafb2",
+    "referrer": "https://asiakoz.com/diagnostika-shymkent/"
   }
 ]
