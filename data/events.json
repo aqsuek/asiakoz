@@ -30648,5 +30648,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790077395256-8aj73t",
+    "ts": 1790077395256,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mucluk29-9imvpz4r",
+    "referrer": "https://yandex.kz/"
   }
 ]
