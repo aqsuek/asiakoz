@@ -31104,5 +31104,16 @@
     "session_id": "mudnpfby-kxn6olte",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790141055057-oddjuq",
+    "ts": 1790141055058,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudnpfby-kxn6olte",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
