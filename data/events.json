@@ -31999,5 +31999,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muek7y1g-eih4xjzu"
+  },
+  {
+    "id": "1790198053119-49ii8b",
+    "ts": 1790198053119,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mueloloy-22go39cs",
+    "referrer": "https://www.google.com/"
   }
 ]
