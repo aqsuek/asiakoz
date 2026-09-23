@@ -31861,5 +31861,15 @@
     "session_id": "muede1l6-7kuxdviu",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790184516950-vume79",
+    "ts": 1790184516950,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muedmi2i-s9wv8qs4",
+    "referrer": "https://www.yandex.kz/"
   }
 ]
