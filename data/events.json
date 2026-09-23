@@ -31070,5 +31070,16 @@
     "language": "ru",
     "session_id": "mudn47f3-sjjqkuww",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790140039870-e0rgew",
+    "ts": 1790140039870,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mudn47f3-sjjqkuww",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
