@@ -31254,5 +31254,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "muamcg7d-cdh15yva"
+  },
+  {
+    "id": "1790146677946-8363km",
+    "ts": 1790146677946,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudr3jnb-e84ypxm6",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
