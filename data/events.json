@@ -31430,5 +31430,17 @@
     "language": "ru",
     "session_id": "mudyz9zu-bobea8xe",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1790160625291-pa3pew",
+    "ts": 1790160625291,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudzegdg-ahbvbmdy",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
