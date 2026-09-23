@@ -31180,5 +31180,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mudoxmvw-yyxrcd8p"
+  },
+  {
+    "id": "1790143100815-0vdwtt",
+    "ts": 1790143100815,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mudoywew-8sfjnqh7",
+    "referrer": "https://www.google.com/"
   }
 ]
