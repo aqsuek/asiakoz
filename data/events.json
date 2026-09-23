@@ -31171,5 +31171,14 @@
     "session_id": "mudotfh5-w9q39rz8",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790143043948-2gisch",
+    "ts": 1790143043948,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudoxmvw-yyxrcd8p"
   }
 ]
