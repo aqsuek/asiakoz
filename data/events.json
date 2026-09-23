@@ -31115,5 +31115,15 @@
     "session_id": "mudnpfby-kxn6olte",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790141956943-ue4144",
+    "ts": 1790141956943,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudoadh7-6piivo5i",
+    "referrer": "https://yandex.kz/"
   }
 ]
