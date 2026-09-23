@@ -31399,5 +31399,17 @@
     "language": "ru",
     "session_id": "mudy7hde-gyrglmn1",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1790158750798-8gvrec",
+    "ts": 1790158750798,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mudya97s-api2aez8",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
