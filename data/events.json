@@ -31125,5 +31125,16 @@
     "language": "ru",
     "session_id": "mudoadh7-6piivo5i",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1790142067966-gl9shg",
+    "ts": 1790142067966,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudocqkx-eqjyj0m5",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
