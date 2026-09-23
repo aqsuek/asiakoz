@@ -31285,5 +31285,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mudc6irm-ojrhxnic"
+  },
+  {
+    "id": "1790151012057-g29igq",
+    "ts": 1790151012057,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mudtogqo-6sm41aox",
+    "referrer": "https://l.instagram.com/"
   }
 ]
