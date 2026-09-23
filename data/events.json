@@ -31319,5 +31319,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790153420910-ra9k07",
+    "ts": 1790153420910,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muamcg7d-cdh15yva"
   }
 ]
