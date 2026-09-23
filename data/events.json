@@ -32009,5 +32009,17 @@
     "language": "ru",
     "session_id": "mueloloy-22go39cs",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790198118069-hed1uk",
+    "ts": 1790198118069,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muelq01x-d82zxm6l",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
