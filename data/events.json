@@ -32667,5 +32667,16 @@
     "language": "ru",
     "session_id": "mufgl2ju-6471qx9e",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790250021113-g29rfr",
+    "ts": 1790250021113,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mufegt6a-ase6qxow",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
