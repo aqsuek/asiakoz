@@ -33038,5 +33038,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mufxy0au-civdy5ca"
+  },
+  {
+    "id": "1790281420881-6sj1oz",
+    "ts": 1790281420881,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mufzbjdn-flyerfa0",
+    "referrer": "https://www.google.com/"
   }
 ]
