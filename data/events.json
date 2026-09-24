@@ -32443,5 +32443,17 @@
     "language": "ru",
     "session_id": "muf75oju-7za4gn7o",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790234169119-a3jbs8",
+    "ts": 1790234169119,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muf73cf0-d15oax2c",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/"
   }
 ]
