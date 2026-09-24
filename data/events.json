@@ -32532,5 +32532,15 @@
     "session_id": "mufab7yb-faa22odg",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790239660550-1d670v",
+    "ts": 1790239660550,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mufaggb6-uplxg2gd",
+    "referrer": "https://yandex.kz/"
   }
 ]
