@@ -32960,5 +32960,15 @@
     "session_id": "mufrx256-rsaqnx8p",
     "button_location": "hero",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1790269943151-w4g7j5",
+    "ts": 1790269943151,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mufshgsg-f10pes0u",
+    "referrer": "https://www.google.com/"
   }
 ]
