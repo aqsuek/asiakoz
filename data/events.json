@@ -32949,5 +32949,16 @@
     "language": "ru",
     "session_id": "mufrtds6-473ylf5w",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1790268988354-lro7vh",
+    "ts": 1790268988354,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mufrx256-rsaqnx8p",
+    "button_location": "hero",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
