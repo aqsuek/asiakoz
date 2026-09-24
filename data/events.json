@@ -32246,5 +32246,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790226969568-kgnktu",
+    "ts": 1790226969568,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muf2wiup-1m57vvk5",
+    "referrer": "https://asiakoz.com/doctor-orel/"
   }
 ]
