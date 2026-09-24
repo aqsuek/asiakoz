@@ -32433,5 +32433,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1790234120322-zl0swx",
+    "ts": 1790234120322,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muf75oju-7za4gn7o",
+    "referrer": "https://www.google.com/"
   }
 ]
