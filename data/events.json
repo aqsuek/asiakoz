@@ -33157,5 +33157,14 @@
     "session_id": "mugfrwa7-xia2gfqu",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790310042525-0iva7p",
+    "ts": 1790310042525,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muggczap-qbi2suh3"
   }
 ]
