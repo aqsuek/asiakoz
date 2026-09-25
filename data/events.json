@@ -33262,5 +33262,14 @@
     "language": "ru",
     "session_id": "mugkibxu-bkci2lx0",
     "button_location": "contacts"
+  },
+  {
+    "id": "1790318050456-weebb7",
+    "ts": 1790318050456,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mugl4n3m-yfm13iw8"
   }
 ]
