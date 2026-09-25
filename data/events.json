@@ -34130,5 +34130,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790364719154-udhl67",
+    "ts": 1790364719154,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muhcwy6f-zrab9ulk"
   }
 ]
