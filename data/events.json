@@ -33654,5 +33654,17 @@
     "language": "ru",
     "session_id": "mugt4bjd-4ei5n1ec",
     "referrer": "https://asiakoz.com/uslugi/"
+  },
+  {
+    "id": "1790331843630-cxqf8g",
+    "ts": 1790331843630,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mugtcc54-4jxmkwav",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
