@@ -34212,5 +34212,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mug7280v-tzf8x6jb"
+  },
+  {
+    "id": "1790379159079-71vbz2",
+    "ts": 1790379159079,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mug7280u-tzf8x6jb"
   }
 ]
