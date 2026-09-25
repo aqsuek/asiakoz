@@ -33126,5 +33126,15 @@
     "language": "ru",
     "session_id": "mugexn0e-t8jti01w",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790307702728-4hsmp3",
+    "ts": 1790307702728,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mugexn0e-t8jti01w",
+    "referrer": "https://www.google.com/"
   }
 ]
