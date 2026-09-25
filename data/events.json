@@ -33252,5 +33252,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mugkibxu-bkci2lx0"
+  },
+  {
+    "id": "1790317052026-an7kkr",
+    "ts": 1790317052026,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mugkibxu-bkci2lx0",
+    "button_location": "contacts"
   }
 ]
