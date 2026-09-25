@@ -33644,5 +33644,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mugt4bjd-4ei5n1ec"
+  },
+  {
+    "id": "1790331743006-rz0j72",
+    "ts": 1790331743006,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mugt4bjd-4ei5n1ec",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
