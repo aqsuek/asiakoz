@@ -33146,5 +33146,16 @@
     "language": "ru",
     "session_id": "mugfrwa7-xia2gfqu",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790309161460-yci83q",
+    "ts": 1790309161460,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mugfrwa7-xia2gfqu",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
