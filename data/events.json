@@ -34139,5 +34139,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muhcwy6f-zrab9ulk"
+  },
+  {
+    "id": "1790365471647-x4udta",
+    "ts": 1790365471647,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muhdcy5e-790kmvro",
+    "referrer": "https://l.instagram.com/"
   }
 ]
