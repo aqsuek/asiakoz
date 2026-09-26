@@ -34425,5 +34425,16 @@
     "language": "ru",
     "session_id": "muhzxpfe-ef1pte8a",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790403423538-sry3rd",
+    "ts": 1790403423538,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muhzxpfe-ef1pte8a",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
