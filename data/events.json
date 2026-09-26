@@ -34336,5 +34336,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790401898940-oekepu",
+    "ts": 1790401898940,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muhz1usx-iebdzuor",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
