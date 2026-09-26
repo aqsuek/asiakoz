@@ -34312,5 +34312,17 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "muhxkmnu-hkfhif72"
+  },
+  {
+    "id": "1790399794838-rthwv5",
+    "ts": 1790399794838,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muhxsr40-fqnj5bl8",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
