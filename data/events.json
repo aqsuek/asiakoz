@@ -34221,5 +34221,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mug7280u-tzf8x6jb"
+  },
+  {
+    "id": "1790381005787-d9gh6q",
+    "ts": 1790381005787,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "muhmi2rj-lnxhwhhu"
   }
 ]
