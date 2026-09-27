@@ -35684,5 +35684,15 @@
     "session_id": "muk444l8-y4hnpg6e",
     "button_location": "funnel_cta",
     "referrer": "https://asiakoz.com/kk/"
+  },
+  {
+    "id": "1790532689756-w08k2k",
+    "ts": 1790532689756,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muk444l8-y4hnpg6e",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
