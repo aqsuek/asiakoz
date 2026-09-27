@@ -35733,5 +35733,16 @@
     "language": "ru",
     "session_id": "muk8g5a1-fo9mewfe",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790538839805-0f1nk8",
+    "ts": 1790538839805,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muk8g5a1-fo9mewfe",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
