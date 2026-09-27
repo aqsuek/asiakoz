@@ -35653,5 +35653,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790529580098-k9ef1u",
+    "ts": 1790529580098,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muk32i9i-90h3a9ne",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
