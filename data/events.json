@@ -35177,5 +35177,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790479949112-2eahnq",
+    "ts": 1790479949112,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muj9ip87-tbbmnmms",
+    "referrer": "https://www.google.com/"
   }
 ]
