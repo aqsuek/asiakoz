@@ -35673,5 +35673,16 @@
     "language": "ru",
     "session_id": "muk444l8-y4hnpg6e",
     "referrer": "https://asiakoz.com/kk/"
+  },
+  {
+    "id": "1790531459710-z2biv6",
+    "ts": 1790531459710,
+    "event": "whatsapp_click",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muk444l8-y4hnpg6e",
+    "button_location": "funnel_cta",
+    "referrer": "https://asiakoz.com/kk/"
   }
 ]
