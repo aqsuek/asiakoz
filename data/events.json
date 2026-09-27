@@ -35744,5 +35744,15 @@
     "session_id": "muk8g5a1-fo9mewfe",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790539027257-0y4427",
+    "ts": 1790539027257,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muk444l8-y4hnpg6e",
+    "referrer": "https://asiakoz.com/"
   }
 ]
