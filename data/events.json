@@ -35842,5 +35842,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mukpvsz0-sa2zwhqo"
+  },
+  {
+    "id": "1790568007122-7yfnzr",
+    "ts": 1790568007122,
+    "event": "page_view",
+    "page_path": "/aktau/doctor/ali-keskin/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mukpy1s1-l1ypj45x"
   }
 ]
