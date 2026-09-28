@@ -35772,5 +35772,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mukfthg8-nq08x7c6"
+  },
+  {
+    "id": "1790559980828-n6feoj",
+    "ts": 1790559980828,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mukl5wj5-ztqfc955",
+    "referrer": "https://yandex.ru/"
   }
 ]
