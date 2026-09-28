@@ -36060,5 +36060,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mukvsyyv-axwd9wsz"
+  },
+  {
+    "id": "1790577951135-4mybri",
+    "ts": 1790577951135,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mukvq039-l1wh8e7n",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJmZGlkFlD0KnsCfYQlacDvncJkoWO0B3CjYXlzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAac1rdVJgH8NHSRVn4rSoAfeCBlB_UoFD7geD5t_ez-U_VkUUdGXcxRBn3M9Aw_aem_74po_DOIBPls12TD_I9YOA"
   }
 ]
