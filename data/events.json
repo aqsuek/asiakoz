@@ -36029,5 +36029,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790577706537-0uhjcj",
+    "ts": 1790577706537,
+    "event": "branch_select",
+    "page_path": "/almaty/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mukvq039-l1wh8e7n",
+    "referrer": "https://l.instagram.com/"
   }
 ]
