@@ -36506,5 +36506,14 @@
     "language": "ru",
     "session_id": "mul5bxyp-ys1p2ema",
     "referrer": "https://yandex.ru/"
+  },
+  {
+    "id": "1790594094115-ecqq6c",
+    "ts": 1790594094115,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mul5h7rn-x2or672v"
   }
 ]
