@@ -36644,5 +36644,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mula94fq-ur9fs5ko"
+  },
+  {
+    "id": "1790602347766-agorga",
+    "ts": 1790602347766,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muladzct-2jbn3jg8",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
