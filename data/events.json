@@ -35782,5 +35782,15 @@
     "language": "ru",
     "session_id": "mukl5wj5-ztqfc955",
     "referrer": "https://yandex.ru/"
+  },
+  {
+    "id": "1790560075131-rcknzj",
+    "ts": 1790560075131,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mukl7vpf-6miax6pk",
+    "referrer": "https://yandex.ru/"
   }
 ]
