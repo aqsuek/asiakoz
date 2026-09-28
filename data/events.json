@@ -35978,5 +35978,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "muktq5k1-5v8s1g4s"
+  },
+  {
+    "id": "1790574471079-hcm2b6",
+    "ts": 1790574471080,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muktsj5n-cbwvfbhd",
+    "referrer": "https://l.wl.co/"
   }
 ]
