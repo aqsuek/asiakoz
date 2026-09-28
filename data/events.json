@@ -36770,5 +36770,14 @@
     "session_id": "muleoxph-dvjy3dtt",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790610817217-213ddp",
+    "ts": 1790610817217,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mulffo3l-pabevk32"
   }
 ]
