@@ -35814,5 +35814,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790564887885-mihczu",
+    "ts": 1790564887885,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muko36nf-1gt46sdi",
+    "referrer": "https://www.google.com/"
   }
 ]
