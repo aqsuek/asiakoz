@@ -37913,5 +37913,14 @@
     "session_id": "mun6btix-jajzospk",
     "button_location": "mid_page_cta",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790720864525-s94l1l",
+    "ts": 1790720864525,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mulwtmqn-8rvqo3r4"
   }
 ]
