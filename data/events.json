@@ -37222,5 +37222,15 @@
     "session_id": "mumbl66h-ss6kk3uy",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790665112320-o6zvgy",
+    "ts": 1790665112320,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mumbra8j-q7gy7f08",
+    "referrer": "https://www.google.com/"
   }
 ]
