@@ -37159,5 +37159,17 @@
     "session_id": "mumaaksr-dfy8toci",
     "button_location": "mid_page_cta",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790662941986-3cyl64",
+    "ts": 1790662941986,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mumaguvi-84pdl3dm",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
