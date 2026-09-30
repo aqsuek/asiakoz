@@ -146,6 +146,9 @@ def patch_ru_url_consistency(html: str, rel_s: str) -> str:
         return html
     if 'id="root"' in html:
         return html
+    low = html.lower()
+    if 'http-equiv="refresh"' in low or "location.replace" in low:
+        return html
 
     site = "https://asiakoz.com"
     ru_url = f"{site}/{rel}/" if rel else f"{site}/"
