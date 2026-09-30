@@ -38354,5 +38354,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790760827734-6jkdnd",
+    "ts": 1790760827734,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "munwqups-1qlb2xbh",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
