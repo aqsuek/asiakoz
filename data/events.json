@@ -38121,5 +38121,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790748722644-5t3szq",
+    "ts": 1790748722644,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "munpinol-nxy08qon",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
