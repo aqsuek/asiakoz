@@ -38091,5 +38091,14 @@
     "session_id": "muno1j07-ljaebpx1",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790746452179-n1gnz7",
+    "ts": 1790746452179,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muno6pqz-q4rotp03"
   }
 ]
