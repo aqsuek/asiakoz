@@ -38270,5 +38270,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790755480249-yl8vej",
+    "ts": 1790755480249,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muntkabf-ufgtmu5h",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
