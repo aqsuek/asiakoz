@@ -38132,5 +38132,17 @@
     "session_id": "munpinol-nxy08qon",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790749293600-344c35",
+    "ts": 1790749293601,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "munpvq6a-wna3lj02",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
