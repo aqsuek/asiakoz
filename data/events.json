@@ -40080,5 +40080,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupoa8m2-1mejkrhk"
+  },
+  {
+    "id": "1790867578028-epb8jh",
+    "ts": 1790867578028,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupoat3a-vjveffu2"
   }
 ]
