@@ -40614,5 +40614,16 @@
     "language": "kk",
     "session_id": "mups53id-vcanawmi",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790874046718-4sqbji",
+    "ts": 1790874046718,
+    "event": "whatsapp_click",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kz",
+    "session_id": "mups53id-vcanawmi",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
