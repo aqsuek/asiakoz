@@ -40864,5 +40864,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupvg5n9-2nacrwbj"
+  },
+  {
+    "id": "1790879752220-9yhnya",
+    "ts": 1790879752220,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mupv0ud7-puno6jzt"
   }
 ]
