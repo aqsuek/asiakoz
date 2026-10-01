@@ -40116,5 +40116,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupodgum-j4a97dgg"
+  },
+  {
+    "id": "1790867732918-i0rwc1",
+    "ts": 1790867732918,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupoe20p-hyow76e0"
   }
 ]
