@@ -40403,5 +40403,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muppocon-szseb10c"
+  },
+  {
+    "id": "1790869943434-37zpws",
+    "ts": 1790869943434,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupppimi-bwn758yq"
   }
 ]
