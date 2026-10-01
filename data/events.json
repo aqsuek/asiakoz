@@ -39398,5 +39398,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupdkatq-aw2r50ww"
+  },
+  {
+    "id": "1790849753063-de2254",
+    "ts": 1790849753063,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "tr",
+    "session_id": "mupdgzbw-q3yof0ij",
+    "button_location": "mid_page_cta"
   }
 ]
