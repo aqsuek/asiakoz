@@ -40171,5 +40171,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupoht1r-n2kooo7u"
+  },
+  {
+    "id": "1790867963951-10zg6s",
+    "ts": 1790867963951,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupoj184-bmjyml3d",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
