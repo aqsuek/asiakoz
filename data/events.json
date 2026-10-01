@@ -39361,5 +39361,15 @@
     "language": "kk",
     "session_id": "mupcu5ji-cxe7wnby",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790848644245-scival",
+    "ts": 1790848644245,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupd10xy-utsciftl",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
