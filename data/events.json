@@ -40625,5 +40625,15 @@
     "session_id": "mups53id-vcanawmi",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790874098400-6stk91",
+    "ts": 1790874098400,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mups6h3q-33yag1v0",
+    "referrer": "https://www.google.com/"
   }
 ]
