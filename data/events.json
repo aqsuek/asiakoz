@@ -40954,5 +40954,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupzakx4-mwpoe7c1"
+  },
+  {
+    "id": "1790886067661-7pxbmp",
+    "ts": 1790886067661,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupzb5wh-bagv28xu",
+    "referrer": "https://ea37f48384f0d3af3e0fef9e3528f18d.safeframe.googlesyndication.com/"
   }
 ]
