@@ -40604,5 +40604,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mups1jir-eig60oar"
+  },
+  {
+    "id": "1790874024649-tz14nb",
+    "ts": 1790874024649,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mups53id-vcanawmi",
+    "referrer": "https://www.google.com/"
   }
 ]
