@@ -40052,5 +40052,15 @@
     "language": "ru",
     "session_id": "mupo8240-wr5v8lpq",
     "button_location": "hero"
+  },
+  {
+    "id": "1790867492307-8ec5jk",
+    "ts": 1790867492307,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupo8ypd-04z1hwdd",
+    "referrer": "https://youtube.com/"
   }
 ]
