@@ -40042,5 +40042,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupo7kj4-7xij8pw6"
+  },
+  {
+    "id": "1790867450677-cpfp5u",
+    "ts": 1790867450677,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupo8240-wr5v8lpq",
+    "button_location": "hero"
   }
 ]
