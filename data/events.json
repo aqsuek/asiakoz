@@ -40895,5 +40895,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790881464902-lzvbsr",
+    "ts": 1790881464902,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupwkxt9-7y82u17r",
+    "referrer": "https://ura.news/"
   }
 ]
