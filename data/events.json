@@ -40739,5 +40739,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muptin76-i5od7v1c"
+  },
+  {
+    "id": "1790876498234-mumx10",
+    "ts": 1790876498234,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "muptlzrh-f9tatax4",
+    "referrer": "https://www.google.com/"
   }
 ]
