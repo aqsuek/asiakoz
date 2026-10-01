@@ -39104,5 +39104,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790834121046-aemfaz",
+    "ts": 1790834121046,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mup4dnhq-r0lns6yy",
+    "referrer": "https://www.google.com/"
   }
 ]
