@@ -40394,5 +40394,14 @@
     "language": "ru",
     "session_id": "muppnlul-xz33m3gw",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790869884656-44gecg",
+    "ts": 1790869884656,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muppocon-szseb10c"
   }
 ]
