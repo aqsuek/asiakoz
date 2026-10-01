@@ -40905,5 +40905,14 @@
     "language": "ru",
     "session_id": "mupwkxt9-7y82u17r",
     "referrer": "https://ura.news/"
+  },
+  {
+    "id": "1790881534912-51of29",
+    "ts": 1790881534912,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupwlzsz-gakpgwrf"
   }
 ]
