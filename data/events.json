@@ -39700,5 +39700,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790866073991-x3ly45",
+    "ts": 1790866073991,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupneov3-2g2qtjhz"
   }
 ]
