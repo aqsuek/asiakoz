@@ -40135,5 +40135,14 @@
     "language": "ru",
     "session_id": "mupoem8j-ujqrkhv6",
     "button_location": "ad_sticky_bar"
+  },
+  {
+    "id": "1790867822418-akcbsf",
+    "ts": 1790867822418,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupog2eg-3mhakdlw"
   }
 ]
