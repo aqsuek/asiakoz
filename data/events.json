@@ -40485,5 +40485,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupq1erg-xxw6vsnf"
+  },
+  {
+    "id": "1790870526255-51h5cn",
+    "ts": 1790870526255,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mupq1owy-e7dtln2e",
+    "utm_source": "chatgpt.com",
+    "referrer": "https://asiakoz.com/?utm_source=chatgpt.com"
   }
 ]
