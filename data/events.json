@@ -41570,5 +41570,15 @@
     "session_id": "muqp34js-zpwv156h",
     "button_location": "hero",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790929501010-q5ou7c",
+    "ts": 1790929501010,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqp571b-8d40j20m",
+    "referrer": "https://youtube.com/"
   }
 ]
