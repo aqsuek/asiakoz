@@ -45173,5 +45173,14 @@
     "language": "ru",
     "session_id": "murf9ce2-1rfl33px",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790973453639-21xk0j",
+    "ts": 1790973453639,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murfban3-6wlwp8bh"
   }
 ]
