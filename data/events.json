@@ -44496,5 +44496,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murcrd5l-ukvqu7i2"
+  },
+  {
+    "id": "1790969147841-y57c2v",
+    "ts": 1790969147841,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murcrd5l-ukvqu7i2",
+    "button_location": "sticky"
   }
 ]
