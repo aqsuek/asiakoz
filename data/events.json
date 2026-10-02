@@ -42725,5 +42725,15 @@
     "language": "ru",
     "session_id": "muqvlvak-nk3xw5g3",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790940554211-mwvtnx",
+    "ts": 1790940554211,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqvqshj-yx1sxsqf",
+    "referrer": "https://youtube.com/"
   }
 ]
