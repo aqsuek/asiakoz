@@ -41767,5 +41767,15 @@
     "language": "ru",
     "session_id": "muqqew3l-z9ktj20m",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1790931648379-m9v8uf",
+    "ts": 1790931648379,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqqg3f1-3f0g80sz",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
