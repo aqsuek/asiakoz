@@ -41837,5 +41837,15 @@
     "language": "ru",
     "session_id": "muqqpahp-h414efsn",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790932189961-01gv9n",
+    "ts": 1790932189961,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqqlgnj-k6hh6hr2",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gclid=CjwKCAjwrP3VBhBbEiwAnaqpQ0br9qO821sZo8F_BpBHhcXtvN8cGA8nOQhP1oqBzrneID_q1YIjCxoChV4QAvD_BwE"
   }
 ]
