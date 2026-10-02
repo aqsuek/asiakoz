@@ -44722,5 +44722,15 @@
     "language": "ru",
     "session_id": "murdifre-axyuexpi",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1790970475544-3b82pb",
+    "ts": 1790970475544,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murdimxd-k1p8gbev",
+    "referrer": "https://youtube.com/"
   }
 ]
