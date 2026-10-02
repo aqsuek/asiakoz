@@ -45436,5 +45436,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muri5m7v-yblbgfv8"
+  },
+  {
+    "id": "1790978818754-a1c9fu",
+    "ts": 1790978818754,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murija9e-x10cwljs",
+    "referrer": "https://asiakoz.com/prk-lasek-almaty/"
   }
 ]
