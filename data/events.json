@@ -43782,5 +43782,15 @@
     "language": "ru",
     "session_id": "mur32wn6-rbatldn1",
     "button_location": "hero"
+  },
+  {
+    "id": "1790952899231-mj3f45",
+    "ts": 1790952899231,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur33lz1-5pg5j6tk",
+    "referrer": "https://youtube.com/"
   }
 ]
