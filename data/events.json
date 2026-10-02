@@ -44487,5 +44487,14 @@
     "language": "ru",
     "session_id": "murcpxya-bf3v7pwf",
     "button_location": "ad_sticky_bar"
+  },
+  {
+    "id": "1790969125498-piyhh9",
+    "ts": 1790969125498,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murcrd5l-ukvqu7i2"
   }
 ]
