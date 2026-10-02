@@ -44872,5 +44872,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mure3l12-y5qasl2t"
+  },
+  {
+    "id": "1790971457096-8upq5d",
+    "ts": 1790971457096,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mure51bj-wcktq80m",
+    "referrer": "https://youtube.com/"
   }
 ]
