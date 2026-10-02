@@ -43437,5 +43437,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mupnzxfe-ohhhcdt4"
+  },
+  {
+    "id": "1790949041959-neigik",
+    "ts": 1790949041959,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur0suyh-sf4atwut",
+    "referrer": "https://youtube.com/"
   }
 ]
