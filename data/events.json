@@ -42705,5 +42705,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muqvgxrf-f669aud7"
+  },
+  {
+    "id": "1790940284456-w6zsv2",
+    "ts": 1790940284456,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqvlvak-nk3xw5g3",
+    "referrer": "https://www.google.com/"
   }
 ]
