@@ -43333,5 +43333,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790947837210-sixuoe",
+    "ts": 1790947837210,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur0303e-sxs8lcmq"
   }
 ]
