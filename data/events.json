@@ -41142,5 +41142,15 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "muqep2m2-crfz7s1w"
+  },
+  {
+    "id": "1790912671856-n3nkds",
+    "ts": 1790912671856,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muqf5hhj-8jh88ozi",
+    "referrer": "https://www.google.com/"
   }
 ]
