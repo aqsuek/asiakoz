@@ -45370,5 +45370,14 @@
     "session_id": "murgit6j-td339rh9",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790976346689-pyrxcx",
+    "ts": 1790976346689,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murh1tpi-0jyjc1my"
   }
 ]
