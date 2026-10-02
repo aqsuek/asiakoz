@@ -45359,5 +45359,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murgqnom-jv0n27op"
+  },
+  {
+    "id": "1790976039358-hf3cwl",
+    "ts": 1790976039358,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murgit6j-td339rh9",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
