@@ -44845,5 +44845,14 @@
     "language": "ru",
     "session_id": "mure1kn7-4wm47tag",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1790971305834-a3ty51",
+    "ts": 1790971305834,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mure23az-al831l05"
   }
 ]
