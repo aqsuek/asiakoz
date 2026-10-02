@@ -44571,5 +44571,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murcy2qf-0lsi8h95"
+  },
+  {
+    "id": "1790969516640-1g3aqz",
+    "ts": 1790969516640,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murczld7-1ltb98p9",
+    "referrer": "https://youtube.com/"
   }
 ]
