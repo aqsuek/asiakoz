@@ -43194,5 +43194,15 @@
     "language": "ru",
     "session_id": "muqyzdz6-j9bzi81e",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790946065587-veszek",
+    "ts": 1790946065587,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqz19fs-gkwuj65l",
+    "referrer": "https://youtube.com/"
   }
 ]
