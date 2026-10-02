@@ -41133,5 +41133,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "muqe5ej4-ceghfinn"
+  },
+  {
+    "id": "1790911911228-paps8w",
+    "ts": 1790911911228,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "muqep2m2-crfz7s1w"
   }
 ]
