@@ -42422,5 +42422,15 @@
     "session_id": "muqtjrqa-perm5ka6",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790936939804-gkxia3",
+    "ts": 1790936939804,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muqtlmvy-820y393i",
+    "referrer": "https://www.google.com/"
   }
 ]
