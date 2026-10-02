@@ -43982,5 +43982,14 @@
     "session_id": "mur5bore-nkovl869",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790957896000-0c4wub",
+    "ts": 1790957896000,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur62rg1-kj33ak9e"
   }
 ]
