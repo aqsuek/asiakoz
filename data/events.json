@@ -44299,5 +44299,14 @@
     "language": "ru",
     "session_id": "murc9p61-3cn3c14k",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790968351740-mqyhpm",
+    "ts": 1790968351740,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murcaweg-gi009yxd"
   }
 ]
