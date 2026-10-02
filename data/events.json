@@ -44045,5 +44045,15 @@
     "language": "ru",
     "session_id": "mur76po0-suhvgu7r",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790961801104-6rdjpb",
+    "ts": 1790961801104,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mur8ec4e-hcfdnijz",
+    "referrer": "https://www.google.com/"
   }
 ]
