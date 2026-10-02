@@ -44703,5 +44703,14 @@
     "language": "ru",
     "session_id": "murdetri-d77cfkpv",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790970239082-dhf4wv",
+    "ts": 1790970239082,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murdfb87-eabq1z3l"
   }
 ]
