@@ -44410,5 +44410,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murcjwfc-ppcimufs"
+  },
+  {
+    "id": "1790968808522-6emohr",
+    "ts": 1790968808522,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murcmc2a-kzb73ssf"
   }
 ]
