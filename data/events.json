@@ -43175,5 +43175,14 @@
     "session_id": "muqyjc68-twbtvs15",
     "button_location": "ad_sticky_bar",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790945833673-jwsurz",
+    "ts": 1790945833673,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqyw2uj-rzaj76d6"
   }
 ]
