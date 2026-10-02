@@ -43576,5 +43576,15 @@
     "language": "ru",
     "session_id": "mur25deg-0d7ewam2",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1790951230395-e5af7a",
+    "ts": 1790951230395,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur23wqq-mcv7vclq",
+    "referrer": "https://asiakoz.com/kosoglazie-aktau/"
   }
 ]
