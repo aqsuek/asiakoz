@@ -43027,5 +43027,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1790943937251-4x1p0e",
+    "ts": 1790943937251,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqxreml-sxd9ivju",
+    "referrer": "https://asiakoz.com/kosoglazie/?gad_source=5&gad_campaignid=23697486862&gclid=EAIaIQobChMIj_Xm96mblwMVVAPJAh2IFQqREAEYASAAEgIhLvD_BwE"
   }
 ]
