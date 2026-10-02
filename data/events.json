@@ -45418,5 +45418,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murhibpe-wgrpd4f4"
+  },
+  {
+    "id": "1790977714918-asy754",
+    "ts": 1790977714918,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murhvipm-789gcosm"
   }
 ]
