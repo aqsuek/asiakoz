@@ -43663,5 +43663,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mur2hvdh-gtlrkgw6"
+  },
+  {
+    "id": "1790951945100-c8i7ji",
+    "ts": 1790951945100,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mur2ib8o-flp37mzj",
+    "referrer": "https://asiakoz.com/kosoglazie/?gad_source=5&gad_campaignid=23697486862&gclid=EAIaIQobChMI-cq2y8eblwMVs9WOCR26ywqXEAEYASAAEgL_XfD_BwE"
   }
 ]
