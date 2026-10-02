@@ -41372,5 +41372,17 @@
     "language": "ru",
     "session_id": "muqlau89-5665apk0",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790923281934-lvh70m",
+    "ts": 1790923281934,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqlgund-7rb7d5p1",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
