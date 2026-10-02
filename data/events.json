@@ -41312,5 +41312,15 @@
     "session_id": "muqjr6dq-wj8cc1xq",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790920423740-twqmfm",
+    "ts": 1790920423740,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muqjrl5v-w5figjbb",
+    "referrer": "https://yandex.kz/"
   }
 ]
