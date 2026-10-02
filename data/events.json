@@ -44145,5 +44145,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murbyop9-q6nm77fw"
+  },
+  {
+    "id": "1790967814668-1g1nez",
+    "ts": 1790967814668,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murby7eg-rnp465m6",
+    "button_location": "sticky",
+    "referrer": "https://googleads.g.doubleclick.net/"
   }
 ]
