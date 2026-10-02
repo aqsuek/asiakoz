@@ -44156,5 +44156,14 @@
     "session_id": "murby7eg-rnp465m6",
     "button_location": "sticky",
     "referrer": "https://googleads.g.doubleclick.net/"
+  },
+  {
+    "id": "1790967842588-obwu30",
+    "ts": 1790967842588,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murbzy3q-yeggr570"
   }
 ]
