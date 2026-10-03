@@ -48281,5 +48281,14 @@
     "language": "ru",
     "session_id": "mus4i67e-2cs56t11",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791015780128-vfv12a",
+    "ts": 1791015780128,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus4jge8-vuw7h363"
   }
 ]
