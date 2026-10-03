@@ -52181,5 +52181,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mustrbtd-0jnpli0s"
+  },
+  {
+    "id": "1791058171084-fv1t20",
+    "ts": 1791058171084,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "musts2x2-iva5en1q"
   }
 ]
