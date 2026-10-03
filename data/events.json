@@ -53951,5 +53951,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mut1t1eb-1hwd5x4z"
+  },
+  {
+    "id": "1791071703472-oo9boh",
+    "ts": 1791071703472,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mut1u30m-ih1umtnj"
   }
 ]
