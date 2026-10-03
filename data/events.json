@@ -52660,5 +52660,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musvaonm-p5jrn0f7"
+  },
+  {
+    "id": "1791060746768-lhyi8d",
+    "ts": 1791060746768,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musvb2en-5qf67do6",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gclid=EAIaIQobChMI-YKXlduelwMVaMm7CB1RfB41EAEYASAAEgIxZPD_BwE"
   }
 ]
