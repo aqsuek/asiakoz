@@ -48492,5 +48492,15 @@
     "language": "ru",
     "session_id": "mus3hudm-y9yujau2",
     "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gbraid=0AAAABCYFCcZVV4XS5sddmH6LaZExMRsIt&wbraid=Cl0KCQjwrP3VBhDfARJMAFAXIir2kwol-v4cD3TEOMn2FpyxwNpZoGbqnQZwh9mrV6AvJDmRE6l8K5LjVhkISlyPH0n1GfjcKMFNj26Fz8Af96C1UP7OIesDYhoC7M4"
+  },
+  {
+    "id": "1791018037061-6klr2w",
+    "ts": 1791018037061,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus5vlug-o3yejdoi",
+    "button_location": "hero"
   }
 ]
