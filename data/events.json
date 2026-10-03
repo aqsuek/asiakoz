@@ -52041,5 +52041,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "must3svv-6j8ezka5"
+  },
+  {
+    "id": "1791057122011-duwger",
+    "ts": 1791057122011,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "must5ksf-5qvlbyb4"
   }
 ]
