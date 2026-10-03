@@ -47503,5 +47503,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mus0mube-f6z465nj"
+  },
+  {
+    "id": "1791009260624-gd6lcc",
+    "ts": 1791009260624,
+    "event": "whatsapp_click",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kz",
+    "session_id": "mus0l60j-s7hmrx8d",
+    "button_location": "sticky",
+    "referrer": "https://asiakoz.com/almaty/?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJmZGlkFlD5JZ7P-Z3b_r22jZtF2vGxS_3Qq7tzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadLSFHPAPwlxBRO4wj8JSiHi1O9somP365K13X4c8eZ8MLIvOmiaN7aMaw_PA_aem_-VL5SbPKxgFQcM2DTVpSXg"
   }
 ]
