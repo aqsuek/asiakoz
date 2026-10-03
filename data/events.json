@@ -45761,5 +45761,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murrvsbu-rchqt8uf"
+  },
+  {
+    "id": "1790994575842-rdc095",
+    "ts": 1790994575842,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murrwvtc-2ydesb77"
   }
 ]
