@@ -50007,5 +50007,14 @@
     "language": "ru",
     "session_id": "museh44c-wjldllxm",
     "button_location": "hero"
+  },
+  {
+    "id": "1791032512617-aofrus",
+    "ts": 1791032512617,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musei420-v2hrol49"
   }
 ]
