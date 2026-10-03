@@ -52441,5 +52441,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musukphi-0xi8yyu4"
+  },
+  {
+    "id": "1791059541189-o08nxk",
+    "ts": 1791059541189,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musuld2d-25o4segw",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
