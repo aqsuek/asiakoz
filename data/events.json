@@ -52623,5 +52623,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "musv5mdr-qq9nm7rk"
+  },
+  {
+    "id": "1791060582065-n0jx5w",
+    "ts": 1791060582065,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musv7pj7-35gzuhw5",
+    "referrer": "https://youtube.com/"
   }
 ]
