@@ -50016,5 +50016,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musei420-v2hrol49"
+  },
+  {
+    "id": "1791032632594-7cmw8i",
+    "ts": 1791032632594,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musekn0e-jl32dlbk",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gbraid=0AAAABCYFCcZdNh6S2AE19-gGg36BarI9d&wbraid=CmgKCQjwrP3VBhDfARJXAFAXIioUksWps9zJiHitFP8ckyNw0s_n6DHlLCVIEowCg1vYEjQM5mLzFOTlCGwBoJv_DQSAsH8px_V4BQ-dxLFyHCSGxlid9m2WhrzP6C1NXwXY0nTDGgKwaA"
   }
 ]
