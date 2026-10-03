@@ -51249,5 +51249,14 @@
     "session_id": "muslma12-cvv5vsvt",
     "button_location": "hero",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791044562914-g4s6tr",
+    "ts": 1791044562914,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muslo7qt-5lvb2rq1"
   }
 ]
