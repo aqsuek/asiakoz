@@ -47152,5 +47152,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murze04h-fneo7jxh"
+  },
+  {
+    "id": "1791007255637-2n7n0n",
+    "ts": 1791007255637,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murzgmvt-d2ni1z7d",
+    "referrer": "https://youtube.com/"
   }
 ]
