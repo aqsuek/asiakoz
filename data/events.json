@@ -50651,5 +50651,15 @@
     "language": "ru",
     "session_id": "mushzr73-6ydcaed5",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791038413513-iou8s4",
+    "ts": 1791038413513,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musi0jop-w138is9l",
+    "referrer": "https://youtube.com/"
   }
 ]
