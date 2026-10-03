@@ -52190,5 +52190,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "musts2x2-iva5en1q"
+  },
+  {
+    "id": "1791058214264-exnf1r",
+    "ts": 1791058214264,
+    "event": "page_view",
+    "page_path": "/aktau/doctor/erol-joshkun/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mustszm4-07ult35y"
   }
 ]
