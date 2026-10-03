@@ -49250,5 +49250,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791025645202-gy5rhu",
+    "ts": 1791025645202,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musaent3-3lbaax3u",
+    "referrer": "https://youtube.com/"
   }
 ]
