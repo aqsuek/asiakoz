@@ -48172,5 +48172,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mus3psi8-45morsum"
+  },
+  {
+    "id": "1791014504108-yuaef1",
+    "ts": 1791014504108,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus3s3zq-bbn0twmx"
   }
 ]
