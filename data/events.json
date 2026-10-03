@@ -53669,5 +53669,15 @@
     "language": "ru",
     "session_id": "muszajji-tppc9r48",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791067458340-mdsgqr",
+    "ts": 1791067458340,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muszb4m5-7jhlmwkz",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
