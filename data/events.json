@@ -46546,5 +46546,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murw2adq-i43xe8hk"
+  },
+  {
+    "id": "1791001640206-hbt66j",
+    "ts": 1791001640206,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "murw11t6-hzrfujsr",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
