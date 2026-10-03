@@ -52917,5 +52917,15 @@
     "language": "ru",
     "session_id": "musw1i5l-f2rtcg8z",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791062007058-w94w21",
+    "ts": 1791062007058,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musw27w9-tr196kw2",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
