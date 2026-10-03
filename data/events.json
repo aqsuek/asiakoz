@@ -49152,5 +49152,16 @@
     "language": "ru",
     "session_id": "mus9rrix-wwf9okwk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791024693743-kn5sxn",
+    "ts": 1791024693743,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus9tbdr-x932mm0a",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
