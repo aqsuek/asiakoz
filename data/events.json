@@ -47342,5 +47342,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mus04gmr-qnzpnrnc"
+  },
+  {
+    "id": "1791008401091-80ak1x",
+    "ts": 1791008401091,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus05bja-8uu6rkrn",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
