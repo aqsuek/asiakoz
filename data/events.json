@@ -49949,5 +49949,17 @@
     "language": "ru",
     "session_id": "musbvhrx-4mie064z",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791031831344-cmtvmt",
+    "ts": 1791031831344,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muse3htk-mw5j2y4b",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
