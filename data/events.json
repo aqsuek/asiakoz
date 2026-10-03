@@ -51674,5 +51674,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musrb4se-pzc9r1ya"
+  },
+  {
+    "id": "1791054157382-pacibc",
+    "ts": 1791054157382,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musrdxtr-exh6nnpj"
   }
 ]
