@@ -52199,5 +52199,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mustszm4-07ult35y"
+  },
+  {
+    "id": "1791058286266-f65tgd",
+    "ts": 1791058286266,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mustuham-8ib9bof6",
+    "referrer": "https://youtube.com/"
   }
 ]
