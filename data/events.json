@@ -49519,5 +49519,15 @@
     "language": "ru",
     "session_id": "musbruau-2sevttn5",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791027970552-wmfbbl",
+    "ts": 1791027970552,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musbsq4y-vxiyqnmr",
+    "button_location": "ad_sticky_bar"
   }
 ]
