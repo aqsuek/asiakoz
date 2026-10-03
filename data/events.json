@@ -52508,5 +52508,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mususdcm-73vm90ur"
+  },
+  {
+    "id": "1791059888653-rmr3hb",
+    "ts": 1791059888653,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mususvm9-39fb50hz",
+    "referrer": "https://youtube.com/"
   }
 ]
