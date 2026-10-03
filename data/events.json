@@ -51501,5 +51501,14 @@
     "language": "ru",
     "session_id": "musmwhrh-xg3jtccy",
     "button_location": "ad_sticky_bar"
+  },
+  {
+    "id": "1791046782824-g7d593",
+    "ts": 1791046782824,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musmzwzq-9wcrdq0g"
   }
 ]
