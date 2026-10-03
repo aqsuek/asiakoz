@@ -49529,5 +49529,15 @@
     "language": "ru",
     "session_id": "musbsq4y-vxiyqnmr",
     "button_location": "ad_sticky_bar"
+  },
+  {
+    "id": "1791028086010-b8zf4m",
+    "ts": 1791028086010,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musc0htr-u6oz3427",
+    "referrer": "https://youtube.com/"
   }
 ]
