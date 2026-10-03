@@ -52172,5 +52172,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musto4bw-qigr7qga"
+  },
+  {
+    "id": "1791058140086-s3cgv8",
+    "ts": 1791058140086,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mustrbtd-0jnpli0s"
   }
 ]
