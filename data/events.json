@@ -52258,5 +52258,15 @@
     "session_id": "mustzi6o-l4nqcmb2",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791058577669-gfkqub",
+    "ts": 1791058577669,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musu04kn-ed3a814u",
+    "button_location": "hero"
   }
 ]
