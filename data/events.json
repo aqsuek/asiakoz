@@ -48135,5 +48135,14 @@
     "language": "kk",
     "session_id": "mus3krme-tkd3xcyu",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791014190502-0ibi14",
+    "ts": 1791014190502,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus3le05-ou6kuvqf"
   }
 ]
