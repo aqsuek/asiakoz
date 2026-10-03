@@ -46280,5 +46280,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "murut0at-agycroww"
+  },
+  {
+    "id": "1790999462805-gqa6vo",
+    "ts": 1790999462805,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murutq24-fxhfnh0g",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
