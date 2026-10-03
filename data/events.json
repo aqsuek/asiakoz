@@ -49202,5 +49202,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musa1mjt-j2v25byz"
+  },
+  {
+    "id": "1791025136090-80cwpw",
+    "ts": 1791025136090,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musa3xyk-8guqeslr"
   }
 ]
