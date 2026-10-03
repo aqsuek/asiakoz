@@ -52744,5 +52744,16 @@
     "language": "ru",
     "session_id": "musvi796-ste77lci",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791061099738-56ckz5",
+    "ts": 1791061099738,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musvhu4s-q6sj1006",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
