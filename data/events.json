@@ -52143,5 +52143,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mustkww6-0do2hwv3"
+  },
+  {
+    "id": "1791057899484-39i53u",
+    "ts": 1791057899484,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musti3rr-6qfkkk7x",
+    "button_location": "sticky"
   }
 ]
