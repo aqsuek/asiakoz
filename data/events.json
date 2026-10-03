@@ -48870,5 +48870,14 @@
     "session_id": "mus7zo7r-0vwobo5x",
     "button_location": "ad_sticky_bar",
     "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gbraid=0AAAABCYFCcb07jch-5guiT_kSj79s72vo&gclid=EAIaIQobChMItIT44MidlwMVlih1AR0b7QVQEAEYASAAEgKqdvD_BwE"
+  },
+  {
+    "id": "1791022109747-w2ysw1",
+    "ts": 1791022109747,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus8b3ki-swaocchn"
   }
 ]
