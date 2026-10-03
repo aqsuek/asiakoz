@@ -52537,5 +52537,14 @@
     "language": "ru",
     "session_id": "musv4mnf-ebty2n69",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791060010611-fgpym6",
+    "ts": 1791060010611,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musuvfqu-v5qk7oez"
   }
 ]
