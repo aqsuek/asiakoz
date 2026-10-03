@@ -53725,5 +53725,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musznkin-ntl37qmk"
+  },
+  {
+    "id": "1791068119527-kbpdt0",
+    "ts": 1791068119527,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muszozs4-77d786m0",
+    "referrer": "https://asiakoz.com/kosoglazie/?gad_source=5&gad_campaignid=23697486862&gclid=EAIaIQobChMItOapuvielwMVPhmiAx0bghCCEAEYASAAEgK9GvD_BwE"
   }
 ]
