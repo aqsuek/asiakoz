@@ -52317,5 +52317,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musu8qwi-svnbp41a"
+  },
+  {
+    "id": "1791058980022-mgfipd",
+    "ts": 1791058980022,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musu8mlo-6t32enex"
   }
 ]
