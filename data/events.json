@@ -48125,5 +48125,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mus3idjo-56kac7qk"
+  },
+  {
+    "id": "1791014163578-sgpcuk",
+    "ts": 1791014163578,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mus3krme-tkd3xcyu",
+    "referrer": "https://www.google.com/"
   }
 ]
