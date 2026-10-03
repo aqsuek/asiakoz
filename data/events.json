@@ -49340,5 +49340,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791026333990-mz2sar",
+    "ts": 1791026333990,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "musato0z-380u4m76",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gbraid=0AAAABCYFCcZVV4XS5sddmH6LaZExMRsIt&gclid=Cj0KCQjwz4LWBhCMARIsAFEG5Mr-NYkCJn4LzcsNgE9wT5sXYgtxdGAaiJkruyTECCeVw5YhytSGvSoaAt3eEALw_wcB"
   }
 ]
