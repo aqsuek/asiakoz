@@ -53688,5 +53688,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muszewic-h4efbw72"
+  },
+  {
+    "id": "1791067655911-tc2fti",
+    "ts": 1791067655911,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muszfbpi-86jhln8o"
   }
 ]
