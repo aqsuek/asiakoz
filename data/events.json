@@ -52460,5 +52460,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musuohr5-p3m0ixc7"
+  },
+  {
+    "id": "1791059740258-stmpdi",
+    "ts": 1791059740258,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musupozk-fs1bk7nk",
+    "referrer": "https://youtube.com/"
   }
 ]
