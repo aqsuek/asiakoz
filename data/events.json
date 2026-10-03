@@ -52679,5 +52679,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musvbxio-24giszxk"
+  },
+  {
+    "id": "1791060844660-edkkse",
+    "ts": 1791060844660,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musvdpt0-0acn0l0v"
   }
 ]
