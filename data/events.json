@@ -48271,5 +48271,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mus4gnda-u1jrr2r2"
+  },
+  {
+    "id": "1791015718306-a6hqzr",
+    "ts": 1791015718306,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus4i67e-2cs56t11",
+    "referrer": "https://www.google.com/"
   }
 ]
