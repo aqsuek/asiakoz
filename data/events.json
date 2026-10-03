@@ -46440,5 +46440,17 @@
     "session_id": "murv4s8c-c70s0f1z",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791000803799-vgrc5a",
+    "ts": 1791000803799,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murvmalf-4l2aitdj",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
