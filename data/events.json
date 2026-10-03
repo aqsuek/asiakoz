@@ -46336,5 +46336,15 @@
     "language": "ru",
     "session_id": "muruz30t-acbdsq14",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1790999982003-wfnpg5",
+    "ts": 1790999982004,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "murv4s8c-c70s0f1z",
+    "referrer": "https://youtube.com/"
   }
 ]
