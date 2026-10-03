@@ -52268,5 +52268,15 @@
     "language": "ru",
     "session_id": "musu04kn-ed3a814u",
     "button_location": "hero"
+  },
+  {
+    "id": "1791058744391-onbnm8",
+    "ts": 1791058744391,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musu49la-uvvl9mvg",
+    "referrer": "https://youtube.com/"
   }
 ]
