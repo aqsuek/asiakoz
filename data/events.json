@@ -52955,5 +52955,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musw4fzh-czf2ilpc"
+  },
+  {
+    "id": "1791062170726-pcu777",
+    "ts": 1791062170726,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musw5pca-dny91wb3"
   }
 ]
