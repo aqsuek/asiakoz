@@ -48424,5 +48424,14 @@
     "language": "ru",
     "session_id": "mus5fwuu-mvu7mcps",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791017333554-ptgsc8",
+    "ts": 1791017333554,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mus5grzi-egdgszls"
   }
 ]
