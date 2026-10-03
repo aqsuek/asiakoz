@@ -50334,5 +50334,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musgh1of-hh1lfv7v"
+  },
+  {
+    "id": "1791035861342-udoman",
+    "ts": 1791035861342,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musgh1of-hh1lfv7v"
   }
 ]
