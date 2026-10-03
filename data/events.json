@@ -53463,5 +53463,16 @@
     "language": "ru",
     "session_id": "musy1aka-5h4btva0",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791065533317-pcfnb1",
+    "ts": 1791065533317,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musxzwy2-84eb1r6l",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
