@@ -52936,5 +52936,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musw32rl-4t10n3qh"
+  },
+  {
+    "id": "1791062069261-wduoof",
+    "ts": 1791062069261,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musvsvo1-hlra4kkt",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gclid=Cj0KCQjwz4LWBhCMARIsAFEG5MrmznF1pOPQLI__byUnYDODmJUluXZa1l9WQFT3O_YPPNOSo_D5ux0aAsw1EALw_wcB"
   }
 ]
