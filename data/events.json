@@ -53629,5 +53629,15 @@
     "language": "ru",
     "session_id": "musz31sf-nky2vi0a",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791067308590-vhekns",
+    "ts": 1791067308590,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musz7szu-31vsxwj8",
+    "referrer": "https://youtube.com/"
   }
 ]
