@@ -45883,5 +45883,15 @@
     "session_id": "mursibek-1994dyrk",
     "button_location": "hero",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1790995849934-urwjib",
+    "ts": 1790995849934,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mursmbk3-o6zo1yzd",
+    "referrer": "https://youtube.com/"
   }
 ]
