@@ -52288,5 +52288,15 @@
     "language": "ru",
     "session_id": "musu54qk-ha3gk066",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791058880920-5jj9gb",
+    "ts": 1791058880920,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musu78yu-5gp8zhmc",
+    "button_location": "sticky"
   }
 ]
