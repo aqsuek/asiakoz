@@ -46232,5 +46232,15 @@
     "language": "ru",
     "session_id": "muru8ufl-tykpy3vk",
     "button_location": "ad_sticky_bar"
+  },
+  {
+    "id": "1790999232959-uyscfa",
+    "ts": 1790999232959,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muruor8x-bk3nlvxv",
+    "referrer": "https://youtube.com/"
   }
 ]
