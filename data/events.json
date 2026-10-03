@@ -50426,5 +50426,14 @@
     "language": "ru",
     "session_id": "musgw1hh-9bi6ca99",
     "button_location": "hero"
+  },
+  {
+    "id": "1791036581495-ugjrsn",
+    "ts": 1791036581495,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "musgx7fl-6qk0vnha"
   }
 ]
