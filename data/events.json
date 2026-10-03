@@ -51405,5 +51405,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "musmc9nr-3y9kerbl"
+  },
+  {
+    "id": "1791045725014-sfwfy5",
+    "ts": 1791045725014,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "musmd9ll-cjkxf5ru",
+    "referrer": "https://www.google.com/"
   }
 ]
