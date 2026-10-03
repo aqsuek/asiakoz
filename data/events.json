@@ -53679,5 +53679,14 @@
     "language": "ru",
     "session_id": "muszb4m5-7jhlmwkz",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791067634330-5l4cfh",
+    "ts": 1791067634330,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muszewic-h4efbw72"
   }
 ]
