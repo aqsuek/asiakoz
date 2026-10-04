@@ -60274,5 +60274,15 @@
     "session_id": "mutvtf9i-fko7ff2f",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791122123934-ixikkf",
+    "ts": 1791122123934,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutvk7tl-mbsz0680",
+    "button_location": "ad_sticky_bar"
   }
 ]
