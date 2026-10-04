@@ -60019,5 +60019,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mutuv3nl-8hci8dz6"
+  },
+  {
+    "id": "1791120498265-vgdxch",
+    "ts": 1791120498265,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutuvpn3-gby81mmp",
+    "referrer": "https://youtube.com/"
   }
 ]
