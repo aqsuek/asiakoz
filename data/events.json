@@ -60010,5 +60010,14 @@
     "language": "ru",
     "session_id": "mutuuc6n-o1mkuu5e",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791120458632-azfvid",
+    "ts": 1791120458632,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mutuv3nl-8hci8dz6"
   }
 ]
