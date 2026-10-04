@@ -55942,5 +55942,14 @@
     "language": "ru",
     "session_id": "mute2rzr-n7g17tiw",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791092302871-ccmdle",
+    "ts": 1791092302871,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mute3ev5-wsc06egb"
   }
 ]
