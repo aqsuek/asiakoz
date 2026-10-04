@@ -54962,5 +54962,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muta9r7u-7i2dk82z"
+  },
+  {
+    "id": "1791085919850-z9rd23",
+    "ts": 1791085919850,
+    "event": "phone_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mutaaprj-ebqhwt00",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/news/"
   }
 ]
