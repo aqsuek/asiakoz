@@ -60864,5 +60864,14 @@
     "session_id": "muty5bit-3x27vkwd",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791126804654-0qvs3p",
+    "ts": 1791126804654,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutyicbe-ffz50xce"
   }
 ]
