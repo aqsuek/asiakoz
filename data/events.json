@@ -55127,5 +55127,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutavieu-32g4o8jv"
+  },
+  {
+    "id": "1791086926589-bnskin",
+    "ts": 1791086926589,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutay06y-mbmibjiv"
   }
 ]
