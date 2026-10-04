@@ -61220,5 +61220,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muu5ymtc-brgsatb4"
+  },
+  {
+    "id": "1791140031396-cehsk7",
+    "ts": 1791140031396,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "muu6igny-0cqmj62w"
   }
 ]
