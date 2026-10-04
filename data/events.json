@@ -58291,5 +58291,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutmwcfk-9mnuzxn4"
+  },
+  {
+    "id": "1791107213981-pbo6do",
+    "ts": 1791107213981,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutmz41f-oikzvi6n",
+    "button_location": "hero",
+    "referrer": "https://www.speedoras.com/"
   }
 ]
