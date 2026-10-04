@@ -56363,5 +56363,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mutfv2ng-6326lulo"
+  },
+  {
+    "id": "1791095395510-x1ks8s",
+    "ts": 1791095395510,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutfxwa2-b0k2xik3",
+    "referrer": "https://youtube.com/"
   }
 ]
