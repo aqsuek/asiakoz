@@ -56997,5 +56997,15 @@
     "session_id": "muthtyj3-l9877pp0",
     "button_location": "hero",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791098616702-xmdwbt",
+    "ts": 1791098616702,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muthutus-a0okwzua",
+    "referrer": "https://youtube.com/"
   }
 ]
