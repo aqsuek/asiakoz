@@ -60426,5 +60426,15 @@
     "session_id": "mutwcykq-dap40ax0",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791123029456-wgmfo6",
+    "ts": 1791123029456,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutwe2m0-hrhiusln",
+    "referrer": "https://youtube.com/"
   }
 ]
