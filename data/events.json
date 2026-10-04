@@ -59891,5 +59891,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutuf0s6-kifsca8q"
+  },
+  {
+    "id": "1791119740658-7svua9",
+    "ts": 1791119740658,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutue0w3-k3i0z3st",
+    "referrer": "https://asiakoz.com/doctor-orel/"
   }
 ]
