@@ -60824,5 +60824,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutyfp8m-ufafpcnr"
+  },
+  {
+    "id": "1791126512887-pe6gm5",
+    "ts": 1791126512887,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutyfp8m-ufafpcnr",
+    "referrer": "https://asiakoz.com/?gad_source=2&gad_campaignid=23692919210&gclid=Cj0KCQjw8ofWBhCHARIsANBj4LuuDPTEV_J0ymCoOxjA7xWyWlhnPHiegJKWOtyXBggU2WPSq7OT5EoaAkcrEALw_wcB"
   }
 ]
