@@ -61003,5 +61003,15 @@
     "language": "ru",
     "session_id": "mutziocs-l7yuz54e",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791128326809-gjfaxu",
+    "ts": 1791128326809,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutzjl32-uui29wdy",
+    "referrer": "https://youtube.com/"
   }
 ]
