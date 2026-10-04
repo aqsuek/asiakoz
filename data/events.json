@@ -61122,5 +61122,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "muu0xypb-rni3kdev"
+  },
+  {
+    "id": "1791131379445-vo29ah",
+    "ts": 1791131379445,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muu1d204-1u26c2nh",
+    "referrer": "https://youtube.com/"
   }
 ]
