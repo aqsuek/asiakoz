@@ -60496,5 +60496,15 @@
     "language": "ru",
     "session_id": "mutwt8mk-cxwwosa0",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791123811984-7jwtjo",
+    "ts": 1791123811984,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutwuzmb-7ottboeo",
+    "referrer": "https://youtube.com/"
   }
 ]
