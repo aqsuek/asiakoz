@@ -60578,5 +60578,14 @@
     "language": "ru",
     "session_id": "mutx305d-r38iegah",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791124303773-rtsc5k",
+    "ts": 1791124303773,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutx5hik-gzdhe9qj"
   }
 ]
