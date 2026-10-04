@@ -58393,5 +58393,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791107978788-cwangq",
+    "ts": 1791107978788,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutnflrb-bklh37pl",
+    "referrer": "https://youtube.com/"
   }
 ]
