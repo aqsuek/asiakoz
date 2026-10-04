@@ -55951,5 +55951,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mute3ev5-wsc06egb"
+  },
+  {
+    "id": "1791092375734-8qhc7m",
+    "ts": 1791092375734,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mute550c-xdzldgd7",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
