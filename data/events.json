@@ -58302,5 +58302,15 @@
     "session_id": "mutmz41f-oikzvi6n",
     "button_location": "hero",
     "referrer": "https://www.speedoras.com/"
+  },
+  {
+    "id": "1791107361057-l7euzg",
+    "ts": 1791107361057,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutn29js-g7nvf656",
+    "referrer": "https://youtube.com/"
   }
 ]
