@@ -60070,5 +60070,15 @@
     "session_id": "mutuwp89-10yujlxm",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791120855390-xtgtpe",
+    "ts": 1791120855390,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutv3k8b-hjpq7fgv",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
