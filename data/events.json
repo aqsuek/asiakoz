@@ -55155,5 +55155,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutb0j7c-8pn95iy8"
+  },
+  {
+    "id": "1791087143067-caygvo",
+    "ts": 1791087143067,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutb11t0-ho2k4dtk"
   }
 ]
