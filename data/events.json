@@ -61272,5 +61272,14 @@
     "language": "ru",
     "session_id": "muu8jeqa-q17bjbc4",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791143718849-y3g9wu",
+    "ts": 1791143718849,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "muu8pofy-j2ndk133"
   }
 ]
