@@ -58232,5 +58232,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutmmcfh-myg6lp0o"
+  },
+  {
+    "id": "1791106676880-kw2z1g",
+    "ts": 1791106676880,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutmnmwt-gl7s1hwm",
+    "referrer": "https://googleads.g.doubleclick.net/"
   }
 ]
