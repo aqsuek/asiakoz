@@ -55342,5 +55342,15 @@
     "session_id": "mutbms00-v7v82vx5",
     "button_location": "hero",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791088191388-g0rrlu",
+    "ts": 1791088191388,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutbngco-22tvj5qh",
+    "referrer": "https://youtube.com/"
   }
 ]
