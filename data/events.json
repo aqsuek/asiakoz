@@ -60587,5 +60587,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutx5hik-gzdhe9qj"
+  },
+  {
+    "id": "1791124484576-0qw67k",
+    "ts": 1791124484576,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutx9dw7-oclelcdp",
+    "referrer": "https://honor.ulockpic.com/"
   }
 ]
