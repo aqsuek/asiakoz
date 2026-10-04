@@ -61241,5 +61241,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791140709168-fuspod",
+    "ts": 1791140709168,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muu6x1ds-y87b3dgj"
   }
 ]
