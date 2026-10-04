@@ -57597,5 +57597,15 @@
     "session_id": "mutjgkrg-rvkel3pv",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791101414471-zp80kd",
+    "ts": 1791101414471,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutjiwrj-jkn7yeu1",
+    "referrer": "https://youtube.com/"
   }
 ]
