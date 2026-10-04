@@ -60080,5 +60080,14 @@
     "language": "ru",
     "session_id": "mutv3k8b-hjpq7fgv",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791120955982-8lztht",
+    "ts": 1791120955982,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutv5f9c-qo27lzat"
   }
 ]
