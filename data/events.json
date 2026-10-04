@@ -57341,5 +57341,15 @@
     "language": "ru",
     "session_id": "mutimspb-fkbqnr86",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791099951070-mumg1a",
+    "ts": 1791099951070,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muting2s-3zibomnp",
+    "referrer": "https://youtube.com/"
   }
 ]
