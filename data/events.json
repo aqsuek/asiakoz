@@ -55865,5 +55865,15 @@
     "language": "ru",
     "session_id": "mutdtkio-a9olucux",
     "button_location": "hero"
+  },
+  {
+    "id": "1791091891494-xcfelc",
+    "ts": 1791091891495,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutdup2p-72nv2gfz",
+    "referrer": "https://youtube.com/"
   }
 ]
