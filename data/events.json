@@ -58242,5 +58242,16 @@
     "language": "ru",
     "session_id": "mutmnmwt-gl7s1hwm",
     "referrer": "https://googleads.g.doubleclick.net/"
+  },
+  {
+    "id": "1791106859917-kjt0q3",
+    "ts": 1791106859917,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutmrgq0-v2ne7g1h",
+    "button_location": "sticky",
+    "referrer": "https://googleads.g.doubleclick.net/"
   }
 ]
