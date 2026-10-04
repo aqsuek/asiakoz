@@ -55844,5 +55844,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutdrgzw-xj31h4m1"
+  },
+  {
+    "id": "1791091815428-2wdmi4",
+    "ts": 1791091815428,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutdr07g-rvba0s3i",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
