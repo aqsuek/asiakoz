@@ -56228,5 +56228,15 @@
     "language": "ru",
     "session_id": "mutf6zab-mo3d5lzn",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791094291795-89swpq",
+    "ts": 1791094291795,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutfa6gz-3fo95es6",
+    "referrer": "https://search-dra.dt.dbankcloud.com/"
   }
 ]
