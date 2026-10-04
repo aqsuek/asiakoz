@@ -57236,5 +57236,14 @@
     "session_id": "mutic194-k645r2go",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791099533968-mr99n2",
+    "ts": 1791099533968,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutiem3g-ca14gqbb"
   }
 ]
