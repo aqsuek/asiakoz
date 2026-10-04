@@ -55855,5 +55855,15 @@
     "session_id": "mutdr07g-rvba0s3i",
     "button_location": "sticky",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791091844498-0gibgv",
+    "ts": 1791091844498,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutdtkio-a9olucux",
+    "button_location": "hero"
   }
 ]
