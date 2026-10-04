@@ -60263,5 +60263,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutvsqux-tbgq28rk"
+  },
+  {
+    "id": "1791122065431-9ec7sh",
+    "ts": 1791122065431,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutvtf9i-fko7ff2f",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
