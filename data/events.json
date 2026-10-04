@@ -58605,5 +58605,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutov218-4l4o5he6"
+  },
+  {
+    "id": "1791110528723-hmkaje",
+    "ts": 1791110528723,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutoy3kk-vi6c78lc",
+    "referrer": "https://youtube.com/"
   }
 ]
