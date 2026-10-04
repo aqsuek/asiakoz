@@ -61142,5 +61142,15 @@
     "language": "ru",
     "session_id": "muu1iqgx-ftogt7qq",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791132332875-twy7j9",
+    "ts": 1791132332875,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muu1xcnj-0ccaapfv",
+    "referrer": "https://youtube.com/"
   }
 ]
