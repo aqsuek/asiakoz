@@ -55605,5 +55605,16 @@
     "language": "ru",
     "session_id": "mutcs22z-1d8c3u7k",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791090189821-247elv",
+    "ts": 1791090189821,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutcq9gq-7y7skcnt",
+    "button_location": "ad_sticky_bar",
+    "referrer": "https://youtube.com/"
   }
 ]
