@@ -58194,5 +58194,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791106340584-74nyni",
+    "ts": 1791106340584,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutmgfo9-l9pyrba1"
   }
 ]
