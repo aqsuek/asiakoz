@@ -56443,5 +56443,15 @@
     "language": "ru",
     "session_id": "mutg6i2w-7tx0ummj",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1791095840665-kmvroh",
+    "ts": 1791095840665,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutg7c7i-a7c3s6p3",
+    "referrer": "https://youtube.com/"
   }
 ]
