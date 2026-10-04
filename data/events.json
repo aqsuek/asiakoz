@@ -54336,5 +54336,16 @@
     "language": "ru",
     "session_id": "mut6q0n1-s0wycoro",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791080025404-spjlln",
+    "ts": 1791080025404,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mut6q0n1-s0wycoro",
+    "button_location": "ad_sticky_bar",
+    "referrer": "android-app://com.google.android.youtube/"
   }
 ]
