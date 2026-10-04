@@ -59443,5 +59443,15 @@
     "language": "ru",
     "session_id": "mutst1h6-ng7un0gz",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791117046067-bcswoo",
+    "ts": 1791117046067,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutstvvr-17dtexap",
+    "referrer": "https://youtube.com/"
   }
 ]
