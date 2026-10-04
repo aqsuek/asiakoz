@@ -53990,5 +53990,15 @@
     "language": "ru",
     "session_id": "mut22yaf-iy9dxx71",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791072328650-ggkqrl",
+    "ts": 1791072328650,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mut27faz-37pi0l1o",
+    "referrer": "https://asiakoz.com/kosoglazie/?gad_source=5&gad_campaignid=23697486862&gclid=EAIaIQobChMI0JGXz4aflwMVTzh7BB0i6wE2EAEYASAAEgKMofD_BwE"
   }
 ]
