@@ -54710,5 +54710,14 @@
     "language": "ru",
     "session_id": "mut98255-r1p1tqxq",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791084154318-sa3sms",
+    "ts": 1791084154318,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mut98yec-59s6m6he"
   }
 ]
