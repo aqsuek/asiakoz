@@ -60296,5 +60296,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791122180811-0vh7sd",
+    "ts": 1791122180811,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutvvzni-r73gix9l",
+    "referrer": "https://youtube.com/"
   }
 ]
