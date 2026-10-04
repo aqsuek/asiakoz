@@ -55990,5 +55990,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mutecjxl-wy9qhs4g"
+  },
+  {
+    "id": "1791092768178-lek7as",
+    "ts": 1791092768178,
+    "event": "branch_select",
+    "page_path": "/kk/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "muteda2j-8m7c94ln",
+    "referrer": "https://www.google.com/"
   }
 ]
