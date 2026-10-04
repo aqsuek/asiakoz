@@ -57794,5 +57794,17 @@
     "language": "ru",
     "session_id": "mutkmfuw-u3z3h42m",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791103246479-ersisv",
+    "ts": 1791103246479,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutkm4o9-kzn6xyco",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
