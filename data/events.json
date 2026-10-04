@@ -58253,5 +58253,15 @@
     "session_id": "mutmrgq0-v2ne7g1h",
     "button_location": "sticky",
     "referrer": "https://googleads.g.doubleclick.net/"
+  },
+  {
+    "id": "1791106903976-57m3id",
+    "ts": 1791106903976,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutmsk30-r4cd4pjd",
+    "referrer": "https://youtube.com/"
   }
 ]
