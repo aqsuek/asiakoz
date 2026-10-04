@@ -60853,5 +60853,16 @@
     "language": "ru",
     "session_id": "mutyknek-sb6tdje8",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791126747683-wzm75d",
+    "ts": 1791126747683,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muty5bit-3x27vkwd",
+    "button_location": "sticky",
+    "referrer": "https://youtube.com/"
   }
 ]
