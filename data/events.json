@@ -59772,5 +59772,16 @@
     "session_id": "mutu3doj-wlxj5fdl",
     "button_location": "hero",
     "referrer": "https://youtube.com/"
+  },
+  {
+    "id": "1791119221842-r9qtzz",
+    "ts": 1791119221842,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutu4ezr-opnhfdjv",
+    "button_location": "hero",
+    "referrer": "https://youtube.com/"
   }
 ]
