@@ -54973,5 +54973,15 @@
     "session_id": "mutaaprj-ebqhwt00",
     "button_location": "hero",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1791085949243-nmut6g",
+    "ts": 1791085949243,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutabbu2-x073hkyt",
+    "referrer": "https://youtube.com/"
   }
 ]
