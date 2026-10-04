@@ -55371,5 +55371,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mutbqqud-fjmdifwd"
+  },
+  {
+    "id": "1791088418363-ankydd",
+    "ts": 1791088418363,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutbscsd-nd6tsjvy"
   }
 ]
