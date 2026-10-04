@@ -58041,5 +58041,15 @@
     "language": "ru",
     "session_id": "mutljs85-wgrgcbh9",
     "referrer": "android-app://com.google.android.youtube/"
+  },
+  {
+    "id": "1791104859124-yxonhw",
+    "ts": 1791104859124,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mutlkr3i-5o7rsjwy",
+    "referrer": "https://youtube.com/"
   }
 ]
