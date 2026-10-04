@@ -61103,5 +61103,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791130529943-prilmj",
+    "ts": 1791130529943,
+    "event": "branch_select",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muu0uy5u-pba7pnrm",
+    "referrer": "https://l.instagram.com/"
   }
 ]
