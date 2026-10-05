@@ -61919,5 +61919,16 @@
     "language": "ru",
     "session_id": "muv5eh69-1hcx840t",
     "referrer": "https://asiakoz.com/almaty?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaecYJSrXqPOFsHtZllJUvyc2LqM049HrOhN10XAv4LN0zrywbrAYbqSvQ8XHw_aem_sd7qOTCPBgp0yM9KkEvChw"
+  },
+  {
+    "id": "1791198678237-bctv1m",
+    "ts": 1791198678237,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muv5eh69-1hcx840t",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/almaty?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaecYJSrXqPOFsHtZllJUvyc2LqM049HrOhN10XAv4LN0zrywbrAYbqSvQ8XHw_aem_sd7qOTCPBgp0yM9KkEvChw"
   }
 ]
