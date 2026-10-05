@@ -61532,5 +61532,16 @@
     "language": "ru",
     "session_id": "muuud5sh-yhyi36le",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1791180199847-hvz6cl",
+    "ts": 1791180199847,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muuud5sh-yhyi36le",
+    "button_location": "hero",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
