@@ -61887,5 +61887,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muuhgqri-oaajnfsw"
+  },
+  {
+    "id": "1791197513618-p78vgr",
+    "ts": 1791197513618,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muv4q5r9-20wouv8g",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
