@@ -62426,5 +62426,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791229059303-smf42b",
+    "ts": 1791229059303,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muvh8mf5-s69gfwa1",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
