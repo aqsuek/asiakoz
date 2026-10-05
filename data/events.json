@@ -61543,5 +61543,15 @@
     "session_id": "muuud5sh-yhyi36le",
     "button_location": "hero",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1791180739258-fo5nbf",
+    "ts": 1791180739258,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muuuqvje-iihmg5lg",
+    "referrer": "https://youtube.com/"
   }
 ]
