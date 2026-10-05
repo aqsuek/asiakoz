@@ -62048,5 +62048,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muv84pi4-mrwv0g11"
+  },
+  {
+    "id": "1791204888269-uk65gv",
+    "ts": 1791204888269,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muv94nbo-qza78omf",
+    "referrer": "https://yandex.kz/"
   }
 ]
