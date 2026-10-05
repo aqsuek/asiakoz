@@ -61700,5 +61700,16 @@
     "language": "ru",
     "session_id": "muuxs85x-1yci5nop",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791185957614-ncgi6b",
+    "ts": 1791185957614,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muuxumk3-f5wrizws",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
