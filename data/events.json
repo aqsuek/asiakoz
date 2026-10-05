@@ -61320,5 +61320,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791164701015-vftpun",
+    "ts": 1791164701015,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muul7bc3-0o7m6ppg",
+    "referrer": "https://asiakoz.com/almaty/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJmZGlkFlD7Hx3S4l8FVqSHwIdSSTWSgDXK35FzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadFj_Bf2Wdn8kuReEQWxvsigpka1esSqKp038sgcosnR4UP_rkhsS1VCnNisA_aem_5cTmY7oQ56mLN7MYhPOORg"
   }
 ]
