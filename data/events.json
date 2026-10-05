@@ -61502,5 +61502,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muut0zyr-feejb24h"
+  },
+  {
+    "id": "1791177972983-561i20",
+    "ts": 1791177972983,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muut3t0c-wo279i1v",
+    "referrer": "https://www.google.com/"
   }
 ]
