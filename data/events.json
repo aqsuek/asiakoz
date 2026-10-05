@@ -61483,5 +61483,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791177537618-49yhw7",
+    "ts": 1791177537618,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muusugzd-md1un91f",
+    "utm_source": "chatgpt.com"
   }
 ]
