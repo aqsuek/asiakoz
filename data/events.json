@@ -63547,5 +63547,15 @@
     "language": "ru",
     "session_id": "mux3a87e-fgbz9nof",
     "referrer": "http://asiakoz.com/"
+  },
+  {
+    "id": "1791317269612-8cfd1o",
+    "ts": 1791317269612,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mux41d99-rso8reio",
+    "referrer": "https://asiakoz.com/lazer-almaty/"
   }
 ]
