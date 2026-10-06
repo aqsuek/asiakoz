@@ -62543,5 +62543,14 @@
     "session_id": "muw6jhwa-c4dkclzw",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791261286682-4ll09a",
+    "ts": 1791261286682,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muw6pj1t-9b8k2o4r"
   }
 ]
