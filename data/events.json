@@ -63141,5 +63141,17 @@
     "language": "ru",
     "session_id": "muw9yzqw-7om9puh2",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1791284047071-ocgiqk",
+    "ts": 1791284047071,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muwk9b22-5d0ioxk1",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
