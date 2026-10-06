@@ -63046,5 +63046,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muwhqbt3-blw6a3ky"
+  },
+  {
+    "id": "1791280100908-xaxayb",
+    "ts": 1791280100908,
+    "event": "page_view",
+    "page_path": "/aktau/doctor/ali-keskin/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muwhwr7u-i29sldbe"
   }
 ]
