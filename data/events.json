@@ -63296,5 +63296,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791292938744-gnbydm",
+    "ts": 1791292938744,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muwpjumg-39son38r",
+    "referrer": "https://www.facebook.com/"
   }
 ]
