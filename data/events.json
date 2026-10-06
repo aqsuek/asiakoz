@@ -63578,5 +63578,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mux6rdkd-j17yqyum"
+  },
+  {
+    "id": "1791323708199-o22plw",
+    "ts": 1791323708199,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mux7v5s4-hw3n4630",
+    "referrer": "https://www.google.com/"
   }
 ]
