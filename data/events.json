@@ -63882,5 +63882,15 @@
     "language": "ru",
     "session_id": "muxpqb0u-2pe4ep1p",
     "referrer": "http://m.facebook.com"
+  },
+  {
+    "id": "1791353937693-pu9txa",
+    "ts": 1791353937693,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muxpv0lk-h4xgzoyk",
+    "referrer": "https://www.google.com/"
   }
 ]
