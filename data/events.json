@@ -63872,5 +63872,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muxpej2p-4brbvfze"
+  },
+  {
+    "id": "1791353703556-c9820a",
+    "ts": 1791353703556,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muxpqb0u-2pe4ep1p",
+    "referrer": "http://m.facebook.com"
   }
 ]
