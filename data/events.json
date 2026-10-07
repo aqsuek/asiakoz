@@ -63639,5 +63639,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muxccg0v-np1m2l0l"
+  },
+  {
+    "id": "1791333406189-tonwmv",
+    "ts": 1791333406189,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muxdn0kp-smg8jjaj"
   }
 ]
