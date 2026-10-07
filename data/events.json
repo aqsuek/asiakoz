@@ -64539,5 +64539,15 @@
     "session_id": "muyid5tu-9nisjs9u",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791403950409-y8v86q",
+    "ts": 1791403950409,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muyjn88j-3imbr4jj",
+    "referrer": "https://asiakoz.com/ambliopiya-almaty/"
   }
 ]
