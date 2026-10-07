@@ -64500,5 +64500,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791399437072-raqsba",
+    "ts": 1791399437072,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muygykc7-t2sf47oa"
   }
 ]
