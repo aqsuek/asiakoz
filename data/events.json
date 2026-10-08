@@ -65302,5 +65302,15 @@
     "language": "ru",
     "session_id": "muzj0ruc-bsqhmeid",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791463939725-ctebjs",
+    "ts": 1791463939725,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muzj0ruc-bsqhmeid",
+    "referrer": "https://www.google.com/"
   }
 ]
