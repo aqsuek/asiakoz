@@ -64724,5 +64724,14 @@
     "language": "ru",
     "session_id": "muz0hcwg-619u746s",
     "referrer": "https://asiakoz.com/uslugi/"
+  },
+  {
+    "id": "1791434056383-ux7ozj",
+    "ts": 1791434056383,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muz1khto-vp9hg2ge"
   }
 ]
