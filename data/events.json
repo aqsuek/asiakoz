@@ -65480,5 +65480,17 @@
     "language": "ru",
     "session_id": "muzq198w-9y7retuj",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791477389736-yerth5",
+    "ts": 1791477389736,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muzrcww3-eidi595d",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
