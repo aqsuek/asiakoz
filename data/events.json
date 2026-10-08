@@ -65179,5 +65179,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muzdla1y-zjc9tncy"
+  },
+  {
+    "id": "1791454292197-rwmfkj",
+    "ts": 1791454292197,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "muzdla1y-zjc9tncy",
+    "referrer": "https://asiakoz.com/"
   }
 ]
