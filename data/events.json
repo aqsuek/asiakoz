@@ -65409,5 +65409,15 @@
     "session_id": "muzntbox-4dvrs6hr",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791471991156-lozzxi",
+    "ts": 1791471991156,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muzo5i9q-x2m04mts",
+    "referrer": "https://asiakoz.com/kosoglazie/?gad_source=5&gad_campaignid=23697486862&gclid=EAIaIQobChMIxeHfzL-glwMVhMxPCB3ptQs7EAEYASAAEgKLuPD_BwE"
   }
 ]
