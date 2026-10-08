@@ -65116,5 +65116,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "muzb9033-71p7kd7u"
+  },
+  {
+    "id": "1791450808254-ewb1zv",
+    "ts": 1791450808254,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muzbitcc-05au149k",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
