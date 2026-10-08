@@ -64874,5 +64874,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "muz5ibeo-q2oybl0p"
+  },
+  {
+    "id": "1791440745546-c7iye5",
+    "ts": 1791440745546,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "muz5ibeo-q2oybl0p",
+    "button_location": "funnel_cta"
   }
 ]
