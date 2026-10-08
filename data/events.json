@@ -65470,5 +65470,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791475153537-kevoyo",
+    "ts": 1791475153537,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "muzq198w-9y7retuj",
+    "referrer": "https://l.instagram.com/"
   }
 ]
