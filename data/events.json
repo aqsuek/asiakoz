@@ -65322,5 +65322,15 @@
     "language": "ru",
     "session_id": "muzkh3gt-19i7jpr9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791465901165-efncis",
+    "ts": 1791465901165,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "muzkh3gt-19i7jpr9",
+    "referrer": "https://asiakoz.com/"
   }
 ]
