@@ -65263,5 +65263,14 @@
     "session_id": "muzgncqs-rcs3k7bv",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791461632935-vlvtyf",
+    "ts": 1791461632935,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muzhzomy-jy7fqttt"
   }
 ]
