@@ -65514,5 +65514,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791482056988-btiby9",
+    "ts": 1791482056988,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muzu5efd-94xo939d",
+    "utm_source": "chatgpt.com"
   }
 ]
