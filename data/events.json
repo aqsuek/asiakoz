@@ -66330,5 +66330,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791570886085-6dj2tt",
+    "ts": 1791570886085,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv1b1ph2-4mxeu4oz",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
