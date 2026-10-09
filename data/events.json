@@ -65815,5 +65815,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791533107079-czlcy1",
+    "ts": 1791533107079,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv0ojiod-zoxwhr0m",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
