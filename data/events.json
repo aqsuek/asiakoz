@@ -65993,5 +65993,15 @@
     "session_id": "mv0ucqjl-2lcqm7ut",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791543646459-c48sqg",
+    "ts": 1791543646459,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv0utgil-vsyli4xg",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
