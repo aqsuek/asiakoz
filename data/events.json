@@ -66309,5 +66309,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv1atco6-kunjrohg"
+  },
+  {
+    "id": "1791570590917-op6b2t",
+    "ts": 1791570590917,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv1auymt-635nc4cx"
   }
 ]
