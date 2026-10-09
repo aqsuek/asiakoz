@@ -65906,5 +65906,14 @@
     "language": "ru",
     "session_id": "mv0r47ne-08j9i0x2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791539660036-rc01et",
+    "ts": 1791539660036,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mv0sfy41-539yzetg"
   }
 ]
