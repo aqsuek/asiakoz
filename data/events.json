@@ -66341,5 +66341,15 @@
     "session_id": "mv1b1ph2-4mxeu4oz",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791570990228-2r2aqn",
+    "ts": 1791570990228,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv1b34ch-d65vmac0",
+    "referrer": "https://www.google.com/"
   }
 ]
