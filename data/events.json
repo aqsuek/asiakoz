@@ -66025,5 +66025,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791547160226-ejd8s1",
+    "ts": 1791547160226,
+    "event": "phone_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mv0wwtt7-tez20yh7",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
