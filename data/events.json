@@ -66055,5 +66055,14 @@
     "language": "ru",
     "session_id": "mv0xqeju-w69u9swx",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791550995539-s5463g",
+    "ts": 1791550995539,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv0z6vfo-oq1uzld5"
   }
 ]
