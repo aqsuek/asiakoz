@@ -66871,5 +66871,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791640252557-gyippi",
+    "ts": 1791640252557,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mv2gc2k4-vttv28bj",
+    "button_location": "mid_page_cta",
+    "referrer": "https://l.instagram.com/"
   }
 ]
