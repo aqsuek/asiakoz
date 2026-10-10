@@ -66607,5 +66607,17 @@
     "language": "kz",
     "session_id": "mv20g3sb-kfng6zao",
     "button_location": "sticky"
+  },
+  {
+    "id": "1791614670989-am7pqx",
+    "ts": 1791614670989,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv2143la-ix1ek7i5",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
