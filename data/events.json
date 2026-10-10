@@ -67004,5 +67004,14 @@
     "language": "ru",
     "session_id": "mv2pwg7d-789086iu",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791657217381-ss5hvm",
+    "ts": 1791657217381,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv2qfn2h-6turfsxp"
   }
 ]
