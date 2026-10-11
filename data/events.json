@@ -67322,5 +67322,17 @@
     "language": "ru",
     "session_id": "mv3ouns9-17pufc6b",
     "referrer": "https://asiakoz.com/news/"
+  },
+  {
+    "id": "1791716091220-u3d60w",
+    "ts": 1791716091220,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mv3ph9ti-5v85njhd",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
