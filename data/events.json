@@ -67250,5 +67250,15 @@
     "session_id": "mv3k2nwb-uzu24kcx",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791707531349-op7l4j",
+    "ts": 1791707531349,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv3ke2yl-3ur7xcet",
+    "referrer": "https://l.wl.co/"
   }
 ]
