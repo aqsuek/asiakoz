@@ -67156,5 +67156,15 @@
     "language": "ru",
     "session_id": "mv3f5sbe-8099bady",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1791700521957-sfpnsk",
+    "ts": 1791700521957,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv3g7sz4-ilcet1eq",
+    "referrer": "https://yandex.kz/"
   }
 ]
