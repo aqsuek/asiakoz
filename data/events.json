@@ -67384,5 +67384,15 @@
     "language": "ru",
     "session_id": "mv3tph2a-p4wn85f9",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1791727241040-6cmbdx",
+    "ts": 1791727241040,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mv3w4f2v-vaxbd4p4",
+    "referrer": "https://www.google.com/"
   }
 ]
