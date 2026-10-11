@@ -67602,5 +67602,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mv45hvdk-zk4s8wrg"
+  },
+  {
+    "id": "1791743007667-dtr4ef",
+    "ts": 1791743007667,
+    "event": "whatsapp_click",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kz",
+    "session_id": "mv45hvdk-zk4s8wrg",
+    "button_location": "sticky"
   }
 ]
