@@ -68716,5 +68716,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791819329906-dacacq",
+    "ts": 1791819329906,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv5eyaly-gcq958qs",
+    "referrer": "https://yandex.kz/"
   }
 ]
