@@ -68050,5 +68050,15 @@
     "session_id": "mv4qlouc-nj1s7f7x",
     "button_location": "hero",
     "referrer": "https://link.2gis.com/"
+  },
+  {
+    "id": "1791786438379-91dwc7",
+    "ts": 1791786438379,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv4qlouc-nj1s7f7x",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
