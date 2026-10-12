@@ -68125,5 +68125,17 @@
     "session_id": "mv4w91oe-5tzravto",
     "button_location": "mid_page_cta",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791788049194-3vz7yl",
+    "ts": 1791788049194,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv4wbusz-t18tc2ew",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
