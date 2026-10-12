@@ -68102,5 +68102,17 @@
     "language": "ru",
     "session_id": "mv4vwjmk-7comh1vg",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1791787883374-jzck8j",
+    "ts": 1791787883374,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv4w8aeg-p31bs6g5",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
