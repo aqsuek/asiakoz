@@ -68060,5 +68060,15 @@
     "language": "ru",
     "session_id": "mv4qlouc-nj1s7f7x",
     "referrer": "https://asiakoz.com/aktau/"
+  },
+  {
+    "id": "1791786501802-jk0hrp",
+    "ts": 1791786501802,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv4veomk-jmpbjs5t",
+    "referrer": "https://www.google.com/"
   }
 ]
