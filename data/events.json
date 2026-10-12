@@ -67737,5 +67737,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv4o4tas-f4swruur"
+  },
+  {
+    "id": "1791775456799-ezy8sp",
+    "ts": 1791775456799,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv4otu15-fvtoys8z",
+    "referrer": "https://www.google.com/"
   }
 ]
