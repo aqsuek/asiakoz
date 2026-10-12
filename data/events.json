@@ -68914,5 +68914,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mv5t75gc-66reuqae"
+  },
+  {
+    "id": "1791843350859-tt9i0n",
+    "ts": 1791843350859,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv5t7drd-rnog38g8",
+    "referrer": "https://www.google.com/"
   }
 ]
