@@ -67975,5 +67975,15 @@
     "session_id": "mv4u0ums-ccoyzebd",
     "button_location": "mid_page_cta",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1791784335547-hkx07u",
+    "ts": 1791784335547,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "muw9yzqw-7om9puh2",
+    "referrer": "https://www.bing.com/"
   }
 ]
