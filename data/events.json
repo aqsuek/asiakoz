@@ -69702,5 +69702,15 @@
     "session_id": "mv72fas9-ql3skl56",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791922887558-wakur3",
+    "ts": 1791922887558,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv74lrwx-o0yi1chl",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
