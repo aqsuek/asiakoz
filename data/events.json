@@ -69369,5 +69369,14 @@
     "language": "ru",
     "session_id": "mv6gpth3-vhdkbdyy",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1791882831179-lwzkgg",
+    "ts": 1791882831179,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mv5wzk3j-zagqwl2c"
   }
 ]
