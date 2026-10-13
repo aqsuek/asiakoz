@@ -68945,5 +68945,14 @@
     "session_id": "mv60fpzj-1mqgx17u",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791856585493-g9hvjr",
+    "ts": 1791856585493,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv614q01-w1e1omzn"
   }
 ]
