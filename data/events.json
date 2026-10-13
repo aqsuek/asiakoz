@@ -69456,5 +69456,15 @@
     "session_id": "mv6jozz2-9ylbun6h",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791888810471-tq231l",
+    "ts": 1791888810471,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv6kcwdq-ms8o9qkh",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
