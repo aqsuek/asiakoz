@@ -69075,5 +69075,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv690buv-6el5v8kl"
+  },
+  {
+    "id": "1791871244895-bx7p8j",
+    "ts": 1791871244895,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv69v1xy-6327dzp2",
+    "referrer": "https://yandex.kz/"
   }
 ]
