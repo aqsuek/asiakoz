@@ -69730,5 +69730,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mv6gqyft-m1gsg00z"
+  },
+  {
+    "id": "1791929738070-drappe",
+    "ts": 1791929738070,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mv78oohc-yz4sx8yz"
   }
 ]
