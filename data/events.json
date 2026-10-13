@@ -69248,5 +69248,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mv6ct9yw-90ojhln0"
+  },
+  {
+    "id": "1791877053834-6bp7o3",
+    "ts": 1791877053834,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv6abges-qwchwjng",
+    "referrer": "https://asiakoz.com/katarakta-almaty/"
   }
 ]
