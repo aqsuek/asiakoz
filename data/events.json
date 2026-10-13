@@ -68934,5 +68934,16 @@
     "language": "kk",
     "session_id": "mv60fpzj-1mqgx17u",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791855480335-ce47ih",
+    "ts": 1791855480335,
+    "event": "whatsapp_click",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mv60fpzj-1mqgx17u",
+    "button_location": "mid_page_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
