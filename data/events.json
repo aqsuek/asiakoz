@@ -70320,5 +70320,17 @@
     "language": "ru",
     "session_id": "mv7z40f7-mpiz6hgc",
     "referrer": "https://asiakoz.com/deti-almaty/"
+  },
+  {
+    "id": "1791987373772-tgiv3p",
+    "ts": 1791987373772,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mv86zzgr-yi3pmcyt",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
