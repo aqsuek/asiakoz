@@ -70494,5 +70494,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792006095984-lyptki",
+    "ts": 1792006095984,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8i5a5f-0g3aie2v",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
