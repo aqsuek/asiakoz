@@ -70372,5 +70372,14 @@
     "language": "ru",
     "session_id": "mv88afxm-ac7d2lan",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791990634780-l8mws4",
+    "ts": 1791990634780,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv88xwyb-fwpsxllr"
   }
 ]
