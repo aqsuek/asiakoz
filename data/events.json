@@ -70031,5 +70031,15 @@
     "language": "ru",
     "session_id": "mv7ulseu-s3h29157",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1791966748205-v36stu",
+    "ts": 1791966748205,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv7upxht-bv08akvu",
+    "referrer": "https://www.google.com/"
   }
 ]
