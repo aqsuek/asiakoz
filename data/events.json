@@ -70270,5 +70270,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1791986314407-s1k59p",
+    "ts": 1791986314407,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv7z40f7-mpiz6hgc",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
