@@ -70569,5 +70569,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792010372019-p9treb",
+    "ts": 1792010372019,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8koxu9-uvhepy6j",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
