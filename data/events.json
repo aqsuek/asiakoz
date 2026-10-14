@@ -70202,5 +70202,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv82p14o-sainv5vm"
+  },
+  {
+    "id": "1791980332716-zutka4",
+    "ts": 1791980332716,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv82srap-6k6dpwjq",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
