@@ -69999,5 +69999,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv7sor5u-l4dvns8q"
+  },
+  {
+    "id": "1791963976443-lymfsd",
+    "ts": 1791963976443,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv7t2g4v-wqwsp4kk",
+    "referrer": "https://l.instagram.com/"
   }
 ]
