@@ -70248,5 +70248,15 @@
     "language": "ru",
     "session_id": "mv84rce0-sls37jzl",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791983750388-raf8wp",
+    "ts": 1791983750388,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv84tcp8-jduruk4j",
+    "button_location": "hero"
   }
 ]
