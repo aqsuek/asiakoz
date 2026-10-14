@@ -70160,5 +70160,17 @@
     "language": "ru",
     "session_id": "mv7zx69h-xoyjambk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1791978656973-qn5zr3",
+    "ts": 1791978656973,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv81t8mb-y9w5b536",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
