@@ -70801,5 +70801,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792042906311-ng1sh6",
+    "ts": 1792042906311,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv9429rl-me5c70p3"
   }
 ]
