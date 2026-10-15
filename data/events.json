@@ -70650,5 +70650,16 @@
     "session_id": "mv8xjh40-ewdmn85y",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792032021446-vaeo57",
+    "ts": 1792032021446,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8xjh40-ewdmn85y",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
