@@ -71552,5 +71552,15 @@
     "language": "ru",
     "session_id": "mv9zepp0-y5f6tml8",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1792095607164-ax67gu",
+    "ts": 1792095607164,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv9zepp0-y5f6tml8",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
