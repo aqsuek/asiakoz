@@ -70609,5 +70609,14 @@
     "session_id": "mv8v401p-3mzkwtbj",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792029325322-my9r0i",
+    "ts": 1792029325322,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8vysyu-v7wcr0h8"
   }
 ]
