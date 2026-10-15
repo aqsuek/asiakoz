@@ -70682,5 +70682,17 @@
     "session_id": "mv8ydfv1-opchzdx2",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792033907125-onx8cr",
+    "ts": 1792033907125,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8ypac0-3u4bg3nr",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
