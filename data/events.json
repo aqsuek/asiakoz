@@ -71542,5 +71542,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mv9zb2pp-cjywfgoq"
+  },
+  {
+    "id": "1792095557675-vogfl8",
+    "ts": 1792095557675,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv9zepp0-y5f6tml8",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
