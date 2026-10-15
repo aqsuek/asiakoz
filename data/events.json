@@ -70810,5 +70810,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mv9429rl-me5c70p3"
+  },
+  {
+    "id": "1792042938771-njl2bg",
+    "ts": 1792042938771,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv9432pz-ngf9cs8t",
+    "referrer": "https://www.facebook.com/"
   }
 ]
