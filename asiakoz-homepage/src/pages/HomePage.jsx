@@ -4,6 +4,7 @@ import QuickPaths from "../components/QuickPaths";
 import Advantages from "../components/Advantages";
 import Services from "../components/Services";
 import Doctors from "../components/Doctors";
+import AlmatyPhotoGallery from "../components/AlmatyPhotoGallery";
 import Reviews from "../components/Reviews";
 import Booking from "../components/Booking";
 import Contacts from "../components/Contacts";
@@ -62,6 +63,7 @@ export default function HomePage() {
       <MidPageCta />
       <Doctors />
       <Reviews />
+      {IS_ALMATY && <AlmatyPhotoGallery />}
       <CityFAQ />
       <WhatsAppFunnel />
       <Booking />
