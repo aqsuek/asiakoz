@@ -70820,5 +70820,15 @@
     "language": "ru",
     "session_id": "mv9432pz-ngf9cs8t",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1792043544703-v5ui44",
+    "ts": 1792043544703,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv94fwh2-9zox9qjt",
+    "referrer": "https://yandex.kz/"
   }
 ]
