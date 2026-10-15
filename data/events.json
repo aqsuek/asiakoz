@@ -71439,5 +71439,15 @@
     "session_id": "mv9vciqu-j4kzj8he",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792090022883-7w3xag",
+    "ts": 1792090022883,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv9w42ze-g4rokmek",
+    "referrer": "https://www.google.com/"
   }
 ]
