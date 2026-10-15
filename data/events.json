@@ -70661,5 +70661,15 @@
     "session_id": "mv8xjh40-ewdmn85y",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792033349117-8zulyi",
+    "ts": 1792033349117,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mv8ydfv1-opchzdx2",
+    "referrer": "https://www.google.com/"
   }
 ]
