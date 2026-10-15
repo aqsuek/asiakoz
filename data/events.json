@@ -71321,5 +71321,15 @@
     "language": "ru",
     "session_id": "mv9mrikr-t8v62qtz",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792081552916-2zfgp5",
+    "ts": 1792081552916,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv9r2ipj-xdf9gnn9",
+    "referrer": "https://l.instagram.com/"
   }
 ]
