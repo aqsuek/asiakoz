@@ -1496,6 +1496,7 @@ def main() -> None:
     fix_branch_spa_hreflang()
     inject_conversion_js()
     subprocess.check_call([sys.executable, str(ROOT / "scripts" / "add-almaty-license.py")], cwd=str(ROOT))
+    subprocess.check_call([sys.executable, str(ROOT / "scripts" / "install-favicons.py")], cwd=str(ROOT))
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself
