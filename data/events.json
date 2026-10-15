@@ -71514,5 +71514,15 @@
     "language": "ru",
     "session_id": "mv9yi68d-5uspiicv",
     "button_location": "laser_hero_primary"
+  },
+  {
+    "id": "1792094453872-pne2sq",
+    "ts": 1792094453872,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv9yr04x-07216h8s",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
