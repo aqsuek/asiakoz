@@ -70588,5 +70588,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mv8o2cij-uneh98fh"
+  },
+  {
+    "id": "1792027870080-48ixpf",
+    "ts": 1792027870080,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mv8v401p-3mzkwtbj",
+    "referrer": "https://www.google.com/"
   }
 ]
