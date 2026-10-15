@@ -21,8 +21,7 @@ rm -rf "$TARGET/images"
 mkdir -p "$TARGET/images/doctors"
 cp "$APP/public/images/clinic-almaty-laser.png" "$TARGET/images/"
 cp "$APP/public/images/logo-asiakoz.png" "$TARGET/images/"
-cp "$APP/public/images/doctors/mehmet-esat-teker.png" "$TARGET/images/doctors/"
-cp "$APP/public/images/doctors/orel-talip.png" "$TARGET/images/doctors/"
+cp -R "$APP/public/images/doctors/." "$TARGET/images/doctors/"
 
 # Video posters for reviews (absolute /images/lazer-almaty/posters/ on live site)
 POSTERS_SRC="$APP/public/images/lazer-almaty/posters"
@@ -78,7 +77,7 @@ t = re.sub(
 p.write_text(t, encoding="utf-8")
 PY
 
-bash "$(dirname "$0")/append-compliance.sh" "$INDEX"
+bash "$APP/scripts/append-compliance.sh" "$INDEX"
 
 SITEMAP="$LIVE/sitemap.xml"
 if [[ -f "$SITEMAP" ]] && ! grep -q 'asiakoz.com/laser/' "$SITEMAP"; then

@@ -15,7 +15,7 @@
   "ts": "2026-03-12T12:00:00.000Z",
   "page": "/katarakta-almaty/",
   "referrer": "https://google.com/...",
-  "target": "https://wa.me/77008880180"
+  "target": "https://wa.me/77003600180"
 }
 ```
 

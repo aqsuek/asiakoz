@@ -1,5 +1,4 @@
-/** Almaty: WhatsApp only. Aktau / Shymkent: WhatsApp + phone. */
-export function showsPhoneCta(cityId) {
-  if (!cityId) return true;
-  return cityId !== "almaty";
+/** Phone and WhatsApp are separate contact channels for every branch. */
+export function showsPhoneCta() {
+  return true;
 }

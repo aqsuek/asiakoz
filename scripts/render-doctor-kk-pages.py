@@ -163,7 +163,7 @@ def render_page(ui: dict, meta: dict | None) -> str:
     </section>
     <div class="cta-block">
       <h2>{html.escape(name)} қабылдауына жазылу</h2>
-      <p><strong>Мекенжай:</strong> {city_label}. <strong>Жазылу:</strong> <a href="tel:+77008880180" style="color:rgba(255,255,255,0.95);text-decoration:underline;">+7 700 888 01 80</a>, WhatsApp <a href="https://wa.me/{wa_num}" style="color:rgba(255,255,255,0.95);text-decoration:underline;">{wa_disp}</a></p>
+      <p><strong>Мекенжай:</strong> {city_label}. <strong>Жазылу:</strong> <a href="tel:+77778880180" style="color:rgba(255,255,255,0.95);text-decoration:underline;">+7 777 888 01 80</a>, WhatsApp <a href="https://wa.me/{wa_num}" style="color:rgba(255,255,255,0.95);text-decoration:underline;">{wa_disp}</a></p>
       <a href="https://wa.me/{wa_num}" target="_blank" rel="noopener" class="btn">WhatsApp арқылы жазылу</a>
     </div>
     <footer class="site-footer">
@@ -172,7 +172,7 @@ def render_page(ui: dict, meta: dict | None) -> str:
         <div class="footer-col"><div class="footer-title">Навигация</div>
 {FOOTER_NAV_KK}
         </div>
-        <div class="footer-col"><div class="footer-title">Байланыс</div><p>Алматы: +7 700 888 01 80</p><a href="https://wa.me/{wa_num}" target="_blank" rel="noopener" class="link">WhatsApp</a></div>
+        <div class="footer-col"><div class="footer-title">Байланыс</div><p>Алматы: +7 777 888 01 80</p><a href="https://wa.me/{wa_num}" target="_blank" rel="noopener" class="link">WhatsApp</a></div>
       </div>
       <div class="footer-bottom"><p class="footer-disclaimer">Қарсы көрсеткіштер бар. Маман кеңесі қажет.</p><p class="footer-copy">© Азиякөз. Алматы, Ақтау.</p></div>
     </footer>

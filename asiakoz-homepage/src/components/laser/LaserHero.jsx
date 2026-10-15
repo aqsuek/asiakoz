@@ -116,9 +116,9 @@ export default function LaserHero() {
                 <p className="font-display text-2xl font-extrabold text-brand sm:text-4xl">
                   {priceLabel}
                 </p>
-                <p className="pb-0.5 text-base font-semibold text-ink-faint line-through sm:text-lg">
+                {LASER_PROMO.oldPrice != null && <p className="pb-0.5 text-base font-semibold text-ink-faint line-through sm:text-lg">
                   {oldPriceLabel}
-                </p>
+                </p>}
               </div>
             ) : (
               <p className="mt-2.5 text-base font-semibold text-brand-deep sm:text-lg">

@@ -65,7 +65,7 @@ PAGE_META = {
             "title": "AsiaKoz Алматы — офтальмологическая клиника",
             "description": (
                 "Глазная клиника AsiaKoz в Алматы: диагностика, лазерная коррекция, катаракта. "
-                "Адрес: проспект Райымбека, 176А. Запись: +7 700 888 01 80."
+                "Адрес: проспект Райымбека, 176А. Запись: +7 777 888 01 80."
             ),
             "h1": "AsiaKoz Алматы",
             "lead": "Офтальмологическая клиника. Лазерная коррекция, катаракта, диагностика.",
@@ -74,7 +74,7 @@ PAGE_META = {
             "title": "AsiaKoz Алматы — офтальмологиялық клиника",
             "description": (
                 "AsiaKoz Алматы көз клиникасы: диагностика, лазерлік түзету, катаракта. "
-                "Мекенжайы: Райымбек даңғылы, 176А. Жазылу: +7 700 888 01 80."
+                "Мекенжайы: Райымбек даңғылы, 176А. Жазылу: +7 777 888 01 80."
             ),
             "h1": "AsiaKoz Алматы",
             "lead": "Офтальмологиялық клиника. Лазерлік түзету, катаракта, диагностика.",
@@ -1495,6 +1495,7 @@ def main() -> None:
     noindex_legacy_root_html()
     fix_branch_spa_hreflang()
     inject_conversion_js()
+    subprocess.check_call([sys.executable, str(ROOT / "scripts" / "add-almaty-license.py")], cwd=str(ROOT))
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself

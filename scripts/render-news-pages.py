@@ -149,7 +149,7 @@ def shell(
         </div>
         <div class="footer-col">
           <div class="footer-title">{"Контакты" if lang == "ru" else "Байланыс"}</div>
-          <p>{"Алматы" if lang == "ru" else "Алматы"}: <a href="tel:+77008880180" class="link">+7 700 888 01 80</a></p>
+          <p>{"Алматы" if lang == "ru" else "Алматы"}: <a href="tel:+77778880180" class="link">+7 777 888 01 80</a></p>
           <a href="https://wa.me/{wa_phone}" target="_blank" rel="noopener" class="link">WhatsApp</a>
         </div>
       </div>

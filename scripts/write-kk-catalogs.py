@@ -45,7 +45,7 @@ def footer_kk() -> str:
         </div>
         <div class="footer-col">
           <div class="footer-title">Байланыс</div>
-          <p>Алматы: <a href="tel:+77008880180" class="link">+7 700 888 01 80</a></p>
+          <p>Алматы: <a href="tel:+77778880180" class="link">+7 777 888 01 80</a></p>
           <p>Ақтау: <a href="tel:+77758630180" class="link">+7 775 863 01 80</a></p>
           <p>Шымкент: <a href="tel:+77080750180" class="link">+7 708 075 01 80</a> · <a href="tel:+77080760180" class="link">+7 708 076 01 80</a></p>
         </div>
@@ -126,7 +126,7 @@ def write_kk_uslugi() -> None:
     </section>
     <div class="cta-block">
       <h2>Кеңеске жазылу</h2>
-      <p>Алматы: <a href="tel:+77008880180">+7 700 888 01 80</a> · Ақтау: <a href="tel:+77758630180">+7 775 863 01 80</a></p>
+      <p>Алматы: <a href="tel:+77778880180">+7 777 888 01 80</a> · Ақтау: <a href="tel:+77758630180">+7 775 863 01 80</a></p>
       <a href="https://wa.me/77003600180" class="btn" target="_blank" rel="noopener">WhatsApp Алматы</a>
       <a href="https://wa.me/77758630180" class="btn btn-outline" target="_blank" rel="noopener" style="margin-left:8px;">WhatsApp Ақтау</a>
     </div>

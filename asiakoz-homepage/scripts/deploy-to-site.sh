@@ -137,7 +137,7 @@ ld = '''{
         "url": "https://asiakoz.com/",
         "logo": "https://asiakoz.com/images/logo.png",
         "image": "https://asiakoz.com/images/logo.png",
-        "telephone": ["+77008880180", "+77003600180", "+77758630180", "+77080750180"],
+        "telephone": ["+77778880180", "+77003600180", "+77758630180", "+77080750180"],
         "medicalSpecialty": "Ophthalmology",
         "sameAs": [
           "https://www.instagram.com/asiakoz.clinic/"

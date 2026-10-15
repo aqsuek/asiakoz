@@ -64,9 +64,9 @@ const CLINIC_BY_BRANCH = {
     heroImage: "images/clinic-building.png",
     phones: [
       {
-        display: formatKzPhoneDisplay("+77008880180"),
-        href: "tel:+77008880180",
-        tel: "+77008880180",
+        display: formatKzPhoneDisplay("+77778880180"),
+        href: "tel:+77778880180",
+        tel: "+77778880180",
       },
     ],
     whatsapp: {
@@ -95,9 +95,9 @@ const CLINIC_BY_BRANCH = {
     heroImage: "images/clinic-almaty-laser.png",
     phones: [
       {
-        display: formatKzPhoneDisplay("+77008880180"),
-        href: "tel:+77008880180",
-        tel: "+77008880180",
+        display: formatKzPhoneDisplay("+77778880180"),
+        href: "tel:+77778880180",
+        tel: "+77778880180",
       },
     ],
     whatsapp: {
@@ -235,7 +235,9 @@ export function waBookingUrl(lang = "kz", extra = "", opts = {}) {
         : `Сәлеметсіз бе! AsiaKoz ${cityName} клиникасына қабылдауға жазылғым келеді.`;
   }
 
-  const body = extra ? `${message}\n\n${extra}` : message;
+  const body = extra && /^(Здравствуйте|Сәлеметсіз бе)/.test(extra.trim())
+    ? extra.trim()
+    : extra ? `${message}\n\n${extra}` : message;
   const withAttribution = appendAttributionToMessage(body, lang);
   return `${waUrl}?text=${encodeURIComponent(withAttribution)}`;
 }

@@ -133,6 +133,10 @@
         }
       }
 
+      if (href.indexOf("tel:") === 0) {
+        pushDataLayer("phone_click", { link_url: href, link_text: (link.textContent || "").trim() });
+      }
+
       var ctaId = link.getAttribute("data-cta");
       if (ctaId) {
         pushDataLayer("cta_click", {
@@ -156,7 +160,7 @@
   }
 
   function injectCookieBanner() {
-    if (localStorage.getItem("asiakoz_cookie_accepted") === "1") return;
+    try { if (localStorage.getItem("asiakoz_cookie_accepted") === "1") return; } catch (e) {}
     var isKk = location.pathname.indexOf("/kk/") === 0;
     var text = isKk
       ? "Сайттың дұрыс жұмыс істеуі үшін cookie файлдарын қолданамыз."
@@ -170,7 +174,7 @@
     document.body.appendChild(banner);
     var btn = banner.querySelector("button");
     btn.addEventListener("click", function () {
-      localStorage.setItem("asiakoz_cookie_accepted", "1");
+      try { localStorage.setItem("asiakoz_cookie_accepted", "1"); } catch (e) {}
       banner.remove();
     });
   }
@@ -224,12 +228,12 @@
 
   /** Static HTML only — React SPA hides phone CTAs via contactPolicy. */
   function enforceWhatsAppOnly() {
-    if (isSpaPage()) return;
+    if (isSpaPage() || /^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie)\/?$/.test(location.pathname)) return;
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.remove();
     });
     document.querySelectorAll('body *').forEach(function (node) {
-      if (node.childElementCount === 0 && node.textContent.trim() === '+7 700 888 01 80') {
+      if (node.childElementCount === 0 && node.textContent.trim() === '+7 777 888 01 80') {
         node.remove();
       }
     });
@@ -248,6 +252,7 @@
 
   function detectCityFromUrl() {
     var path = location.pathname;
+    if (/^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie)\/?$/.test(path)) return "almaty";
     if (path.indexOf("/aktau") !== -1 || path.indexOf("/aqtau") !== -1) return "aqtau";
     if (path.indexOf("/shymkent") !== -1) return "shymkent";
     if (path.indexOf("-aktau") !== -1 || path.indexOf("-aqtau") !== -1) return "aqtau";
@@ -262,8 +267,8 @@
   var CITY_CONTACTS = {
     almaty: {
       wa: "77003600180",
-      tel: "+77008880180",
-      display: "+7 700 888 01 80",
+      tel: "+77778880180",
+      display: "+7 777 888 01 80",
       waText: "Здравствуйте! Хочу записаться в клинику Азиякоз Алматы."
     },
     aqtau: {

@@ -4,9 +4,9 @@
  */
 export const LASER_PROMO = {
   currentPrice: 650000,
-  oldPrice: 700000,
-  endDate: "2026-07-31",
-  spotsLeft: 14,
+  oldPrice: null,
+  endDate: null, // Current offer confirmed; no expiry date supplied.
+  spotsLeft: null,
   method: "ReLEx SMILE",
   /** 'oneEye' | 'bothEyes' | 'unconfirmed' */
   priceScope: "bothEyes",
@@ -43,6 +43,7 @@ export function getPromoOldPriceLabel() {
 }
 
 export function isLaserPromoActive(now = new Date()) {
+  if (!LASER_PROMO.endDate) return true;
   const end = new Date(`${LASER_PROMO.endDate}T23:59:59`);
   return !Number.isNaN(end.getTime()) && now <= end;
 }

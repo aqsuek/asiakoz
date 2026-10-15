@@ -25,6 +25,13 @@ export default function Footer() {
       }`}
     >
       <div className="section-container">
+        {IS_LASER && <section id="rekvizity" className="mb-5 border-b border-ink/10 pb-5 text-sm text-ink-muted">
+          <h2 className="font-semibold text-ink">{lang === "ru" ? "Лицензия и реквизиты" : "Лицензия және реквизиттер"}</h2>
+          <p>ТОО «ASIA KOZ» · БИН 231040028960 · Лицензия 23027526 от 20.12.2023.</p>
+          <p>Выдана Департаментом Комитета медицинского и фармацевтического контроля МЗ РК по городу Алматы.</p>
+          <a className="underline" href="/glaznaya-klinika-almaty/#rekvizity">{lang === "ru" ? "Полные реквизиты и проверка лицензии" : "Толық реквизиттер және лицензияны тексеру"}</a>
+        </section>}
+
         {IS_HOME ? (
           <>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr] lg:gap-8">
