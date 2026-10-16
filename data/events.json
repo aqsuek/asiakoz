@@ -72322,5 +72322,15 @@
     "language": "ru",
     "session_id": "mvb5x56e-4pfs5wax",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792167120002-431bvf",
+    "ts": 1792167120002,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvb5xbdj-ylwu3ifx",
+    "referrer": "https://www.google.com/"
   }
 ]
