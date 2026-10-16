@@ -72138,5 +72138,15 @@
     "session_id": "mvaw7b47-xotzpvgk",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792155255709-7zm6kd",
+    "ts": 1792155255709,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvayy1vj-uzgire9w",
+    "referrer": "https://yandex.kz/"
   }
 ]
