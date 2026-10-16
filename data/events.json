@@ -71945,5 +71945,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792140400716-plktvo",
+    "ts": 1792140400716,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvaq3ntf-jdhdmdwq"
   }
 ]
