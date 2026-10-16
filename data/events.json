@@ -71973,5 +71973,14 @@
     "language": "kk",
     "session_id": "mvaqhy56-zzqr7fcr",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792141690329-smnuf1",
+    "ts": 1792141690329,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvaqvi0k-3hkdyzfu"
   }
 ]
