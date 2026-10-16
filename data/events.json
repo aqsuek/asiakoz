@@ -71698,5 +71698,15 @@
     "language": "ru",
     "session_id": "mvaj1gyg-tppgocar",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792129568900-29w7vb",
+    "ts": 1792129568900,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvajnt4d-ai1ickt4",
+    "referrer": "https://l.instagram.com/"
   }
 ]
