@@ -71770,5 +71770,15 @@
     "language": "kk",
     "session_id": "mval00v1-feguuw11",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792132433171-fb5uli",
+    "ts": 1792132433171,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvald6sl-fiqiveso",
+    "referrer": "https://l.instagram.com/"
   }
 ]
