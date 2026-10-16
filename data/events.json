@@ -71963,5 +71963,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvaq972y-unxomi42"
+  },
+  {
+    "id": "1792141054331-5ti1oz",
+    "ts": 1792141054331,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvaqhy56-zzqr7fcr",
+    "referrer": "https://www.google.com/"
   }
 ]
