@@ -71954,5 +71954,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvaq3ntf-jdhdmdwq"
+  },
+  {
+    "id": "1792140648346-lhn2v8",
+    "ts": 1792140648346,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvaq972y-unxomi42"
   }
 ]
