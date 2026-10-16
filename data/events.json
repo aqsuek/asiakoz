@@ -72282,5 +72282,15 @@
     "session_id": "mvb4n78c-eqic8ddq",
     "button_location": "contacts",
     "referrer": "https://asiakoz.com/lazer-almaty/"
+  },
+  {
+    "id": "1792165322198-odjdt2",
+    "ts": 1792165322198,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mvb4y0s3-23x3l4zp",
+    "referrer": "https://www.google.com/"
   }
 ]
