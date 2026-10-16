@@ -72127,5 +72127,16 @@
     "language": "ru",
     "session_id": "mvaw763w-5w8ysipk",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792150694995-6efd78",
+    "ts": 1792150694995,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvaw7b47-xotzpvgk",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
