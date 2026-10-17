@@ -72848,5 +72848,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792226183371-k8f610",
+    "ts": 1792226183371,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvc56l13-rukygf5i",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
