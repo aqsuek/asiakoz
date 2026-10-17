@@ -73106,5 +73106,16 @@
     "language": "ru",
     "session_id": "mvcil855-vcl57xj1",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1792249508154-2bezyk",
+    "ts": 1792249508154,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvcj28i2-27pvlspw",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
