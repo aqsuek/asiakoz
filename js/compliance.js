@@ -228,7 +228,7 @@
 
   /** Static HTML only — React SPA hides phone CTAs via contactPolicy. */
   function enforceWhatsAppOnly() {
-    if (isSpaPage() || /^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie)\/?$/.test(location.pathname)) return;
+    if (isSpaPage() || /^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie|(?:vitrektomiya|setchatka|otsloyka-setchatki|razryv-setchatki|makulyarnyy-razryv|epiretinalnaya-membrana|diabeticheskaya-retinopatiya|diabeticheskiy-otek-makuly|gemoftalm|vitreomakulyarnaya-traktsiya)-almaty)\/?$/.test(location.pathname)) return;
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.remove();
     });
@@ -252,7 +252,7 @@
 
   function detectCityFromUrl() {
     var path = location.pathname;
-    if (/^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie)\/?$/.test(path)) return "almaty";
+    if (/^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie|[^/]+-almaty)\/?$/.test(path)) return "almaty";
     if (path.indexOf("/aktau") !== -1 || path.indexOf("/aqtau") !== -1) return "aqtau";
     if (path.indexOf("/shymkent") !== -1) return "shymkent";
     if (path.indexOf("-aktau") !== -1 || path.indexOf("-aqtau") !== -1) return "aqtau";
