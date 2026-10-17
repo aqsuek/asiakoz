@@ -72825,5 +72825,16 @@
     "language": "ru",
     "session_id": "mvc4p0zr-if6myfm1",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792225389835-6ih1zv",
+    "ts": 1792225389835,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvc4p0zr-if6myfm1",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
