@@ -72665,5 +72665,14 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mvbxv6cn-zkw8lvs7"
+  },
+  {
+    "id": "1792214067276-kbstdh",
+    "ts": 1792214067276,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvbxyvp4-ykv3myil"
   }
 ]
