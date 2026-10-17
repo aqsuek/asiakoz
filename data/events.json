@@ -72979,5 +72979,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvcangym-782mqxip"
+  },
+  {
+    "id": "1792235410362-i4zcd5",
+    "ts": 1792235410362,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvcanh3m-anrvtvbq",
+    "referrer": "https://www.google.com/"
   }
 ]
