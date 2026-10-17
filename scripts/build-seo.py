@@ -1500,6 +1500,8 @@ def main() -> None:
     # Diagnosis-specific retina pages must follow generic generators and styling.
     from retina_diagnoses import build as build_retina_diagnoses
     build_retina_diagnoses()
+    from cataract_diagnoses import build as build_cataract_diagnoses
+    build_cataract_diagnoses()
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself

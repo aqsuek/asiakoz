@@ -228,7 +228,7 @@
 
   /** Static HTML only — React SPA hides phone CTAs via contactPolicy. */
   function enforceWhatsAppOnly() {
-    if (isSpaPage() || /^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie|(?:vitrektomiya|setchatka|otsloyka-setchatki|razryv-setchatki|makulyarnyy-razryv|epiretinalnaya-membrana|diabeticheskaya-retinopatiya|diabeticheskiy-otek-makuly|gemoftalm|vitreomakulyarnaya-traktsiya)-almaty)\/?$/.test(location.pathname)) return;
+    if (isSpaPage() || /^(?:\/kk)?\/(?:katarakta-almaty|kosoglazie|(?:vitrektomiya|setchatka|otsloyka-setchatki|razryv-setchatki|makulyarnyy-razryv|epiretinalnaya-membrana|diabeticheskaya-retinopatiya|diabeticheskiy-otek-makuly|gemoftalm|vitreomakulyarnaya-traktsiya|vozrastnaya-katarakta|zrelaya-katarakta|diabeticheskaya-katarakta|travmaticheskaya-katarakta|vrozhdennaya-katarakta|vtorichnaya-katarakta|zamena-hrustalika)-almaty)\/?$/.test(location.pathname)) return;
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.remove();
     });

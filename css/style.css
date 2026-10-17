@@ -1811,3 +1811,8 @@ a { color: inherit; text-decoration: none; }
     white-space: normal;
   }
 }
+
+/* Shared diagnosis navigation in retina and cataract hubs. */
+.retina-related-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.retina-related-grid p { margin:0; }
+.retina-related-grid a { display:block; padding:16px; border:1px solid var(--border, #dce6e6); border-radius:12px; }
