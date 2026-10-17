@@ -72909,5 +72909,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvc778mq-3m5knlgg"
+  },
+  {
+    "id": "1792229858605-vp5gur",
+    "ts": 1792229858605,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvc7dci9-9560838e",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
