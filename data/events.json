@@ -73048,5 +73048,14 @@
     "language": "kk",
     "session_id": "mvcf6pc5-3zcz09zo",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792244377817-nenze2",
+    "ts": 1792244377817,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvcg0bm1-oczi3uke"
   }
 ]
