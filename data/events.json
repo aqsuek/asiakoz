@@ -73749,5 +73749,15 @@
     "language": "ru",
     "session_id": "mvdz9fus-l02fft7n",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792337220886-j4mkzy",
+    "ts": 1792337220886,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvdz9fus-l02fft7n",
+    "referrer": "https://www.google.com/"
   }
 ]
