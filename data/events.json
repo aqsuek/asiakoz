@@ -73378,5 +73378,14 @@
     "session_id": "mvdcmkka-5b8hb2my",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792299902951-0lf566",
+    "ts": 1792299902951,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvdd2k9w-w8yo5ng6"
   }
 ]
