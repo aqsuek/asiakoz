@@ -73293,5 +73293,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvd2it95-2yxxznen"
+  },
+  {
+    "id": "1792282228445-zruvze",
+    "ts": 1792282228445,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvd2jrm4-ja718gw9"
   }
 ]
