@@ -73769,5 +73769,16 @@
     "language": "ru",
     "session_id": "mvdzc66g-uyj9e8l8",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792337332215-vwmygd",
+    "ts": 1792337332215,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvdzc66g-uyj9e8l8",
+    "button_location": "contacts",
+    "referrer": "https://l.instagram.com/"
   }
 ]
