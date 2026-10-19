@@ -74872,5 +74872,15 @@
     "session_id": "mvfl4b02-6unmlsxg",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792436271967-makxi3",
+    "ts": 1792436271968,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvfm98cp-nisovckb",
+    "referrer": "https://l.instagram.com/"
   }
 ]
