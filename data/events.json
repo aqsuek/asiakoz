@@ -74997,5 +74997,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvft8pmq-48bd83gg"
+  },
+  {
+    "id": "1792450951813-ud8p5l",
+    "ts": 1792450951813,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvfv05n4-515tm8s2",
+    "utm_source": "chatgpt.com"
   }
 ]
