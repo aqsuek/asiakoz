@@ -74812,5 +74812,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvfk2z3l-l43th3xl"
+  },
+  {
+    "id": "1792432686136-cwabpu",
+    "ts": 1792432686136,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvfk4h48-vcwn8kfq"
   }
 ]
