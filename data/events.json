@@ -74199,5 +74199,14 @@
     "language": "kk",
     "session_id": "mvex8mfo-zon1xp43",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792394688935-jzdoxa",
+    "ts": 1792394688935,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvexi5br-301l3c8p"
   }
 ]
