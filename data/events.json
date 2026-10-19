@@ -74803,5 +74803,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792432608803-gh7c6t",
+    "ts": 1792432608803,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvfk2z3l-l43th3xl"
   }
 ]
