@@ -74039,5 +74039,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mveq2oir-quo7dbbo"
+  },
+  {
+    "id": "1792383413790-e2n68u",
+    "ts": 1792383413790,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mveqsliq-3wgc2g8z",
+    "referrer": "https://asiakoz.com/kosoglazie-shymkent/"
   }
 ]
