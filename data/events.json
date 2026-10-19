@@ -74011,5 +74011,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvehmo3r-lr72qk8d"
+  },
+  {
+    "id": "1792373219334-1jazdv",
+    "ts": 1792373219334,
+    "event": "page_view",
+    "page_path": "/kk/almaty/doctor/mehmet-esat-teker/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvdxvgpj-srud9nec"
   }
 ]
