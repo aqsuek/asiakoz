@@ -74861,5 +74861,16 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvfkop19-qbn8j54s"
+  },
+  {
+    "id": "1792434354053-oe7bk9",
+    "ts": 1792434354053,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvfl4b02-6unmlsxg",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
