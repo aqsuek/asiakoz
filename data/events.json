@@ -74267,5 +74267,14 @@
     "language": "ru",
     "session_id": "mvf0z1lt-3kvai0og",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792400887976-drtu0t",
+    "ts": 1792400887976,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvf172er-tquz0umo"
   }
 ]
