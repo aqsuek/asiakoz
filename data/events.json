@@ -75609,5 +75609,16 @@
     "session_id": "mvgi7mik-hidwm4qo",
     "button_location": "mid_page_cta",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1792490349703-7v8645",
+    "ts": 1792490349703,
+    "event": "whatsapp_click",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgi7mik-hidwm4qo",
+    "button_location": "laser_hero_primary",
+    "referrer": "https://asiakoz.com/"
   }
 ]
