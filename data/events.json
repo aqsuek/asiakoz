@@ -75740,5 +75740,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvgjm4rx-y77cgdql"
+  },
+  {
+    "id": "1792492912806-nbqpdz",
+    "ts": 1792492912806,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgjzkdr-iu44ha5r"
   }
 ]
