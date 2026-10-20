@@ -75881,5 +75881,16 @@
     "language": "ru",
     "session_id": "mvgnyz4t-pe023s6r",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792499653028-oddyq3",
+    "ts": 1792499653028,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgnyz4t-pe023s6r",
+    "button_location": "contacts",
+    "referrer": "https://www.google.com/"
   }
 ]
