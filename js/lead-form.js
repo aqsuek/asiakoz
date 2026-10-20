@@ -50,23 +50,24 @@
       return;
     }
     if (document.getElementById("asiakoz-lead")) return;
-    var hero = document.querySelector(".seo-hero, .lp-hero");
-    if (!hero && document.getElementById("root")) {
-      var h1 = document.querySelector("#root h1");
-      hero = h1 && h1.closest("section");
-    }
-    if (!hero) return;
-    var section = document.createElement("section");
+    var section = document.createElement("dialog");
     section.id = "asiakoz-lead";
     section.className = "ak-lead";
     section.setAttribute("aria-labelledby", "ak-lead-title");
-    section.innerHTML = '<div class="ak-lead__copy"><p class="ak-lead__eyebrow">ASIAKOZ · '+(kk ? "АЛМАТЫ" : "АЛМАТЫ")+'</p><h2 id="ak-lead-title">'+copy.heading+'</h2><p>'+copy.intro+'</p><p class="ak-lead__service"></p></div>' +
+    section.setAttribute("aria-modal", "true");
+    section.innerHTML = '<button type="button" class="ak-lead__close" aria-label="'+(kk ? 'Жабу' : 'Закрыть')+'">×</button><div class="ak-lead__copy"><p class="ak-lead__eyebrow">ASIAKOZ · '+(kk ? "АЛМАТЫ" : "АЛМАТЫ")+'</p><h2 id="ak-lead-title">'+copy.heading+'</h2><p>'+copy.intro+'</p><p class="ak-lead__service"></p></div>' +
       '<form class="ak-lead__form" data-asiakoz-lead="true"><div class="ak-lead__fields"><label>'+copy.name+'<input name="name" autocomplete="given-name" maxlength="80" required></label><label>'+copy.phone+'<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 700 000 00 00" maxlength="24" required></label></div>'+
       '<div class="ak-lead__trap" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>'+
       '<label class="consent-row ak-lead__consent"><input type="checkbox" class="consent-checkbox" required><span>'+copy.consent+' <a href="/politika-konfidentsialnosti/" target="_blank" rel="noopener">'+copy.policy+'</a></span></label>'+
-      '<button type="submit" class="ak-lead__submit">'+copy.button+'</button><p class="ak-lead__foot">'+copy.foot+'</p><p class="ak-lead__status" role="status" aria-live="polite"></p><a class="ak-lead__continue" hidden target="_blank" rel="noopener">'+copy.open+'</a><a class="ak-lead__direct" href="https://wa.me/'+phone+'" target="_blank" rel="noopener">'+copy.direct+'</a></form>';
+      '<button type="submit" class="ak-lead__submit">'+copy.button+'</button><p class="ak-lead__foot">'+copy.foot+'</p><p class="ak-lead__status" role="status" aria-live="polite"></p><a class="ak-lead__continue" hidden target="_blank" rel="noopener">'+copy.open+'</a></form>';
     section.querySelector(".ak-lead__service").textContent = service[kk ? 2 : 1];
-    hero.insertAdjacentElement("afterend", section);
+    document.body.appendChild(section);
+    section.querySelector(".ak-lead__close").addEventListener("click", function () { section.close(); });
+    section.addEventListener("click", function (e) {
+      if (e.target !== section) return;
+      var rect = section.getBoundingClientRect();
+      if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) section.close();
+    });
     wire(section);
   }
   function wire(section) {
@@ -137,8 +138,22 @@
     form.elements.name.addEventListener("input", function () { this.setCustomValidity(""); });
   }
   function start() {
-    var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "/css/lead-form.css?v=20261020"; document.head.appendChild(link);
+    var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "/css/lead-form.css?v=20261020-modal"; document.head.appendChild(link);
     mount();
+    // Capture existing and dynamically rendered WhatsApp CTAs before navigation.
+    window.addEventListener("click", function (e) {
+      var anchor = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (!anchor || anchor.closest("#asiakoz-lead")) return;
+      var url;
+      try { url = new URL(anchor.href, location.href); } catch (_) { return; }
+      if (!/^(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)$/.test(url.hostname)) return;
+      if (location.pathname.replace(/^\/kk\//, "/").replace(/\/?$/, "/") !== path) return;
+      mount();
+      var modal = document.getElementById("asiakoz-lead");
+      if (!modal) return;
+      e.preventDefault(); e.stopImmediatePropagation();
+      if (!modal.open) modal.showModal();
+    }, true);
     if (document.getElementById("root")) new MutationObserver(mount).observe(document.getElementById("root"), {childList: true, subtree: true});
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
