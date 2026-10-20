@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUGS = ("laser", "kosoglazie", "katarakta-almaty", "vitrektomiya-almaty", "peresadka-rogovitsy-almaty")
-TAGS = '\n  <script src="/js/lead-form-config.js?v=20261020-details"></script>\n  <script src="/js/lead-form.js?v=20261020-details"></script>\n'
+TAGS = '\n  <script src="/js/lead-form-config.js?v=20261020-clean"></script>\n  <script src="/js/lead-form.js?v=20261020-clean"></script>\n'
 
 
 def install():
@@ -13,7 +13,7 @@ def install():
             if not path.exists():
                 raise RuntimeError(f"Missing advertising landing page: {path}")
             html = path.read_text(encoding="utf-8")
-            updated = html.replace("20261020-modal", "20261020-details")
+            updated = html.replace("20261020-details", "20261020-clean")
             if updated != html:
                 html = updated
                 path.write_text(html, encoding="utf-8")
