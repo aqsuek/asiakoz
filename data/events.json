@@ -75749,5 +75749,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvgjzkdr-iu44ha5r"
+  },
+  {
+    "id": "1792494142130-r4kuct",
+    "ts": 1792494142130,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgkpqhx-o9nqeihe",
+    "referrer": "https://asiakoz.com/srochnye-simptomy-glaz-almaty/"
   }
 ]
