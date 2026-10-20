@@ -75268,5 +75268,15 @@
     "language": "ru",
     "session_id": "mvg976rw-gtfb7hui",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792475270658-g0111l",
+    "ts": 1792475270658,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvg9h886-uc4o71r7",
+    "referrer": "https://yandex.kz/"
   }
 ]
