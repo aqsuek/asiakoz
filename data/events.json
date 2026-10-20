@@ -75902,5 +75902,16 @@
     "language": "ru",
     "session_id": "mvgo812x-331u0cb2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792500179715-plsqqj",
+    "ts": 1792500179715,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgob74x-pgny9dmw",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
