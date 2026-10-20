@@ -75892,5 +75892,15 @@
     "session_id": "mvgnyz4t-pe023s6r",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792500054970-nursdb",
+    "ts": 1792500054970,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgo812x-331u0cb2",
+    "referrer": "https://www.google.com/"
   }
 ]
