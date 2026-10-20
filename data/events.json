@@ -75800,5 +75800,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvgm4i7z-o6hqg7nz"
+  },
+  {
+    "id": "1792496710891-fn9ndg",
+    "ts": 1792496710891,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgm8yjm-ubrf554t",
+    "referrer": "https://l.instagram.com/"
   }
 ]
