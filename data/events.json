@@ -75463,5 +75463,17 @@
     "language": "ru",
     "session_id": "mvge24p0-ahmuhlai",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792484268195-41avs2",
+    "ts": 1792484268195,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgeu376-9h399ioi",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
