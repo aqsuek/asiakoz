@@ -75620,5 +75620,15 @@
     "session_id": "mvgi7mik-hidwm4qo",
     "button_location": "laser_hero_primary",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1792490389789-600ny5",
+    "ts": 1792490389789,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgihaoc-1o6o3bg2",
+    "referrer": "https://yandex.kz/"
   }
 ]
