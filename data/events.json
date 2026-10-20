@@ -75198,5 +75198,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvg7jlfw-9isv1mfe"
+  },
+  {
+    "id": "1792472161827-0fwz6b",
+    "ts": 1792472161827,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvg7hxdz-bqo0d6p7",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
