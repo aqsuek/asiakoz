@@ -76028,5 +76028,15 @@
     "session_id": "mvgreloz-unrysqj4",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792506543846-b6phst",
+    "ts": 1792506543846,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvgsjlwh-3i5jeszo",
+    "referrer": "https://www.google.com/"
   }
 ]
