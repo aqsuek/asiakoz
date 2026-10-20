@@ -1,0 +1,6 @@
+{
+  "timeZone": "Asia/Almaty",
+  "runtimeVersion": "V8",
+  "oauthScopes": ["https://www.googleapis.com/auth/spreadsheets"],
+  "webapp": {"executeAs": "USER_DEPLOYING", "access": "ANYONE_ANONYMOUS"}
+}

@@ -1502,6 +1502,7 @@ def main() -> None:
     build_retina_diagnoses()
     from cataract_diagnoses import build as build_cataract_diagnoses
     build_cataract_diagnoses()
+    subprocess.check_call([sys.executable, str(ROOT / "scripts" / "install-lead-forms.py")], cwd=str(ROOT))
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself

@@ -103,6 +103,8 @@
       function (e) {
         var form = e.target;
         if (!form || form.tagName !== "FORM") return;
+        // This form tracks a conversion only after Google Sheets confirms storage.
+        if (form.hasAttribute("data-asiakoz-lead")) return;
         var formId = form.id || "";
         var formName = form.getAttribute("name") || "";
         var formAction = form.getAttribute("action") || "";
