@@ -75351,5 +75351,14 @@
     "session_id": "mvga6glz-axvjbhzk",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792476539369-vglrua",
+    "ts": 1792476539369,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mvga8m0v-dc3nyvox"
   }
 ]
