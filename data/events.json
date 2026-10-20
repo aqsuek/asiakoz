@@ -75709,5 +75709,15 @@
     "session_id": "mvgflrqw-nsc6vyzm",
     "button_location": "hero",
     "referrer": "https://asiakoz.com/laser/"
+  },
+  {
+    "id": "1792492170901-giy6bb",
+    "ts": 1792492170901,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgflrqw-nsc6vyzm",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
