@@ -76017,5 +76017,16 @@
     "session_id": "mvgr4dhn-hq0s68fl",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792505378041-akshpd",
+    "ts": 1792505378041,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgreloz-unrysqj4",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
