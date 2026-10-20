@@ -75913,5 +75913,15 @@
     "session_id": "mvgob74x-pgny9dmw",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792500414113-saq4cv",
+    "ts": 1792500414113,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvgogbws-cut7ehv2",
+    "referrer": "https://l.instagram.com/"
   }
 ]
