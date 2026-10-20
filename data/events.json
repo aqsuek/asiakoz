@@ -75330,5 +75330,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mvga38gi-w1pj8db7"
+  },
+  {
+    "id": "1792476372974-cch6lt",
+    "ts": 1792476372974,
+    "event": "whatsapp_click",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kz",
+    "session_id": "mvga38gi-w1pj8db7",
+    "button_location": "sticky"
   }
 ]
