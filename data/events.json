@@ -75073,5 +75073,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvg4rx8b-efgdv027"
+  },
+  {
+    "id": "1792467694968-wbj6me",
+    "ts": 1792467694968,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvg4z1g9-rvqax1e5",
+    "button_location": "sticky",
+    "utm_source": "chatgpt.com"
   }
 ]
