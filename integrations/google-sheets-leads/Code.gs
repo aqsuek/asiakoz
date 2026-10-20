@@ -2,7 +2,7 @@
  * Script property SPREADSHEET_ID points to the destination; never return rows.
  * The public endpoint accepts appointments only. It cannot read patient data.
  */
-var LEAD_HEADERS = ["ID заявки", "Дата (Алматы)", "Имя", "Телефон", "Направление", "Город", "Страница", "Язык", "Статус", "Согласие", "Версия согласия", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "gbraid", "wbraid"];
+var LEAD_HEADERS = ["ID заявки", "Дата (Алматы)", "Имя", "Телефон", "Направление", "Город", "Страница", "Язык", "Статус", "Согласие", "Версия согласия", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "gbraid", "wbraid", "Возраст"];
 var LEAD_SERVICES = {laser: "Лазерная коррекция", kosoglazie: "Косоглазие", katarakta: "Катаракта", vitrektomiya: "Витрэктомия", keratoplastika: "Пересадка роговицы"};
 var LEAD_PATHS = {laser: "/laser/", kosoglazie: "/kosoglazie/", katarakta: "/katarakta-almaty/", vitrektomiya: "/vitrektomiya-almaty/", keratoplastika: "/peresadka-rogovitsy-almaty/"};
 var LEAD_ORIGINS = ["https://asiakoz.com", "https://www.asiakoz.com"];
@@ -31,6 +31,7 @@ function saveLead(data) {
   if (data.page !== expected) throw new Error("Invalid page");
   var name = String(data.name || "").trim();
   if (!name || name.length > 80 || !/^\+7\d{10}$/.test(data.phone || "")) throw new Error("Invalid contact");
+  if (data.age !== undefined && (!Number.isInteger(data.age) || data.age < 0 || data.age > 120)) throw new Error("Invalid age");
   var lock = LockService.getScriptLock();
   if (!lock.tryLock(10000)) throw new Error("Busy");
   try {
@@ -43,6 +44,7 @@ function saveLead(data) {
     if (cache.get("lead:" + digest)) throw new Error("Please wait before another request");
     var row = [data.request_id, Utilities.formatDate(new Date(), "Asia/Almaty", "yyyy-MM-dd HH:mm:ss"), name, data.phone, LEAD_SERVICES[data.service], "Алматы", data.page, data.lang, "Новая", "Да", data.consent_version];
     ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "gbraid", "wbraid"].forEach(function (key) { row.push(data[key] || ""); });
+    row.push(data.age === undefined ? "" : String(data.age));
     sheet.appendRow(row.map(safeCell));
     SpreadsheetApp.flush();
     cache.put("lead:" + digest, "1", 60);

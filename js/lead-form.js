@@ -14,17 +14,17 @@
   if (!service || (!preview && !/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(config.endpoint || ""))) return;
   var kk = location.pathname.indexOf("/kk/") === 0;
   var copy = kk ? {
-    heading: "Қабылдауға жазылыңыз", intro: "Атыңыз бен телефон нөміріңізді қалдырыңыз. Өтінім сақталған соң WhatsApp-та дайын хабарлама ашылады.",
-    name: "Атыңыз", phone: "Телефон нөмірі", button: "Жіберу және WhatsApp ашу", busy: "Өтінім сақталып жатыр…",
-    consent: "Қабылдауға жазылу үшін атым мен телефон нөмірімді Google кестесіне сақтауға және WhatsApp-та дайындауға келісемін.",
+    heading: "Қабылдауға жазылыңыз", intro: "Аты-жөніңізді, жасыңызды және телефон нөміріңізді қалдырыңыз. Өтінім сақталған соң WhatsApp-та дайын хабарлама ашылады.",
+    name: "Аты-жөніңіз", age: "Жасыңыз", phone: "Телефон нөмірі", button: "Жіберу және WhatsApp ашу", busy: "Өтінім сақталып жатыр…",
+    consent: "Қабылдауға жазылу үшін аты-жөнімді, жасымды және телефон нөмірімді Google кестесіне сақтауға және WhatsApp-та дайындауға келісемін.",
     policy: "Құпиялылық саясаты", foot: "WhatsApp-та хабарламаны жіберу батырмасын өзіңіз басасыз.",
     success: "Өтінім сақталды. Дайын хабарламаны WhatsApp-та жіберіңіз.", open: "Дайын хабарламаны WhatsApp-та ашу",
     error: "Өтінімді сақтау расталмады. Қайта көріңіз немесе WhatsApp арқылы тікелей жазыңыз.", invalid: "Телефон нөмірін +7 700 000 00 00 түрінде енгізіңіз.",
     demo: "Бұл — алдын ала қарау. Кесте қосылғанша деректер жіберілмейді.", direct: "WhatsApp арқылы жазу"
   } : {
-    heading: "Запишитесь на консультацию", intro: "Оставьте имя и телефон. После сохранения заявки откроется WhatsApp с готовым сообщением.",
-    name: "Ваше имя", phone: "Номер телефона", button: "Отправить и открыть WhatsApp", busy: "Сохраняем заявку…",
-    consent: "Согласен на сохранение имени и телефона в Google Таблице и подготовку сообщения в WhatsApp для записи на приём.",
+    heading: "Запишитесь на консультацию", intro: "Укажите имя, фамилию, возраст и телефон. После сохранения заявки откроется WhatsApp с готовым сообщением.",
+    name: "Имя и фамилия", age: "Возраст", phone: "Номер телефона", button: "Отправить и открыть WhatsApp", busy: "Сохраняем заявку…",
+    consent: "Согласен на сохранение имени, фамилии, возраста и телефона в Google Таблице и подготовку сообщения в WhatsApp для записи на приём.",
     policy: "Политика конфиденциальности", foot: "Нажмите «Отправить» в WhatsApp самостоятельно.",
     success: "Заявка сохранена. Отправьте готовое сообщение в WhatsApp.", open: "Открыть готовое сообщение в WhatsApp",
     error: "Сохранение заявки не подтверждено. Повторите попытку или напишите напрямую в WhatsApp.", invalid: "Введите телефон в формате +7 700 000 00 00.",
@@ -56,7 +56,7 @@
     section.setAttribute("aria-labelledby", "ak-lead-title");
     section.setAttribute("aria-modal", "true");
     section.innerHTML = '<button type="button" class="ak-lead__close" aria-label="'+(kk ? 'Жабу' : 'Закрыть')+'">×</button><div class="ak-lead__copy"><p class="ak-lead__eyebrow">ASIAKOZ · '+(kk ? "АЛМАТЫ" : "АЛМАТЫ")+'</p><h2 id="ak-lead-title">'+copy.heading+'</h2><p>'+copy.intro+'</p><p class="ak-lead__service"></p></div>' +
-      '<form class="ak-lead__form" data-asiakoz-lead="true"><div class="ak-lead__fields"><label>'+copy.name+'<input name="name" autocomplete="given-name" maxlength="80" required></label><label>'+copy.phone+'<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 700 000 00 00" maxlength="24" required></label></div>'+
+      '<form class="ak-lead__form" data-asiakoz-lead="true"><div class="ak-lead__fields"><label>'+copy.name+'<input name="name" autocomplete="name" maxlength="80" required></label><label>'+copy.phone+'<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 700 000 00 00" maxlength="24" required></label><label>'+copy.age+'<input name="age" type="number" inputmode="numeric" min="0" max="120" step="1" required></label></div>'+
       '<div class="ak-lead__trap" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>'+
       '<label class="consent-row ak-lead__consent"><input type="checkbox" class="consent-checkbox" required><span>'+copy.consent+' <a href="/politika-konfidentsialnosti/" target="_blank" rel="noopener">'+copy.policy+'</a></span></label>'+
       '<button type="submit" class="ak-lead__submit">'+copy.button+'</button><p class="ak-lead__foot">'+copy.foot+'</p><p class="ak-lead__status" role="status" aria-live="polite"></p><a class="ak-lead__continue" hidden target="_blank" rel="noopener">'+copy.open+'</a></form>';
@@ -84,16 +84,17 @@
       var name = form.elements.name.value.trim();
       if (!name) { form.elements.name.setCustomValidity(kk ? "Атыңызды енгізіңіз." : "Введите имя."); form.reportValidity(); return; }
       if (preview) { status.textContent = copy.demo; return; }
-      var identity = name + "|" + patientPhone;
+      var age = Number(form.elements.age.value);
+      var identity = name + "|" + patientPhone + "|" + age;
       if (!requestId || identity !== previousIdentity) requestId = id();
       previousIdentity = identity;
-      var payload = {request_id: requestId, name: name, phone: patientPhone, service: service[0], lang: kk ? "kk" : "ru", page: location.pathname, consent: true, consent_version: "lead-2026-10-20", website: "", parent_origin: location.origin};
+      var payload = {request_id: requestId, name: name, age: age, phone: patientPhone, service: service[0], lang: kk ? "kk" : "ru", page: location.pathname, consent: true, consent_version: "lead-2026-10-20", website: "", parent_origin: location.origin};
       // Attribution remains in the private sheet, not in a patient's WhatsApp message.
       try {
         var attr = JSON.parse(sessionStorage.getItem("asiakoz_ad_attribution") || "{}");
         ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "gbraid", "wbraid"].forEach(function (key) { payload[key] = String(attr[key] || new URLSearchParams(location.search).get(key) || "").slice(0, 300); });
       } catch (_) {}
-      var message = kk ? "Сәлеметсіз бе! AsiaKoz клиникасына жазылғым келеді.\nАтым: " + name + "\nТелефон: " + patientPhone + "\nБағыт: " + service[2] + "\nҚала: Алматы\nӨтінім: " + requestId : "Здравствуйте! Хочу записаться в AsiaKoz.\nИмя: " + name + "\nТелефон: " + patientPhone + "\nНаправление: " + service[1] + "\nГород: Алматы\nЗаявка: " + requestId;
+      var message = kk ? "Сәлеметсіз бе! AsiaKoz клиникасына жазылғым келеді.\nАты-жөнім: " + name + (kk ? "\nЖасым: " : "\nВозраст: ") + age + "\nТелефон: " + patientPhone + "\nБағыт: " + service[2] + "\nҚала: Алматы" : "Здравствуйте! Хочу записаться в AsiaKoz.\nИмя и фамилия: " + name + (kk ? "\nЖасым: " : "\nВозраст: ") + age + "\nТелефон: " + patientPhone + "\nНаправление: " + service[1] + "\nГород: Алматы";
       var wa = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
       pending = true; submit.disabled = true; submit.textContent = copy.busy; status.textContent = ""; continuation.hidden = true;
       // Reserve the window within the user gesture; navigate only after a save receipt.
@@ -138,7 +139,7 @@
     form.elements.name.addEventListener("input", function () { this.setCustomValidity(""); });
   }
   function start() {
-    var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "/css/lead-form.css?v=20261020-modal"; document.head.appendChild(link);
+    var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "/css/lead-form.css?v=20261020-details"; document.head.appendChild(link);
     mount();
     // Capture existing and dynamically rendered WhatsApp CTAs before navigation.
     window.addEventListener("click", function (e) {

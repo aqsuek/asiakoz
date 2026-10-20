@@ -54,3 +54,9 @@ test('GET never exposes contact rows or spreadsheet identifiers', () => {
   const {ctx, valid} = fixture(); ctx.saveLead(valid); const result=ctx.doGet();
   assert.ok(!result.text.includes(valid.phone)); assert.ok(!result.text.includes('test-sheet'));
 });
+test('stores age separately and rejects invalid ages', () => {
+  const {ctx, valid, rows} = fixture(); ctx.saveLead({...valid,age:42}); assert.equal(rows[0][19], '42');
+  for (const age of [-1,121,1.5,'42']) {
+    const f=fixture(); assert.throws(()=>f.ctx.saveLead({...f.valid,age}));
+  }
+});
