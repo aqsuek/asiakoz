@@ -75698,5 +75698,16 @@
     "language": "ru",
     "session_id": "mvgflrqw-nsc6vyzm",
     "referrer": "https://asiakoz.com/almaty/"
+  },
+  {
+    "id": "1792491804043-gde8bf",
+    "ts": 1792491804043,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvgflrqw-nsc6vyzm",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
