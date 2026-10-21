@@ -76932,5 +76932,15 @@
     "language": "ru",
     "session_id": "mviapzof-c3mwtg4k",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792598332107-xppdvc",
+    "ts": 1792598332107,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mviaqu92-dzsocz24",
+    "referrer": "https://l.instagram.com/"
   }
 ]
