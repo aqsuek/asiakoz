@@ -76851,5 +76851,15 @@
     "language": "ru",
     "session_id": "mvi8itm2-6v7j45v3",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792594680150-srrimo",
+    "ts": 1792594680150,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvi8j93g-9afcx0k2",
+    "referrer": "https://www.google.com/"
   }
 ]
