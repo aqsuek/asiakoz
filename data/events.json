@@ -76604,5 +76604,16 @@
     "session_id": "mvhxhlzx-kb724jkn",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792576125596-r1ou06",
+    "ts": 1792576125596,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvhxhlzx-kb724jkn",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
