@@ -76546,5 +76546,16 @@
     "language": "ru",
     "session_id": "mvhvd437-3zwn3q0w",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792574539696-tzbgcy",
+    "ts": 1792574539696,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvhwl0zc-y3nfshay",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
