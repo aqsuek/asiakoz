@@ -76892,5 +76892,15 @@
     "session_id": "mvi9mi47-njjgs9oc",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792596604661-385rte",
+    "ts": 1792596604661,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvi9psb3-r429wjci",
+    "referrer": "https://asiakoz.com/uslugi/"
   }
 ]
