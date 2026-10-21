@@ -76341,5 +76341,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792558648226-epcant",
+    "ts": 1792558648226,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvhn4gav-qzue6ruk",
+    "referrer": "https://l.instagram.com/"
   }
 ]
