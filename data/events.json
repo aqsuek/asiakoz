@@ -77104,5 +77104,15 @@
     "session_id": "mvivket0-a78mah7k",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792633473724-iu7yzg",
+    "ts": 1792633473724,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvivket0-a78mah7k",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
