@@ -77666,5 +77666,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvjfi0me-lpx2b858"
+  },
+  {
+    "id": "1792666905901-krh2o3",
+    "ts": 1792666905901,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvjfi0me-lpx2b858",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
