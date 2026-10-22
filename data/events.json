@@ -77635,5 +77635,17 @@
     "language": "ru",
     "session_id": "mvj84u8b-qphfg1kf",
     "referrer": "https://asiakoz.com/laser/?oppref=preview_mock"
+  },
+  {
+    "id": "1792666474887-kqb7di",
+    "ts": 1792666474887,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvjfbgca-k8l4r0yf",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
