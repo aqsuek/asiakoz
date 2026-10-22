@@ -77286,5 +77286,15 @@
     "language": "ru",
     "session_id": "mvj5ytjs-a25p8hlb",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792650801337-7a7474",
+    "ts": 1792650801337,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvj5ytjs-a25p8hlb",
+    "referrer": "https://asiakoz.com/laser/?gad_source=1&gad_campaignid=24358626692&gclid=CjwKCAjwxeHWBhBPEiwAiqtQ-aOb5GRbXW63SWTgXIxdvobuGzw_Kz5Z5yE5zLJvURoL2VhuyWf_LRoCY1gQAvD_BwE"
   }
 ]
