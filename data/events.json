@@ -77328,5 +77328,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792653095840-toguuz",
+    "ts": 1792653095840,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvj7cub5-xpa7h9do"
   }
 ]
