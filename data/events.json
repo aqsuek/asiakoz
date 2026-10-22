@@ -77995,5 +77995,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvjtc7bo-quo7dbbo"
+  },
+  {
+    "id": "1792692658926-h5tvvg",
+    "ts": 1792692658926,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvjuwrj1-7c9hkl12",
+    "utm_source": "chatgpt.com"
   }
 ]
