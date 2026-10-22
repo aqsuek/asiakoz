@@ -77135,5 +77135,15 @@
     "session_id": "mvizt61k-r39qce31",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792641252436-kfl018",
+    "ts": 1792641252436,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvj0ay8x-oqy69ha2",
+    "referrer": "https://l.instagram.com/"
   }
 ]
