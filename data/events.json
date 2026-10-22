@@ -77499,5 +77499,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvj9b52x-mcuzfmxw"
+  },
+  {
+    "id": "1792656448478-bodar2",
+    "ts": 1792656448478,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvj9cn6h-wbzmii7a"
   }
 ]
