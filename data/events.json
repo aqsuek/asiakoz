@@ -78939,5 +78939,14 @@
     "language": "ru",
     "session_id": "mvl8hbqs-4uei42h1",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792776360947-jkg8ep",
+    "ts": 1792776360947,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvk7e2s9-xlb51onq"
   }
 ]
