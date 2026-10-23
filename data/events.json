@@ -78880,5 +78880,15 @@
     "session_id": "mvl30s10-nnhb7vas",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792768455113-hr6gr7",
+    "ts": 1792768455113,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mvl416um-lcyxulv2",
+    "referrer": "https://www.google.com/"
   }
 ]
