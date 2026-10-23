@@ -79024,5 +79024,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvk7e2rq-o6hqg7nz"
+  },
+  {
+    "id": "1792783912890-c5k0qd",
+    "ts": 1792783912890,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvld8ow8-i448wapy",
+    "referrer": "https://l.instagram.com/"
   }
 ]
