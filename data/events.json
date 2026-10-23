@@ -78807,5 +78807,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvkz49f7-g4moebsk"
+  },
+  {
+    "id": "1792761139009-grqmkp",
+    "ts": 1792761139009,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvkzoe8t-98trr75l"
   }
 ]
