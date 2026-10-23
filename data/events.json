@@ -78140,5 +78140,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792722560414-ius6ui",
+    "ts": 1792722560414,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvkcppoh-kalzqyv6",
+    "referrer": "https://www.google.com/"
   }
 ]
