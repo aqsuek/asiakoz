@@ -78376,5 +78376,16 @@
     "session_id": "mvkjzneb-l1vagep5",
     "button_location": "hero",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1792735611571-zb5ymp",
+    "ts": 1792735611571,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvkkhjsq-t6nijczv",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
