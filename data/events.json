@@ -78294,5 +78294,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvkj2cnt-eauvl7sp"
+  },
+  {
+    "id": "1792733253868-e46gkh",
+    "ts": 1792733253868,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvkj2ye0-k0k3sg4c"
   }
 ]
