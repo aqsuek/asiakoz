@@ -78577,5 +78577,15 @@
     "session_id": "mvkphofx-kij5ph4d",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792744268002-6fgvv4",
+    "ts": 1792744268002,
+    "event": "branch_select",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvkpmoyk-ypmm0l3q",
+    "referrer": "https://search.google.com/"
   }
 ]
