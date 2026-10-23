@@ -78789,5 +78789,14 @@
     "session_id": "mvky9fc8-prejlzbf",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792760190639-0tsrqg",
+    "ts": 1792760190639,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvkz49f7-g4moebsk"
   }
 ]
