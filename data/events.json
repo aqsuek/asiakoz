@@ -78827,5 +78827,17 @@
     "session_id": "mvl0nsrt-7mwxkaam",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792763792878-gr6cgn",
+    "ts": 1792763792878,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvl195t6-2jnucyrv",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
