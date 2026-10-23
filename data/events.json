@@ -78365,5 +78365,16 @@
     "language": "ru",
     "session_id": "mvkk467r-ct90vlcp",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792735235152-31l32h",
+    "ts": 1792735235152,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvkjzneb-l1vagep5",
+    "button_location": "hero",
+    "referrer": "https://yandex.kz/"
   }
 ]
