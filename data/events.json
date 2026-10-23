@@ -78201,5 +78201,15 @@
     "language": "ru",
     "session_id": "mvkgoa8e-ddqn63zi",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1792729989439-ro5dko",
+    "ts": 1792729989439,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvkh4x9m-7nw9obux",
+    "referrer": "https://www.google.com/"
   }
 ]
