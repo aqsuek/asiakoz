@@ -78909,5 +78909,15 @@
     "language": "ru",
     "session_id": "mvl6gs53-syrocqth",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792772808379-izoanu",
+    "ts": 1792772808379,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvl6mn7j-6yeu6a6a",
+    "referrer": "https://l.instagram.com/"
   }
 ]
