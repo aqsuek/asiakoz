@@ -78221,5 +78221,16 @@
     "language": "ru",
     "session_id": "mvkhik0n-f60pzp3j",
     "referrer": "https://asiakoz.com/almaty?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeIgILHtbFjOWxhTSknZF1YaQIJwAIdXgyA-xcww1PmAEeFb6PWot4vvZP0fg_aem_kk1YwhuLnldu0vVU__gPIg"
+  },
+  {
+    "id": "1792730677904-oofcxn",
+    "ts": 1792730677904,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvkhik0n-f60pzp3j",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/almaty?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeIgILHtbFjOWxhTSknZF1YaQIJwAIdXgyA-xcww1PmAEeFb6PWot4vvZP0fg_aem_kk1YwhuLnldu0vVU__gPIg"
   }
 ]
