@@ -78890,5 +78890,14 @@
     "language": "kk",
     "session_id": "mvl416um-lcyxulv2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792770017815-b9p8au",
+    "ts": 1792770017815,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvl4yhp3-ar5w4vgo"
   }
 ]
