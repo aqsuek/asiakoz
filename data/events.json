@@ -79441,5 +79441,14 @@
     "language": "ru",
     "session_id": "mvm4ijlr-8lziw8cc",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1792829898709-n5zbt8",
+    "ts": 1792829898709,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvm4m506-8bs3yzv8"
   }
 ]
