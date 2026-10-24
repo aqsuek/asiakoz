@@ -79180,5 +79180,17 @@
     "language": "kk",
     "session_id": "mvlvg9mi-ao2cgzb5",
     "referrer": "https://asiakoz.com/almaty/"
+  },
+  {
+    "id": "1792816149082-iec5pp",
+    "ts": 1792816149082,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvlwfn50-n5jn0yd7",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
