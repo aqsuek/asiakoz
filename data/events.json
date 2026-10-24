@@ -79130,5 +79130,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvln9r2s-7ghxjtgk"
+  },
+  {
+    "id": "1792808164685-f0b5ad",
+    "ts": 1792808164685,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvlro5v0-8bss4q2z"
   }
 ]
