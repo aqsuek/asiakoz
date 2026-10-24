@@ -79727,5 +79727,15 @@
     "session_id": "mvmg2dzb-kkzjqakt",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792850375124-jb4efj",
+    "ts": 1792850375124,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvmgt6jb-lnsxinic",
+    "referrer": "https://yandex.ru/"
   }
 ]
