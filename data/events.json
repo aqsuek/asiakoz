@@ -79256,5 +79256,15 @@
     "language": "ru",
     "session_id": "mvlyrqz8-ndwljdda",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1792820356076-i34xr7",
+    "ts": 1792820356076,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvlyxt1t-18o3wegs",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
