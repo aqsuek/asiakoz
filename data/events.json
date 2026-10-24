@@ -79604,5 +79604,14 @@
     "language": "ru",
     "session_id": "mvma1c1m-2cs6enh4",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792839625382-2a277y",
+    "ts": 1792839625382,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvmaerfd-7kc0671f"
   }
 ]
