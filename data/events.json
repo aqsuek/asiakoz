@@ -80244,5 +80244,15 @@
     "language": "ru",
     "session_id": "mvno5mny-6gvehss7",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792923282223-f1hpfu",
+    "ts": 1792923282223,
+    "event": "branch_select",
+    "page_path": "/laser/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvno5mny-6gvehss7",
+    "referrer": "https://l.instagram.com/"
   }
 ]
