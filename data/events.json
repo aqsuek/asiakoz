@@ -80225,5 +80225,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvnlyn86-spqbe8i2"
+  },
+  {
+    "id": "1792920984832-uh0k0c",
+    "ts": 1792920984832,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvnmuoe0-xtk5tjx9"
   }
 ]
