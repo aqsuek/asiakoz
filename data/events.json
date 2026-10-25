@@ -80404,5 +80404,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvn29s3z-bwdkfry1"
+  },
+  {
+    "id": "1792944298114-4gfu64",
+    "ts": 1792944298114,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvo0q9tx-m4te9d79",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
