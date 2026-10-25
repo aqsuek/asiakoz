@@ -80518,5 +80518,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvo8x08w-bg8b9vug"
+  },
+  {
+    "id": "1792958070602-schwyr",
+    "ts": 1792958070602,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvo8xi54-igjs3wls"
   }
 ]
