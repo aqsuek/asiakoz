@@ -80216,5 +80216,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvnlxceq-chb1qh6f"
+  },
+  {
+    "id": "1792919494064-vp9ajo",
+    "ts": 1792919494064,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvnlyn86-spqbe8i2"
   }
 ]
