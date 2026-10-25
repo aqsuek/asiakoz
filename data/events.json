@@ -80254,5 +80254,17 @@
     "language": "ru",
     "session_id": "mvno5mny-6gvehss7",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792923783279-kmbbuw",
+    "ts": 1792923783279,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvnoil63-341yzmtj",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
