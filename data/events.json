@@ -80456,5 +80456,15 @@
     "language": "ru",
     "session_id": "mvo36ww0-poid1dp6",
     "referrer": "https://www.yandex.kz/"
+  },
+  {
+    "id": "1792950778512-e30u3v",
+    "ts": 1792950778512,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvo4l11b-sj660zxd",
+    "referrer": "https://www.google.com/"
   }
 ]
