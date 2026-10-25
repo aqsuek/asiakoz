@@ -80436,5 +80436,15 @@
     "language": "ru",
     "session_id": "mvo2ooa4-wqid6za5",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1792947693400-ykjlhd",
+    "ts": 1792947693400,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvo2ooa4-wqid6za5",
+    "referrer": "https://yandex.kz/"
   }
 ]
