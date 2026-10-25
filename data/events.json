@@ -80446,5 +80446,15 @@
     "language": "ru",
     "session_id": "mvo2ooa4-wqid6za5",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1792948430772-jeosw6",
+    "ts": 1792948430772,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvo36ww0-poid1dp6",
+    "referrer": "https://www.yandex.kz/"
   }
 ]
