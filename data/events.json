@@ -80554,5 +80554,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvobyhrk-32p2fed2"
+  },
+  {
+    "id": "1792968559417-6o8hlt",
+    "ts": 1792968559417,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvof680w-4m1wjofs",
+    "utm_source": "chatgpt.com"
   }
 ]
