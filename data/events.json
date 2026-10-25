@@ -80426,5 +80426,15 @@
     "session_id": "mvo1gwno-kuqg2hfg",
     "utm_source": "ig",
     "utm_medium": "social"
+  },
+  {
+    "id": "1792947590845-rdj59g",
+    "ts": 1792947590845,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvo2ooa4-wqid6za5",
+    "referrer": "https://yandex.kz/"
   }
 ]
