@@ -80490,5 +80490,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792952036726-17wuji",
+    "ts": 1792952036726,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvo5c6aw-gg60xkuj",
+    "referrer": "https://l.instagram.com/"
   }
 ]
