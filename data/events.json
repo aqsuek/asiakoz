@@ -81191,5 +81191,16 @@
     "language": "ru",
     "session_id": "mvp3968p-4whabffr",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793009039884-pahioa",
+    "ts": 1793009039884,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvp3968p-4whabffr",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
