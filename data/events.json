@@ -80937,5 +80937,14 @@
     "session_id": "mvoxa2ql-27zjv8p8",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792999222146-0p5asp",
+    "ts": 1792999222146,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvoxfhot-xhz5vkhz"
   }
 ]
