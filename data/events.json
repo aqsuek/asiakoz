@@ -80966,5 +80966,17 @@
     "language": "ru",
     "session_id": "mvoy1o49-nro0b1na",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793001383822-cskjff",
+    "ts": 1793001383822,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvoypnz0-jrs8f1xn",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
