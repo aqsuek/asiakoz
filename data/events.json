@@ -81381,5 +81381,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvpdfhp2-u6nqj55c"
+  },
+  {
+    "id": "1793026275091-rtwlne",
+    "ts": 1793026275091,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvpdfhp2-u6nqj55c",
+    "referrer": "https://asiakoz.com/diagnostika-aktau/"
   }
 ]
