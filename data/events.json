@@ -81420,5 +81420,15 @@
     "session_id": "mvpdzfms-ah53vzyc",
     "utm_source": "ig",
     "utm_medium": "social"
+  },
+  {
+    "id": "1793027120635-32yj5n",
+    "ts": 1793027120635,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvpe1dyn-u685ori2",
+    "referrer": "https://www.google.com/"
   }
 ]
