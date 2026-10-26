@@ -81311,5 +81311,15 @@
     "language": "ru",
     "session_id": "mvpb6zr3-qhiz18uo",
     "referrer": "android-app://com.google.android.apps.searchlite/"
+  },
+  {
+    "id": "1793022408310-lvcuvb",
+    "ts": 1793022408310,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvpb6zr3-qhiz18uo",
+    "referrer": "https://asiakoz.com/shymkent/"
   }
 ]
