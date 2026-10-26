@@ -81100,5 +81100,16 @@
     "language": "ru",
     "session_id": "mvp1p0hu-ue6e1bug",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793006500512-ln9atz",
+    "ts": 1793006500512,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvp1p0hu-ue6e1bug",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
