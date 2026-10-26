@@ -81430,5 +81430,16 @@
     "language": "ru",
     "session_id": "mvpe1dyn-u685ori2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793027191535-7n3dol",
+    "ts": 1793027191535,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvpe2xhm-8b75n1ji",
+    "utm_source": "ig",
+    "utm_medium": "social"
   }
 ]
