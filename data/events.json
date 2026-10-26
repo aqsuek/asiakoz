@@ -80776,5 +80776,16 @@
     "language": "ru",
     "session_id": "mvoskgth-4o3usyax",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1792991118754-1q3q2i",
+    "ts": 1792991118754,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvoskgth-4o3usyax",
+    "button_location": "contacts",
+    "referrer": "https://www.google.kz/"
   }
 ]
