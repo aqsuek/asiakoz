@@ -81409,5 +81409,16 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvpdvx0p-sgav7lon"
+  },
+  {
+    "id": "1793027027750-wblya9",
+    "ts": 1793027027750,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvpdzfms-ah53vzyc",
+    "utm_source": "ig",
+    "utm_medium": "social"
   }
 ]
