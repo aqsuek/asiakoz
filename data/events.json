@@ -80661,5 +80661,16 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvohpmp5-pg9s63fs"
+  },
+  {
+    "id": "1792986471158-a9u6yj",
+    "ts": 1792986471158,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvopu8p3-dtd6tf3l",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
