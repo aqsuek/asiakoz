@@ -81400,5 +81400,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvpdm4oa-k9895jv3"
+  },
+  {
+    "id": "1793026870780-rwu28h",
+    "ts": 1793026870780,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvpdvx0p-sgav7lon"
   }
 ]
