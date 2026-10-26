@@ -80652,5 +80652,14 @@
     "session_id": "mvop9sku-daurvo1s",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792986318060-96zx8g",
+    "ts": 1792986318060,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvohpmp5-pg9s63fs"
   }
 ]
