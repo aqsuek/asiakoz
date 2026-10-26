@@ -81450,5 +81450,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvpejyft-ize86hru"
+  },
+  {
+    "id": "1793028178858-v8hpub",
+    "ts": 1793028178858,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvpejyft-ize86hru",
+    "referrer": "https://asiakoz.com/"
   }
 ]
