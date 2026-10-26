@@ -81301,5 +81301,15 @@
     "language": "ru",
     "session_id": "mvp9jmcm-vkb1jzxx",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793022350782-ut7sfn",
+    "ts": 1793022350782,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvpb6zr3-qhiz18uo",
+    "referrer": "android-app://com.google.android.apps.searchlite/"
   }
 ]
