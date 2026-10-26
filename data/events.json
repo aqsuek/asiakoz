@@ -80787,5 +80787,16 @@
     "session_id": "mvoskgth-4o3usyax",
     "button_location": "contacts",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1792992051074-ocprc6",
+    "ts": 1792992051074,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvot5r68-2mb5qi8r",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
