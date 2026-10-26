@@ -80854,5 +80854,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1792997137489-r2vjo1",
+    "ts": 1792997137489,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvow6qxg-nmdgktqn",
+    "referrer": "https://asiakoz.com/smile-almaty/"
   }
 ]
