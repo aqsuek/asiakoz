@@ -80631,5 +80631,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvohpmrs-91sg3upk"
+  },
+  {
+    "id": "1792985747248-n0cbg1",
+    "ts": 1792985747248,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvop9sku-daurvo1s",
+    "referrer": "https://www.google.com/"
   }
 ]
