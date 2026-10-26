@@ -80641,5 +80641,16 @@
     "language": "ru",
     "session_id": "mvop9sku-daurvo1s",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792985876324-q7hkcz",
+    "ts": 1792985876324,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvop9sku-daurvo1s",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
