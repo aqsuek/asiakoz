@@ -80574,5 +80574,14 @@
     "language": "ru",
     "session_id": "mvohid1d-dwjd0m9p",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1792976183713-fopmoz",
+    "ts": 1792976183713,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvojpki4-9u80ykit"
   }
 ]
