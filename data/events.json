@@ -82381,5 +82381,14 @@
     "language": "ru",
     "session_id": "mvqjrgpd-foehtl6y",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793098123213-83b572",
+    "ts": 1793098123213,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvqkbccr-px8r0v81"
   }
 ]
