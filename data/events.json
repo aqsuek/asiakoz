@@ -82545,5 +82545,15 @@
     "language": "ru",
     "session_id": "mvqoe67x-o2qhsi2z",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1793105521324-a1lmxx",
+    "ts": 1793105521324,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvqoptqj-ty56ygs4",
+    "referrer": "https://www.google.com/"
   }
 ]
