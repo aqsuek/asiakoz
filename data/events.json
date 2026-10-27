@@ -82454,5 +82454,15 @@
     "language": "ru",
     "session_id": "mvqlv1u6-kgef595b",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793101927973-hipfoi",
+    "ts": 1793101927973,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvqmkp41-vmvykdze",
+    "referrer": "https://l.instagram.com/"
   }
 ]
