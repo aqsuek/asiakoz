@@ -82174,5 +82174,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793089068568-vri3gq",
+    "ts": 1793089068568,
+    "event": "branch_select",
+    "page_path": "/aktau/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvkpmoyk-ypmm0l3q",
+    "referrer": "https://search.google.com/"
   }
 ]
