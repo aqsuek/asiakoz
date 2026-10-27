@@ -81996,5 +81996,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvqaty5n-odbwizl6"
+  },
+  {
+    "id": "1793082436198-mnzod8",
+    "ts": 1793082436198,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvqaty5n-odbwizl6",
+    "referrer": "https://asiakoz.com/diagnostika-aktau/"
   }
 ]
