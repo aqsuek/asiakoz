@@ -82122,5 +82122,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793087278716-qqk5iy",
+    "ts": 1793087278716,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvqdunid-aydyn318",
+    "referrer": "https://l.instagram.com/"
   }
 ]
