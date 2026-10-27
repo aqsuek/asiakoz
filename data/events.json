@@ -82016,5 +82016,15 @@
     "language": "ru",
     "session_id": "mvqb0ptu-td7wjnlx",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793082570059-f9b05p",
+    "ts": 1793082570059,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvqb1wp7-0ggiq096",
+    "referrer": "https://l.instagram.com/"
   }
 ]
