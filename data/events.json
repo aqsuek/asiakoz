@@ -83201,5 +83201,15 @@
     "language": "ru",
     "session_id": "mvrub04m-qjsmsogt",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793176575374-okcosh",
+    "ts": 1793176575374,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvrv0eyk-pap8x2wq",
+    "referrer": "https://www.google.com/"
   }
 ]
