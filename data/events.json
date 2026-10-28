@@ -82921,5 +82921,15 @@
     "session_id": "mvrlxprm-tz79uy2g",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793162871760-dtwveo",
+    "ts": 1793162871760,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvrmv2kg-72zwqtz3",
+    "referrer": "https://www.google.com/"
   }
 ]
