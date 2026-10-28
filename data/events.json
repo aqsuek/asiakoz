@@ -83191,5 +83191,15 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "mvrclc3s-kisif87h"
+  },
+  {
+    "id": "1793175371852-l8cov9",
+    "ts": 1793175371852,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvrub04m-qjsmsogt",
+    "referrer": "https://www.google.com/"
   }
 ]
