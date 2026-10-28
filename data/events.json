@@ -83054,5 +83054,16 @@
     "session_id": "mvrquwb4-ecefdyaa",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793169690443-rg4g67",
+    "ts": 1793169690443,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvrquwb4-ecefdyaa",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
