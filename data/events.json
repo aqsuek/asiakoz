@@ -83013,5 +83013,15 @@
     "session_id": "mvrq2q6k-iv2ysxco",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793168379416-jlnws1",
+    "ts": 1793168379416,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvrq557e-0d0zoet2",
+    "referrer": "https://asiakoz.com/smile-almaty/"
   }
 ]
