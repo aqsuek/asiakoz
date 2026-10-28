@@ -83128,5 +83128,15 @@
     "session_id": "mvrrlsfk-2hmo1vk1",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793170885360-l3ecbm",
+    "ts": 1793170885360,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvrrgnh6-h41wc0j4",
+    "referrer": "https://asiakoz.com/almaty/?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafWvHgX32uwnJuLbG74_kEX3269tnqhv3dGO-KdhLrNEuwqCJdNnczGIylwtA_aem_JpS0cjrHxjwS0gtLoSai4w"
   }
 ]
