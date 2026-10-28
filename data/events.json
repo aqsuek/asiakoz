@@ -83800,5 +83800,17 @@
     "language": "ru",
     "session_id": "mvsohaj7-ku7ud23b",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793227956349-kcejx6",
+    "ts": 1793227956349,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvspm1cr-22ngl10k",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
