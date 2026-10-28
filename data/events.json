@@ -83043,5 +83043,16 @@
     "language": "ru",
     "session_id": "mvrquwb4-ecefdyaa",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793169611172-lp6g6j",
+    "ts": 1793169611172,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvrquwb4-ecefdyaa",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
