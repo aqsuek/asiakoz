@@ -83160,5 +83160,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793171975163-kdhjqb",
+    "ts": 1793171975163,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvrsa4s3-e4vxpfyi",
+    "referrer": "https://l.wl.co/"
   }
 ]
