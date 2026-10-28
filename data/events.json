@@ -83286,5 +83286,14 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mvrwpadp-0c5yytzp"
+  },
+  {
+    "id": "1793180692757-2yhcq7",
+    "ts": 1793180692757,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvrxh0ej-mauj6m5c"
   }
 ]
