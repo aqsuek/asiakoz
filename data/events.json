@@ -83352,5 +83352,14 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "mvrz1u08-la9b5pl2"
+  },
+  {
+    "id": "1793183700887-lopjgp",
+    "ts": 1793183700887,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mvrz9g75-pxi05160"
   }
 ]
