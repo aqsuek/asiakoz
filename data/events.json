@@ -84395,5 +84395,16 @@
     "language": "ru",
     "session_id": "mvtcpgvn-1v42wb6l",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793266783411-h6w9zs",
+    "ts": 1793266783411,
+    "event": "phone_click",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mvtcpgvn-1v42wb6l",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/"
   }
 ]
