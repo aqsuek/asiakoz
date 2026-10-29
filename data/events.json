@@ -84644,5 +84644,15 @@
     "session_id": "mvtgkvus-1h57oqxr",
     "button_location": "contacts",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1793273701428-ifdnal",
+    "ts": 1793273701428,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtgug8s-rpg85znm",
+    "referrer": "https://l.instagram.com/"
   }
 ]
