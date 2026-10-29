@@ -83892,5 +83892,14 @@
     "language": "ru",
     "session_id": "mvt1cuoh-ga92lla7",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793247918796-dimbvm",
+    "ts": 1793247918796,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvt1hv6a-1626qxf0"
   }
 ]
