@@ -84385,5 +84385,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793266759803-cm8bhu",
+    "ts": 1793266759803,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvtcpgvn-1v42wb6l",
+    "referrer": "https://www.google.com/"
   }
 ]
