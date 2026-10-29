@@ -84437,5 +84437,15 @@
     "session_id": "mvtcwrp2-i6hen9p6",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793267389735-lfzg73",
+    "ts": 1793267389735,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mvtcpgvn-1v42wb6l",
+    "referrer": "https://asiakoz.com/"
   }
 ]
