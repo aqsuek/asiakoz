@@ -84490,5 +84490,16 @@
     "language": "ru",
     "session_id": "mvtdliyc-3i2d7r28",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1793268509987-3yo80v",
+    "ts": 1793268509987,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtdid1g-3g1g6pqn",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
