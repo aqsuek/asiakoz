@@ -84826,5 +84826,16 @@
     "session_id": "mvtm3bgz-5jow5yzw",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793282562462-t3jwc0",
+    "ts": 1793282562462,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtm3bgz-5jow5yzw",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
