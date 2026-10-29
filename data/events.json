@@ -83994,5 +83994,15 @@
     "session_id": "mvt3tdym-6pljkx9k",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793252317810-0lq164",
+    "ts": 1793252317810,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvt4491m-swm95mxy",
+    "referrer": "https://yandex.kz/"
   }
 ]
