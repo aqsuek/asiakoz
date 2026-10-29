@@ -84417,5 +84417,14 @@
     "session_id": "mvtcsvmr-2ou5gtkw",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793267048163-mk9ygy",
+    "ts": 1793267048163,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvtcvxv8-exzj1dqb"
   }
 ]
