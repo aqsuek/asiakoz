@@ -84327,5 +84327,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvt9yq98-1if5orx8"
+  },
+  {
+    "id": "1793262191157-2ect1w",
+    "ts": 1793262191157,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvt9zub7-ukomfbul"
   }
 ]
