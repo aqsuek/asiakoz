@@ -84701,5 +84701,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvtih3dw-9hm8gci9"
+  },
+  {
+    "id": "1793276516680-8ijqro",
+    "ts": 1793276516680,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvtiiprx-16qws5k3",
+    "referrer": "https://link.2gis.com/"
   }
 ]
