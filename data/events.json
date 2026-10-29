@@ -84426,5 +84426,16 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvtcvxv8-exzj1dqb"
+  },
+  {
+    "id": "1793267087956-pqmed8",
+    "ts": 1793267087956,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtcwrp2-i6hen9p6",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
