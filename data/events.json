@@ -84050,5 +84050,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvt4vfmt-e1y5zkzd"
+  },
+  {
+    "id": "1793253859056-mjk9n9",
+    "ts": 1793253859056,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvt4vfmt-e1y5zkzd",
+    "referrer": "https://asiakoz.com/aktau/"
   }
 ]
