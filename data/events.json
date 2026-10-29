@@ -84406,5 +84406,16 @@
     "session_id": "mvtcpgvn-1v42wb6l",
     "button_location": "hero",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1793266906260-pzprnx",
+    "ts": 1793266906260,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtcsvmr-2ou5gtkw",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
