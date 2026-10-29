@@ -84447,5 +84447,17 @@
     "language": "kk",
     "session_id": "mvtcpgvn-1v42wb6l",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1793267445575-21fgpg",
+    "ts": 1793267445575,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvtd4hcp-sp31cerb",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
