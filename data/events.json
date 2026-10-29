@@ -85067,5 +85067,15 @@
     "language": "tr",
     "session_id": "mvtu8b2u-biwdes0u",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793299542975-qjjtzm",
+    "ts": 1793299542975,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvtw8cv8-z0e34ta6",
+    "referrer": "https://yandex.kz/"
   }
 ]
