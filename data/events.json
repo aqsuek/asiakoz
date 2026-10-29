@@ -84148,5 +84148,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mvt6gxwe-f2duhbji"
+  },
+  {
+    "id": "1793256470336-vtcroj",
+    "ts": 1793256470336,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvt6l4nt-hsfyoyki",
+    "referrer": "https://www.google.com/"
   }
 ]
