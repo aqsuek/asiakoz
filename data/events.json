@@ -85047,5 +85047,15 @@
     "language": "ru",
     "session_id": "mvtu8b2u-biwdes0u",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793296222416-gk0a8i",
+    "ts": 1793296222416,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "tr",
+    "session_id": "mvtu8b2u-biwdes0u",
+    "referrer": "https://www.google.com/"
   }
 ]
