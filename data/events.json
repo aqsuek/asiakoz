@@ -85505,5 +85505,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvu7h1fz-kisif87h"
+  },
+  {
+    "id": "1793343089079-7puiet",
+    "ts": 1793343089079,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvu7h1gh-neerdr5k"
   }
 ]
