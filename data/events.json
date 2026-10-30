@@ -85921,5 +85921,17 @@
     "session_id": "mvux1iwa-ech3vd4c",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793361686788-ry3tky",
+    "ts": 1793361686788,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvux85gf-7uftzrv6",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
