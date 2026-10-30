@@ -85585,5 +85585,17 @@
     "language": "ru",
     "session_id": "mvun31t5-mlpztdvw",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793345053183-7ku61z",
+    "ts": 1793345053183,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvunbmom-57m8qg2i",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
