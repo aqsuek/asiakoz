@@ -85910,5 +85910,16 @@
     "language": "ru",
     "session_id": "mvuwyz3a-hsk0cixd",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793361366208-w0y5dq",
+    "ts": 1793361366208,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvux1iwa-ech3vd4c",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
