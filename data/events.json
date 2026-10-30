@@ -85779,5 +85779,16 @@
     "language": "ru",
     "session_id": "mvut42ub-x6bn1dai",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793354850511-dlgx50",
+    "ts": 1793354850511,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvut42ub-x6bn1dai",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
