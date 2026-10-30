@@ -85859,5 +85859,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvuvgior-ov33uk03"
+  },
+  {
+    "id": "1793359196580-81lslv",
+    "ts": 1793359196580,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvuvqy1f-vmt7bv16",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
