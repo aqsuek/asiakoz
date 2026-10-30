@@ -85810,5 +85810,15 @@
     "language": "ru",
     "session_id": "mvutwgtz-ged1qh8m",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1793356918266-na7zcx",
+    "ts": 1793356918266,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvuue5ut-a9pshlam",
+    "referrer": "https://l.instagram.com/"
   }
 ]
