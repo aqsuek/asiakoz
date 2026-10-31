@@ -86668,5 +86668,16 @@
     "language": "ru",
     "session_id": "mvw5eisz-ulfc5w60",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793435894774-sd50ty",
+    "ts": 1793435894774,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvw5eisz-ulfc5w60",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
