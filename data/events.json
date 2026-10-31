@@ -86299,5 +86299,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvvmww4p-vn58hmii"
+  },
+  {
+    "id": "1793406347163-8ic8e9",
+    "ts": 1793406347163,
+    "event": "page_view",
+    "page_path": "/kk/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvvnt1ne-q9c6fj7l"
   }
 ]
