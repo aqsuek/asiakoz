@@ -86679,5 +86679,16 @@
     "session_id": "mvw5eisz-ulfc5w60",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793435957856-5m2bex",
+    "ts": 1793435957856,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvw5eisz-ulfc5w60",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
