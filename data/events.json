@@ -86614,5 +86614,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvw23fa5-9t6rm2jf"
+  },
+  {
+    "id": "1793430352485-h7o0y0",
+    "ts": 1793430352485,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvw244xd-frax1dqx"
   }
 ]
