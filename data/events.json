@@ -86345,5 +86345,15 @@
     "language": "ru",
     "session_id": "mvvrekhp-kw6gku6h",
     "referrer": "https://yandex.ru/"
+  },
+  {
+    "id": "1793413750533-ii1pm3",
+    "ts": 1793413750533,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvvs88q2-u7swzj7b",
+    "referrer": "https://www.google.com/"
   }
 ]
