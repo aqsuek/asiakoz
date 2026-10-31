@@ -86557,5 +86557,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvw15dcn-ak3z895t"
+  },
+  {
+    "id": "1793428778618-1cbzi5",
+    "ts": 1793428778618,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvw16f5j-i3irs91v",
+    "referrer": "https://asiakoz.com/doctor-ali-keskin/"
   }
 ]
