@@ -87451,5 +87451,15 @@
     "session_id": "mvxr91x8-jgixzdft",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793533251057-7cn3yj",
+    "ts": 1793533251057,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvxrdc1o-tlna0o03",
+    "referrer": "https://l.instagram.com/"
   }
 ]
