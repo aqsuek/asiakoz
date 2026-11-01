@@ -87710,5 +87710,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvy6sxwj-wn9chwis"
+  },
+  {
+    "id": "1793559659375-5xskgg",
+    "ts": 1793559659375,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvy73hlz-onm6y6me",
+    "referrer": "https://l.instagram.com/"
   }
 ]
