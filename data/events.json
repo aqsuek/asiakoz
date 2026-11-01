@@ -87068,5 +87068,15 @@
     "language": "ru",
     "session_id": "mvxb870b-bqwmmw1s",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793506206452-a4rher",
+    "ts": 1793506206452,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvxb870b-bqwmmw1s",
+    "referrer": "https://asiakoz.com/"
   }
 ]
