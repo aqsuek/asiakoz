@@ -87393,5 +87393,14 @@
     "session_id": "mvxonbvg-w26cqq2w",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793529660145-wbjn6u",
+    "ts": 1793529660145,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvxp8nc0-c2vtg2q4"
   }
 ]
