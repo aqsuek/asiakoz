@@ -86966,5 +86966,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mvx2cqsh-zagqwl2c"
+  },
+  {
+    "id": "1793495536520-o524f5",
+    "ts": 1793495536520,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvx4x8gr-zar27a0c",
+    "referrer": "https://asiakoz.com/vtorichnaya-katarakta-almaty/"
   }
 ]
