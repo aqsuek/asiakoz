@@ -87382,5 +87382,16 @@
     "language": "ru",
     "session_id": "mvxonbvg-w26cqq2w",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793528876412-dqrlcm",
+    "ts": 1793528876412,
+    "event": "whatsapp_click",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvxonbvg-w26cqq2w",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
