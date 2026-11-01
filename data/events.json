@@ -87606,5 +87606,14 @@
     "language": "ru",
     "session_id": "mvxzkauf-7hxkn0xi",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793547955409-x6z7en",
+    "ts": 1793547955409,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvy04qgp-9tz1sxif"
   }
 ]
