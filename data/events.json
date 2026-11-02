@@ -88666,5 +88666,16 @@
     "language": "ru",
     "session_id": "mvzj5pll-alsd8s4e",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793640954334-bx130w",
+    "ts": 1793640954334,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvzji1av-f1kq834g",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
