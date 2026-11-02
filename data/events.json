@@ -88494,5 +88494,16 @@
     "language": "ru",
     "session_id": "mvzbphs5-hd5r32p2",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793627951534-ipkgnq",
+    "ts": 1793627951534,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvzbphs5-hd5r32p2",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
