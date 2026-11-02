@@ -88646,5 +88646,15 @@
     "language": "ru",
     "session_id": "mvziezsm-qy0fi716",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793639250269-mh4p10",
+    "ts": 1793639250269,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvzihei3-wnfluaqj",
+    "utm_source": "chatgpt.com"
   }
 ]
