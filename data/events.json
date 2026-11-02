@@ -88155,5 +88155,16 @@
     "language": "ru",
     "session_id": "mvyx9emu-mdtxp8n8",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793603640052-epbx38",
+    "ts": 1793603640053,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvyx9emu-mdtxp8n8",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
