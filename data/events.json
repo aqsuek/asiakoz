@@ -88579,5 +88579,15 @@
     "language": "ru",
     "session_id": "mvuwyz3a-hsk0cixd",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793632987200-wsph9x",
+    "ts": 1793632987200,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvzeq7wh-yx9pfd14",
+    "utm_source": "chatgpt.com"
   }
 ]
