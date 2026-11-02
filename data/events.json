@@ -88505,5 +88505,14 @@
     "session_id": "mvzbphs5-hd5r32p2",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793627980248-3cn9oz",
+    "ts": 1793627980248,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvyykyd2-oyszjg9t"
   }
 ]
