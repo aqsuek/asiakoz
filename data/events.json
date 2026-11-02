@@ -88322,5 +88322,15 @@
     "session_id": "mvz2a45g-mn7awg4l",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793612466553-nfh1ld",
+    "ts": 1793612466553,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvz2jhcn-eoxf2omt",
+    "referrer": "https://www.google.com/"
   }
 ]
