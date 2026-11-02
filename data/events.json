@@ -88221,5 +88221,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793606646029-ajyp0e",
+    "ts": 1793606646029,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mvyz2niw-eywvlyds",
+    "referrer": "https://www.google.com/"
   }
 ]
