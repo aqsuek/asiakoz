@@ -87767,5 +87767,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvye1nr9-91sg3upk"
+  },
+  {
+    "id": "1793578695409-mztyps",
+    "ts": 1793578695409,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvyhslfq-wcvepk46"
   }
 ]
