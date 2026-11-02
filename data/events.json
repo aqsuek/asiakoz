@@ -88102,5 +88102,16 @@
     "language": "ru",
     "session_id": "mvyw6e8f-8fzrs6oo",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793601837867-7dfikv",
+    "ts": 1793601837867,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvyw6e8f-8fzrs6oo",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
