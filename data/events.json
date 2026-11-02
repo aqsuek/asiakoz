@@ -87776,5 +87776,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mvyhslfq-wcvepk46"
+  },
+  {
+    "id": "1793578756574-c6iske",
+    "ts": 1793578756574,
+    "event": "page_view",
+    "page_path": "/laser/doctor/orel-talip/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvy453rq-quo7dbbo"
   }
 ]
