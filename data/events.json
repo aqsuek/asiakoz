@@ -88280,5 +88280,17 @@
     "language": "ru",
     "session_id": "mvz0lkir-lsb28722",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793609798713-lmiout",
+    "ts": 1793609798713,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mvz0y3u9-5xzvdigz",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
