@@ -88353,5 +88353,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mvyhslfq-8watjo2n"
+  },
+  {
+    "id": "1793613886268-k502ub",
+    "ts": 1793613886268,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mvz3dr1s-c9gaca89",
+    "referrer": "https://l.instagram.com/"
   }
 ]
