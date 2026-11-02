@@ -88231,5 +88231,14 @@
     "language": "ru",
     "session_id": "mvyz2niw-eywvlyds",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793606772700-34cbly",
+    "ts": 1793606772700,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mvyhslgq-kc4ilc95"
   }
 ]
