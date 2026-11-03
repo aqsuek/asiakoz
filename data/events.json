@@ -89507,5 +89507,17 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mw164y1f-k451hh3r"
+  },
+  {
+    "id": "1793740797124-pi8cyk",
+    "ts": 1793740797124,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw16sh0e-wmofjxky",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
