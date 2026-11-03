@@ -89028,5 +89028,15 @@
     "language": "en",
     "session_id": "mw0alljg-w13r7mye",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793686615510-hg00au",
+    "ts": 1793686615510,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "en",
+    "session_id": "mw0alljg-w13r7mye",
+    "referrer": "https://www.google.com/"
   }
 ]
