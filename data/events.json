@@ -89437,5 +89437,15 @@
     "session_id": "mw0u0l9p-ebz2m0h5",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793719802749-c9u63z",
+    "ts": 1793719802749,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw0ufdoa-st4ovnpl",
+    "referrer": "https://asiakoz.com/prk-lasek-almaty/"
   }
 ]
