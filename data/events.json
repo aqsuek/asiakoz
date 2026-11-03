@@ -89377,5 +89377,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mw0p7ti2-umrsn88v"
+  },
+  {
+    "id": "1793714473620-ekegzp",
+    "ts": 1793714473620,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw0r9q61-sar9dkae"
   }
 ]
