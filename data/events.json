@@ -90150,5 +90150,15 @@
     "session_id": "mw26teng-62q45pgw",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793801372757-s02dkz",
+    "ts": 1793801372757,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw27093j-rwlvxk1u",
+    "referrer": "https://www.google.com/"
   }
 ]
