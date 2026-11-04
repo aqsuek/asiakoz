@@ -90466,5 +90466,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mw2ih29d-ez5c2azp"
+  },
+  {
+    "id": "1793821308440-rhrlca",
+    "ts": 1793821308440,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw2ivmnu-ixfwkh9o"
   }
 ]
