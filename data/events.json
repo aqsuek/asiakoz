@@ -90358,5 +90358,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mw2dot1f-teg708j7"
+  },
+  {
+    "id": "1793813200139-xlfkwg",
+    "ts": 1793813200139,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2e1hf2-lwfewy8o",
+    "referrer": "https://www.google.com/"
   }
 ]
