@@ -90349,5 +90349,14 @@
     "session_id": "mw2cj5a7-29wqgl95",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793812908970-ua4q5t",
+    "ts": 1793812908970,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw2dot1f-teg708j7"
   }
 ]
