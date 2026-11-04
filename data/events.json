@@ -90210,5 +90210,14 @@
     "language": "ru",
     "session_id": "mw29g0pa-zo8w7rby",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793805620606-77vga9",
+    "ts": 1793805620606,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw29jciz-1amk4voi"
   }
 ]
