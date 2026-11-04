@@ -89588,5 +89588,15 @@
     "language": "ru",
     "session_id": "mw1l7f3p-xfuqh2cj",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793764866580-4ec4ge",
+    "ts": 1793764866580,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw1l9vc1-hihtgg0k",
+    "referrer": "https://l.instagram.com/"
   }
 ]
