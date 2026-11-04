@@ -89808,5 +89808,17 @@
     "session_id": "mw1r2gna-nyhglyjc",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793775065640-gfc20j",
+    "ts": 1793775065640,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw1rcj9f-rhfod7kw",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
