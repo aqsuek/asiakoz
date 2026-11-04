@@ -90179,5 +90179,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw280gn2-lriv88v2"
+  },
+  {
+    "id": "1793804801608-xkjjeb",
+    "ts": 1793804801608,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw291rty-ajv59z4k",
+    "referrer": "https://l.instagram.com/"
   }
 ]
