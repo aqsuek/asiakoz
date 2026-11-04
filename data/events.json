@@ -90338,5 +90338,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793810677725-nctkci",
+    "ts": 1793810677726,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2cj5a7-29wqgl95",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
