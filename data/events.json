@@ -90306,5 +90306,15 @@
     "session_id": "mw2blee1-w9dc574z",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793809122336-dbyz7z",
+    "ts": 1793809122336,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2blee1-w9dc574z",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
