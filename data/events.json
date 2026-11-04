@@ -90219,5 +90219,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw29jciz-1amk4voi"
+  },
+  {
+    "id": "1793805710881-musc00",
+    "ts": 1793805710881,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mw29lc2s-6jwat44b"
   }
 ]
