@@ -91460,5 +91460,15 @@
     "session_id": "mw3qemia-hmg3h5o9",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793896318212-xbdjsu",
+    "ts": 1793896318212,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw3rj9t6-o7r7o5gi",
+    "referrer": "https://l.instagram.com/"
   }
 ]
