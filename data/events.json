@@ -91388,5 +91388,17 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mw3ku7kz-1y8x08kk"
+  },
+  {
+    "id": "1793885756182-b1jcny",
+    "ts": 1793885756182,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw3l8y9v-ounvqqhb",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
