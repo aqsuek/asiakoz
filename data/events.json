@@ -91304,5 +91304,15 @@
     "language": "ru",
     "session_id": "mw3hre3e-zw08eyaa",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793879927184-wwjbtf",
+    "ts": 1793879927184,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw3hre3e-zw08eyaa",
+    "referrer": "https://www.google.com/"
   }
 ]
