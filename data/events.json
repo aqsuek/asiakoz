@@ -90590,5 +90590,15 @@
     "language": "ru",
     "session_id": "mw2yo3uc-dzfcko7i",
     "referrer": "https://www.yandex.kz/"
+  },
+  {
+    "id": "1793848593827-a6n162",
+    "ts": 1793848593827,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2z4hu3-40dqyg0c",
+    "referrer": "https://l.instagram.com/"
   }
 ]
