@@ -91093,5 +91093,15 @@
     "session_id": "mw3egblq-8nr927pu",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793874429741-xk9axu",
+    "ts": 1793874429741,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mw3ei6z0-ya6691nj",
+    "referrer": "https://www.google.com/"
   }
 ]
