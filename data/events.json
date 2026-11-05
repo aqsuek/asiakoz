@@ -90790,5 +90790,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mw365w20-i8hqc8rj"
+  },
+  {
+    "id": "1793860691671-v2rp5t",
+    "ts": 1793860691671,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw36bd5q-15i27luc"
   }
 ]
