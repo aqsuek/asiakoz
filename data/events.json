@@ -91420,5 +91420,14 @@
     "language": "ru",
     "session_id": "mw3p7tgh-bgsejsaz",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793892885866-7ojh14",
+    "ts": 1793892885866,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3phf7p-ebl4k7wv"
   }
 ]
