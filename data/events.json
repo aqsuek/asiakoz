@@ -91103,5 +91103,15 @@
     "language": "kk",
     "session_id": "mw3ei6z0-ya6691nj",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793874805648-kjvbuy",
+    "ts": 1793874805648,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw3eqbu7-bwh4fi0m",
+    "utm_source": "chatgpt.com"
   }
 ]
