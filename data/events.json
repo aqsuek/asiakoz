@@ -91449,5 +91449,16 @@
     "language": "ru",
     "session_id": "mw3qemia-hmg3h5o9",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793894531249-wmx4an",
+    "ts": 1793894531249,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3qemia-hmg3h5o9",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
