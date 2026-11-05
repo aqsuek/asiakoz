@@ -90530,5 +90530,15 @@
     "language": "ru",
     "session_id": "mw2ven7g-w13fq5a6",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793842754631-lqf3c4",
+    "ts": 1793842754631,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2vnb13-dwvqarsh",
+    "referrer": "https://www.google.com/"
   }
 ]
