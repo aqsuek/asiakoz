@@ -90959,5 +90959,16 @@
     "language": "ru",
     "session_id": "mw3bl4fx-tlnf6rea",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793869601597-g2dwoa",
+    "ts": 1793869601597,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw3blucv-h6m41lw5",
+    "button_location": "funnel_cta",
+    "referrer": "https://l.instagram.com/"
   }
 ]
