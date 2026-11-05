@@ -91001,5 +91001,15 @@
     "session_id": "mw3cromm-mol7w6wh",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793871622988-z1edk2",
+    "ts": 1793871622988,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3cu051-8uluuclr",
+    "referrer": "https://l.instagram.com/"
   }
 ]
