@@ -90600,5 +90600,16 @@
     "language": "ru",
     "session_id": "mw2z4hu3-40dqyg0c",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793849893332-wx2je7",
+    "ts": 1793849893332,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw2zwanm-j2oyeotg",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
