@@ -91556,5 +91556,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793907592469-yf6ll5",
+    "ts": 1793907592469,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw3y90nw-7t4zvhl3",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
