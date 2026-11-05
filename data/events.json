@@ -91210,5 +91210,17 @@
     "language": "ru",
     "session_id": "mw3gjn8a-l50jbrrx",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793877948025-hm3e0y",
+    "ts": 1793877948025,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw3glitg-y1eaw77i",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
