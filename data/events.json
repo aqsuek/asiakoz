@@ -91030,5 +91030,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mw3dclcp-v5ap95kb"
+  },
+  {
+    "id": "1793873519066-tapedp",
+    "ts": 1793873519066,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3dynca-z3qdt1bb",
+    "referrer": "https://l.instagram.com/"
   }
 ]
