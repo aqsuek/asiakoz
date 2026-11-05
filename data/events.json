@@ -91263,5 +91263,15 @@
     "session_id": "mw3h7nxl-exahb3i0",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793879376709-gqjyqt",
+    "ts": 1793879376709,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3hg4de-xixihxms",
+    "referrer": "https://asiakoz.com/news/shymkent-ashyldy/"
   }
 ]
