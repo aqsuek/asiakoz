@@ -91252,5 +91252,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw3hdi2l-xk4nzdtr"
+  },
+  {
+    "id": "1793879296643-ni3zom",
+    "ts": 1793879296643,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3h7nxl-exahb3i0",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
