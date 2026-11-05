@@ -91400,5 +91400,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793888688294-ttrrr2",
+    "ts": 1793888688294,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw3mzhxg-haxpmctr",
+    "referrer": "https://l.instagram.com/"
   }
 ]
