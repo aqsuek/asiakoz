@@ -90611,5 +90611,14 @@
     "session_id": "mw2zwanm-j2oyeotg",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793850723720-47cnsn",
+    "ts": 1793850723720,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw30e421-nujwpkq0"
   }
 ]
