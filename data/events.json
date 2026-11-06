@@ -92668,5 +92668,17 @@
     "language": "ru",
     "session_id": "mw5b3wgu-08g0f3vs",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1793990083555-68bxu1",
+    "ts": 1793990083555,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw5bczib-of5ydd5k",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
