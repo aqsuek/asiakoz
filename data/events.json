@@ -92387,5 +92387,14 @@
     "language": "ru",
     "session_id": "mw4y2kix-f377powx",
     "button_location": "hero"
+  },
+  {
+    "id": "1793968047354-mw4nvn",
+    "ts": 1793968047354,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4ya69u-ys4888vm"
   }
 ]
