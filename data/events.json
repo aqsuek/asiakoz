@@ -92639,5 +92639,14 @@
     "language": "kk",
     "session_id": "mw5b3wgu-08g0f3vs",
     "referrer": "https://www.google.kz/"
+  },
+  {
+    "id": "1793989782153-dqym70",
+    "ts": 1793989782153,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw5b6mzb-bf44s2on"
   }
 ]
