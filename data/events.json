@@ -92550,5 +92550,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mw55tnlq-wx0wwekg"
+  },
+  {
+    "id": "1793981274327-vxe157",
+    "ts": 1793981274327,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw564999-ptjvowrv",
+    "referrer": "https://l.instagram.com/"
   }
 ]
