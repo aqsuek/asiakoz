@@ -92629,5 +92629,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793989659205-pwuoof",
+    "ts": 1793989659205,
+    "event": "page_view",
+    "page_path": "/kk/almaty/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mw5b3wgu-08g0f3vs",
+    "referrer": "https://www.google.kz/"
   }
 ]
