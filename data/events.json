@@ -92245,5 +92245,15 @@
     "session_id": "mw4ttuxi-punu6l2h",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793960876149-d72ow9",
+    "ts": 1793960876149,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4tz3uo-6ihu5pbl",
+    "referrer": "https://l.instagram.com/"
   }
 ]
