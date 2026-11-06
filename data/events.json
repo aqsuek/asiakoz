@@ -92658,5 +92658,15 @@
     "language": "ru",
     "session_id": "mw5b7uq4-72b0rp59",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793990036637-uucown",
+    "ts": 1793990036637,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw5b3wgu-08g0f3vs",
+    "referrer": "https://www.google.kz/"
   }
 ]
