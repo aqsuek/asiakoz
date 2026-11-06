@@ -91956,5 +91956,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793950621729-tdjwf5",
+    "ts": 1793950621730,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4nv34z-b5pz4dki",
+    "referrer": "https://l.instagram.com/"
   }
 ]
