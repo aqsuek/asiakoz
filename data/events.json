@@ -91804,5 +91804,15 @@
     "language": "ru",
     "session_id": "mw4ihv7t-gcrzvf1d",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1793942408027-f5luws",
+    "ts": 1793942408027,
+    "event": "page_view",
+    "page_path": "/kk/laser/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mw4ihv7t-gcrzvf1d",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
