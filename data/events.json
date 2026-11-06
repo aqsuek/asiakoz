@@ -91636,5 +91636,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw4acrqu-ko2d6rwv"
+  },
+  {
+    "id": "1793935899057-usla0p",
+    "ts": 1793935899057,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4f3m47-lr7w2jd3",
+    "referrer": "https://www.google.com/"
   }
 ]
