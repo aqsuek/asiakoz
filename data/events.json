@@ -92716,5 +92716,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1793991605354-iclgtl",
+    "ts": 1793991605354,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mw5c9njp-gesrfp06"
   }
 ]
