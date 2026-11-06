@@ -92377,5 +92377,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw4y22p9-gy7qyc4d"
+  },
+  {
+    "id": "1793967757451-ucwlva",
+    "ts": 1793967757451,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4y2kix-f377powx",
+    "button_location": "hero"
   }
 ]
