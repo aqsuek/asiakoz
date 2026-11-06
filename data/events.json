@@ -91944,5 +91944,17 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mw4lqvnq-n4uh3nrf"
+  },
+  {
+    "id": "1793948407687-81f6z7",
+    "ts": 1793948407687,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw4mjq4n-ot2yf9hl",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
