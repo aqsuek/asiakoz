@@ -91666,5 +91666,16 @@
     "language": "ru",
     "session_id": "mw4gc489-p57ho16g",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1793938395157-fnqh3m",
+    "ts": 1793938395157,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw4gl890-aeo1x0p9",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
