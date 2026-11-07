@@ -93157,5 +93157,17 @@
     "session_id": "mw6hmg6t-t5yhazcg",
     "button_location": "hero",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794061476779-lvfa96",
+    "ts": 1794061476779,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw6hvckp-todp6i6q",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
