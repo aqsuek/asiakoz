@@ -92851,5 +92851,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mw5z6iik-0bi67rkv"
+  },
+  {
+    "id": "1794030631212-d5yi0v",
+    "ts": 1794030631212,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw5zi6jz-i6mzxwnp",
+    "referrer": "https://l.instagram.com/"
   }
 ]
