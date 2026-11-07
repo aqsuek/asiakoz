@@ -93146,5 +93146,16 @@
     "language": "ru",
     "session_id": "mw6hmg6t-t5yhazcg",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794061159624-72yeej",
+    "ts": 1794061159624,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw6hmg6t-t5yhazcg",
+    "button_location": "hero",
+    "referrer": "https://yandex.kz/"
   }
 ]
