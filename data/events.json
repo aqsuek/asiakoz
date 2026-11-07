@@ -93136,5 +93136,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw6h8oav-6zqd4ic6"
+  },
+  {
+    "id": "1794061062381-shdr80",
+    "ts": 1794061062381,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mw6hmg6t-t5yhazcg",
+    "referrer": "https://yandex.kz/"
   }
 ]
