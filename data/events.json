@@ -93240,5 +93240,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mw6l1ggu-jn665514"
+  },
+  {
+    "id": "1794069424951-xiauoj",
+    "ts": 1794069424951,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw6mlgze-hom5ufmn",
+    "referrer": "https://www.google.com/"
   }
 ]
