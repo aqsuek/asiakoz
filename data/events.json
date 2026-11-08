@@ -93479,5 +93479,15 @@
     "language": "ru",
     "session_id": "mw7ot744-u5kckysy",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794133909413-qhkn0h",
+    "ts": 1794133909413,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw7ot744-u5kckysy",
+    "referrer": "https://yandex.kz/"
   }
 ]
