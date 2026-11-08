@@ -93741,5 +93741,14 @@
     "language": "ru",
     "session_id": "mw80mnc3-dvv5dj7t",
     "referrer": "https://asiakoz.com/almaty/"
+  },
+  {
+    "id": "1794153751549-au4urg",
+    "ts": 1794153751549,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw80t4gl-xkp2eu1s"
   }
 ]
