@@ -93796,5 +93796,15 @@
     "language": "ru",
     "session_id": "mw81fzct-56cwyk9r",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794155101654-2zc8lr",
+    "ts": 1794155101654,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mw81rcuv-2jezlm68",
+    "referrer": "https://yandex.ru/"
   }
 ]
