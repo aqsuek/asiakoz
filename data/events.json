@@ -94437,5 +94437,16 @@
     "language": "ru",
     "session_id": "mw937ort-13koodkc",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794218305121-mbeiat",
+    "ts": 1794218305121,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw937ort-13koodkc",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
