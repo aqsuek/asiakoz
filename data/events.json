@@ -94052,5 +94052,16 @@
     "session_id": "mw8q2yeh-qplw2qg1",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794198926503-wm74uz",
+    "ts": 1794198926503,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw8rpcti-8atxyc05",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
