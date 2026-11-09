@@ -94417,5 +94417,15 @@
     "session_id": "mw92mwfw-fugja0gv",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794218230269-8dize5",
+    "ts": 1794218230269,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw9372gy-axkvd8n4",
+    "referrer": "https://www.google.com/"
   }
 ]
