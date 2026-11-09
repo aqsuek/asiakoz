@@ -94355,5 +94355,15 @@
     "language": "ru",
     "session_id": "mw90lkut-6tvdbgkw",
     "referrer": "https://m.facebook.com/"
+  },
+  {
+    "id": "1794214883237-9vofhi",
+    "ts": 1794214883237,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw917cg0-85ykq4np",
+    "referrer": "https://www.google.com/"
   }
 ]
