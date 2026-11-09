@@ -94325,5 +94325,15 @@
     "session_id": "mw902lhk-tepz5kxs",
     "button_location": "sticky",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794213010260-2o1w3q",
+    "ts": 1794213010260,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mw902lhk-tepz5kxs",
+    "referrer": "https://asiakoz.com/"
   }
 ]
