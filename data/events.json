@@ -95354,5 +95354,16 @@
     "language": "ru",
     "session_id": "mwafx2d7-rry940hh",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1794300134172-6hbi1n",
+    "ts": 1794300134172,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwafyhm0-wea5v5dv",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
