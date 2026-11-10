@@ -95344,5 +95344,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794300066286-134vha",
+    "ts": 1794300066286,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwafx2d7-rry940hh",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
