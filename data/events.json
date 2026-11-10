@@ -95503,5 +95503,16 @@
     "language": "ru",
     "session_id": "mwajrtmp-sjl9olfy",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794306566444-gyudzb",
+    "ts": 1794306566444,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwajrtmp-sjl9olfy",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
