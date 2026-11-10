@@ -95602,5 +95602,15 @@
     "language": "ru",
     "session_id": "mwamxyo7-7exx1diu",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794313858500-rslqwi",
+    "ts": 1794313858500,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwao4ol9-z8gdygs9",
+    "referrer": "https://l.instagram.com/"
   }
 ]
