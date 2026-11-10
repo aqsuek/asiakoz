@@ -95322,5 +95322,15 @@
     "language": "ru",
     "session_id": "mwafb78h-ocq6zlgr",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794299279172-dzpbul",
+    "ts": 1794299279172,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwafg9ah-0oya32ni",
+    "utm_source": "chatgpt.com"
   }
 ]
