@@ -95101,5 +95101,16 @@
     "language": "ru",
     "session_id": "mwa76ago-jnsta2pr",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794285416454-3m722r",
+    "ts": 1794285416454,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwa76ago-jnsta2pr",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
