@@ -95473,5 +95473,15 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "mwaj8amx-6zydqr2y"
+  },
+  {
+    "id": "1794305740974-siha75",
+    "ts": 1794305740974,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwaj71un-yuppm19x",
+    "referrer": "https://asiakoz.com/kosoglazie-shymkent/"
   }
 ]
