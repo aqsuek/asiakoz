@@ -95851,5 +95851,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwaz47eh-06g6uuwy"
+  },
+  {
+    "id": "1794332357151-krspen",
+    "ts": 1794332357151,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwaz4713-1ebx4vbe"
   }
 ]
