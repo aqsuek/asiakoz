@@ -95572,5 +95572,15 @@
     "language": "ru",
     "session_id": "mwam0f2s-k0k2bjzk",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794310426435-ksbe7o",
+    "ts": 1794310426435,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwam0lbn-uxiuzzge",
+    "referrer": "https://asiakoz.com/"
   }
 ]
