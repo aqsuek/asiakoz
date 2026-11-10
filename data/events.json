@@ -95948,5 +95948,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mwb3796y-whh79vv0"
+  },
+  {
+    "id": "1794342866888-ekrvbn",
+    "ts": 1794342866888,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwb5edhg-um2dqyfh",
+    "referrer": "https://www.google.com/"
   }
 ]
