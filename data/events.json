@@ -95112,5 +95112,17 @@
     "session_id": "mwa76ago-jnsta2pr",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794285795895-bravar",
+    "ts": 1794285795895,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwa7f8je-4wfcijj4",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
