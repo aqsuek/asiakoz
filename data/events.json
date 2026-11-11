@@ -96473,5 +96473,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwby9i4e-rw1fdhk3"
+  },
+  {
+    "id": "1794394456826-3xnqt8",
+    "ts": 1794394456826,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwc049ui-lly683jd",
+    "referrer": "https://l.wl.co/"
   }
 ]
