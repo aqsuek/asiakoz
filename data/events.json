@@ -96278,5 +96278,15 @@
     "language": "ru",
     "session_id": "mwbso67d-34blt6fm",
     "button_location": "hero"
+  },
+  {
+    "id": "1794383710396-salxg1",
+    "ts": 1794383710396,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwbtppa7-2ei0v7xt",
+    "referrer": "https://l.instagram.com/"
   }
 ]
