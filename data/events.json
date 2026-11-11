@@ -96167,5 +96167,16 @@
     "session_id": "mwbovgwc-fmgxv2ge",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794375634846-ltcaux",
+    "ts": 1794375634846,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwbovgwc-fmgxv2ge",
+    "button_location": "contacts",
+    "referrer": "https://www.google.com/"
   }
 ]
