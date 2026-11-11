@@ -96084,5 +96084,16 @@
     "language": "ru",
     "session_id": "mwblhdz2-zrf0i749",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794369950014-c4qj3z",
+    "ts": 1794369950014,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwblhdz2-zrf0i749",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
