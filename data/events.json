@@ -96677,5 +96677,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwcdyuqy-ljs6vl8n"
+  },
+  {
+    "id": "1794417915468-ph9rpi",
+    "ts": 1794417915468,
+    "event": "branch_select",
+    "page_path": "/almaty/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwce3n3f-0ls9q80v",
+    "referrer": "https://l.instagram.com/"
   }
 ]
