@@ -96156,5 +96156,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794375577690-ct26cq",
+    "ts": 1794375577690,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwbovgwc-fmgxv2ge",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
