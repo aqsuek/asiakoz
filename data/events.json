@@ -96219,5 +96219,16 @@
     "language": "ru",
     "session_id": "mwbr0lfx-7mwvz1ek",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794379297310-kebkpo",
+    "ts": 1794379297310,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwbr0lfx-7mwvz1ek",
+    "button_location": "contacts",
+    "referrer": "https://yandex.kz/"
   }
 ]
