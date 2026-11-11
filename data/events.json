@@ -96199,5 +96199,15 @@
     "session_id": "mwbqf371-rahxb0gy",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794379164947-dqqz1j",
+    "ts": 1794379164947,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwbr0fh5-8eno4vai",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
