@@ -96230,5 +96230,15 @@
     "session_id": "mwbr0lfx-7mwvz1ek",
     "button_location": "contacts",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794380047405-b86b1z",
+    "ts": 1794380047405,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwbrj7ff-8b3d9ahf",
+    "referrer": "https://www.google.com/"
   }
 ]
