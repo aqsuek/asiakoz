@@ -96493,5 +96493,14 @@
     "language": "ru",
     "session_id": "mwc0rtjm-9hrd8e1f",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1794401317858-z8a9cy",
+    "ts": 1794401317858,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwbcr9fs-rtnbtr0t"
   }
 ]
