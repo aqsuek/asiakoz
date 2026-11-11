@@ -96114,5 +96114,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwblnpkp-xk1j710f"
+  },
+  {
+    "id": "1794371366734-7az6bx",
+    "ts": 1794371366734,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwbmd8y9-uyhku4rh",
+    "referrer": "https://yandex.kz/"
   }
 ]
