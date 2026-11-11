@@ -96209,5 +96209,15 @@
     "language": "ru",
     "session_id": "mwbr0fh5-8eno4vai",
     "referrer": "https://link.2gis.ru/"
+  },
+  {
+    "id": "1794379230589-4tcm4y",
+    "ts": 1794379230589,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwbr0lfx-7mwvz1ek",
+    "referrer": "https://yandex.kz/"
   }
 ]
