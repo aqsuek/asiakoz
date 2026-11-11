@@ -96268,5 +96268,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwbso67d-34blt6fm"
+  },
+  {
+    "id": "1794382004446-m92cec",
+    "ts": 1794382004446,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwbso67d-34blt6fm",
+    "button_location": "hero"
   }
 ]
