@@ -97419,5 +97419,16 @@
     "language": "ru",
     "session_id": "mwdinodi-9pldqt7n",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794486122430-wibtab",
+    "ts": 1794486122430,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdinodi-9pldqt7n",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
