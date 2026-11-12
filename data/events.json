@@ -97600,5 +97600,14 @@
     "session_id": "mwdonxpl-6bf6mfxc",
     "button_location": "funnel_cta",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794496798604-5syvbw",
+    "ts": 1794496798604,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdp1nhs-dco8btbp"
   }
 ]
