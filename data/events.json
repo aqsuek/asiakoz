@@ -96912,5 +96912,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwd45fh8-tdojbh6e"
+  },
+  {
+    "id": "1794461773461-s9ou4t",
+    "ts": 1794461773461,
+    "event": "page_view",
+    "page_path": "/aktau/doctor/nazgul-sagyndykova/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwd46pwv-0c824beo"
   }
 ]
