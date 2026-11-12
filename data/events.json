@@ -97059,5 +97059,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwd9jdl1-1qkafqk2"
+  },
+  {
+    "id": "1794472465072-ip9w6o",
+    "ts": 1794472465072,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdak44b-x61b6e5h",
+    "referrer": "https://asiakoz.com/politika-konfidentsialnosti/"
   }
 ]
