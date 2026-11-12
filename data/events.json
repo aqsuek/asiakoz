@@ -97112,5 +97112,16 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794473289682-dd53xn",
+    "ts": 1794473289682,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwdb1uwy-5xud9rc4",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
