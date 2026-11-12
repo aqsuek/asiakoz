@@ -97440,5 +97440,15 @@
     "language": "ru",
     "session_id": "mwdj4cv6-jyvkwrxe",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1794487064723-kdr9ub",
+    "ts": 1794487064723,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdj9264-1yokz2zp",
+    "referrer": "https://l.instagram.com/"
   }
 ]
