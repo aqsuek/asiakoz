@@ -97326,5 +97326,14 @@
     "language": "ru",
     "session_id": "mwde9k0r-dibqirwu",
     "button_location": "sticky"
+  },
+  {
+    "id": "1794480959539-ccjdcr",
+    "ts": 1794480959539,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mwdfm2qf-mwda0336"
   }
 ]
