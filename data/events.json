@@ -96986,5 +96986,17 @@
     "session_id": "mwd6m7s6-2843gspt",
     "button_location": "contacts_call",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794466386502-v7av85",
+    "ts": 1794466386502,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwd6xw0y-4yap5xdb",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
