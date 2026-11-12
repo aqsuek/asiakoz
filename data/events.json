@@ -97430,5 +97430,15 @@
     "session_id": "mwdinodi-9pldqt7n",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794486845144-vydcre",
+    "ts": 1794486845144,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdj4cv6-jyvkwrxe",
+    "referrer": "https://www.facebook.com/"
   }
 ]
