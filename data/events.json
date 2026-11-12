@@ -97316,5 +97316,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mwde9k0r-dibqirwu"
+  },
+  {
+    "id": "1794480009305-ib06us",
+    "ts": 1794480009305,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwde9k0r-dibqirwu",
+    "button_location": "sticky"
   }
 ]
