@@ -96975,5 +96975,16 @@
     "language": "ru",
     "session_id": "mwd6m7s6-2843gspt",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794465933633-ntho3n",
+    "ts": 1794465933633,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwd6m7s6-2843gspt",
+    "button_location": "contacts_call",
+    "referrer": "https://www.google.com/"
   }
 ]
