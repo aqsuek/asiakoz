@@ -97390,5 +97390,15 @@
     "session_id": "mwdi6hv7-4bcj3xxy",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794485330868-uadm46",
+    "ts": 1794485330868,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdi6hv7-4bcj3xxy",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
