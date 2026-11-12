@@ -97668,5 +97668,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwdqivhz-oefs1gb9"
+  },
+  {
+    "id": "1794500913884-mrzah4",
+    "ts": 1794500913884,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwdrhwmx-lj94etg9",
+    "referrer": "https://l.instagram.com/"
   }
 ]
