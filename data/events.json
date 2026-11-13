@@ -98383,5 +98383,15 @@
     "session_id": "mwetp974-61nqqegm",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794566394098-bm0xew",
+    "ts": 1794566394098,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mweuheos-9enfvn7a",
+    "referrer": "https://link.2gis.com/"
   }
 ]
