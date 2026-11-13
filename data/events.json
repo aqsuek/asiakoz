@@ -98477,5 +98477,15 @@
     "session_id": "mweznqfx-r8ex63ub",
     "button_location": "mid_page_cta",
     "referrer": "https://asiakoz.com/kosoglazie/"
+  },
+  {
+    "id": "1794575432272-abxzxi",
+    "ts": 1794575432272,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwezul2o-johbxpmj",
+    "referrer": "https://www.google.com/"
   }
 ]
