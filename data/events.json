@@ -98496,5 +98496,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwf03s7j-pxlitb4o"
+  },
+  {
+    "id": "1794579338695-7ig5tm",
+    "ts": 1794579338695,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwf26q13-8f0izqok",
+    "referrer": "https://l.instagram.com/"
   }
 ]
