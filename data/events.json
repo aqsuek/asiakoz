@@ -97828,5 +97828,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwe7rnjc-xmdbcfpb"
+  },
+  {
+    "id": "1794529563713-fknn49",
+    "ts": 1794529563713,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwe8jzrs-9xcjoumr",
+    "referrer": "https://asiakoz.com/doctors/"
   }
 ]
