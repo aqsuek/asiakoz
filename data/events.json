@@ -98425,5 +98425,15 @@
     "language": "kk",
     "session_id": "mwexjhew-ep8ysal9",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794571965112-le2v0x",
+    "ts": 1794571965112,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwexsp2s-off1xti8",
+    "referrer": "http://m.facebook.com"
   }
 ]
