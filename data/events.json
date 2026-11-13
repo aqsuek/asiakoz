@@ -98002,5 +98002,15 @@
     "language": "ru",
     "session_id": "mwei15c0-7b1oi99d",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794546905688-z30l61",
+    "ts": 1794546905688,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mweivq5l-sqfy1lfm",
+    "referrer": "https://m.facebook.com/"
   }
 ]
