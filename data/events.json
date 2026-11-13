@@ -98113,5 +98113,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwelja9x-t69s3kgl"
+  },
+  {
+    "id": "1794551515458-ge24bz",
+    "ts": 1794551515458,
+    "event": "page_view",
+    "page_path": "/aktau/doctor/erol-joshkun/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwelmhuf-w4g0cyuy"
   }
 ]
