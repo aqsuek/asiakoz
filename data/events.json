@@ -98207,5 +98207,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mweo8g10-v0e1ykg0"
+  },
+  {
+    "id": "1794556179507-9vc0mf",
+    "ts": 1794556179507,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mweoe2kj-96j74rlc"
   }
 ]
