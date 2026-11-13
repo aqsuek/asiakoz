@@ -98255,5 +98255,16 @@
     "language": "ru",
     "session_id": "mwepkawc-6792b4kp",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794558168208-loq6q2",
+    "ts": 1794558168208,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwepkawc-6792b4kp",
+    "button_location": "mid_page_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
