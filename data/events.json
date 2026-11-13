@@ -97847,5 +97847,15 @@
     "city": "aqtau",
     "language": "kk",
     "session_id": "mwea1sgt-9bo4da09"
+  },
+  {
+    "id": "1794534694585-u7vm6e",
+    "ts": 1794534694585,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mweblytk-0ia9t96c",
+    "referrer": "https://gseyecenter.hanbiro.net/"
   }
 ]
