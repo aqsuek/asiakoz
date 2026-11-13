@@ -98150,5 +98150,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwemfu1z-uh0bq2w8"
+  },
+  {
+    "id": "1794553185034-lnme63",
+    "ts": 1794553185034,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwemmae2-2owdqvgt",
+    "referrer": "https://www.facebook.com/"
   }
 ]
