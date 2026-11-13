@@ -98235,5 +98235,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwep3kq9-u5gl2tq1"
+  },
+  {
+    "id": "1794558023676-kpriok",
+    "ts": 1794558023676,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwepi0ee-0ocp6zyk",
+    "referrer": "https://l.instagram.com/"
   }
 ]
