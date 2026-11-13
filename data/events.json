@@ -97876,5 +97876,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwebu44p-nahtg9ao"
+  },
+  {
+    "id": "1794535624722-ao6ym2",
+    "ts": 1794535624722,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwec5yj2-u9bxkv8l",
+    "referrer": "https://gseyecenter.hanbiro.net/"
   }
 ]
