@@ -98160,5 +98160,15 @@
     "language": "ru",
     "session_id": "mwemmae2-2owdqvgt",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1794553274784-1pfqnu",
+    "ts": 1794553274784,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwemo813-tdokfkkq",
+    "referrer": "https://l.instagram.com/"
   }
 ]
