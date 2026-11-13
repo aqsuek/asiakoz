@@ -98351,5 +98351,16 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mwesw4pc-dx3zbt52"
+  },
+  {
+    "id": "1794563987030-gi5gln",
+    "ts": 1794563987030,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwem9fvx-hcgzgzxy",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
