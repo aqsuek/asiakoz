@@ -99145,5 +99145,15 @@
     "language": "kk",
     "session_id": "mwglopoc-ueqt7ifh",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794673653299-dgv4de",
+    "ts": 1794673653299,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwgmcbe1-oy71bnju",
+    "referrer": "https://l.instagram.com/"
   }
 ]
