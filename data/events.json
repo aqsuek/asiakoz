@@ -98682,5 +98682,15 @@
     "language": "ru",
     "session_id": "mwfwb6a8-svlu6ubh",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1794630345359-bddsxp",
+    "ts": 1794630345359,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwfwk14m-tq5cqsx4",
+    "referrer": "https://link.2gis.com/"
   }
 ]
