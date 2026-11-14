@@ -99027,5 +99027,17 @@
     "language": "ru",
     "session_id": "mwgd13co-l0vtmbo7",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794658565331-6pcvw2",
+    "ts": 1794658565331,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwgcygzy-tskr1vnc",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://asiakoz.com/lazer-shymkent/"
   }
 ]
