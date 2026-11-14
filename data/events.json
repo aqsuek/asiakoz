@@ -98887,5 +98887,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mwg7zt7u-abo5i3i7"
+  },
+  {
+    "id": "1794649780606-31c5s5",
+    "ts": 1794649780606,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwg84dt8-rfnkux36",
+    "referrer": "https://yandex.kz/"
   }
 ]
