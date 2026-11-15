@@ -99535,5 +99535,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794736746817-nm7wde",
+    "ts": 1794736746817,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwhnwlri-gr8q1avx",
+    "referrer": "http://asiakoz.com/"
   }
 ]
