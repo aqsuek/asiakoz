@@ -99474,5 +99474,15 @@
     "language": "kk",
     "session_id": "mwhi9jav-ipqk0ndp",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794727714422-1dt80w",
+    "ts": 1794727714422,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwhif7oj-rld3xhwb",
+    "referrer": "https://l.wl.co/"
   }
 ]
