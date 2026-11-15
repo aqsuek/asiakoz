@@ -99454,5 +99454,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwhhz0nc-fkbrjtl0"
+  },
+  {
+    "id": "1794726809111-geyaws",
+    "ts": 1794726809111,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwhhz0nc-fkbrjtl0",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
