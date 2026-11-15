@@ -99512,5 +99512,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwhl357u-4sl7q1kt"
+  },
+  {
+    "id": "1794732675634-54xr9k",
+    "ts": 1794732675634,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwhlhbgk-4b7il4r3",
+    "button_location": "hero",
+    "referrer": "https://yandex.kz/"
   }
 ]
