@@ -99668,5 +99668,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mwi98hsa-x6ztsjn1"
+  },
+  {
+    "id": "1794772960078-x89hv0",
+    "ts": 1794772960078,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwh2io2s-o6hqg7nz"
   }
 ]
