@@ -99493,5 +99493,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwh2io3s-oyszjg9t"
+  },
+  {
+    "id": "1794729156504-9ujjem",
+    "ts": 1794729156504,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwhje0jg-wttqc5a9",
+    "referrer": "https://www.google.com/"
   }
 ]
