@@ -99396,5 +99396,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwhed2au-o3ln5z87"
+  },
+  {
+    "id": "1794720750401-6wqyv5",
+    "ts": 1794720750401,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwhedwcr-cu1xvn6s",
+    "referrer": "https://m.facebook.com/"
   }
 ]
