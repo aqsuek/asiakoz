@@ -99677,5 +99677,17 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwh2io2s-o6hqg7nz"
+  },
+  {
+    "id": "1794786996427-jsoi3s",
+    "ts": 1794786996427,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwihtnd2-z0ge8jm9",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
