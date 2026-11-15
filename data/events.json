@@ -99378,5 +99378,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwhd9xdg-6zo4vdsg"
+  },
+  {
+    "id": "1794719040146-ltvaqv",
+    "ts": 1794719040146,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwhd9xdg-6zo4vdsg"
   }
 ]
