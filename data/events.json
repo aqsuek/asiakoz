@@ -99952,5 +99952,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794816329677-xyfj9k",
+    "ts": 1794816329677,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwizabih-el3s3ltm",
+    "referrer": "https://gseyecenter.hanbiro.net/"
   }
 ]
