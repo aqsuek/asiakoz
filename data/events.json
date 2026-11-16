@@ -100406,5 +100406,17 @@
     "language": "ru",
     "session_id": "mwjifvrz-hixz4q22",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794849516389-xokoid",
+    "ts": 1794849516389,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwjikycq-alunzbud",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
