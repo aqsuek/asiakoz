@@ -99810,5 +99810,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mwisdxrc-yxn7q5pj"
+  },
+  {
+    "id": "1794805166724-xhn5f0",
+    "ts": 1794805166724,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwisn625-15qysnf8",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
