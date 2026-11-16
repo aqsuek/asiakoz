@@ -100095,5 +100095,15 @@
     "language": "ru",
     "session_id": "mwj6ywgn-4468nmol",
     "referrer": "https://ya.ru/"
+  },
+  {
+    "id": "1794823153243-4v8wyn",
+    "ts": 1794823153243,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwj3dr47-8i05gr0t",
+    "referrer": "https://www.google.com/"
   }
 ]
