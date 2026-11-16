@@ -100085,5 +100085,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794822061932-diynik",
+    "ts": 1794822061932,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwj6ywgn-4468nmol",
+    "referrer": "https://ya.ru/"
   }
 ]
