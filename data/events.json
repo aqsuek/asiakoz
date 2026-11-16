@@ -100249,5 +100249,17 @@
     "language": "kk",
     "session_id": "mwj8axd1-7ddtufq5",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1794831908853-ydbv87",
+    "ts": 1794831908853,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwj8jlrn-0jzdik4g",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
