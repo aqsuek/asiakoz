@@ -100137,5 +100137,14 @@
     "session_id": "mwj3hlnj-j5ezazaz",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794824383371-49eypa",
+    "ts": 1794824383371,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwj42aw4-u8hly4tm"
   }
 ]
