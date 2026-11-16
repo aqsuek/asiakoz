@@ -99907,5 +99907,16 @@
     "language": "ru",
     "session_id": "mwix34ba-qu17do5i",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794812883412-4xsreq",
+    "ts": 1794812883412,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwix34ba-qu17do5i",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
