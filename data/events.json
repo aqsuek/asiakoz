@@ -100664,5 +100664,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwjxedfs-6zqd4ic6"
+  },
+  {
+    "id": "1794894937910-73w4e8",
+    "ts": 1794894937910,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwka37tv-s2h0q5w2",
+    "button_location": "hero",
+    "referrer": "https://asiakoz.com/diagnostika-almaty/"
   }
 ]
