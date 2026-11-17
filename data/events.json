@@ -100860,5 +100860,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwkdaqx1-97bl2iy5"
+  },
+  {
+    "id": "1794900512604-rbggcy",
+    "ts": 1794900512604,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwkdern2-nkkeblex",
+    "referrer": "https://link.2gis.com/"
   }
 ]
