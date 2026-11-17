@@ -105188,5 +105188,17 @@
     "language": "ru",
     "session_id": "mwkuxilg-n4qomwrr",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1794929981902-czn2y9",
+    "ts": 1794929981902,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwkuy7m9-sw2w7ngz",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
