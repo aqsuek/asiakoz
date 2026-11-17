@@ -104910,5 +104910,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794928286037-tlslot",
+    "ts": 1794928286037,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwktwtzo-holv2n7c",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
