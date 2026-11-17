@@ -101975,5 +101975,15 @@
     "session_id": "mwkixfg6-utew1kq5",
     "button_location": "hero",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1794909820194-dr4aoj",
+    "ts": 1794909820194,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwkiy5h0-im6zf2y9",
+    "referrer": "https://www.tiktok.com"
   }
 ]
