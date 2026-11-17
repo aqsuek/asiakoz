@@ -106388,5 +106388,15 @@
     "language": "ru",
     "session_id": "mwkzil0r-df0gsbhc",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1794937737560-g2xmyp",
+    "ts": 1794937737560,
+    "event": "branch_select",
+    "page_path": "/almaty/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwkzil0r-df0gsbhc",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
