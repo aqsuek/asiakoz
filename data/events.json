@@ -100819,5 +100819,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwkc3cgy-qz2kx276"
+  },
+  {
+    "id": "1794898550984-6ydej4",
+    "ts": 1794898550984,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwkbqqqy-xp8lydd9",
+    "referrer": "https://asiakoz.com/"
   }
 ]
