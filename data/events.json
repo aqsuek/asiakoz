@@ -116286,5 +116286,15 @@
     "language": "ru",
     "session_id": "mwmewol3-gbx5y7jz",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795024178234-0803k5",
+    "ts": 1795024178234,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwmf0xhe-jmmtgh30",
+    "referrer": "https://www.tiktok.com"
   }
 ]
