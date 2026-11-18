@@ -108599,5 +108599,15 @@
     "session_id": "mwlk2tlm-11j9bdvz",
     "button_location": "mid_page_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794972238880-64vp9e",
+    "ts": 1794972238880,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwlk42n2-ydprpf7i",
+    "referrer": "https://www.tiktok.com"
   }
 ]
