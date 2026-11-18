@@ -109747,5 +109747,15 @@
     "session_id": "mwlujmte-fcb6r3bz",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794990685355-mx8m27",
+    "ts": 1794990685355,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwlv3cp4-6loq32c8",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
