@@ -108568,5 +108568,15 @@
     "language": "kk",
     "session_id": "mwlk0rb0-fgdll9sj",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1794972127098-wn1i49",
+    "ts": 1794972127099,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mwlk1q8y-7onta0ie",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
