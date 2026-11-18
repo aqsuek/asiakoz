@@ -108852,5 +108852,15 @@
     "session_id": "mwll82ip-v1p876p7",
     "button_location": "sticky",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1794974413308-fatlk4",
+    "ts": 1794974413308,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwllepon-sl20sbms",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
