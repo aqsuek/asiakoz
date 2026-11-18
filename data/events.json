@@ -109726,5 +109726,15 @@
     "language": "ru",
     "session_id": "mwlu2hi3-0xzg5h8f",
     "button_location": "hero"
+  },
+  {
+    "id": "1794988983115-bx2spo",
+    "ts": 1794988983115,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwlu2hi3-0xzg5h8f",
+    "referrer": "https://asiakoz.com/laser/"
   }
 ]
