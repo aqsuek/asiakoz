@@ -118565,5 +118565,17 @@
     "language": "ru",
     "session_id": "mwmq9mfb-kfnbd9rb",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795043576064-6hyug9",
+    "ts": 1795043576064,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwmql0fc-9lvgdqhc",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
