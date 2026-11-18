@@ -113664,5 +113664,14 @@
     "language": "ru",
     "session_id": "mwm8pn32-e6wed5tx",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795013651471-hdkb78",
+    "ts": 1795013651471,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwm8rlrh-7wwcrzi7"
   }
 ]
