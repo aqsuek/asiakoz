@@ -111136,5 +111136,15 @@
     "session_id": "mwlyded5-m73lfilu",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1794996232239-j7ib7p",
+    "ts": 1794996232239,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwlye3ub-myqv0gl5",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
