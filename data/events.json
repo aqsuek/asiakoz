@@ -121324,5 +121324,17 @@
     "language": "ru",
     "session_id": "mwnxiwws-p0dkd2cs",
     "referrer": "https://m.facebook.com/"
+  },
+  {
+    "id": "1795118106709-nojk3x",
+    "ts": 1795118106709,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwnyyfu2-0o6de7ze",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
