@@ -120371,5 +120371,16 @@
     "language": "ru",
     "session_id": "mwncrjdi-jitg9gd6",
     "referrer": "https://asiakoz.com/setchatka-almaty/"
+  },
+  {
+    "id": "1795080911730-udukhg",
+    "ts": 1795080911730,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwncrjdi-jitg9gd6",
+    "button_location": "funnel_cta",
+    "referrer": "https://asiakoz.com/setchatka-almaty/"
   }
 ]
