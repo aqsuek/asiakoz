@@ -121117,5 +121117,17 @@
     "session_id": "mwnj13ss-7h3mqlg9",
     "button_location": "contacts",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795091736864-w2mfri",
+    "ts": 1795091736864,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwnj9br5-onlti13a",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
