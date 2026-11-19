@@ -121034,5 +121034,14 @@
     "language": "ru",
     "session_id": "mwneambl-1kmoofiu",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795086690494-panjdo",
+    "ts": 1795086690494,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mwng96b4-8se5kgo8"
   }
 ]
