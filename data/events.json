@@ -121376,5 +121376,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mwo3maa5-wykjcs7q"
+  },
+  {
+    "id": "1795128328214-3c3jhd",
+    "ts": 1795128328215,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwmsa2sa-mar2572d",
+    "referrer": "https://asiakoz.com/lazer-almaty/"
   }
 ]
