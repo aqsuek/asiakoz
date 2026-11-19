@@ -119452,5 +119452,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795066108368-izmiga",
+    "ts": 1795066108368,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwn401cf-5cf1izgs",
+    "referrer": "https://www.tiktok.com"
   }
 ]
