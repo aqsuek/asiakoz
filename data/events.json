@@ -121254,5 +121254,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwntq0ps-wcvq09w3"
+  },
+  {
+    "id": "1795109921123-gsk3pg",
+    "ts": 1795109921123,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwnu33hn-n5s19xgl",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
