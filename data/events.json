@@ -119688,5 +119688,17 @@
     "language": "ru",
     "session_id": "mwn62yvo-2rmr6uo0",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795069679512-kn6l2i",
+    "ts": 1795069679512,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwn64ioj-rw5um4wa",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
