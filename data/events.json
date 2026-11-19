@@ -118935,5 +118935,16 @@
     "language": "ru",
     "session_id": "mwmz3l7q-xyazfwxw",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795057925996-j4uuic",
+    "ts": 1795057925996,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwmz3q5k-2g9zcjpf",
+    "button_location": "sticky",
+    "referrer": "https://www.google.com/"
   }
 ]
