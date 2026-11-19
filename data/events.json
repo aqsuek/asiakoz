@@ -120361,5 +120361,15 @@
     "language": "ru",
     "session_id": "mwncrc5j-l6eyddbf",
     "referrer": "https://www.tiktok.com/"
+  },
+  {
+    "id": "1795080891257-b5vmv9",
+    "ts": 1795080891257,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwncrjdi-jitg9gd6",
+    "referrer": "https://asiakoz.com/setchatka-almaty/"
   }
 ]
