@@ -119614,5 +119614,15 @@
     "session_id": "mwn5lqa4-axcj2qlk",
     "button_location": "sticky",
     "utm_source": "chatgpt.com"
+  },
+  {
+    "id": "1795068905406-u0blre",
+    "ts": 1795068905406,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwn5o9cy-xagkjs7u",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
