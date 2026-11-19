@@ -119554,5 +119554,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795068077502-a8t0tg",
+    "ts": 1795068077502,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwn568i3-yn0z0di9",
+    "referrer": "https://www.tiktok.com/"
   }
 ]
