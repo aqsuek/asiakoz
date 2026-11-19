@@ -119249,5 +119249,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwn29rd8-qt2j148i"
+  },
+  {
+    "id": "1795063564279-783wpn",
+    "ts": 1795063564279,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwn2hc3e-dg4f2bmj",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
