@@ -121736,5 +121736,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795162621243-j3hfou",
+    "ts": 1795162621243,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwopgmav-ishfhqbq",
+    "referrer": "https://asiakoz.com/femto-lasik-almaty/"
   }
 ]
