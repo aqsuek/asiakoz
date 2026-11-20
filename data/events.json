@@ -121855,5 +121855,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwosama5-ezxbia9e"
+  },
+  {
+    "id": "1795167417211-qupvzm",
+    "ts": 1795167417211,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwosama5-ezxbia9e",
+    "referrer": "https://asiakoz.com/"
   }
 ]
