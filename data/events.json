@@ -122110,5 +122110,15 @@
     "language": "ru",
     "session_id": "mwp1nqal-4gplprfi",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795183552518-r4pipe",
+    "ts": 1795183552518,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwp1wzhc-2c8fnaf4",
+    "referrer": "https://www.google.com/"
   }
 ]
