@@ -121996,5 +121996,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwoxw70o-likdsfv1"
+  },
+  {
+    "id": "1795177659217-jqbrnt",
+    "ts": 1795177659217,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwoxw70o-likdsfv1"
   }
 ]
