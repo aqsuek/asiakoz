@@ -121543,5 +121543,16 @@
     "language": "ru",
     "session_id": "mwoi60td-dvkhsjxo",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795150420926-got7tb",
+    "ts": 1795150420926,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwoi60td-dvkhsjxo",
+    "button_location": "funnel_cta",
+    "referrer": "https://www.google.com/"
   }
 ]
