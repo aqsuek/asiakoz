@@ -122078,5 +122078,15 @@
     "language": "ru",
     "session_id": "mwp107bc-elp1pwga",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1795182518187-y0w6o2",
+    "ts": 1795182518187,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwp107bc-elp1pwga",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
