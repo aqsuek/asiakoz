@@ -121637,5 +121637,15 @@
     "language": "ru",
     "session_id": "mwoluhoc-k8yqljaf",
     "referrer": "https://asiakoz.com/news/shymkent-ashyldy/"
+  },
+  {
+    "id": "1795156639827-kyyl9u",
+    "ts": 1795156639827,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwoluhoc-k8yqljaf",
+    "referrer": "https://www.google.com/"
   }
 ]
