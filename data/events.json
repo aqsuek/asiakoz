@@ -121703,5 +121703,16 @@
     "language": "ru",
     "session_id": "mwonzjl7-uudz9jia",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795160174172-x7wrpv",
+    "ts": 1795160174172,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwonzjl7-uudz9jia",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
