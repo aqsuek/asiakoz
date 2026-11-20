@@ -121491,5 +121491,16 @@
     "language": "ru",
     "session_id": "mwofmbka-a8e99vf8",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795146141884-hjsgdu",
+    "ts": 1795146141884,
+    "event": "phone_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwofmbka-a8e99vf8",
+    "button_location": "hero",
+    "referrer": "https://l.instagram.com/"
   }
 ]
