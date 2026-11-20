@@ -121521,5 +121521,17 @@
     "language": "ru",
     "session_id": "mwogy71l-yht984rc",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795150145012-bv9fil",
+    "ts": 1795150145012,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwoi17pc-qd98k124",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
