@@ -121788,5 +121788,15 @@
     "language": "ru",
     "session_id": "mwoq80hu-g0j30btt",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1795163980653-nd6mco",
+    "ts": 1795163980653,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwoq9rd2-gp0plsk3",
+    "referrer": "https://www.google.com/"
   }
 ]
