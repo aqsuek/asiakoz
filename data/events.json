@@ -121448,5 +121448,16 @@
     "language": "ru",
     "session_id": "mwo90qb3-rd75s4mq",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795135160316-olgf1f",
+    "ts": 1795135160316,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwo90qb3-rd75s4mq",
+    "button_location": "mid_page_cta",
+    "referrer": "https://yandex.kz/"
   }
 ]
