@@ -121978,5 +121978,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwox8e94-bwdkfry1"
+  },
+  {
+    "id": "1795175831913-g99471",
+    "ts": 1795175831913,
+    "event": "page_view",
+    "page_path": "/laser/doctor/mehmet-esat-teker/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mwoxbt8o-m78vjqnl"
   }
 ]
