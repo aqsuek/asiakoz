@@ -121946,5 +121946,16 @@
     "language": "ru",
     "session_id": "mwowerqa-qgxykrqk",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795174443620-vvdvqd",
+    "ts": 1795174443620,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwow96v9-al16motr",
+    "button_location": "sticky",
+    "referrer": "https://l.instagram.com/"
   }
 ]
