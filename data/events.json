@@ -121969,5 +121969,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795175685800-u9nm8i",
+    "ts": 1795175685800,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwox8e94-bwdkfry1"
   }
 ]
