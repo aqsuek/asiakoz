@@ -122129,5 +122129,17 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwp21adq-6u1l4687"
+  },
+  {
+    "id": "1795185874834-1gt8vc",
+    "ts": 1795185874834,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwp3b05b-k51dhn6o",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
