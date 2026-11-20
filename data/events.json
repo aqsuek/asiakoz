@@ -121957,5 +121957,17 @@
     "session_id": "mwow96v9-al16motr",
     "button_location": "sticky",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795175265635-2szll9",
+    "ts": 1795175265636,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwowziuy-goxrwi7t",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
