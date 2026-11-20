@@ -121554,5 +121554,15 @@
     "session_id": "mwoi60td-dvkhsjxo",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795151136385-u4me0r",
+    "ts": 1795151136385,
+    "event": "page_view",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwoimiby-irgij8qz",
+    "referrer": "https://www.facebook.com/"
   }
 ]
