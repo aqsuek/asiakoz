@@ -122068,5 +122068,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwp01nlc-pahx0wvb"
+  },
+  {
+    "id": "1795182011703-8uz0fj",
+    "ts": 1795182011703,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwp107bc-elp1pwga",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
