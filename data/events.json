@@ -122942,5 +122942,16 @@
     "language": "ru",
     "session_id": "mwqfux9f-kphorpsz",
     "referrer": "https://asiakoz.com/almaty/"
+  },
+  {
+    "id": "1795267764460-yp1eyk",
+    "ts": 1795267764460,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwqfux9f-kphorpsz",
+    "button_location": "sticky",
+    "referrer": "https://asiakoz.com/almaty/"
   }
 ]
