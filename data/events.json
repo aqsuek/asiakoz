@@ -123265,5 +123265,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795340602781-4qi2hk",
+    "ts": 1795340602781,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwrnfgiz-cdr4bzmt",
+    "referrer": "https://asiakoz.com/otzyvy-asiakoz-almaty/"
   }
 ]
