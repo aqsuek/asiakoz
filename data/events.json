@@ -123758,5 +123758,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwr2lmsh-vn58hmii"
+  },
+  {
+    "id": "1795378022982-2a4pak",
+    "ts": 1795378022982,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mws9pbj9-81alaekm",
+    "referrer": "https://www.google.com/"
   }
 ]
