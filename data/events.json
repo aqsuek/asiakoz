@@ -123591,5 +123591,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795364441585-937cou",
+    "ts": 1795364441585,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mws1m8e4-htwz5vqc",
+    "referrer": "https://asiakoz.com/prk-lasek-almaty/"
   }
 ]
