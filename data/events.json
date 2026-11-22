@@ -123561,5 +123561,14 @@
     "language": "ru",
     "session_id": "mws077hm-86vz7rll",
     "referrer": "https://www.facebook.com/"
+  },
+  {
+    "id": "1795362143456-qidoe8",
+    "ts": 1795362143456,
+    "event": "page_view",
+    "page_path": "/kk/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mws094du-8bpo1rth"
   }
 ]
