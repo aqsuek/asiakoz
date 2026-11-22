@@ -123740,5 +123740,14 @@
     "language": "ru",
     "session_id": "mws6zma4-2bvymf2v",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1795375577067-3szh4y",
+    "ts": 1795375577067,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mwr2lmrs-bwdkfry1"
   }
 ]
