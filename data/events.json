@@ -123394,5 +123394,14 @@
     "language": "ru",
     "session_id": "mwrt1wg8-xqp2so0f",
     "referrer": "https://m.facebook.com/"
+  },
+  {
+    "id": "1795350101240-bo5d0n",
+    "ts": 1795350101240,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwr2lmqs-neh5q8cv"
   }
 ]
