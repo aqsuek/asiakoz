@@ -123131,5 +123131,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwr7vknj-xnzi7b0l"
+  },
+  {
+    "id": "1795318002783-fl825k",
+    "ts": 1795318002783,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwr9yuzs-juyopm0b",
+    "referrer": "https://l.wl.co/"
   }
 ]
