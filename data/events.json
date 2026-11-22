@@ -123730,5 +123730,15 @@
     "language": "ru",
     "session_id": "mws6se9j-11ifx84y",
     "referrer": "android-app://com.google.android.googlequicksearchbox/"
+  },
+  {
+    "id": "1795373457594-2mibiu",
+    "ts": 1795373457594,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mws6zma4-2bvymf2v",
+    "referrer": "android-app://com.google.android.googlequicksearchbox/"
   }
 ]
