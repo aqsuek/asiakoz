@@ -124490,5 +124490,16 @@
     "language": "ru",
     "session_id": "mwt38ut6-mcjs3es8",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795427669490-hah3ye",
+    "ts": 1795427669490,
+    "event": "phone_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwt38ut6-mcjs3es8",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
