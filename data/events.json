@@ -124501,5 +124501,15 @@
     "session_id": "mwt38ut6-mcjs3es8",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795427982705-xy8wrh",
+    "ts": 1795427982705,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwt3g8ri-48cxse09",
+    "utm_source": "chatgpt.com"
   }
 ]
