@@ -124313,5 +124313,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwsy3hg3-6zez8byh"
+  },
+  {
+    "id": "1795419945310-y1vfbo",
+    "ts": 1795419945310,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwsynxgb-zoyevgsy",
+    "referrer": "https://yandex.kz/"
   }
 ]
