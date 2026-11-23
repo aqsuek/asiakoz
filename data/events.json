@@ -124956,5 +124956,14 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwtbv8iu-76ujiysg"
+  },
+  {
+    "id": "1795442291890-r138yv",
+    "ts": 1795442291890,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwtbytk2-3b84e3jq"
   }
 ]
