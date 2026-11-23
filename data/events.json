@@ -123939,5 +123939,14 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795408303834-i2d3s0",
+    "ts": 1795408303834,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwsrqdjn-mx6mjbjo"
   }
 ]
