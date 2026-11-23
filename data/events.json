@@ -124984,5 +124984,17 @@
     "language": "ru",
     "session_id": "mwtci9cw-6mvd9b7a",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795443337171-ydpnh3",
+    "ts": 1795443337171,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwtclbnd-r7vs39he",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
