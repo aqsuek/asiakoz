@@ -124251,5 +124251,14 @@
     "session_id": "mwswnqda-utseglrn",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795416958413-bzcmhw",
+    "ts": 1795416958413,
+    "event": "page_view",
+    "page_path": "/news/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwswvzap-7hs9tqem"
   }
 ]
