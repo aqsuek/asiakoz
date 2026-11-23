@@ -124655,5 +124655,15 @@
     "language": "ru",
     "session_id": "mwt5cslp-n4k4n46r",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795431770020-qh87u6",
+    "ts": 1795431770020,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwt5pdg2-zg6718py",
+    "referrer": "https://yandex.kz/"
   }
 ]
