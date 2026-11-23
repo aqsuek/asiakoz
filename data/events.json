@@ -124333,5 +124333,16 @@
     "language": "ru",
     "session_id": "mwsyokce-oithqyck",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795419993008-ra5nhu",
+    "ts": 1795419993008,
+    "event": "whatsapp_click",
+    "page_path": "/shymkent/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwsyokce-oithqyck",
+    "button_location": "mid_page_cta",
+    "referrer": "https://yandex.kz/"
   }
 ]
