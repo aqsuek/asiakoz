@@ -124564,5 +124564,15 @@
     "session_id": "mwt3vj3i-13nq50si",
     "button_location": "hero",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795429410371-nakt9k",
+    "ts": 1795429410371,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwt4aubq-64y565kw",
+    "referrer": "https://asiakoz.com/kosoglazie/"
   }
 ]
