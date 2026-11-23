@@ -124355,5 +124355,15 @@
     "session_id": "mwsyokce-oithqyck",
     "button_location": "funnel_cta",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795420058397-dshr42",
+    "ts": 1795420058397,
+    "event": "branch_select",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwsyokce-oithqyck",
+    "referrer": "https://yandex.kz/"
   }
 ]
