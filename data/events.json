@@ -125200,5 +125200,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwtzdlp3-pyt5olpl"
+  },
+  {
+    "id": "1795482899506-2f2kfr",
+    "ts": 1795482899506,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwu059si-99f1hxzq"
   }
 ]
