@@ -125420,5 +125420,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwu7g2sq-ruh47bbq"
+  },
+  {
+    "id": "1795497740128-iycgip",
+    "ts": 1795497740128,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwu8z6m5-iv89acfv",
+    "referrer": "https://asiakoz.com/katarakta-shymkent/"
   }
 ]
