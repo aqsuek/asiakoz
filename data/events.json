@@ -126647,5 +126647,15 @@
     "language": "ru",
     "session_id": "mww8iqzy-n40742rv",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795617942877-sm1r61",
+    "ts": 1795617942877,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mww8iqzy-n40742rv",
+    "referrer": "https://www.google.com/"
   }
 ]
