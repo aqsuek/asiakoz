@@ -126375,5 +126375,15 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mwvs6xob-tfrgwtzw"
+  },
+  {
+    "id": "1795592793312-7zm9kp",
+    "ts": 1795592793312,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mwvtkp15-zh4odwxu",
+    "referrer": "https://www.google.com/"
   }
 ]
