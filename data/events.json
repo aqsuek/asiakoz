@@ -126788,5 +126788,15 @@
     "city": "aqtau",
     "language": "ru",
     "session_id": "mwwfg5f2-0bi0ay2o"
+  },
+  {
+    "id": "1795629668927-j2q2gm",
+    "ts": 1795629668927,
+    "event": "page_view",
+    "page_path": "/kk/aqtau/",
+    "city": "aqtau",
+    "language": "kk",
+    "session_id": "mwwfj2e8-4w7x0y7m",
+    "referrer": "https://www.google.com/"
   }
 ]
