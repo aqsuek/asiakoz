@@ -126666,5 +126666,16 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwvcx6rz-6zv4r03u"
+  },
+  {
+    "id": "1795618711719-mxpimi",
+    "ts": 1795618711719,
+    "event": "whatsapp_click",
+    "page_path": "/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mww8iqzy-n40742rv",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
