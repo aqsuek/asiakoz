@@ -126517,5 +126517,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mww2qkc9-96n0azf6"
+  },
+  {
+    "id": "1795609880909-047p78",
+    "ts": 1795609880909,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mww3rslf-02h6ksg0",
+    "referrer": "https://asiakoz.com/peresadka-rogovitsy-almaty/"
   }
 ]
