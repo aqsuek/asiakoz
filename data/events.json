@@ -126306,5 +126306,16 @@
     "language": "ru",
     "session_id": "mwvp6kvv-7jxvseyh",
     "referrer": "https://asiakoz.com/"
+  },
+  {
+    "id": "1795585443249-na885f",
+    "ts": 1795585443249,
+    "event": "whatsapp_click",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwvp6kvv-7jxvseyh",
+    "button_location": "hero",
+    "referrer": "https://www.google.com/"
   }
 ]
