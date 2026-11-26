@@ -127373,5 +127373,14 @@
     "language": "kk",
     "session_id": "mwxkco1x-sqtu1mjy",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795698352504-afg5lp",
+    "ts": 1795698352504,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwxkf5dw-33h3p5xw"
   }
 ]
