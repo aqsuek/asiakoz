@@ -127008,5 +127008,15 @@
     "session_id": "mwx4c5ru-fzb1w92o",
     "button_location": "sticky",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795671453681-weh0qh",
+    "ts": 1795671453681,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwx4elji-alm5z7mp",
+    "referrer": "https://www.google.com/"
   }
 ]
