@@ -126871,5 +126871,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwwjk2md-3zfv9fqm"
+  },
+  {
+    "id": "1795654004476-m3lh99",
+    "ts": 1795654004476,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwwu0mbq-7vqe0o1h",
+    "referrer": "https://asiakoz.com/smile-almaty/"
   }
 ]
