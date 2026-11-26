@@ -127475,5 +127475,14 @@
     "session_id": "mwxtm9cl-y3aw33l2",
     "button_location": "hero",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795714427113-ixyl7d",
+    "ts": 1795714427113,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mwwsd1g9-6zv4r03u"
   }
 ]
