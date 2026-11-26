@@ -126908,5 +126908,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwx17obt-6lxaf90k"
+  },
+  {
+    "id": "1795666394561-c382rj",
+    "ts": 1795666394561,
+    "event": "whatsapp_click",
+    "page_path": "/almaty/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwx17obt-6lxaf90k",
+    "button_location": "service_modal"
   }
 ]
