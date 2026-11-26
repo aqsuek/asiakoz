@@ -127561,5 +127561,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwxztox2-24ivtoo3"
+  },
+  {
+    "id": "1795728724633-zdfo8b",
+    "ts": 1795728724633,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwy2i4ph-7xnliv77",
+    "referrer": "https://yandex.kz/"
   }
 ]
