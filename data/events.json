@@ -127079,5 +127079,15 @@
     "session_id": "mwx44sa8-nwkbfs8r",
     "button_location": "funnel_cta",
     "referrer": "https://www.google.com/"
+  },
+  {
+    "id": "1795676333521-7mgo8z",
+    "ts": 1795676333521,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwx7b7rp-bsb0dok9",
+    "referrer": "https://yandex.kz/"
   }
 ]
