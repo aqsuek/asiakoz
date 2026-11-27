@@ -128291,5 +128291,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwz7z0mz-y73y5ekd"
+  },
+  {
+    "id": "1795800513124-iz7fzb",
+    "ts": 1795800513124,
+    "event": "page_view",
+    "page_path": "/news/shymkent-ashyldy/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwz98typ-sxx0ynyq",
+    "referrer": "https://www.google.com/"
   }
 ]
