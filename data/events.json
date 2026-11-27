@@ -127598,5 +127598,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwy9evzi-301l3c8p"
+  },
+  {
+    "id": "1795740533003-dcs3qh",
+    "ts": 1795740533003,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwy9j7l7-hrdn9vaf",
+    "referrer": "https://asiakoz.com/femto-lasik-almaty/"
   }
 ]
