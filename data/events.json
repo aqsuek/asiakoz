@@ -128310,5 +128310,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mwzai4w7-fbxfsu14"
+  },
+  {
+    "id": "1795802921727-kh13n1",
+    "ts": 1795802921727,
+    "event": "page_view",
+    "page_path": "/aktau/",
+    "city": "aqtau",
+    "language": "ru",
+    "session_id": "mwzaobss-p2dukyf9"
   }
 ]
