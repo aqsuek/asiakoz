@@ -127931,5 +127931,14 @@
     "language": "ru",
     "session_id": "mwyk52uf-7xrd2jfz",
     "referrer": "https://asiakoz.com/glaznaya-klinika-almaty/"
+  },
+  {
+    "id": "1795774638110-d2xw73",
+    "ts": 1795774638110,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwytu72y-xee8cost"
   }
 ]
