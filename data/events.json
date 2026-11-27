@@ -127921,5 +127921,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795774427306-iczdn1",
+    "ts": 1795774427306,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwyk52uf-7xrd2jfz",
+    "referrer": "https://asiakoz.com/glaznaya-klinika-almaty/"
   }
 ]
