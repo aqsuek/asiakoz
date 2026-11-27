@@ -127695,5 +127695,14 @@
     "language": "ru",
     "session_id": "mwyhvyd3-uxufw0a2",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1795754888131-qguyum",
+    "ts": 1795754888131,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mwyi30om-cnsz5o96"
   }
 ]
