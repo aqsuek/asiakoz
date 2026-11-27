@@ -127999,5 +127999,17 @@
     "city": "shymkent",
     "language": "kk",
     "session_id": "mwywfik1-i2jqb2vg"
+  },
+  {
+    "id": "1795779857698-wubojz",
+    "ts": 1795779857698,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mwywy5rp-967p3d7p",
+    "utm_source": "ig",
+    "utm_medium": "social",
+    "referrer": "https://l.instagram.com/"
   }
 ]
