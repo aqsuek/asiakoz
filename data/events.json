@@ -129999,5 +129999,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mx0tn06n-xth6cpvb"
+  },
+  {
+    "id": "1795896536595-zzhqp8",
+    "ts": 1795896536595,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx0tibb9-i3m3hfx4",
+    "referrer": "https://asiakoz.com/prices/"
   }
 ]
