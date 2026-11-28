@@ -129510,5 +129510,15 @@
     "language": "ru",
     "session_id": "mx0ryfde-toxlvkon",
     "referrer": "https://asiakoz.com/kk/shymkent/"
+  },
+  {
+    "id": "1795892466782-k0469z",
+    "ts": 1795892466782,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "shymkent",
+    "language": "kk",
+    "session_id": "mx0ryfde-toxlvkon",
+    "referrer": "https://asiakoz.com/shymkent/"
   }
 ]
