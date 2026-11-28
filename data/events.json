@@ -129330,5 +129330,14 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mx0q8crc-hi6td27v"
+  },
+  {
+    "id": "1795889734232-3qj9b6",
+    "ts": 1795889734232,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx0qcwft-umwq7cbj"
   }
 ]
