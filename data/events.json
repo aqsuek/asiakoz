@@ -128811,5 +128811,14 @@
     "language": "ru",
     "session_id": "mx09dcl4-xzfp8tjo",
     "referrer": "https://www.bing.com/"
+  },
+  {
+    "id": "1795861999897-b54aov",
+    "ts": 1795861999897,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx09u4c0-zf7h2uz6"
   }
 ]
