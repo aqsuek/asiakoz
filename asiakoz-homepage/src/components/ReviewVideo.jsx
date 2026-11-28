@@ -65,7 +65,7 @@ export default function ReviewVideo({ posterAlt,
         controls={playing}
         preload="none"
         controlsList="nodownload noplaybackrate"
-        poster={posterSrc || undefined}
+        poster={playing ? posterSrc || undefined : undefined}
         onPlay={() => setPlaying(true)}
         onError={() => setMediaFailed(true)}
       />

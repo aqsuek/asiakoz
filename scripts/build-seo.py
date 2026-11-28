@@ -724,7 +724,7 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
   <meta property="og:image" content="{SITE}/images/logo.png" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129c" />
   {schema_html}
 </head>
 <body>
@@ -1092,7 +1092,7 @@ def write_html_sitemap(entries: list[tuple[str, str, float]]) -> None:
   <title>Карта сайта AsiaKoz — все страницы</title>
   <meta name="description" content="Полный список страниц сайта AsiaKoz для поиска: филиалы, врачи, услуги, диагнозы, новости. RU и KK." />
   <link rel="canonical" href="{SITE}/sitemap.html" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129c" />
 </head>
 <body>
   <div class="container">
@@ -1584,6 +1584,9 @@ def main() -> None:
     catalog_script = ROOT / "scripts" / "render-catalog-extras.py"
     if catalog_script.exists():
         subprocess.check_call([sys.executable, str(catalog_script)], cwd=str(ROOT))
+    links_script = ROOT / "scripts" / "render-footer-links.py"
+    if links_script.exists():
+        subprocess.check_call([sys.executable, str(links_script)], cwd=str(ROOT))
     trim_long_titles()
     ensure_basic_schema()
     write_llms()

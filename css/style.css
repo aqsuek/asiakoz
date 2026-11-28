@@ -1892,3 +1892,6 @@ a { color: inherit; text-decoration: none; }
   .site-header .header-nav { gap: 16px !important; flex-wrap: nowrap; }
   .site-header .header-nav a { white-space: nowrap; font-size: 14px; }
 }
+@media (max-width: 768px) {
+  .site-header .header-whatsapp, .site-header .header-phone { display: none !important; }
+}

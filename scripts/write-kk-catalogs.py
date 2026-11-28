@@ -108,7 +108,7 @@ def write_kk_uslugi() -> None:
   <meta property="og:url" content="{SITE}/kk/uslugi/" />
   <meta property="og:image" content="{SITE}/images/logo-asiakoz.png" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129c" />
 </head>
 <body>
   <div class="container">

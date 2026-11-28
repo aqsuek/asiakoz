@@ -154,6 +154,41 @@ def services_block(lang: str) -> str:
     )
 
 
+REV_T = {
+    "ru": {"h": "Рейтинг и отзывы на 2ГИС по филиалам", "lead": "Независимые оценки пациентов на 2ГИС. Ниже — короткие выдержки из отзывов о наших врачах; полный текст — по ссылке на 2ГИС.",
+           "of": "оценок", "all": "Все отзывы филиала на 2ГИС", "doc": "Пациенты о враче", "note": "Выдержки из отзывов на 2ГИС, орфография авторов."},
+    "kk": {"h": "Филиалдардың 2ГИС-тегі рейтингі мен пікірлері", "lead": "Пациенттердің 2ГИС-тегі тәуелсіз бағалары. Төменде дәрігерлеріміз туралы пікірлерден қысқа үзінділер; толық мәтіні 2ГИС сілтемесінде.",
+           "of": "баға", "all": "Филиалдың 2ГИС-тегі барлық пікірлері", "doc": "Пациенттер дәрігер туралы", "note": "2ГИС-тегі пікірлерден үзінділер, авторлардың жазуы сақталған."},
+}
+BRANCH_DOCTORS = {"almaty": ["orel-talip", "mehmet-esat-teker", "musay"], "aqtau": ["ali-keskin", "erol-joshkun", "nazgul-sagyndykova"], "shymkent": ["kadyr-kyrboga"]}
+
+
+def reviews_block(lang: str) -> str:
+    e = html.escape
+    t = REV_T[lang]
+    docs = {d["id"]: d for d in json.loads((ROOT / "data" / "doctors-ui.json").read_text(encoding="utf-8"))}
+    rev = json.loads((ROOT / "data" / "reviews-2gis.json").read_text(encoding="utf-8"))
+    parts = []
+    for bid, b in rev["branches"].items():
+        cname = dx.BRANCH[bid][lang][0]
+        cards = []
+        for did in BRANCH_DOCTORS[bid]:
+            d = docs.get(did)
+            name = (d["nameKz"] if lang == "kk" else d["nameRu"]) if d else did
+            href = (d.get("profileUrlKz") if lang == "kk" else d.get("profileUrl")) if d else "#"
+            for r in rev["doctors"].get(did, [])[:3]:
+                cards.append(f'<div class="dx-card"><p class="dx-q">«{e(r["q"])}»</p><p class="dx-who">{e(r["n"])} · {e(r["d"])} · <a class="link" href="{href}">{e(name)}</a></p></div>')
+        parts.append(
+            f'<h3 class="section-title" style="font-size:20px;margin-top:22px;">AsiaKoz {e(cname)}: <b>{b["rating"]} ★</b> · {b["ratings"]} {t["of"]}</h3>'
+            f'<p><a class="link" href="{b["url"]}" target="_blank" rel="noopener nofollow">{t["all"]}</a></p>'
+            f'<div class="dx-grid">{"".join(cards)}</div>'
+        )
+    return (
+        f'{START}{dx.CSS}<section class="section" id="reviews-2gis"><h2 class="section-title">{t["h"]}</h2><p>{e(t["lead"])}</p>'
+        f'{"".join(parts)}<p class="section-note">{t["note"]}</p></section>{END}'
+    )
+
+
 def inject(path: Path, content: str) -> bool:
     if not path.exists():
         return False
@@ -173,6 +208,8 @@ def main() -> None:
         (ROOT / "kk" / "doctors" / "index.html", doctors_block("kk")),
         (ROOT / "uslugi" / "index.html", services_block("ru")),
         (ROOT / "kk" / "uslugi" / "index.html", services_block("kk")),
+        (ROOT / "otzyvy-asiakoz-almaty" / "index.html", reviews_block("ru")),
+        (ROOT / "kk" / "otzyvy-asiakoz-almaty" / "index.html", reviews_block("kk")),
     ]
     for path, content in jobs:
         print(("catalog: " if inject(path, content) else "SKIP catalog: ") + str(path.relative_to(ROOT)))

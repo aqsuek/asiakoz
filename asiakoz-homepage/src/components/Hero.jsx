@@ -11,6 +11,7 @@ import {
   phoneHref,
 } from "../data/branches";
 import { trackEvent } from "../lib/analytics";
+import { RATINGS_2GIS } from "../data/ratings";
 
 export default function Hero() {
   const { lang, t } = useLang();
@@ -96,6 +97,23 @@ export default function Hero() {
                 </a>
               )}
             </div>
+
+            {RATINGS_2GIS[cityId] && (
+              <a
+                href={RATINGS_2GIS[cityId].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-full border border-ink/[0.08] bg-white px-3.5 py-2 text-sm text-ink-muted shadow-soft"
+              >
+                <span className="font-bold text-[#E8A200]" aria-hidden>★</span>
+                <span>
+                  <b className="text-ink">{RATINGS_2GIS[cityId].rating}</b>{" "}
+                  {lang === "ru"
+                    ? `на 2ГИС · ${RATINGS_2GIS[cityId].count} оценок пациентов`
+                    : `2ГИС-те · ${RATINGS_2GIS[cityId].count} пациент бағасы`}
+                </span>
+              </a>
+            )}
           </div>
 
           <div className="relative">

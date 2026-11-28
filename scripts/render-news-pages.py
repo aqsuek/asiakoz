@@ -128,7 +128,7 @@ def shell(
   <meta property="og:image" content="{og_image or SITE + '/images/logo.png'}" />
 {extra_head}
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129c" />
 </head>
 <body>
 {GTM_BODY}
