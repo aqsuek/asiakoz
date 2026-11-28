@@ -129478,5 +129478,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795892236589-baepvx",
+    "ts": 1795892236589,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx0q8crc-hi6td27v",
+    "referrer": "https://asiakoz.com/news/smile-aksiya-dekabr-2026/"
   }
 ]
