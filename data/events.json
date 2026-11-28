@@ -128774,5 +128774,14 @@
     "language": "ru",
     "session_id": "mx080xzh-a56mm037",
     "referrer": "https://yandex.kz/"
+  },
+  {
+    "id": "1795858969016-mxijr4",
+    "ts": 1795858969016,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx081qnj-quz8ae9q"
   }
 ]
