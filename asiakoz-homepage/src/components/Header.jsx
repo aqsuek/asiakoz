@@ -108,9 +108,9 @@ export default function Header() {
                   }
                   if (IS_LASER) trackEvent("laser_language_change", { language: code });
                 }}
-                className={`inline-flex h-11 min-w-[2.75rem] items-center justify-center rounded-full px-2 text-[10px] font-bold uppercase tracking-wide transition-all sm:min-w-11 sm:px-2.5 sm:text-[11px] ${
+                className={`inline-flex h-11 min-w-[2.75rem] items-center justify-center rounded-full px-2 text-[12px] font-bold uppercase tracking-wide transition-all sm:min-w-11 sm:px-2.5 sm:text-[12px] ${
                   lang === code
-                    ? "bg-white text-brand shadow-soft"
+                    ? "bg-white text-brand-deep shadow-soft"
                     : "text-ink-faint hover:text-ink"
                 }`}
                 aria-current={lang === code ? "page" : undefined}

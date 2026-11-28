@@ -352,6 +352,47 @@
     }
   }
 
+
+  /** Mobile: hamburger menu + full-width WhatsApp bar on static pages. */
+  function initMobileUi() {
+    if (isSpaPage()) return;
+    var kk = (document.documentElement.lang || "").indexOf("kk") === 0;
+    var header = document.querySelector(".site-header");
+    var nav = header && header.querySelector(".header-nav");
+    if (header && nav && !header.querySelector(".nav-toggle")) {
+      if (!nav.id) nav.id = "site-nav";
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "nav-toggle";
+      btn.setAttribute("aria-controls", nav.id);
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", kk ? "Мәзір" : "Меню");
+      btn.innerHTML = '<span></span><span></span><span></span>';
+      btn.addEventListener("click", function () {
+        var open = header.classList.toggle("nav-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      nav.addEventListener("click", function (e) {
+        if (e.target.closest("a")) {
+          header.classList.remove("nav-open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+      header.appendChild(btn);
+    }
+    var fab = document.getElementById("asiakoz-wa-fixed");
+    if (fab && !fab.querySelector(".asiakoz-wa-fab__label")) {
+      var link = fab.querySelector("a");
+      if (link) {
+        var label = document.createElement("span");
+        label.className = "asiakoz-wa-fab__label";
+        label.textContent = kk ? "WhatsApp арқылы жазылу" : "Записаться в WhatsApp";
+        link.appendChild(label);
+      }
+      document.body.classList.add("has-wa-bar");
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     if (!isSpaPage()) {
       enforceWhatsAppOnly();
@@ -361,6 +402,7 @@
       });
     }
     initSiteChrome();
+    initMobileUi();
     attachConsentToForms();
     injectCookieBanner();
     enrichFooter();

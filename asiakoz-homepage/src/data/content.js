@@ -247,7 +247,7 @@ export const BRANCHES = [
     phoneHref: PHONE_HREF,
     whatsapp: WHATSAPP_URL,
     hours: "Пн–Пт 09:00–17:00, Сб до 14:00",
-    image: "/images/clinic-building.png",
+    image: "/images/clinic-building.webp",
     gis: "https://2gis.kz/kk/almaty/firm/70000001081905733",
     rating: "4.8",
   },

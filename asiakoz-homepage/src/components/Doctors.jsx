@@ -73,7 +73,7 @@ function DoctorCard({ doctor, lang, t, cityId }) {
           className="min-w-0 text-left"
         >
           {doctor.branch && (
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-brand">
               {doctor.branch}
               {doctor.temporaryActive && IS_HOME ? (
                 <span className="ml-1.5 normal-case text-brand-deep/80">

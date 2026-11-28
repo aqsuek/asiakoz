@@ -2,10 +2,19 @@
  * Single source of truth for laser landing promo.
  * Change values here only — UI reads formatters below.
  */
+// December 2026 promo (confirmed by the clinic): 600 000 ₸ both eyes, 1–25 Dec, Almaty.
+// Outside these dates the regular price 650 000 ₸ is shown. Dates use Almaty time (UTC+5).
+const PROMO_START = Date.parse("2026-12-01T00:00:00+05:00");
+const PROMO_END = Date.parse("2026-12-26T00:00:00+05:00");
+const PROMO_ACTIVE = (() => {
+  const now = Date.now();
+  return now >= PROMO_START && now < PROMO_END;
+})();
+
 export const LASER_PROMO = {
-  currentPrice: 650000,
-  oldPrice: null,
-  endDate: null, // Current offer confirmed; no expiry date supplied.
+  currentPrice: PROMO_ACTIVE ? 600000 : 650000,
+  oldPrice: PROMO_ACTIVE ? 650000 : null,
+  endDate: PROMO_ACTIVE ? "2026-12-25" : null,
   spotsLeft: null,
   method: "ReLEx SMILE",
   /** 'oneEye' | 'bothEyes' | 'unconfirmed' */

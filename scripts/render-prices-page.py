@@ -125,13 +125,13 @@ def render(lang: str) -> str:
     for r in ROWS:
         g, svc, price, where, note, link = r[lang]
         groups.setdefault(g, []).append(
-            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td style="padding:10px 8px;"><a class="link" href="{link}">{e(svc)}</a></td>'
-            f'<td style="padding:10px 8px;white-space:nowrap;"><b>{e(price)}</b></td><td style="padding:10px 8px;">{e(where)}</td>'
-            f'<td style="padding:10px 8px;font-size:13px;color:var(--text-muted);">{e(note)}</td></tr>'
+            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td data-label="{e(c["cols"][0])}" style="padding:10px 8px;"><a class="rtable-name" href="{link}">{e(svc)}</a></td>'
+            f'<td data-label="{e(c["cols"][1])}" style="padding:10px 8px;white-space:nowrap;"><b>{e(price)}</b></td><td data-label="{e(c["cols"][2])}" style="padding:10px 8px;">{e(where)}</td>'
+            f'<td data-label="{e(c["cols"][3])}" style="padding:10px 8px;font-size:13px;color:var(--text-muted);">{e(note)}</td></tr>'
         )
     head = "".join(f'<th style="padding:10px 8px;text-align:left;">{e(x)}</th>' for x in c["cols"])
     tables = "".join(
-        f'<h2 class="section-title" style="margin-top:28px;">{e(g)}</h2><div style="overflow-x:auto;"><table style="width:100%;min-width:640px;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+        f'<h2 class="section-title" style="margin-top:28px;">{e(g)}</h2><div style="overflow-x:auto;"><table class="rtable" style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
         for g, rows in groups.items()
     )
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in c["faq"])

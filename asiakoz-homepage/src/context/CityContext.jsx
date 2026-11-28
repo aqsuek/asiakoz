@@ -4,16 +4,20 @@ import {
   getNetworkBranch,
   isComingSoon as branchIsComingSoon,
 } from "../data/branches";
-import { branchDefaultCityId } from "../lib/branch";
+import { IS_LASER, branchDefaultCityId } from "../lib/branch";
 import { readStoredCityId, writeStoredCityId } from "../lib/cityStorage";
 import { trackEvent } from "../lib/analytics";
 
 const CityContext = createContext(null);
 
 export function CityProvider({ children }) {
-  const [cityId, setCityIdState] = useState(
-    () => readStoredCityId() || branchDefaultCityId(),
-  );
+  // /laser/ is the Almaty (and Aktau) ReLEx SMILE landing: never inherit Shymkent
+  // from another page, because Shymkent does LASIK/PRK, not SMILE.
+  const [cityId, setCityIdState] = useState(() => {
+    const stored = readStoredCityId();
+    if (IS_LASER) return stored === "aqtau" ? "aqtau" : "almaty";
+    return stored || branchDefaultCityId();
+  });
 
   useEffect(() => {
     writeStoredCityId(cityId);
@@ -23,6 +27,7 @@ export function CityProvider({ children }) {
     const onStorage = (e) => {
       if (e.key && e.key !== "asiakoz-home-city") return;
       const next = readStoredCityId();
+      if (IS_LASER && next === "shymkent") return;
       if (next) setCityIdState(next);
     };
     window.addEventListener("storage", onStorage);

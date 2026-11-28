@@ -56,7 +56,7 @@ const CLINIC_BY_BRANCH = {
     address: "Алматы, Райымбек даңғылы, 176А",
     addressRu: "Алматы, проспект Райымбека, 176А",
     addressKz: "Алматы, Райымбек даңғылы, 176А",
-    heroImage: "images/clinic-building.png",
+    heroImage: "images/clinic-building.webp",
     phones: [
       {
         display: formatKzPhoneDisplay("+77778880180"),
@@ -151,7 +151,7 @@ const CLINIC_BY_BRANCH = {
     address: "Алматы, Райымбек даңғылы, 176А",
     addressRu: "Алматы, проспект Райымбека, 176А",
     addressKz: "Алматы, Райымбек даңғылы, 176А",
-    heroImage: "images/clinic-building.png",
+    heroImage: "images/clinic-building.webp",
     phones: NETWORK_BRANCHES.map((b) => ({
       display: b.phoneDisplay,
       href: phoneHref(b.phoneTel),

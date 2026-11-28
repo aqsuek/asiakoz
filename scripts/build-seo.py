@@ -724,7 +724,7 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
   <meta property="og:image" content="{SITE}/images/logo.png" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129" />
   {schema_html}
 </head>
 <body>
@@ -744,7 +744,7 @@ def write_kk_hub_from_ru(ru_path: Path, kk_path: Path, page_key: str, branch_id:
     <p><a class="btn" href="{wa}" target="_blank" rel="noopener">{cta}</a></p>
     <p><a href="{ru_url}">Орысша нұсқа / RU</a></p>
   </div>
-  <script src="/js/compliance.js"></script>
+  <script src="/js/compliance.js?v=13"></script>
 </body>
 </html>
 """
@@ -1092,7 +1092,7 @@ def write_html_sitemap(entries: list[tuple[str, str, float]]) -> None:
   <title>Карта сайта AsiaKoz — все страницы</title>
   <meta name="description" content="Полный список страниц сайта AsiaKoz для поиска: филиалы, врачи, услуги, диагнозы, новости. RU и KK." />
   <link rel="canonical" href="{SITE}/sitemap.html" />
-  <link rel="stylesheet" href="/css/style.css?v=20260907a" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129" />
 </head>
 <body>
   <div class="container">
@@ -1108,7 +1108,7 @@ def write_html_sitemap(entries: list[tuple[str, str, float]]) -> None:
     </section>
   </div>
   <script src="/js/conversion.js?v=1"></script>
-  <script src="/js/compliance.js"></script>
+  <script src="/js/compliance.js?v=13"></script>
 </body>
 </html>
 """
@@ -1447,8 +1447,8 @@ def inject_conversion_js() -> None:
         if is_redirect(html):
             continue
         new_html = html.replace(
-            '<script src="/js/compliance.js"></script>',
-            f"{tag}\n  <script src=\"/js/compliance.js\"></script>",
+            '<script src="/js/compliance.js?v=13"></script>',
+            f"{tag}\n  <script src=\"/js/compliance.js?v=13\"></script>",
             1,
         )
         if new_html != html:

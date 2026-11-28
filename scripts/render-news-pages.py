@@ -128,7 +128,7 @@ def shell(
   <meta property="og:image" content="{og_image or SITE + '/images/logo.png'}" />
 {extra_head}
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129" />
 </head>
 <body>
 {GTM_BODY}
@@ -171,7 +171,7 @@ def shell(
     </footer>
   </div>
   <script src="/js/conversion.js?v=1"></script>
-  <script src="/js/compliance.js"></script>
+  <script src="/js/compliance.js?v=13"></script>
 </body>
 </html>
 """

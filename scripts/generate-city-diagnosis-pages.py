@@ -1134,7 +1134,7 @@ def _render_page(dx_id: str, city: str, lang: str) -> str:
   <meta property="og:image" content="{SITE}{image}" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20260907a" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129" />
   <script type="application/ld+json">
 {schema}
   </script>
@@ -1193,7 +1193,7 @@ def _render_page(dx_id: str, city: str, lang: str) -> str:
       </div>
     </footer>
   </div>
-  <script src="/js/compliance.js?v=12"></script>
+  <script src="/js/compliance.js?v=13"></script>
   <script src="/js/conversion.js?v=1"></script>
 </body>
 </html>

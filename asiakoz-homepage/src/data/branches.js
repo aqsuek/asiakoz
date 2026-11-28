@@ -173,7 +173,7 @@ export function getNetworkBranch(id) {
 }
 
 const HERO_IMAGES = {
-  almaty: "images/clinic-building.png",
+  almaty: "images/clinic-building.webp",
   aqtau: "images/clinic-aktau.png",
   shymkent: "images/shymkent-branch.png",
 };

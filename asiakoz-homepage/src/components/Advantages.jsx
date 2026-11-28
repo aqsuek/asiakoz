@@ -78,7 +78,7 @@ export default function Advantages() {
               <Icon name={item.icon} className="h-5 w-5" />
             </div>
             <div className="min-w-0 flex-1">
-              <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-brand/80">
+              <div className="mb-1 text-[12px] font-semibold uppercase tracking-wide text-brand-deep">
                 {i + 1}/{items.length}
               </div>
               <h3 className="text-[15px] font-bold leading-snug text-ink sm:text-base">{item.title}</h3>

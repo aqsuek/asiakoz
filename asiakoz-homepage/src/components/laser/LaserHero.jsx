@@ -46,7 +46,7 @@ function DoctorChipCard({ chip }) {
         decoding="async"
       />
       <div className="min-w-0">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
+        <p className="text-[11px] font-semibold uppercase tracking-wider text-brand">
           {chip.label}
         </p>
         <p className="truncate text-sm font-bold text-ink">{chip.name}</p>
@@ -102,7 +102,7 @@ export default function LaserHero() {
         <div className="grid items-start gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
           <div className="max-w-xl">
             {badge && (
-              <p className="mb-1.5 inline-flex items-center rounded-full border border-brand/20 bg-brand-soft px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand">
+              <p className="mb-1.5 inline-flex items-center rounded-full border border-brand/20 bg-brand-soft px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-brand">
                 {badge}
               </p>
             )}
@@ -113,7 +113,7 @@ export default function LaserHero() {
 
             {active ? (
               <div className="mt-2.5 flex flex-wrap items-end gap-2.5">
-                <p className="font-display text-2xl font-extrabold text-brand sm:text-4xl">
+                <p className="font-display text-2xl font-extrabold text-brand-dark sm:text-4xl">
                   {priceLabel}
                 </p>
                 {LASER_PROMO.oldPrice != null && <p className="pb-0.5 text-base font-semibold text-ink-faint line-through sm:text-lg">
@@ -225,7 +225,7 @@ export default function LaserHero() {
               />
             </div>
             <div className="absolute -bottom-2 left-2 right-2 rounded-xl border border-ink/[0.06] bg-white/95 p-2.5 shadow-card backdrop-blur-sm sm:left-4 sm:right-auto sm:max-w-xs sm:p-3">
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-brand">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-brand">
                 {h.doctorChipLabel}
               </p>
               <p className="mt-0.5 text-sm font-bold text-ink">{h.doctorChipName}</p>

@@ -61,7 +61,7 @@ export default function Booking({ laserMode = false }) {
                     {branchCityName(b, lang)}
                     {soon && (
                       <span
-                        className={`rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase ${
+                        className={`rounded-full px-1.5 py-0.5 text-[11px] font-bold uppercase ${
                           selected ? "bg-white/20 text-white" : "bg-brand/10 text-brand"
                         }`}
                       >

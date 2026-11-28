@@ -106,7 +106,7 @@ def render(slug,lang):
  shell=re.sub(r'https://wa.me/77003600180\?text=[^"<]*',wa,shell)
  graph=[{'@type':'MedicalWebPage','@id':url+'#webpage','url':url,'name':title,'description':desc,'inLanguage':'kk-KZ' if kk else 'ru-KZ','about':{'@type':'MedicalProcedure' if slug=='zamena-hrustalika' else 'MedicalCondition','name':name},'breadcrumb':{'@id':url+'#breadcrumb'}},{'@type':'BreadcrumbList','@id':url+'#breadcrumb','itemListElement':[{'@type':'ListItem','position':1,'name':'AsiaKoz','item':'https://asiakoz.com'+prefix+'/'},{'@type':'ListItem','position':2,'name':'Катаракта','item':'https://asiakoz.com'+hub},{'@type':'ListItem','position':3,'name':name,'item':url}]},{'@type':'MedicalClinic','@id':'https://asiakoz.com/almaty/#clinic','name':'AsiaKoz Алматы','telephone':'+77778880180','address':{'@type':'PostalAddress','streetAddress':'проспект Райымбека, 176А','addressLocality':'Алматы','addressCountry':'KZ'}},{'@type':'FAQPage','@id':url+'#faq','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in faq]}]
  shell=re.sub(r'<script type="application/ld\+json">.*?</script>',lambda m:'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('</','<\\/')+'</script>',shell,flags=re.S)
- return shell.replace('v=20261017-retina','v=20261017-cataract')
+ return shell
 
 def build():
  for slug in DATA:
@@ -114,5 +114,5 @@ def build():
    p=ROOT/('kk' if lang=='kk' else '')/(slug+'-almaty')/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(render(slug,lang),encoding='utf-8')
  for pre in ('','kk/'):
   p=ROOT/pre/'katarakta-almaty/index.html';s=p.read_text();block=section('cataract-diagnoses','Катаракта түрлері және байланысты ем' if pre else 'Виды катаракты и связанные методы лечения','<div class="retina-related-grid">'+''.join(f'<p><a class="link" href="/{pre}{slug}-almaty/">{v[int(bool(pre))]}</a></p>' for slug,v in DATA.items())+'</div>')
-  s=re.sub(r'<section class="section" id="cataract-diagnoses">.*?</section>','',s,flags=re.S);s=s.replace('<footer',block+'<footer',1);s=re.sub(r'(/js/compliance\.js)\?v=[^"\s]+',r'\1?v=20261017-cataract',s);p.write_text(s,encoding='utf-8')
+  s=re.sub(r'<section class="section" id="cataract-diagnoses">.*?</section>','',s,flags=re.S);s=s.replace('<footer',block+'<footer',1);s=re.sub(r'(/js/compliance\.js)\?v=[^"\s]+',r'\1?v=13',s);p.write_text(s,encoding='utf-8')
 if __name__=='__main__':build()

@@ -112,9 +112,9 @@ def doctors_block(lang: str) -> str:
             ops.append(dx.OPS[key][2] if lang == "kk" else dx.OPS[key][0])
         price = "10 000–15 000 ₸" if ui["id"] in dx.LOCAL_DOCTORS else "20 000 ₸"
         rows.append(
-            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td style="padding:10px 8px;"><a class="link" href="{href}">{e(name)}</a></td>'
-            f'<td style="padding:10px 8px;">{e(cities)}</td><td style="padding:10px 8px;">{e(", ".join(ops))}</td>'
-            f'<td style="padding:10px 8px;white-space:nowrap;">{price}</td></tr>'
+            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td data-label="{e(t["cols"][0])}" style="padding:10px 8px;"><a class="rtable-name" href="{href}">{e(name)}</a></td>'
+            f'<td data-label="{e(t["cols"][1])}" style="padding:10px 8px;">{e(cities)}</td><td data-label="{e(t["cols"][2])}" style="padding:10px 8px;">{e(", ".join(ops))}</td>'
+            f'<td data-label="{e(t["cols"][3])}" style="padding:10px 8px;white-space:nowrap;">{price}</td></tr>'
         )
     head = "".join(f'<th style="padding:10px 8px;text-align:left;">{e(c)}</th>' for c in t["cols"])
     ratings = "".join(
@@ -123,7 +123,7 @@ def doctors_block(lang: str) -> str:
     )
     return (
         f'{START}<section class="section" id="doctors-guide"><h2 class="section-title">{t["doc_h"]}</h2><p>{e(t["doc_lead"])}</p>'
-        f'<div style="overflow-x:auto;"><table style="width:100%;min-width:640px;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+        f'<div style="overflow-x:auto;"><table class="rtable" style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
         f'<h2 class="section-title">{t["rating_h"]}</h2><ul>{ratings}</ul>'
         f'{faq_html(t["doc_faq"], lang)}</section>{END}'
     )
@@ -140,15 +140,15 @@ def services_block(lang: str) -> str:
         href = o[7] if lang == "kk" else o[6]
         where = WHERE.get(key, ("", ""))[1 if lang == "kk" else 0]
         rows.append(
-            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td style="padding:10px 8px;vertical-align:top;"><a class="link" href="{href}">{e(title)}</a></td>'
-            f'<td style="padding:10px 8px;vertical-align:top;">{e(text)}</td><td style="padding:10px 8px;vertical-align:top;white-space:nowrap;"><b>{e(price)}</b></td>'
-            f'<td style="padding:10px 8px;vertical-align:top;">{e(where)}</td></tr>'
+            f'<tr style="border-top:1px solid rgba(15,23,42,.08);"><td data-label="{e(t["svc_cols"][0])}" style="padding:10px 8px;vertical-align:top;"><a class="rtable-name" href="{href}">{e(title)}</a></td>'
+            f'<td data-label="{e(t["svc_cols"][1])}" style="padding:10px 8px;vertical-align:top;">{e(text)}</td><td data-label="{e(t["svc_cols"][2])}" style="padding:10px 8px;vertical-align:top;white-space:nowrap;"><b>{e(price)}</b></td>'
+            f'<td data-label="{e(t["svc_cols"][3])}" style="padding:10px 8px;vertical-align:top;">{e(where)}</td></tr>'
         )
     head = "".join(f'<th style="padding:10px 8px;text-align:left;">{e(c)}</th>' for c in t["svc_cols"])
     prices = "/kk/prices/" if lang == "kk" else "/prices/"
     return (
         f'{START}<section class="section" id="services-guide"><h2 class="section-title">{t["svc_h"]}</h2><p>{e(t["svc_lead"])}</p>'
-        f'<div style="overflow-x:auto;"><table style="width:100%;min-width:720px;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+        f'<div style="overflow-x:auto;"><table class="rtable" style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
         f'<p class="section-note"><a class="link" href="{prices}">{t["prices"]}</a></p>'
         f'{faq_html(t["svc_faq"], lang)}</section>{END}'
     )

@@ -57,7 +57,7 @@ export default function BranchCities() {
                   <span className="flex w-full items-center justify-between gap-2">
                     <span className="text-[16px] font-bold text-ink">{name}</span>
                     {soon && (
-                      <span className="rounded-full bg-brand/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand">
+                      <span className="rounded-full bg-brand/15 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-brand">
                         {picker.soon || "Скоро"}
                       </span>
                     )}
