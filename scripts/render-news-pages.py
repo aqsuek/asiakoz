@@ -50,9 +50,17 @@ def fmt_date(iso: str, lang: str) -> str:
         return iso[:10]
 
 
+def _linkify(escaped: str) -> str:
+    return re.sub(
+        r"(https://asiakoz\.com(/[\w\-/]*)?)",
+        lambda m: f'<a class="link" href="{m.group(2) or "/"}">{m.group(1)}</a>',
+        escaped,
+    )
+
+
 def body_html(text: str) -> str:
     paras = [p.strip() for p in text.split("\n") if p.strip()]
-    return "".join(f"<p>{html.escape(p)}</p>" for p in paras)
+    return "".join(f"<p>{_linkify(html.escape(p))}</p>" for p in paras)
 
 
 POST_WA = {
@@ -72,6 +80,8 @@ def shell(
     body: str,
     lang_switch: str,
     wa_phone: str = "77003600180",
+    og_image: str = "",
+    extra_head: str = "",
 ) -> str:
     home = "/kk/" if lang == "kk" else "/"
     logo_title = "Азиякөз" if lang == "kk" else "Азиякоз"
@@ -85,9 +95,9 @@ def shell(
         else "Напишите в WhatsApp — подберём врача и удобное время."
     )
     footer_desc = (
-        "Офтальмологиялық клиника. Алматы және Ақтау."
+        "Офтальмологиялық клиника. Алматы, Ақтау және Шымкент."
         if lang == "kk"
-        else "Офтальмологическая клиника. Алматы и Актау."
+        else "Офтальмологическая клиника. Алматы, Актау и Шымкент."
     )
     disclaimer = (
         "Қарсы көрсеткіштер бар. Маман кеңесі қажет."
@@ -115,7 +125,8 @@ def shell(
   <meta property="og:title" content="{html.escape(title)}" />
   <meta property="og:description" content="{html.escape(desc)}" />
   <meta property="og:url" content="{canonical}" />
-  <meta property="og:image" content="{SITE}/images/logo.png" />
+  <meta property="og:image" content="{og_image or SITE + '/images/logo.png'}" />
+{extra_head}
   <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -155,7 +166,7 @@ def shell(
       </div>
       <div class="footer-bottom">
         <p class="footer-disclaimer">{disclaimer}</p>
-        <p class="footer-copy">© {logo_title}. Алматы, {"Актау" if lang == "ru" else "Ақтау"}.</p>
+        <p class="footer-copy">© {logo_title}. Алматы, {"Актау" if lang == "ru" else "Ақтау"}, Шымкент.</p>
       </div>
     </footer>
   </div>
@@ -261,13 +272,29 @@ def render_article(post: dict, lang: str) -> str:
     body = f"""    <article class="section">
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">{html.escape(date)}</p>
       <h1 class="section-title">{html.escape(ptitle)}</h1>
-      <img src="{html.escape(cover)}" alt="" style="width:100%;max-width:720px;border-radius:12px;margin:16px 0 24px;" loading="lazy" />
+      <img src="{html.escape(cover)}" alt="{html.escape(ptitle)}" style="width:100%;max-width:720px;border-radius:12px;margin:16px 0 24px;" loading="lazy" />
       <div class="article-body">{body_html(body_text)}</div>
       {back}
     </article>"""
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": ptitle,
+        "description": excerpt,
+        "image": [f"{SITE}{cover}"],
+        "datePublished": post.get("publishedAt", ""),
+        "dateModified": post.get("updatedAt") or post.get("publishedAt", ""),
+        "inLanguage": "kk-KZ" if lang == "kk" else "ru-KZ",
+        "mainEntityOfPage": canonical,
+        "author": {"@type": "Organization", "name": "AsiaKoz", "url": f"{SITE}/"},
+        "publisher": {"@type": "Organization", "name": "AsiaKoz", "logo": {"@type": "ImageObject", "url": f"{SITE}/images/logo.png"}},
+    }
+    full_title = f"{ptitle} | AsiaKoz" if len(ptitle) <= 55 else ptitle
     return shell(
         lang=lang,
-        title=f"{ptitle} | AsiaKoz",
+        og_image=f"{SITE}{cover}",
+        extra_head=f'  <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>',
+        title=full_title,
         desc=excerpt,
         canonical=canonical,
         ru_url=ru_url,

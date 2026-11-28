@@ -46,6 +46,9 @@ CITY_DOCTORS: dict[str, list[str]] = {
     "shymkent": ["kadyr", "mehmet"],
 }
 
+# Bump when page texts change (shown to search engines as dateModified).
+CONTENT_UPDATED = "2026-11-28"
+
 CITY_RU_LOCATIVE = {
     "Алматы": "в Алматы",
     "Актау": "в Актау",
@@ -204,6 +207,66 @@ DOCTORS = {
 }
 
 # slug_fn(city) -> folder name. Almaty kosoglazie stays /kosoglazie/
+LAZER_AKTAU = {
+    "ru": {
+        "name": "Лазерная коррекция",
+        "h1": "Лазерная коррекция зрения ReLEx SMILE в Актау",
+        "title": "Лазерная коррекция зрения SMILE в Актау — цена",
+        "desc": "ReLEx SMILE в Актау: полная диагностика роговицы, коррекция без лоскута, контроль после операции. 650 000 ₸ за оба глаза. AsiaKoz, {address}. Запись WhatsApp.",
+        "lead": "ReLEx SMILE — лазерная коррекция через микроразрез роговицы, без лоскута. Подходит при близорукости и астигматизме, если роговица и глаз позволяют. В {city} сначала полная диагностика: толщина и топография роговицы, рефракция, сетчатка, сухость. Метод и возможность коррекции решает врач.",
+        "facts": [
+            ("Не всем", "Противопоказания снимает только обследование"),
+            ("Метод", "ReLEx SMILE — без лоскута, через микроразрез"),
+            ("Цена", "650 000 ₸ за оба глаза"),
+        ],
+        "steps": [
+            ("Диагностика", "Проверяем, подходит ли SMILE именно вашему глазу."),
+            ("Консультация", "Хирург объясняет результат, ограничения и альтернативы (например ICL)."),
+            ("Операция", "В день коррекции — по записи филиала в {city}."),
+            ("Контроль", "Осмотры на следующий день и по графику врача."),
+        ],
+        "prices": [
+            {"label": "Диагностика", "title": "Диагностика перед лазером", "value": "от 20 000 ₸", "text": "Толщина и топография роговицы, рефракция, сетчатка."},
+            {"label": "ReLEx SMILE", "title": "ReLEx SMILE, оба глаза", "value": "650 000 ₸", "text": "Итоговую стоимость подтверждает врач после диагностики."},
+        ],
+        "faq": [
+            ("Сколько стоит SMILE в Актау?", "650 000 ₸ за оба глаза. Перед операцией обязательна диагностика: врач подтвердит, подходит ли вам метод."),
+            ("Делают ли в Актау LASIK или PRK?", "Нет. В Актау и Алматы — ReLEx SMILE. LASIK и PRK делают в нашем филиале в Шымкенте."),
+            ("С какого возраста можно?", "После стабилизации рефракции и при отсутствии противопоказаний — решает врач."),
+            ("Что если роговица тонкая?", "Рассматриваем ICL или другие варианты, не «продаём лазер всем»."),
+        ],
+    },
+    "kk": {
+        "name": "Лазерлік түзету",
+        "h1": "Ақтауда ReLEx SMILE лазерлік көру түзету",
+        "title": "Ақтауда SMILE лазерлік көру түзету — бағасы",
+        "desc": "Ақтауда ReLEx SMILE: мөлдір қабықтың толық диагностикасы, қақпақшасыз түзету, операциядан кейінгі бақылау. Екі көзге 650 000 ₸. AsiaKoz, {address}.",
+        "lead": "ReLEx SMILE — мөлдір қабықтағы шағын тілік арқылы, қақпақшасыз жасалатын лазерлік түзету. Миопия мен астигматизм кезінде, мөлдір қабық пен көз рұқсат етсе қолданылады. {city} филиалында алдымен толық диагностика жасалады, әдісті дәрігер таңдайды.",
+        "facts": [
+            ("Бәріне емес", "Қарсы көрсеткішті тек тексеру анықтайды"),
+            ("Әдіс", "ReLEx SMILE — қақпақшасыз, шағын тілік арқылы"),
+            ("Бағасы", "Екі көзге 650 000 ₸"),
+        ],
+        "steps": [
+            ("Диагностика", "SMILE сіздің көзіңізге сай келе ме — соны тексереміз."),
+            ("Кеңес", "Хирург нәтижені, шектеулерді және баламаларды (мысалы ICL) түсіндіреді."),
+            ("Операция", "{city} филиалының жазылуы бойынша."),
+            ("Бақылау", "Келесі күнгі қаралу және дәрігер кестесі."),
+        ],
+        "prices": [
+            {"label": "Диагностика", "title": "Лазер алдындағы диагностика", "value": "20 000 ₸-дан", "text": "Мөлдір қабық қалыңдығы мен топографиясы, рефракция, тор қабық."},
+            {"label": "ReLEx SMILE", "title": "ReLEx SMILE, екі көзге", "value": "650 000 ₸", "text": "Соңғы бағаны дәрігер диагностикадан кейін растайды."},
+        ],
+        "faq": [
+            ("Ақтауда SMILE қанша тұрады?", "Екі көзге 650 000 ₸. Операция алдында диагностика міндетті: әдіс сізге сай келетінін дәрігер растайды."),
+            ("Ақтауда LASIK немесе PRK жасала ма?", "Жоқ. Ақтау мен Алматыда — ReLEx SMILE. LASIK пен PRK Шымкент филиалында жасалады."),
+            ("Қай жастан?", "Рефракция тұрақталғаннан кейін — дәрігер шешеді."),
+            ("Мөлдір қабық жұқа болса?", "ICL немесе басқа нұсқа қаралады."),
+        ],
+    },
+}
+
+
 DIAGNOSES = {
     "katarakta": {
         "cities": ["almaty", "aktau", "shymkent"],
@@ -263,13 +326,15 @@ DIAGNOSES = {
         },
     },
     "lazer": {
-        "cities": ["almaty", "shymkent"],
+        # Almaty + Aktau: ReLEx SMILE. Shymkent: LASIK and PRK (no SMILE).
+        "cities": ["almaty", "aktau", "shymkent"],
         "skip_write": ["almaty"],
         # /kk/lazer-almaty/ is a redirect to /kk/laser/ (Almaty does SMILE only).
         "skip_write_kk": ["almaty"],
+        "by_city": {"aktau": LAZER_AKTAU},
         "folder": lambda c: f"lazer-{c}",
         "image": "/images/clinic-almaty-laser.png",
-        "doctors": {"almaty": ["mehmet", "orel", "aliya"], "shymkent": ["kadyr", "mehmet"]},
+        "doctors": {"almaty": ["mehmet", "orel", "aliya"], "aktau": ["ali-keskin", "erol", "nazgul"], "shymkent": ["kadyr", "mehmet"]},
         "ru": {
             "name": "Лазерная коррекция",
             "h1": "Лазерная коррекция зрения в {city}",
@@ -287,7 +352,13 @@ DIAGNOSES = {
                 ("Операция", "В день коррекции — по записи филиала {city}."),
                 ("Контроль", "Осмотры на следующий день и по графику врача."),
             ],
+            "prices": [
+                {"label": "Диагностика", "title": "Диагностика перед лазером", "value": "от 20 000 ₸", "text": "Толщина и топография роговицы, рефракция, сетчатка."},
+                {"label": "LASIK", "title": "LASIK, оба глаза", "value": "от 300 000 ₸", "text": "Точная цена — после диагностики, зависит от глаз."},
+                {"label": "PRK", "title": "PRK, оба глаза", "value": "от 200 000 ₸", "text": "Точная цена — после диагностики, зависит от глаз."},
+            ],
             "faq": [
+                ("Сколько стоит LASIK и PRK в Шымкенте?", "LASIK — от 300 000 ₸, PRK — от 200 000 ₸ за оба глаза. Точную цену врач называет после диагностики: она зависит от ваших глаз."),
                 ("Делают ли в Шымкенте SMILE?", "Нет. В Шымкенте — LASIK и PRK. ReLEx SMILE делают в Алматы и Актау."),
                 ("С какого возраста можно?", "После стабилизации рефракции и при отсутствии противопоказаний — решает врач."),
                 ("Что если роговица тонкая?", "Рассматриваем ICL или другие варианты, не «продаём лазер всем»."),
@@ -310,7 +381,13 @@ DIAGNOSES = {
                 ("Операция", "{city} филиалының жазылуы бойынша."),
                 ("Бақылау", "Келесі күнгі қаралу және дәрігер кестесі."),
             ],
+            "prices": [
+                {"label": "Диагностика", "title": "Лазер алдындағы диагностика", "value": "20 000 ₸-дан", "text": "Мөлдір қабық қалыңдығы мен топографиясы, рефракция, тор қабық."},
+                {"label": "LASIK", "title": "LASIK, екі көзге", "value": "300 000 ₸-дан", "text": "Нақты баға диагностикадан кейін, көзге байланысты."},
+                {"label": "PRK", "title": "PRK, екі көзге", "value": "200 000 ₸-дан", "text": "Нақты баға диагностикадан кейін, көзге байланысты."},
+            ],
             "faq": [
+                ("Шымкентте LASIK пен PRK қанша тұрады?", "LASIK — 300 000 ₸-дан, PRK — 200 000 ₸-дан, екі көзге. Нақты бағаны дәрігер диагностикадан кейін айтады, ол көзіңізге байланысты."),
                 ("Шымкентте SMILE жасала ма?", "Жоқ. Шымкентте — LASIK және PRK. ReLEx SMILE Алматы мен Ақтауда жасалады."),
                 ("Қай жастан?", "Рефракция тұрақталғаннан кейін — дәрігер шешеді."),
                 ("Мөлдір қабық жұқа болса?", "ICL немесе басқа нұсқа қаралады."),
@@ -813,6 +890,8 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
             "name": fill_city(enriched["title"], city_name, address),
             "description": fill_city(enriched["desc"], city_name, address),
             "inLanguage": "ru-KZ" if lang == "ru" else "kk-KZ",
+            "dateModified": CONTENT_UPDATED,
+            "lastReviewed": CONTENT_UPDATED,
             "primaryImageOfPage": {"@type": "ImageObject", "url": image},
             "about": {"@type": "MedicalCondition", "name": enriched["name"]},
             "isPartOf": {"@type": "WebSite", "name": "AsiaKoz", "url": f"{SITE}/"},
@@ -882,7 +961,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
 
 def _render_page(dx_id: str, city: str, lang: str) -> str:
     dx = DIAGNOSES[dx_id]
-    copy = dx[lang]
+    copy = dx.get("by_city", {}).get(city, {}).get(lang) or dx[lang]
     c = CITIES[city]
     city_name = c["kk"] if lang == "kk" else c["ru"]
     address = c["address_kk"] if lang == "kk" else c["address_ru"]
@@ -930,9 +1009,15 @@ def _render_page(dx_id: str, city: str, lang: str) -> str:
             continue
         label = CITIES[other]["kk" if lang == "kk" else "ru"]
         related.append(f'<a class="link" href="{rel_url(dx_id, other, lang)}">{copy["name"]} — {label}</a>')
-    if dx_id != "lazer" and city != "aktau":
+    if dx_id == "lazer":
         related.append(
-            f'<a class="link" href="{rel_url("lazer", "almaty", lang) if city != "shymkent" else rel_url("lazer", city, lang)}">'
+            f'<a class="link" href="{"/kk/smile-lasik-prk/" if lang == "kk" else "/smile-lasik-prk/"}">'
+            + ("SMILE, LASIK және PRK салыстыруы" if lang == "kk" else "Сравнение SMILE, LASIK и PRK")
+            + "</a>"
+        )
+    if dx_id != "lazer":
+        related.append(
+            f'<a class="link" href="{rel_url("lazer", city, lang)}">'
             + ("Лазерлік түзету" if lang == "kk" else "Лазерная коррекция")
             + "</a>"
         )

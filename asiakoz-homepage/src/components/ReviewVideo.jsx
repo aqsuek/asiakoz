@@ -6,7 +6,7 @@ import { assetUrl } from "../data/reviews";
  * Lazy video with poster — does not load media until play.
  * Falls back to soft placeholder if poster fails.
  */
-export default function ReviewVideo({
+export default function ReviewVideo({ posterAlt,
   src,
   poster,
   className = "",
@@ -43,7 +43,7 @@ export default function ReviewVideo({
       {posterSrc && !posterFailed && !playing && (
         <img
           src={posterSrc}
-          alt=""
+          alt={posterAlt || "Видеоотзыв пациента AsiaKoz"}
           className={`absolute inset-0 h-full w-full object-cover ${compact ? "object-[center_20%]" : "object-cover"}`}
           loading="lazy"
           decoding="async"

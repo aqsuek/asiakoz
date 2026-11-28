@@ -115,6 +115,10 @@ def fix_stale_kk_hybrid_locatives() -> int:
     count = 0
     for path in sorted((ROOT / "kk").rglob("index.html")):
         html = path.read_text(encoding="utf-8")
+        # Real Kazakh pages (generator, news, doctors) use «Алматыда» correctly;
+        # only Russian-text mirror copies need the Russian «в Алматы» form back.
+        if any(m in html for m in KK_OWNED_MARKERS):
+            continue
         fixed = revert_ru_hybrid_city_locatives(html)
         if fixed != html:
             path.write_text(fixed, encoding="utf-8")

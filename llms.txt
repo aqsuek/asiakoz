@@ -30,7 +30,10 @@ HTML sitemap: https://asiakoz.com/sitemap.html
 - Алматы и Актау: ReLEx SMILE.
 - Шымкент: LASIK и PRK (SMILE в Шымкенте не делают).
 - Алматы (SMILE): https://asiakoz.com/laser/ · KK: https://asiakoz.com/kk/laser/
+- Актау (SMILE): https://asiakoz.com/lazer-aktau/ · KK: https://asiakoz.com/kk/lazer-aktau/
 - Шымкент (LASIK, PRK): https://asiakoz.com/lazer-shymkent/ · KK: https://asiakoz.com/kk/lazer-shymkent/
+- Цены за оба глаза: SMILE 650 000 ₸ (Алматы 1–25 декабря 2026 — 600 000 ₸), LASIK от 300 000 ₸, PRK от 200 000 ₸.
+- Сравнение SMILE, LASIK и PRK: https://asiakoz.com/smile-lasik-prk/
 
 ## Услуги
 

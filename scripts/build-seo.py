@@ -434,7 +434,12 @@ def schema_clinic(branch: dict, lang: str) -> dict:
             "addressCountry": "KZ",
         },
         "medicalSpecialty": "https://schema.org/Ophthalmology",
-        "sameAs": [branch["instagram"]["url"]],
+        "sameAs": [branch["instagram"]["url"]]
+        + [
+            u
+            for u in [(branch.get("gis") or {}).get("searchUrl", "")]
+            if "/firm/" in u
+        ],
     }
     if branch.get("geo"):
         node["geo"] = {
@@ -839,7 +844,10 @@ def write_llms() -> None:
             "- Алматы и Актау: ReLEx SMILE.",
             "- Шымкент: LASIK и PRK (SMILE в Шымкенте не делают).",
             f"- Алматы (SMILE): {SITE}/laser/ · KK: {SITE}/kk/laser/",
+            f"- Актау (SMILE): {SITE}/lazer-aktau/ · KK: {SITE}/kk/lazer-aktau/",
             f"- Шымкент (LASIK, PRK): {SITE}/lazer-shymkent/ · KK: {SITE}/kk/lazer-shymkent/",
+            "- Цены за оба глаза: SMILE 650 000 ₸ (Алматы 1–25 декабря 2026 — 600 000 ₸), LASIK от 300 000 ₸, PRK от 200 000 ₸.",
+            f"- Сравнение SMILE, LASIK и PRK: {SITE}/smile-lasik-prk/",
             "",
             "## Услуги",
             "",
@@ -1451,6 +1459,9 @@ def main() -> None:
     news_script = ROOT / "scripts" / "render-news-pages.py"
     if news_script.exists():
         subprocess.check_call([sys.executable, str(news_script)], cwd=str(ROOT))
+    compare_script = ROOT / "scripts" / "render-laser-compare.py"
+    if compare_script.exists():
+        subprocess.check_call([sys.executable, str(compare_script)], cwd=str(ROOT))
 
     kk_doctor_script = ROOT / "scripts" / "render-doctor-kk-pages.py"
     if kk_doctor_script.exists():
