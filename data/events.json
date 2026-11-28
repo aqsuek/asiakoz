@@ -129240,5 +129240,14 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mx0pzme0-zxhjg5ra"
+  },
+  {
+    "id": "1795889127572-nlai5u",
+    "ts": 1795889127572,
+    "event": "page_view",
+    "page_path": "/kk/shymkent/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mx0q06p2-1l5qbvqo"
   }
 ]
