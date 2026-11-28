@@ -128801,5 +128801,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mx095hj7-mpkm327e"
+  },
+  {
+    "id": "1795861192197-xcvniq",
+    "ts": 1795861192197,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx09dcl4-xzfp8tjo",
+    "referrer": "https://www.bing.com/"
   }
 ]
