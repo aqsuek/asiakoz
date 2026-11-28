@@ -1874,3 +1874,21 @@ a { color: inherit; text-decoration: none; }
   table.rtable td:first-child::before { display: none; }
   table.rtable td:first-child { font-size: 16px; }
 }
+
+/* Static header = same one-row header as the main site on phones (2026-11-29) */
+@media (max-width: 768px) {
+  .site-header { flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 14px; margin-bottom: 18px; }
+  .site-header .logo { flex: 0 1 auto; min-width: 0; }
+  .site-header .logo-img { height: 26px !important; width: auto; max-width: 132px; }
+  .site-header .header-right { flex: 0 0 auto !important; margin-left: auto; gap: 8px !important; }
+  .site-header .btn-header { display: none !important; }
+  .site-header .lang-switch { padding: 3px; border-radius: 999px; background: #f1f5f7; }
+  .site-header .lang-switch a { min-width: 44px; min-height: 40px; font-size: 12px; border-radius: 999px; }
+  .site-header .nav-toggle { margin-left: 0; border-radius: 999px; }
+  .site-header.nav-open .header-nav { order: 10; }
+}
+@media (max-width: 1280px) and (min-width: 901px) {
+  .site-header .header-contacts { display: none !important; }
+  .site-header .header-nav { gap: 16px !important; flex-wrap: nowrap; }
+  .site-header .header-nav a { white-space: nowrap; font-size: 14px; }
+}

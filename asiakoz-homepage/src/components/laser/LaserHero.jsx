@@ -33,20 +33,20 @@ function useDoctorChips(h) {
   ].filter((c) => c.name);
 }
 
-function DoctorChipCard({ chip }) {
+function DoctorChipCard({ chip, animate = false }) {
   return (
-    <div className="flex w-full items-center gap-3 animate-fadeSlide">
+    <div className={`flex w-full items-center gap-3 ${animate ? "animate-fadeSlide" : ""}`}>
       <img
         src={assetUrl(chip.image)}
         alt={chip.imageAlt || chip.name || ""}
         className="h-14 w-14 shrink-0 rounded-xl object-cover object-[center_18%]"
         width={56}
         height={56}
-        loading="lazy"
+        loading="eager"
         decoding="async"
       />
       <div className="min-w-0">
-        <p className="text-[11px] font-semibold uppercase tracking-wider text-brand">
+        <p className="text-[11px] font-semibold uppercase tracking-wider text-brand-deep">
           {chip.label}
         </p>
         <p className="truncate text-sm font-bold text-ink">{chip.name}</p>
@@ -195,7 +195,7 @@ export default function LaserHero() {
                 className="mt-3 overflow-hidden rounded-2xl border border-ink/[0.06] bg-white p-2.5 shadow-soft sm:hidden"
                 aria-live="polite"
               >
-                <DoctorChipCard key={`${chip.name}-${chipIndex}`} chip={chip} />
+                <DoctorChipCard key={`${chip.name}-${chipIndex}`} chip={chip} animate={chipIndex > 0} />
                 {chips.length > 1 && (
                   <div className="mt-2 flex justify-center gap-1.5" aria-hidden>
                     {chips.map((c, i) => (

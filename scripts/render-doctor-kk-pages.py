@@ -143,7 +143,7 @@ def render_page(ui: dict, meta: dict | None) -> str:
   <meta property="og:image" content="{SITE}{img}" />
   {ld_html}
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
   <style>{INLINE_CSS}</style>
 </head>
 <body>

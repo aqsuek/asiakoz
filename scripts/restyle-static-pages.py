@@ -39,7 +39,7 @@ def is_kk_page(path: Path) -> bool:
 def normalize_header(html: str, kk: bool) -> str:
     html = re.sub(r'<header class="header"', '<header class="site-header"', html)
     html = html.replace('src="../images/logo.png"', 'src="/images/logo.png"')
-    html = html.replace('href="../css/style.css?v=20261129"', 'href="/css/style.css?v=20261129"')
+    html = html.replace('href="../css/style.css?v=20261129b"', 'href="/css/style.css?v=20261129b"')
     html = html.replace('href="../images/logo.png"', 'href="/images/logo.png"')
     nav = HEADER_NAV_KK if kk else HEADER_NAV_RU
     if 'class="header-nav"' in html:
@@ -68,7 +68,7 @@ def main() -> None:
         html = path.read_text(encoding="utf-8", errors="ignore")
         if "noindex" in html.lower() and 'http-equiv="refresh"' in html.lower():
             continue
-        if "/css/style.css?v=20261129" not in html and "css/style.css" not in html:
+        if "/css/style.css?v=20261129b" not in html and "css/style.css" not in html:
             continue
         new = normalize_header(html, is_kk_page(path))
         if new != html:

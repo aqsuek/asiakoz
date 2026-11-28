@@ -271,7 +271,7 @@ def write_emergency_hub() -> None:
   <title>Срочные симптомы глаз в Алматы — когда к офтальмологу | AsiaKoz</title>
   <meta name="description" content="Вспышки, мушки, пелена и резкое ухудшение зрения: когда нужна срочная консультация офтальмолога в AsiaKoz Алматы. Адрес: пр. Райымбека, 176А. Тел. +7 700 360 01 80." />
   <link rel="canonical" href="https://asiakoz.com/srochnye-simptomy-glaz-almaty/" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -361,7 +361,7 @@ def write_uslugi_catalog() -> None:
   {"@context":"https://schema.org","@type":"MedicalWebPage","name":"Услуги AsiaKoz","url":"https://asiakoz.com/uslugi/","isPartOf":{"@type":"WebSite","name":"AsiaKoz","url":"https://asiakoz.com/"}}
   </script>
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/style.css?v=20261129" />
+  <link rel="stylesheet" href="/css/style.css?v=20261129b" />
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ4QBS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
