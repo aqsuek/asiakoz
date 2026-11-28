@@ -66,6 +66,10 @@ _KK_CITY_PROTECT: tuple[str, ...] = (
     "Ақтауда лазер",
     "Ақтау және Шымкентте",
     "Шымкенттегі",
+    "Ақтаудағы",
+    "Ақтауда SMILE",
+    "Ақтауда ReLEx",
+    "Алматы мен Ақтауда",
 )
 
 HANDCRAFTED_KK_SLUGS = frozenset({"otzyvy-asiakoz-almaty"})

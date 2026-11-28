@@ -126,7 +126,7 @@ RETINA_FAQ_RU = [
         "Всегда ли нужна операция при разрыве сетчатки?",
         "Жыртылуда әрқашан операция керек пе?",
         [
-            "Нет. Многие разрывы лечат <a class=\"link\" href=\"/lazernaya-koagulyatsiya-almaty/\">лазерной коагуляцией</a> амбулаторно.",
+            "Нет. Многие разрывы лечат <a class=\"link\" href=\"/lazernaya-koagulyatsiya-setchatki-almaty/\">лазерной коагуляцией</a> амбулаторно.",
             "При отслойке или гемофтальме может потребоваться витрэктомия — решение после ОКТ и осмотра витреоретинолога.",
         ],
         [
@@ -186,7 +186,7 @@ RETINA_FAQ_RU = [
         [
             "В филиале AsiaKoz в {city} доступны:",
             '<ul class="list"><li><a class="link" href="/diagnostika-almaty/">полная диагностика зрения</a> и ОКТ;</li>'
-            '<li><a class="link" href="/lazernaya-koagulyatsiya-almaty/">лазерная коагуляция</a> сетчатки;</li>'
+            '<li><a class="link" href="/lazernaya-koagulyatsiya-setchatki-almaty/">лазерная коагуляция</a> сетчатки;</li>'
             '<li><a class="link" href="/intravitrealnye-inektsii-almaty/">интравитреальные инъекции</a>;</li>'
             '<li><a class="link" href="/vitrektomiya-almaty/">витрэктомия</a> и витреоретинальная хирургия;</li>'
             '<li>наблюдение при диабетической ретинопатии и ВМД.</li></ul>',

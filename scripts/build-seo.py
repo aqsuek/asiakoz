@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import html as html_lib
 import json
 import re
 import sys
@@ -44,8 +45,8 @@ PAGE_META = {
         "ru": {
             "title": "AsiaKoz — турецкая глазная клиника в Алматы, Актау и Шымкенте",
             "description": (
-                "Диагностика и лечение зрения, офтальмохирургия в клиниках AsiaKoz. "
-                "Лазерная коррекция: SMILE — в Алматы и Актау, LASIK и PRK — в Шымкенте. Филиалы в Алматы, Актау и Шымкенте."
+                "Турецкие офтальмологи в Алматы, Актау и Шымкенте: проверка зрения, катаракта, "
+                "лазерная коррекция (SMILE, LASIK, PRK), детский приём. Запись в WhatsApp."
             ),
             "h1": "AsiaKoz — офтальмологические клиники",
             "lead": "Алматы, Актау и Шымкент — работают.",
@@ -53,8 +54,8 @@ PAGE_META = {
         "kk": {
             "title": "AsiaKoz — Алматы, Ақтау және Шымкенттегі түрік көз клиникасы",
             "description": (
-                "AsiaKoz клиникаларында көру диагностикасы және офтальмохирургия. "
-                "Лазерлік түзету: SMILE — Алматы мен Ақтауда, LASIK және PRK — Шымкентте. Филиалдар Алматы, Ақтау және Шымкентте."
+                "Алматы, Ақтау және Шымкенттегі түрік офтальмологтары: көру тексеру, катаракта, "
+                "лазерлік түзету (SMILE, LASIK, PRK), балалар қабылдауы. WhatsApp арқылы жазылу."
             ),
             "h1": "AsiaKoz — офтальмологиялық клиникалар",
             "lead": "Алматы, Ақтау және Шымкент — жұмыс істейді.",
@@ -62,19 +63,19 @@ PAGE_META = {
     },
     "almaty": {
         "ru": {
-            "title": "AsiaKoz Алматы — офтальмологическая клиника",
+            "title": "Глазная клиника в Алматы — турецкие офтальмологи | AsiaKoz",
             "description": (
-                "Глазная клиника AsiaKoz в Алматы: диагностика, лазерная коррекция, катаракта. "
-                "Адрес: проспект Райымбека, 176А. Запись: +7 777 888 01 80."
+                "Глазная клиника AsiaKoz в Алматы: проверка зрения у турецких офтальмологов (окулистов), "
+                "лазерная коррекция SMILE, катаракта, детский приём. Райымбека, 176А."
             ),
             "h1": "AsiaKoz Алматы",
             "lead": "Офтальмологическая клиника. Лазерная коррекция, катаракта, диагностика.",
         },
         "kk": {
-            "title": "AsiaKoz Алматы — офтальмологиялық клиника",
+            "title": "Алматыдағы көз клиникасы — түрік офтальмологтары | AsiaKoz",
             "description": (
-                "AsiaKoz Алматы көз клиникасы: диагностика, лазерлік түзету, катаракта. "
-                "Мекенжайы: Райымбек даңғылы, 176А. Жазылу: +7 777 888 01 80."
+                "AsiaKoz Алматы көз клиникасы: түрік офтальмологтарында көру тексеру, "
+                "SMILE лазерлік түзету, катаракта, балалар қабылдауы. Райымбек даңғылы, 176А."
             ),
             "h1": "AsiaKoz Алматы",
             "lead": "Офтальмологиялық клиника. Лазерлік түзету, катаракта, диагностика.",
@@ -82,19 +83,19 @@ PAGE_META = {
     },
     "aqtau": {
         "ru": {
-            "title": "AsiaKoz Актау — офтальмологическая клиника",
+            "title": "Офтальмолог (окулист) в Актау — глазная клиника AsiaKoz",
             "description": (
-                "Глазная клиника AsiaKoz в Актау: диагностика, катаракта, косоглазие. "
-                "Адрес: 7А микрорайон, 11/3. Запись: +7 775 863 01 80."
+                "Офтальмолог и детский окулист в Актау: проверка зрения, катаракта, косоглазие, "
+                "лазерная коррекция SMILE. Турецкие врачи. 7А микрорайон, 11/3."
             ),
             "h1": "AsiaKoz Актау",
             "lead": "Офтальмологическая клиника. Катаракта, сетчатка, детская офтальмология.",
         },
         "kk": {
-            "title": "AsiaKoz Ақтау — офтальмологиялық клиника",
+            "title": "Ақтаудағы көз дәрігері (офтальмолог) — AsiaKoz клиникасы",
             "description": (
-                "AsiaKoz Ақтау көз клиникасы: диагностика, катаракта, қылилық. "
-                "Мекенжайы: 7А шағынауданы, 11/3. Жазылу: +7 775 863 01 80."
+                "Ақтаудағы көз дәрігері және балалар офтальмологы: көру тексеру, катаракта, қылилық, "
+                "SMILE лазерлік түзету. Түрік дәрігерлері. 7А шағынауданы, 11/3."
             ),
             "h1": "AsiaKoz Ақтау",
             "lead": "Офтальмологиялық клиника. Катаракта, тор қабық, балалар офтальмологиясы.",
@@ -102,19 +103,19 @@ PAGE_META = {
     },
     "shymkent": {
         "ru": {
-            "title": "AsiaKoz Шымкент — офтальмологическая клиника",
+            "title": "Офтальмолог (окулист) в Шымкенте — глазная клиника AsiaKoz",
             "description": (
-                "Глазная клиника AsiaKoz в Шымкенте: диагностика и офтальмохирургия. "
-                "Адрес: ул. Байтурсынова, 86/7, мкр. Туран. Запись: +7 708 075 01 80."
+                "Офтальмолог и детский окулист в Шымкенте: проверка зрения, катаракта, LASIK и PRK. "
+                "Турецкие врачи. Ул. Байтурсынова, 86/7, мкр. Туран."
             ),
             "h1": "AsiaKoz Шымкент",
             "lead": "Офтальмологическая клиника. Диагностика, катаракта, хирургия.",
         },
         "kk": {
-            "title": "AsiaKoz Шымкент — офтальмологиялық клиника",
+            "title": "Шымкенттегі көз дәрігері (офтальмолог) — AsiaKoz клиникасы",
             "description": (
-                "AsiaKoz Шымкент көз клиникасы: диагностика және офтальмохирургия. "
-                "Мекенжайы: Байтұрсынов көшесі, 86/7, Тұран. Жазылу: +7 708 075 01 80."
+                "Шымкенттегі көз дәрігері және балалар офтальмологы: көру тексеру, катаракта, LASIK және PRK. "
+                "Түрік дәрігерлері. Байтұрсынов көшесі, 86/7, Тұран."
             ),
             "h1": "AsiaKoz Шымкент",
             "lead": "Офтальмологиялық клиника. Диагностика, катаракта, хирургия.",
@@ -907,6 +908,36 @@ def trim_long_titles() -> None:
             path.write_text(new_html, encoding="utf-8")
 
 
+def ensure_basic_schema() -> None:
+    """Every indexable page gets at least WebPage JSON-LD (name, url, language, publisher)."""
+    for path in ROOT.rglob("index.html"):
+        if any(p in SKIP_DIRS for p in path.parts):
+            continue
+        html = path.read_text(encoding="utf-8")
+        if "application/ld+json" in html or is_redirect(html) or "noindex" in html.lower():
+            continue
+        canon = re.search(r'rel="canonical"\s+href="([^"]+)"', html)
+        title = re.search(r"<title>([^<]*)</title>", html)
+        if not canon or not title:
+            continue
+        desc = re.search(r'name="description"\s+content="([^"]*)"', html)
+        lang = "kk-KZ" if '<html lang="kk"' in html else "ru-KZ"
+        node = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": canon.group(1) + "#webpage",
+            "url": canon.group(1),
+            "name": html_lib.unescape(title.group(1)),
+            "inLanguage": lang,
+            "isPartOf": {"@id": f"{SITE}/#website"},
+            "publisher": {"@id": f"{SITE}/#organization"},
+        }
+        if desc:
+            node["description"] = html_lib.unescape(desc.group(1))
+        block = f'  <script type="application/ld+json">{json.dumps(node, ensure_ascii=False)}</script>\n</head>'
+        path.write_text(html.replace("</head>", block, 1), encoding="utf-8")
+
+
 def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
     urls: list[tuple[str, str, float]] = []
 
@@ -1544,6 +1575,7 @@ def main() -> None:
     build_cataract_diagnoses()
     subprocess.check_call([sys.executable, str(ROOT / "scripts" / "install-lead-forms.py")], cwd=str(ROOT))
     trim_long_titles()
+    ensure_basic_schema()
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself

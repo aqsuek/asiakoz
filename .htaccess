@@ -107,6 +107,8 @@ RewriteRule ^doctor-madina\.html$ /doctors/ [L,R=301]
 
 
 
+
+
 # Thin page merges → hub pages
 RewriteRule ^smile\-almaty/?$ /laser/ [L,R=301]
 RewriteRule ^femto\-lasik\-almaty/?$ /lazer-shymkent/ [L,R=301]

@@ -195,14 +195,14 @@ def lang_switch_block(active: str, ru_href: str, kk_href: str) -> str:
 
 def render_index(posts: list[dict], lang: str) -> str:
     if lang == "kk":
-        title = "Жаңалықтар — AsiaKoz"
-        desc = "AsiaKoz клиникасының жаңалықтары мен хабарламалары."
+        title = "Жаңалықтар мен акциялар — AsiaKoz көз клиникасы"
+        desc = "AsiaKoz көз клиникасының жаңалықтары: акциялар, жаңа филиалдар, түрік дәрігерлерінің қабылдауы Алматы, Ақтау және Шымкентте."
         h1 = "Жаңалықтар"
         crumb = '<nav class="breadcrumb"><a href="/kk/">Басты бет</a> / Жаңалықтар</nav>'
         read = "Оқу →"
     else:
-        title = "Новости — AsiaKoz"
-        desc = "Новости и объявления клиники AsiaKoz."
+        title = "Новости и акции — глазная клиника AsiaKoz"
+        desc = "Новости глазной клиники AsiaKoz: акции, новые филиалы, приём турецких врачей в Алматы, Актау и Шымкенте."
         h1 = "Новости"
         crumb = '<nav class="breadcrumb"><a href="/">Главная</a> / Новости</nav>'
         read = "Читать →"

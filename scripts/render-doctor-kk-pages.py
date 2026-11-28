@@ -95,6 +95,26 @@ def render_page(ui: dict, meta: dict | None) -> str:
         f'<span class="tag">{html.escape(t)}</span>' for t in (ui.get("tagsKz") or [])
     )
     city_label = {"almaty": "Алматы", "aqtau": "Ақтау", "shymkent": "Шымкент"}.get(city, "Алматы")
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": f"{kk_url}#webpage",
+        "url": kk_url,
+        "name": title,
+        "inLanguage": "kk-KZ",
+        "mainEntity": {
+            "@type": "Physician",
+            "@id": f"{ru_url}#physician",
+            "name": name,
+            "description": role,
+            "image": f"{SITE}{img}",
+            "medicalSpecialty": "https://schema.org/Ophthalmology",
+            "worksFor": {"@id": f"{SITE}/#organization"},
+            "address": {"@type": "PostalAddress", "addressLocality": city_label, "addressCountry": "KZ"},
+        },
+    }
+    ld_html = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+
     try:
         from site_nav import FOOTER_NAV_KK, HEADER_NAV_KK
     except ImportError:
@@ -121,6 +141,7 @@ def render_page(ui: dict, meta: dict | None) -> str:
   <meta property="og:description" content="{html.escape(desc)}" />
   <meta property="og:url" content="{kk_url}" />
   <meta property="og:image" content="{SITE}{img}" />
+  {ld_html}
   <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/css/style.css" />
   <style>{INLINE_CSS}</style>
