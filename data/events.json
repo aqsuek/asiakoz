@@ -129073,5 +129073,15 @@
     "city": "shymkent",
     "language": "ru",
     "session_id": "mx0oncsj-gm23akg1"
+  },
+  {
+    "id": "1795886936480-o6sdbl",
+    "ts": 1795886936480,
+    "event": "page_view",
+    "page_path": "/shymkent/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mx0opa0q-ybc2jedw",
+    "referrer": "https://link.2gis.ru/"
   }
 ]
