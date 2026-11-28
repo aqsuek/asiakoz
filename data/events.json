@@ -129429,5 +129429,15 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mx0qrq6a-bsps4p7h"
+  },
+  {
+    "id": "1795891161119-8nt1oj",
+    "ts": 1795891161119,
+    "event": "branch_select",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mx0q8crc-hi6td27v",
+    "referrer": "https://asiakoz.com/news/smile-aksiya-dekabr-2026/"
   }
 ]
