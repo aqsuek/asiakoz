@@ -395,8 +395,8 @@ def write_uslugi_catalog() -> None:
         </article>
         <article class="catalog-card" id="lazer">
           <h2>Лазерная коррекция</h2>
-          <p>SMILE, Femto-LASIK/LASIK и PRK/LASEK — метод выбираем после диагностики. Подходит не всем: решение принимает врач по параметрам роговицы и противопоказаниям.</p>
-          <a class="btn" href="/lazer-almaty/">Подробнее</a>
+          <p>ReLEx SMILE — в Алматы и Актау, LASIK и PRK — в Шымкенте. Метод выбираем после диагностики. Подходит не всем: решение принимает врач по параметрам роговицы и противопоказаниям.</p>
+          <a class="btn" href="/laser/">Подробнее</a>
         </article>
         <article class="catalog-card" id="katarakta">
           <h2>Катаракта</h2>

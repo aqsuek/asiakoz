@@ -45,7 +45,7 @@ PAGE_META = {
             "title": "AsiaKoz — турецкая глазная клиника в Алматы, Актау и Шымкенте",
             "description": (
                 "Диагностика и лечение зрения, офтальмохирургия в клиниках AsiaKoz. "
-                "Лазерная коррекция — в Алматы. Филиалы в Алматы, Актау и Шымкенте."
+                "Лазерная коррекция: SMILE — в Алматы и Актау, LASIK и PRK — в Шымкенте. Филиалы в Алматы, Актау и Шымкенте."
             ),
             "h1": "AsiaKoz — офтальмологические клиники",
             "lead": "Алматы, Актау и Шымкент — работают.",
@@ -54,7 +54,7 @@ PAGE_META = {
             "title": "AsiaKoz — Алматы, Ақтау және Шымкенттегі түрік көз клиникасы",
             "description": (
                 "AsiaKoz клиникаларында көру диагностикасы және офтальмохирургия. "
-                "Лазерлік түзету — Алматыда. Филиалдар Алматы, Ақтау және Шымкентте."
+                "Лазерлік түзету: SMILE — Алматы мен Ақтауда, LASIK және PRK — Шымкентте. Филиалдар Алматы, Ақтау және Шымкентте."
             ),
             "h1": "AsiaKoz — офтальмологиялық клиникалар",
             "lead": "Алматы, Ақтау және Шымкент — жұмыс істейді.",
@@ -125,7 +125,7 @@ PAGE_META = {
             "title": "Лазерная коррекция зрения в Алматы — AsiaKoz",
             "description": (
                 "Лазерная коррекция зрения в Алматы у турецких офтальмохирургов. "
-                "Полная диагностика, подбор метода LASIK/SMILE и запись в AsiaKoz."
+                "Полная диагностика, лазерная коррекция ReLEx SMILE и запись в AsiaKoz."
             ),
             "h1": "Лазерная коррекция зрения в Алматы",
             "lead": "Диагностика и лазерная коррекция у опытных хирургов.",
@@ -134,7 +134,7 @@ PAGE_META = {
             "title": "Алматыдағы лазерлік көру түзету — AsiaKoz",
             "description": (
                 "Алматыдағы лазерлік көру түзету — түрік офтальмохирургтері. "
-                "Толық диагностика, LASIK/SMILE әдісін таңдау және AsiaKoz-қа жазылу."
+                "Толық диагностика, ReLEx SMILE лазерлік түзету және AsiaKoz-қа жазылу."
             ),
             "h1": "Алматыдағы лазерлік көру түзету",
             "lead": "Тәжірибелі хирургтерде диагностика және лазерлік түзету.",
@@ -834,11 +834,19 @@ def write_llms() -> None:
     lines.extend(
         [
             "",
+            "## Лазерная коррекция зрения",
+            "",
+            "- Алматы и Актау: ReLEx SMILE.",
+            "- Шымкент: LASIK и PRK (SMILE в Шымкенте не делают).",
+            f"- Алматы (SMILE): {SITE}/laser/ · KK: {SITE}/kk/laser/",
+            f"- Шымкент (LASIK, PRK): {SITE}/lazer-shymkent/ · KK: {SITE}/kk/lazer-shymkent/",
+            "",
             "## Услуги",
             "",
             f"- {SITE}/uslugi/",
             f"- {SITE}/kk/uslugi/",
             f"- {SITE}/laser/",
+            f"- {SITE}/lazer-shymkent/",
             f"- {SITE}/katarakta-almaty/",
             f"- {SITE}/glaukoma-almaty/",
             f"- {SITE}/vitrektomiya-almaty/",
@@ -866,8 +874,29 @@ def write_llms() -> None:
     for b in active:
         lines.append(f"- {b['cityRu']}: {b['phone']} / {b['whatsapp']}")
     lines.append(f"- Instagram: {ORG['sameAs'][0]}")
+    lines.append("- Актау Instagram: https://www.instagram.com/asiakoz.aqtau/")
     lines.append(f"- Шымкент Instagram: {shy['instagram']['url']}")
     (ROOT / "llms.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def trim_long_titles() -> None:
+    """Google cuts titles past ~65 chars; drop " | AsiaKoz" from long ones."""
+    for path in ROOT.rglob("index.html"):
+        if any(p in SKIP_DIRS for p in path.parts):
+            continue
+        html = path.read_text(encoding="utf-8")
+        m = re.search(r"<title>([^<]*)</title>", html)
+        if not m:
+            continue
+        title = m.group(1)
+        if len(title) <= 65 or not title.endswith(" | AsiaKoz"):
+            continue
+        short = title[: -len(" | AsiaKoz")]
+        new_html = html.replace(f'"{title}"', f'"{short}"').replace(
+            f"<title>{title}</title>", f"<title>{short}</title>"
+        )
+        if new_html != html:
+            path.write_text(new_html, encoding="utf-8")
 
 
 def collect_urls(lastmod_cache: dict) -> list[tuple[str, str, float]]:
@@ -1503,6 +1532,7 @@ def main() -> None:
     from cataract_diagnoses import build as build_cataract_diagnoses
     build_cataract_diagnoses()
     subprocess.check_call([sys.executable, str(ROOT / "scripts" / "install-lead-forms.py")], cwd=str(ROOT))
+    trim_long_titles()
     write_llms()
     entries = collect_urls(lastmod_cache)
     # Always include HTML sitemap itself

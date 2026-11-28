@@ -25,11 +25,19 @@ HTML sitemap: https://asiakoz.com/sitemap.html
   - RU: https://asiakoz.com/shymkent/
   - KK: https://asiakoz.com/kk/shymkent/
 
+## Лазерная коррекция зрения
+
+- Алматы и Актау: ReLEx SMILE.
+- Шымкент: LASIK и PRK (SMILE в Шымкенте не делают).
+- Алматы (SMILE): https://asiakoz.com/laser/ · KK: https://asiakoz.com/kk/laser/
+- Шымкент (LASIK, PRK): https://asiakoz.com/lazer-shymkent/ · KK: https://asiakoz.com/kk/lazer-shymkent/
+
 ## Услуги
 
 - https://asiakoz.com/uslugi/
 - https://asiakoz.com/kk/uslugi/
 - https://asiakoz.com/laser/
+- https://asiakoz.com/lazer-shymkent/
 - https://asiakoz.com/katarakta-almaty/
 - https://asiakoz.com/glaukoma-almaty/
 - https://asiakoz.com/vitrektomiya-almaty/
@@ -63,4 +71,5 @@ HTML sitemap: https://asiakoz.com/sitemap.html
 - Актау: +7 775 863 01 80 / https://wa.me/77758630180
 - Шымкент: +7 708 075 01 80 / https://wa.me/77080750180
 - Instagram: https://www.instagram.com/asiakoz.clinic/
+- Актау Instagram: https://www.instagram.com/asiakoz.aqtau/
 - Шымкент Instagram: https://www.instagram.com/asiakoz.shymkent/
