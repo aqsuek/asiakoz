@@ -1581,6 +1581,9 @@ def main() -> None:
     extras_script = ROOT / "scripts" / "render-doctor-extras.py"
     if extras_script.exists():
         subprocess.check_call([sys.executable, str(extras_script)], cwd=str(ROOT))
+    catalog_script = ROOT / "scripts" / "render-catalog-extras.py"
+    if catalog_script.exists():
+        subprocess.check_call([sys.executable, str(catalog_script)], cwd=str(ROOT))
     trim_long_titles()
     ensure_basic_schema()
     write_llms()
