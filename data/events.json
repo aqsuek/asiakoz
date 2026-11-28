@@ -130009,5 +130009,15 @@
     "language": "ru",
     "session_id": "mx0tibb9-i3m3hfx4",
     "referrer": "https://asiakoz.com/prices/"
+  },
+  {
+    "id": "1795896571828-ai3zwe",
+    "ts": 1795896571828,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx0tibb9-i3m3hfx4",
+    "referrer": "https://asiakoz.com/"
   }
 ]
