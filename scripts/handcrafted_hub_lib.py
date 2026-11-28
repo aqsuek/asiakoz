@@ -352,7 +352,7 @@ def render_hub(cfg: HubConfig, source: Path | None = None) -> tuple[str, str]:
         (
             """        <div class="hero-facts hero-facts--4" aria-label="Ключевые факты">
           <div class="hero-fact"><b>20 000 ₸</b><span>Полная диагностика и приём офтальмолога-хирурга</span></div>
-          <div class="hero-fact"><b>350 000–1 200 000 ₸</b><span>Ориентировочная стоимость операции</span></div>
+          <div class="hero-fact"><b>от 450 000 ₸</b><span>Ориентировочная стоимость операции</span></div>
           <div class="hero-fact"><b>После диагностики</b><span>Точная стоимость и подбор ИОЛ</span></div>
           <div class="hero-fact"><b>4 врача в Алматы</b><span>Мехмет, Орел Талип, Алия, Нурмухамед Мусай</span></div>
         </div>""",
@@ -382,7 +382,7 @@ def render_hub(cfg: HubConfig, source: Path | None = None) -> tuple[str, str]:
             f"<h3 class=\"price-card__title\">{cfg.price_op_title}</h3>",
         ),
         (
-            "<p class=\"price-card__value\">Ориентировочно 350 000–1 200 000 ₸</p>",
+            "<p class=\"price-card__value\">От 450 000 ₸</p>",
             f"<p class=\"price-card__value\">{cfg.price_op_value}</p>",
         ),
         (
@@ -401,14 +401,14 @@ def render_hub(cfg: HubConfig, source: Path | None = None) -> tuple[str, str]:
         Полная диагностика и приём офтальмолога-хирурга — 20 000 ₸.
         После обследования врач подтвердит диагноз, поможет выбрать ИОЛ и назовёт точную стоимость операции.
       </p>
-      <p>Операция — ориентировочно 350 000–1 200 000 ₸.</p>""",
+      <p>Операция — ориентировочно от 450 000 ₸.</p>""",
             f"      <p>\n        {cfg.cta_p}\n      </p>",
         ),
         (
             "<p><strong>Материал проверил:</strong> Мехмет Есат Текер, офтальмохирург.</p>",
             f"<p><strong>Материал проверил:</strong> {cfg.med_trust}</p>",
         ),
-        ('"name": "Операция катаракты в Алматы — цена от 350 000 ₸ | asiakoz"', f'"name": "{cfg.schema_page_name}"'),
+        ('"name": "Операция катаракты в Алматы — цена от 450 000 ₸ | asiakoz"', f'"name": "{cfg.schema_page_name}"'),
         ('"name": "Катаракта в Алматы", "item":', f'"name": "{cfg.schema_entity_name}", "item":'),
         ('"@type": "MedicalProcedure"', '"@type": "MedicalTherapy"'),
         ('"name": "Факоэмульсификация катаракты с ИОЛ"', f'"name": "{cfg.schema_entity_name}"'),

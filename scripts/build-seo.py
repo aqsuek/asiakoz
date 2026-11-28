@@ -1493,6 +1493,10 @@ def main() -> None:
     compare_script = ROOT / "scripts" / "render-laser-compare.py"
     if compare_script.exists():
         subprocess.check_call([sys.executable, str(compare_script)], cwd=str(ROOT))
+    for extra in ("render-prices-page.py",):
+        extra_script = ROOT / "scripts" / extra
+        if extra_script.exists():
+            subprocess.check_call([sys.executable, str(extra_script)], cwd=str(ROOT))
 
     kk_doctor_script = ROOT / "scripts" / "render-doctor-kk-pages.py"
     if kk_doctor_script.exists():
@@ -1574,6 +1578,9 @@ def main() -> None:
     from cataract_diagnoses import build as build_cataract_diagnoses
     build_cataract_diagnoses()
     subprocess.check_call([sys.executable, str(ROOT / "scripts" / "install-lead-forms.py")], cwd=str(ROOT))
+    extras_script = ROOT / "scripts" / "render-doctor-extras.py"
+    if extras_script.exists():
+        subprocess.check_call([sys.executable, str(extras_script)], cwd=str(ROOT))
     trim_long_titles()
     ensure_basic_schema()
     write_llms()
