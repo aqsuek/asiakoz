@@ -129204,5 +129204,14 @@
     "city": "almaty",
     "language": "kk",
     "session_id": "mx0pcic4-oresy4bc"
+  },
+  {
+    "id": "1795888044290-vpf4ht",
+    "ts": 1795888044290,
+    "event": "page_view",
+    "page_path": "/kk/",
+    "city": "almaty",
+    "language": "kk",
+    "session_id": "mx0pcyew-alnqhvqf"
   }
 ]
