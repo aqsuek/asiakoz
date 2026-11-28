@@ -188,3 +188,6 @@ if [[ -f "$ROOT/index.html" && -f "$ROOT/kk/index.html" ]]; then
   fi
   echo "Verified: /kk/ SPA shell assets match /"
 fi
+
+# Static HTML snapshot of the SPA pages for Google, Yandex and AI crawlers
+node "$(cd "$(dirname "$0")" && pwd)/prerender.mjs"

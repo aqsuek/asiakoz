@@ -90,3 +90,6 @@ echo "Doctor pages:"
 for id in "${DOCTOR_IDS[@]}"; do
   echo "  https://asiakoz.com/shymkent/doctor/$id/"
 done
+
+# Static HTML snapshot of the SPA pages for Google, Yandex and AI crawlers
+node "$(cd "$(dirname "$0")" && pwd)/prerender.mjs"

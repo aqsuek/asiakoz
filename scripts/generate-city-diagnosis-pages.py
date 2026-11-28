@@ -53,6 +53,12 @@ CITY_RU_LOCATIVE = {
 }
 
 
+def fill_city(s: str, city_name: str, address: str) -> str:
+    """Fill a template; RU "в {city}" gets the locative form ("в Шымкенте")."""
+    s = s.replace("в {city}", CITY_RU_LOCATIVE.get(city_name, "в {city}"))
+    return s.format(city=city_name, address=address)
+
+
 def resolve_doc_ids(dx: dict, city: str) -> list[str]:
     """Return doctors for a city page — never show doctors from other branches."""
     allowed_order = CITY_DOCTORS[city]
@@ -789,7 +795,7 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
             {
                 "@type": "Question",
                 "name": q,
-                "acceptedAnswer": {"@type": "Answer", "text": a.format(city=city_name, address=address)},
+                "acceptedAnswer": {"@type": "Answer", "text": fill_city(a, city_name, address)},
             }
             for q, a in all_faq[:20]
         ]
@@ -799,8 +805,8 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
             "@type": "MedicalWebPage",
             "@id": f"{url}#webpage",
             "url": url,
-            "name": enriched["title"].format(city=city_name, address=address),
-            "description": enriched["desc"].format(city=city_name, address=address),
+            "name": fill_city(enriched["title"], city_name, address),
+            "description": fill_city(enriched["desc"], city_name, address),
             "inLanguage": "ru-KZ" if lang == "ru" else "kk-KZ",
             "primaryImageOfPage": {"@type": "ImageObject", "url": image},
             "about": {"@type": "MedicalCondition", "name": enriched["name"]},
@@ -854,7 +860,7 @@ def json_ld(dx_id: str, city: str, lang: str, copy: dict, url: str, image: str) 
                 "@type": "MedicalProcedure",
                 "@id": f"{url}#procedure",
                 "name": enriched["name"],
-                "description": enriched["lead"].format(city=city_name, address=address)[:500],
+                "description": fill_city(enriched["lead"], city_name, address)[:500],
                 "procedureType": "https://schema.org/SurgicalProcedure",
             }
         )
@@ -868,7 +874,7 @@ def render_page(dx_id: str, city: str, lang: str) -> str:
     c = CITIES[city]
     city_name = c["kk"] if lang == "kk" else c["ru"]
     address = c["address_kk"] if lang == "kk" else c["address_ru"]
-    fmt = lambda s: s.format(city=city_name, address=address)
+    fmt = lambda s: fill_city(s, city_name, address)
     url = page_url(dx_id, city, lang)
     other_lang = "kk" if lang == "ru" else "ru"
     other_url = rel_url(dx_id, city, other_lang)

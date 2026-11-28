@@ -103,3 +103,6 @@ done
 
 # Keep technical SEO (canonical/noindex/sitemap) consistent after deploy
 python3 "$LIVE/scripts/build-seo.py"
+
+# Static HTML snapshot of the SPA pages for Google, Yandex and AI crawlers
+node "$(cd "$(dirname "$0")" && pwd)/prerender.mjs"

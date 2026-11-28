@@ -101,3 +101,6 @@ for doc_id, url in canon.items():
     p.write_text(html, encoding="utf-8")
 print("almaty doctor shells synced")
 PY
+
+# Static HTML snapshot of the SPA pages for Google, Yandex and AI crawlers
+node "$(cd "$(dirname "$0")" && pwd)/prerender.mjs"
