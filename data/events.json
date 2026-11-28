@@ -128626,5 +128626,15 @@
     "utm_source": "ig",
     "utm_medium": "social",
     "referrer": "https://l.instagram.com/"
+  },
+  {
+    "id": "1795854292969-hewsod",
+    "ts": 1795854292969,
+    "event": "page_view",
+    "page_path": "/laser/",
+    "city": "almaty",
+    "language": "ru",
+    "session_id": "mx059kvx-7f2qyui9",
+    "referrer": "https://m.facebook.com/"
   }
 ]
