@@ -129529,5 +129529,15 @@
     "city": "almaty",
     "language": "ru",
     "session_id": "mx0s0bj2-q6lu0dm6"
+  },
+  {
+    "id": "1795892545771-9twjr9",
+    "ts": 1795892545771,
+    "event": "page_view",
+    "page_path": "/",
+    "city": "shymkent",
+    "language": "ru",
+    "session_id": "mx0ryfde-toxlvkon",
+    "referrer": "https://asiakoz.com/kosoglazie-aktau/"
   }
 ]
